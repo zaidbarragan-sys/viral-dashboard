@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viral Dashboard — Rappi MX Turbo</title>
+  <title>Viral Deals — Rappi Turbo MX</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
@@ -434,10 +434,9 @@
 
   <header class="header">
     <div class="header-inner">
-      <h1><span>Viral Dashboard</span> — Rappi MX Turbo</h1>
+      <h1><span>Viral Deals</span> — Rappi Turbo MX</h1>
       <nav class="tabs">
-        <button class="tab active" data-tab="indice">Indice de Virales</button>
-        <button class="tab" data-tab="detalle">Detalle por Deal</button>
+        <button class="tab active" data-tab="indice">Home</button>
         <button class="tab" data-tab="comparador">Comparador</button>
         <button class="tab" data-tab="tendencias">Tendencias</button>
       </nav>
@@ -470,9 +469,9 @@
       </div>
     </div>
 
-    <!-- DETALLE -->
+    <!-- DETALLE (accesible via click en fila, sin tab en nav) -->
     <div id="detalle" class="section">
-      <button class="back-btn" onclick="navigateTo('indice')">&#8592; Volver al Indice</button>
+      <button class="back-btn" onclick="navigateTo('indice')">&#8592; Volver</button>
       <div id="detalle-content"></div>
     </div>
 
