@@ -535,7 +535,7 @@
       document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
       document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
       document.getElementById(tab).classList.add('active');
-      document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
+      document.querySelector(`[data-tab="${tab}"]`)?.classList.add('active');
       window.location.hash = tab;
 
       if (tab === 'detalle' && dealId) {
