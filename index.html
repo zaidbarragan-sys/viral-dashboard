@@ -1001,8 +1001,8 @@
             <tr><td>AOV</td><td>${fmtMXN(post.aov)}</td><td>${fmtMXN(post.aov_lw)}</td><td style="color:${deltaColor(post.aov_dlw_pct)}">${fmtDelta(post.aov_dlw_pct)}</td><td>${fmtMXN(post.aov_l4w)}</td><td style="color:${deltaColor(post.aov_dl4w_pct)}">${fmtDelta(post.aov_dl4w_pct)}</td></tr>
             <tr><td>Impresiones</td><td>${fmtNum(post.impresiones_total)}</td><td colspan="4"></td></tr>
             <tr><td>CR %</td><td>${post.cr_pct}%</td><td colspan="4"></td></tr>
-            <tr><td>GMV Categoria</td><td>${fmtMXN(post.gmv_categoria)}</td><td>${fmtMXN(post.gmv_cat_lw)}</td><td></td><td>${fmtMXN(post.gmv_cat_l4w)}</td><td></td></tr>
-            <tr><td>Share Deal/Cat</td><td>${post.share_deal_cat_pct}%</td><td>${post.share_lw_pct}%</td><td></td><td>${post.share_l4w_pct}%</td><td></td></tr>
+            <tr><td>GMV Categoria</td><td>${fmtMXN(post.gmv_categoria)}</td><td>${fmtMXN(post.gmv_cat_lw)}</td><td style="color:${deltaColor(((post.gmv_categoria - post.gmv_cat_lw) / post.gmv_cat_lw * 100))}">${fmtDelta(((post.gmv_categoria - post.gmv_cat_lw) / post.gmv_cat_lw * 100))}</td><td>${fmtMXN(post.gmv_cat_l4w)}</td><td style="color:${deltaColor(((post.gmv_categoria - post.gmv_cat_l4w) / post.gmv_cat_l4w * 100))}">${fmtDelta(((post.gmv_categoria - post.gmv_cat_l4w) / post.gmv_cat_l4w * 100))}</td></tr>
+            <tr><td>Share Deal/Cat</td><td>${post.share_deal_cat_pct}%</td><td>${post.share_lw_pct}%</td><td style="color:${deltaColor(post.share_deal_cat_pct - post.share_lw_pct)}">${(post.share_deal_cat_pct - post.share_lw_pct) >= 0 ? '+' : ''}${(post.share_deal_cat_pct - post.share_lw_pct).toFixed(1)}pp</td><td>${post.share_l4w_pct}%</td><td style="color:${deltaColor(post.share_deal_cat_pct - post.share_l4w_pct)}">${(post.share_deal_cat_pct - post.share_l4w_pct) >= 0 ? '+' : ''}${(post.share_deal_cat_pct - post.share_l4w_pct).toFixed(1)}pp</td></tr>
           </tbody>
         </table></div>`;
 
