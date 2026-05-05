@@ -931,7 +931,21 @@
           <td>${fmtMXN(s.ex_budget_mxn)}</td>
           <td>${fmtNum(s.real_units)}</td>
           <td>${fmtMXN(s.final_budget_mxn)}</td>
-        </tr>`).join('')}</tbody>
+        </tr>`).join('')}
+        <tr style="font-weight:700;border-top:2px solid var(--dark);">
+          <td></td>
+          <td>Total</td>
+          <td></td>
+          <td>${skuDetail.reduce((s,r) => s + r.h_units, 0).toFixed(1)}</td>
+          <td>${skuDetail.reduce((s,r) => s + r.h_orders, 0).toFixed(1)}</td>
+          <td></td>
+          <td>${fmtNum(skuDetail.reduce((s,r) => s + r.ex_incr_units, 0))}</td>
+          <td>${fmtNum(skuDetail.reduce((s,r) => s + r.ex_incr_orders, 0))}</td>
+          <td>${fmtMXN(skuDetail.reduce((s,r) => s + r.ex_budget_mxn, 0))}</td>
+          <td>${fmtNum(skuDetail.reduce((s,r) => s + r.real_units, 0))}</td>
+          <td>${fmtMXN(skuDetail.reduce((s,r) => s + r.final_budget_mxn, 0))}</td>
+        </tr>
+        </tbody>
       </table></div>`;
 
       // Financial summary
