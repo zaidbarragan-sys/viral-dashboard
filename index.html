@@ -1382,14 +1382,30 @@
       let bodyHtml = '';
 
       if (isToday) {
-        // LIVE viral
+        // LIVE viral — same as future + live badge
+        const skuRows = skuDetail.map(s => `
+          <tr>
+            <td>${s.name}</td>
+            <td>${s.sync}</td>
+            <td>${s.ean}</td>
+            <td>${s.pid}</td>
+            <td>${s.subcategoria}</td>
+          </tr>
+        `).join('');
+
         bodyHtml = `
           <div class="cal-live-badge"><span class="cal-live-dot"></span>Live Viral</div>
-          <div class="sub-title" style="margin-top:16px;">Budget</div>
-          <div class="cal-expand-kpis">
-            <div class="cal-expand-kpi"><div class="label">Budget Total</div><div class="value">${fmtMXN(deal.budget_total_mxn)}</div></div>
-            <div class="cal-expand-kpi"><div class="label">Maker</div><div class="value">${fmtMXN(deal.budget_maker_mxn)}</div></div>
-            <div class="cal-expand-kpi"><div class="label">Growth</div><div class="value">${fmtMXN(deal.budget_growth_mxn)}</div></div>
+          <div class="cal-budget-compact" style="margin-top:16px;">
+            <span><strong>Budget Total:</strong> ${fmtMXN(deal.budget_total_mxn)}</span>
+            <span><strong>Maker:</strong> ${fmtMXN(deal.budget_maker_mxn)}</span>
+            <span><strong>Growth:</strong> ${fmtMXN(deal.budget_growth_mxn)}</span>
+          </div>
+          <div class="sub-title">SKUs (${skuDetail.length})</div>
+          <div class="table-wrapper">
+            <table>
+              <thead><tr><th>SKU</th><th>Sync</th><th>EAN</th><th>PID</th><th>Subcategoria</th></tr></thead>
+              <tbody>${skuRows}</tbody>
+            </table>
           </div>
         `;
       } else if (isFuture) {

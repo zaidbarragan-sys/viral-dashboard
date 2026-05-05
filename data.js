@@ -128,7 +128,7 @@ const PREVIRAL_DEALS = [
     incrementalidad: 4,
     tipo_viral: "1 día",
     ciudades: "CDMX",
-    fecha_planeacion: "2026-05-05",
+    fecha_planeacion: "2026-04-21",
     fecha_ejecucion: "2026-05-05",
     usd_mxn: 17.38,
     fecha_tasa: "2026-05-05",
