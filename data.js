@@ -141,6 +141,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 100,
     categoria_display: "Frutas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_MODELO_090526",
+    maker_name: "Grupo Modelo-Ab Inbev",
+    maker_aux: "Modelo",
+    business_unit: "Drinks",
+    descuento_pct: 50,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-22",
+    fecha_ejecucion: "2026-05-09",
+    usd_mxn: 17.38,
+    fecha_tasa: "2026-05-05",
+    budget_maker_mxn: 35000,
+    budget_growth_mxn: 10500,
+    budget_total_mxn: 45500,
+    budget_maker_usd: 2013.81,
+    budget_growth_usd: 604.14,
+    budget_total_usd: 2617.95,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
   }
 ];
 
@@ -179,7 +202,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "14375", ean: "2200000320650", pid: "2115786704", name: "Mallas Limon Sin Semilla 5 piezas", subcategoria: "Frutas", h_units: 868.2, h_orders: 379.8, avg_price: 17.05, ex_incr_units: 3473, ex_incr_orders: 1519, ex_budget_mxn: 35527, ex_budget_usd: 2044.13, real_units: 1916, final_budget_mxn: 19601, final_budget_usd: 1127.79, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "82049", ean: "22200000012610", pid: "2115387671", name: "Naranja Valencia", subcategoria: "Frutas", h_units: 360.9, h_orders: 99.9, avg_price: 6.74, ex_incr_units: 1444, ex_incr_orders: 400, ex_budget_mxn: 5837, ex_budget_usd: 335.84, real_units: 2016, final_budget_mxn: 8153, final_budget_usd: 469.10, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "82040", ean: "2220000001247", pid: "2115381111", name: "Limon Eureka", subcategoria: "Frutas", h_units: 201.5, h_orders: 79.3, avg_price: 11.47, ex_incr_units: 806, ex_incr_orders: 317, ex_budget_mxn: 5546, ex_budget_usd: 319.10, real_units: 661, final_budget_mxn: 4549, final_budget_usd: 261.74, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "10659", ean: "2200000310293", pid: "2109996268", name: "Toronja Blanca", subcategoria: "Frutas", h_units: 41.0, h_orders: 22.5, avg_price: 16.72, ex_incr_units: 164, ex_incr_orders: 90, ex_budget_mxn: 1645, ex_budget_usd: 94.65, real_units: 92, final_budget_mxn: 923, final_budget_usd: 53.11, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "10659", ean: "2200000310293", pid: "2109996268", name: "Toronja Blanca", subcategoria: "Frutas", h_units: 41.0, h_orders: 22.5, avg_price: 16.72, ex_incr_units: 164, ex_incr_orders: 90, ex_budget_mxn: 1645, ex_budget_usd: 94.65, real_units: 92, final_budget_mxn: 923, final_budget_usd: 53.11, sku_order: 5 },
+  // Modelo (May 9)
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "6344", ean: "7501064112546", pid: "2115872376", name: "Modelo Especial Cerveza Lata 355ml", subcategoria: "Cervezas", h_units: 244.1, h_orders: 55.1, avg_price: 23.83, ex_incr_units: 1465, ex_incr_orders: 331, ex_budget_mxn: 17454, ex_budget_usd: 1004.26, real_units: 2149, final_budget_mxn: 25604, final_budget_usd: 1473.19, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "8042", ean: "7501064190711", pid: "2115411808", name: "Corona Extra Cerveza Lata 355ml", subcategoria: "Cervezas", h_units: 107.0, h_orders: 22.6, avg_price: 24.25, ex_incr_units: 642, ex_incr_orders: 136, ex_budget_mxn: 7784, ex_budget_usd: 447.87, real_units: 925, final_budget_mxn: 11216, final_budget_usd: 645.34, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "15052", ean: "7503034941767", pid: "2113570682", name: "Vicky Cerveza Chamoy y Pina Laton 473ml", subcategoria: "Cervezas", h_units: 36.2, h_orders: 18.2, avg_price: 23.46, ex_incr_units: 217, ex_incr_orders: 109, ex_budget_mxn: 2545, ex_budget_usd: 146.43, real_units: 323, final_budget_mxn: 3789, final_budget_usd: 218.01, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "81337", ean: "7503044233210", pid: "2115311977", name: "Stella Artois Cerveza Clara 473ml", subcategoria: "Cervezas", h_units: 26.8, h_orders: 9.7, avg_price: 28.21, ex_incr_units: 161, ex_incr_orders: 58, ex_budget_mxn: 2271, ex_budget_usd: 130.67, real_units: 199, final_budget_mxn: 2807, final_budget_usd: 161.51, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "86167", ean: "7503052713308", pid: "2115641262", name: "Flying Fish Cerveza Lata 473ml", subcategoria: "Cervezas", h_units: 19.8, h_orders: 7.4, avg_price: 27.27, ex_incr_units: 119, ex_incr_orders: 44, ex_budget_mxn: 1622, ex_budget_usd: 93.33, real_units: 153, final_budget_mxn: 2086, final_budget_usd: 120.05, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
