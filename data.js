@@ -164,6 +164,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_NEUTROGENA_100526",
+    maker_name: "Kenvue",
+    maker_aux: "Neutrogena",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 15,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-13",
+    fecha_ejecucion: "2026-05-10",
+    usd_mxn: 17.38,
+    fecha_tasa: "2026-05-05",
+    budget_maker_mxn: 200000,
+    budget_growth_mxn: 60000,
+    budget_total_mxn: 260000,
+    budget_maker_usd: 11507.48,
+    budget_growth_usd: 3452.24,
+    budget_total_usd: 14959.72,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Agua micelar y bifasicos, Toallitas"
   }
 ];
 
@@ -208,7 +231,14 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "8042", ean: "7501064190711", pid: "2115411808", name: "Corona Extra Cerveza Lata 355ml", subcategoria: "Cervezas", h_units: 107.0, h_orders: 22.6, avg_price: 24.25, ex_incr_units: 642, ex_incr_orders: 136, ex_budget_mxn: 7784, ex_budget_usd: 447.87, real_units: 925, final_budget_mxn: 11216, final_budget_usd: 645.34, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "15052", ean: "7503034941767", pid: "2113570682", name: "Vicky Cerveza Chamoy y Pina Laton 473ml", subcategoria: "Cervezas", h_units: 36.2, h_orders: 18.2, avg_price: 23.46, ex_incr_units: 217, ex_incr_orders: 109, ex_budget_mxn: 2545, ex_budget_usd: 146.43, real_units: 323, final_budget_mxn: 3789, final_budget_usd: 218.01, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "81337", ean: "7503044233210", pid: "2115311977", name: "Stella Artois Cerveza Clara 473ml", subcategoria: "Cervezas", h_units: 26.8, h_orders: 9.7, avg_price: 28.21, ex_incr_units: 161, ex_incr_orders: 58, ex_budget_mxn: 2271, ex_budget_usd: 130.67, real_units: 199, final_budget_mxn: 2807, final_budget_usd: 161.51, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "86167", ean: "7503052713308", pid: "2115641262", name: "Flying Fish Cerveza Lata 473ml", subcategoria: "Cervezas", h_units: 19.8, h_orders: 7.4, avg_price: 27.27, ex_incr_units: 119, ex_incr_orders: 44, ex_budget_mxn: 1622, ex_budget_usd: 93.33, real_units: 153, final_budget_mxn: 2086, final_budget_usd: 120.05, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "86167", ean: "7503052713308", pid: "2115641262", name: "Flying Fish Cerveza Lata 473ml", subcategoria: "Cervezas", h_units: 19.8, h_orders: 7.4, avg_price: 27.27, ex_incr_units: 119, ex_incr_orders: 44, ex_budget_mxn: 1622, ex_budget_usd: 93.33, real_units: 153, final_budget_mxn: 2086, final_budget_usd: 120.05, sku_order: 5 },
+  // Neutrogena
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "11108", ean: "070501051054", pid: "2109997336", name: "Toallitas Desmaq Neutrogena 25 pzs", subcategoria: "Toallitas", h_units: 11.7, h_orders: 11.0, avg_price: 154.47, ex_incr_units: 176, ex_incr_orders: 165, ex_budget_mxn: 13593, ex_budget_usd: 782.11, real_units: 1043, final_budget_mxn: 80555, final_budget_usd: 4634.92, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "10968", ean: "7891010882983", pid: "2109997428", name: "Neutrogena Hydro Boost Crema Facial 50g", subcategoria: "Cremas faciales", h_units: 10.4, h_orders: 8.0, avg_price: 202.75, ex_incr_units: 156, ex_incr_orders: 120, ex_budget_mxn: 15815, ex_budget_usd: 909.95, real_units: 704, final_budget_mxn: 71368, final_budget_usd: 4106.33, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "9131", ean: "7501007528427", pid: "2115468435", name: "Lubriderm Reparacion Intensiva 400ml", subcategoria: "Cremas corporales", h_units: 7.8, h_orders: 7.2, avg_price: 111.43, ex_incr_units: 117, ex_incr_orders: 108, ex_budget_mxn: 6519, ex_budget_usd: 375.09, real_units: 961, final_budget_mxn: 53542, final_budget_usd: 3081.24, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "4261", ean: "70501053553", pid: "2113444376", name: "Neutrogena Night Calming Toallitas 25 pzs", subcategoria: "Agua micelar y bifasicos", h_units: 3.4, h_orders: 3.1, avg_price: 149.25, ex_incr_units: 51, ex_incr_orders: 47, ex_budget_mxn: 3806, ex_budget_usd: 218.99, real_units: 313, final_budget_mxn: 23358, final_budget_usd: 1343.38, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "4681", ean: "70501050651", pid: "2113443935", name: "Neutrogena Desmaquillante Bifasico Oil Free", subcategoria: "Agua micelar y bifasicos", h_units: 1.1, h_orders: 1.2, avg_price: 256.15, ex_incr_units: 17, ex_incr_orders: 18, ex_budget_mxn: 2177, ex_budget_usd: 125.26, real_units: 61, final_budget_mxn: 7813, final_budget_usd: 449.54, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "90531", ean: "N/A", pid: "N/A", name: "Producto Nuevo Neutrogena", subcategoria: "Toallitas", h_units: 3.4, h_orders: 3.1, avg_price: 149.25, ex_incr_units: 51, ex_incr_orders: 47, ex_budget_mxn: 3806, ex_budget_usd: 218.99, real_units: 313, final_budget_mxn: 23358, final_budget_usd: 1343.38, sku_order: 6 }
 ];
 
 const POSTMORTEM_DEALS = [
