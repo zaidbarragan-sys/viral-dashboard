@@ -187,6 +187,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Agua micelar y bifasicos, Toallitas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FLORES_100526",
+    maker_name: "Flores",
+    maker_aux: "Flores",
+    business_unit: "WOW",
+    descuento_pct: 0,
+    incrementalidad: 0,
+    tipo_viral: "forecast",
+    ciudades: "—",
+    fecha_planeacion: "2026-05-05",
+    fecha_ejecucion: "2026-05-10",
+    usd_mxn: 17.38,
+    fecha_tasa: "2026-05-05",
+    budget_maker_mxn: 0,
+    budget_growth_mxn: 0,
+    budget_total_mxn: 0,
+    budget_maker_usd: 0,
+    budget_growth_usd: 0,
+    budget_total_usd: 0,
+    financiamiento_maker: "—",
+    pct_growth_vs_maker: 0,
+    categoria_display: "Por definir"
   }
 ];
 

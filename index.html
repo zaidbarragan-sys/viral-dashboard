@@ -558,6 +558,12 @@
       border-left: 3px solid #1565C0;
     }
 
+    .calendar-event.forecast {
+      background: #FFF8E1;
+      color: #F9A825;
+      border-left: 3px solid #F9A825;
+    }
+
     .calendar-legend {
       display: flex;
       gap: 20px;
@@ -581,6 +587,7 @@
     .cal-dot-exec { background: #FFEBE7; border-left: 3px solid var(--coral); }
     .cal-dot-future { background: #E6F9ED; border-left: 3px solid var(--green); }
     .cal-dot-past { background: #E3F2FD; border-left: 3px solid #1565C0; }
+    .cal-dot-forecast { background: #FFF8E1; border-left: 3px solid #F9A825; }
 
     /* Calendar expand panel */
     #cal-expand-detail {
@@ -730,6 +737,17 @@
       color: var(--dark);
     }
 
+    .cal-forecast-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: #FFF8E1;
+      color: #F9A825;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .header { padding: 12px 16px; }
@@ -767,6 +785,7 @@
         <div class="calendar-legend-item"><div class="calendar-legend-dot cal-dot-exec"></div>Hoy / En curso</div>
         <div class="calendar-legend-item"><div class="calendar-legend-dot cal-dot-future"></div>Futuro</div>
         <div class="calendar-legend-item"><div class="calendar-legend-dot cal-dot-past"></div>Pasado</div>
+        <div class="calendar-legend-item"><div class="calendar-legend-dot cal-dot-forecast"></div>Forecast</div>
       </div>
       <div class="calendar-nav">
         <button id="cal-prev">&larr;</button>
@@ -1309,7 +1328,9 @@
         if (!d.fecha_ejecucion) return;
         const execDate = new Date(d.fecha_ejecucion + 'T00:00:00');
         let type;
-        if (execDate.getTime() === todayDate.getTime()) {
+        if (d.tipo_viral === 'forecast') {
+          type = 'forecast'; // amarillo
+        } else if (execDate.getTime() === todayDate.getTime()) {
           type = 'exec'; // hoy — coral
         } else if (execDate > todayDate) {
           type = 'future'; // futuro — verde
@@ -1396,10 +1417,17 @@
       const execDate = new Date(deal.fecha_ejecucion + 'T00:00:00');
       const isFuture = execDate > todayDate;
       const isToday = execDate.getTime() === todayDate.getTime();
+      const isForecast = deal.tipo_viral === 'forecast';
 
       let bodyHtml = '';
 
-      if (isToday) {
+      if (isForecast) {
+        // FORECAST viral
+        bodyHtml = `
+          <div class="cal-forecast-badge">Forecast</div>
+          <div style="margin-top:12px;color:var(--gray-text);font-size:13px;">Este viral esta en etapa de forecast. Aun no tiene datos de planeacion confirmados.</div>
+        `;
+      } else if (isToday) {
         // LIVE viral — same as future + live badge
         const skuRows = skuDetail.map(s => `
           <tr>
