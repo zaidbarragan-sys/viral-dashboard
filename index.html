@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viral Dashboard — Rappi MX Turbo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --coral: #FF441F;
+      --dark: #1C1C1E;
+      --green: #00B140;
+      --red: #E53935;
+      --gray-text: #636366;
+      --gray-border: #E5E5EA;
+      --light-bg: #F5F5F7;
+      --white: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--light-bg);
+      color: var(--dark);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-border);
+      padding: 16px 32px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .header h1 span {
+      color: var(--coral);
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 4px;
+    }
+
+    .tab {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray-text);
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+      background: none;
+    }
+
+    .tab:hover {
+      background: var(--light-bg);
+      color: var(--dark);
+    }
+
+    .tab.active {
+      background: var(--coral);
+      color: var(--white);
+    }
+
+    /* Main */
+    .main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px 32px;
+      width: 100%;
+      flex: 1;
+    }
+
+    .section { display: none; }
+    .section.active { display: block; }
+
+    /* Cards */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .kpi-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 20px;
+      border-top: 4px solid var(--coral);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .kpi-card .label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--gray-text);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .kpi-card .value {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .kpi-card .delta {
+      font-size: 12px;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    /* Filter chips */
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      border: 1px solid var(--gray-border);
+      background: var(--white);
+      color: var(--gray-text);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .chip:hover { border-color: var(--coral); color: var(--coral); }
+    .chip.active { background: var(--coral); color: var(--white); border-color: var(--coral); }
+
+    /* Tables */
+    .table-wrapper {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    thead th {
+      background: var(--coral);
+      color: var(--white);
+      padding: 12px 14px;
+      text-align: left;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    tbody tr { border-bottom: 1px solid var(--gray-border); }
+    tbody tr:nth-child(even) { background: #FAFAFA; }
+    tbody tr:nth-child(odd) { background: var(--white); }
+    tbody tr:hover { background: #FFF5F3; }
+    tbody tr.clickable { cursor: pointer; }
+
+    tbody td {
+      padding: 10px 14px;
+      white-space: nowrap;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .badge-coral { background: #FFEBE7; color: var(--coral); }
+    .badge-green { background: #E6F9ED; color: var(--green); }
+    .badge-gray { background: var(--light-bg); color: var(--gray-text); }
+
+    /* Section titles */
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--dark);
+    }
+
+    .sub-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 20px 0 12px;
+      color: var(--dark);
+    }
+
+    /* Detail header */
+    .detail-header {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px;
+      border-top: 4px solid var(--coral);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+
+    .detail-header h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .detail-header .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      color: var(--gray-text);
+      font-size: 13px;
+    }
+
+    /* Mini cards row */
+    .mini-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .mini-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 16px;
+      border-top: 3px solid var(--coral);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .mini-card .label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--gray-text);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .mini-card .value {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    /* Segmentation bars */
+    .seg-bar-container {
+      margin-bottom: 12px;
+    }
+
+    .seg-bar-label {
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      color: var(--dark);
+    }
+
+    .seg-bar {
+      display: flex;
+      height: 24px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--light-bg);
+    }
+
+    .seg-bar .seg-nuevo { background: var(--coral); }
+    .seg-bar .seg-reactivado { background: #FFA726; }
+    .seg-bar .seg-retenido { background: #42A5F5; }
+
+    .seg-bar span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--white);
+      min-width: 0;
+    }
+
+    .seg-legend {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+      font-size: 12px;
+    }
+
+    .seg-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .seg-legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+    }
+
+    /* Hierarchy */
+    .hierarchy {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      font-size: 13px;
+    }
+
+    .hierarchy .level {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--gray-border);
+    }
+
+    .hierarchy .level:last-child { border-bottom: none; }
+    .hierarchy .level-label { font-weight: 600; color: var(--gray-text); }
+    .hierarchy .level-value { font-weight: 700; }
+
+    /* Comparador */
+    .comparador-selectors {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .comparador-selectors select {
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--gray-border);
+      font-family: inherit;
+      font-size: 13px;
+      background: var(--white);
+      min-width: 250px;
+    }
+
+    /* Charts */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 24px;
+    }
+
+    .chart-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px;
+      border-top: 4px solid var(--coral);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .chart-card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    /* Back button */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--gray-border);
+      background: var(--white);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: all 0.2s;
+    }
+
+    .back-btn:hover {
+      border-color: var(--coral);
+      color: var(--coral);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px 32px;
+      font-size: 11px;
+      color: var(--gray-text);
+      border-top: 1px solid var(--gray-border);
+      background: var(--white);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header { padding: 12px 16px; }
+      .main { padding: 16px; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .tabs { flex-wrap: wrap; }
+      .chart-grid { grid-template-columns: 1fr; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <h1><span>Viral Dashboard</span> — Rappi MX Turbo</h1>
+      <nav class="tabs">
+        <button class="tab active" data-tab="indice">Indice de Virales</button>
+        <button class="tab" data-tab="detalle">Detalle por Deal</button>
+        <button class="tab" data-tab="comparador">Comparador</button>
+        <button class="tab" data-tab="tendencias">Tendencias</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- INDICE -->
+    <div id="indice" class="section active">
+      <div class="kpi-grid" id="indice-kpis"></div>
+      <div class="filter-bar" id="indice-filters"></div>
+      <div class="table-wrapper">
+        <table id="indice-table">
+          <thead>
+            <tr>
+              <th>Deal ID</th>
+              <th>Maker</th>
+              <th>BU</th>
+              <th>Descuento</th>
+              <th>Tipo</th>
+              <th>Ciudades</th>
+              <th>Fecha Ejecucion</th>
+              <th>Budget Total MXN</th>
+              <th>GMV Real</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- DETALLE -->
+    <div id="detalle" class="section">
+      <button class="back-btn" onclick="navigateTo('indice')">&#8592; Volver al Indice</button>
+      <div id="detalle-content"></div>
+    </div>
+
+    <!-- COMPARADOR -->
+    <div id="comparador" class="section">
+      <h2 class="section-title">Comparador de Deals</h2>
+      <div class="comparador-selectors">
+        <select id="comp-select-a"><option value="">Seleccionar Deal A</option></select>
+        <select id="comp-select-b"><option value="">Seleccionar Deal B</option></select>
+      </div>
+      <div class="table-wrapper" id="comp-table-wrapper" style="display:none;">
+        <table id="comp-table">
+          <thead><tr><th>Metrica</th><th id="comp-header-a">Deal A</th><th id="comp-header-b">Deal B</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TENDENCIAS -->
+    <div id="tendencias" class="section">
+      <h2 class="section-title">Tendencias</h2>
+      <div class="chart-grid">
+        <div class="chart-card"><h3>GMV Activacion</h3><canvas id="chart-gmv"></canvas></div>
+        <div class="chart-card"><h3>Share Deal/Cat %</h3><canvas id="chart-share"></canvas></div>
+        <div class="chart-card"><h3>Sell-up %</h3><canvas id="chart-sellup"></canvas></div>
+        <div class="chart-card"><h3>Canibalizacion Ordenes &Delta;%</h3><canvas id="chart-canib"></canvas></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    Rappi MX &middot; Turbo — Commercial Planning &amp; Strategy &middot; Confidencial
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    // ============================================================
+    // HELPERS
+    // ============================================================
+    const fmtMXN = v => `$${v.toLocaleString('en-US', {maximumFractionDigits: 0})}`;
+    const fmtUSD = v => `$${v.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    const fmtPct = v => v >= 0 ? `+${v.toFixed(1)}%` : `${v.toFixed(1)}%`;
+    const fmtDelta = v => { if (v === null || v === undefined) return '\u2014'; return v >= 0 ? `+${v.toFixed(1)}%` : `${v.toFixed(1)}%`; };
+    const deltaColor = v => v > 0 ? '#00B140' : v < 0 ? '#E53935' : '#636366';
+    const fmtNum = v => v.toLocaleString('en-US');
+
+    function getDeal(id) { return PREVIRAL_DEALS.find(d => d.deal_id === id); }
+    function getPost(id) { return POSTMORTEM_DEALS.find(d => d.deal_id === id); }
+    function getSkuDetail(id) { return PREVIRAL_SKU_DETAIL.filter(d => d.deal_id === id); }
+    function getSkuPerf(id) { return POSTMORTEM_SKU_PERFORMANCE.filter(d => d.deal_id === id); }
+    function getSellupCats(id) { return POSTMORTEM_SELLUP_CATS.filter(d => d.deal_id === id); }
+    function getCrossBasket(id) { return POSTMORTEM_CROSSBASKET.filter(d => d.deal_id === id); }
+
+    // ============================================================
+    // NAVIGATION
+    // ============================================================
+    let currentDealId = null;
+    let currentFilter = 'All';
+
+    function navigateTo(tab, dealId) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(tab).classList.add('active');
+      document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
+      window.location.hash = tab;
+
+      if (tab === 'detalle' && dealId) {
+        currentDealId = dealId;
+        renderDetalle(dealId);
+      }
+      if (tab === 'comparador') renderComparador();
+      if (tab === 'tendencias') renderTendencias();
+    }
+
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => navigateTo(tab.dataset.tab));
+    });
+
+    // Hash routing
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '') || 'indice';
+      if (['indice', 'detalle', 'comparador', 'tendencias'].includes(hash)) {
+        navigateTo(hash);
+      }
+    });
+
+    // ============================================================
+    // INDICE
+    // ============================================================
+    function renderIndice() {
+      // KPIs
+      const totalVirales = PREVIRAL_DEALS.length;
+      const totalGMV = POSTMORTEM_DEALS.reduce((s, d) => s + d.gmv_activacion, 0);
+      const avgSellup = POSTMORTEM_DEALS.length > 0
+        ? POSTMORTEM_DEALS.reduce((s, d) => s + d.pct_sellup, 0) / POSTMORTEM_DEALS.length
+        : 0;
+      const withPost = POSTMORTEM_DEALS.length;
+
+      document.getElementById('indice-kpis').innerHTML = `
+        <div class="kpi-card"><div class="label">Total Virales</div><div class="value">${totalVirales}</div></div>
+        <div class="kpi-card"><div class="label">Total GMV</div><div class="value">${fmtMXN(totalGMV)}</div></div>
+        <div class="kpi-card"><div class="label">Promedio Sell-up %</div><div class="value">${avgSellup.toFixed(1)}%</div></div>
+        <div class="kpi-card"><div class="label">Virales con Postmortem</div><div class="value">${withPost}</div></div>
+      `;
+
+      // Filters
+      const bus = ['All', ...new Set(PREVIRAL_DEALS.map(d => d.business_unit))];
+      document.getElementById('indice-filters').innerHTML = bus.map(b =>
+        `<button class="chip ${b === currentFilter ? 'active' : ''}" data-bu="${b}">${b}</button>`
+      ).join('');
+
+      document.querySelectorAll('#indice-filters .chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          currentFilter = chip.dataset.bu;
+          renderIndice();
+        });
+      });
+
+      // Table
+      const filtered = currentFilter === 'All'
+        ? PREVIRAL_DEALS
+        : PREVIRAL_DEALS.filter(d => d.business_unit === currentFilter);
+
+      const tbody = document.querySelector('#indice-table tbody');
+      tbody.innerHTML = filtered.map(d => {
+        const post = getPost(d.deal_id);
+        const gmvReal = post ? fmtMXN(post.gmv_activacion) : 'Pendiente';
+        const status = post
+          ? '<span class="badge badge-green">Postmortem</span>'
+          : '<span class="badge badge-gray">Pendiente</span>';
+        return `<tr class="clickable" data-deal="${d.deal_id}">
+          <td>${d.deal_id}</td>
+          <td>${d.maker_name}</td>
+          <td>${d.business_unit}</td>
+          <td>${d.descuento_pct}%</td>
+          <td>${d.tipo_viral}</td>
+          <td>${d.ciudades}</td>
+          <td>${d.fecha_ejecucion}</td>
+          <td>${fmtMXN(d.budget_total_mxn)}</td>
+          <td>${gmvReal}</td>
+          <td>${status}</td>
+        </tr>`;
+      }).join('');
+
+      tbody.querySelectorAll('tr.clickable').forEach(row => {
+        row.addEventListener('click', () => navigateTo('detalle', row.dataset.deal));
+      });
+    }
+
+    // ============================================================
+    // DETALLE
+    // ============================================================
+    function renderDetalle(dealId) {
+      const deal = getDeal(dealId);
+      if (!deal) return;
+
+      const post = getPost(dealId);
+      const skuDetail = getSkuDetail(dealId);
+      const skuPerf = getSkuPerf(dealId);
+      const sellupCats = getSellupCats(dealId);
+      const crossBasket = getCrossBasket(dealId);
+
+      let html = '';
+
+      // Header
+      html += `<div class="detail-header">
+        <h2>${deal.deal_id}</h2>
+        <div class="meta">
+          <span><strong>${deal.maker_name}</strong></span>
+          <span>${deal.fecha_ejecucion}</span>
+          <span class="badge badge-coral">${deal.descuento_pct}% OFF</span>
+          <span class="badge badge-gray">${deal.tipo_viral}</span>
+          <span>${deal.ciudades}</span>
+          <span>${deal.categoria_display}</span>
+        </div>
+      </div>`;
+
+      // PRE-VIRAL
+      html += `<h3 class="section-title">Pre-Viral</h3>`;
+
+      // Assumptions
+      html += `<div class="sub-title">Supuestos</div>`;
+      html += `<div class="table-wrapper"><table>
+        <tbody>
+          <tr><td><strong>Business Unit</strong></td><td>${deal.business_unit}</td></tr>
+          <tr><td><strong>Descuento</strong></td><td>${deal.descuento_pct}%</td></tr>
+          <tr><td><strong>Incrementalidad</strong></td><td>${deal.incrementalidad}x</td></tr>
+          <tr><td><strong>Tipo Viral</strong></td><td>${deal.tipo_viral}</td></tr>
+          <tr><td><strong>Ciudades</strong></td><td>${deal.ciudades}</td></tr>
+          <tr><td><strong>Tasa USD/MXN</strong></td><td>${deal.usd_mxn}</td></tr>
+          <tr><td><strong>Financiamiento</strong></td><td>${deal.financiamiento_maker}</td></tr>
+          <tr><td><strong>% Growth vs Maker</strong></td><td>${deal.pct_growth_vs_maker}%</td></tr>
+        </tbody>
+      </table></div>`;
+
+      // SKU Demand
+      html += `<div class="sub-title">Demanda por SKU</div>`;
+      html += `<div class="table-wrapper"><table>
+        <thead><tr><th>#</th><th>SKU</th><th>Subcategoria</th><th>H. Units</th><th>H. Orders</th><th>Avg Price</th><th>Ex. Incr Units</th><th>Ex. Incr Orders</th><th>Ex. Budget MXN</th><th>Real Units</th><th>Final Budget MXN</th></tr></thead>
+        <tbody>${skuDetail.map(s => `<tr>
+          <td>${s.sku_order}</td>
+          <td>${s.name}</td>
+          <td>${s.subcategoria}</td>
+          <td>${s.h_units}</td>
+          <td>${s.h_orders}</td>
+          <td>${fmtMXN(s.avg_price)}</td>
+          <td>${fmtNum(s.ex_incr_units)}</td>
+          <td>${fmtNum(s.ex_incr_orders)}</td>
+          <td>${fmtMXN(s.ex_budget_mxn)}</td>
+          <td>${fmtNum(s.real_units)}</td>
+          <td>${fmtMXN(s.final_budget_mxn)}</td>
+        </tr>`).join('')}</tbody>
+      </table></div>`;
+
+      // Financial summary
+      html += `<div class="sub-title">Resumen Financiero</div>`;
+      html += `<div class="table-wrapper"><table>
+        <thead><tr><th>Concepto</th><th>MXN</th><th>USD</th></tr></thead>
+        <tbody>
+          <tr><td>Budget Growth</td><td>${fmtMXN(deal.budget_growth_mxn)}</td><td>${fmtUSD(deal.budget_growth_usd)}</td></tr>
+          <tr><td>Budget Maker</td><td>${fmtMXN(deal.budget_maker_mxn)}</td><td>${fmtUSD(deal.budget_maker_usd)}</td></tr>
+          <tr><td><strong>Budget Total</strong></td><td><strong>${fmtMXN(deal.budget_total_mxn)}</strong></td><td><strong>${fmtUSD(deal.budget_total_usd)}</strong></td></tr>
+        </tbody>
+      </table></div>`;
+
+      // POSTMORTEM
+      if (post) {
+        html += `<h3 class="section-title" style="margin-top:32px;">Postmortem</h3>`;
+
+        // KPI cards
+        html += `<div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="label">GMV Activacion</div>
+            <div class="value">${fmtMXN(post.gmv_activacion)}</div>
+            <div class="delta" style="color:${deltaColor(post.gmv_dlw_pct)}">vs LW: ${fmtDelta(post.gmv_dlw_pct)}</div>
+            <div class="delta" style="color:${deltaColor(post.gmv_dl4w_pct)}">vs L4W: ${fmtDelta(post.gmv_dl4w_pct)}</div>
+          </div>
+          <div class="kpi-card">
+            <div class="label">Usuarios Unicos</div>
+            <div class="value">${fmtNum(post.usuarios_unicos)}</div>
+            <div class="delta" style="color:${deltaColor(post.usr_dlw_pct)}">vs LW: ${fmtDelta(post.usr_dlw_pct)}</div>
+            <div class="delta" style="color:${deltaColor(post.usr_dl4w_pct)}">vs L4W: ${fmtDelta(post.usr_dl4w_pct)}</div>
+          </div>
+          <div class="kpi-card">
+            <div class="label">CR %</div>
+            <div class="value">${post.cr_pct}%</div>
+          </div>
+          <div class="kpi-card">
+            <div class="label">AOV</div>
+            <div class="value">${fmtMXN(post.aov)}</div>
+            <div class="delta" style="color:${deltaColor(post.aov_dlw_pct)}">vs LW: ${fmtDelta(post.aov_dlw_pct)}</div>
+            <div class="delta" style="color:${deltaColor(post.aov_dl4w_pct)}">vs L4W: ${fmtDelta(post.aov_dl4w_pct)}</div>
+          </div>
+        </div>`;
+
+        // Comparativo table
+        html += `<div class="sub-title">Comparativo</div>`;
+        html += `<div class="table-wrapper"><table>
+          <thead><tr><th>Metrica</th><th>Viral</th><th>LW</th><th>&Delta; vs LW</th><th>L4W</th><th>&Delta; vs L4W</th></tr></thead>
+          <tbody>
+            <tr><td>Unidades</td><td>${fmtNum(post.unidades_total)}</td><td>${fmtNum(post.und_lw)}</td><td style="color:${deltaColor(post.und_dlw_pct)}">${fmtDelta(post.und_dlw_pct)}</td><td>${fmtNum(post.und_l4w)}</td><td style="color:${deltaColor(post.und_dl4w_pct)}">${fmtDelta(post.und_dl4w_pct)}</td></tr>
+            <tr><td>Ordenes</td><td>${fmtNum(post.ordenes_total)}</td><td>${fmtNum(post.ord_lw)}</td><td style="color:${deltaColor(post.ord_dlw_pct)}">${fmtDelta(post.ord_dlw_pct)}</td><td>${fmtNum(post.ord_l4w)}</td><td style="color:${deltaColor(post.ord_dl4w_pct)}">${fmtDelta(post.ord_dl4w_pct)}</td></tr>
+            <tr><td>Usuarios</td><td>${fmtNum(post.usuarios_unicos)}</td><td>${fmtNum(post.usr_lw)}</td><td style="color:${deltaColor(post.usr_dlw_pct)}">${fmtDelta(post.usr_dlw_pct)}</td><td>${fmtNum(post.usr_l4w)}</td><td style="color:${deltaColor(post.usr_dl4w_pct)}">${fmtDelta(post.usr_dl4w_pct)}</td></tr>
+            <tr><td>GMV</td><td>${fmtMXN(post.gmv_activacion)}</td><td>${fmtMXN(post.gmv_lw)}</td><td style="color:${deltaColor(post.gmv_dlw_pct)}">${fmtDelta(post.gmv_dlw_pct)}</td><td>${fmtMXN(post.gmv_l4w)}</td><td style="color:${deltaColor(post.gmv_dl4w_pct)}">${fmtDelta(post.gmv_dl4w_pct)}</td></tr>
+            <tr><td>AOV</td><td>${fmtMXN(post.aov)}</td><td>${fmtMXN(post.aov_lw)}</td><td style="color:${deltaColor(post.aov_dlw_pct)}">${fmtDelta(post.aov_dlw_pct)}</td><td>${fmtMXN(post.aov_l4w)}</td><td style="color:${deltaColor(post.aov_dl4w_pct)}">${fmtDelta(post.aov_dl4w_pct)}</td></tr>
+            <tr><td>Impresiones</td><td>${fmtNum(post.impresiones_total)}</td><td colspan="4"></td></tr>
+            <tr><td>CR %</td><td>${post.cr_pct}%</td><td colspan="4"></td></tr>
+            <tr><td>GMV Categoria</td><td>${fmtMXN(post.gmv_categoria)}</td><td>${fmtMXN(post.gmv_cat_lw)}</td><td></td><td>${fmtMXN(post.gmv_cat_l4w)}</td><td></td></tr>
+            <tr><td>Share Deal/Cat</td><td>${post.share_deal_cat_pct}%</td><td>${post.share_lw_pct}%</td><td></td><td>${post.share_l4w_pct}%</td><td></td></tr>
+          </tbody>
+        </table></div>`;
+
+        // Hierarchy
+        html += `<div class="sub-title">Jerarquia de Mercado</div>`;
+        html += `<div class="hierarchy">
+          <div class="level"><span class="level-label">SO Turbo MX:</span> <span class="level-value">${fmtMXN(post.so_turbo_mx)}</span></div>
+          <div class="level"><span class="level-label">GMV Categoria:</span> <span class="level-value">${fmtMXN(post.gmv_categoria)}</span> (${((post.gmv_categoria / post.so_turbo_mx) * 100).toFixed(2)}% del SO)</div>
+          <div class="level"><span class="level-label">GMV Deal:</span> <span class="level-value">${fmtMXN(post.gmv_activacion)}</span> (${post.share_deal_cat_pct}% de la categoria)</div>
+        </div>`;
+
+        // SKU Performance
+        if (skuPerf.length > 0) {
+          html += `<div class="sub-title">Performance por SKU</div>`;
+          html += `<div class="table-wrapper"><table>
+            <thead><tr><th>SKU</th><th>Ordenes</th><th>Usuarios</th><th>Unidades</th><th>GMV</th><th>AOV</th><th>Impresiones</th><th>CR %</th><th>&Delta; GMV vs LW</th><th>&Delta; GMV vs L4W</th></tr></thead>
+            <tbody>${skuPerf.map(s => `<tr>
+              <td>${s.name}</td>
+              <td>${fmtNum(s.ordenes)}</td>
+              <td>${fmtNum(s.usuarios)}</td>
+              <td>${fmtNum(s.unidades)}</td>
+              <td>${fmtMXN(s.gmv)}</td>
+              <td>${fmtMXN(s.aov)}</td>
+              <td>${fmtNum(s.impresiones)}</td>
+              <td>${s.cr_pct}%</td>
+              <td style="color:${deltaColor(s.gmv_dlw_pct)}">${fmtDelta(s.gmv_dlw_pct)}</td>
+              <td style="color:${deltaColor(s.gmv_dl4w_pct)}">${fmtDelta(s.gmv_dl4w_pct)}</td>
+            </tr>`).join('')}</tbody>
+          </table></div>`;
+
+          // Segmentation
+          html += `<div class="sub-title">Segmentacion de Usuarios por SKU</div>`;
+          html += `<div class="seg-legend">
+            <div class="seg-legend-item"><div class="seg-legend-dot" style="background:var(--coral)"></div>Nuevo</div>
+            <div class="seg-legend-item"><div class="seg-legend-dot" style="background:#FFA726"></div>Reactivado</div>
+            <div class="seg-legend-item"><div class="seg-legend-dot" style="background:#42A5F5"></div>Retenido</div>
+          </div>`;
+          skuPerf.forEach(s => {
+            html += `<div class="seg-bar-container">
+              <div class="seg-bar-label">${s.name}</div>
+              <div class="seg-bar">
+                ${s.seg_nuevo_pct > 0 ? `<span class="seg-nuevo" style="width:${s.seg_nuevo_pct}%">${s.seg_nuevo_pct}%</span>` : ''}
+                ${s.seg_reactivado_pct > 0 ? `<span class="seg-reactivado" style="width:${s.seg_reactivado_pct}%">${s.seg_reactivado_pct}%</span>` : ''}
+                ${s.seg_retenido_pct > 0 ? `<span class="seg-retenido" style="width:${s.seg_retenido_pct}%">${s.seg_retenido_pct}%</span>` : ''}
+              </div>
+            </div>`;
+          });
+
+          // Sell-Up
+          html += `<div class="sub-title" style="margin-top:24px;">Sell-Up</div>`;
+          html += `<div class="mini-cards">
+            <div class="mini-card"><div class="label">GMV Basket</div><div class="value">${fmtMXN(post.gmv_basket)}</div></div>
+            <div class="mini-card"><div class="label">GMV Sell-up</div><div class="value">${fmtMXN(post.gmv_sellup)}</div></div>
+            <div class="mini-card"><div class="label">% Sell-up</div><div class="value">${post.pct_sellup.toFixed(1)}%</div></div>
+          </div>`;
+
+          if (sellupCats.length > 0) {
+            html += `<div class="table-wrapper"><table>
+              <thead><tr><th>#</th><th>Subcategoria</th><th>Ordenes</th><th>GMV</th><th>% Sell-up</th></tr></thead>
+              <tbody>${sellupCats.map(c => `<tr>
+                <td>${c.order}</td>
+                <td>${c.subcategoria}</td>
+                <td>${fmtNum(c.ordenes)}</td>
+                <td>${fmtMXN(c.gmv)}</td>
+                <td>${c.pct_sellup.toFixed(2)}%</td>
+              </tr>`).join('')}</tbody>
+            </table></div>`;
+          }
+
+          // Cross-Basket
+          html += `<div class="sub-title">Cross-Basket</div>`;
+          html += `<div class="mini-cards">
+            <div class="mini-card"><div class="label">Ordenes</div><div class="value">${fmtNum(post.cross_ordenes)}</div></div>
+            <div class="mini-card"><div class="label">SKUs Distintos</div><div class="value">${fmtNum(post.cross_skus_distintos)}</div></div>
+            <div class="mini-card"><div class="label">Top Producto</div><div class="value" style="font-size:14px;">${post.cross_top_producto}</div></div>
+          </div>`;
+
+          if (crossBasket.length > 0) {
+            html += `<div class="table-wrapper"><table>
+              <thead><tr><th>#</th><th>Producto</th><th>Subcategoria</th><th>Ordenes</th><th>% del Deal</th></tr></thead>
+              <tbody>${crossBasket.map(c => `<tr>
+                <td>${c.order}</td>
+                <td>${c.name}</td>
+                <td>${c.subcategoria}</td>
+                <td>${fmtNum(c.ordenes)}</td>
+                <td>${c.pct_deal.toFixed(2)}%</td>
+              </tr>`).join('')}</tbody>
+            </table></div>`;
+          }
+
+          // Inventario
+          html += `<div class="sub-title">Inventario</div>`;
+          html += `<div class="mini-cards">
+            <div class="mini-card"><div class="label">OOS Cierre (avg)</div><div class="value">${post.inv_oos_cierre_viral_avg.toFixed(1)}%</div></div>
+            <div class="mini-card"><div class="label">Coverage AP&rarr;CI (avg)</div><div class="value">${post.inv_cov_viral_ap_avg.toFixed(1)}%</div></div>
+            <div class="mini-card"><div class="label">Coverage Post (avg)</div><div class="value">${post.inv_cov_post_avg.toFixed(1)}%</div></div>
+          </div>`;
+
+          html += `<div class="table-wrapper"><table>
+            <thead><tr><th>SKU</th><th>Stock Viral</th><th>Stock Post</th><th>Stock Bench</th><th>&Delta;%</th><th>OOS Cierre</th><th>OOS Post</th><th>Cov AP</th><th>Cov CI</th><th>Cov Post</th></tr></thead>
+            <tbody>${skuPerf.map(s => `<tr>
+              <td>${s.name}</td>
+              <td>${fmtNum(s.stock_viral)}</td>
+              <td>${fmtNum(s.stock_post)}</td>
+              <td>${fmtNum(s.stock_bench)}</td>
+              <td style="color:${deltaColor(s.stock_delta_pct)}">${fmtDelta(s.stock_delta_pct)}</td>
+              <td>${s.oos_cierre_viral}%</td>
+              <td>${s.oos_post}%</td>
+              <td>${s.cov_viral_ap}%</td>
+              <td>${s.cov_viral_ci}%</td>
+              <td>${s.cov_post}%</td>
+            </tr>`).join('')}</tbody>
+          </table></div>`;
+
+          // Canibalizacion
+          html += `<div class="sub-title">Canibalizacion</div>`;
+          html += `<div class="mini-cards">
+            <div class="mini-card"><div class="label">Ordenes Post vs Bench</div><div class="value" style="color:${deltaColor(post.canib_ord_delta_pct)}">${fmtDelta(post.canib_ord_delta_pct)}</div></div>
+            <div class="mini-card"><div class="label">Unidades &Delta;</div><div class="value" style="color:${deltaColor(post.canib_und_delta_pct)}">${fmtDelta(post.canib_und_delta_pct)}</div></div>
+            <div class="mini-card"><div class="label">Clientes &Delta;</div><div class="value" style="color:${deltaColor(post.canib_cli_delta_pct)}">${fmtDelta(post.canib_cli_delta_pct)}</div></div>
+          </div>`;
+
+          html += `<div class="table-wrapper"><table>
+            <thead><tr><th>SKU</th><th>Ord Post</th><th>Ord Bench</th><th>&Delta; Ord %</th><th>Und Post</th><th>Und Bench</th><th>&Delta; Und %</th><th>Cli Post</th><th>Cli Bench</th><th>&Delta; Cli %</th></tr></thead>
+            <tbody>${skuPerf.map(s => `<tr>
+              <td>${s.name}</td>
+              <td>${fmtNum(s.canib_ord_post)}</td>
+              <td>${fmtNum(s.canib_ord_bench)}</td>
+              <td style="color:${deltaColor(s.canib_ord_delta_pct)}">${fmtDelta(s.canib_ord_delta_pct)}</td>
+              <td>${fmtNum(s.canib_und_post)}</td>
+              <td>${fmtNum(s.canib_und_bench)}</td>
+              <td style="color:${deltaColor(s.canib_und_delta_pct)}">${fmtDelta(s.canib_und_delta_pct)}</td>
+              <td>${fmtNum(s.canib_cli_post)}</td>
+              <td>${fmtNum(s.canib_cli_bench)}</td>
+              <td style="color:${deltaColor(s.canib_cli_delta_pct)}">${fmtDelta(s.canib_cli_delta_pct)}</td>
+            </tr>`).join('')}</tbody>
+          </table></div>`;
+        }
+      } else {
+        html += `<div style="margin-top:32px;padding:24px;background:var(--white);border-radius:12px;text-align:center;color:var(--gray-text);">
+          Postmortem no disponible para este deal.
+        </div>`;
+      }
+
+      document.getElementById('detalle-content').innerHTML = html;
+    }
+
+    // ============================================================
+    // COMPARADOR
+    // ============================================================
+    function renderComparador() {
+      const selA = document.getElementById('comp-select-a');
+      const selB = document.getElementById('comp-select-b');
+
+      // Populate selects
+      const postDeals = POSTMORTEM_DEALS.map(p => {
+        const deal = getDeal(p.deal_id);
+        return { id: p.deal_id, label: `${deal ? deal.maker_name : p.deal_id} (${deal ? deal.fecha_ejecucion : ''})` };
+      });
+
+      [selA, selB].forEach(sel => {
+        const currentVal = sel.value;
+        sel.innerHTML = '<option value="">Seleccionar Deal</option>' +
+          postDeals.map(d => `<option value="${d.id}">${d.label}</option>`).join('');
+        sel.value = currentVal;
+      });
+
+      const updateComparison = () => {
+        const a = getPost(selA.value);
+        const b = getPost(selB.value);
+        const wrapper = document.getElementById('comp-table-wrapper');
+
+        if (!a || !b) { wrapper.style.display = 'none'; return; }
+        wrapper.style.display = 'block';
+
+        const dealA = getDeal(a.deal_id);
+        const dealB = getDeal(b.deal_id);
+        document.getElementById('comp-header-a').textContent = dealA ? dealA.maker_name : a.deal_id;
+        document.getElementById('comp-header-b').textContent = dealB ? dealB.maker_name : b.deal_id;
+
+        const metrics = [
+          { label: 'GMV', a: fmtMXN(a.gmv_activacion), b: fmtMXN(b.gmv_activacion), numA: a.gmv_activacion, numB: b.gmv_activacion },
+          { label: 'Ordenes', a: fmtNum(a.ordenes_total), b: fmtNum(b.ordenes_total), numA: a.ordenes_total, numB: b.ordenes_total },
+          { label: 'Usuarios', a: fmtNum(a.usuarios_unicos), b: fmtNum(b.usuarios_unicos), numA: a.usuarios_unicos, numB: b.usuarios_unicos },
+          { label: 'AOV', a: fmtMXN(a.aov), b: fmtMXN(b.aov), numA: a.aov, numB: b.aov },
+          { label: 'CR %', a: `${a.cr_pct}%`, b: `${b.cr_pct}%`, numA: a.cr_pct, numB: b.cr_pct },
+          { label: 'Share Deal/Cat %', a: `${a.share_deal_cat_pct}%`, b: `${b.share_deal_cat_pct}%`, numA: a.share_deal_cat_pct, numB: b.share_deal_cat_pct },
+          { label: 'Sell-up %', a: `${a.pct_sellup.toFixed(1)}%`, b: `${b.pct_sellup.toFixed(1)}%`, numA: a.pct_sellup, numB: b.pct_sellup },
+          { label: 'Canib. Ordenes &Delta;', a: fmtDelta(a.canib_ord_delta_pct), b: fmtDelta(b.canib_ord_delta_pct), numA: a.canib_ord_delta_pct, numB: b.canib_ord_delta_pct },
+        ];
+
+        document.querySelector('#comp-table tbody').innerHTML = metrics.map(m => {
+          const diffA = m.numA - m.numB;
+          const diffB = m.numB - m.numA;
+          return `<tr>
+            <td><strong>${m.label}</strong></td>
+            <td style="color:${deltaColor(diffA)}">${m.a}</td>
+            <td style="color:${deltaColor(diffB)}">${m.b}</td>
+          </tr>`;
+        }).join('');
+      };
+
+      selA.onchange = updateComparison;
+      selB.onchange = updateComparison;
+      updateComparison();
+    }
+
+    // ============================================================
+    // TENDENCIAS
+    // ============================================================
+    let charts = {};
+
+    function renderTendencias() {
+      // Sort by fecha_ejecucion
+      const sorted = [...POSTMORTEM_DEALS]
+        .map(p => ({ ...p, deal: getDeal(p.deal_id) }))
+        .filter(p => p.deal)
+        .sort((a, b) => a.deal.fecha_ejecucion.localeCompare(b.deal.fecha_ejecucion));
+
+      const labels = sorted.map(p => `${p.deal.maker_aux} (${p.deal.fecha_ejecucion})`);
+
+      const chartConfig = (canvasId, data, label) => {
+        if (charts[canvasId]) charts[canvasId].destroy();
+        const ctx = document.getElementById(canvasId).getContext('2d');
+        charts[canvasId] = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [{
+              label,
+              data,
+              borderColor: '#FF441F',
+              backgroundColor: 'rgba(255, 68, 31, 0.1)',
+              borderWidth: 2,
+              pointBackgroundColor: '#FF441F',
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              tension: 0.3,
+              fill: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { display: false }
+            },
+            scales: {
+              x: { grid: { display: false } },
+              y: { beginAtZero: true }
+            }
+          }
+        });
+      };
+
+      chartConfig('chart-gmv', sorted.map(p => p.gmv_activacion), 'GMV');
+      chartConfig('chart-share', sorted.map(p => p.share_deal_cat_pct), 'Share %');
+      chartConfig('chart-sellup', sorted.map(p => p.pct_sellup), 'Sell-up %');
+      chartConfig('chart-canib', sorted.map(p => p.canib_ord_delta_pct), 'Canib. Ord %');
+    }
+
+    // ============================================================
+    // INIT
+    // ============================================================
+    renderIndice();
+
+    // Handle initial hash
+    const initHash = window.location.hash.replace('#', '');
+    if (initHash && ['indice', 'detalle', 'comparador', 'tendencias'].includes(initHash)) {
+      navigateTo(initHash);
+    }
+  </script>
+</body>
+</html>
