@@ -95,6 +95,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_LALA_210526",
+    maker_name: "Grupo Lala",
+    maker_aux: "Lala",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 9,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-22",
+    fecha_ejecucion: "2026-05-21",
+    usd_mxn: 17.38,
+    fecha_tasa: "2026-05-05",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1726.12,
+    budget_growth_usd: 517.84,
+    budget_total_usd: 2243.96,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Leche natural"
   }
 ];
 
@@ -124,7 +147,10 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "13692", ean: "7501064196263", pid: "2115802220", name: "Pack Cerveza Clara Modelo", subcategoria: "Cervezas", h_units: 396.2, h_orders: 262.6, avg_price: 150.84, ex_incr_units: 3566, ex_incr_orders: 2363, ex_budget_mxn: 322737, ex_budget_usd: 18505.56, real_units: 593, final_budget_mxn: 53669, final_budget_usd: 3077.35, sku_order: 6 },
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "5314", ean: "7501064198175", pid: "2115802212", name: "Pack Cerveza Michelob Ultra", subcategoria: "Cervezas", h_units: 375.9, h_orders: 246.4, avg_price: 133.24, ex_incr_units: 3383, ex_incr_orders: 2218, ex_budget_mxn: 270451, ex_budget_usd: 15507.51, real_units: 637, final_budget_mxn: 50924, final_budget_usd: 2919.95, sku_order: 7 },
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8189", ean: "7501064191886", pid: "2113641850", name: "Modelo Especial Cerveza Laton", subcategoria: "Cervezas", h_units: 352.1, h_orders: 82.9, avg_price: 31.56, ex_incr_units: 3169, ex_incr_orders: 746, ex_budget_mxn: 60008, ex_budget_usd: 3440.83, real_units: 2519, final_budget_mxn: 47700, final_budget_usd: 2735.09, sku_order: 8 },
-  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "7857", ean: "7501064193859", pid: "2115837444", name: "Corona Extra Cerveza Laton 473", subcategoria: "Cervezas", h_units: 328.3, h_orders: 74.4, avg_price: 27.53, ex_incr_units: 2955, ex_incr_orders: 670, ex_budget_mxn: 48811, ex_budget_usd: 2798.80, real_units: 2693, final_budget_mxn: 44483, final_budget_usd: 2550.63, sku_order: 9 }
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "7857", ean: "7501064193859", pid: "2115837444", name: "Corona Extra Cerveza Laton 473", subcategoria: "Cervezas", h_units: 328.3, h_orders: 74.4, avg_price: 27.53, ex_incr_units: 2955, ex_incr_orders: 670, ex_budget_mxn: 48811, ex_budget_usd: 2798.80, real_units: 2693, final_budget_mxn: 44483, final_budget_usd: 2550.63, sku_order: 9 },
+  // Lala
+  { deal_id: "VIRAL_DEAL_LALA_210526", sync: "14588", ean: "7501020548495", pid: "2115448738", name: "Leche Past Lala 100 Prot Semi 1Lt", subcategoria: "Leche natural", h_units: 98.5, h_orders: 61.9, avg_price: 48.23, ex_incr_units: 887, ex_incr_orders: 557, ex_budget_mxn: 25658, ex_budget_usd: 1476.30, real_units: 1056, final_budget_mxn: 30550, final_budget_usd: 1757.77, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_LALA_210526", sync: "72152", ean: "7501020550955", pid: "2115575353", name: "Lala 100 Leche sin Lactosa Low Carb Light 1L", subcategoria: "Leche natural", h_units: 27.2, h_orders: 16.6, avg_price: 42.02, ex_incr_units: 245, ex_incr_orders: 149, ex_budget_mxn: 6177, ex_budget_usd: 355.41, real_units: 335, final_budget_mxn: 8446, final_budget_usd: 486.02, sku_order: 2 }
 ];
 
 const POSTMORTEM_DEALS = [
