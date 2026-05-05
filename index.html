@@ -680,6 +680,47 @@
       opacity: 0.85;
     }
 
+    .cal-live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: #FFEBE7;
+      color: var(--coral);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .cal-live-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--coral);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .cal-budget-compact {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--gray-text);
+      margin-bottom: 16px;
+      padding: 10px 14px;
+      background: var(--light-bg);
+      border-radius: 8px;
+    }
+
+    .cal-budget-compact strong {
+      color: var(--dark);
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .header { padding: 12px 16px; }
@@ -1233,7 +1274,7 @@
       document.getElementById('indice-kpis').innerHTML = `
         <div class="kpi-card"><div class="label">Virales en el mes</div><div class="value">${monthDeals.length}</div></div>
         <div class="kpi-card"><div class="label">GMV del mes</div><div class="value">${monthGMV > 0 ? fmtMXN(monthGMV) : '—'}</div></div>
-        <div class="kpi-card"><div class="label">Budget Maker</div><div class="value">${monthDeals.length > 0 ? fmtMXN(totalBudgetMaker) : '—'}</div></div>
+        <div class="kpi-card"><div class="label">Inversion Maker</div><div class="value">${monthDeals.length > 0 ? fmtMXN(totalBudgetMaker) : '—'}</div></div>
       `;
 
       // Build events map: only fecha_ejecucion, classified by time
@@ -1323,21 +1364,71 @@
       const deal = getDeal(dealId);
       if (!deal) return;
       const post = getPost(dealId);
+      const skuDetail = getSkuDetail(dealId);
       const container = document.getElementById('cal-expand-detail');
 
-      let kpisHtml = '';
-      if (post) {
-        kpisHtml = `
+      // Determine state
+      const todayDate = new Date();
+      todayDate.setHours(0, 0, 0, 0);
+      const execDate = new Date(deal.fecha_ejecucion + 'T00:00:00');
+      const isFuture = execDate > todayDate;
+      const isToday = execDate.getTime() === todayDate.getTime();
+
+      let bodyHtml = '';
+
+      if (isToday) {
+        // LIVE viral
+        bodyHtml = `
+          <div class="cal-live-badge"><span class="cal-live-dot"></span>Live Viral</div>
+          <div class="sub-title" style="margin-top:16px;">Budget</div>
           <div class="cal-expand-kpis">
-            <div class="cal-expand-kpi"><div class="label">GMV Activacion</div><div class="value">${fmtMXN(post.gmv_activacion)}</div></div>
-            <div class="cal-expand-kpi"><div class="label">Ordenes</div><div class="value">${fmtNum(post.ordenes_total)}</div></div>
-            <div class="cal-expand-kpi"><div class="label">Usuarios</div><div class="value">${fmtNum(post.usuarios_unicos)}</div></div>
-            <div class="cal-expand-kpi"><div class="label">Sell-up %</div><div class="value">${post.pct_sellup.toFixed(1)}%</div></div>
-            <div class="cal-expand-kpi"><div class="label">Share Cat %</div><div class="value">${post.share_deal_cat_pct.toFixed(1)}%</div></div>
-            <div class="cal-expand-kpi"><div class="label">AOV</div><div class="value">${fmtMXN(post.aov)}</div></div>
-          </div>`;
+            <div class="cal-expand-kpi"><div class="label">Budget Total</div><div class="value">${fmtMXN(deal.budget_total_mxn)}</div></div>
+            <div class="cal-expand-kpi"><div class="label">Maker</div><div class="value">${fmtMXN(deal.budget_maker_mxn)}</div></div>
+            <div class="cal-expand-kpi"><div class="label">Growth</div><div class="value">${fmtMXN(deal.budget_growth_mxn)}</div></div>
+          </div>
+        `;
+      } else if (isFuture) {
+        // FUTURE viral — budget compact + SKU table
+        const skuRows = skuDetail.map(s => `
+          <tr>
+            <td>${s.name}</td>
+            <td style="text-align:center">${s.sync}</td>
+            <td style="text-align:center">${s.ean}</td>
+            <td style="text-align:center">${s.pid}</td>
+            <td style="text-align:center">${s.subcategoria}</td>
+          </tr>
+        `).join('');
+
+        bodyHtml = `
+          <div class="cal-budget-compact">
+            <span><strong>Budget Total:</strong> ${fmtMXN(deal.budget_total_mxn)}</span>
+            <span><strong>Maker:</strong> ${fmtMXN(deal.budget_maker_mxn)}</span>
+            <span><strong>Growth:</strong> ${fmtMXN(deal.budget_growth_mxn)}</span>
+          </div>
+          <div class="sub-title">SKUs (${skuDetail.length})</div>
+          <div class="table-wrapper">
+            <table>
+              <thead><tr><th>SKU</th><th style="text-align:center">Sync</th><th style="text-align:center">EAN</th><th style="text-align:center">PID</th><th style="text-align:center">Subcategoria</th></tr></thead>
+              <tbody>${skuRows}</tbody>
+            </table>
+          </div>
+        `;
       } else {
-        kpisHtml = `<div style="margin-bottom:16px;color:var(--gray-text);font-size:13px;">Este viral aun no tiene datos de postmortem.</div>`;
+        // PAST viral
+        if (post) {
+          bodyHtml = `
+            <div class="sub-title">Resultados</div>
+            <div class="cal-expand-kpis">
+              <div class="cal-expand-kpi"><div class="label">GMV Activacion</div><div class="value">${fmtMXN(post.gmv_activacion)}</div></div>
+              <div class="cal-expand-kpi"><div class="label">Ordenes</div><div class="value">${fmtNum(post.ordenes_total)}</div></div>
+              <div class="cal-expand-kpi"><div class="label">Usuarios</div><div class="value">${fmtNum(post.usuarios_unicos)}</div></div>
+              <div class="cal-expand-kpi"><div class="label">AOV</div><div class="value">${fmtMXN(post.aov)}</div></div>
+              <div class="cal-expand-kpi"><div class="label">GMV Sell-up</div><div class="value">${fmtMXN(post.gmv_sellup)}</div></div>
+            </div>`;
+        } else {
+          bodyHtml = `
+            <div style="color:var(--gray-text);font-size:13px;">Este viral aun no tiene datos de postmortem.</div>`;
+        }
       }
 
       container.innerHTML = `
@@ -1355,15 +1446,8 @@
             </div>
             <button class="cal-expand-close" id="cal-expand-close">&times;</button>
           </div>
-          <div class="sub-title">Budget</div>
-          <div class="cal-expand-kpis">
-            <div class="cal-expand-kpi"><div class="label">Budget Total MXN</div><div class="value">${fmtMXN(deal.budget_total_mxn)}</div></div>
-            <div class="cal-expand-kpi"><div class="label">Maker</div><div class="value">${fmtMXN(deal.budget_maker_mxn)}</div></div>
-            <div class="cal-expand-kpi"><div class="label">Growth</div><div class="value">${fmtMXN(deal.budget_growth_mxn)}</div></div>
-          </div>
-          ${post ? '<div class="sub-title">Resultados</div>' : ''}
-          ${kpisHtml}
-          <button class="cal-expand-link" onclick="navigateTo('detalle','${dealId}')">Ver detalle completo &rarr;</button>
+          ${bodyHtml}
+          <button class="cal-expand-link" onclick="navigateTo('detalle','${dealId}')" style="margin-top:16px;">Ver detalle completo &rarr;</button>
         </div>
       `;
 
