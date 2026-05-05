@@ -72,6 +72,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Isotónicos"
+  },
+  {
+    deal_id: "VIRAL_DEAL_GRUPOMODELO_220126",
+    maker_name: "Grupo Modelo-Ab Inbev",
+    maker_aux: "Grupo Modelo",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 9,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-01-01",
+    fecha_ejecucion: "2026-01-22",
+    usd_mxn: 17.44,
+    fecha_tasa: "2026-05-04",
+    budget_maker_mxn: 400000,
+    budget_growth_mxn: 120000,
+    budget_total_mxn: 520000,
+    budget_maker_usd: 22935.78,
+    budget_growth_usd: 6880.73,
+    budget_total_usd: 29816.51,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
   }
 ];
 
@@ -91,7 +114,17 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "12111", ean: "7501022015063", pid: "2115518976", name: "Gatorlyte Naranja", subcategoria: "Isotónicos", h_units: 17.9, h_orders: 10.8, avg_price: 27.82, ex_incr_units: 161, ex_incr_orders: 97, ex_budget_mxn: 1792, ex_budget_usd: 102.69, real_units: 229, final_budget_mxn: 2548, final_budget_usd: 146.02, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "12104", ean: "7501022015049", pid: "2115518975", name: "Gatorlyte Fresa Kiwi", subcategoria: "Isotónicos", h_units: 15.9, h_orders: 10.4, avg_price: 23.88, ex_incr_units: 143, ex_incr_orders: 94, ex_budget_mxn: 1366, ex_budget_usd: 78.28, real_units: 237, final_budget_mxn: 2264, final_budget_usd: 129.74, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "11908", ean: "7501022014295", pid: "2112840750", name: "Gatorade sin Azucar Frambuesa", subcategoria: "Isotónicos", h_units: 8.3, h_orders: 5.3, avg_price: 31.34, ex_incr_units: 75, ex_incr_orders: 48, ex_budget_mxn: 940, ex_budget_usd: 53.87, real_units: 95, final_budget_mxn: 1191, final_budget_usd: 68.25, sku_order: 5 },
-  { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "83642", ean: "7501022016053", pid: "2115515390", name: "Gatorlyte Bebida Frutas Tropicales", subcategoria: "Isotónicos", h_units: 0.2, h_orders: 0.1, avg_price: 27.11, ex_incr_units: 2, ex_incr_orders: 1, ex_budget_mxn: 22, ex_budget_usd: 1.26, real_units: 3, final_budget_mxn: 33, final_budget_usd: 1.89, sku_order: 6 }
+  { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "83642", ean: "7501022016053", pid: "2115515390", name: "Gatorlyte Bebida Frutas Tropicales", subcategoria: "Isotónicos", h_units: 0.2, h_orders: 0.1, avg_price: 27.11, ex_incr_units: 2, ex_incr_orders: 1, ex_budget_mxn: 22, ex_budget_usd: 1.26, real_units: 3, final_budget_mxn: 33, final_budget_usd: 1.89, sku_order: 6 },
+  // Grupo Modelo
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "4939", ean: "7501064199271", pid: "2115753455", name: "Corona Extra Cerveza Laton", subcategoria: "Cervezas", h_units: 602.6, h_orders: 138.0, avg_price: 35.06, ex_incr_units: 5423, ex_incr_orders: 1242, ex_budget_mxn: 114078, ex_budget_usd: 6541.17, real_units: 3881, final_budget_mxn: 81641, final_budget_usd: 4681.25, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "6344", ean: "7501064112546", pid: "2115872376", name: "Modelo Especial Cerveza Lata", subcategoria: "Cervezas", h_units: 495.9, h_orders: 52.8, avg_price: 25.60, ex_incr_units: 4463, ex_incr_orders: 475, ex_budget_mxn: 68552, ex_budget_usd: 3930.73, real_units: 4374, final_budget_mxn: 67185, final_budget_usd: 3852.35, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "9705", ean: "7501064199615", pid: "2114954953", name: "Pacifico Cerveza Clara Lata", subcategoria: "Cervezas", h_units: 481.6, h_orders: 61.4, avg_price: 24.52, ex_incr_units: 4334, ex_incr_orders: 553, ex_budget_mxn: 63762, ex_budget_usd: 3656.08, real_units: 4435, final_budget_mxn: 65248, final_budget_usd: 3741.28, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "9039", ean: "7501064194504", pid: "2113800051", name: "Michelob Ultra Cerveza Light", subcategoria: "Cervezas", h_units: 409.4, h_orders: 51.6, avg_price: 23.79, ex_incr_units: 3685, ex_incr_orders: 464, ex_budget_mxn: 52600, ex_budget_usd: 3016.06, real_units: 3886, final_budget_mxn: 55469, final_budget_usd: 3180.56, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8042", ean: "7501064190711", pid: "2115411808", name: "Corona Extra Cerveza Lata", subcategoria: "Cervezas", h_units: 396.2, h_orders: 40.6, avg_price: 23.64, ex_incr_units: 3566, ex_incr_orders: 365, ex_budget_mxn: 50580, ex_budget_usd: 2900.23, real_units: 3785, final_budget_mxn: 53686, final_budget_usd: 3078.33, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "13692", ean: "7501064196263", pid: "2115802220", name: "Pack Cerveza Clara Modelo", subcategoria: "Cervezas", h_units: 396.2, h_orders: 262.6, avg_price: 150.84, ex_incr_units: 3566, ex_incr_orders: 2363, ex_budget_mxn: 322737, ex_budget_usd: 18505.56, real_units: 593, final_budget_mxn: 53669, final_budget_usd: 3077.35, sku_order: 6 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "5314", ean: "7501064198175", pid: "2115802212", name: "Pack Cerveza Michelob Ultra", subcategoria: "Cervezas", h_units: 375.9, h_orders: 246.4, avg_price: 133.24, ex_incr_units: 3383, ex_incr_orders: 2218, ex_budget_mxn: 270451, ex_budget_usd: 15507.51, real_units: 637, final_budget_mxn: 50924, final_budget_usd: 2919.95, sku_order: 7 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8189", ean: "7501064191886", pid: "2113641850", name: "Modelo Especial Cerveza Laton", subcategoria: "Cervezas", h_units: 352.1, h_orders: 82.9, avg_price: 31.56, ex_incr_units: 3169, ex_incr_orders: 746, ex_budget_mxn: 60008, ex_budget_usd: 3440.83, real_units: 2519, final_budget_mxn: 47700, final_budget_usd: 2735.09, sku_order: 8 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "7857", ean: "7501064193859", pid: "2115837444", name: "Corona Extra Cerveza Laton 473", subcategoria: "Cervezas", h_units: 328.3, h_orders: 74.4, avg_price: 27.53, ex_incr_units: 2955, ex_incr_orders: 670, ex_budget_mxn: 48811, ex_budget_usd: 2798.80, real_units: 2693, final_budget_mxn: 44483, final_budget_usd: 2550.63, sku_order: 9 }
 ];
 
 const POSTMORTEM_DEALS = [
@@ -130,6 +163,24 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 557, canib_ord_bench: 411, canib_ord_delta_pct: 35.5,
     canib_und_post: 730, canib_und_bench: 566, canib_und_delta_pct: 29.0,
     canib_cli_post: 541, canib_cli_bench: 383, canib_cli_delta_pct: 41.3
+  },
+  {
+    deal_id: "VIRAL_DEAL_GRUPOMODELO_220126",
+    post_days: 3, fase: 2,
+    gmv_activacion: 1117446, gmv_lw: 80595, gmv_dlw_pct: 1286.5, gmv_l4w: 118425, gmv_dl4w_pct: 843.6,
+    usuarios_unicos: 2648, usr_lw: 467, usr_dlw_pct: 467.0, usr_l4w: 579, usr_dl4w_pct: 357.5,
+    cr_pct: 2.17, aov: 334.36, aov_lw: 152.64, aov_dlw_pct: 119.1, aov_l4w: 181.08, aov_dl4w_pct: 84.7,
+    unidades_total: 25538, und_lw: 1801, und_dlw_pct: 1318.5, und_l4w: 2580, und_dl4w_pct: 889.8,
+    ordenes_total: 3342, ord_lw: 528, ord_dlw_pct: 533.0, ord_l4w: 654, ord_dl4w_pct: 411.0,
+    impresiones_total: 121619,
+    so_turbo_mx: 3932143, gmv_categoria: 1295703, gmv_cat_lw: 249916, gmv_cat_l4w: 341734,
+    share_deal_cat_pct: 86.24, share_lw_pct: 32.25, share_l4w_pct: 34.65,
+    gmv_basket: 1285598, gmv_sellup: 168152, pct_sellup: 13.08, aov_basket: 384.68, aov_deal_post: 334.36,
+    cross_ordenes: 3342, cross_skus_distintos: 993, cross_top_producto: "Topo Chico 1500mL", cross_top_ordenes: 56, cross_top_pct: 1.68,
+    inv_oos_cierre_viral_avg: 7.1, inv_oos_post_avg: 7.7, inv_cov_viral_ap_avg: 93.3, inv_cov_viral_ci_avg: 84.7, inv_cov_post_avg: 84.3, inv_cov_bench_avg: 92.0,
+    canib_ord_post: 2012, canib_ord_bench: 2907, canib_ord_delta_pct: -30.8,
+    canib_und_post: 6458, canib_und_bench: 10832, canib_und_delta_pct: -40.4,
+    canib_cli_post: 1704, canib_cli_bench: 2480, canib_cli_delta_pct: -31.3
   }
 ];
 
@@ -146,7 +197,17 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "11908", name: "Gatorade Bebida Isotonica Sin", ordenes: 156, usuarios: 150, unidades: 300, gmv: 9642, aov: 61.81, impresiones: 5199, cr_pct: 2.88, gmv_dlw_pct: 3215.4, gmv_dl4w_pct: 2554.9, seg_nuevo: 131, seg_nuevo_pct: 84, seg_reactivado: 9, seg_reactivado_pct: 6, seg_retenido: 15, seg_retenido_pct: 10, stock_viral: 358, stock_post: 693, stock_bench: 333, stock_delta_pct: 108.1, oos_cierre_viral: 9, oos_post: 10, cov_viral_ap: 94.7, cov_viral_ci: 77.5, cov_post: 72.3, canib_ord_post: 37, canib_ord_bench: 38, canib_ord_delta_pct: -1.3, canib_und_post: 52, canib_und_bench: 54, canib_und_delta_pct: -4.1, canib_cli_post: 37, canib_cli_bench: 33, canib_cli_delta_pct: 12.1 },
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "12111", name: "Gatorlyte Bebida Hidratante Sabor", ordenes: 96, usuarios: 94, unidades: 201, gmv: 5408, aov: 56.33, impresiones: 6190, cr_pct: 1.52, gmv_dlw_pct: 557.3, gmv_dl4w_pct: 1181.6, seg_nuevo: 63, seg_nuevo_pct: 66, seg_reactivado: 22, seg_reactivado_pct: 23, seg_retenido: 10, seg_retenido_pct: 10, stock_viral: 245, stock_post: 670, stock_bench: 300, stock_delta_pct: 123.0, oos_cierre_viral: 12, oos_post: 13, cov_viral_ap: 80.5, cov_viral_ci: 73.7, cov_post: 74.0, canib_ord_post: 45, canib_ord_bench: 48, canib_ord_delta_pct: -6.3, canib_und_post: 68, canib_und_bench: 73, canib_und_delta_pct: -6.2, canib_cli_post: 43, canib_cli_bench: 45, canib_cli_delta_pct: -3.9 },
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "12104", name: "Gatorlyte Bebida Con Electrolitos", ordenes: 110, usuarios: 103, unidades: 208, gmv: 4900, aov: 44.54, impresiones: 5445, cr_pct: 1.89, gmv_dlw_pct: 733.6, gmv_dl4w_pct: 1325.9, seg_nuevo: 81, seg_nuevo_pct: 74, seg_reactivado: 11, seg_reactivado_pct: 10, seg_retenido: 18, seg_retenido_pct: 16, stock_viral: 193, stock_post: 631, stock_bench: 224, stock_delta_pct: 181.7, oos_cierre_viral: 16, oos_post: 10, cov_viral_ap: 83.5, cov_viral_ci: 67.1, cov_post: 79.6, canib_ord_post: 41, canib_ord_bench: 46, canib_ord_delta_pct: -10.9, canib_und_post: 53, canib_und_bench: 71, canib_und_delta_pct: -25.1, canib_cli_post: 41, canib_cli_bench: 42, canib_cli_delta_pct: -3.0 },
-  { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "83642", name: "Gatorlyte Bebida Frutas Tropicales", ordenes: 57, usuarios: 57, unidades: 108, gmv: 2656, aov: 46.59, impresiones: 2895, cr_pct: 1.97, gmv_dlw_pct: 2519.7, gmv_dl4w_pct: 2033.7, seg_nuevo: 54, seg_nuevo_pct: 95, seg_reactivado: 3, seg_reactivado_pct: 5, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 165, stock_post: 184, stock_bench: 152, stock_delta_pct: 20.5, oos_cierre_viral: 11, oos_post: 12, cov_viral_ap: 71.9, cov_viral_ci: 70.2, cov_post: 68.9, canib_ord_post: 25, canib_ord_bench: 21, canib_ord_delta_pct: 20.5, canib_und_post: 31, canib_und_bench: 30, canib_und_delta_pct: 4.2, canib_cli_post: 25, canib_cli_bench: 20, canib_cli_delta_pct: 25.0 }
+  { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "83642", name: "Gatorlyte Bebida Frutas Tropicales", ordenes: 57, usuarios: 57, unidades: 108, gmv: 2656, aov: 46.59, impresiones: 2895, cr_pct: 1.97, gmv_dlw_pct: 2519.7, gmv_dl4w_pct: 2033.7, seg_nuevo: 54, seg_nuevo_pct: 95, seg_reactivado: 3, seg_reactivado_pct: 5, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 165, stock_post: 184, stock_bench: 152, stock_delta_pct: 20.5, oos_cierre_viral: 11, oos_post: 12, cov_viral_ap: 71.9, cov_viral_ci: 70.2, cov_post: 68.9, canib_ord_post: 25, canib_ord_bench: 21, canib_ord_delta_pct: 20.5, canib_und_post: 31, canib_und_bench: 30, canib_und_delta_pct: 4.2, canib_cli_post: 25, canib_cli_bench: 20, canib_cli_delta_pct: 25.0 },
+  // Grupo Modelo
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "13692", name: "Pack Cerveza Clara Modelo", ordenes: 1432, usuarios: 1174, unidades: 3005, gmv: 428376, aov: 299.15, impresiones: 19754, cr_pct: 5.94, gmv_dlw_pct: 1921.8, gmv_dl4w_pct: 1033.8, seg_nuevo: 743, seg_nuevo_pct: 52, seg_reactivado: 434, seg_reactivado_pct: 30, seg_retenido: 255, seg_retenido_pct: 18, stock_viral: 4709, stock_post: 3417, stock_bench: 3921, stock_delta_pct: -12.9, oos_cierre_viral: 12, oos_post: 13, cov_viral_ap: 94.7, cov_viral_ci: 72.5, cov_post: 73.5, canib_ord_post: 355, canib_ord_bench: 687, canib_ord_delta_pct: -48.3, canib_und_post: 615, canib_und_bench: 954, canib_und_delta_pct: -35.6, canib_cli_post: 320, canib_cli_bench: 585, canib_cli_delta_pct: -45.3 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "4939", name: "Cerveza Corona Extra Laton", ordenes: 1258, usuarios: 963, unidades: 6260, gmv: 196908, aov: 156.53, impresiones: 16652, cr_pct: 5.79, gmv_dlw_pct: 2802.5, gmv_dl4w_pct: 1734.4, seg_nuevo: 599, seg_nuevo_pct: 48, seg_reactivado: 303, seg_reactivado_pct: 24, seg_retenido: 356, seg_retenido_pct: 28, stock_viral: 10694, stock_post: 7243, stock_bench: 4862, stock_delta_pct: 49.0, oos_cierre_viral: 8, oos_post: 8, cov_viral_ap: 94.6, cov_viral_ci: 83.8, cov_post: 84.8, canib_ord_post: 306, canib_ord_bench: 369, canib_ord_delta_pct: -17.1, canib_und_post: 932, canib_und_bench: 1338, canib_und_delta_pct: -30.4, canib_cli_post: 236, canib_cli_bench: 263, canib_cli_delta_pct: -10.4 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8189", name: "Cerveza Modelo Especial Laton", ordenes: 960, usuarios: 822, unidades: 5124, gmv: 147493, aov: 153.64, impresiones: 14441, cr_pct: 5.69, gmv_dlw_pct: 1861.9, gmv_dl4w_pct: 1841.7, seg_nuevo: 602, seg_nuevo_pct: 63, seg_reactivado: 288, seg_reactivado_pct: 30, seg_retenido: 70, seg_retenido_pct: 7, stock_viral: 9461, stock_post: 6812, stock_bench: 4724, stock_delta_pct: 44.2, oos_cierre_viral: 12, oos_post: 15, cov_viral_ap: 91.1, cov_viral_ci: 76.2, cov_post: 72.5, canib_ord_post: 178, canib_ord_bench: 245, canib_ord_delta_pct: -27.4, canib_und_post: 674, canib_und_bench: 1037, canib_und_delta_pct: -35.0, canib_cli_post: 151, canib_cli_bench: 216, canib_cli_delta_pct: -29.9 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "5314", name: "Pack Cerveza Michelob Ultra", ordenes: 498, usuarios: 459, unidades: 900, gmv: 111160, aov: 223.21, impresiones: 24554, cr_pct: 1.87, gmv_dlw_pct: 416.0, gmv_dl4w_pct: 295.0, seg_nuevo: 176, seg_nuevo_pct: 35, seg_reactivado: 223, seg_reactivado_pct: 45, seg_retenido: 99, seg_retenido_pct: 20, stock_viral: 5820, stock_post: 7474, stock_bench: 4669, stock_delta_pct: 60.1, oos_cierre_viral: 0, oos_post: 0, cov_viral_ap: 98.8, cov_viral_ci: 98.8, cov_post: 98.8, canib_ord_post: 432, canib_ord_bench: 755, canib_ord_delta_pct: -42.8, canib_und_post: 649, canib_und_bench: 1108, canib_und_delta_pct: -41.4, canib_cli_post: 382, canib_cli_bench: 671, canib_cli_delta_pct: -43.1 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "9705", name: "Cerveza Pacifico Clara Lata", ordenes: 720, usuarios: 576, unidades: 4573, gmv: 98364, aov: 136.62, impresiones: 8338, cr_pct: 6.91, gmv_dlw_pct: 2237.8, gmv_dl4w_pct: 1329.0, seg_nuevo: 438, seg_nuevo_pct: 61, seg_reactivado: 161, seg_reactivado_pct: 22, seg_retenido: 121, seg_retenido_pct: 17, stock_viral: 9941, stock_post: 8930, stock_bench: 9305, stock_delta_pct: -4.0, oos_cierre_viral: 9, oos_post: 9, cov_viral_ap: 93.4, cov_viral_ci: 80.0, cov_post: 80.0, canib_ord_post: 152, canib_ord_bench: 208, canib_ord_delta_pct: -26.8, canib_und_post: 918, canib_und_bench: 1686, canib_und_delta_pct: -45.6, canib_cli_post: 126, canib_cli_bench: 187, canib_cli_delta_pct: -32.4 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "7857", name: "Cerveza Corona Extra Laton 473", ordenes: 668, usuarios: 558, unidades: 2799, gmv: 70331, aov: 105.29, impresiones: 11774, cr_pct: 4.74, gmv_dlw_pct: 1332.7, gmv_dl4w_pct: 1537.0, seg_nuevo: 348, seg_nuevo_pct: 52, seg_reactivado: 224, seg_reactivado_pct: 34, seg_retenido: 96, seg_retenido_pct: 14, stock_viral: 9252, stock_post: 9362, stock_bench: 7691, stock_delta_pct: 21.7, oos_cierre_viral: 10, oos_post: 11, cov_viral_ap: 91.1, cov_viral_ci: 79.6, cov_post: 77.8, canib_ord_post: 182, canib_ord_bench: 176, canib_ord_delta_pct: 3.4, canib_und_post: 638, canib_und_bench: 839, canib_und_delta_pct: -23.9, canib_cli_post: 149, canib_cli_bench: 148, canib_cli_delta_pct: 0.7 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "6344", name: "Cerveza Modelo Especial Lata", ordenes: 514, usuarios: 408, unidades: 2243, gmv: 51521, aov: 100.23, impresiones: 10262, cr_pct: 3.98, gmv_dlw_pct: 1078.1, gmv_dl4w_pct: 468.6, seg_nuevo: 273, seg_nuevo_pct: 53, seg_reactivado: 152, seg_reactivado_pct: 30, seg_retenido: 89, seg_retenido_pct: 17, stock_viral: 15110, stock_post: 16602, stock_bench: 11212, stock_delta_pct: 48.1, oos_cierre_viral: 4, oos_post: 4, cov_viral_ap: 93.4, cov_viral_ci: 91.1, cov_post: 91.1, canib_ord_post: 223, canib_ord_bench: 173, canib_ord_delta_pct: 29.1, canib_und_post: 1737, canib_und_bench: 1553, canib_und_delta_pct: 11.9, canib_cli_post: 175, canib_cli_bench: 150, canib_cli_delta_pct: 17.1 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "9039", name: "Cerveza Michelob Ultra Lata", ordenes: 67, usuarios: 63, unidades: 370, gmv: 7823, aov: 116.77, impresiones: 9135, cr_pct: 0.69, gmv_dlw_pct: 48.1, gmv_dl4w_pct: 14.5, seg_nuevo: 32, seg_nuevo_pct: 48, seg_reactivado: 16, seg_reactivado_pct: 24, seg_retenido: 19, seg_retenido_pct: 28, stock_viral: 5750, stock_post: 7759, stock_bench: 5651, stock_delta_pct: 37.3, oos_cierre_viral: 5, oos_post: 5, cov_viral_ap: 91.1, cov_viral_ci: 89.3, cov_post: 89.3, canib_ord_post: 128, canib_ord_bench: 181, canib_ord_delta_pct: -29.2, canib_und_post: 874, canib_und_bench: 1326, canib_und_delta_pct: -34.1, canib_cli_post: 115, canib_cli_bench: 161, canib_cli_delta_pct: -28.5 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8042", name: "Cerveza Corona Extra Lata", ordenes: 50, usuarios: 44, unidades: 264, gmv: 5469, aov: 109.37, impresiones: 6709, cr_pct: 0.66, gmv_dlw_pct: 14.1, gmv_dl4w_pct: -22.9, seg_nuevo: 33, seg_nuevo_pct: 66, seg_reactivado: 10, seg_reactivado_pct: 20, seg_retenido: 7, seg_retenido_pct: 14, stock_viral: 6909, stock_post: 8177, stock_bench: 6308, stock_delta_pct: 29.6, oos_cierre_viral: 4, oos_post: 4, cov_viral_ap: 91.1, cov_viral_ci: 91.1, cov_post: 91.1, canib_ord_post: 56, canib_ord_bench: 113, canib_ord_delta_pct: -50.3, canib_und_post: 421, canib_und_bench: 991, canib_und_delta_pct: -57.5, canib_cli_post: 50, canib_cli_bench: 99, canib_cli_delta_pct: -49.2 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -167,7 +228,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_GEPP_290126", subcategoria: "Panaderia salada", ordenes: 34, gmv: 4309, pct_sellup: 4.21, order: 5 },
   { deal_id: "VIRAL_DEAL_GEPP_290126", subcategoria: "Cigarrillos", ordenes: 21, gmv: 4232, pct_sellup: 4.14, order: 6 },
   { deal_id: "VIRAL_DEAL_GEPP_290126", subcategoria: "Huevos", ordenes: 47, gmv: 3856, pct_sellup: 3.77, order: 7 },
-  { deal_id: "VIRAL_DEAL_GEPP_290126", subcategoria: "Agua Natural", ordenes: 75, gmv: 3704, pct_sellup: 3.62, order: 8 }
+  { deal_id: "VIRAL_DEAL_GEPP_290126", subcategoria: "Agua Natural", ordenes: 75, gmv: 3704, pct_sellup: 3.62, order: 8 },
+  // Grupo Modelo
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", subcategoria: "Cervezas (otras)", ordenes: 180, gmv: 27791, pct_sellup: 16.53, order: 1 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", subcategoria: "Gaseosas", ordenes: 219, gmv: 15589, pct_sellup: 9.27, order: 2 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", subcategoria: "Snacks salados", ordenes: 212, gmv: 14809, pct_sellup: 8.81, order: 3 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", subcategoria: "Cigarrillos", ordenes: 90, gmv: 13347, pct_sellup: 7.94, order: 4 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", subcategoria: "Suero", ordenes: 96, gmv: 6660, pct_sellup: 3.96, order: 5 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", subcategoria: "Whiskys", ordenes: 8, gmv: 5259, pct_sellup: 3.13, order: 6 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", subcategoria: "Frutas", ordenes: 120, gmv: 5038, pct_sellup: 3.00, order: 7 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", subcategoria: "Agua Nat. Gasificada", ordenes: 80, gmv: 4747, pct_sellup: 2.82, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -196,5 +266,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "8043", name: "Electrolit Suero Rehidratante", subcategoria: "Suero", ordenes: 15, pct_deal: 2.08, order: 9 },
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "12664", name: "Bimbo Donas Azucaradas 158", subcategoria: "Panaderia dulce", ordenes: 14, pct_deal: 1.94, order: 10 },
   { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "5340", name: "Doritos Snack Nachos con", subcategoria: "Snacks salados", ordenes: 14, pct_deal: 1.94, order: 11 },
-  { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "12227", name: "Ciel Agua Natural Purificada", subcategoria: "Agua Natural", ordenes: 14, pct_deal: 1.94, order: 12 }
+  { deal_id: "VIRAL_DEAL_GEPP_290126", sync: "12227", name: "Ciel Agua Natural Purificada", subcategoria: "Agua Natural", ordenes: 14, pct_deal: 1.94, order: 12 },
+  // Grupo Modelo
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "4730", name: "Topo Chico Agua Mineral", subcategoria: "Agua Nat. Gas.", ordenes: 56, pct_deal: 1.68, order: 1 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8462", name: "Coca-Cola Refresco Original 3L", subcategoria: "Gaseosas", ordenes: 49, pct_deal: 1.47, order: 2 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "7254", name: "Coca-Cola Refresco Sin Azucar", subcategoria: "Gaseosas", ordenes: 38, pct_deal: 1.14, order: 3 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 37, pct_deal: 1.11, order: 4 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "14946", name: "Mallas Limon Con Semilla", subcategoria: "Frutas", ordenes: 22, pct_deal: 0.66, order: 5 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "9103", name: "Electrolit Suero Rehidratante", subcategoria: "Suero", ordenes: 22, pct_deal: 0.66, order: 6 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "5436", name: "Marlboro Red 20", subcategoria: "Cigarrillos", ordenes: 22, pct_deal: 0.66, order: 7 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "6467", name: "Marlboro Gold 20", subcategoria: "Cigarrillos", ordenes: 20, pct_deal: 0.60, order: 8 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "81993", name: "Platano Chiapas", subcategoria: "Frutas", ordenes: 18, pct_deal: 0.54, order: 9 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "5759", name: "Electrolit Suero Rehidratante", subcategoria: "Suero", ordenes: 16, pct_deal: 0.48, order: 10 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8770", name: "Pack Cerveza Amstel Ultra", subcategoria: "Cervezas", ordenes: 16, pct_deal: 0.48, order: 11 },
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "13818", name: "Topo Chico Agua Mineral", subcategoria: "Agua Natural", ordenes: 16, pct_deal: 0.48, order: 12 }
 ];
