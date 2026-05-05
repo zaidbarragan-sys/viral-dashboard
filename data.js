@@ -118,6 +118,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Leche natural"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_050526",
+    maker_name: "Fruver",
+    maker_aux: "Fruver",
+    business_unit: "WOW",
+    descuento_pct: 60,
+    incrementalidad: 4,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-05-05",
+    fecha_ejecucion: "2026-05-05",
+    usd_mxn: 17.38,
+    fecha_tasa: "2026-05-05",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 60000,
+    budget_maker_usd: 1726.12,
+    budget_growth_usd: 1726.12,
+    budget_total_usd: 3452.24,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 100,
+    categoria_display: "Frutas"
   }
 ];
 
@@ -150,7 +173,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "7857", ean: "7501064193859", pid: "2115837444", name: "Corona Extra Cerveza Laton 473", subcategoria: "Cervezas", h_units: 328.3, h_orders: 74.4, avg_price: 27.53, ex_incr_units: 2955, ex_incr_orders: 670, ex_budget_mxn: 48811, ex_budget_usd: 2798.80, real_units: 2693, final_budget_mxn: 44483, final_budget_usd: 2550.63, sku_order: 9 },
   // Lala
   { deal_id: "VIRAL_DEAL_LALA_210526", sync: "14588", ean: "7501020548495", pid: "2115448738", name: "Leche Past Lala 100 Prot Semi 1Lt", subcategoria: "Leche natural", h_units: 98.5, h_orders: 61.9, avg_price: 48.23, ex_incr_units: 887, ex_incr_orders: 557, ex_budget_mxn: 25658, ex_budget_usd: 1476.30, real_units: 1056, final_budget_mxn: 30550, final_budget_usd: 1757.77, sku_order: 1 },
-  { deal_id: "VIRAL_DEAL_LALA_210526", sync: "72152", ean: "7501020550955", pid: "2115575353", name: "Lala 100 Leche sin Lactosa Low Carb Light 1L", subcategoria: "Leche natural", h_units: 27.2, h_orders: 16.6, avg_price: 42.02, ex_incr_units: 245, ex_incr_orders: 149, ex_budget_mxn: 6177, ex_budget_usd: 355.41, real_units: 335, final_budget_mxn: 8446, final_budget_usd: 486.02, sku_order: 2 }
+  { deal_id: "VIRAL_DEAL_LALA_210526", sync: "72152", ean: "7501020550955", pid: "2115575353", name: "Lala 100 Leche sin Lactosa Low Carb Light 1L", subcategoria: "Leche natural", h_units: 27.2, h_orders: 16.6, avg_price: 42.02, ex_incr_units: 245, ex_incr_orders: 149, ex_budget_mxn: 6177, ex_budget_usd: 355.41, real_units: 335, final_budget_mxn: 8446, final_budget_usd: 486.02, sku_order: 2 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "14946", ean: "2200000320643", pid: "2115738871", name: "Mallas Limon Con Semilla 5 piezas", subcategoria: "Frutas", h_units: 1186.6, h_orders: 434.9, avg_price: 9.06, ex_incr_units: 4746, ex_incr_orders: 1740, ex_budget_mxn: 25799, ex_budget_usd: 1484.41, real_units: 4929, final_budget_mxn: 26794, final_budget_usd: 1541.66, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "14375", ean: "2200000320650", pid: "2115786704", name: "Mallas Limon Sin Semilla 5 piezas", subcategoria: "Frutas", h_units: 868.2, h_orders: 379.8, avg_price: 17.05, ex_incr_units: 3473, ex_incr_orders: 1519, ex_budget_mxn: 35527, ex_budget_usd: 2044.13, real_units: 1916, final_budget_mxn: 19601, final_budget_usd: 1127.79, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "82049", ean: "22200000012610", pid: "2115387671", name: "Naranja Valencia", subcategoria: "Frutas", h_units: 360.9, h_orders: 99.9, avg_price: 6.74, ex_incr_units: 1444, ex_incr_orders: 400, ex_budget_mxn: 5837, ex_budget_usd: 335.84, real_units: 2016, final_budget_mxn: 8153, final_budget_usd: 469.10, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "82040", ean: "2220000001247", pid: "2115381111", name: "Limon Eureka", subcategoria: "Frutas", h_units: 201.5, h_orders: 79.3, avg_price: 11.47, ex_incr_units: 806, ex_incr_orders: 317, ex_budget_mxn: 5546, ex_budget_usd: 319.10, real_units: 661, final_budget_mxn: 4549, final_budget_usd: 261.74, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "10659", ean: "2200000310293", pid: "2109996268", name: "Toronja Blanca", subcategoria: "Frutas", h_units: 41.0, h_orders: 22.5, avg_price: 16.72, ex_incr_units: 164, ex_incr_orders: 90, ex_budget_mxn: 1645, ex_budget_usd: 94.65, real_units: 92, final_budget_mxn: 923, final_budget_usd: 53.11, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
