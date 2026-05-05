@@ -196,6 +196,11 @@
       white-space: nowrap;
     }
 
+    thead th:not(:first-child),
+    tbody td:not(:first-child) {
+      text-align: center;
+    }
+
     /* Badges */
     .badge {
       display: inline-block;
@@ -896,7 +901,7 @@
       html += `<h3 class="section-title">Pre-Viral</h3>`;
 
       // Assumptions
-      html += `<div class="sub-title">Supuestos</div>`;
+      html += `<div class="sub-title">Información General</div>`;
       html += `<div class="table-wrapper"><table>
         <tbody>
           <tr><td><strong>Business Unit</strong></td><td>${deal.business_unit}</td></tr>
@@ -1392,10 +1397,10 @@
         const skuRows = skuDetail.map(s => `
           <tr>
             <td>${s.name}</td>
-            <td style="text-align:center">${s.sync}</td>
-            <td style="text-align:center">${s.ean}</td>
-            <td style="text-align:center">${s.pid}</td>
-            <td style="text-align:center">${s.subcategoria}</td>
+            <td>${s.sync}</td>
+            <td>${s.ean}</td>
+            <td>${s.pid}</td>
+            <td>${s.subcategoria}</td>
           </tr>
         `).join('');
 
@@ -1408,7 +1413,7 @@
           <div class="sub-title">SKUs (${skuDetail.length})</div>
           <div class="table-wrapper">
             <table>
-              <thead><tr><th>SKU</th><th style="text-align:center">Sync</th><th style="text-align:center">EAN</th><th style="text-align:center">PID</th><th style="text-align:center">Subcategoria</th></tr></thead>
+              <thead><tr><th>SKU</th><th>Sync</th><th>EAN</th><th>PID</th><th>Subcategoria</th></tr></thead>
               <tbody>${skuRows}</tbody>
             </table>
           </div>
