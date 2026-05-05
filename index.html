@@ -1422,12 +1422,28 @@
       let bodyHtml = '';
 
       if (isForecast) {
-        // FORECAST viral
-        bodyHtml = `
-          <div class="cal-forecast-badge">Forecast</div>
-          <div style="margin-top:12px;color:var(--gray-text);font-size:13px;">Este viral esta en etapa de forecast. Aun no tiene datos de planeacion confirmados.</div>
+        // FORECAST viral — minimal panel
+        container.innerHTML = `
+          <div class="cal-expand-panel">
+            <div class="cal-expand-header">
+              <div>
+                <h3>${deal.maker_name}</h3>
+              </div>
+              <button class="cal-expand-close" id="cal-expand-close">&times;</button>
+            </div>
+            <div class="cal-forecast-badge">Forecast</div>
+            <div style="margin-top:12px;color:var(--gray-text);font-size:13px;">Este viral esta en etapa de forecast. Aun no tiene datos de planeacion confirmados.</div>
+          </div>
         `;
-      } else if (isToday) {
+
+        container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        document.getElementById('cal-expand-close').addEventListener('click', () => {
+          container.innerHTML = '';
+        });
+        return;
+      }
+
+      if (isToday) {
         // LIVE viral — same as future + live badge
         const skuRows = skuDetail.map(s => `
           <tr>
