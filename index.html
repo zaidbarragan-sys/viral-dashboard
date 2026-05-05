@@ -419,6 +419,267 @@
       background: var(--white);
     }
 
+    /* Calendar */
+    .calendar-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .calendar-nav button {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--gray-border);
+      background: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .calendar-nav button:hover {
+      border-color: var(--coral);
+      color: var(--coral);
+    }
+
+    .calendar-nav .cal-month-label {
+      font-size: 16px;
+      font-weight: 700;
+      min-width: 180px;
+      text-align: center;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+      background: var(--gray-border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .calendar-header-cell {
+      background: var(--coral);
+      color: var(--white);
+      padding: 10px 8px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .calendar-day {
+      background: var(--white);
+      min-height: 90px;
+      padding: 8px;
+      position: relative;
+    }
+
+    .calendar-day.other-month {
+      background: #FAFAFA;
+    }
+
+    .calendar-day.other-month .day-number {
+      color: #C7C7CC;
+    }
+
+    .calendar-day.today {
+      background: #FFF5F3;
+    }
+
+    .calendar-day.today .day-number {
+      background: var(--coral);
+      color: var(--white);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .day-number {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--dark);
+    }
+
+    .calendar-event {
+      display: block;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      margin-bottom: 3px;
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: opacity 0.2s;
+    }
+
+    .calendar-event:hover {
+      opacity: 0.8;
+    }
+
+    .calendar-event.plan {
+      background: #E3F2FD;
+      color: #1565C0;
+      border-left: 3px solid #1565C0;
+    }
+
+    .calendar-event.exec {
+      background: #FFEBE7;
+      color: var(--coral);
+      border-left: 3px solid var(--coral);
+    }
+
+    .calendar-event.future {
+      background: #E6F9ED;
+      color: var(--green);
+      border-left: 3px solid var(--green);
+    }
+
+    .calendar-event.past {
+      background: #E3F2FD;
+      color: #1565C0;
+      border-left: 3px solid #1565C0;
+    }
+
+    .calendar-legend {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 16px;
+      font-size: 12px;
+      flex-wrap: wrap;
+    }
+
+    .calendar-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .calendar-legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+    }
+
+    .cal-dot-exec { background: #FFEBE7; border-left: 3px solid var(--coral); }
+    .cal-dot-future { background: #E6F9ED; border-left: 3px solid var(--green); }
+    .cal-dot-past { background: #E3F2FD; border-left: 3px solid #1565C0; }
+
+    /* Calendar expand panel */
+    #cal-expand-detail {
+      margin: 20px 0;
+    }
+
+    .cal-expand-panel {
+      background: var(--white);
+      border-radius: 12px;
+      border-top: 4px solid var(--coral);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 24px;
+      animation: slideDown 0.25s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cal-expand-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .cal-expand-header h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .cal-expand-header .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 12px;
+      color: var(--gray-text);
+      padding-top: 4px;
+    }
+
+    .cal-expand-close {
+      background: none;
+      border: 1px solid var(--gray-border);
+      border-radius: 6px;
+      width: 28px;
+      height: 28px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+
+    .cal-expand-close:hover {
+      border-color: var(--coral);
+      color: var(--coral);
+    }
+
+    .cal-expand-kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .cal-expand-kpi {
+      background: var(--light-bg);
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .cal-expand-kpi .label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--gray-text);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .cal-expand-kpi .value {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .cal-expand-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: var(--coral);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .cal-expand-link:hover {
+      opacity: 0.85;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .header { padding: 12px 16px; }
@@ -427,6 +688,9 @@
       .tabs { flex-wrap: wrap; }
       .chart-grid { grid-template-columns: 1fr; }
       .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .calendar-day { min-height: 60px; padding: 4px; }
+      .calendar-event { font-size: 9px; padding: 2px 4px; }
+      .calendar-header-cell { padding: 8px 4px; font-size: 10px; }
     }
   </style>
 </head>
@@ -447,26 +711,20 @@
     <!-- INDICE -->
     <div id="indice" class="section active">
       <div class="kpi-grid" id="indice-kpis"></div>
-      <div class="filter-bar" id="indice-filters"></div>
-      <div class="table-wrapper">
-        <table id="indice-table">
-          <thead>
-            <tr>
-              <th>Deal ID</th>
-              <th>Maker</th>
-              <th>BU</th>
-              <th>Descuento</th>
-              <th>Tipo</th>
-              <th>Ciudades</th>
-              <th>Fecha Ejecucion</th>
-              <th>Budget Total MXN</th>
-              <th>GMV Real</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+      <!-- Calendario embebido -->
+      <div class="section-title">Calendario de Virales</div>
+      <div class="calendar-legend">
+        <div class="calendar-legend-item"><div class="calendar-legend-dot cal-dot-exec"></div>Hoy / En curso</div>
+        <div class="calendar-legend-item"><div class="calendar-legend-dot cal-dot-future"></div>Futuro</div>
+        <div class="calendar-legend-item"><div class="calendar-legend-dot cal-dot-past"></div>Pasado</div>
       </div>
+      <div class="calendar-nav">
+        <button id="cal-prev">&larr;</button>
+        <span class="cal-month-label" id="cal-month-label"></span>
+        <button id="cal-next">&rarr;</button>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+      <div id="cal-expand-detail"></div>
     </div>
 
     <!-- DETALLE (accesible via click en fila, sin tab en nav) -->
@@ -529,7 +787,6 @@
     // NAVIGATION
     // ============================================================
     let currentDealId = null;
-    let currentFilter = 'All';
 
     function navigateTo(tab, dealId) {
       document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -562,63 +819,8 @@
     // INDICE
     // ============================================================
     function renderIndice() {
-      // KPIs
-      const totalVirales = PREVIRAL_DEALS.length;
-      const totalGMV = POSTMORTEM_DEALS.reduce((s, d) => s + d.gmv_activacion, 0);
-      const avgSellup = POSTMORTEM_DEALS.length > 0
-        ? POSTMORTEM_DEALS.reduce((s, d) => s + d.pct_sellup, 0) / POSTMORTEM_DEALS.length
-        : 0;
-      const withPost = POSTMORTEM_DEALS.length;
-
-      document.getElementById('indice-kpis').innerHTML = `
-        <div class="kpi-card"><div class="label">Total Virales</div><div class="value">${totalVirales}</div></div>
-        <div class="kpi-card"><div class="label">Total GMV</div><div class="value">${fmtMXN(totalGMV)}</div></div>
-        <div class="kpi-card"><div class="label">Promedio Sell-up %</div><div class="value">${avgSellup.toFixed(1)}%</div></div>
-        <div class="kpi-card"><div class="label">Virales con Postmortem</div><div class="value">${withPost}</div></div>
-      `;
-
-      // Filters
-      const bus = ['All', ...new Set(PREVIRAL_DEALS.map(d => d.business_unit))];
-      document.getElementById('indice-filters').innerHTML = bus.map(b =>
-        `<button class="chip ${b === currentFilter ? 'active' : ''}" data-bu="${b}">${b}</button>`
-      ).join('');
-
-      document.querySelectorAll('#indice-filters .chip').forEach(chip => {
-        chip.addEventListener('click', () => {
-          currentFilter = chip.dataset.bu;
-          renderIndice();
-        });
-      });
-
-      // Table
-      const filtered = currentFilter === 'All'
-        ? PREVIRAL_DEALS
-        : PREVIRAL_DEALS.filter(d => d.business_unit === currentFilter);
-
-      const tbody = document.querySelector('#indice-table tbody');
-      tbody.innerHTML = filtered.map(d => {
-        const post = getPost(d.deal_id);
-        const gmvReal = post ? fmtMXN(post.gmv_activacion) : 'Pendiente';
-        const status = post
-          ? '<span class="badge badge-green">Postmortem</span>'
-          : '<span class="badge badge-gray">Pendiente</span>';
-        return `<tr class="clickable" data-deal="${d.deal_id}">
-          <td>${d.deal_id}</td>
-          <td>${d.maker_name}</td>
-          <td>${d.business_unit}</td>
-          <td>${d.descuento_pct}%</td>
-          <td>${d.tipo_viral}</td>
-          <td>${d.ciudades}</td>
-          <td>${d.fecha_ejecucion}</td>
-          <td>${fmtMXN(d.budget_total_mxn)}</td>
-          <td>${gmvReal}</td>
-          <td>${status}</td>
-        </tr>`;
-      }).join('');
-
-      tbody.querySelectorAll('tr.clickable').forEach(row => {
-        row.addEventListener('click', () => navigateTo('detalle', row.dataset.deal));
-      });
+      // Render calendario embebido (KPIs se renderizan dentro)
+      renderCalendario();
     }
 
     // ============================================================
@@ -1000,6 +1202,192 @@
       chartConfig('chart-sellup', sorted.map(p => p.pct_sellup), 'Sell-up %');
       chartConfig('chart-canib', sorted.map(p => p.canib_ord_delta_pct), 'Canib. Ord %');
     }
+
+    // ============================================================
+    // CALENDARIO
+    // ============================================================
+    let calYear = new Date().getFullYear();
+    let calMonth = new Date().getMonth(); // 0-indexed
+
+    const MONTH_NAMES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+    const DAY_NAMES = ['Lun','Mar','Mie','Jue','Vie','Sab','Dom'];
+
+    function renderCalendario() {
+      // Month label
+      document.getElementById('cal-month-label').textContent = `${MONTH_NAMES[calMonth]} ${calYear}`;
+
+      // KPIs for current calendar month
+      const monthDeals = PREVIRAL_DEALS.filter(d => {
+        if (!d.fecha_ejecucion) return false;
+        const date = new Date(d.fecha_ejecucion + 'T00:00:00');
+        return date.getFullYear() === calYear && date.getMonth() === calMonth;
+      });
+
+      const monthGMV = monthDeals.reduce((sum, d) => {
+        const post = getPost(d.deal_id);
+        return sum + (post ? post.gmv_activacion : 0);
+      }, 0);
+
+      const totalBudgetMaker = monthDeals.reduce((s, d) => s + d.budget_maker_mxn, 0);
+
+      document.getElementById('indice-kpis').innerHTML = `
+        <div class="kpi-card"><div class="label">Virales en el mes</div><div class="value">${monthDeals.length}</div></div>
+        <div class="kpi-card"><div class="label">GMV del mes</div><div class="value">${monthGMV > 0 ? fmtMXN(monthGMV) : '—'}</div></div>
+        <div class="kpi-card"><div class="label">Budget Maker</div><div class="value">${monthDeals.length > 0 ? fmtMXN(totalBudgetMaker) : '—'}</div></div>
+      `;
+
+      // Build events map: only fecha_ejecucion, classified by time
+      const events = {};
+      const todayDate = new Date();
+      todayDate.setHours(0, 0, 0, 0);
+
+      PREVIRAL_DEALS.forEach(d => {
+        if (!d.fecha_ejecucion) return;
+        const execDate = new Date(d.fecha_ejecucion + 'T00:00:00');
+        let type;
+        if (execDate.getTime() === todayDate.getTime()) {
+          type = 'exec'; // hoy — coral
+        } else if (execDate > todayDate) {
+          type = 'future'; // futuro — verde
+        } else {
+          type = 'past'; // pasado — azul
+        }
+        if (!events[d.fecha_ejecucion]) events[d.fecha_ejecucion] = [];
+        events[d.fecha_ejecucion].push({ deal: d, type });
+      });
+
+      // Calendar grid
+      const firstDay = new Date(calYear, calMonth, 1);
+      const lastDay = new Date(calYear, calMonth + 1, 0);
+      const daysInMonth = lastDay.getDate();
+
+      // Monday = 0, Sunday = 6 (ISO week)
+      let startDow = firstDay.getDay() - 1;
+      if (startDow < 0) startDow = 6;
+
+      const today = new Date();
+      const todayStr = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+
+      let html = '';
+
+      // Header row
+      DAY_NAMES.forEach(d => {
+        html += `<div class="calendar-header-cell">${d}</div>`;
+      });
+
+      // Previous month fill
+      const prevMonthLast = new Date(calYear, calMonth, 0).getDate();
+      for (let i = startDow - 1; i >= 0; i--) {
+        const day = prevMonthLast - i;
+        html += `<div class="calendar-day other-month"><div class="day-number">${day}</div></div>`;
+      }
+
+      // Current month days
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dateStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+        const isToday = dateStr === todayStr;
+        const classes = ['calendar-day'];
+        if (isToday) classes.push('today');
+
+        let eventsHtml = '';
+        if (events[dateStr]) {
+          events[dateStr].forEach(ev => {
+            eventsHtml += `<div class="calendar-event ${ev.type}" data-deal="${ev.deal.deal_id}" title="${ev.deal.maker_aux}">${ev.deal.maker_aux}</div>`;
+          });
+        }
+
+        html += `<div class="${classes.join(' ')}"><div class="day-number">${day}</div>${eventsHtml}</div>`;
+      }
+
+      // Next month fill
+      const totalCells = startDow + daysInMonth;
+      const remainder = totalCells % 7;
+      if (remainder > 0) {
+        for (let i = 1; i <= 7 - remainder; i++) {
+          html += `<div class="calendar-day other-month"><div class="day-number">${i}</div></div>`;
+        }
+      }
+
+      document.getElementById('calendar-grid').innerHTML = html;
+
+      // Event click handlers — expand inline
+      document.querySelectorAll('#calendar-grid .calendar-event').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          expandCalendarDeal(el.dataset.deal);
+        });
+      });
+    }
+
+    function expandCalendarDeal(dealId) {
+      const deal = getDeal(dealId);
+      if (!deal) return;
+      const post = getPost(dealId);
+      const container = document.getElementById('cal-expand-detail');
+
+      let kpisHtml = '';
+      if (post) {
+        kpisHtml = `
+          <div class="cal-expand-kpis">
+            <div class="cal-expand-kpi"><div class="label">GMV Activacion</div><div class="value">${fmtMXN(post.gmv_activacion)}</div></div>
+            <div class="cal-expand-kpi"><div class="label">Ordenes</div><div class="value">${fmtNum(post.ordenes_total)}</div></div>
+            <div class="cal-expand-kpi"><div class="label">Usuarios</div><div class="value">${fmtNum(post.usuarios_unicos)}</div></div>
+            <div class="cal-expand-kpi"><div class="label">Sell-up %</div><div class="value">${post.pct_sellup.toFixed(1)}%</div></div>
+            <div class="cal-expand-kpi"><div class="label">Share Cat %</div><div class="value">${post.share_deal_cat_pct.toFixed(1)}%</div></div>
+            <div class="cal-expand-kpi"><div class="label">AOV</div><div class="value">${fmtMXN(post.aov)}</div></div>
+          </div>`;
+      } else {
+        kpisHtml = `<div style="margin-bottom:16px;color:var(--gray-text);font-size:13px;">Este viral aun no tiene datos de postmortem.</div>`;
+      }
+
+      container.innerHTML = `
+        <div class="cal-expand-panel">
+          <div class="cal-expand-header">
+            <div>
+              <h3>${deal.maker_name}</h3>
+              <div class="meta">
+                <span class="badge badge-coral">${deal.descuento_pct}% OFF</span>
+                <span class="badge badge-gray">${deal.tipo_viral}</span>
+                <span>${deal.ciudades}</span>
+                <span>${deal.categoria_display}</span>
+                <span>Planeacion: ${deal.fecha_planeacion}</span>
+              </div>
+            </div>
+            <button class="cal-expand-close" id="cal-expand-close">&times;</button>
+          </div>
+          <div class="sub-title">Budget</div>
+          <div class="cal-expand-kpis">
+            <div class="cal-expand-kpi"><div class="label">Budget Total MXN</div><div class="value">${fmtMXN(deal.budget_total_mxn)}</div></div>
+            <div class="cal-expand-kpi"><div class="label">Maker</div><div class="value">${fmtMXN(deal.budget_maker_mxn)}</div></div>
+            <div class="cal-expand-kpi"><div class="label">Growth</div><div class="value">${fmtMXN(deal.budget_growth_mxn)}</div></div>
+          </div>
+          ${post ? '<div class="sub-title">Resultados</div>' : ''}
+          ${kpisHtml}
+          <button class="cal-expand-link" onclick="navigateTo('detalle','${dealId}')">Ver detalle completo &rarr;</button>
+        </div>
+      `;
+
+      // Scroll into view
+      container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      // Close button
+      document.getElementById('cal-expand-close').addEventListener('click', () => {
+        container.innerHTML = '';
+      });
+    }
+
+    // Calendar navigation buttons
+    document.getElementById('cal-prev').addEventListener('click', () => {
+      calMonth--;
+      if (calMonth < 0) { calMonth = 11; calYear--; }
+      renderCalendario();
+    });
+
+    document.getElementById('cal-next').addEventListener('click', () => {
+      calMonth++;
+      if (calMonth > 11) { calMonth = 0; calYear++; }
+      renderCalendario();
+    });
 
     // ============================================================
     // INIT
