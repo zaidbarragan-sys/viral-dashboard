@@ -436,6 +436,15 @@
       margin-bottom: 20px;
     }
 
+    .cal-filter-select {
+      padding: 10px 32px 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--gray-border);
+      font-family: inherit;
+      font-size: 13px;
+      background: var(--white);
+    }
+
     .calendar-nav button {
       padding: 8px 14px;
       border-radius: 8px;
@@ -842,6 +851,19 @@
         <div class="calendar-legend-item"><div class="calendar-legend-dot cal-dot-forecast"></div>Forecast</div>
       </div>
       <div class="calendar-nav">
+        <select id="filter-canal" class="cal-filter-select">
+          <option value="">Canal: Todos</option>
+          <option value="OC">OC</option>
+          <option value="ADS">ADS</option>
+        </select>
+        <select id="filter-bu" class="cal-filter-select">
+          <option value="">BU: Todos</option>
+          <option value="WOW">WOW</option>
+          <option value="Drinks">Drinks</option>
+          <option value="Foods">Foods</option>
+          <option value="Pharma">Pharma</option>
+        </select>
+        <div style="flex:1"></div>
         <button id="cal-prev">&larr;</button>
         <span class="cal-month-label" id="cal-month-label"></span>
         <button id="cal-next">&rarr;</button>
@@ -1386,8 +1408,19 @@
       // Month label
       document.getElementById('cal-month-label').textContent = `${MONTH_NAMES[calMonth]} ${calYear}`;
 
+      // Read filters
+      const filterCanal = document.getElementById('filter-canal').value;
+      const filterBU = document.getElementById('filter-bu').value;
+
+      // Base filtered set
+      const filteredDeals = PREVIRAL_DEALS.filter(d => {
+        if (filterCanal && d.financiamiento_maker !== filterCanal) return false;
+        if (filterBU && d.business_unit !== filterBU) return false;
+        return true;
+      });
+
       // KPIs for current calendar month
-      const monthDeals = PREVIRAL_DEALS.filter(d => {
+      const monthDeals = filteredDeals.filter(d => {
         if (!d.fecha_ejecucion) return false;
         const date = new Date(d.fecha_ejecucion + 'T00:00:00');
         return date.getFullYear() === calYear && date.getMonth() === calMonth;
@@ -1411,7 +1444,7 @@
       const todayDate = new Date();
       todayDate.setHours(0, 0, 0, 0);
 
-      PREVIRAL_DEALS.forEach(d => {
+      filteredDeals.forEach(d => {
         if (!d.fecha_ejecucion) return;
         const execDate = new Date(d.fecha_ejecucion + 'T00:00:00');
         let type;
@@ -1642,6 +1675,10 @@
       if (calMonth > 11) { calMonth = 0; calYear++; }
       renderCalendario();
     });
+
+    // Filter dropdowns
+    document.getElementById('filter-canal').addEventListener('change', () => renderCalendario());
+    document.getElementById('filter-bu').addEventListener('change', () => renderCalendario());
 
     // ============================================================
     // CATALOGO
