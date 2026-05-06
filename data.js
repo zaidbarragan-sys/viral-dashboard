@@ -463,6 +463,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Sidras, Ginebras, Tequilas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_ELECTROLIT_240526",
+    maker_name: "Pisa Farmaceutica",
+    maker_aux: "Electrolit",
+    business_unit: "Pharma",
+    descuento_pct: 25,
+    incrementalidad: 12,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-22",
+    fecha_ejecucion: "2026-05-24",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 100000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 130000,
+    budget_maker_usd: 5797.10,
+    budget_growth_usd: 1739.13,
+    budget_total_usd: 7536.23,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Suero"
   }
 ];
 
@@ -564,7 +587,13 @@ const PREVIRAL_SKU_DETAIL = [
   // Palmar
   { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "82936", ean: "7503035300174", pid: "2115419331", name: "Pack Mixto Hard Seltzer Palmar Sabores Surtidos 8 x 355 mL", subcategoria: "Sidras", h_units: 7.1, h_orders: 6.1, avg_price: 212.64, ex_incr_units: 50, ex_incr_orders: 43, ex_budget_mxn: 4253, ex_budget_usd: 246.55, real_units: 523, final_budget_mxn: 44484, final_budget_usd: 2578.78, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "73551", ean: "7503035300211", pid: "2115131536", name: "Palmar Ginebra Con Sabor Frutos Rojos y Rosas 750 mL", subcategoria: "Ginebras", h_units: 1.9, h_orders: 1.6, avg_price: 394.51, ex_incr_units: 13, ex_incr_orders: 11, ex_budget_mxn: 2051, ex_budget_usd: 118.90, real_units: 73, final_budget_mxn: 11520, final_budget_usd: 667.83, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "83702", ean: "7503033994054", pid: "2115520925", name: "Tequila Taddel Reposado Cristalino 750 mL", subcategoria: "Tequilas", h_units: 1.4, h_orders: 1.3, avg_price: 574.73, ex_incr_units: 10, ex_incr_orders: 9, ex_budget_mxn: 2299, ex_budget_usd: 133.28, real_units: 39, final_budget_mxn: 8966, final_budget_usd: 519.77, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "83702", ean: "7503033994054", pid: "2115520925", name: "Tequila Taddel Reposado Cristalino 750 mL", subcategoria: "Tequilas", h_units: 1.4, h_orders: 1.3, avg_price: 574.73, ex_incr_units: 10, ex_incr_orders: 9, ex_budget_mxn: 2299, ex_budget_usd: 133.28, real_units: 39, final_budget_mxn: 8966, final_budget_usd: 519.77, sku_order: 3 },
+  // Electrolit
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "9103", ean: "7501125149221", pid: "2115805907", name: "Electrolit Suero Rehidratante Sabor Fresa Kiwi 625 mL", subcategoria: "Suero", h_units: 420.4, h_orders: 271.1, avg_price: 26.28, ex_incr_units: 5045, ex_incr_orders: 3253, ex_budget_mxn: 33146, ex_budget_usd: 1921.51, real_units: 5013, final_budget_mxn: 32935, final_budget_usd: 1909.28, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5898", ean: "7501125118562", pid: "2115571555", name: "Electrolit Suero Rehidratante Sabor Lima-Limón 625 mL", subcategoria: "Suero", h_units: 394.3, h_orders: 238.5, avg_price: 26.05, ex_incr_units: 4732, ex_incr_orders: 2862, ex_budget_mxn: 30819, ex_budget_usd: 1786.61, real_units: 4743, final_budget_mxn: 30888, final_budget_usd: 1790.61, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5896", ean: "7501125174797", pid: "2115805908", name: "Electrolit Suero Rehidratante Sabor Mora Azul 625 mL", subcategoria: "Suero", h_units: 376.6, h_orders: 240.5, avg_price: 27.07, ex_incr_units: 4519, ex_incr_orders: 2886, ex_budget_mxn: 30573, ex_budget_usd: 1772.35, real_units: 4360, final_budget_mxn: 29506, final_budget_usd: 1710.49, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5759", ean: "7501125144851", pid: "2115805910", name: "Electrolit Suero Rehidratante Sabor Uva 625 mL", subcategoria: "Suero", h_units: 305.3, h_orders: 192.8, avg_price: 26.24, ex_incr_units: 3664, ex_incr_orders: 2314, ex_budget_mxn: 24028, ex_budget_usd: 1392.93, real_units: 3646, final_budget_mxn: 23918, final_budget_usd: 1386.55, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5495", ean: "7501125104268", pid: "2115759946", name: "Electrolit Suero Rehidratante Sabor Fresa 625 mL", subcategoria: "Suero", h_units: 162.8, h_orders: 107.1, avg_price: 25.56, ex_incr_units: 1954, ex_incr_orders: 1285, ex_budget_mxn: 12486, ex_budget_usd: 723.83, real_units: 1996, final_budget_mxn: 12754, final_budget_usd: 739.36, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
