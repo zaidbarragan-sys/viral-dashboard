@@ -173,7 +173,7 @@ const PREVIRAL_DEALS = [
     descuento_pct: 50,
     incrementalidad: 15,
     tipo_viral: "1 día",
-    ciudades: "CDMX",
+    ciudades: "CDMX, Monterrey",
     fecha_planeacion: "2026-04-13",
     fecha_ejecucion: "2026-05-10",
     usd_mxn: 17.38,
@@ -186,7 +186,7 @@ const PREVIRAL_DEALS = [
     budget_total_usd: 14959.72,
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
-    categoria_display: "Agua micelar y bifasicos, Toallitas"
+    categoria_display: "Agua micelar y bifasicos, Cremas corporales, Cremas faciales, Toallitas"
   },
   {
     deal_id: "VIRAL_DEAL_FLORES_100526",
