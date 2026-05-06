@@ -1596,30 +1596,8 @@
               <div class="cal-expand-kpi"><div class="label">GMV Sell-up</div><div class="value">${fmtMXN(post.gmv_sellup)}</div></div>
             </div>`;
         } else {
-          const hasActuals = skuDetail.some(s => s.real_units !== null);
-          if (hasActuals) {
-            const skuRows = skuDetail.map(s => `
-              <tr>
-                <td>${s.name}</td>
-                <td>${s.sync}</td>
-                <td>${fmtNum(s.real_units)}</td>
-                <td>${fmtMXN(s.final_budget_mxn)}</td>
-              </tr>
-            `).join('');
-            bodyHtml = `
-              <div style="color:var(--gray-text);font-size:13px;margin-bottom:12px;">Este viral aun no tiene datos de postmortem.</div>
-              <div class="sub-title">SKUs — Resultados (${skuDetail.length})</div>
-              <div class="table-wrapper">
-                <table>
-                  <thead><tr><th>SKU</th><th>Sync</th><th>Real Units</th><th>Final Budget MXN</th></tr></thead>
-                  <tbody>${skuRows}</tbody>
-                </table>
-              </div>
-            `;
-          } else {
-            bodyHtml = `
-              <div style="color:var(--gray-text);font-size:13px;">Este viral aun no tiene datos de postmortem.</div>`;
-          }
+          bodyHtml = `
+            <div style="color:var(--gray-text);font-size:13px;">Este viral aun no tiene datos de postmortem.</div>`;
         }
       }
 
