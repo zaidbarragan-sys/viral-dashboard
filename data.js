@@ -578,6 +578,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Suero"
+  },
+  {
+    deal_id: "VIRAL_DEAL_SICO_010526",
+    maker_name: "Reckitt Benckiser Health",
+    maker_aux: "Sico",
+    business_unit: "Pharma",
+    descuento_pct: 60,
+    incrementalidad: 7,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-04-14",
+    fecha_ejecucion: "2026-05-01",
+    usd_mxn: 17.40,
+    fecha_tasa: "2026-05-05",
+    budget_maker_mxn: 50000,
+    budget_growth_mxn: 15000,
+    budget_total_mxn: 65000,
+    budget_maker_usd: 2874.26,
+    budget_growth_usd: 862.28,
+    budget_total_usd: 3736.53,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Lubricantes, Preservativos"
   }
 ];
 
@@ -703,7 +726,13 @@ const PREVIRAL_SKU_DETAIL = [
   // Electrolife 31-may
   { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "12304", ean: "7502268541491", pid: "2112841074", name: "Electrolife Zero Suero Uva 625 mL", subcategoria: "Suero", h_units: 182.8, h_orders: 102.5, avg_price: 26.77, ex_incr_units: 1645, ex_incr_orders: 923, ex_budget_mxn: 11004, ex_budget_usd: 637.91, real_units: 7284, final_budget_mxn: 48748, final_budget_usd: 2826.55, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "13072", ean: "7502268541484", pid: "2115489165", name: "Electrolife Zero Sabor Fresa Kiwi 660 mL", subcategoria: "Suero", h_units: 164.7, h_orders: 97.1, avg_price: 26.54, ex_incr_units: 1482, ex_incr_orders: 874, ex_budget_mxn: 9833, ex_budget_usd: 570.03, real_units: 6617, final_budget_mxn: 43913, final_budget_usd: 2545.97, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "74951", ean: "7502268541477", pid: "2114167366", name: "Electrolife Zero Naranja Y Mandarina 625 mL", subcategoria: "Suero", h_units: 18.2, h_orders: 10.6, avg_price: 26.22, ex_incr_units: 164, ex_incr_orders: 95, ex_budget_mxn: 1075, ex_budget_usd: 62.32, real_units: 741, final_budget_mxn: 4857, final_budget_usd: 281.56, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "74951", ean: "7502268541477", pid: "2114167366", name: "Electrolife Zero Naranja Y Mandarina 625 mL", subcategoria: "Suero", h_units: 18.2, h_orders: 10.6, avg_price: 26.22, ex_incr_units: 164, ex_incr_orders: 95, ex_budget_mxn: 1075, ex_budget_usd: 62.32, real_units: 741, final_budget_mxn: 4857, final_budget_usd: 281.56, sku_order: 3 },
+  // Sico
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "14101", ean: "7501058799685", pid: "2115154811", name: "Sico Condones Climax Mutuo", subcategoria: "Preservativos", h_units: 15.0, h_orders: 12.0, avg_price: 100.91, ex_incr_units: 105, ex_incr_orders: 84, ex_budget_mxn: 6357, ex_budget_usd: 365.43, real_units: 346, final_budget_mxn: 20949, final_budget_usd: 1204.26, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "12030", ean: "7501685171113", pid: "2115154809", name: "Sico Condon Invisible Ultra Delgado", subcategoria: "Preservativos", h_units: 12.7, h_orders: 10.6, avg_price: 116.90, ex_incr_units: 89, ex_incr_orders: 74, ex_budget_mxn: 6242, ex_budget_usd: 358.82, real_units: 253, final_budget_mxn: 17745, final_budget_usd: 1020.07, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "3860", ean: "7501058793232", pid: "2113547772", name: "Lubricante Sico Play Cereza", subcategoria: "Lubricantes", h_units: 8.7, h_orders: 7.9, avg_price: 152.95, ex_incr_units: 61, ex_incr_orders: 55, ex_budget_mxn: 5598, ex_budget_usd: 321.80, real_units: 133, final_budget_mxn: 12205, final_budget_usd: 701.61, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "7560", ean: "7501685171120", pid: "2109994473", name: "Sico Condon Invisible Ultra Sense", subcategoria: "Preservativos", h_units: 7.9, h_orders: 6.6, avg_price: 295.95, ex_incr_units: 55, ex_incr_orders: 46, ex_budget_mxn: 9766, ex_budget_usd: 561.40, real_units: 62, final_budget_mxn: 11009, final_budget_usd: 632.85, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "10439", ean: "7501058367136", pid: "2115735606", name: "Sico Condones Safety", subcategoria: "Preservativos", h_units: 2.3, h_orders: 2.1, avg_price: 259.17, ex_incr_units: 16, ex_incr_orders: 15, ex_budget_mxn: 2488, ex_budget_usd: 143.02, real_units: 21, final_budget_mxn: 3266, final_budget_usd: 187.75, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
@@ -760,6 +789,24 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 2012, canib_ord_bench: 2907, canib_ord_delta_pct: -30.8,
     canib_und_post: 6458, canib_und_bench: 10832, canib_und_delta_pct: -40.4,
     canib_cli_post: 1704, canib_cli_bench: 2480, canib_cli_delta_pct: -31.3
+  },
+  {
+    deal_id: "VIRAL_DEAL_SICO_010526",
+    post_days: 3, fase: 2,
+    gmv_activacion: 13307, gmv_lw: 2560, gmv_dlw_pct: 419.7, gmv_l4w: 4082, gmv_dl4w_pct: 226.0,
+    usuarios_unicos: 69, usr_lw: 17, usr_dlw_pct: 305.9, usr_l4w: 21, usr_dl4w_pct: 232.5,
+    cr_pct: 1.22, aov: 179.83, aov_lw: 150.62, aov_dlw_pct: 19.4, aov_l4w: 185.53, aov_dl4w_pct: -3.1,
+    unidades_total: 85, und_lw: 17, und_dlw_pct: 400.0, und_l4w: 29, und_dl4w_pct: 195.7,
+    ordenes_total: 74, ord_lw: 17, ord_dlw_pct: 335.3, ord_l4w: 22, ord_dl4w_pct: 236.4,
+    impresiones_total: 5637,
+    so_turbo_mx: 8099170, gmv_categoria: 33285, gmv_cat_lw: 18902, gmv_cat_l4w: 21486,
+    share_deal_cat_pct: 39.97, share_lw_pct: 13.55, share_l4w_pct: 18.99,
+    gmv_basket: 27854, gmv_sellup: 14547, pct_sellup: 52.23, aov_basket: 376.41, aov_deal_post: 179.83,
+    cross_ordenes: 74, cross_skus_distintos: 146, cross_top_producto: "Sico Play Texturizado", cross_top_ordenes: 5, cross_top_pct: 6.76,
+    inv_oos_cierre_viral_avg: 16.8, inv_oos_post_avg: 17.4, inv_cov_viral_ap_avg: 55.0, inv_cov_viral_ci_avg: 60.3, inv_cov_post_avg: 59.2, inv_cov_bench_avg: 52.1,
+    canib_ord_post: 122, canib_ord_bench: 84, canib_ord_delta_pct: 45.2,
+    canib_und_post: 132, canib_und_bench: 91, canib_und_delta_pct: 45.1,
+    canib_cli_post: 117, canib_cli_bench: 81, canib_cli_delta_pct: 44.4
   }
 ];
 
@@ -858,5 +905,11 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "81993", name: "Platano Chiapas", subcategoria: "Frutas", ordenes: 18, pct_deal: 0.54, order: 9 },
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "5759", name: "Electrolit Suero Rehidratante", subcategoria: "Suero", ordenes: 16, pct_deal: 0.48, order: 10 },
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8770", name: "Pack Cerveza Amstel Ultra", subcategoria: "Cervezas", ordenes: 16, pct_deal: 0.48, order: 11 },
-  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "13818", name: "Topo Chico Agua Mineral", subcategoria: "Agua Natural", ordenes: 16, pct_deal: 0.48, order: 12 }
+  { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "13818", name: "Topo Chico Agua Mineral", subcategoria: "Agua Natural", ordenes: 16, pct_deal: 0.48, order: 12 },
+  // Sico
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "7560", name: "Sico Condon Invisible Ultra Sense", ordenes: 23, usuarios: 22, unidades: 23, gmv: 6698, aov: 291.22, impresiones: 1169, cr_pct: 1.88, gmv_dlw_pct: 2369.7, gmv_dl4w_pct: 452.2, seg_nuevo: 20, seg_nuevo_pct: 87, seg_reactivado: 1, seg_reactivado_pct: 4, seg_retenido: 2, seg_retenido_pct: 9, stock_viral: 335, stock_post: 305, stock_bench: 196, stock_delta_pct: 55.9, oos_cierre_viral: 16, oos_post: 16, cov_viral_ap: 67.7, cov_viral_ci: 61.8, cov_post: 61.8, canib_ord_post: 30, canib_ord_bench: 13, canib_ord_delta_pct: 140.0, canib_und_post: 33, canib_und_bench: 13, canib_und_delta_pct: 158.8, canib_cli_post: 27, canib_cli_bench: 11, canib_cli_delta_pct: 157.1 },
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "12030", name: "Sico Condon Invisible Ultra Delgado", ordenes: 24, usuarios: 22, unidades: 28, gmv: 3079, aov: 128.28, impresiones: 1351, cr_pct: 1.63, gmv_dlw_pct: 658.0, gmv_dl4w_pct: 287.8, seg_nuevo: 19, seg_nuevo_pct: 86, seg_reactivado: 3, seg_reactivado_pct: 14, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 332, stock_post: 306, stock_bench: 329, stock_delta_pct: -6.8, oos_cierre_viral: 17, oos_post: 18, cov_viral_ap: 50.2, cov_viral_ci: 55.2, cov_post: 53.9, canib_ord_post: 23, canib_ord_bench: 24, canib_ord_delta_pct: -3.2, canib_und_post: 26, canib_und_bench: 26, canib_und_delta_pct: 0, canib_cli_post: 22, canib_cli_bench: 24, canib_cli_delta_pct: -7.4 },
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "3860", name: "Lubricante Sico Play Cereza", ordenes: 17, usuarios: 17, unidades: 17, gmv: 1907, aov: 112.19, impresiones: 930, cr_pct: 1.83, gmv_dlw_pct: 200.1, gmv_dl4w_pct: 118.8, seg_nuevo: 16, seg_nuevo_pct: 94, seg_reactivado: 1, seg_reactivado_pct: 6, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 236, stock_post: 224, stock_bench: 240, stock_delta_pct: -6.8, oos_cierre_viral: 17, oos_post: 15, cov_viral_ap: 51.8, cov_viral_ci: 66.2, cov_post: 65.8, canib_ord_post: 23, canib_ord_bench: 11, canib_ord_delta_pct: 119.0, canib_und_post: 22, canib_und_bench: 11, canib_und_delta_pct: 104.7, canib_cli_post: 23, canib_cli_bench: 11, canib_cli_delta_pct: 119.0 },
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "14101", name: "Sico Condones Climax Mutuo", ordenes: 17, usuarios: 16, unidades: 17, gmv: 1623, aov: 95.48, impresiones: 1508, cr_pct: 1.06, gmv_dlw_pct: 407.1, gmv_dl4w_pct: 99.6, seg_nuevo: 12, seg_nuevo_pct: 75, seg_reactivado: 2, seg_reactivado_pct: 12, seg_retenido: 2, seg_retenido_pct: 12, stock_viral: 678, stock_post: 660, stock_bench: 758, stock_delta_pct: -13.0, oos_cierre_viral: 9, oos_post: 13, cov_viral_ap: 61.3, cov_viral_ci: 74.1, cov_post: 70.3, canib_ord_post: 40, canib_ord_bench: 30, canib_ord_delta_pct: 34.5, canib_und_post: 45, canib_und_bench: 35, canib_und_delta_pct: 30.4, canib_cli_post: 39, canib_cli_bench: 29, canib_cli_delta_pct: 35.7 },
+  { deal_id: "VIRAL_DEAL_SICO_010526", sync: "10439", name: "Sico Condones Safety", ordenes: 1, usuarios: 1, unidades: 0, gmv: 0, aov: 0, impresiones: 679, cr_pct: 0.15, gmv_dlw_pct: -100, gmv_dl4w_pct: -100, seg_nuevo: 0, seg_nuevo_pct: 0, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 1, seg_retenido_pct: 100, stock_viral: 224, stock_post: 222, stock_bench: 138, stock_delta_pct: 60.6, oos_cierre_viral: 25, oos_post: 25, cov_viral_ap: 44.0, cov_viral_ci: 44.0, cov_post: 44.0, canib_ord_post: 6, canib_ord_bench: 6, canib_ord_delta_pct: 9.1, canib_und_post: 6, canib_und_bench: 6, canib_und_delta_pct: 4.3, canib_cli_post: 6, canib_cli_bench: 6, canib_cli_delta_pct: 9.1 }
 ];
