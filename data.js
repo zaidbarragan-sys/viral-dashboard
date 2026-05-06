@@ -210,6 +210,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "—",
     pct_growth_vs_maker: 0,
     categoria_display: "Por definir"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_120526",
+    maker_name: "Fruver",
+    maker_aux: "Fruver",
+    business_unit: "WOW",
+    descuento_pct: 60,
+    incrementalidad: 4,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-04-23",
+    fecha_ejecucion: "2026-05-12",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 60000,
+    budget_maker_usd: 1739.13,
+    budget_growth_usd: 1739.13,
+    budget_total_usd: 3478.26,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 100,
+    categoria_display: "Frutas"
   }
 ];
 
@@ -261,7 +284,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "9131", ean: "7501007528427", pid: "2115468435", name: "Lubriderm Reparacion Intensiva 400ml", subcategoria: "Cremas corporales", h_units: 7.8, h_orders: 7.2, avg_price: 111.43, ex_incr_units: 117, ex_incr_orders: 108, ex_budget_mxn: 6519, ex_budget_usd: 375.09, real_units: 961, final_budget_mxn: 53542, final_budget_usd: 3081.24, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "4261", ean: "70501053553", pid: "2113444376", name: "Neutrogena Night Calming Toallitas 25 pzs", subcategoria: "Agua micelar y bifasicos", h_units: 3.4, h_orders: 3.1, avg_price: 149.25, ex_incr_units: 51, ex_incr_orders: 47, ex_budget_mxn: 3806, ex_budget_usd: 218.99, real_units: 313, final_budget_mxn: 23358, final_budget_usd: 1343.38, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "4681", ean: "70501050651", pid: "2113443935", name: "Neutrogena Desmaquillante Bifasico Oil Free", subcategoria: "Agua micelar y bifasicos", h_units: 1.1, h_orders: 1.2, avg_price: 256.15, ex_incr_units: 17, ex_incr_orders: 18, ex_budget_mxn: 2177, ex_budget_usd: 125.26, real_units: 61, final_budget_mxn: 7813, final_budget_usd: 449.54, sku_order: 5 },
-  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "90531", ean: "7891010257316", pid: "2115839502", name: "Neutrogena Serum Retin Boost 30mL", subcategoria: "Toallitas", h_units: 3.4, h_orders: 3.1, avg_price: 565.90, ex_incr_units: 51, ex_incr_orders: 47, ex_budget_mxn: 14430, ex_budget_usd: 830.26, real_units: 313, final_budget_mxn: 23358, final_budget_usd: 1343.38, sku_order: 6 }
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "90531", ean: "7891010257316", pid: "2115839502", name: "Neutrogena Serum Retin Boost 30mL", subcategoria: "Toallitas", h_units: 3.4, h_orders: 3.1, avg_price: 565.90, ex_incr_units: 51, ex_incr_orders: 47, ex_budget_mxn: 14430, ex_budget_usd: 830.26, real_units: 313, final_budget_mxn: 23358, final_budget_usd: 1343.38, sku_order: 6 },
+  // Fruver 12-may
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "81993", ean: "2220000001233", pid: "2115572989", name: "Plátano Chiapas 200 g", subcategoria: "Frutas", h_units: 1992.6, h_orders: 593.3, avg_price: 5.94, ex_incr_units: 7970, ex_incr_orders: 2373, ex_budget_mxn: 28405, ex_budget_usd: 1646.67, real_units: 14652, final_budget_mxn: 52220, final_budget_usd: 3027.25, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "76544", ean: "2220000000755", pid: "2114940020", name: "Kiwi 130 g", subcategoria: "Frutas", h_units: 146.1, h_orders: 67.9, avg_price: 15.52, ex_incr_units: 584, ex_incr_orders: 272, ex_budget_mxn: 5434, ex_budget_usd: 315.01, real_units: 411, final_budget_mxn: 3827, final_budget_usd: 221.86, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "82056", ean: "22200000012641", pid: "2115387677", name: "Pera d Anjou", subcategoria: "Frutas", h_units: 73.2, h_orders: 36.2, avg_price: 15.03, ex_incr_units: 293, ex_incr_orders: 145, ex_budget_mxn: 2641, ex_budget_usd: 153.10, real_units: 213, final_budget_mxn: 1921, final_budget_usd: 111.36, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "12166", ean: "2200000308245", pid: "2115482161", name: "Papaya Maradol", subcategoria: "Frutas", h_units: 46.7, h_orders: 46.7, avg_price: 70.21, ex_incr_units: 187, ex_incr_orders: 187, ex_budget_mxn: 7880, ex_budget_usd: 456.81, real_units: 29, final_budget_mxn: 1222, final_budget_usd: 70.84, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "71570", ean: "2220000000066", pid: "2115421207", name: "Piña Miel", subcategoria: "Frutas", h_units: 30.8, h_orders: 29.6, avg_price: 52.63, ex_incr_units: 123, ex_incr_orders: 118, ex_budget_mxn: 3884, ex_budget_usd: 225.16, real_units: 26, final_budget_mxn: 821, final_budget_usd: 47.59, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
