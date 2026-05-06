@@ -279,6 +279,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_LALA_270526",
+    maker_name: "Grupo Lala",
+    maker_aux: "Lala",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 9,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-22",
+    fecha_ejecucion: "2026-05-27",
+    usd_mxn: 17.38,
+    fecha_tasa: "2026-05-05",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1726.12,
+    budget_growth_usd: 517.84,
+    budget_total_usd: 2243.96,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Leche natural"
   }
 ];
 
@@ -342,7 +365,10 @@ const PREVIRAL_SKU_DETAIL = [
   // Cerveza Charro
   { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86364", ean: "7503037706646", pid: "2115743795", name: "Cerveza Charro Ultra Botella 355 mL", subcategoria: "Cervezas", h_units: 11.8, h_orders: 3.4, avg_price: 61.23, ex_incr_units: 354, ex_incr_orders: 102, ex_budget_mxn: 13013, ex_budget_usd: 754.38, real_units: 644, final_budget_mxn: 23643, final_budget_usd: 1370.61, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86363", ean: "7500462216900", pid: "2115743794", name: "Cerveza Charro Pilsner Botella 355 mL", subcategoria: "Cervezas", h_units: 6.3, h_orders: 4.0, avg_price: 59.18, ex_incr_units: 189, ex_incr_orders: 120, ex_budget_mxn: 6711, ex_budget_usd: 388.93, real_units: 356, final_budget_mxn: 12639, final_budget_usd: 732.70, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86362", ean: "7503037706356", pid: "2115743796", name: "Cerveza Charro Ámbar Botella 355 mL", subcategoria: "Cervezas", h_units: 4.6, h_orders: 2.1, avg_price: 60.94, ex_incr_units: 138, ex_incr_orders: 63, ex_budget_mxn: 5046, ex_budget_usd: 292.52, real_units: 252, final_budget_mxn: 9214, final_budget_usd: 534.14, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86362", ean: "7503037706356", pid: "2115743796", name: "Cerveza Charro Ámbar Botella 355 mL", subcategoria: "Cervezas", h_units: 4.6, h_orders: 2.1, avg_price: 60.94, ex_incr_units: 138, ex_incr_orders: 63, ex_budget_mxn: 5046, ex_budget_usd: 292.52, real_units: 252, final_budget_mxn: 9214, final_budget_usd: 534.14, sku_order: 3 },
+  // Lala 27-may
+  { deal_id: "VIRAL_DEAL_LALA_270526", sync: "14588", ean: "7501020548495", pid: "2115448738", name: "Leche Past Lala 100 Prot Semi 1Lt", subcategoria: "Leche natural", h_units: 98.5, h_orders: 61.9, avg_price: 48.23, ex_incr_units: 887, ex_incr_orders: 557, ex_budget_mxn: 25658, ex_budget_usd: 1476.30, real_units: 1056, final_budget_mxn: 30550, final_budget_usd: 1757.77, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_LALA_270526", sync: "72152", ean: "7501020550955", pid: "2115575353", name: "Lala 100 Leche sin Lactosa Low Carb Light 1L", subcategoria: "Leche natural", h_units: 27.2, h_orders: 16.6, avg_price: 42.02, ex_incr_units: 245, ex_incr_orders: 149, ex_budget_mxn: 6177, ex_budget_usd: 355.41, real_units: 335, final_budget_mxn: 8446, final_budget_usd: 486.02, sku_order: 2 }
 ];
 
 const POSTMORTEM_DEALS = [
