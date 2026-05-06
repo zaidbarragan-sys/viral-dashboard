@@ -509,6 +509,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Chocolates"
+  },
+  {
+    deal_id: "VIRAL_DEAL_GRANEL_260526",
+    maker_name: "Granel",
+    maker_aux: "Granel",
+    business_unit: "WOW",
+    descuento_pct: 60,
+    incrementalidad: 4,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-04-23",
+    fecha_ejecucion: "2026-05-26",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 60000,
+    budget_maker_usd: 1739.13,
+    budget_growth_usd: 1739.13,
+    budget_total_usd: 3478.26,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 100,
+    categoria_display: "Frutos secos y semillas"
   }
 ];
 
@@ -620,7 +643,13 @@ const PREVIRAL_SKU_DETAIL = [
   // Hersheys
   { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "14022", ean: "7501024530274", pid: "2115807906", name: "Chocolate Hershey's Zero Sugar 17 g", subcategoria: "Chocolates", h_units: 28.0, h_orders: 17.4, avg_price: 26.82, ex_incr_units: 560, ex_incr_orders: 348, ex_budget_mxn: 9012, ex_budget_usd: 522.43, real_units: 946, final_budget_mxn: 15223, final_budget_usd: 882.49, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "7109", ean: "75011192", pid: "2115005219", name: "Hersheys Chocolate Cookies and Cream 43 g", subcategoria: "Chocolates", h_units: 26.9, h_orders: 21.0, avg_price: 29.30, ex_incr_units: 538, ex_incr_orders: 420, ex_budget_mxn: 9458, ex_budget_usd: 548.29, real_units: 832, final_budget_mxn: 14626, final_budget_usd: 847.88, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "8211", ean: "7501024511310", pid: "2115807904", name: "Hersheys Chocolate Leche 40 g", subcategoria: "Chocolates", h_units: 16.8, h_orders: 10.9, avg_price: 28.64, ex_incr_units: 336, ex_incr_orders: 218, ex_budget_mxn: 5774, ex_budget_usd: 334.72, real_units: 532, final_budget_mxn: 9142, final_budget_usd: 530.03, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "8211", ean: "7501024511310", pid: "2115807904", name: "Hersheys Chocolate Leche 40 g", subcategoria: "Chocolates", h_units: 16.8, h_orders: 10.9, avg_price: 28.64, ex_incr_units: 336, ex_incr_orders: 218, ex_budget_mxn: 5774, ex_budget_usd: 334.72, real_units: 532, final_budget_mxn: 9142, final_budget_usd: 530.03, sku_order: 3 },
+  // Granel 26-may
+  { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "83016", ean: "22200000013723", pid: "2115430841", name: "Cacahuate Sin Sal 200 g", subcategoria: "Frutos secos y semillas", h_units: 29.6, h_orders: 20.9, avg_price: 17.66, ex_incr_units: 118, ex_incr_orders: 84, ex_budget_mxn: 1250, ex_budget_usd: 72.46, real_units: 2082, final_budget_mxn: 22061, final_budget_usd: 1278.90, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86777", ean: "2220000002812", pid: "2115709104", name: "Cacahuate Japonés 200 g", subcategoria: "Frutos secos y semillas", h_units: 15.8, h_orders: 13.4, avg_price: 25.06, ex_incr_units: 63, ex_incr_orders: 54, ex_budget_mxn: 947, ex_budget_usd: 54.90, real_units: 783, final_budget_mxn: 11777, final_budget_usd: 682.72, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86776", ean: "2220000002811", pid: "2115709103", name: "Cacahuate Español Salado 200 g", subcategoria: "Frutos secos y semillas", h_units: 14.1, h_orders: 12.5, avg_price: 29.53, ex_incr_units: 56, ex_incr_orders: 50, ex_budget_mxn: 992, ex_budget_usd: 57.51, real_units: 591, final_budget_mxn: 10471, final_budget_usd: 607.01, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86761", ean: "2220000002813", pid: "2115709105", name: "Cacahuate Japones Enchilado 200 g", subcategoria: "Frutos secos y semillas", h_units: 10.9, h_orders: 9.9, avg_price: 33.52, ex_incr_units: 44, ex_incr_orders: 40, ex_budget_mxn: 885, ex_budget_usd: 51.30, real_units: 409, final_budget_mxn: 8226, final_budget_usd: 476.87, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86754", ean: "2220000002809", pid: "2115710330", name: "Cacahuate Enchilado 200 g", subcategoria: "Frutos secos y semillas", h_units: 10.0, h_orders: 9.8, avg_price: 29.37, ex_incr_units: 40, ex_incr_orders: 39, ex_budget_mxn: 705, ex_budget_usd: 40.87, real_units: 424, final_budget_mxn: 7472, final_budget_usd: 433.16, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
