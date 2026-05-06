@@ -394,6 +394,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Frutas, Verduras"
+  },
+  {
+    deal_id: "VIRAL_DEAL_RECKITT_200526",
+    maker_name: "Reckitt Benckiser Hygiene Home",
+    maker_aux: "Reckitt",
+    business_unit: "Pharma",
+    descuento_pct: 60,
+    incrementalidad: 10,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-14",
+    fecha_ejecucion: "2026-05-20",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 50000,
+    budget_growth_mxn: 15000,
+    budget_total_mxn: 65000,
+    budget_maker_usd: 2898.55,
+    budget_growth_usd: 869.57,
+    budget_total_usd: 3768.12,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Limpiadores, Desinfectantes, Quitamanchas"
   }
 ];
 
@@ -480,7 +503,14 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "14693", ean: "2200000320568", pid: "2115781775", name: "Malla Aguacate Hass Maduro 3 pzas", subcategoria: "Frutas", h_units: 575.7, h_orders: 490.9, avg_price: 33.00, ex_incr_units: 2303, ex_incr_orders: 1964, ex_budget_mxn: 45599, ex_budget_usd: 2643.42, real_units: 541, final_budget_mxn: 10712, final_budget_usd: 620.98, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "82057", ean: "22200000012634", pid: "2115482097", name: "Pepino", subcategoria: "Frutas", h_units: 376.7, h_orders: 225.3, avg_price: 14.05, ex_incr_units: 1507, ex_incr_orders: 901, ex_budget_mxn: 12704, ex_budget_usd: 736.46, real_units: 831, final_budget_mxn: 7005, final_budget_usd: 406.09, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "82058", ean: "22200000012689", pid: "2115738871", name: "Cebolla Blanca", subcategoria: "Frutas", h_units: 313.7, h_orders: 206.6, avg_price: 10.72, ex_incr_units: 1255, ex_incr_orders: 826, ex_budget_mxn: 8072, ex_budget_usd: 467.94, real_units: 907, final_budget_mxn: 5832, final_budget_usd: 338.09, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "10412", ean: "2200000311238", pid: "2109996468", name: "Calabaza Italiana Mediana 200 g", subcategoria: "Verduras", h_units: 214.3, h_orders: 82.2, avg_price: 8.72, ex_incr_units: 857, ex_incr_orders: 329, ex_budget_mxn: 4485, ex_budget_usd: 260.00, real_units: 761, final_budget_mxn: 3982, final_budget_usd: 230.84, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "10412", ean: "2200000311238", pid: "2109996468", name: "Calabaza Italiana Mediana 200 g", subcategoria: "Verduras", h_units: 214.3, h_orders: 82.2, avg_price: 8.72, ex_incr_units: 857, ex_incr_orders: 329, ex_budget_mxn: 4485, ex_budget_usd: 260.00, real_units: 761, final_budget_mxn: 3982, final_budget_usd: 230.84, sku_order: 5 },
+  // Reckitt
+  { deal_id: "VIRAL_DEAL_RECKITT_200526", sync: "72719", ean: "7501058751119", pid: "2113432864", name: "Harpic Limpiador Desinfectante Para Baños Max Power 750 mL", subcategoria: "Limpiadores multiusos", h_units: 11.6, h_orders: 10.1, avg_price: 65.75, ex_incr_units: 116, ex_incr_orders: 101, ex_budget_mxn: 4576, ex_budget_usd: 265.28, real_units: 439, final_budget_mxn: 17327, final_budget_usd: 1004.75, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_RECKITT_200526", sync: "83468", ean: "7501058714749", pid: "2115487199", name: "Harpic Pastillas Acuáticas Azules 5 Piezas", subcategoria: "Otros limpiadores", h_units: 9.4, h_orders: 8.9, avg_price: 70.81, ex_incr_units: 94, ex_incr_orders: 89, ex_budget_mxn: 3994, ex_budget_usd: 231.54, real_units: 331, final_budget_mxn: 14059, final_budget_usd: 815.01, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_RECKITT_200526", sync: "11519", ean: "7501058752796", pid: "2115598856", name: "Lysol Desinfectante En Aerosol 475 g", subcategoria: "Desinfectantes de ambiente", h_units: 9.1, h_orders: 7.4, avg_price: 169.42, ex_incr_units: 91, ex_incr_orders: 74, ex_budget_mxn: 9252, ex_budget_usd: 536.35, real_units: 134, final_budget_mxn: 13617, final_budget_usd: 789.39, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_RECKITT_200526", sync: "74274", ean: "7501058757890", pid: "2115598862", name: "Vanish Quita Manchas En Polvo White 450 g", subcategoria: "Quitamancha", h_units: 7.8, h_orders: 6.2, avg_price: 115.84, ex_incr_units: 78, ex_incr_orders: 62, ex_budget_mxn: 5421, ex_budget_usd: 314.26, real_units: 168, final_budget_mxn: 11677, final_budget_usd: 676.93, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_RECKITT_200526", sync: "72799", ean: "7501058792662", pid: "2115598856", name: "Lysol Toallitas Desinfectantes Para Superficies 80 ud.", subcategoria: "Paños multiusos", h_units: 3.0, h_orders: 2.8, avg_price: 144.74, ex_incr_units: 30, ex_incr_orders: 28, ex_budget_mxn: 2605, ex_budget_usd: 151.01, real_units: 52, final_budget_mxn: 4516, final_budget_usd: 261.80, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_RECKITT_200526", sync: "72715", ean: "7501058757791", pid: "2113437465", name: "Vanish Quitamanchas en Gel Multiusos 4 L", subcategoria: "Quitamancha", h_units: 2.6, h_orders: 2.1, avg_price: 221.90, ex_incr_units: 26, ex_incr_orders: 21, ex_budget_mxn: 3462, ex_budget_usd: 200.70, real_units: 29, final_budget_mxn: 3861, final_budget_usd: 223.83, sku_order: 6 }
 ];
 
 const POSTMORTEM_DEALS = [
