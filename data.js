@@ -486,6 +486,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Suero"
+  },
+  {
+    deal_id: "VIRAL_DEAL_HERSHEYS_210526",
+    maker_name: "The Hershey Company",
+    maker_aux: "Hersheys",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 20,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-21",
+    fecha_ejecucion: "2026-05-21",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1739.13,
+    budget_growth_usd: 521.74,
+    budget_total_usd: 2260.87,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Chocolates"
   }
 ];
 
@@ -593,7 +616,11 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5898", ean: "7501125118562", pid: "2115571555", name: "Electrolit Suero Rehidratante Sabor Lima-Limón 625 mL", subcategoria: "Suero", h_units: 394.3, h_orders: 238.5, avg_price: 26.05, ex_incr_units: 4732, ex_incr_orders: 2862, ex_budget_mxn: 30819, ex_budget_usd: 1786.61, real_units: 4743, final_budget_mxn: 30888, final_budget_usd: 1790.61, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5896", ean: "7501125174797", pid: "2115805908", name: "Electrolit Suero Rehidratante Sabor Mora Azul 625 mL", subcategoria: "Suero", h_units: 376.6, h_orders: 240.5, avg_price: 27.07, ex_incr_units: 4519, ex_incr_orders: 2886, ex_budget_mxn: 30573, ex_budget_usd: 1772.35, real_units: 4360, final_budget_mxn: 29506, final_budget_usd: 1710.49, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5759", ean: "7501125144851", pid: "2115805910", name: "Electrolit Suero Rehidratante Sabor Uva 625 mL", subcategoria: "Suero", h_units: 305.3, h_orders: 192.8, avg_price: 26.24, ex_incr_units: 3664, ex_incr_orders: 2314, ex_budget_mxn: 24028, ex_budget_usd: 1392.93, real_units: 3646, final_budget_mxn: 23918, final_budget_usd: 1386.55, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5495", ean: "7501125104268", pid: "2115759946", name: "Electrolit Suero Rehidratante Sabor Fresa 625 mL", subcategoria: "Suero", h_units: 162.8, h_orders: 107.1, avg_price: 25.56, ex_incr_units: 1954, ex_incr_orders: 1285, ex_budget_mxn: 12486, ex_budget_usd: 723.83, real_units: 1996, final_budget_mxn: 12754, final_budget_usd: 739.36, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5495", ean: "7501125104268", pid: "2115759946", name: "Electrolit Suero Rehidratante Sabor Fresa 625 mL", subcategoria: "Suero", h_units: 162.8, h_orders: 107.1, avg_price: 25.56, ex_incr_units: 1954, ex_incr_orders: 1285, ex_budget_mxn: 12486, ex_budget_usd: 723.83, real_units: 1996, final_budget_mxn: 12754, final_budget_usd: 739.36, sku_order: 5 },
+  // Hersheys
+  { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "14022", ean: "7501024530274", pid: "2115807906", name: "Chocolate Hershey's Zero Sugar 17 g", subcategoria: "Chocolates", h_units: 28.0, h_orders: 17.4, avg_price: 26.82, ex_incr_units: 560, ex_incr_orders: 348, ex_budget_mxn: 9012, ex_budget_usd: 522.43, real_units: 946, final_budget_mxn: 15223, final_budget_usd: 882.49, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "7109", ean: "75011192", pid: "2115005219", name: "Hersheys Chocolate Cookies and Cream 43 g", subcategoria: "Chocolates", h_units: 26.9, h_orders: 21.0, avg_price: 29.30, ex_incr_units: 538, ex_incr_orders: 420, ex_budget_mxn: 9458, ex_budget_usd: 548.29, real_units: 832, final_budget_mxn: 14626, final_budget_usd: 847.88, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "8211", ean: "7501024511310", pid: "2115807904", name: "Hersheys Chocolate Leche 40 g", subcategoria: "Chocolates", h_units: 16.8, h_orders: 10.9, avg_price: 28.64, ex_incr_units: 336, ex_incr_orders: 218, ex_budget_mxn: 5774, ex_budget_usd: 334.72, real_units: 532, final_budget_mxn: 9142, final_budget_usd: 530.03, sku_order: 3 }
 ];
 
 const POSTMORTEM_DEALS = [
