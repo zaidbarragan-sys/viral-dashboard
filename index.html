@@ -772,6 +772,24 @@
       margin-top: 12px;
     }
 
+    .btn-download {
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: var(--coral);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .btn-download:hover {
+      opacity: 0.85;
+    }
+
     #catalogo-table thead th.sortable,
     .catalogo-table-el thead th.sortable {
       cursor: pointer;
@@ -893,6 +911,7 @@
         </table>
       </div>
       <div class="catalogo-count" id="catalogo-count"></div>
+      <button id="catalogo-download" class="btn-download">Descargar CSV</button>
     </div>
   </main>
 
@@ -1731,6 +1750,33 @@
         });
       });
     }
+
+    // CSV download
+    document.getElementById('catalogo-download').addEventListener('click', () => {
+      const tbody = document.getElementById('catalogo-tbody');
+      const trs = tbody.querySelectorAll('tr');
+      if (!trs.length) return;
+
+      const headers = ['Nombre', 'Sync', 'Viral', 'Fecha', 'Status'];
+      const csvRows = [headers.join(',')];
+
+      trs.forEach(tr => {
+        const cells = tr.querySelectorAll('td');
+        const row = Array.from(cells).map(td => {
+          const val = td.textContent.trim().replace(/"/g, '""');
+          return `"${val}"`;
+        });
+        csvRows.push(row.join(','));
+      });
+
+      const blob = new Blob([csvRows.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `catalogo_skus_${new Date().toISOString().slice(0, 10)}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+    });
 
     // ============================================================
     // INIT
