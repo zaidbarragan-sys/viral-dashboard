@@ -256,6 +256,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Suplementos alimenticios"
+  },
+  {
+    deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526",
+    maker_name: "Cervecería Charro",
+    maker_aux: "Cerveza Charro",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 30,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-10",
+    fecha_ejecucion: "2026-05-15",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 35000,
+    budget_growth_mxn: 10500,
+    budget_total_mxn: 45500,
+    budget_maker_usd: 2028.99,
+    budget_growth_usd: 608.70,
+    budget_total_usd: 2637.68,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
   }
 ];
 
@@ -315,7 +338,11 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "12166", ean: "2200000308245", pid: "2115482161", name: "Papaya Maradol", subcategoria: "Frutas", h_units: 46.7, h_orders: 46.7, avg_price: 70.21, ex_incr_units: 187, ex_incr_orders: 187, ex_budget_mxn: 7880, ex_budget_usd: 456.81, real_units: 29, final_budget_mxn: 1222, final_budget_usd: 70.84, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "71570", ean: "2220000000066", pid: "2115421207", name: "Piña Miel", subcategoria: "Frutas", h_units: 30.8, h_orders: 29.6, avg_price: 52.63, ex_incr_units: 123, ex_incr_orders: 118, ex_budget_mxn: 3884, ex_budget_usd: 225.16, real_units: 26, final_budget_mxn: 821, final_budget_usd: 47.59, sku_order: 5 },
   // Birdman
-  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "83710", ean: "7503025737355", pid: "2115518280", name: "Birdman Creatina Monohidratada en Polvo 450 g", subcategoria: "Suplementos alimenticios", h_units: 51.4, h_orders: 44.7, avg_price: 392.67, ex_incr_units: 257, ex_incr_orders: 224, ex_budget_mxn: 50458, ex_budget_usd: 2924.52, real_units: 397, final_budget_mxn: 77945, final_budget_usd: 4517.68, sku_order: 1 }
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "83710", ean: "7503025737355", pid: "2115518280", name: "Birdman Creatina Monohidratada en Polvo 450 g", subcategoria: "Suplementos alimenticios", h_units: 51.4, h_orders: 44.7, avg_price: 392.67, ex_incr_units: 257, ex_incr_orders: 224, ex_budget_mxn: 50458, ex_budget_usd: 2924.52, real_units: 397, final_budget_mxn: 77945, final_budget_usd: 4517.68, sku_order: 1 },
+  // Cerveza Charro
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86364", ean: "7503037706646", pid: "2115743795", name: "Cerveza Charro Ultra Botella 355 mL", subcategoria: "Cervezas", h_units: 11.8, h_orders: 3.4, avg_price: 61.23, ex_incr_units: 354, ex_incr_orders: 102, ex_budget_mxn: 13013, ex_budget_usd: 754.38, real_units: 644, final_budget_mxn: 23643, final_budget_usd: 1370.61, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86363", ean: "7500462216900", pid: "2115743794", name: "Cerveza Charro Pilsner Botella 355 mL", subcategoria: "Cervezas", h_units: 6.3, h_orders: 4.0, avg_price: 59.18, ex_incr_units: 189, ex_incr_orders: 120, ex_budget_mxn: 6711, ex_budget_usd: 388.93, real_units: 356, final_budget_mxn: 12639, final_budget_usd: 732.70, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86362", ean: "7503037706356", pid: "2115743796", name: "Cerveza Charro Ámbar Botella 355 mL", subcategoria: "Cervezas", h_units: 4.6, h_orders: 2.1, avg_price: 60.94, ex_incr_units: 138, ex_incr_orders: 63, ex_budget_mxn: 5046, ex_budget_usd: 292.52, real_units: 252, final_budget_mxn: 9214, final_budget_usd: 534.14, sku_order: 3 }
 ];
 
 const POSTMORTEM_DEALS = [
