@@ -302,6 +302,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Leche natural"
+  },
+  {
+    deal_id: "VIRAL_DEAL_KIMBERLY_150526",
+    maker_name: "Kimberly Clark",
+    maker_aux: "Kimberly",
+    business_unit: "Pharma",
+    descuento_pct: 60,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-10",
+    fecha_ejecucion: "2026-05-15",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 45000,
+    budget_growth_mxn: 13500,
+    budget_total_mxn: 58500,
+    budget_maker_usd: 2608.70,
+    budget_growth_usd: 782.61,
+    budget_total_usd: 3391.30,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Toallitas humedas"
   }
 ];
 
@@ -368,7 +391,11 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86362", ean: "7503037706356", pid: "2115743796", name: "Cerveza Charro Ámbar Botella 355 mL", subcategoria: "Cervezas", h_units: 4.6, h_orders: 2.1, avg_price: 60.94, ex_incr_units: 138, ex_incr_orders: 63, ex_budget_mxn: 5046, ex_budget_usd: 292.52, real_units: 252, final_budget_mxn: 9214, final_budget_usd: 534.14, sku_order: 3 },
   // Lala 27-may
   { deal_id: "VIRAL_DEAL_LALA_270526", sync: "14588", ean: "7501020548495", pid: "2115448738", name: "Leche Past Lala 100 Prot Semi 1Lt", subcategoria: "Leche natural", h_units: 98.5, h_orders: 61.9, avg_price: 48.23, ex_incr_units: 887, ex_incr_orders: 557, ex_budget_mxn: 25658, ex_budget_usd: 1476.30, real_units: 1056, final_budget_mxn: 30550, final_budget_usd: 1757.77, sku_order: 1 },
-  { deal_id: "VIRAL_DEAL_LALA_270526", sync: "72152", ean: "7501020550955", pid: "2115575353", name: "Lala 100 Leche sin Lactosa Low Carb Light 1L", subcategoria: "Leche natural", h_units: 27.2, h_orders: 16.6, avg_price: 42.02, ex_incr_units: 245, ex_incr_orders: 149, ex_budget_mxn: 6177, ex_budget_usd: 355.41, real_units: 335, final_budget_mxn: 8446, final_budget_usd: 486.02, sku_order: 2 }
+  { deal_id: "VIRAL_DEAL_LALA_270526", sync: "72152", ean: "7501020550955", pid: "2115575353", name: "Lala 100 Leche sin Lactosa Low Carb Light 1L", subcategoria: "Leche natural", h_units: 27.2, h_orders: 16.6, avg_price: 42.02, ex_incr_units: 245, ex_incr_orders: 149, ex_budget_mxn: 6177, ex_budget_usd: 355.41, real_units: 335, final_budget_mxn: 8446, final_budget_usd: 486.02, sku_order: 2 },
+  // Kimberly
+  { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "8511", ean: "7501943454873", pid: "2109997684", name: "Huggies Toallita Húmeda Cuidado Relajante 80 Und", subcategoria: "Toallitas humedas", h_units: 42.9, h_orders: 35.1, avg_price: 45.62, ex_incr_units: 257, ex_incr_orders: 211, ex_budget_mxn: 7035, ex_budget_usd: 407.83, real_units: 850, final_budget_mxn: 23266, final_budget_usd: 1348.75, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "5858", ean: "7501943454743", pid: "2113263441", name: "Huggies Toallita Húmeda Cuidado Hidratante 80 Und", subcategoria: "Toallitas humedas", h_units: 36.2, h_orders: 30.6, avg_price: 47.71, ex_incr_units: 217, ex_incr_orders: 184, ex_budget_mxn: 6212, ex_budget_usd: 360.12, real_units: 687, final_budget_mxn: 19666, final_budget_usd: 1139.77, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "10335", ean: "7506425607808", pid: "2115536733", name: "T.H. HUGGIES SUPREME 80s", subcategoria: "Toallitas humedas", h_units: 28.6, h_orders: 23.1, avg_price: 65.19, ex_incr_units: 172, ex_incr_orders: 139, ex_budget_mxn: 6728, ex_budget_usd: 390.03, real_units: 398, final_budget_mxn: 15567, final_budget_usd: 902.43, sku_order: 3 }
 ];
 
 const POSTMORTEM_DEALS = [
