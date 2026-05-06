@@ -670,6 +670,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Lubricantes, Preservativos"
+  },
+  {
+    deal_id: "VIRAL_DEAL_COLIMA_300526",
+    maker_name: "Cervecería de Colima",
+    maker_aux: "Colima",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 16,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-21",
+    fecha_ejecucion: "2026-05-30",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-05",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1739.13,
+    budget_growth_usd: 521.74,
+    budget_total_usd: 2260.87,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
   }
 ];
 
@@ -819,7 +842,12 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_SICO_270626", sync: "12030", ean: "7501685171113", pid: "2115154809", name: "Sico Condon Invisible Ultra Delgado", subcategoria: "Preservativos", h_units: 12.7, h_orders: 10.6, avg_price: 116.90, ex_incr_units: 51, ex_incr_orders: 42, ex_budget_mxn: 17727, ex_budget_usd: 1018.79, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_SICO_270626", sync: "3860", ean: "7501058793232", pid: "2113547772", name: "Lubricante Sico Play Cereza", subcategoria: "Lubricantes", h_units: 8.7, h_orders: 7.9, avg_price: 152.95, ex_incr_units: 35, ex_incr_orders: 32, ex_budget_mxn: 12166, ex_budget_usd: 699.20, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_SICO_270626", sync: "7560", ean: "7501685171120", pid: "2109994473", name: "Sico Condon Invisible Ultra Sense", subcategoria: "Preservativos", h_units: 7.9, h_orders: 6.6, avg_price: 295.95, ex_incr_units: 32, ex_incr_orders: 26, ex_budget_mxn: 11123, ex_budget_usd: 639.37, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_SICO_270626", sync: "10439", ean: "7501058367136", pid: "2115735606", name: "Sico Condones Safety", subcategoria: "Preservativos", h_units: 2.3, h_orders: 2.1, avg_price: 259.17, ex_incr_units: 9, ex_incr_orders: 8, ex_budget_mxn: 3128, ex_budget_usd: 179.77, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_SICO_270626", sync: "10439", ean: "7501058367136", pid: "2115735606", name: "Sico Condones Safety", subcategoria: "Preservativos", h_units: 2.3, h_orders: 2.1, avg_price: 259.17, ex_incr_units: 9, ex_incr_orders: 8, ex_budget_mxn: 3128, ex_budget_usd: 179.77, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 5 },
+  // Colima
+  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "13477", ean: "7503026716625", pid: "2115035630", name: "Cerveza Cervecería de Colima Piedra Lisa Lata 355 mL", subcategoria: "Cervezas", h_units: 423.3, h_orders: 145.1, avg_price: 49.03, ex_incr_units: 6773, ex_incr_orders: 2322, ex_budget_mxn: 19047, ex_budget_usd: 1104.17, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "13816", ean: "7503025396019", pid: "2115035630", name: "Cerveza Cervecería de Colima Colimita Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 47.05, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "91744", ean: "7503049667805", pid: "2115866429", name: "Colima Cero Session IPA Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "91743", ean: "7503049667799", pid: "2115866428", name: "Colima Cero Lager Ambar Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: null, final_budget_mxn: null, final_budget_usd: null, sku_order: 4 }
 ];
 
 const POSTMORTEM_DEALS = [
