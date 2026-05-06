@@ -748,6 +748,41 @@
       font-weight: 700;
     }
 
+    /* Catalogo */
+    .catalogo-filters {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .catalogo-select {
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--gray-border);
+      font-family: inherit;
+      font-size: 13px;
+      background: var(--white);
+      min-width: 220px;
+    }
+
+    .catalogo-count {
+      font-size: 12px;
+      color: var(--gray-text);
+      margin-top: 12px;
+    }
+
+    #catalogo-table thead th.sortable,
+    .catalogo-table-el thead th.sortable {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    #catalogo-table thead th.sortable:hover,
+    .catalogo-table-el thead th.sortable:hover {
+      opacity: 0.85;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .header { padding: 12px 16px; }
@@ -769,6 +804,7 @@
       <h1><span>Viral Deals</span> — Rappi Turbo MX</h1>
       <nav class="tabs">
         <button class="tab active" data-tab="indice">Home</button>
+        <button class="tab" data-tab="catalogo">Catálogo</button>
         <button class="tab" data-tab="comparador">Comparador</button>
         <button class="tab" data-tab="tendencias">Tendencias</button>
       </nav>
@@ -827,6 +863,37 @@
         <div class="chart-card"><h3>Canibalizacion Ordenes &Delta;%</h3><canvas id="chart-canib"></canvas></div>
       </div>
     </div>
+
+    <!-- CATALOGO -->
+    <div id="catalogo" class="section">
+      <h2 class="section-title">Catálogo de SKUs</h2>
+      <div class="catalogo-filters">
+        <select id="catalogo-viral-filter" class="catalogo-select">
+          <option value="">Todos los virales</option>
+        </select>
+        <select id="catalogo-time-filter" class="catalogo-select">
+          <option value="all">Todos</option>
+          <option value="active">En curso / Futuros</option>
+          <option value="past">Pasados</option>
+        </select>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="catalogo-table-el">
+          <thead>
+            <tr>
+              <th class="sortable" data-col="name">Nombre &#x25B4;&#x25BE;</th>
+              <th class="sortable" data-col="sync">Sync &#x25B4;&#x25BE;</th>
+              <th class="sortable" data-col="viral">Viral &#x25B4;&#x25BE;</th>
+              <th class="sortable" data-col="fecha">Fecha &#x25B4;&#x25BE;</th>
+              <th class="sortable" data-col="status">Status &#x25B4;&#x25BE;</th>
+            </tr>
+          </thead>
+          <tbody id="catalogo-tbody"></tbody>
+        </table>
+      </div>
+      <div class="catalogo-count" id="catalogo-count"></div>
+    </div>
   </main>
 
   <footer class="footer">
@@ -870,6 +937,7 @@
       }
       if (tab === 'comparador') renderComparador();
       if (tab === 'tendencias') renderTendencias();
+      if (tab === 'catalogo') renderCatalogo();
     }
 
     document.querySelectorAll('.tab').forEach(tab => {
@@ -879,7 +947,7 @@
     // Hash routing
     window.addEventListener('hashchange', () => {
       const hash = window.location.hash.replace('#', '') || 'indice';
-      if (['indice', 'detalle', 'comparador', 'tendencias'].includes(hash)) {
+      if (['indice', 'detalle', 'comparador', 'tendencias', 'catalogo'].includes(hash)) {
         navigateTo(hash);
       }
     });
@@ -1557,13 +1625,121 @@
     });
 
     // ============================================================
+    // CATALOGO
+    // ============================================================
+    let catalogoSortCol = 'fecha';
+    let catalogoSortAsc = false; // newest first
+    let catalogoInitialized = false;
+
+    function renderCatalogo() {
+      const viralFilter = document.getElementById('catalogo-viral-filter');
+      const timeFilter = document.getElementById('catalogo-time-filter');
+
+      // Populate viral dropdown once
+      if (!catalogoInitialized) {
+        PREVIRAL_DEALS.filter(d => d.tipo_viral !== 'forecast').forEach(deal => {
+          const opt = document.createElement('option');
+          opt.value = deal.deal_id;
+          opt.textContent = `${deal.maker_aux} — ${deal.fecha_ejecucion}`;
+          viralFilter.appendChild(opt);
+        });
+
+        viralFilter.addEventListener('change', renderCatalogoTable);
+        timeFilter.addEventListener('change', renderCatalogoTable);
+
+        document.querySelectorAll('.catalogo-table-el thead th.sortable').forEach(th => {
+          th.addEventListener('click', () => {
+            const col = th.dataset.col;
+            if (catalogoSortCol === col) {
+              catalogoSortAsc = !catalogoSortAsc;
+            } else {
+              catalogoSortCol = col;
+              catalogoSortAsc = col === 'fecha' ? false : true;
+            }
+            renderCatalogoTable();
+          });
+        });
+
+        catalogoInitialized = true;
+      }
+
+      renderCatalogoTable();
+    }
+
+    function renderCatalogoTable() {
+      const viralId = document.getElementById('catalogo-viral-filter').value;
+      const timeVal = document.getElementById('catalogo-time-filter').value;
+      const tbody = document.getElementById('catalogo-tbody');
+      const countEl = document.getElementById('catalogo-count');
+
+      const today = new Date().toISOString().slice(0, 10);
+
+      // Build enriched data
+      let rows = PREVIRAL_SKU_DETAIL.map(sku => {
+        const deal = getDeal(sku.deal_id);
+        const post = getPost(sku.deal_id);
+        return {
+          name: sku.name,
+          sync: sku.sync,
+          viral: deal ? deal.maker_aux : sku.deal_id,
+          fecha: deal ? deal.fecha_ejecucion : '—',
+          status: post ? 'Ejecutado' : 'Pendiente',
+          deal_id: sku.deal_id
+        };
+      });
+
+      // Filter by viral
+      if (viralId) {
+        rows = rows.filter(r => r.deal_id === viralId);
+      }
+
+      // Filter by time
+      if (timeVal === 'active') {
+        rows = rows.filter(r => r.fecha >= today || r.fecha === '—');
+      } else if (timeVal === 'past') {
+        rows = rows.filter(r => r.fecha < today && r.fecha !== '—');
+      }
+
+      // Sort (newest first by default)
+      rows.sort((a, b) => {
+        let valA = a[catalogoSortCol];
+        let valB = b[catalogoSortCol];
+        valA = String(valA).toLowerCase();
+        valB = String(valB).toLowerCase();
+        if (valA < valB) return catalogoSortAsc ? -1 : 1;
+        if (valA > valB) return catalogoSortAsc ? 1 : -1;
+        return 0;
+      });
+
+      // Render
+      tbody.innerHTML = rows.map(r => `
+        <tr class="clickable" data-deal="${r.deal_id}">
+          <td>${r.name}</td>
+          <td>${r.sync}</td>
+          <td>${r.viral}</td>
+          <td>${r.fecha}</td>
+          <td><span class="badge ${r.status === 'Ejecutado' ? 'badge-green' : 'badge-gray'}">${r.status}</span></td>
+        </tr>
+      `).join('');
+
+      countEl.textContent = `${rows.length} SKU${rows.length !== 1 ? 's' : ''}`;
+
+      // Click to navigate to detail
+      tbody.querySelectorAll('tr.clickable').forEach(tr => {
+        tr.addEventListener('click', () => {
+          navigateTo('detalle', tr.dataset.deal);
+        });
+      });
+    }
+
+    // ============================================================
     // INIT
     // ============================================================
     renderIndice();
 
     // Handle initial hash
     const initHash = window.location.hash.replace('#', '');
-    if (initHash && ['indice', 'detalle', 'comparador', 'tendencias'].includes(initHash)) {
+    if (initHash && ['indice', 'detalle', 'comparador', 'tendencias', 'catalogo'].includes(initHash)) {
       navigateTo(initHash);
     }
   </script>

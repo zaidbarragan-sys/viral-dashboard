@@ -497,7 +497,7 @@ const PREVIRAL_DEALS = [
     tipo_viral: "1 día",
     ciudades: "Nacional",
     fecha_planeacion: "2026-04-21",
-    fecha_ejecucion: "2026-05-21",
+    fecha_ejecucion: "2026-05-25",
     usd_mxn: 17.25,
     fecha_tasa: "2026-05-06",
     budget_maker_mxn: 30000,
