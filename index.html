@@ -1659,7 +1659,7 @@
         PREVIRAL_DEALS.filter(d => d.tipo_viral !== 'forecast').forEach(deal => {
           const opt = document.createElement('option');
           opt.value = deal.deal_id;
-          opt.textContent = `${deal.maker_aux} — ${deal.fecha_ejecucion}`;
+          opt.textContent = `${deal.maker_aux} (${deal.fecha_ejecucion})`;
           viralFilter.appendChild(opt);
         });
 
