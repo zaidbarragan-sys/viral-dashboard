@@ -923,6 +923,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "—",
     pct_growth_vs_maker: 0,
     categoria_display: "Por definir"
+  },
+  {
+    deal_id: "VIRAL_DEAL_BACHOCO_020526",
+    maker_name: "Bachoco",
+    maker_aux: "Bachoco",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 10,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-04-17",
+    fecha_ejecucion: "2026-05-02",
+    usd_mxn: 17.39,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 40000,
+    budget_growth_mxn: 12000,
+    budget_total_mxn: 52000,
+    budget_maker_usd: 2300.17,
+    budget_growth_usd: 690.05,
+    budget_total_usd: 2990.22,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Pollo y aves"
   }
 ];
 
@@ -1091,7 +1114,9 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "13477", ean: "7503026716625", pid: "2115035630", name: "Cerveza Cervecería de Colima Piedra Lisa Lata 355 mL", subcategoria: "Cervezas", h_units: 423.3, h_orders: 145.1, avg_price: 49.03, ex_incr_units: 6773, ex_incr_orders: 2322, ex_budget_mxn: 19047, ex_budget_usd: 1104.17, real_units: 647, final_budget_mxn: 19033, final_budget_usd: 1103.36, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "13816", ean: "7503025396019", pid: "2115035630", name: "Cerveza Cervecería de Colima Colimita Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 47.05, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 236, final_budget_mxn: 6662, final_budget_usd: 386.20, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "91744", ean: "7503049667805", pid: "2115866429", name: "Colima Cero Session IPA Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 264, final_budget_mxn: 6653, final_budget_usd: 385.68, sku_order: 3 },
-  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "91743", ean: "7503049667799", pid: "2115866428", name: "Colima Cero Lager Ambar Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 264, final_budget_mxn: 6653, final_budget_usd: 385.68, sku_order: 4 }
+  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "91743", ean: "7503049667799", pid: "2115866428", name: "Colima Cero Lager Ambar Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 264, final_budget_mxn: 6653, final_budget_usd: 385.68, sku_order: 4 },
+  // Bachoco
+  { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "14192", ean: "7501101545702", pid: "2115738820", name: "Bachoco - Alitas picositas - 700 g", subcategoria: "Pollo y aves", h_units: 10.9, h_orders: 9.0, avg_price: 179.28, ex_incr_units: 109, ex_incr_orders: 90, ex_budget_mxn: 11725, ex_budget_usd: 674.24, real_units: 483, final_budget_mxn: 51955, final_budget_usd: 2987.64, sku_order: 1 }
 ];
 
 const POSTMORTEM_DEALS = [
