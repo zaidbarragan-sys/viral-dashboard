@@ -760,6 +760,7 @@
     /* Catalogo */
     .catalogo-filters {
       display: flex;
+      align-items: center;
       gap: 12px;
       margin-bottom: 20px;
       flex-wrap: wrap;
@@ -916,11 +917,9 @@
           <option value="active">En curso / Futuros</option>
           <option value="past">Pasados</option>
         </select>
+        <button id="catalogo-download" class="btn-download" style="margin-top:0; margin-left:auto;">Descargar CSV</button>
       </div>
 
-      <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
-        <button id="catalogo-download" class="btn-download">Descargar CSV</button>
-      </div>
       <div class="table-wrapper">
         <table class="catalogo-table-el">
           <thead>
