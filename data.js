@@ -532,6 +532,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 100,
     categoria_display: "Frutos secos y semillas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_ELECTROLIFE_280526",
+    maker_name: "Pisa Farmaceutica",
+    maker_aux: "Electrolife",
+    business_unit: "Pharma",
+    descuento_pct: 25,
+    incrementalidad: 9,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-22",
+    fecha_ejecucion: "2026-05-28",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 75000,
+    budget_growth_mxn: 22500,
+    budget_total_mxn: 97500,
+    budget_maker_usd: 4347.83,
+    budget_growth_usd: 1304.35,
+    budget_total_usd: 5652.17,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Suero"
   }
 ];
 
@@ -649,7 +672,11 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86777", ean: "2220000002812", pid: "2115709104", name: "Cacahuate Japonés 200 g", subcategoria: "Frutos secos y semillas", h_units: 15.8, h_orders: 13.4, avg_price: 25.06, ex_incr_units: 63, ex_incr_orders: 54, ex_budget_mxn: 947, ex_budget_usd: 54.90, real_units: 783, final_budget_mxn: 11777, final_budget_usd: 682.72, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86776", ean: "2220000002811", pid: "2115709103", name: "Cacahuate Español Salado 200 g", subcategoria: "Frutos secos y semillas", h_units: 14.1, h_orders: 12.5, avg_price: 29.53, ex_incr_units: 56, ex_incr_orders: 50, ex_budget_mxn: 992, ex_budget_usd: 57.51, real_units: 591, final_budget_mxn: 10471, final_budget_usd: 607.01, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86761", ean: "2220000002813", pid: "2115709105", name: "Cacahuate Japones Enchilado 200 g", subcategoria: "Frutos secos y semillas", h_units: 10.9, h_orders: 9.9, avg_price: 33.52, ex_incr_units: 44, ex_incr_orders: 40, ex_budget_mxn: 885, ex_budget_usd: 51.30, real_units: 409, final_budget_mxn: 8226, final_budget_usd: 476.87, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86754", ean: "2220000002809", pid: "2115710330", name: "Cacahuate Enchilado 200 g", subcategoria: "Frutos secos y semillas", h_units: 10.0, h_orders: 9.8, avg_price: 29.37, ex_incr_units: 40, ex_incr_orders: 39, ex_budget_mxn: 705, ex_budget_usd: 40.87, real_units: 424, final_budget_mxn: 7472, final_budget_usd: 433.16, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86754", ean: "2220000002809", pid: "2115710330", name: "Cacahuate Enchilado 200 g", subcategoria: "Frutos secos y semillas", h_units: 10.0, h_orders: 9.8, avg_price: 29.37, ex_incr_units: 40, ex_incr_orders: 39, ex_budget_mxn: 705, ex_budget_usd: 40.87, real_units: 424, final_budget_mxn: 7472, final_budget_usd: 433.16, sku_order: 5 },
+  // Electrolife
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "12304", ean: "7502268541491", pid: "2112841074", name: "Electrolife Zero Suero Uva 625 mL", subcategoria: "Suero", h_units: 182.8, h_orders: 102.5, avg_price: 26.77, ex_incr_units: 1645, ex_incr_orders: 923, ex_budget_mxn: 11004, ex_budget_usd: 637.91, real_units: 7284, final_budget_mxn: 48748, final_budget_usd: 2826.55, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "13072", ean: "7502268541484", pid: "2115489165", name: "Electrolife Zero Sabor Fresa Kiwi 660 mL", subcategoria: "Suero", h_units: 164.7, h_orders: 97.1, avg_price: 26.54, ex_incr_units: 1482, ex_incr_orders: 874, ex_budget_mxn: 9833, ex_budget_usd: 570.03, real_units: 6617, final_budget_mxn: 43913, final_budget_usd: 2545.97, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "74951", ean: "7502268541477", pid: "2114167366", name: "Electrolife Zero Naranja Y Mandarina 625 mL", subcategoria: "Suero", h_units: 18.2, h_orders: 10.6, avg_price: 26.22, ex_incr_units: 164, ex_incr_orders: 95, ex_budget_mxn: 1075, ex_budget_usd: 62.32, real_units: 741, final_budget_mxn: 4857, final_budget_usd: 281.56, sku_order: 3 }
 ];
 
 const POSTMORTEM_DEALS = [
