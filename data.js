@@ -440,6 +440,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Vinos"
+  },
+  {
+    deal_id: "VIRAL_DEAL_PALMAR_230526",
+    maker_name: "Palmar",
+    maker_aux: "Palmar",
+    business_unit: "Drinks",
+    descuento_pct: 40,
+    incrementalidad: 7,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-10",
+    fecha_ejecucion: "2026-05-23",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 50000,
+    budget_growth_mxn: 15000,
+    budget_total_mxn: 65000,
+    budget_maker_usd: 2898.55,
+    budget_growth_usd: 869.57,
+    budget_total_usd: 3768.12,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Sidras, Ginebras, Tequilas"
   }
 ];
 
@@ -537,7 +560,11 @@ const PREVIRAL_SKU_DETAIL = [
   // Madrileña
   { deal_id: "VIRAL_DEAL_MADRILENA_220526", sync: "5747", ean: "7791540127168", pid: "2115775310", name: "Vino Tinto Las Moras Malbec Finca 750 mL", subcategoria: "Vino tinto", h_units: 99.5, h_orders: 75.0, avg_price: 148.59, ex_incr_units: 597, ex_incr_orders: 450, ex_budget_mxn: 35483, ex_budget_usd: 2057.57, real_units: 598, final_budget_mxn: 35543, final_budget_usd: 2061.04, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_MADRILENA_220526", sync: "11629", ean: "7791540090417", pid: "2114888138", name: "Vino Blanco Finca Las Moras Sauvignon Blanc 750 mL", subcategoria: "Vino blanco", h_units: 61.9, h_orders: 46.2, avg_price: 151.47, ex_incr_units: 371, ex_incr_orders: 277, ex_budget_mxn: 22478, ex_budget_usd: 1303.07, real_units: 364, final_budget_mxn: 22054, final_budget_usd: 1278.49, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_MADRILENA_220526", sync: "13148", ean: "7791540047916", pid: "2114888137", name: "Vino Rosado Las Moras Finca 750 mL", subcategoria: "Vino rosado", h_units: 20.7, h_orders: 17.0, avg_price: 159.59, ex_incr_units: 124, ex_incr_orders: 102, ex_budget_mxn: 7916, ex_budget_usd: 459.07, real_units: 116, final_budget_mxn: 7405, final_budget_usd: 429.28, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_MADRILENA_220526", sync: "13148", ean: "7791540047916", pid: "2114888137", name: "Vino Rosado Las Moras Finca 750 mL", subcategoria: "Vino rosado", h_units: 20.7, h_orders: 17.0, avg_price: 159.59, ex_incr_units: 124, ex_incr_orders: 102, ex_budget_mxn: 7916, ex_budget_usd: 459.07, real_units: 116, final_budget_mxn: 7405, final_budget_usd: 429.28, sku_order: 3 },
+  // Palmar
+  { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "82936", ean: "7503035300174", pid: "2115419331", name: "Pack Mixto Hard Seltzer Palmar Sabores Surtidos 8 x 355 mL", subcategoria: "Sidras", h_units: 7.1, h_orders: 6.1, avg_price: 212.64, ex_incr_units: 50, ex_incr_orders: 43, ex_budget_mxn: 4253, ex_budget_usd: 246.55, real_units: 523, final_budget_mxn: 44484, final_budget_usd: 2578.78, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "73551", ean: "7503035300211", pid: "2115131536", name: "Palmar Ginebra Con Sabor Frutos Rojos y Rosas 750 mL", subcategoria: "Ginebras", h_units: 1.9, h_orders: 1.6, avg_price: 394.51, ex_incr_units: 13, ex_incr_orders: 11, ex_budget_mxn: 2051, ex_budget_usd: 118.90, real_units: 73, final_budget_mxn: 11520, final_budget_usd: 667.83, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "83702", ean: "7503033994054", pid: "2115520925", name: "Tequila Taddel Reposado Cristalino 750 mL", subcategoria: "Tequilas", h_units: 1.4, h_orders: 1.3, avg_price: 574.73, ex_incr_units: 10, ex_incr_orders: 9, ex_budget_mxn: 2299, ex_budget_usd: 133.28, real_units: 39, final_budget_mxn: 8966, final_budget_usd: 519.77, sku_order: 3 }
 ];
 
 const POSTMORTEM_DEALS = [
