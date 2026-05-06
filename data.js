@@ -325,6 +325,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Toallitas humedas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_BLN_160526",
+    maker_name: "Bodegas La Negrita",
+    maker_aux: "BLN",
+    business_unit: "Drinks",
+    descuento_pct: 50,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-20",
+    fecha_ejecucion: "2026-05-16",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1739.13,
+    budget_growth_usd: 521.74,
+    budget_total_usd: 2260.87,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Brandys, Rones, Vodkas"
   }
 ];
 
@@ -395,7 +418,12 @@ const PREVIRAL_SKU_DETAIL = [
   // Kimberly
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "8511", ean: "7501943454873", pid: "2109997684", name: "Huggies Toallita Húmeda Cuidado Relajante 80 Und", subcategoria: "Toallitas humedas", h_units: 42.9, h_orders: 35.1, avg_price: 45.62, ex_incr_units: 257, ex_incr_orders: 211, ex_budget_mxn: 7035, ex_budget_usd: 407.83, real_units: 850, final_budget_mxn: 23266, final_budget_usd: 1348.75, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "5858", ean: "7501943454743", pid: "2113263441", name: "Huggies Toallita Húmeda Cuidado Hidratante 80 Und", subcategoria: "Toallitas humedas", h_units: 36.2, h_orders: 30.6, avg_price: 47.71, ex_incr_units: 217, ex_incr_orders: 184, ex_budget_mxn: 6212, ex_budget_usd: 360.12, real_units: 687, final_budget_mxn: 19666, final_budget_usd: 1139.77, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "10335", ean: "7506425607808", pid: "2115536733", name: "T.H. HUGGIES SUPREME 80s", subcategoria: "Toallitas humedas", h_units: 28.6, h_orders: 23.1, avg_price: 65.19, ex_incr_units: 172, ex_incr_orders: 139, ex_budget_mxn: 6728, ex_budget_usd: 390.03, real_units: 398, final_budget_mxn: 15567, final_budget_usd: 902.43, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "10335", ean: "7506425607808", pid: "2115536733", name: "T.H. HUGGIES SUPREME 80s", subcategoria: "Toallitas humedas", h_units: 28.6, h_orders: 23.1, avg_price: 65.19, ex_incr_units: 172, ex_incr_orders: 139, ex_budget_mxn: 6728, ex_budget_usd: 390.03, real_units: 398, final_budget_mxn: 15567, final_budget_usd: 902.43, sku_order: 3 },
+  // BLN
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "5654", ean: "8410113000071", pid: "2109993871", name: "Torres Brandy 10 700 ml", subcategoria: "Brandys", h_units: 7.0, h_orders: 5.4, avg_price: 321.50, ex_incr_units: 42, ex_incr_orders: 32, ex_budget_mxn: 6752, ex_budget_usd: 391.42, real_units: 110, final_budget_mxn: 17683, final_budget_usd: 1025.10, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "6806", ean: "4750021000157", pid: "2115488755", name: "Vodka Stolichnaya 750 mL", subcategoria: "Vodkas", h_units: 3.8, h_orders: 3.6, avg_price: 420.95, ex_incr_units: 23, ex_incr_orders: 22, ex_budget_mxn: 4841, ex_budget_usd: 280.64, real_units: 46, final_budget_mxn: 9682, final_budget_usd: 561.28, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "647", ean: "26964823967", pid: "2115588854", name: "Ron Flor de Caña 12 Años 750 mL", subcategoria: "Rones", h_units: 2.4, h_orders: 2.3, avg_price: 659.03, ex_incr_units: 14, ex_incr_orders: 14, ex_budget_mxn: 4613, ex_budget_usd: 267.42, real_units: 18, final_budget_mxn: 5931, final_budget_usd: 343.83, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "75320", ean: "", pid: "", name: "Ron Flor de Caña Extra Seco 4 Años 750 mL", subcategoria: "Rones", h_units: 2.4, h_orders: 2.3, avg_price: 249.00, ex_incr_units: 14, ex_incr_orders: 14, ex_budget_mxn: 1743, ex_budget_usd: 101.04, real_units: 47, final_budget_mxn: 5852, final_budget_usd: 339.25, sku_order: 4 }
 ];
 
 const POSTMORTEM_DEALS = [
