@@ -555,6 +555,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Suero"
+  },
+  {
+    deal_id: "VIRAL_DEAL_ELECTROLIFE_310526",
+    maker_name: "Pisa Farmaceutica",
+    maker_aux: "Electrolife",
+    business_unit: "Pharma",
+    descuento_pct: 25,
+    incrementalidad: 9,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-22",
+    fecha_ejecucion: "2026-05-31",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-06",
+    budget_maker_mxn: 75000,
+    budget_growth_mxn: 22500,
+    budget_total_mxn: 97500,
+    budget_maker_usd: 4347.83,
+    budget_growth_usd: 1304.35,
+    budget_total_usd: 5652.17,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Suero"
   }
 ];
 
@@ -676,7 +699,11 @@ const PREVIRAL_SKU_DETAIL = [
   // Electrolife
   { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "12304", ean: "7502268541491", pid: "2112841074", name: "Electrolife Zero Suero Uva 625 mL", subcategoria: "Suero", h_units: 182.8, h_orders: 102.5, avg_price: 26.77, ex_incr_units: 1645, ex_incr_orders: 923, ex_budget_mxn: 11004, ex_budget_usd: 637.91, real_units: 7284, final_budget_mxn: 48748, final_budget_usd: 2826.55, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "13072", ean: "7502268541484", pid: "2115489165", name: "Electrolife Zero Sabor Fresa Kiwi 660 mL", subcategoria: "Suero", h_units: 164.7, h_orders: 97.1, avg_price: 26.54, ex_incr_units: 1482, ex_incr_orders: 874, ex_budget_mxn: 9833, ex_budget_usd: 570.03, real_units: 6617, final_budget_mxn: 43913, final_budget_usd: 2545.97, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "74951", ean: "7502268541477", pid: "2114167366", name: "Electrolife Zero Naranja Y Mandarina 625 mL", subcategoria: "Suero", h_units: 18.2, h_orders: 10.6, avg_price: 26.22, ex_incr_units: 164, ex_incr_orders: 95, ex_budget_mxn: 1075, ex_budget_usd: 62.32, real_units: 741, final_budget_mxn: 4857, final_budget_usd: 281.56, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "74951", ean: "7502268541477", pid: "2114167366", name: "Electrolife Zero Naranja Y Mandarina 625 mL", subcategoria: "Suero", h_units: 18.2, h_orders: 10.6, avg_price: 26.22, ex_incr_units: 164, ex_incr_orders: 95, ex_budget_mxn: 1075, ex_budget_usd: 62.32, real_units: 741, final_budget_mxn: 4857, final_budget_usd: 281.56, sku_order: 3 },
+  // Electrolife 31-may
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "12304", ean: "7502268541491", pid: "2112841074", name: "Electrolife Zero Suero Uva 625 mL", subcategoria: "Suero", h_units: 182.8, h_orders: 102.5, avg_price: 26.77, ex_incr_units: 1645, ex_incr_orders: 923, ex_budget_mxn: 11004, ex_budget_usd: 637.91, real_units: 7284, final_budget_mxn: 48748, final_budget_usd: 2826.55, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "13072", ean: "7502268541484", pid: "2115489165", name: "Electrolife Zero Sabor Fresa Kiwi 660 mL", subcategoria: "Suero", h_units: 164.7, h_orders: 97.1, avg_price: 26.54, ex_incr_units: 1482, ex_incr_orders: 874, ex_budget_mxn: 9833, ex_budget_usd: 570.03, real_units: 6617, final_budget_mxn: 43913, final_budget_usd: 2545.97, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "74951", ean: "7502268541477", pid: "2114167366", name: "Electrolife Zero Naranja Y Mandarina 625 mL", subcategoria: "Suero", h_units: 18.2, h_orders: 10.6, avg_price: 26.22, ex_incr_units: 164, ex_incr_orders: 95, ex_budget_mxn: 1075, ex_budget_usd: 62.32, real_units: 741, final_budget_mxn: 4857, final_budget_usd: 281.56, sku_order: 3 }
 ];
 
 const POSTMORTEM_DEALS = [
