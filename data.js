@@ -173,7 +173,7 @@ const PREVIRAL_DEALS = [
     descuento_pct: 50,
     incrementalidad: 15,
     tipo_viral: "1 día",
-    ciudades: "Nacional",
+    ciudades: "CDMX",
     fecha_planeacion: "2026-04-13",
     fecha_ejecucion: "2026-05-10",
     usd_mxn: 17.38,
