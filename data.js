@@ -1107,6 +1107,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 100,
     categoria_display: "Frutas y verduras"
+  },
+  {
+    deal_id: "VIRAL_DEAL_HERSHEYS_130226",
+    maker_name: "The Hershey Company",
+    maker_aux: "Hersheys",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 12,
+    tipo_viral: "multi-día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2025-12-22",
+    fecha_ejecucion: "2026-02-13",
+    fecha_fin: "2026-02-14",
+    usd_mxn: 17.26,
+    fecha_tasa: "2026-05-07",
+    budget_maker_mxn: 140000,
+    budget_growth_mxn: 42000,
+    budget_total_mxn: 182000,
+    budget_maker_usd: 8111.24,
+    budget_growth_usd: 2433.37,
+    budget_total_usd: 10544.61,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Chocolates"
   }
 ];
 
@@ -1303,7 +1327,17 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14946", ean: "2200000320643", pid: "2112681595", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", h_units: 1011.0, h_orders: 366.0, avg_price: 8.35, ex_incr_units: 3033, ex_incr_orders: 1098, ex_budget_mxn: 15195, ex_budget_usd: 880.36, real_units: 3004, final_budget_mxn: 15050, final_budget_usd: 871.96, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14693", ean: "2200000320568", pid: "2112681579", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", h_units: 561.0, h_orders: 491.0, avg_price: 32.98, ex_incr_units: 1683, ex_incr_orders: 1473, ex_budget_mxn: 33299, ex_budget_usd: 1929.26, real_units: 1667, final_budget_mxn: 32982, final_budget_usd: 1910.89, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82058", ean: "22200000012689", pid: "2115387664", name: "Cebolla Blanca", subcategoria: "Frutas", h_units: 327.0, h_orders: 225.0, avg_price: 10.71, ex_incr_units: 981, ex_incr_orders: 675, ex_budget_mxn: 6304, ex_budget_usd: 365.24, real_units: 972, final_budget_mxn: 6246, final_budget_usd: 361.87, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82383", ean: "7503010519089", pid: "2115412004", name: "Tortillas Guerreras Totopos Deshidratados 250 g", subcategoria: "Tortillas, tostadas y totopos", h_units: 2.0, h_orders: 2.0, avg_price: 62.13, ex_incr_units: 6, ex_incr_orders: 6, ex_budget_mxn: 224, ex_budget_usd: 12.98, real_units: 5, final_budget_mxn: 186, final_budget_usd: 10.78, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82383", ean: "7503010519089", pid: "2115412004", name: "Tortillas Guerreras Totopos Deshidratados 250 g", subcategoria: "Tortillas, tostadas y totopos", h_units: 2.0, h_orders: 2.0, avg_price: 62.13, ex_incr_units: 6, ex_incr_orders: 6, ex_budget_mxn: 224, ex_budget_usd: 12.98, real_units: 5, final_budget_mxn: 186, final_budget_usd: 10.78, sku_order: 5 },
+  // Hersheys
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "73519", ean: "75020149", pid: "2113558852", name: "Chocolate Kisses Jr Sabor Leche 41.4 g", subcategoria: "Chocolates", h_units: 8.0, h_orders: 6.0, avg_price: 29.14, ex_incr_units: 96, ex_incr_orders: 72, ex_budget_mxn: 1678, ex_budget_usd: 97.22, real_units: 96, final_budget_mxn: 1678, final_budget_usd: 97.22, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "12079", ean: "7501024596539", pid: "1563743111", name: "Chocolate Kisses Almendras 125 g", subcategoria: "Chocolates", h_units: 6.0, h_orders: 5.0, avg_price: 93.12, ex_incr_units: 72, ex_incr_orders: 60, ex_budget_mxn: 4023, ex_budget_usd: 233.08, real_units: 72, final_budget_mxn: 4023, final_budget_usd: 233.08, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76319", ean: "7501024541713", pid: "2114920022", name: "Hersheys Kisses Fiesta Rojo 190 g", subcategoria: "Chocolates", h_units: 5.0, h_orders: 4.0, avg_price: 82.58, ex_incr_units: 60, ex_incr_orders: 48, ex_budget_mxn: 2973, ex_budget_usd: 172.19, real_units: 60, final_budget_mxn: 2973, final_budget_usd: 172.19, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76321", ean: "7501024598229", pid: "2114918141", name: "Hersheys Kisses Secret Leche 76 g", subcategoria: "Chocolates", h_units: 3.0, h_orders: 3.0, avg_price: 72.42, ex_incr_units: 36, ex_incr_orders: 36, ex_budget_mxn: 1564, ex_budget_usd: 90.61, real_units: 36, final_budget_mxn: 1564, final_budget_usd: 90.61, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "4787", ean: "7501024546138", pid: "2113558854", name: "Chocolate Kisses Cereza Caja 120 g", subcategoria: "Chocolates", h_units: 3.0, h_orders: 2.0, avg_price: 97.17, ex_incr_units: 36, ex_incr_orders: 24, ex_budget_mxn: 2099, ex_budget_usd: 121.61, real_units: 36, final_budget_mxn: 2099, final_budget_usd: 121.61, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76322", ean: "7501024548712", pid: "2114918145", name: "Hersheys Kisses Secret Leche Almendras 72 g", subcategoria: "Chocolates", h_units: 3.0, h_orders: 3.0, avg_price: 89.92, ex_incr_units: 36, ex_incr_orders: 36, ex_budget_mxn: 1942, ex_budget_usd: 112.52, real_units: 36, final_budget_mxn: 1942, final_budget_usd: 112.52, sku_order: 6 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76318", ean: "7501024546190", pid: "2114918146", name: "Hersheys Kisses Trufa 120 g", subcategoria: "Chocolates", h_units: 3.0, h_orders: 2.0, avg_price: 95.93, ex_incr_units: 36, ex_incr_orders: 24, ex_budget_mxn: 2072, ex_budget_usd: 120.05, real_units: 36, final_budget_mxn: 2072, final_budget_usd: 120.05, sku_order: 7 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "73518", ean: "7501024549078", pid: "2113558853", name: "Chocolate Kisses Selección Especial 260 g", subcategoria: "Chocolates", h_units: 1.0, h_orders: 1.0, avg_price: 238.25, ex_incr_units: 12, ex_incr_orders: 12, ex_budget_mxn: 1715, ex_budget_usd: 99.36, real_units: 12, final_budget_mxn: 1715, final_budget_usd: 99.36, sku_order: 8 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76575", ean: "7501024598205", pid: "2114934013", name: "Hersheys Kisses Monaco 34 g", subcategoria: "Chocolates", h_units: 0.0, h_orders: 0.0, avg_price: 19.25, ex_incr_units: 0, ex_incr_orders: 0, ex_budget_mxn: 0, ex_budget_usd: 0, real_units: 0, final_budget_mxn: 0, final_budget_usd: 0, sku_order: 9 }
 ];
 
 const POSTMORTEM_DEALS = [
