@@ -1038,6 +1038,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Snacks salados"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_070226",
+    maker_name: "Fruver",
+    maker_aux: "Fruver",
+    business_unit: "WOW",
+    descuento_pct: 60,
+    incrementalidad: 3,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2025-01-15",
+    fecha_ejecucion: "2026-02-07",
+    usd_mxn: 17.26,
+    fecha_tasa: "2026-05-07",
+    budget_maker_mxn: 35000,
+    budget_growth_mxn: 35000,
+    budget_total_mxn: 70000,
+    budget_maker_usd: 2027.81,
+    budget_growth_usd: 2027.81,
+    budget_total_usd: 4055.62,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 100,
+    categoria_display: "Frutas y verduras"
   }
 ];
 
@@ -1228,7 +1251,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "81480", ean: "7500810037638", pid: "2115313903", name: "Takis Fuego 340 g", subcategoria: "Snacks salados", h_units: 59.5, h_orders: 59.5, avg_price: 83.82, ex_incr_units: 595, ex_incr_orders: 595, ex_budget_mxn: 29924, ex_budget_usd: 1733.72, real_units: 207, final_budget_mxn: 10410, final_budget_usd: 603.01, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9063", ean: "7501030459941", pid: "2109995680", name: "Cacahuates Golden Nuts Salados 100 g", subcategoria: "Snacks salados", h_units: 30.0, h_orders: 25.5, avg_price: 26.04, ex_incr_units: 300, ex_incr_orders: 255, ex_budget_mxn: 4687, ex_budget_usd: 271.55, real_units: 104, final_budget_mxn: 1625, final_budget_usd: 94.15, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "15301", ean: "7500810000182", pid: "1563694214", name: "Papas Barcel Sal 170 g", subcategoria: "Snacks salados", h_units: 17.5, h_orders: 16.5, avg_price: 58.11, ex_incr_units: 175, ex_incr_orders: 165, ex_budget_mxn: 6102, ex_budget_usd: 353.54, real_units: 61, final_budget_mxn: 2127, final_budget_usd: 123.17, sku_order: 5 },
-  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "10606", ean: "7501030459927", pid: "2115038941", name: "Golden Nuts Enchilados 100 g", subcategoria: "Snacks salados", h_units: 17.5, h_orders: 15.5, avg_price: 24.74, ex_incr_units: 175, ex_incr_orders: 155, ex_budget_mxn: 2598, ex_budget_usd: 150.52, real_units: 61, final_budget_mxn: 905, final_budget_usd: 52.43, sku_order: 6 }
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "10606", ean: "7501030459927", pid: "2115038941", name: "Golden Nuts Enchilados 100 g", subcategoria: "Snacks salados", h_units: 17.5, h_orders: 15.5, avg_price: 24.74, ex_incr_units: 175, ex_incr_orders: 155, ex_budget_mxn: 2598, ex_budget_usd: 150.52, real_units: 61, final_budget_mxn: 905, final_budget_usd: 52.43, sku_order: 6 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "81998", ean: "2220000001229", pid: "2115371181", name: "Tomate Guaje Saladette", subcategoria: "Frutas", h_units: 1463.0, h_orders: 353.0, avg_price: 5.94, ex_incr_units: 4389, ex_incr_orders: 1059, ex_budget_mxn: 15642, ex_budget_usd: 906.26, real_units: 4389, final_budget_mxn: 15642, final_budget_usd: 906.26, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14946", ean: "2200000320643", pid: "2112681595", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", h_units: 1011.0, h_orders: 366.0, avg_price: 8.35, ex_incr_units: 3033, ex_incr_orders: 1098, ex_budget_mxn: 15195, ex_budget_usd: 880.36, real_units: 3033, final_budget_mxn: 15195, final_budget_usd: 880.36, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14693", ean: "2200000320568", pid: "2112681579", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", h_units: 561.0, h_orders: 491.0, avg_price: 32.98, ex_incr_units: 1683, ex_incr_orders: 1473, ex_budget_mxn: 33299, ex_budget_usd: 1929.26, real_units: 1683, final_budget_mxn: 33299, final_budget_usd: 1929.26, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82058", ean: "22200000012689", pid: "2115387664", name: "Cebolla Blanca", subcategoria: "Frutas", h_units: 327.0, h_orders: 225.0, avg_price: 10.71, ex_incr_units: 981, ex_incr_orders: 675, ex_budget_mxn: 6304, ex_budget_usd: 365.24, real_units: 981, final_budget_mxn: 6304, final_budget_usd: 365.24, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82383", ean: "7503010519089", pid: "2115412004", name: "Tortillas Guerreras Totopos Deshidratados 250 g", subcategoria: "Tortillas, tostadas y totopos", h_units: 2.0, h_orders: 2.0, avg_price: 62.13, ex_incr_units: 6, ex_incr_orders: 6, ex_budget_mxn: 224, ex_budget_usd: 12.98, real_units: 6, final_budget_mxn: 224, final_budget_usd: 12.98, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
