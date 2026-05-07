@@ -1538,6 +1538,36 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 4863, canib_ord_bench: 3946.00, canib_ord_delta_pct: 23.2,
     canib_und_post: 13217, canib_und_bench: 11089.25, canib_und_delta_pct: 19.2,
     canib_cli_post: 5231, canib_cli_bench: 3972.75, canib_cli_delta_pct: 31.7
+  },
+  // Hersheys
+  {
+    deal_id: "VIRAL_DEAL_HERSHEYS_130226",
+    post_days: 82,
+    fase: 2,
+    gmv_activacion: 346069,
+    gmv_lw: 4503, gmv_dlw_pct: 7586.7,
+    gmv_l4w: 3758, gmv_dl4w_pct: 9107.9,
+    usuarios_unicos: 1162,
+    usr_lw: 75, usr_dlw_pct: 1449.3,
+    usr_l4w: 50.5, usr_dl4w_pct: 2201.0,
+    cr_pct: 1.13,
+    aov: 314.61, aov_lw: 70.36, aov_dlw_pct: 347.2, aov_l4w: 78.29, aov_dl4w_pct: 301.8,
+    unidades_total: 3556, und_lw: 66, und_dlw_pct: 5287.9, und_l4w: 50.5, und_dl4w_pct: 6941.6,
+    ordenes_total: 1100, ord_lw: 64, ord_dlw_pct: 1618.8, ord_l4w: 48, ord_dl4w_pct: 2191.7,
+    impresiones_total: 103272,
+    so_turbo_mx: 10011901, gmv_categoria: 570874,
+    gmv_cat_lw: 112410, gmv_cat_l4w: 88742,
+    share_deal_cat_pct: 60.62, share_lw_pct: 4.01, share_l4w_pct: 4.23,
+    gmv_basket: 429943, gmv_sellup: 134031, pct_sellup: 31.17,
+    aov_basket: 390.86, aov_deal_post: 314.61,
+    cross_ordenes: 1117, cross_skus_distintos: 756,
+    cross_top_producto: "Hersheys Barra de Chocolate Unicornio 20 g", cross_top_ordenes: 77, cross_top_pct: 6.89,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 120, canib_ord_bench: 273.50, canib_ord_delta_pct: -56.1,
+    canib_und_post: 181, canib_und_bench: 471, canib_und_delta_pct: -61.6,
+    canib_cli_post: 121, canib_cli_bench: 283.25, canib_cli_delta_pct: -57.3
   }
 ];
 
@@ -1596,7 +1626,17 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", ordenes: 472, usuarios: 534, unidades: 1886, gmv: 12779, aov: 27.07, impresiones: 5023, cr_pct: 10.63, gmv_dlw_pct: 201.6, gmv_dl4w_pct: 158.2, seg_nuevo: 44, seg_nuevo_pct: 8, seg_reactivado: 124, seg_reactivado_pct: 23, seg_retenido: 366, seg_retenido_pct: 69, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 1107, canib_ord_bench: 780.25, canib_ord_delta_pct: 41.9, canib_und_post: 3693, canib_und_bench: 2394.25, canib_und_delta_pct: 54.2, canib_cli_post: 1216, canib_cli_bench: 796.00, canib_cli_delta_pct: 52.8 },
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "81998", name: "Tomate Guaje Saladette", ordenes: 307, usuarios: 345, unidades: 1352, gmv: 5221, aov: 17.01, impresiones: 7228, cr_pct: 4.77, gmv_dlw_pct: 69.8, gmv_dl4w_pct: 21.4, seg_nuevo: 23, seg_nuevo_pct: 7, seg_reactivado: 72, seg_reactivado_pct: 21, seg_retenido: 250, seg_retenido_pct: 72, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 1143, canib_ord_bench: 945.50, canib_ord_delta_pct: 20.9, canib_und_post: 5454, canib_und_bench: 5060, canib_und_delta_pct: 7.8, canib_cli_post: 1240, canib_cli_bench: 963.25, canib_cli_delta_pct: 28.7 },
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82058", name: "Cebolla Blanca", ordenes: 263, usuarios: 305, unidades: 577, gmv: 6042, aov: 22.97, impresiones: 4845, cr_pct: 6.29, gmv_dlw_pct: 182.3, gmv_dl4w_pct: 72.0, seg_nuevo: 20, seg_nuevo_pct: 7, seg_reactivado: 69, seg_reactivado_pct: 23, seg_retenido: 216, seg_retenido_pct: 71, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 850, canib_ord_bench: 704.75, canib_ord_delta_pct: 20.6, canib_und_post: 1568, canib_und_bench: 1339.5, canib_und_delta_pct: 17.1, canib_cli_post: 932, canib_cli_bench: 741.75, canib_cli_delta_pct: 25.6 },
-  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82383", name: "Tortillas Guerreras Totopos Deshidratados 250 g", ordenes: 66, usuarios: 71, unidades: 133, gmv: 8392, aov: 127.16, impresiones: 1804, cr_pct: 3.94, gmv_dlw_pct: 1361.7, gmv_dl4w_pct: 1471.5, seg_nuevo: 5, seg_nuevo_pct: 7, seg_reactivado: 11, seg_reactivado_pct: 15, seg_retenido: 55, seg_retenido_pct: 77, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 83, canib_ord_bench: 12.75, canib_ord_delta_pct: 551.0, canib_und_post: 124, canib_und_bench: 18.75, canib_und_delta_pct: 561.3, canib_cli_post: 90, canib_cli_bench: 14.00, canib_cli_delta_pct: 542.9 }
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82383", name: "Tortillas Guerreras Totopos Deshidratados 250 g", ordenes: 66, usuarios: 71, unidades: 133, gmv: 8392, aov: 127.16, impresiones: 1804, cr_pct: 3.94, gmv_dlw_pct: 1361.7, gmv_dl4w_pct: 1471.5, seg_nuevo: 5, seg_nuevo_pct: 7, seg_reactivado: 11, seg_reactivado_pct: 15, seg_retenido: 55, seg_retenido_pct: 77, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 83, canib_ord_bench: 12.75, canib_ord_delta_pct: 551.0, canib_und_post: 124, canib_und_bench: 18.75, canib_und_delta_pct: 561.3, canib_cli_post: 90, canib_cli_bench: 14.00, canib_cli_delta_pct: 542.9 },
+  // Hersheys
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "73518", name: "Chocolate Kisses Selección Especial 260 g", ordenes: 272, usuarios: 284, unidades: 417, gmv: 99378, aov: 365.36, impresiones: 18998, cr_pct: 1.49, gmv_dlw_pct: 21909.1, gmv_dl4w_pct: 34416.3, seg_nuevo: 41, seg_nuevo_pct: 14, seg_reactivado: 72, seg_reactivado_pct: 25, seg_retenido: 171, seg_retenido_pct: 60, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 7, canib_ord_bench: 11.50, canib_ord_delta_pct: -39.1, canib_und_post: 7, canib_und_bench: 14, canib_und_delta_pct: -50.0, canib_cli_post: 7, canib_cli_bench: 11.50, canib_cli_delta_pct: -39.1 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "12079", name: "Chocolate Kisses Almendras 125 g", ordenes: 411, usuarios: 445, unidades: 620, gmv: 54202, aov: 131.88, impresiones: 20254, cr_pct: 2.20, gmv_dlw_pct: 8925.6, gmv_dl4w_pct: 4616.7, seg_nuevo: 50, seg_nuevo_pct: 11, seg_reactivado: 133, seg_reactivado_pct: 30, seg_retenido: 262, seg_retenido_pct: 59, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 16, canib_ord_bench: 37.50, canib_ord_delta_pct: -57.3, canib_und_post: 21, canib_und_bench: 53.25, canib_und_delta_pct: -60.6, canib_cli_post: 14, canib_cli_bench: 39.25, canib_cli_delta_pct: -64.3 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76319", name: "Hersheys Kisses Fiesta Rojo 190 g", ordenes: 335, usuarios: 341, unidades: 492, gmv: 42201, aov: 125.97, impresiones: 13795, cr_pct: 2.47, gmv_dlw_pct: 9932.0, gmv_dl4w_pct: 9423.8, seg_nuevo: 34, seg_nuevo_pct: 10, seg_reactivado: 94, seg_reactivado_pct: 28, seg_retenido: 213, seg_retenido_pct: 62, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 14, canib_ord_bench: 31.25, canib_ord_delta_pct: -55.2, canib_und_post: 17, canib_und_bench: 54.25, canib_und_delta_pct: -68.7, canib_cli_post: 10, canib_cli_bench: 25.25, canib_cli_delta_pct: -60.4 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76322", name: "Hersheys Kisses Secret Leche Almendras 72 g", ordenes: 268, usuarios: 282, unidades: 476, gmv: 40873, aov: 152.51, impresiones: 9191, cr_pct: 3.07, gmv_dlw_pct: 14930.0, gmv_dl4w_pct: 16966.0, seg_nuevo: 30, seg_nuevo_pct: 11, seg_reactivado: 81, seg_reactivado_pct: 29, seg_retenido: 171, seg_retenido_pct: 61, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 12, canib_ord_bench: 21.75, canib_ord_delta_pct: -44.8, canib_und_post: 22, canib_und_bench: 40.5, canib_und_delta_pct: -45.7, canib_cli_post: 14, canib_cli_bench: 25.50, canib_cli_delta_pct: -45.1 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76318", name: "Hersheys Kisses Trufa 120 g", ordenes: 240, usuarios: 245, unidades: 390, gmv: 36750, aov: 153.13, impresiones: 10941, cr_pct: 2.24, gmv_dlw_pct: 4732.5, gmv_dl4w_pct: 13154.3, seg_nuevo: 21, seg_nuevo_pct: 9, seg_reactivado: 67, seg_reactivado_pct: 27, seg_retenido: 157, seg_retenido_pct: 64, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 18, canib_ord_bench: 30.50, canib_ord_delta_pct: -41.0, canib_und_post: 24, canib_und_bench: 50.5, canib_und_delta_pct: -52.5, canib_cli_post: 15, canib_cli_bench: 32.25, canib_cli_delta_pct: -53.5 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "4787", name: "Chocolate Kisses Cereza Caja 120 g", ordenes: 231, usuarios: 246, unidades: 398, gmv: 37069, aov: 160.47, impresiones: 11539, cr_pct: 2.13, gmv_dlw_pct: 19533.8, gmv_dl4w_pct: 12490.5, seg_nuevo: 31, seg_nuevo_pct: 13, seg_reactivado: 71, seg_reactivado_pct: 29, seg_retenido: 144, seg_retenido_pct: 59, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 19, canib_ord_bench: 29.25, canib_ord_delta_pct: -35.0, canib_und_post: 31, canib_und_bench: 49.25, canib_und_delta_pct: -37.1, canib_cli_post: 20, canib_cli_bench: 30.50, canib_cli_delta_pct: -34.4 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76321", name: "Hersheys Kisses Secret Leche 76 g", ordenes: 207, usuarios: 210, unidades: 332, gmv: 22738, aov: 109.85, impresiones: 10028, cr_pct: 2.09, gmv_dlw_pct: 3972.9, gmv_dl4w_pct: 10010.6, seg_nuevo: 23, seg_nuevo_pct: 11, seg_reactivado: 60, seg_reactivado_pct: 29, seg_retenido: 127, seg_retenido_pct: 60, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 7, canib_ord_bench: 17.00, canib_ord_delta_pct: -58.8, canib_und_post: 9, canib_und_bench: 26.75, canib_und_delta_pct: -66.4, canib_cli_post: 8, canib_cli_bench: 15.75, canib_cli_delta_pct: -49.2 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "73519", name: "Chocolate Kisses Jr Sabor Leche 41.4 g", ordenes: 190, usuarios: 210, unidades: 388, gmv: 12010, aov: 63.21, impresiones: 7429, cr_pct: 2.83, gmv_dlw_pct: 4734.8, gmv_dl4w_pct: 5001.7, seg_nuevo: 25, seg_nuevo_pct: 12, seg_reactivado: 63, seg_reactivado_pct: 30, seg_retenido: 122, seg_retenido_pct: 58, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 24, canib_ord_bench: 30.25, canib_ord_delta_pct: -20.7, canib_und_post: 39, canib_und_bench: 68.75, canib_und_delta_pct: -43.3, canib_cli_post: 29, canib_cli_bench: 35.00, canib_cli_delta_pct: -17.1 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76575", name: "Hersheys Kisses Monaco 34 g", ordenes: 31, usuarios: 36, unidades: 43, gmv: 848, aov: 27.34, impresiones: 1097, cr_pct: 3.28, gmv_dlw_pct: -15.4, gmv_dl4w_pct: 39.8, seg_nuevo: 2, seg_nuevo_pct: 6, seg_reactivado: 9, seg_reactivado_pct: 25, seg_retenido: 25, seg_retenido_pct: 69, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 3, canib_ord_bench: 64.50, canib_ord_delta_pct: -95.3, canib_und_post: 11, canib_und_bench: 113.75, canib_und_delta_pct: -90.3, canib_cli_post: 4, canib_cli_bench: 68.25, canib_cli_delta_pct: -94.1 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -1680,7 +1720,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Gaseosas", ordenes: 261, gmv: 17177, pct_sellup: 6.01, order: 5 },
   { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Huevos", ordenes: 157, gmv: 10231, pct_sellup: 3.58, order: 6 },
   { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Verduras", ordenes: 254, gmv: 9353, pct_sellup: 3.27, order: 7 },
-  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Agua Natural", ordenes: 151, gmv: 8835, pct_sellup: 3.09, order: 8 }
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Agua Natural", ordenes: 151, gmv: 8835, pct_sellup: 3.09, order: 8 },
+  // Hersheys
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Ramos y bouquets", ordenes: 111, gmv: 30043, pct_sellup: 22.42, order: 1 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Chocolates", ordenes: 277, gmv: 27887, pct_sellup: 20.81, order: 2 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Vino tinto", ordenes: 36, gmv: 7208, pct_sellup: 5.38, order: 3 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Snacks salados", ordenes: 113, gmv: 7181, pct_sellup: 5.36, order: 4 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Cervezas", ordenes: 46, gmv: 5014, pct_sellup: 3.74, order: 5 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Gomitas y caramelos", ordenes: 74, gmv: 4889, pct_sellup: 3.65, order: 6 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Gaseosas", ordenes: 93, gmv: 4509, pct_sellup: 3.36, order: 7 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Galletas", ordenes: 63, gmv: 2915, pct_sellup: 2.17, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -1800,5 +1849,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "81996", name: "Jitomate Bola", subcategoria: "Frutas", ordenes: 44, pct_deal: 3.82, order: 9 },
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "10412", name: "Calabaza Italiana", subcategoria: "Verduras", ordenes: 42, pct_deal: 3.65, order: 10 },
   { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 41, pct_deal: 3.56, order: 11 },
-  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "5672", name: "San Juan Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 40, pct_deal: 3.48, order: 12 }
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "5672", name: "San Juan Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 40, pct_deal: 3.48, order: 12 },
+  // Hersheys
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "11580", name: "Hersheys Barra de Chocolate Unicornio 20 g", subcategoria: "Chocolates", ordenes: 77, pct_deal: 6.89, order: 1 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "89424", name: "Clásico 12 Rosas Color Rosa", subcategoria: "Ramos y bouquets", ordenes: 40, pct_deal: 3.58, order: 2 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "89427", name: "Encanto 15 Mini Rosas Multicolor", subcategoria: "Ramos y bouquets", ordenes: 34, pct_deal: 3.04, order: 3 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "89425", name: "Mix Floral Chico 25 Flores Surtidas", subcategoria: "Ramos y bouquets", ordenes: 27, pct_deal: 2.42, order: 4 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76282", name: "Hersheys Kisses Chocolate Con Leche 190 g", subcategoria: "Chocolates", ordenes: 27, pct_deal: 2.42, order: 5 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "89428", name: "Alegría 10 Gerberas Multicolor", subcategoria: "Ramos y bouquets", ordenes: 17, pct_deal: 1.52, order: 6 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "12718", name: "Turin Conejo de Chocolate Individual 20 g", subcategoria: "Chocolates", ordenes: 16, pct_deal: 1.43, order: 7 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "74130", name: "Oreo Galleta Oreo Cubierta White Fudge 152 g", subcategoria: "Esencias y colorantes", ordenes: 15, pct_deal: 1.34, order: 8 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "6455", name: "Tostitos Dip de Queso y Jalapeño 255 g", subcategoria: "Dips", ordenes: 14, pct_deal: 1.25, order: 9 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "6744", name: "Coca-Cola Original Refresco Pet 600 mL", subcategoria: "Gaseosas", ordenes: 14, pct_deal: 1.25, order: 10 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76320", name: "Hersheys Kisses Fiesta Azul 190 g", subcategoria: "Chocolates", ordenes: 13, pct_deal: 1.16, order: 11 },
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "81853", name: "M&Ms Chocolates con Leche y Cacahuate 37.5 g", subcategoria: "Chocolates", ordenes: 12, pct_deal: 1.07, order: 12 }
 ];
