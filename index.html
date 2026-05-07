@@ -1028,7 +1028,7 @@
         <h2>${deal.deal_id}</h2>
         <div class="meta">
           <span><strong>${deal.maker_name}</strong></span>
-          <span>${deal.fecha_ejecucion}</span>
+          <span>${deal.fecha_fin ? deal.fecha_ejecucion + ' → ' + deal.fecha_fin : deal.fecha_ejecucion}</span>
           <span class="badge badge-coral">${deal.descuento_pct}% OFF</span>
           <span class="badge badge-gray">${deal.tipo_viral}</span>
           <span>${deal.ciudades}</span>
@@ -1456,6 +1456,7 @@
       filteredDeals.forEach(d => {
         if (!d.fecha_ejecucion) return;
         const execDate = new Date(d.fecha_ejecucion + 'T00:00:00');
+        const endDate = d.fecha_fin ? new Date(d.fecha_fin + 'T00:00:00') : execDate;
         let type;
         if (d.tipo_viral === 'forecast') {
           type = 'forecast'; // amarillo
@@ -1466,8 +1467,14 @@
         } else {
           type = 'past'; // pasado — azul
         }
-        if (!events[d.fecha_ejecucion]) events[d.fecha_ejecucion] = [];
-        events[d.fecha_ejecucion].push({ deal: d, type });
+        // Mark all days in the range
+        let current = new Date(execDate);
+        while (current <= endDate) {
+          const dateStr = current.toISOString().slice(0, 10);
+          if (!events[dateStr]) events[dateStr] = [];
+          events[dateStr].push({ deal: d, type });
+          current.setDate(current.getDate() + 1);
+        }
       });
 
       // Calendar grid
