@@ -1015,6 +1015,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Pollo y aves"
+  },
+  {
+    deal_id: "VIRAL_DEAL_BARCEL_060226",
+    maker_name: "Barcel",
+    maker_aux: "Barcel",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 10,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2025-01-21",
+    fecha_ejecucion: "2026-02-06",
+    usd_mxn: 17.26,
+    fecha_tasa: "2026-05-07",
+    budget_maker_mxn: 69000,
+    budget_growth_mxn: 20700,
+    budget_total_mxn: 89700,
+    budget_maker_usd: 3996.52,
+    budget_growth_usd: 1199.07,
+    budget_total_usd: 5195.83,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Snacks salados"
   }
 ];
 
@@ -1198,7 +1221,14 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "14192", ean: "7501101545702", pid: "2115738820", name: "Bachoco Alitas picositas 700 g", subcategoria: "Pollo y aves", h_units: 10.9, h_orders: 9.0, avg_price: 179.28, ex_incr_units: 131, ex_incr_orders: 108, ex_budget_mxn: 14091, ex_budget_usd: 816.89, real_units: 1280, final_budget_mxn: 137687, final_budget_usd: 7981.97, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "83610", ean: "7501101545542", pid: "2115738819", name: "Bachoco Boneless Crujientes 700 g", subcategoria: "Pollo y aves", h_units: 5.2, h_orders: 4.9, avg_price: 217.17, ex_incr_units: 62, ex_incr_orders: 59, ex_budget_mxn: 8079, ex_budget_usd: 468.35, real_units: 500, final_budget_mxn: 65151, final_budget_usd: 3776.37, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "12329", ean: "7501101545719", pid: "1563506841", name: "Bachoco Boneless Búfalo 700 g", subcategoria: "Pollo y aves", h_units: 4.7, h_orders: 4.8, avg_price: 207.62, ex_incr_units: 56, ex_incr_orders: 58, ex_budget_mxn: 6976, ex_budget_usd: 404.42, real_units: 473, final_budget_mxn: 58922, final_budget_usd: 3415.58, sku_order: 3 },
-  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "83600", ean: "7501101551611", pid: "2115498506", name: "Bachoco Tender Empanizado 700 g", subcategoria: "Pollo y aves", h_units: 1.9, h_orders: 1.9, avg_price: 235.84, ex_incr_units: 23, ex_incr_orders: 23, ex_budget_mxn: 3255, ex_budget_usd: 188.70, real_units: 171, final_budget_mxn: 24197, final_budget_usd: 1402.76, sku_order: 4 }
+  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "83600", ean: "7501101551611", pid: "2115498506", name: "Bachoco Tender Empanizado 700 g", subcategoria: "Pollo y aves", h_units: 1.9, h_orders: 1.9, avg_price: 235.84, ex_incr_units: 23, ex_incr_orders: 23, ex_budget_mxn: 3255, ex_budget_usd: 188.70, real_units: 171, final_budget_mxn: 24197, final_budget_usd: 1402.76, sku_order: 4 },
+  // Barcel
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9411", ean: "757528040529", pid: "2115741970", name: "Barcel Chips Fuego 240 g", subcategoria: "Snacks salados", h_units: 221.0, h_orders: 205.5, avg_price: 85.13, ex_incr_units: 2210, ex_incr_orders: 2055, ex_budget_mxn: 112862, ex_budget_usd: 6539.22, real_units: 768, final_budget_mxn: 39244, final_budget_usd: 2272.83, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "72501", ean: "757528040536", pid: "2115616098", name: "Chips Papas Fritas Jalapeño 240 g", subcategoria: "Snacks salados", h_units: 204.0, h_orders: 196.5, avg_price: 83.05, ex_incr_units: 2040, ex_incr_orders: 1965, ex_budget_mxn: 101653, ex_budget_usd: 5889.22, real_units: 710, final_budget_mxn: 35379, final_budget_usd: 2049.22, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "81480", ean: "7500810037638", pid: "2115313903", name: "Takis Fuego 340 g", subcategoria: "Snacks salados", h_units: 59.5, h_orders: 59.5, avg_price: 83.82, ex_incr_units: 595, ex_incr_orders: 595, ex_budget_mxn: 29924, ex_budget_usd: 1733.72, real_units: 207, final_budget_mxn: 10410, final_budget_usd: 603.01, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9063", ean: "7501030459941", pid: "2109995680", name: "Cacahuates Golden Nuts Salados 100 g", subcategoria: "Snacks salados", h_units: 30.0, h_orders: 25.5, avg_price: 26.04, ex_incr_units: 300, ex_incr_orders: 255, ex_budget_mxn: 4687, ex_budget_usd: 271.55, real_units: 104, final_budget_mxn: 1625, final_budget_usd: 94.15, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "15301", ean: "7500810000182", pid: "1563694214", name: "Papas Barcel Sal 170 g", subcategoria: "Snacks salados", h_units: 17.5, h_orders: 16.5, avg_price: 58.11, ex_incr_units: 175, ex_incr_orders: 165, ex_budget_mxn: 6102, ex_budget_usd: 353.54, real_units: 61, final_budget_mxn: 2127, final_budget_usd: 123.17, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "10606", ean: "7501030459927", pid: "2115038941", name: "Golden Nuts Enchilados 100 g", subcategoria: "Snacks salados", h_units: 17.5, h_orders: 15.5, avg_price: 24.74, ex_incr_units: 175, ex_incr_orders: 155, ex_budget_mxn: 2598, ex_budget_usd: 150.52, real_units: 61, final_budget_mxn: 905, final_budget_usd: 52.43, sku_order: 6 }
 ];
 
 const POSTMORTEM_DEALS = [
