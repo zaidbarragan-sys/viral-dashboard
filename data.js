@@ -1369,6 +1369,36 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 35, canib_ord_bench: 40.75, canib_ord_delta_pct: -14.1,
     canib_und_post: 39, canib_und_bench: 43.25, canib_und_delta_pct: -9.8,
     canib_cli_post: 25, canib_cli_bench: 35.25, canib_cli_delta_pct: -29.1
+  },
+  // Barcel
+  {
+    deal_id: "VIRAL_DEAL_BARCEL_060226",
+    post_days: 90,
+    fase: 2,
+    gmv_activacion: 302371,
+    gmv_lw: 44589, gmv_dlw_pct: 578.0,
+    gmv_l4w: 57082, gmv_dl4w_pct: 429.8,
+    usuarios_unicos: 1530,
+    usr_lw: 488, usr_dlw_pct: 213.5,
+    usr_l4w: 581.25, usr_dl4w_pct: 163.2,
+    cr_pct: 3.31,
+    aov: 213.54, aov_lw: 102.27, aov_dlw_pct: 108.8, aov_l4w: 109.30, aov_dl4w_pct: 95.4,
+    unidades_total: 4342, und_lw: 575, und_dlw_pct: 655.1, und_l4w: 727.5, und_dl4w_pct: 496.8,
+    ordenes_total: 1416, ord_lw: 436, ord_dlw_pct: 224.8, ord_l4w: 522.25, ord_dl4w_pct: 171.2,
+    impresiones_total: 46248,
+    so_turbo_mx: 4366174, gmv_categoria: 547753,
+    gmv_cat_lw: 261989, gmv_cat_l4w: 264936,
+    share_deal_cat_pct: 55.21, share_lw_pct: 17.02, share_l4w_pct: 21.55,
+    gmv_basket: 464159, gmv_sellup: 207730, pct_sellup: 44.75,
+    aov_basket: 322.94, aov_deal_post: 213.54,
+    cross_ordenes: 1437, cross_skus_distintos: 1027,
+    cross_top_producto: "Chips Papas Fritas Sal 240 g", cross_top_ordenes: 130, cross_top_pct: 9.05,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 5808, canib_ord_bench: 4490.50, canib_ord_delta_pct: 29.3,
+    canib_und_post: 9489, canib_und_bench: 7265, canib_und_delta_pct: 30.6,
+    canib_cli_post: 6284, canib_cli_bench: 4465.75, canib_cli_delta_pct: 40.7
   }
 ];
 
@@ -1414,7 +1444,14 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "14192", name: "Bachoco Alitas picositas 700 g", ordenes: 501, usuarios: 432, unidades: 636, gmv: 141301, aov: 282.04, impresiones: 6042, cr_pct: 7.15, gmv_dlw_pct: 6815.3, gmv_dl4w_pct: 5469.0, seg_nuevo: 471, seg_nuevo_pct: 94, seg_reactivado: 4, seg_reactivado_pct: 1, seg_retenido: 26, seg_retenido_pct: 5, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 10, canib_ord_bench: 8.0, canib_ord_delta_pct: 25.0, canib_und_post: 11, canib_und_bench: 8.5, canib_und_delta_pct: 29.4, canib_cli_post: 7, canib_cli_bench: 6.75, canib_cli_delta_pct: 3.7 },
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "83610", name: "Bachoco Boneless Crujientes 700 g", ordenes: 407, usuarios: 335, unidades: 496, gmv: 103727, aov: 254.86, impresiones: 3801, cr_pct: 8.81, gmv_dlw_pct: 3894.7, gmv_dl4w_pct: 3375.7, seg_nuevo: 360, seg_nuevo_pct: 88, seg_reactivado: 7, seg_reactivado_pct: 2, seg_retenido: 40, seg_retenido_pct: 10, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 11, canib_ord_bench: 19.5, canib_ord_delta_pct: -43.6, canib_und_post: 12, canib_und_bench: 19.75, canib_und_delta_pct: -39.2, canib_cli_post: 9, canib_cli_bench: 16.25, canib_cli_delta_pct: -44.6 },
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "12329", name: "Bachoco Boneless Búfalo 700 g", ordenes: 276, usuarios: 246, unidades: 361, gmv: 81914, aov: 296.79, impresiones: 3298, cr_pct: 7.46, gmv_dlw_pct: 4343.4, gmv_dl4w_pct: 7442.7, seg_nuevo: 253, seg_nuevo_pct: 92, seg_reactivado: 1, seg_reactivado_pct: 0, seg_retenido: 22, seg_retenido_pct: 8, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 2, canib_ord_bench: 5.25, canib_ord_delta_pct: -61.9, canib_und_post: 3, canib_und_bench: 5.25, canib_und_delta_pct: -42.9, canib_cli_post: 2, canib_cli_bench: 4.75, canib_cli_delta_pct: -57.9 },
-  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "83600", name: "Bachoco Tender Empanizado 700 g", ordenes: 271, usuarios: 245, unidades: 302, gmv: 67826, aov: 250.28, impresiones: 3200, cr_pct: 7.66, gmv_dlw_pct: 1833.9, gmv_dl4w_pct: 2783.5, seg_nuevo: 267, seg_nuevo_pct: 99, seg_reactivado: 2, seg_reactivado_pct: 1, seg_retenido: 2, seg_retenido_pct: 1, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 13, canib_ord_bench: 9.75, canib_ord_delta_pct: 33.3, canib_und_post: 13, canib_und_bench: 9.75, canib_und_delta_pct: 33.3, canib_cli_post: 10, canib_cli_bench: 9.5, canib_cli_delta_pct: 5.3 }
+  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "83600", name: "Bachoco Tender Empanizado 700 g", ordenes: 271, usuarios: 245, unidades: 302, gmv: 67826, aov: 250.28, impresiones: 3200, cr_pct: 7.66, gmv_dlw_pct: 1833.9, gmv_dl4w_pct: 2783.5, seg_nuevo: 267, seg_nuevo_pct: 99, seg_reactivado: 2, seg_reactivado_pct: 1, seg_retenido: 2, seg_retenido_pct: 1, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 13, canib_ord_bench: 9.75, canib_ord_delta_pct: 33.3, canib_und_post: 13, canib_und_bench: 9.75, canib_und_delta_pct: 33.3, canib_cli_post: 10, canib_cli_bench: 9.5, canib_cli_delta_pct: 5.3 },
+  // Barcel
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9411", name: "Barcel Chips Fuego 240 g", ordenes: 683, usuarios: 761, unidades: 1463, gmv: 119402, aov: 174.82, impresiones: 12664, cr_pct: 6.01, gmv_dlw_pct: 522.5, gmv_dl4w_pct: 378.5, seg_nuevo: 469, seg_nuevo_pct: 62, seg_reactivado: 196, seg_reactivado_pct: 26, seg_retenido: 96, seg_retenido_pct: 13, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 741, canib_ord_bench: 507.25, canib_ord_delta_pct: 46.1, canib_und_post: 937, canib_und_bench: 645.75, canib_und_delta_pct: 45.1, canib_cli_post: 843, canib_cli_bench: 553.75, canib_cli_delta_pct: 52.2 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "72501", name: "Chips Papas Fritas Jalapeño 240 g", ordenes: 734, usuarios: 788, unidades: 1295, gmv: 103418, aov: 140.90, impresiones: 10440, cr_pct: 7.55, gmv_dlw_pct: 496.8, gmv_dl4w_pct: 366.2, seg_nuevo: 494, seg_nuevo_pct: 63, seg_reactivado: 212, seg_reactivado_pct: 27, seg_retenido: 82, seg_retenido_pct: 10, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 806, canib_ord_bench: 475.75, canib_ord_delta_pct: 69.4, canib_und_post: 1023, canib_und_bench: 592.25, canib_und_delta_pct: 72.7, canib_cli_post: 855, canib_cli_bench: 513.00, canib_cli_delta_pct: 66.7 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "81480", name: "Takis Fuego 340 g", ordenes: 253, usuarios: 279, unidades: 499, gmv: 41620, aov: 164.51, impresiones: 8648, cr_pct: 3.23, gmv_dlw_pct: 585.5, gmv_dl4w_pct: 479.9, seg_nuevo: 189, seg_nuevo_pct: 68, seg_reactivado: 59, seg_reactivado_pct: 21, seg_retenido: 31, seg_retenido_pct: 11, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 201, canib_ord_bench: 187.00, canib_ord_delta_pct: 7.5, canib_und_post: 247, canib_und_bench: 239.75, canib_und_delta_pct: 3.0, canib_cli_post: 224, canib_cli_bench: 216.50, canib_cli_delta_pct: 3.5 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "15301", name: "Papas Barcel Sal 170 g", ordenes: 210, usuarios: 218, unidades: 393, gmv: 21046, aov: 100.22, impresiones: 5289, cr_pct: 4.12, gmv_dlw_pct: 2941.6, gmv_dl4w_pct: 1446.1, seg_nuevo: 155, seg_nuevo_pct: 71, seg_reactivado: 50, seg_reactivado_pct: 23, seg_retenido: 13, seg_retenido_pct: 6, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 82, canib_ord_bench: 38.25, canib_ord_delta_pct: 114.4, canib_und_post: 119, canib_und_bench: 47.25, canib_und_delta_pct: 151.9, canib_cli_post: 70, canib_cli_bench: 37.75, canib_cli_delta_pct: 85.4 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "10606", name: "Golden Nuts Enchilados 100 g", ordenes: 199, usuarios: 213, unidades: 417, gmv: 9736, aov: 48.92, impresiones: 5531, cr_pct: 3.85, gmv_dlw_pct: 3102.6, gmv_dl4w_pct: 1553.3, seg_nuevo: 153, seg_nuevo_pct: 72, seg_reactivado: 51, seg_reactivado_pct: 24, seg_retenido: 9, seg_retenido_pct: 4, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 94, canib_ord_bench: 56.75, canib_ord_delta_pct: 65.6, canib_und_post: 126, canib_und_bench: 72.25, canib_und_delta_pct: 74.4, canib_cli_post: 96, canib_cli_bench: 57.50, canib_cli_delta_pct: 67.0 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9063", name: "Cacahuates Golden Nuts Salados 100 g", ordenes: 125, usuarios: 132, unidades: 275, gmv: 7148, aov: 57.19, impresiones: 3676, cr_pct: 3.59, gmv_dlw_pct: 605.8, gmv_dl4w_pct: 770.6, seg_nuevo: 94, seg_nuevo_pct: 71, seg_reactivado: 32, seg_reactivado_pct: 24, seg_retenido: 6, seg_retenido_pct: 5, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 120, canib_ord_bench: 68.00, canib_ord_delta_pct: 76.5, canib_und_post: 174, canib_und_bench: 96, canib_und_delta_pct: 81.3, canib_cli_post: 114, canib_cli_bench: 72, canib_cli_delta_pct: 58.3 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -1480,7 +1517,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", subcategoria: "Huevos", ordenes: 41, gmv: 3292, pct_sellup: 3.25, order: 5 },
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", subcategoria: "Tortillas, tostadas y totopos", ordenes: 42, gmv: 2740, pct_sellup: 2.71, order: 6 },
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", subcategoria: "Frutos secos y semillas", ordenes: 34, gmv: 2237, pct_sellup: 2.21, order: 7 },
-  { deal_id: "VIRAL_DEAL_BACHOCO_050226", subcategoria: "Embutidos", ordenes: 19, gmv: 2080, pct_sellup: 2.06, order: 8 }
+  { deal_id: "VIRAL_DEAL_BACHOCO_050226", subcategoria: "Embutidos", ordenes: 19, gmv: 2080, pct_sellup: 2.06, order: 8 },
+  // Barcel
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Snacks salados", ordenes: 615, gmv: 53057, pct_sellup: 25.54, order: 1 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Cervezas", ordenes: 170, gmv: 27900, pct_sellup: 13.43, order: 2 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Gaseosas", ordenes: 305, gmv: 17562, pct_sellup: 8.45, order: 3 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Frutos secos y semillas", ordenes: 177, gmv: 8846, pct_sellup: 4.26, order: 4 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Vino tinto", ordenes: 17, gmv: 5156, pct_sellup: 2.48, order: 5 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Agua Natural", ordenes: 94, gmv: 4560, pct_sellup: 2.20, order: 6 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Galletas", ordenes: 91, gmv: 3893, pct_sellup: 1.87, order: 7 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Cigarrillos", ordenes: 22, gmv: 3536, pct_sellup: 1.70, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -1574,5 +1620,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 16, pct_deal: 1.60, order: 9 },
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "8462", name: "Coca-Cola Refresco Original 3L", subcategoria: "Gaseosas", ordenes: 14, pct_deal: 1.40, order: 10 },
   { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "9518", name: "Cilantro Manojo", subcategoria: "Hierbas y aromáticas", ordenes: 13, pct_deal: 1.30, order: 11 },
-  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "8770", name: "Pack Cerveza Amstel Ultra 6x355mL", subcategoria: "Cervezas", ordenes: 13, pct_deal: 1.30, order: 12 }
+  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "8770", name: "Pack Cerveza Amstel Ultra 6x355mL", subcategoria: "Cervezas", ordenes: 13, pct_deal: 1.30, order: 12 },
+  // Barcel
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "12042", name: "Chips Papas Fritas Sal 240 g", subcategoria: "Snacks salados", ordenes: 130, pct_deal: 9.05, order: 1 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "15322", name: "Hot Nuts Cacahuates Original 100 g", subcategoria: "Frutos secos y semillas", ordenes: 107, pct_deal: 7.45, order: 2 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "74154", name: "Chips Toque Maestro Parmesano 140 g", subcategoria: "Snacks salados", ordenes: 62, pct_deal: 4.31, order: 3 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "81265", name: "Chips Sal 55 g", subcategoria: "Snacks salados", ordenes: 56, pct_deal: 3.90, order: 4 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "74142", name: "Takis Fuego 94 g", subcategoria: "Snacks salados", ordenes: 55, pct_deal: 3.83, order: 5 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9282", name: "Kiyakis Cacahuate Japonés Clásico 150 g", subcategoria: "Frutos secos y semillas", ordenes: 53, pct_deal: 3.69, order: 6 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "15303", name: "Papas Barcel Adobo 170 g", subcategoria: "Snacks salados", ordenes: 49, pct_deal: 3.41, order: 7 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "7254", name: "Coca-Cola Sin Azúcar 2500 mL", subcategoria: "Gaseosas", ordenes: 44, pct_deal: 3.06, order: 8 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "74143", name: "Takis Fajita 94 g", subcategoria: "Snacks salados", ordenes: 41, pct_deal: 2.85, order: 9 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9892", name: "Chips Papas Fritas Jalapeño 100 g", subcategoria: "Snacks salados", ordenes: 41, pct_deal: 2.85, order: 10 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "12376", name: "Ruffles Papas Onduladas Queso 185 g", subcategoria: "Snacks salados", ordenes: 38, pct_deal: 2.64, order: 11 },
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "8770", name: "Pack Cerveza Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 37, pct_deal: 2.57, order: 12 }
 ];
