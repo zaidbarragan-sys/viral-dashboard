@@ -1232,29 +1232,31 @@
             </table></div>`;
           }
 
-          // Inventario
-          html += `<div class="sub-title">Inventario</div>`;
-          html += `<div class="mini-cards">
-            <div class="mini-card"><div class="label">OOS Cierre (avg)</div><div class="value">${post.inv_oos_cierre_viral_avg.toFixed(1)}%</div></div>
-            <div class="mini-card"><div class="label">Coverage AP&rarr;CI (avg)</div><div class="value">${post.inv_cov_viral_ap_avg.toFixed(1)}%</div></div>
-            <div class="mini-card"><div class="label">Coverage Post (avg)</div><div class="value">${post.inv_cov_post_avg.toFixed(1)}%</div></div>
-          </div>`;
+          // Inventario (only show if data available)
+          if (post.inv_oos_cierre_viral_avg !== null) {
+            html += `<div class="sub-title">Inventario</div>`;
+            html += `<div class="mini-cards">
+              <div class="mini-card"><div class="label">OOS Cierre (avg)</div><div class="value">${post.inv_oos_cierre_viral_avg.toFixed(1)}%</div></div>
+              <div class="mini-card"><div class="label">Coverage AP&rarr;CI (avg)</div><div class="value">${post.inv_cov_viral_ap_avg.toFixed(1)}%</div></div>
+              <div class="mini-card"><div class="label">Coverage Post (avg)</div><div class="value">${post.inv_cov_post_avg.toFixed(1)}%</div></div>
+            </div>`;
 
-          html += `<div class="table-wrapper"><table>
-            <thead><tr><th>SKU</th><th>Stock Viral</th><th>Stock Post</th><th>Stock Bench</th><th>&Delta;%</th><th>OOS Cierre</th><th>OOS Post</th><th>Cov AP</th><th>Cov CI</th><th>Cov Post</th></tr></thead>
-            <tbody>${skuPerf.map(s => `<tr>
-              <td>${s.name}</td>
-              <td>${fmtNum(s.stock_viral)}</td>
-              <td>${fmtNum(s.stock_post)}</td>
-              <td>${fmtNum(s.stock_bench)}</td>
-              <td style="color:${deltaColor(s.stock_delta_pct)}">${fmtDelta(s.stock_delta_pct)}</td>
-              <td>${s.oos_cierre_viral}%</td>
-              <td>${s.oos_post}%</td>
-              <td>${s.cov_viral_ap}%</td>
-              <td>${s.cov_viral_ci}%</td>
-              <td>${s.cov_post}%</td>
-            </tr>`).join('')}</tbody>
-          </table></div>`;
+            html += `<div class="table-wrapper"><table>
+              <thead><tr><th>SKU</th><th>Stock Viral</th><th>Stock Post</th><th>Stock Bench</th><th>&Delta;%</th><th>OOS Cierre</th><th>OOS Post</th><th>Cov AP</th><th>Cov CI</th><th>Cov Post</th></tr></thead>
+              <tbody>${skuPerf.map(s => `<tr>
+                <td>${s.name}</td>
+                <td>${fmtNum(s.stock_viral)}</td>
+                <td>${fmtNum(s.stock_post)}</td>
+                <td>${fmtNum(s.stock_bench)}</td>
+                <td style="color:${deltaColor(s.stock_delta_pct)}">${fmtDelta(s.stock_delta_pct)}</td>
+                <td>${s.oos_cierre_viral !== null ? s.oos_cierre_viral + '%' : '\u2014'}</td>
+                <td>${s.oos_post !== null ? s.oos_post + '%' : '\u2014'}</td>
+                <td>${s.cov_viral_ap !== null ? s.cov_viral_ap + '%' : '\u2014'}</td>
+                <td>${s.cov_viral_ci !== null ? s.cov_viral_ci + '%' : '\u2014'}</td>
+                <td>${s.cov_post !== null ? s.cov_post + '%' : '\u2014'}</td>
+              </tr>`).join('')}</tbody>
+            </table></div>`;
+          }
 
           // Canibalizacion
           html += `<div class="sub-title">Canibalizacion</div>`;
