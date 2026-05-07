@@ -992,6 +992,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Embutidos, Jamones"
+  },
+  {
+    deal_id: "VIRAL_DEAL_BACHOCO_050226",
+    maker_name: "Bachoco",
+    maker_aux: "Bachoco",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 12,
+    tipo_viral: "multi-día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2025-12-22",
+    fecha_ejecucion: "2026-02-05",
+    usd_mxn: 17.25,
+    fecha_tasa: "2026-05-07",
+    budget_maker_mxn: 220000,
+    budget_growth_mxn: 66000,
+    budget_total_mxn: 286000,
+    budget_maker_usd: 12754.68,
+    budget_growth_usd: 3826.60,
+    budget_total_usd: 16581.28,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Pollo y aves"
   }
 ];
 
@@ -1170,7 +1193,12 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "11018", ean: "7501040001598", pid: "2115620183", name: "San Rafael Pechuga de Pavo Receta Original 250 g", subcategoria: "Jamones", h_units: 142.3, h_orders: 132.7, avg_price: 103.47, ex_incr_units: 1708, ex_incr_orders: 1592, ex_budget_mxn: 70689, ex_budget_usd: 3925.54, real_units: 346, final_budget_mxn: 14320, final_budget_usd: 795.11, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "74614", ean: "7501040000300", pid: "2114166974", name: "San Rafael Jamon de Pavo 300 g", subcategoria: "Jamones", h_units: 18.5, h_orders: 17.7, avg_price: 125.84, ex_incr_units: 222, ex_incr_orders: 212, ex_budget_mxn: 11175, ex_budget_usd: 620.49, real_units: 37, final_budget_mxn: 1862, final_budget_usd: 103.39, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "71912", ean: "7501040007736", pid: "2113432262", name: "San Rafael Salchicha de Pechuga de Pavo 500 g", subcategoria: "Embutidos", h_units: 12.5, h_orders: 11.6, avg_price: 104.24, ex_incr_units: 150, ex_incr_orders: 139, ex_budget_mxn: 6254, ex_budget_usd: 347.25, real_units: 30, final_budget_mxn: 1251, final_budget_usd: 69.46, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "72285", ean: "7501040003455", pid: "2113437836", name: "San Rafael Salchicha de Pechuga de Pavo Balance", subcategoria: "Embutidos", h_units: 12.4, h_orders: 11.6, avg_price: 102.78, ex_incr_units: 149, ex_incr_orders: 139, ex_budget_mxn: 6126, ex_budget_usd: 340.14, real_units: 30, final_budget_mxn: 1233, final_budget_usd: 68.46, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "72285", ean: "7501040003455", pid: "2113437836", name: "San Rafael Salchicha de Pechuga de Pavo Balance", subcategoria: "Embutidos", h_units: 12.4, h_orders: 11.6, avg_price: 102.78, ex_incr_units: 149, ex_incr_orders: 139, ex_budget_mxn: 6126, ex_budget_usd: 340.14, real_units: 30, final_budget_mxn: 1233, final_budget_usd: 68.46, sku_order: 5 },
+  // Bachoco
+  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "14192", ean: "7501101545702", pid: "2115738820", name: "Bachoco Alitas picositas 700 g", subcategoria: "Pollo y aves", h_units: 10.9, h_orders: 9.0, avg_price: 179.28, ex_incr_units: 131, ex_incr_orders: 108, ex_budget_mxn: 14091, ex_budget_usd: 816.89, real_units: 1280, final_budget_mxn: 137687, final_budget_usd: 7981.97, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "83610", ean: "7501101545542", pid: "2115738819", name: "Bachoco Boneless Crujientes 700 g", subcategoria: "Pollo y aves", h_units: 5.2, h_orders: 4.9, avg_price: 217.17, ex_incr_units: 62, ex_incr_orders: 59, ex_budget_mxn: 8079, ex_budget_usd: 468.35, real_units: 500, final_budget_mxn: 65151, final_budget_usd: 3776.37, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "12329", ean: "7501101545719", pid: "1563506841", name: "Bachoco Boneless Búfalo 700 g", subcategoria: "Pollo y aves", h_units: 4.7, h_orders: 4.8, avg_price: 207.62, ex_incr_units: 56, ex_incr_orders: 58, ex_budget_mxn: 6976, ex_budget_usd: 404.42, real_units: 473, final_budget_mxn: 58922, final_budget_usd: 3415.58, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_050226", sync: "83600", ean: "7501101551611", pid: "2115498506", name: "Bachoco Tender Empanizado 700 g", subcategoria: "Pollo y aves", h_units: 1.9, h_orders: 1.9, avg_price: 235.84, ex_incr_units: 23, ex_incr_orders: 23, ex_budget_mxn: 3255, ex_budget_usd: 188.70, real_units: 171, final_budget_mxn: 24197, final_budget_usd: 1402.76, sku_order: 4 }
 ];
 
 const POSTMORTEM_DEALS = [
