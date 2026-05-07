@@ -1263,6 +1263,24 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 35, canib_ord_bench: 24.50, canib_ord_delta_pct: 42.9,
     canib_und_post: 38, canib_und_bench: 30.25, canib_und_delta_pct: 25.6,
     canib_cli_post: 24, canib_cli_bench: 19.25, canib_cli_delta_pct: 24.7
+  },
+  {
+    deal_id: "VIRAL_DEAL_SANRAFAEL_020226",
+    post_days: 4, fase: 2,
+    gmv_activacion: 93195, gmv_lw: 15352, gmv_dlw_pct: 507.1, gmv_l4w: 29645, gmv_dl4w_pct: 214.4,
+    usuarios_unicos: 538, usr_lw: 122, usr_dlw_pct: 340.8, usr_l4w: 271.75, usr_dl4w_pct: 97.9,
+    cr_pct: 3.90, aov: 157.42, aov_lw: 115.43, aov_dlw_pct: 36.4, aov_l4w: 100.07, aov_dl4w_pct: 57.3,
+    unidades_total: 952, und_lw: 158, und_dlw_pct: 502.5, und_l4w: 332.5, und_dl4w_pct: 186.3,
+    ordenes_total: 592, ord_lw: 133, ord_dlw_pct: 345.1, ord_l4w: 296.25, ord_dl4w_pct: 99.8,
+    impresiones_total: 13785,
+    so_turbo_mx: 2918293, gmv_categoria: 127452, gmv_cat_lw: 34500, gmv_cat_l4w: 64424,
+    share_deal_cat_pct: 73.12, share_lw_pct: 44.50, share_l4w_pct: 46.02,
+    gmv_basket: 219733, gmv_sellup: 126537, pct_sellup: 57.59, aov_basket: 371.17, aov_deal_post: 157.42,
+    cross_ordenes: 592, cross_skus_distintos: 923, cross_top_producto: "Plátano Chiapas", cross_top_ordenes: 40, cross_top_pct: 6.76,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null, inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null, inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 1131, canib_ord_bench: 1183, canib_ord_delta_pct: -4.4,
+    canib_und_post: 1199, canib_und_bench: 1276, canib_und_delta_pct: -6.0,
+    canib_cli_post: 1067, canib_cli_bench: 1111, canib_cli_delta_pct: -3.9
   }
 ];
 
@@ -1297,7 +1315,13 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_SICO_010526", sync: "14101", name: "Sico Condones Climax Mutuo", ordenes: 17, usuarios: 16, unidades: 17, gmv: 1623, aov: 95.48, impresiones: 1508, cr_pct: 1.06, gmv_dlw_pct: 407.1, gmv_dl4w_pct: 99.6, seg_nuevo: 12, seg_nuevo_pct: 75, seg_reactivado: 2, seg_reactivado_pct: 12, seg_retenido: 2, seg_retenido_pct: 12, stock_viral: 678, stock_post: 660, stock_bench: 758, stock_delta_pct: -13.0, oos_cierre_viral: 9, oos_post: 13, cov_viral_ap: 61.3, cov_viral_ci: 74.1, cov_post: 70.3, canib_ord_post: 40, canib_ord_bench: 30, canib_ord_delta_pct: 34.5, canib_und_post: 45, canib_und_bench: 35, canib_und_delta_pct: 30.4, canib_cli_post: 39, canib_cli_bench: 29, canib_cli_delta_pct: 35.7 },
   { deal_id: "VIRAL_DEAL_SICO_010526", sync: "10439", name: "Sico Condones Safety", ordenes: 1, usuarios: 1, unidades: 0, gmv: 0, aov: 0, impresiones: 679, cr_pct: 0.15, gmv_dlw_pct: -100, gmv_dl4w_pct: -100, seg_nuevo: 0, seg_nuevo_pct: 0, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 1, seg_retenido_pct: 100, stock_viral: 224, stock_post: 222, stock_bench: 138, stock_delta_pct: 60.6, oos_cierre_viral: 25, oos_post: 25, cov_viral_ap: 44.0, cov_viral_ci: 44.0, cov_post: 44.0, canib_ord_post: 6, canib_ord_bench: 6, canib_ord_delta_pct: 9.1, canib_und_post: 6, canib_und_bench: 6, canib_und_delta_pct: 4.3, canib_cli_post: 6, canib_cli_bench: 6, canib_cli_delta_pct: 9.1 },
   // Bachoco 02-may
-  { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "14192", name: "Bachoco - Alitas picositas - 700 g", ordenes: 79, usuarios: 75, unidades: 147, gmv: 26129, aov: 330.75, impresiones: 121, cr_pct: 61.98, gmv_dlw_pct: 378.2, gmv_dl4w_pct: 1023.2, seg_nuevo: 66, seg_nuevo_pct: 84, seg_reactivado: 8, seg_reactivado_pct: 10, seg_retenido: 5, seg_retenido_pct: 6, stock_viral: 667, stock_post: 545, stock_bench: 324, stock_delta_pct: 68.1, oos_cierre_viral: 8, oos_post: 9, cov_viral_ap: 64.4, cov_viral_ci: 58.9, cov_post: 55.9, canib_ord_post: 35, canib_ord_bench: 24.50, canib_ord_delta_pct: 42.9, canib_und_post: 38, canib_und_bench: 30.25, canib_und_delta_pct: 25.6, canib_cli_post: 24, canib_cli_bench: 19.25, canib_cli_delta_pct: 24.7 }
+  { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "14192", name: "Bachoco - Alitas picositas - 700 g", ordenes: 79, usuarios: 75, unidades: 147, gmv: 26129, aov: 330.75, impresiones: 121, cr_pct: 61.98, gmv_dlw_pct: 378.2, gmv_dl4w_pct: 1023.2, seg_nuevo: 66, seg_nuevo_pct: 84, seg_reactivado: 8, seg_reactivado_pct: 10, seg_retenido: 5, seg_retenido_pct: 6, stock_viral: 667, stock_post: 545, stock_bench: 324, stock_delta_pct: 68.1, oos_cierre_viral: 8, oos_post: 9, cov_viral_ap: 64.4, cov_viral_ci: 58.9, cov_post: 55.9, canib_ord_post: 35, canib_ord_bench: 24.50, canib_ord_delta_pct: 42.9, canib_und_post: 38, canib_und_bench: 30.25, canib_und_delta_pct: 25.6, canib_cli_post: 24, canib_cli_bench: 19.25, canib_cli_delta_pct: 24.7 },
+  // San Rafael 02-feb
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "11018", name: "San Rafael Pechuga de Pavo Receta Original 250 g", ordenes: 261, usuarios: 240, unidades: 353, gmv: 38869, aov: 148.92, impresiones: 3491, cr_pct: 6.88, gmv_dlw_pct: 427.1, gmv_dl4w_pct: 136.4, seg_nuevo: 105, seg_nuevo_pct: 40, seg_reactivado: 90, seg_reactivado_pct: 34, seg_retenido: 66, seg_retenido_pct: 25, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 617, canib_ord_bench: 515, canib_ord_delta_pct: 19.8, canib_und_post: 658, canib_und_bench: 548, canib_und_delta_pct: 20.1, canib_cli_post: 566, canib_cli_bench: 444, canib_cli_delta_pct: 27.5 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "74614", name: "San Rafael Jamón Real Pavo", ordenes: 96, usuarios: 85, unidades: 158, gmv: 20450, aov: 213.02, impresiones: 2970, cr_pct: 2.86, gmv_dlw_pct: 990.5, gmv_dl4w_pct: 802.1, seg_nuevo: 79, seg_nuevo_pct: 82, seg_reactivado: 4, seg_reactivado_pct: 4, seg_retenido: 13, seg_retenido_pct: 14, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 124, canib_ord_bench: 81, canib_ord_delta_pct: 53.1, canib_und_post: 152, canib_und_bench: 90, canib_und_delta_pct: 68.9, canib_cli_post: 117, canib_cli_bench: 69, canib_cli_delta_pct: 69.6 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "13274", name: "San Rafael Salchicha de Pavo 500 g", ordenes: 213, usuarios: 196, unidades: 293, gmv: 18796, aov: 88.24, impresiones: 3526, cr_pct: 5.56, gmv_dlw_pct: 285.8, gmv_dl4w_pct: 112.7, seg_nuevo: 71, seg_nuevo_pct: 33, seg_reactivado: 98, seg_reactivado_pct: 46, seg_retenido: 44, seg_retenido_pct: 21, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 608, canib_ord_bench: 511, canib_ord_delta_pct: 19.0, canib_und_post: 716, canib_und_bench: 583, canib_und_delta_pct: 22.8, canib_cli_post: 546, canib_cli_bench: 427, canib_cli_delta_pct: 27.9 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "71912", name: "San Rafael Salchicha de Pechuga de Pavo", ordenes: 77, usuarios: 74, unidades: 110, gmv: 11394, aov: 147.97, impresiones: 2146, cr_pct: 3.45, gmv_dlw_pct: 1601.0, gmv_dl4w_pct: 851.6, seg_nuevo: 66, seg_nuevo_pct: 86, seg_reactivado: 3, seg_reactivado_pct: 4, seg_retenido: 8, seg_retenido_pct: 10, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 57, canib_ord_bench: 49, canib_ord_delta_pct: 16.3, canib_und_post: 60, canib_und_bench: 54, canib_und_delta_pct: 11.1, canib_cli_post: 53, canib_cli_bench: 45, canib_cli_delta_pct: 17.8 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "72285", name: "San Rafael Salchicha de Pechuga de Pavo Balance", ordenes: 30, usuarios: 27, unidades: 38, gmv: 3687, aov: 122.90, impresiones: 1652, cr_pct: 1.63, gmv_dlw_pct: 557.4, gmv_dl4w_pct: 311.2, seg_nuevo: 20, seg_nuevo_pct: 67, seg_reactivado: 5, seg_reactivado_pct: 17, seg_retenido: 5, seg_retenido_pct: 17, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 64, canib_ord_bench: 48, canib_ord_delta_pct: 33.3, canib_und_post: 66, canib_und_bench: 54, canib_und_delta_pct: 22.2, canib_cli_post: 56, canib_cli_bench: 41, canib_cli_delta_pct: 36.6 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -1345,7 +1369,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_BACHOCO_020526", subcategoria: "Gaseosas", ordenes: 12, gmv: 566, pct_sellup: 5.62, order: 5 },
   { deal_id: "VIRAL_DEAL_BACHOCO_020526", subcategoria: "Snacks salados", ordenes: 9, gmv: 494, pct_sellup: 4.90, order: 6 },
   { deal_id: "VIRAL_DEAL_BACHOCO_020526", subcategoria: "Frutas", ordenes: 12, gmv: 410, pct_sellup: 4.07, order: 7 },
-  { deal_id: "VIRAL_DEAL_BACHOCO_020526", subcategoria: "Alimento para perros", ordenes: 1, gmv: 378, pct_sellup: 3.76, order: 8 }
+  { deal_id: "VIRAL_DEAL_BACHOCO_020526", subcategoria: "Alimento para perros", ordenes: 1, gmv: 378, pct_sellup: 3.76, order: 8 },
+  // San Rafael 02-feb
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", subcategoria: "Frutas", ordenes: 376, gmv: 11302, pct_sellup: 8.93, order: 1 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", subcategoria: "Huevos", ordenes: 139, gmv: 10388, pct_sellup: 8.21, order: 2 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", subcategoria: "Quesos semiduros", ordenes: 76, gmv: 7991, pct_sellup: 6.31, order: 3 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", subcategoria: "Panaderia salada", ordenes: 121, gmv: 7304, pct_sellup: 5.77, order: 4 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", subcategoria: "Snacks salados", ordenes: 125, gmv: 6358, pct_sellup: 5.03, order: 5 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", subcategoria: "Gaseosas", ordenes: 114, gmv: 5548, pct_sellup: 4.38, order: 6 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", subcategoria: "Cervezas", ordenes: 38, gmv: 4893, pct_sellup: 3.87, order: 7 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", subcategoria: "Leche natural", ordenes: 69, gmv: 4821, pct_sellup: 3.81, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -1413,5 +1446,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "10505", name: "Crema acida Entera Lala 426ml", subcategoria: "Otras cremas", ordenes: 2, pct_deal: 2.53, order: 9 },
   { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 2, pct_deal: 2.53, order: 10 },
   { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "8462", name: "Coca-Cola Refresco Original 3 L", subcategoria: "Gaseosas", ordenes: 2, pct_deal: 2.53, order: 11 },
-  { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "14946", name: "Mallas Limon Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 2, pct_deal: 2.53, order: 12 }
+  { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "14946", name: "Mallas Limon Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 2, pct_deal: 2.53, order: 12 },
+  // San Rafael 02-feb
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 40, pct_deal: 6.76, order: 1 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "5406", name: "Bimbo Pan para Hot Dog Medias Noches 340 g", subcategoria: "Panaderia salada", ordenes: 36, pct_deal: 6.08, order: 2 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 35, pct_deal: 5.91, order: 3 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "5672", name: "San Juan Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 31, pct_deal: 5.24, order: 4 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "5543", name: "Bachoco Huevo Blanco 18 Und", subcategoria: "Huevos", ordenes: 29, pct_deal: 4.90, order: 5 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "82058", name: "Cebolla Blanca", subcategoria: "Frutas", ordenes: 28, pct_deal: 4.73, order: 6 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 26, pct_deal: 4.39, order: 7 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 25, pct_deal: 4.22, order: 8 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "74098", name: "Pan Blanco Bimbo 620g", subcategoria: "Panaderia salada", ordenes: 25, pct_deal: 4.22, order: 9 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 25, pct_deal: 4.22, order: 10 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "5776", name: "Bimbo Pan de caja artesano 567 g", subcategoria: "Panaderia salada", ordenes: 24, pct_deal: 4.05, order: 11 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 23, pct_deal: 3.89, order: 12 }
 ];
