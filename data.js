@@ -969,6 +969,29 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Pollo y aves"
+  },
+  {
+    deal_id: "VIRAL_DEAL_SANRAFAEL_020226",
+    maker_name: "Sigma Alimentos",
+    maker_aux: "San Rafael",
+    business_unit: "Foods",
+    descuento_pct: 40,
+    incrementalidad: 12,
+    tipo_viral: "multi-día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-01-01",
+    fecha_ejecucion: "2026-02-02",
+    usd_mxn: 18.01,
+    fecha_tasa: "2026-01-01",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1665.74,
+    budget_growth_usd: 499.72,
+    budget_total_usd: 2165.46,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Embutidos, Jamones"
   }
 ];
 
@@ -1141,7 +1164,13 @@ const PREVIRAL_SKU_DETAIL = [
   // Bachoco 02-may
   { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "14192", ean: "7501101545702", pid: "2115738820", name: "Bachoco - Alitas picositas - 700 g", subcategoria: "Pollo y aves", h_units: 10.9, h_orders: 9.0, avg_price: 179.28, ex_incr_units: 109, ex_incr_orders: 90, ex_budget_mxn: 11725, ex_budget_usd: 674.24, real_units: 483, final_budget_mxn: 51955, final_budget_usd: 2987.64, sku_order: 1 },
   // Bachoco 04-may
-  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "83618", ean: "2220000001434", pid: "2115499091", name: "Bachoco Filete de Pechuga de Pollo 430 g", subcategoria: "Pollo y aves", h_units: 9.9, h_orders: 8.8, avg_price: 175.60, ex_incr_units: 99, ex_incr_orders: 88, ex_budget_mxn: 10431, ex_budget_usd: 599.83, real_units: 247, final_budget_mxn: 26024, final_budget_usd: 1496.49, sku_order: 1 }
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "83618", ean: "2220000001434", pid: "2115499091", name: "Bachoco Filete de Pechuga de Pollo 430 g", subcategoria: "Pollo y aves", h_units: 9.9, h_orders: 8.8, avg_price: 175.60, ex_incr_units: 99, ex_incr_orders: 88, ex_budget_mxn: 10431, ex_budget_usd: 599.83, real_units: 247, final_budget_mxn: 26024, final_budget_usd: 1496.49, sku_order: 1 },
+  // San Rafael 02-feb
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "13274", ean: "75013820", pid: "2115606362", name: "San Rafael Salchicha de Pavo 500 g", subcategoria: "Embutidos", h_units: 201.7, h_orders: 176.2, avg_price: 61.47, ex_incr_units: 2420, ex_incr_orders: 2114, ex_budget_mxn: 59503, ex_budget_usd: 3303.89, real_units: 826, final_budget_mxn: 20322, final_budget_usd: 1128.37, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "11018", ean: "7501040001598", pid: "2115620183", name: "San Rafael Pechuga de Pavo Receta Original 250 g", subcategoria: "Jamones", h_units: 142.3, h_orders: 132.7, avg_price: 103.47, ex_incr_units: 1708, ex_incr_orders: 1592, ex_budget_mxn: 70689, ex_budget_usd: 3925.54, real_units: 346, final_budget_mxn: 14320, final_budget_usd: 795.11, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "74614", ean: "7501040000300", pid: "2114166974", name: "San Rafael Jamon de Pavo 300 g", subcategoria: "Jamones", h_units: 18.5, h_orders: 17.7, avg_price: 125.84, ex_incr_units: 222, ex_incr_orders: 212, ex_budget_mxn: 11175, ex_budget_usd: 620.49, real_units: 37, final_budget_mxn: 1862, final_budget_usd: 103.39, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "71912", ean: "7501040007736", pid: "2113432262", name: "San Rafael Salchicha de Pechuga de Pavo 500 g", subcategoria: "Embutidos", h_units: 12.5, h_orders: 11.6, avg_price: 104.24, ex_incr_units: 150, ex_incr_orders: 139, ex_budget_mxn: 6254, ex_budget_usd: 347.25, real_units: 30, final_budget_mxn: 1251, final_budget_usd: 69.46, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_SANRAFAEL_020226", sync: "72285", ean: "7501040003455", pid: "2113437836", name: "San Rafael Salchicha de Pechuga de Pavo Balance", subcategoria: "Embutidos", h_units: 12.4, h_orders: 11.6, avg_price: 102.78, ex_incr_units: 149, ex_incr_orders: 139, ex_budget_mxn: 6126, ex_budget_usd: 340.14, real_units: 30, final_budget_mxn: 1233, final_budget_usd: 68.46, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
