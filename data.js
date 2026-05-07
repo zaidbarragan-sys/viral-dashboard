@@ -1428,6 +1428,36 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 5808, canib_ord_bench: 4490.50, canib_ord_delta_pct: 29.3,
     canib_und_post: 9489, canib_und_bench: 7265, canib_und_delta_pct: 30.6,
     canib_cli_post: 6284, canib_cli_bench: 4465.75, canib_cli_delta_pct: 40.7
+  },
+  // Fruver
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_070226",
+    post_days: 89,
+    fase: 2,
+    gmv_activacion: 66389,
+    gmv_lw: 22619, gmv_dlw_pct: 193.6,
+    gmv_l4w: 30908, gmv_dl4w_pct: 114.8,
+    usuarios_unicos: 1274,
+    usr_lw: 656, usr_dlw_pct: 94.2,
+    usr_l4w: 771, usr_dl4w_pct: 65.2,
+    cr_pct: 5.09,
+    aov: 58.39, aov_lw: 37.82, aov_dlw_pct: 54.4, aov_l4w: 43.27, aov_dl4w_pct: 34.9,
+    unidades_total: 5018, und_lw: 1983, und_dlw_pct: 153.0, und_l4w: 2681.75, und_dl4w_pct: 87.1,
+    ordenes_total: 1137, ord_lw: 598, ord_dlw_pct: 90.1, ord_l4w: 714.25, ord_dl4w_pct: 59.2,
+    impresiones_total: 25037,
+    so_turbo_mx: 3602274, gmv_categoria: 129753,
+    gmv_cat_lw: 81626, gmv_cat_l4w: 117924,
+    share_deal_cat_pct: 51.16, share_lw_pct: 27.71, share_l4w_pct: 26.21,
+    gmv_basket: 342687, gmv_sellup: 285956, pct_sellup: 83.45,
+    aov_basket: 301.40, aov_deal_post: 58.39,
+    cross_ordenes: 1151, cross_skus_distintos: 874,
+    cross_top_producto: "Plátano Chiapas", cross_top_ordenes: 118, cross_top_pct: 10.25,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 4863, canib_ord_bench: 3946.00, canib_ord_delta_pct: 23.2,
+    canib_und_post: 13217, canib_und_bench: 11089.25, canib_und_delta_pct: 19.2,
+    canib_cli_post: 5231, canib_cli_bench: 3972.75, canib_cli_delta_pct: 31.7
   }
 ];
 
@@ -1480,7 +1510,13 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "81480", name: "Takis Fuego 340 g", ordenes: 253, usuarios: 279, unidades: 499, gmv: 41620, aov: 164.51, impresiones: 8648, cr_pct: 3.23, gmv_dlw_pct: 585.5, gmv_dl4w_pct: 479.9, seg_nuevo: 189, seg_nuevo_pct: 68, seg_reactivado: 59, seg_reactivado_pct: 21, seg_retenido: 31, seg_retenido_pct: 11, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 201, canib_ord_bench: 187.00, canib_ord_delta_pct: 7.5, canib_und_post: 247, canib_und_bench: 239.75, canib_und_delta_pct: 3.0, canib_cli_post: 224, canib_cli_bench: 216.50, canib_cli_delta_pct: 3.5 },
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "15301", name: "Papas Barcel Sal 170 g", ordenes: 210, usuarios: 218, unidades: 393, gmv: 21046, aov: 100.22, impresiones: 5289, cr_pct: 4.12, gmv_dlw_pct: 2941.6, gmv_dl4w_pct: 1446.1, seg_nuevo: 155, seg_nuevo_pct: 71, seg_reactivado: 50, seg_reactivado_pct: 23, seg_retenido: 13, seg_retenido_pct: 6, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 82, canib_ord_bench: 38.25, canib_ord_delta_pct: 114.4, canib_und_post: 119, canib_und_bench: 47.25, canib_und_delta_pct: 151.9, canib_cli_post: 70, canib_cli_bench: 37.75, canib_cli_delta_pct: 85.4 },
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "10606", name: "Golden Nuts Enchilados 100 g", ordenes: 199, usuarios: 213, unidades: 417, gmv: 9736, aov: 48.92, impresiones: 5531, cr_pct: 3.85, gmv_dlw_pct: 3102.6, gmv_dl4w_pct: 1553.3, seg_nuevo: 153, seg_nuevo_pct: 72, seg_reactivado: 51, seg_reactivado_pct: 24, seg_retenido: 9, seg_retenido_pct: 4, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 94, canib_ord_bench: 56.75, canib_ord_delta_pct: 65.6, canib_und_post: 126, canib_und_bench: 72.25, canib_und_delta_pct: 74.4, canib_cli_post: 96, canib_cli_bench: 57.50, canib_cli_delta_pct: 67.0 },
-  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9063", name: "Cacahuates Golden Nuts Salados 100 g", ordenes: 125, usuarios: 132, unidades: 275, gmv: 7148, aov: 57.19, impresiones: 3676, cr_pct: 3.59, gmv_dlw_pct: 605.8, gmv_dl4w_pct: 770.6, seg_nuevo: 94, seg_nuevo_pct: 71, seg_reactivado: 32, seg_reactivado_pct: 24, seg_retenido: 6, seg_retenido_pct: 5, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 120, canib_ord_bench: 68.00, canib_ord_delta_pct: 76.5, canib_und_post: 174, canib_und_bench: 96, canib_und_delta_pct: 81.3, canib_cli_post: 114, canib_cli_bench: 72, canib_cli_delta_pct: 58.3 }
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9063", name: "Cacahuates Golden Nuts Salados 100 g", ordenes: 125, usuarios: 132, unidades: 275, gmv: 7148, aov: 57.19, impresiones: 3676, cr_pct: 3.59, gmv_dlw_pct: 605.8, gmv_dl4w_pct: 770.6, seg_nuevo: 94, seg_nuevo_pct: 71, seg_reactivado: 32, seg_reactivado_pct: 24, seg_retenido: 6, seg_retenido_pct: 5, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 120, canib_ord_bench: 68.00, canib_ord_delta_pct: 76.5, canib_und_post: 174, canib_und_bench: 96, canib_und_delta_pct: 81.3, canib_cli_post: 114, canib_cli_bench: 72, canib_cli_delta_pct: 58.3 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14693", name: "Aguacate Para Hoy X3", ordenes: 565, usuarios: 631, unidades: 1070, gmv: 33954, aov: 60.10, impresiones: 6137, cr_pct: 10.28, gmv_dlw_pct: 169.6, gmv_dl4w_pct: 92.8, seg_nuevo: 43, seg_nuevo_pct: 7, seg_reactivado: 116, seg_reactivado_pct: 18, seg_retenido: 472, seg_retenido_pct: 75, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 1680, canib_ord_bench: 1502.75, canib_ord_delta_pct: 11.8, canib_und_post: 2378, canib_und_bench: 2276.75, canib_und_delta_pct: 4.4, canib_cli_post: 1753, canib_cli_bench: 1457.75, canib_cli_delta_pct: 20.3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", ordenes: 472, usuarios: 534, unidades: 1886, gmv: 12779, aov: 27.07, impresiones: 5023, cr_pct: 10.63, gmv_dlw_pct: 201.6, gmv_dl4w_pct: 158.2, seg_nuevo: 44, seg_nuevo_pct: 8, seg_reactivado: 124, seg_reactivado_pct: 23, seg_retenido: 366, seg_retenido_pct: 69, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 1107, canib_ord_bench: 780.25, canib_ord_delta_pct: 41.9, canib_und_post: 3693, canib_und_bench: 2394.25, canib_und_delta_pct: 54.2, canib_cli_post: 1216, canib_cli_bench: 796.00, canib_cli_delta_pct: 52.8 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "81998", name: "Tomate Guaje Saladette", ordenes: 307, usuarios: 345, unidades: 1352, gmv: 5221, aov: 17.01, impresiones: 7228, cr_pct: 4.77, gmv_dlw_pct: 69.8, gmv_dl4w_pct: 21.4, seg_nuevo: 23, seg_nuevo_pct: 7, seg_reactivado: 72, seg_reactivado_pct: 21, seg_retenido: 250, seg_retenido_pct: 72, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 1143, canib_ord_bench: 945.50, canib_ord_delta_pct: 20.9, canib_und_post: 5454, canib_und_bench: 5060, canib_und_delta_pct: 7.8, canib_cli_post: 1240, canib_cli_bench: 963.25, canib_cli_delta_pct: 28.7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82058", name: "Cebolla Blanca", ordenes: 263, usuarios: 305, unidades: 577, gmv: 6042, aov: 22.97, impresiones: 4845, cr_pct: 6.29, gmv_dlw_pct: 182.3, gmv_dl4w_pct: 72.0, seg_nuevo: 20, seg_nuevo_pct: 7, seg_reactivado: 69, seg_reactivado_pct: 23, seg_retenido: 216, seg_retenido_pct: 71, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 850, canib_ord_bench: 704.75, canib_ord_delta_pct: 20.6, canib_und_post: 1568, canib_und_bench: 1339.5, canib_und_delta_pct: 17.1, canib_cli_post: 932, canib_cli_bench: 741.75, canib_cli_delta_pct: 25.6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82383", name: "Tortillas Guerreras Totopos Deshidratados 250 g", ordenes: 66, usuarios: 71, unidades: 133, gmv: 8392, aov: 127.16, impresiones: 1804, cr_pct: 3.94, gmv_dlw_pct: 1361.7, gmv_dl4w_pct: 1471.5, seg_nuevo: 5, seg_nuevo_pct: 7, seg_reactivado: 11, seg_reactivado_pct: 15, seg_retenido: 55, seg_retenido_pct: 77, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 83, canib_ord_bench: 12.75, canib_ord_delta_pct: 551.0, canib_und_post: 124, canib_und_bench: 18.75, canib_und_delta_pct: 561.3, canib_cli_post: 90, canib_cli_bench: 14.00, canib_cli_delta_pct: 542.9 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -1555,7 +1591,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Vino tinto", ordenes: 17, gmv: 5156, pct_sellup: 2.48, order: 5 },
   { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Agua Natural", ordenes: 94, gmv: 4560, pct_sellup: 2.20, order: 6 },
   { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Galletas", ordenes: 91, gmv: 3893, pct_sellup: 1.87, order: 7 },
-  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Cigarrillos", ordenes: 22, gmv: 3536, pct_sellup: 1.70, order: 8 }
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", subcategoria: "Cigarrillos", ordenes: 22, gmv: 3536, pct_sellup: 1.70, order: 8 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Frutas", ordenes: 443, gmv: 24861, pct_sellup: 8.69, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Cervezas", ordenes: 140, gmv: 23087, pct_sellup: 8.07, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Pollo y aves", ordenes: 68, gmv: 21322, pct_sellup: 7.46, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Snacks salados", ordenes: 245, gmv: 20548, pct_sellup: 7.19, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Gaseosas", ordenes: 261, gmv: 17177, pct_sellup: 6.01, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Huevos", ordenes: 157, gmv: 10231, pct_sellup: 3.58, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Verduras", ordenes: 254, gmv: 9353, pct_sellup: 3.27, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", subcategoria: "Agua Natural", ordenes: 151, gmv: 8835, pct_sellup: 3.09, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -1662,5 +1707,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "74143", name: "Takis Fajita 94 g", subcategoria: "Snacks salados", ordenes: 41, pct_deal: 2.85, order: 9 },
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "9892", name: "Chips Papas Fritas Jalapeño 100 g", subcategoria: "Snacks salados", ordenes: 41, pct_deal: 2.85, order: 10 },
   { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "12376", name: "Ruffles Papas Onduladas Queso 185 g", subcategoria: "Snacks salados", ordenes: 38, pct_deal: 2.64, order: 11 },
-  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "8770", name: "Pack Cerveza Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 37, pct_deal: 2.57, order: 12 }
+  { deal_id: "VIRAL_DEAL_BARCEL_060226", sync: "8770", name: "Pack Cerveza Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 37, pct_deal: 2.57, order: 12 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 118, pct_deal: 10.25, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 81, pct_deal: 7.04, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "9518", name: "Cilantro Manojo", subcategoria: "Hierbas y aromáticas", ordenes: 80, pct_deal: 6.95, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "12645", name: "Chile Serrano", subcategoria: "Verduras", ordenes: 70, pct_deal: 6.08, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 67, pct_deal: 5.82, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 59, pct_deal: 5.13, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 50, pct_deal: 4.34, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "82051", name: "Papa Blanca", subcategoria: "Frutas", ordenes: 45, pct_deal: 3.91, order: 8 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "81996", name: "Jitomate Bola", subcategoria: "Frutas", ordenes: 44, pct_deal: 3.82, order: 9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "10412", name: "Calabaza Italiana", subcategoria: "Verduras", ordenes: 42, pct_deal: 3.65, order: 10 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 41, pct_deal: 3.56, order: 11 },
+  { deal_id: "VIRAL_DEAL_FRUVER_070226", sync: "5672", name: "San Juan Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 40, pct_deal: 3.48, order: 12 }
 ];
