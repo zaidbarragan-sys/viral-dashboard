@@ -1179,6 +1179,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Preservativos, Lubricantes"
+  },
+  {
+    deal_id: "VIRAL_DEAL_P&G_160226",
+    maker_name: "P&G",
+    maker_aux: "P&G",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-01-15",
+    fecha_ejecucion: "2026-02-16",
+    fecha_fin: null,
+    usd_mxn: 17.21,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 50000,
+    budget_growth_mxn: 15000,
+    budget_total_mxn: 65000,
+    budget_maker_usd: 2905.87,
+    budget_growth_usd: 871.59,
+    budget_total_usd: 3777.45,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Shampoo, Acondicionador"
   }
 ];
 
@@ -1402,7 +1426,14 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "2915", ean: "7501080952133", pid: "2115621108", name: "Trojan Preservativos Texturizados Ecstasy 2 ud.", subcategoria: "Preservativos", h_units: 3.7, h_orders: 2.9, avg_price: 81.90, ex_incr_units: 37, ex_incr_orders: 29, ex_budget_mxn: 1515, ex_budget_usd: 88.03, real_units: 191, final_budget_mxn: 7822, final_budget_usd: 454.50, sku_order: 7 },
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "14576", ean: "7501080953017", pid: "2115154377", name: "Trojan Preservativos Fire & Ice 3 ud.", subcategoria: "Preservativos", h_units: 2.7, h_orders: 2.6, avg_price: 91.85, ex_incr_units: 27, ex_incr_orders: 26, ex_budget_mxn: 1240, ex_budget_usd: 72.05, real_units: 124, final_budget_mxn: 5695, final_budget_usd: 330.91, sku_order: 8 },
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "1885", ean: "7506460100111", pid: "2113441386", name: "Sico Preservativos Piel Con Piel 3 ud.", subcategoria: "Preservativos", h_units: 2.4, h_orders: 2.1, avg_price: 134.84, ex_incr_units: 24, ex_incr_orders: 21, ex_budget_mxn: 1618, ex_budget_usd: 94.02, real_units: 75, final_budget_mxn: 5057, final_budget_usd: 293.84, sku_order: 9 },
-  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "7354", ean: "7501058368133", pid: "2115735607", name: "Sico Condones Sensitive 9 ud.", subcategoria: "Preservativos", h_units: 2.3, h_orders: 2.1, avg_price: 228.21, ex_incr_units: 23, ex_incr_orders: 21, ex_budget_mxn: 2624, ex_budget_usd: 152.47, real_units: 43, final_budget_mxn: 4906, final_budget_usd: 285.07, sku_order: 10 }
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "7354", ean: "7501058368133", pid: "2115735607", name: "Sico Condones Sensitive 9 ud.", subcategoria: "Preservativos", h_units: 2.3, h_orders: 2.1, avg_price: 228.21, ex_incr_units: 23, ex_incr_orders: 21, ex_budget_mxn: 2624, ex_budget_usd: 152.47, real_units: 43, final_budget_mxn: 4906, final_budget_usd: 285.07, sku_order: 10 },
+  // P&G
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "7352", ean: "7500435019958", pid: "1563632052", name: "Head & Shoulders Shampoo Limpieza Renovadora 180 mL", subcategoria: "Shampoo", h_units: 14.5, h_orders: 11.9, avg_price: 46.74, ex_incr_units: 116, ex_incr_orders: 95, ex_budget_mxn: 2711, ex_budget_usd: 157.52, real_units: 825, final_budget_mxn: 19280, final_budget_usd: 1120.28, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "11705", ean: "381519180736", pid: "2113195536", name: "Herbal Essences Shampoo Suavidad Rosa Mosqueta 400 mL", subcategoria: "Shampoo", h_units: 12.4, h_orders: 11.6, avg_price: 78.74, ex_incr_units: 99, ex_incr_orders: 93, ex_budget_mxn: 3898, ex_budget_usd: 226.50, real_units: 418, final_budget_mxn: 16457, final_budget_usd: 956.25, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "10438", ean: "381519180767", pid: "2112955440", name: "Herbal Essences Acondicionador Classic Smooth 400 mL", subcategoria: "Acondicionador", h_units: 11.4, h_orders: 11.0, avg_price: 81.31, ex_incr_units: 91, ex_incr_orders: 88, ex_budget_mxn: 3700, ex_budget_usd: 214.99, real_units: 372, final_budget_mxn: 15124, final_budget_usd: 878.79, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "10375", ean: "7500435019545", pid: "2115719654", name: "Head & Shoulders Shampoo Men Control Caspa 375 mL", subcategoria: "Shampoo", h_units: 5.3, h_orders: 4.9, avg_price: 79.35, ex_incr_units: 42, ex_incr_orders: 39, ex_budget_mxn: 1666, ex_budget_usd: 96.80, real_units: 176, final_budget_mxn: 6983, final_budget_usd: 405.75, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72859", ean: "7500435199018", pid: "2113182772", name: "Head & Shoulders Shampoo Intense Nourish 280 mL", subcategoria: "Shampoo", h_units: 4.5, h_orders: 4.1, avg_price: 244.71, ex_incr_units: 36, ex_incr_orders: 33, ex_budget_mxn: 4405, ex_budget_usd: 255.96, real_units: 49, final_budget_mxn: 5995, final_budget_usd: 348.34, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72860", ean: "7500435198998", pid: "2113182766", name: "Head & Shoulders Shampoo Radical Clean 280 mL", subcategoria: "Shampoo", h_units: 0.9, h_orders: 0.6, avg_price: 242.90, ex_incr_units: 7, ex_incr_orders: 5, ex_budget_mxn: 850, ex_budget_usd: 49.39, real_units: 10, final_budget_mxn: 1215, final_budget_usd: 70.60, sku_order: 6 }
 ];
 
 const POSTMORTEM_DEALS = [
@@ -1683,6 +1714,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 183, canib_ord_bench: 125.0, canib_ord_delta_pct: 46.4,
     canib_und_post: 276, canib_und_bench: 190.75, canib_und_delta_pct: 44.7,
     canib_cli_post: 242, canib_cli_bench: 142.25, canib_cli_delta_pct: 70.1
+  },
+  {
+    deal_id: "VIRAL_DEAL_P&G_160226",
+    post_days: 4, fase: 2,
+    gmv_activacion: 43936, gmv_lw: 2378, gmv_dlw_pct: 1747.3, gmv_l4w: 3127, gmv_dl4w_pct: 1305.0,
+    usuarios_unicos: 255,
+    usr_lw: 24, usr_dlw_pct: 962.5, usr_l4w: 26, usr_dl4w_pct: 880.8,
+    cr_pct: 2.18,
+    aov: 147.93, aov_lw: 95.14, aov_dlw_pct: 55.5, aov_l4w: 106.0, aov_dl4w_pct: 39.6,
+    unidades_total: 485, und_lw: 31, und_dlw_pct: 1464.5, und_l4w: 34.75, und_dl4w_pct: 1295.7,
+    ordenes_total: 297, ord_lw: 25, ord_dlw_pct: 1088.0, ord_l4w: 29.50, ord_dl4w_pct: 906.8,
+    impresiones_total: 11697,
+    so_turbo_mx: 2816414, gmv_categoria: 43530,
+    gmv_cat_lw: 5602, gmv_cat_l4w: 6771,
+    share_deal_cat_pct: 100.93, share_lw_pct: 42.46, share_l4w_pct: 46.18,
+    gmv_basket: 75759, gmv_sellup: 31824, pct_sellup: 42.01,
+    aov_basket: 255.08, aov_deal_post: 147.93,
+    cross_ordenes: 297, cross_skus_distintos: 393,
+    cross_top_producto: "Electrolit Suero Fresa Kiwi 625 mL", cross_top_ordenes: 10, cross_top_pct: 3.37,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 122, canib_ord_bench: 166.0, canib_ord_delta_pct: -26.5,
+    canib_und_post: 168, canib_und_bench: 221.5, canib_und_delta_pct: -24.2,
+    canib_cli_post: 149, canib_cli_bench: 180.0, canib_cli_delta_pct: -17.2
   }
 ];
 
@@ -1768,7 +1824,14 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "2915", name: "Trojan Preservativos Texturizados Ecstasy 2 ud.", ordenes: 21, usuarios: 20, unidades: 42, gmv: 2845, aov: 135.45, impresiones: 8832, cr_pct: 0.23, gmv_dlw_pct: 574.2, gmv_dl4w_pct: 549.1, seg_nuevo: 16, seg_nuevo_pct: 76, seg_reactivado: 3, seg_reactivado_pct: 14, seg_retenido: 2, seg_retenido_pct: 10, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 16, canib_ord_bench: 11.00, canib_ord_delta_pct: 45.5, canib_und_post: 32, canib_und_bench: 19.5, canib_und_delta_pct: 64.1, canib_cli_post: 20, canib_cli_bench: 11.75, canib_cli_delta_pct: 70.2 },
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "14576", name: "Trojan Preservativos Fire & Ice 3 ud.", ordenes: 17, usuarios: 17, unidades: 27, gmv: 2106, aov: 123.86, impresiones: 4257, cr_pct: 0.40, gmv_dlw_pct: null, gmv_dl4w_pct: 683.6, seg_nuevo: 16, seg_nuevo_pct: 94, seg_reactivado: 1, seg_reactivado_pct: 6, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 4, canib_ord_bench: 8.00, canib_ord_delta_pct: -50.0, canib_und_post: 4, canib_und_bench: 11, canib_und_delta_pct: -63.6, canib_cli_post: 4, canib_cli_bench: 9.50, canib_cli_delta_pct: -57.9 },
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "7354", name: "Sico Condones Sensitive 9 ud.", ordenes: 8, usuarios: 8, unidades: 9, gmv: 1940, aov: 242.51, impresiones: 3378, cr_pct: 0.24, gmv_dlw_pct: 113.1, gmv_dl4w_pct: 104.5, seg_nuevo: 6, seg_nuevo_pct: 75, seg_reactivado: 2, seg_reactivado_pct: 25, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 19, canib_ord_bench: 4.75, canib_ord_delta_pct: 300.0, canib_und_post: 28, canib_und_bench: 5.5, canib_und_delta_pct: 409.1, canib_cli_post: 25, canib_cli_bench: 5.25, canib_cli_delta_pct: 376.2 },
-  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "1885", name: "Sico Preservativos Piel Con Piel 3 ud.", ordenes: 14, usuarios: 14, unidades: 15, gmv: 1853, aov: 132.35, impresiones: 5011, cr_pct: 0.28, gmv_dlw_pct: 135.3, gmv_dl4w_pct: 183.6, seg_nuevo: 11, seg_nuevo_pct: 79, seg_reactivado: 3, seg_reactivado_pct: 21, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 14, canib_ord_bench: 7.75, canib_ord_delta_pct: 80.6, canib_und_post: 18, canib_und_bench: 12.5, canib_und_delta_pct: 44.0, canib_cli_post: 15, canib_cli_bench: 8.75, canib_cli_delta_pct: 71.4 }
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "1885", name: "Sico Preservativos Piel Con Piel 3 ud.", ordenes: 14, usuarios: 14, unidades: 15, gmv: 1853, aov: 132.35, impresiones: 5011, cr_pct: 0.28, gmv_dlw_pct: 135.3, gmv_dl4w_pct: 183.6, seg_nuevo: 11, seg_nuevo_pct: 79, seg_reactivado: 3, seg_reactivado_pct: 21, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 14, canib_ord_bench: 7.75, canib_ord_delta_pct: 80.6, canib_und_post: 18, canib_und_bench: 12.5, canib_und_delta_pct: 44.0, canib_cli_post: 15, canib_cli_bench: 8.75, canib_cli_delta_pct: 71.4 },
+  // P&G
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "11705", name: "Herbal Essences Shampoo Rosa Mosqueta 400 mL", ordenes: 124, usuarios: 109, unidades: 141, gmv: 13537, aov: 109.17, impresiones: 3922, cr_pct: 2.78, gmv_dlw_pct: 1652.1, gmv_dl4w_pct: 1739.6, seg_nuevo: 96, seg_nuevo_pct: 77, seg_reactivado: 18, seg_reactivado_pct: 15, seg_retenido: 10, seg_retenido_pct: 8, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 39, canib_ord_bench: 42.50, canib_ord_delta_pct: -8.2, canib_und_post: 59, canib_und_bench: 53.25, canib_und_delta_pct: 10.8, canib_cli_post: 48, canib_cli_bench: 45.75, canib_cli_delta_pct: 4.9 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "10438", name: "Herbal Essences Acondicionador Classic Smooth 400 mL", ordenes: 94, usuarios: 75, unidades: 110, gmv: 10212, aov: 108.64, impresiones: 3276, cr_pct: 2.29, gmv_dlw_pct: 2005.6, gmv_dl4w_pct: 1845.2, seg_nuevo: 77, seg_nuevo_pct: 82, seg_reactivado: 10, seg_reactivado_pct: 11, seg_retenido: 7, seg_retenido_pct: 7, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 20, canib_ord_bench: 27.75, canib_ord_delta_pct: -27.9, canib_und_post: 27, canib_und_bench: 34, canib_und_delta_pct: -20.6, canib_cli_post: 25, canib_cli_bench: 31.25, canib_cli_delta_pct: -20.0 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72859", name: "Head & Shoulders Shampoo Intense Nourish 280 mL", ordenes: 26, usuarios: 20, unidades: 29, gmv: 7317, aov: 281.43, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: 593.6, seg_nuevo: 22, seg_nuevo_pct: 85, seg_reactivado: 2, seg_reactivado_pct: 8, seg_retenido: 2, seg_retenido_pct: 8, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 4, canib_ord_bench: 6.00, canib_ord_delta_pct: -33.3, canib_und_post: 5, canib_und_bench: 7.75, canib_und_delta_pct: -35.5, canib_cli_post: 4, canib_cli_bench: 5.00, canib_cli_delta_pct: -20.0 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "10375", name: "Head & Shoulders Shampoo Men Control Caspa 375 mL", ordenes: 60, usuarios: 52, unidades: 70, gmv: 6254, aov: 104.23, impresiones: 2007, cr_pct: 2.59, gmv_dlw_pct: 1113.4, gmv_dl4w_pct: 1040.5, seg_nuevo: 52, seg_nuevo_pct: 87, seg_reactivado: 2, seg_reactivado_pct: 3, seg_retenido: 6, seg_retenido_pct: 10, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 11, canib_ord_bench: 14.50, canib_ord_delta_pct: -24.1, canib_und_post: 16, canib_und_bench: 19, canib_und_delta_pct: -15.8, canib_cli_post: 12, canib_cli_bench: 14.25, canib_cli_delta_pct: -15.8 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "7352", name: "Head & Shoulders Shampoo Limpieza Renovadora 180 mL", ordenes: 122, usuarios: 115, unidades: 132, gmv: 6248, aov: 51.21, impresiones: 2492, cr_pct: 4.61, gmv_dlw_pct: 931.9, gmv_dl4w_pct: 754.6, seg_nuevo: 94, seg_nuevo_pct: 77, seg_reactivado: 23, seg_reactivado_pct: 19, seg_retenido: 5, seg_retenido_pct: 4, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 46, canib_ord_bench: 72.75, canib_ord_delta_pct: -36.8, canib_und_post: 60, canib_und_bench: 104.25, canib_und_delta_pct: -42.4, canib_cli_post: 58, canib_cli_bench: 81.75, canib_cli_delta_pct: -29.1 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72860", name: "Head & Shoulders Shampoo Radical Clean 280 mL", ordenes: 2, usuarios: 1, unidades: 3, gmv: 368, aov: 184.24, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: 55.2, seg_nuevo: 0, seg_nuevo_pct: 0, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 2, seg_retenido_pct: 100, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 2, canib_ord_bench: 2.50, canib_ord_delta_pct: -20.0, canib_und_post: 1, canib_und_bench: 3.25, canib_und_delta_pct: -69.2, canib_cli_post: 2, canib_cli_bench: 2.00, canib_cli_delta_pct: 0.0 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -1879,7 +1942,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", subcategoria: "Anticonceptivos", ordenes: 10, gmv: 1673, pct_sellup: 5.99, order: 5 },
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", subcategoria: "Chocolates", ordenes: 14, gmv: 1533, pct_sellup: 5.49, order: 6 },
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", subcategoria: "Vigorizantes", ordenes: 5, gmv: 1340, pct_sellup: 4.80, order: 7 },
-  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", subcategoria: "Vibradores", ordenes: 4, gmv: 1227, pct_sellup: 4.40, order: 8 }
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", subcategoria: "Vibradores", ordenes: 4, gmv: 1227, pct_sellup: 4.40, order: 8 },
+  // P&G
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Suero", ordenes: 34, gmv: 4606, pct_sellup: 14.47, order: 1 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Frutas", ordenes: 41, gmv: 3314, pct_sellup: 10.41, order: 2 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Snacks salados", ordenes: 35, gmv: 1772, pct_sellup: 5.57, order: 3 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Jugos", ordenes: 26, gmv: 1256, pct_sellup: 3.95, order: 4 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Verduras", ordenes: 19, gmv: 1207, pct_sellup: 3.79, order: 5 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Leche natural", ordenes: 17, gmv: 1179, pct_sellup: 3.70, order: 6 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Yogurt", ordenes: 20, gmv: 1016, pct_sellup: 3.19, order: 7 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Gaseosas", ordenes: 20, gmv: 994, pct_sellup: 3.12, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -2038,5 +2110,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "13818", name: "Topo Chico Agua Mineral 600 mL", subcategoria: "Agua Natural", ordenes: 3, pct_deal: 1.55, order: 9 },
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "72921", name: "Sico Anillo Vibrador 1 ud.", subcategoria: "Vibradores", ordenes: 3, pct_deal: 1.55, order: 10 },
   { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "83705", name: "Condón Trojan Piel Desnuda Sensibilidad 15 ud.", subcategoria: "Anticonceptivos", ordenes: 3, pct_deal: 1.55, order: 11 },
-  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "6455", name: "Tostitos Dip de Queso y Jalapeño 255 g", subcategoria: "Dips", ordenes: 3, pct_deal: 1.55, order: 12 }
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "6455", name: "Tostitos Dip de Queso y Jalapeño 255 g", subcategoria: "Dips", ordenes: 3, pct_deal: 1.55, order: 12 },
+  // P&G
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "9103", name: "Electrolit Suero Fresa Kiwi 625 mL", subcategoria: "Suero", ordenes: 10, pct_deal: 3.37, order: 1 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "5896", name: "Electrolit Suero Mora Azul 625 mL", subcategoria: "Suero", ordenes: 10, pct_deal: 3.37, order: 2 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "5495", name: "Electrolit Suero Fresa 625 mL", subcategoria: "Suero", ordenes: 9, pct_deal: 3.03, order: 3 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "5759", name: "Electrolit Suero Uva 625 mL", subcategoria: "Suero", ordenes: 8, pct_deal: 2.69, order: 4 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "76544", name: "Kiwi", subcategoria: "Frutas", ordenes: 8, pct_deal: 2.69, order: 5 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 8, pct_deal: 2.69, order: 6 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "5898", name: "Electrolit Suero Lima-Limón 625 mL", subcategoria: "Suero", ordenes: 7, pct_deal: 2.36, order: 7 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "14719", name: "Prispas Papas Fritas Picositas 130 g", subcategoria: "Snacks salados", ordenes: 6, pct_deal: 2.02, order: 8 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "73412", name: "Alpura Yoghurt Batido Manzana 125 g", subcategoria: "Yogurt", ordenes: 6, pct_deal: 2.02, order: 9 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "73138", name: "Jumex Jugo de Naranja Sin Pulpa 960 mL", subcategoria: "Jugos", ordenes: 6, pct_deal: 2.02, order: 10 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "79611", name: "Malla Chayote 500 g", subcategoria: "Verduras", ordenes: 6, pct_deal: 2.02, order: 11 },
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 6, pct_deal: 2.02, order: 12 }
 ];
