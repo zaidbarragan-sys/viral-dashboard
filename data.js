@@ -1598,6 +1598,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 120, canib_ord_bench: 273.50, canib_ord_delta_pct: -56.1,
     canib_und_post: 181, canib_und_bench: 471, canib_und_delta_pct: -61.6,
     canib_cli_post: 121, canib_cli_bench: 283.25, canib_cli_delta_pct: -57.3
+  },
+  {
+    deal_id: "VIRAL_DEAL_FLORAVID_130226",
+    post_days: 4, fase: 2,
+    gmv_activacion: 382491, gmv_lw: null, gmv_dlw_pct: null, gmv_l4w: null, gmv_dl4w_pct: null,
+    usuarios_unicos: 1178,
+    usr_lw: null, usr_dlw_pct: null, usr_l4w: null, usr_dl4w_pct: null,
+    cr_pct: 1.17,
+    aov: 264.88, aov_lw: null, aov_dlw_pct: null, aov_l4w: null, aov_dl4w_pct: null,
+    unidades_total: 1644, und_lw: null, und_dlw_pct: null, und_l4w: null, und_dl4w_pct: null,
+    ordenes_total: 1444, ord_lw: null, ord_dlw_pct: null, ord_l4w: null, ord_dl4w_pct: null,
+    impresiones_total: 100782,
+    so_turbo_mx: 7565693, gmv_categoria: 382491,
+    gmv_cat_lw: null, gmv_cat_l4w: null,
+    share_deal_cat_pct: 100.0, share_lw_pct: null, share_l4w_pct: null,
+    gmv_basket: 494673, gmv_sellup: 112182, pct_sellup: 22.68,
+    aov_basket: 342.57, aov_deal_post: 264.88,
+    cross_ordenes: 1444, cross_skus_distintos: 596,
+    cross_top_producto: "Chocolate Kisses Almendras 125 g", cross_top_ordenes: 42, cross_top_pct: 2.91,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 14, canib_ord_bench: 0.25, canib_ord_delta_pct: 5500.0,
+    canib_und_post: 16, canib_und_bench: 0.25, canib_und_delta_pct: 6300.0,
+    canib_cli_post: 16, canib_cli_bench: 0.25, canib_cli_delta_pct: 6300.0
   }
 ];
 
@@ -1666,7 +1691,13 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "4787", name: "Chocolate Kisses Cereza Caja 120 g", ordenes: 231, usuarios: 246, unidades: 398, gmv: 37069, aov: 160.47, impresiones: 11539, cr_pct: 2.13, gmv_dlw_pct: 19533.8, gmv_dl4w_pct: 12490.5, seg_nuevo: 31, seg_nuevo_pct: 13, seg_reactivado: 71, seg_reactivado_pct: 29, seg_retenido: 144, seg_retenido_pct: 59, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 19, canib_ord_bench: 29.25, canib_ord_delta_pct: -35.0, canib_und_post: 31, canib_und_bench: 49.25, canib_und_delta_pct: -37.1, canib_cli_post: 20, canib_cli_bench: 30.50, canib_cli_delta_pct: -34.4 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76321", name: "Hersheys Kisses Secret Leche 76 g", ordenes: 207, usuarios: 210, unidades: 332, gmv: 22738, aov: 109.85, impresiones: 10028, cr_pct: 2.09, gmv_dlw_pct: 3972.9, gmv_dl4w_pct: 10010.6, seg_nuevo: 23, seg_nuevo_pct: 11, seg_reactivado: 60, seg_reactivado_pct: 29, seg_retenido: 127, seg_retenido_pct: 60, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 7, canib_ord_bench: 17.00, canib_ord_delta_pct: -58.8, canib_und_post: 9, canib_und_bench: 26.75, canib_und_delta_pct: -66.4, canib_cli_post: 8, canib_cli_bench: 15.75, canib_cli_delta_pct: -49.2 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "73519", name: "Chocolate Kisses Jr Sabor Leche 41.4 g", ordenes: 190, usuarios: 210, unidades: 388, gmv: 12010, aov: 63.21, impresiones: 7429, cr_pct: 2.83, gmv_dlw_pct: 4734.8, gmv_dl4w_pct: 5001.7, seg_nuevo: 25, seg_nuevo_pct: 12, seg_reactivado: 63, seg_reactivado_pct: 30, seg_retenido: 122, seg_retenido_pct: 58, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 24, canib_ord_bench: 30.25, canib_ord_delta_pct: -20.7, canib_und_post: 39, canib_und_bench: 68.75, canib_und_delta_pct: -43.3, canib_cli_post: 29, canib_cli_bench: 35.00, canib_cli_delta_pct: -17.1 },
-  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76575", name: "Hersheys Kisses Monaco 34 g", ordenes: 31, usuarios: 36, unidades: 43, gmv: 848, aov: 27.34, impresiones: 1097, cr_pct: 3.28, gmv_dlw_pct: -15.4, gmv_dl4w_pct: 39.8, seg_nuevo: 2, seg_nuevo_pct: 6, seg_reactivado: 9, seg_reactivado_pct: 25, seg_retenido: 25, seg_retenido_pct: 69, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 3, canib_ord_bench: 64.50, canib_ord_delta_pct: -95.3, canib_und_post: 11, canib_und_bench: 113.75, canib_und_delta_pct: -90.3, canib_cli_post: 4, canib_cli_bench: 68.25, canib_cli_delta_pct: -94.1 }
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76575", name: "Hersheys Kisses Monaco 34 g", ordenes: 31, usuarios: 36, unidades: 43, gmv: 848, aov: 27.34, impresiones: 1097, cr_pct: 3.28, gmv_dlw_pct: -15.4, gmv_dl4w_pct: 39.8, seg_nuevo: 2, seg_nuevo_pct: 6, seg_reactivado: 9, seg_reactivado_pct: 25, seg_retenido: 25, seg_retenido_pct: 69, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 3, canib_ord_bench: 64.50, canib_ord_delta_pct: -95.3, canib_und_post: 11, canib_und_bench: 113.75, canib_und_delta_pct: -90.3, canib_cli_post: 4, canib_cli_bench: 68.25, canib_cli_delta_pct: -94.1 },
+  // Floravid
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89424", name: "Clásico 12 Rosas Color Rosa", ordenes: 515, usuarios: 420, unidades: 528, gmv: 129179, aov: 250.83, impresiones: 29116, cr_pct: 1.44, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 515, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89425", name: "Mix Floral Chico 25 Flores Surtidas", ordenes: 403, usuarios: 342, unidades: 408, gmv: 111823, aov: 277.48, impresiones: 21171, cr_pct: 1.62, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 403, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89427", name: "Encanto 15 Mini Rosas Multicolor", ordenes: 322, usuarios: 262, unidades: 333, gmv: 68422, aov: 212.49, impresiones: 22836, cr_pct: 1.15, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 321, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 1, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 12, canib_ord_bench: 0.25, canib_ord_delta_pct: 4700.0, canib_und_post: 13, canib_und_bench: 0.25, canib_und_delta_pct: 5100.0, canib_cli_post: 13, canib_cli_bench: 0.25, canib_cli_delta_pct: 5100.0 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89426", name: "Frescura 15 Margaritas Multicolor", ordenes: 194, usuarios: 167, unidades: 203, gmv: 39416, aov: 203.17, impresiones: 13037, cr_pct: 1.28, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 194, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89428", name: "Alegría 10 Gerberas Multicolor", ordenes: 172, usuarios: 148, unidades: 172, gmv: 33651, aov: 195.65, impresiones: 14622, cr_pct: 1.01, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 172, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 2, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: 3, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: 3, canib_cli_bench: null, canib_cli_delta_pct: null }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -1759,7 +1790,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Cervezas", ordenes: 46, gmv: 5014, pct_sellup: 3.74, order: 5 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Gomitas y caramelos", ordenes: 74, gmv: 4889, pct_sellup: 3.65, order: 6 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Gaseosas", ordenes: 93, gmv: 4509, pct_sellup: 3.36, order: 7 },
-  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Galletas", ordenes: 63, gmv: 2915, pct_sellup: 2.17, order: 8 }
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", subcategoria: "Galletas", ordenes: 63, gmv: 2915, pct_sellup: 2.17, order: 8 },
+  // Floravid
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", subcategoria: "Chocolates", ordenes: 295, gmv: 38172, pct_sellup: 34.03, order: 1 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", subcategoria: "Cervezas", ordenes: 38, gmv: 5539, pct_sellup: 4.94, order: 2 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", subcategoria: "Vino rosado", ordenes: 33, gmv: 5509, pct_sellup: 4.91, order: 3 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", subcategoria: "Postres refrigerados", ordenes: 28, gmv: 3882, pct_sellup: 3.46, order: 4 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", subcategoria: "Vino tinto", ordenes: 23, gmv: 3648, pct_sellup: 3.25, order: 5 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", subcategoria: "Snacks salados", ordenes: 53, gmv: 3580, pct_sellup: 3.19, order: 6 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", subcategoria: "Postres", ordenes: 25, gmv: 3483, pct_sellup: 3.10, order: 7 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", subcategoria: "Frutas", ordenes: 54, gmv: 3370, pct_sellup: 3.00, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -1892,5 +1932,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "6455", name: "Tostitos Dip de Queso y Jalapeño 255 g", subcategoria: "Dips", ordenes: 14, pct_deal: 1.25, order: 9 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "6744", name: "Coca-Cola Original Refresco Pet 600 mL", subcategoria: "Gaseosas", ordenes: 14, pct_deal: 1.25, order: 10 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76320", name: "Hersheys Kisses Fiesta Azul 190 g", subcategoria: "Chocolates", ordenes: 13, pct_deal: 1.16, order: 11 },
-  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "81853", name: "M&Ms Chocolates con Leche y Cacahuate 37.5 g", subcategoria: "Chocolates", ordenes: 12, pct_deal: 1.07, order: 12 }
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "81853", name: "M&Ms Chocolates con Leche y Cacahuate 37.5 g", subcategoria: "Chocolates", ordenes: 12, pct_deal: 1.07, order: 12 },
+  // Floravid
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "12079", name: "Chocolate Kisses Almendras 125 g", subcategoria: "Chocolates", ordenes: 42, pct_deal: 2.91, order: 1 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "76319", name: "Hersheys Kisses Fiesta Rojo 190 g", subcategoria: "Chocolates", ordenes: 34, pct_deal: 2.35, order: 2 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate 150 g", subcategoria: "Postres refrigerados", ordenes: 27, pct_deal: 1.87, order: 3 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "14945", name: "Franui Leche Sabor Frambuesa 150 g", subcategoria: "Postres", ordenes: 24, pct_deal: 1.66, order: 4 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "76322", name: "Hersheys Kisses Secret Leche Almendras 72 g", subcategoria: "Chocolates", ordenes: 22, pct_deal: 1.52, order: 5 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "76318", name: "Hersheys Kisses Trufa 120 g", subcategoria: "Chocolates", ordenes: 18, pct_deal: 1.25, order: 6 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 17, pct_deal: 1.18, order: 7 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 g", subcategoria: "Galletas", ordenes: 15, pct_deal: 1.04, order: 8 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "11580", name: "Hersheys Barra de Chocolate Unicornio 20 g", subcategoria: "Chocolates", ordenes: 14, pct_deal: 0.97, order: 9 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "4787", name: "Chocolate Kisses Cereza Caja 120 g", subcategoria: "Chocolates", ordenes: 14, pct_deal: 0.97, order: 10 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "10153", name: "Snickers Chocolate 2 Pack 83 g", subcategoria: "Chocolates", ordenes: 14, pct_deal: 0.97, order: 11 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "74130", name: "Oreo Galleta Oreo Cubierta White Fudge 152 g", subcategoria: "Esencias y colorantes", ordenes: 13, pct_deal: 0.90, order: 12 }
 ];
