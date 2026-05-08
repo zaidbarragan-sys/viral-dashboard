@@ -1275,6 +1275,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_GRANEL_050326",
+    maker_name: "Granel",
+    maker_aux: "Granel",
+    business_unit: "WOW",
+    descuento_pct: 60,
+    incrementalidad: 15,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-02-17",
+    fecha_ejecucion: "2026-03-05",
+    fecha_fin: null,
+    usd_mxn: 17.21,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1743.52,
+    budget_growth_usd: 523.07,
+    budget_total_usd: 2266.13,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Frutos secos y semillas, Gomitas y caramelos"
   }
 ];
 
@@ -1522,7 +1546,14 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8770", ean: "7503024416114", pid: "2115802214", name: "Pack Cerveza Amstel Ultra Botella 6 x 355 mL", subcategoria: "Cervezas", h_units: 481.4, h_orders: 353.8, avg_price: 119.78, ex_incr_units: 4333, ex_incr_orders: 3184, ex_budget_mxn: 311372, ex_budget_usd: 18093.09, real_units: 2281, final_budget_mxn: 163907, final_budget_usd: 9523.94, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8524", ean: "7501049999278", pid: "2115776728", name: "Pack Cerveza Heineken Original Botella 6 x 355 mL", subcategoria: "Cervezas", h_units: 139.8, h_orders: 113.2, avg_price: 156.27, ex_incr_units: 1258, ex_incr_orders: 1019, ex_budget_mxn: 117982, ex_budget_usd: 6856.60, real_units: 507, final_budget_mxn: 47558, final_budget_usd: 2763.39, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "9713", ean: "7503024416596", pid: "2115573260", name: "Heineken Cerveza Sin Alcohol 250 mL", subcategoria: "Cervezas", h_units: 80.2, h_orders: 67.1, avg_price: 106.08, ex_incr_units: 722, ex_incr_orders: 604, ex_budget_mxn: 45954, ex_budget_usd: 2670.19, real_units: 429, final_budget_mxn: 27305, final_budget_usd: 1586.58, sku_order: 3 },
-  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "7449", ean: "7501049917937", pid: "2115621088", name: "XX Dos Equis Lager Especial Botella 6pack 355 mL", subcategoria: "Cervezas", h_units: 62.5, h_orders: 43.9, avg_price: 133.32, ex_incr_units: 563, ex_incr_orders: 395, ex_budget_mxn: 45038, ex_budget_usd: 2617.00, real_units: 266, final_budget_mxn: 21282, final_budget_usd: 1236.60, sku_order: 4 }
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "7449", ean: "7501049917937", pid: "2115621088", name: "XX Dos Equis Lager Especial Botella 6pack 355 mL", subcategoria: "Cervezas", h_units: 62.5, h_orders: 43.9, avg_price: 133.32, ex_incr_units: 563, ex_incr_orders: 395, ex_budget_mxn: 45038, ex_budget_usd: 2617.00, real_units: 266, final_budget_mxn: 21282, final_budget_usd: 1236.60, sku_order: 4 },
+  // Granel 050326
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "83016", ean: "22200000013723", pid: "2115430841", name: "Cacahuate Sin Sal 200 g", subcategoria: "Frutos secos y semillas", h_units: 29.6, h_orders: 20.9, avg_price: 17.66, ex_incr_units: 444, ex_incr_orders: 314, ex_budget_mxn: 4705, ex_budget_usd: 273.39, real_units: 1082, final_budget_mxn: 11465, final_budget_usd: 666.18, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "87047", ean: "2220000002881", pid: "2115717499", name: "Osito Enchilado 200 g", subcategoria: "Gomitas y caramelos", h_units: 25.1, h_orders: 23.2, avg_price: 26.23, ex_incr_units: 377, ex_incr_orders: 348, ex_budget_mxn: 5929, ex_budget_usd: 344.51, real_units: 619, final_budget_mxn: 9746, final_budget_usd: 566.30, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "83017", ean: "2220000001373", pid: "2115430695", name: "Nuez de la India 200 g", subcategoria: "Frutos secos y semillas", h_units: 21.4, h_orders: 18.8, avg_price: 75.71, ex_incr_units: 321, ex_incr_orders: 282, ex_budget_mxn: 14582, ex_budget_usd: 847.30, real_units: 182, final_budget_mxn: 8268, final_budget_usd: 480.42, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "87050", ean: "2220000002902", pid: "2115717491", name: "Goma Guanábana 200 g", subcategoria: "Gomitas y caramelos", h_units: 9.1, h_orders: 8.2, avg_price: 30.36, ex_incr_units: 137, ex_incr_orders: 123, ex_budget_mxn: 2494, ex_budget_usd: 144.92, real_units: 194, final_budget_mxn: 3534, final_budget_usd: 205.35, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "86755", ean: "2220000002858", pid: "2115709125", name: "Pasas Con Chocolate 200 g", subcategoria: "Frutos secos y semillas", h_units: 8.6, h_orders: 7.5, avg_price: 97.04, ex_incr_units: 129, ex_incr_orders: 113, ex_budget_mxn: 7511, ex_budget_usd: 436.43, real_units: 57, final_budget_mxn: 3319, final_budget_usd: 192.85, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "86768", ean: "2220000002861", pid: "2115709124", name: "Piña Enchilada 200 g", subcategoria: "Frutos secos y semillas", h_units: 6.8, h_orders: 6.3, avg_price: 82.86, ex_incr_units: 102, ex_incr_orders: 95, ex_budget_mxn: 5071, ex_budget_usd: 294.65, real_units: 53, final_budget_mxn: 2635, final_budget_usd: 153.11, sku_order: 6 }
 ];
 
 const POSTMORTEM_DEALS = [
