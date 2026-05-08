@@ -1824,6 +1824,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 270, canib_ord_bench: 302.75, canib_ord_delta_pct: -10.8,
     canib_und_post: 423, canib_und_bench: 463.75, canib_und_delta_pct: -8.8,
     canib_cli_post: 274, canib_cli_bench: 297.25, canib_cli_delta_pct: -7.8
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_240226",
+    post_days: 4, fase: 2,
+    gmv_activacion: 52513, gmv_lw: 13476, gmv_dlw_pct: 289.7, gmv_l4w: 14997, gmv_dl4w_pct: 250.2,
+    usuarios_unicos: 1302,
+    usr_lw: 569, usr_dlw_pct: 128.8, usr_l4w: 596.50, usr_dl4w_pct: 118.3,
+    cr_pct: 2.91,
+    aov: 36.04, aov_lw: 21.22, aov_dlw_pct: 69.8, aov_l4w: 22.83, aov_dl4w_pct: 57.9,
+    unidades_total: 6744, und_lw: 2180, und_dlw_pct: 209.4, und_l4w: 2403, und_dl4w_pct: 180.7,
+    ordenes_total: 1457, ord_lw: 635, ord_dlw_pct: 129.4, ord_l4w: 657, ord_dl4w_pct: 121.8,
+    impresiones_total: 44725,
+    so_turbo_mx: 2096367, gmv_categoria: 173265,
+    gmv_cat_lw: 138316, gmv_cat_l4w: 131993,
+    share_deal_cat_pct: 30.31, share_lw_pct: 9.74, share_l4w_pct: 11.36,
+    gmv_basket: 317884, gmv_sellup: 265372, pct_sellup: 83.48,
+    aov_basket: 218.18, aov_deal_post: 36.04,
+    cross_ordenes: 1457, cross_skus_distintos: 1567,
+    cross_top_producto: "Aguacate Para Hoy X3", cross_top_ordenes: 175, cross_top_pct: 12.01,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 2483, canib_ord_bench: 2090.75, canib_ord_delta_pct: 18.8,
+    canib_und_post: 9407, canib_und_bench: 8312.0, canib_und_delta_pct: 13.2,
+    canib_cli_post: 2671, canib_cli_bench: 2008.25, canib_cli_delta_pct: 33.0
   }
 ];
 
@@ -1922,7 +1947,13 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "11671", name: "Vino Tinto Las Moras Cabernet Sauvignon 750 mL", ordenes: 372, usuarios: 269, unidades: 477, gmv: 63591, aov: 170.94, impresiones: 4076, cr_pct: 6.60, gmv_dlw_pct: 1192.0, gmv_dl4w_pct: 1184.7, seg_nuevo: 284, seg_nuevo_pct: 76, seg_reactivado: 27, seg_reactivado_pct: 7, seg_retenido: 61, seg_retenido_pct: 16, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 44, canib_ord_bench: 54.75, canib_ord_delta_pct: -19.6, canib_und_post: 68, canib_und_bench: 85.25, canib_und_delta_pct: -20.2, canib_cli_post: 51, canib_cli_bench: 58.75, canib_cli_delta_pct: -13.2 },
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "14086", name: "Vino Tinto Finca Las Moras Merlot 750 mL", ordenes: 345, usuarios: 241, unidades: 414, gmv: 56804, aov: 164.65, impresiones: 5105, cr_pct: 4.72, gmv_dlw_pct: 2032.2, gmv_dl4w_pct: 3764.8, seg_nuevo: 269, seg_nuevo_pct: 78, seg_reactivado: 27, seg_reactivado_pct: 8, seg_retenido: 49, seg_retenido_pct: 14, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 47, canib_ord_bench: 11.00, canib_ord_delta_pct: 327.3, canib_und_post: 77, canib_und_bench: 15.5, canib_und_delta_pct: 396.8, canib_cli_post: 53, canib_cli_bench: 13.25, canib_cli_delta_pct: 300.0 },
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13148", name: "Vino Rosado Las Moras Finca 750 mL", ordenes: 269, usuarios: 190, unidades: 349, gmv: 42679, aov: 158.66, impresiones: 2845, cr_pct: 6.68, gmv_dlw_pct: 483.1, gmv_dl4w_pct: 876.9, seg_nuevo: 215, seg_nuevo_pct: 80, seg_reactivado: 15, seg_reactivado_pct: 6, seg_retenido: 39, seg_retenido_pct: 14, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 25, canib_ord_bench: 24.50, canib_ord_delta_pct: 2.0, canib_und_post: 35, canib_und_bench: 36.25, canib_und_delta_pct: -3.4, canib_cli_post: 24, canib_cli_bench: 27.75, canib_cli_delta_pct: -13.5 },
-  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "5747", name: "Vino Tinto Las Moras Malbec Finca 750 mL", ordenes: 155, usuarios: 114, unidades: 197, gmv: 25475, aov: 164.35, impresiones: 2608, cr_pct: 4.37, gmv_dlw_pct: 38.2, gmv_dl4w_pct: 67.5, seg_nuevo: 112, seg_nuevo_pct: 72, seg_reactivado: 20, seg_reactivado_pct: 13, seg_retenido: 23, seg_retenido_pct: 15, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 35, canib_ord_bench: 133.00, canib_ord_delta_pct: -73.7, canib_und_post: 53, canib_und_bench: 211, canib_und_delta_pct: -74.9, canib_cli_post: 37, canib_cli_bench: 124.00, canib_cli_delta_pct: -70.2 }
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "5747", name: "Vino Tinto Las Moras Malbec Finca 750 mL", ordenes: 155, usuarios: 114, unidades: 197, gmv: 25475, aov: 164.35, impresiones: 2608, cr_pct: 4.37, gmv_dlw_pct: 38.2, gmv_dl4w_pct: 67.5, seg_nuevo: 112, seg_nuevo_pct: 72, seg_reactivado: 20, seg_reactivado_pct: 13, seg_retenido: 23, seg_retenido_pct: 15, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 35, canib_ord_bench: 133.00, canib_ord_delta_pct: -73.7, canib_und_post: 53, canib_und_bench: 211, canib_und_delta_pct: -74.9, canib_cli_post: 37, canib_cli_bench: 124.00, canib_cli_delta_pct: -70.2 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "81993", name: "Plátano Chiapas", ordenes: 1231, usuarios: 1110, unidades: 4172, gmv: 22962, aov: 18.65, impresiones: 21379, cr_pct: 5.19, gmv_dlw_pct: 151.1, gmv_dl4w_pct: 118.7, seg_nuevo: 430, seg_nuevo_pct: 35, seg_reactivado: 330, seg_reactivado_pct: 27, seg_retenido: 471, seg_retenido_pct: 38, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 1762, canib_ord_bench: 1553.25, canib_ord_delta_pct: 13.4, canib_und_post: 7072, canib_und_bench: 6470.25, canib_und_delta_pct: 9.3, canib_cli_post: 1870, canib_cli_bench: 1468.75, canib_cli_delta_pct: 27.3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82050", name: "Manzana Golden", ordenes: 345, usuarios: 325, unidades: 942, gmv: 9002, aov: 26.09, impresiones: 8794, cr_pct: 3.70, gmv_dlw_pct: 287.3, gmv_dl4w_pct: 240.5, seg_nuevo: 200, seg_nuevo_pct: 58, seg_reactivado: 79, seg_reactivado_pct: 23, seg_retenido: 66, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 227, canib_ord_bench: 253.00, canib_ord_delta_pct: -10.3, canib_und_post: 711, canib_und_bench: 782.25, canib_und_delta_pct: -9.1, canib_cli_post: 248, canib_cli_bench: 258.00, canib_cli_delta_pct: -3.9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82129", name: "Durazno Melocotón", ordenes: 133, usuarios: 122, unidades: 324, gmv: 7330, aov: 55.12, impresiones: 3625, cr_pct: 3.37, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 115, seg_nuevo_pct: 86, seg_reactivado: 10, seg_reactivado_pct: 8, seg_retenido: 8, seg_retenido_pct: 6, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 39, canib_ord_bench: 11.25, canib_ord_delta_pct: 246.7, canib_und_post: 73, canib_und_bench: 24.5, canib_und_delta_pct: 198.0, canib_cli_post: 43, canib_cli_bench: 12.50, canib_cli_delta_pct: 244.0 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "72931", name: "Mango Ataulfo 340 g", ordenes: 157, usuarios: 140, unidades: 395, gmv: 7301, aov: 46.51, impresiones: 3806, cr_pct: 3.68, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 126, seg_nuevo_pct: 80, seg_reactivado: 20, seg_reactivado_pct: 13, seg_retenido: 11, seg_retenido_pct: 7, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 228, canib_ord_bench: 39.50, canib_ord_delta_pct: 477.2, canib_und_post: 585, canib_und_bench: 91.5, canib_und_delta_pct: 539.3, canib_cli_post: 269, canib_cli_bench: 43.50, canib_cli_delta_pct: 518.4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82049", name: "Naranja Valencia", ordenes: 283, usuarios: 258, unidades: 911, gmv: 5916, aov: 20.91, impresiones: 7121, cr_pct: 3.62, gmv_dlw_pct: 194.7, gmv_dl4w_pct: 219.0, seg_nuevo: 157, seg_nuevo_pct: 55, seg_reactivado: 68, seg_reactivado_pct: 24, seg_retenido: 58, seg_retenido_pct: 20, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 227, canib_ord_bench: 233.75, canib_ord_delta_pct: -2.9, canib_und_post: 966, canib_und_bench: 943.5, canib_und_delta_pct: 2.4, canib_cli_post: 241, canib_cli_bench: 225.50, canib_cli_delta_pct: 6.9 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -2051,7 +2082,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Helados", ordenes: 22, gmv: 2735, pct_sellup: 3.56, order: 5 },
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Tequilas", ordenes: 5, gmv: 2688, pct_sellup: 3.50, order: 6 },
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Cigarrillos", ordenes: 22, gmv: 2352, pct_sellup: 3.06, order: 7 },
-  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Papel higiénico", ordenes: 21, gmv: 2142, pct_sellup: 2.79, order: 8 }
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Papel higiénico", ordenes: 21, gmv: 2142, pct_sellup: 2.79, order: 8 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Frutas", ordenes: 740, gmv: 47145, pct_sellup: 17.76, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Leche natural", ordenes: 205, gmv: 13795, pct_sellup: 5.20, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Huevos", ordenes: 176, gmv: 11329, pct_sellup: 4.27, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Yogurt", ordenes: 192, gmv: 10916, pct_sellup: 4.11, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Verduras", ordenes: 276, gmv: 9330, pct_sellup: 3.52, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Snacks salados", ordenes: 149, gmv: 8544, pct_sellup: 3.22, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Agua Natural", ordenes: 138, gmv: 7394, pct_sellup: 2.79, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Suero", ordenes: 98, gmv: 7073, pct_sellup: 2.67, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -2236,5 +2276,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", ordenes: 9, pct_deal: 1.03, order: 9 },
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "8189", name: "Cerveza Modelo Especial Latón 473 mL", subcategoria: "Cervezas", ordenes: 8, pct_deal: 0.91, order: 10 },
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "8511", name: "Huggies Toallita Húmeda Cuidado Relajante 80 ud.", subcategoria: "Toallitas humedas", ordenes: 8, pct_deal: 0.91, order: 11 },
-  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13818", name: "Topo Chico Agua Mineral 600 mL", subcategoria: "Agua Natural", ordenes: 8, pct_deal: 0.91, order: 12 }
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13818", name: "Topo Chico Agua Mineral 600 mL", subcategoria: "Agua Natural", ordenes: 8, pct_deal: 0.91, order: 12 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 175, pct_deal: 12.01, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 145, pct_deal: 9.95, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "14946", name: "Mallas Limón Con Semilla 5 ud.", subcategoria: "Frutas", ordenes: 111, pct_deal: 7.62, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 92, pct_deal: 6.31, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "14375", name: "Limón Sin Semilla Malla", subcategoria: "Frutas", ordenes: 83, pct_deal: 5.70, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 77, pct_deal: 5.28, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82058", name: "Cebolla Blanca", subcategoria: "Frutas", ordenes: 76, pct_deal: 5.22, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82053", name: "Manzana Roja", subcategoria: "Frutas", ordenes: 66, pct_deal: 4.53, order: 8 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 63, pct_deal: 4.32, order: 9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "76545", name: "Guayaba", subcategoria: "Frutas", ordenes: 55, pct_deal: 3.77, order: 10 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "5543", name: "Bachoco Huevo Blanco 18 ud.", subcategoria: "Huevos", ordenes: 54, pct_deal: 3.71, order: 11 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "9518", name: "Cilantro Manojo", subcategoria: "Hierbas y aromáticas", ordenes: 52, pct_deal: 3.57, order: 12 }
 ];
