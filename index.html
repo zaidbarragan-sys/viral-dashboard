@@ -6,6 +6,7 @@
   <title>Viral Deals — Rappi Turbo MX</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -832,6 +833,31 @@
   </style>
 </head>
 <body>
+
+  <!-- LOGIN GATE -->
+  <div id="login-screen" style="display:flex; align-items:center; justify-content:center; min-height:100vh; flex-direction:column; gap:24px;">
+    <div style="text-align:center;">
+      <h1 style="font-size:2rem; color:var(--dark); margin-bottom:8px;">Viral Deals — Rappi Turbo MX</h1>
+      <p style="color:var(--gray-text);">Inicia sesión con tu cuenta @rappi.com para continuar</p>
+    </div>
+    <div id="g_id_onload"
+         data-client_id="__GOOGLE_CLIENT_ID__"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+    <p id="login-error" style="color:var(--red); display:none;"></p>
+  </div>
+
+  <!-- APP (hidden until auth) -->
+  <div id="app" style="display:none;">
 
   <header class="header">
     <div class="header-inner">
@@ -1848,6 +1874,23 @@
     const initHash = window.location.hash.replace('#', '');
     if (initHash && ['indice', 'detalle', 'comparador', 'tendencias', 'catalogo'].includes(initHash)) {
       navigateTo(initHash);
+    }
+  </script>
+
+  </div><!-- /app -->
+
+  <script>
+    function handleCredentialResponse(response) {
+      const payload = JSON.parse(atob(response.credential.split('.')[1]));
+      const email = payload.email || '';
+      if (email.endsWith('@rappi.com')) {
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('app').style.display = 'block';
+      } else {
+        const err = document.getElementById('login-error');
+        err.textContent = 'Acceso denegado. Solo cuentas @rappi.com pueden acceder.';
+        err.style.display = 'block';
+      }
     }
   </script>
 </body>
