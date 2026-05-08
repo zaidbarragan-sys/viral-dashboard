@@ -6,6 +6,7 @@
   <title>Viral Deals — Rappi Turbo MX</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -833,6 +834,31 @@
 </head>
 <body>
 
+  <!-- LOGIN GATE -->
+  <div id="login-screen" style="display:flex; align-items:center; justify-content:center; min-height:100vh; flex-direction:column; gap:24px;">
+    <div style="text-align:center;">
+      <h1 style="font-size:2rem; color:var(--dark); margin-bottom:8px;">Viral Deals — Rappi Turbo MX</h1>
+      <p style="color:var(--gray-text);">Inicia sesión con tu cuenta @rappi.com para continuar</p>
+    </div>
+    <div id="g_id_onload"
+         data-client_id="__GOOGLE_CLIENT_ID__"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+    <p id="login-error" style="color:var(--red); display:none;"></p>
+  </div>
+
+  <!-- APP (hidden until auth) -->
+  <div id="app" style="display:none;">
+
   <header class="header">
     <div class="header-inner">
       <h1><span>Viral Deals</span> — Rappi Turbo MX</h1>
@@ -957,7 +983,7 @@
     const fmtUSD = v => (v === null || v === undefined) ? '\u2014' : `$${v.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
     const fmtPct = v => (v === null || v === undefined) ? '\u2014' : (v >= 0 ? `+${v.toFixed(1)}%` : `${v.toFixed(1)}%`);
     const fmtDelta = v => { if (v === null || v === undefined) return '\u2014'; return v >= 0 ? `+${v.toFixed(1)}%` : `${v.toFixed(1)}%`; };
-    const deltaColor = v => v > 0 ? '#00B140' : v < 0 ? '#E53935' : '#636366';
+    const deltaColor = v => (v === null || v === undefined || isNaN(v)) ? '#636366' : v > 0 ? '#00B140' : v < 0 ? '#E53935' : '#636366';
     const fmtNum = v => (v === null || v === undefined) ? '\u2014' : v.toLocaleString('en-US');
 
     function getDeal(id) { return PREVIRAL_DEALS.find(d => d.deal_id === id); }
@@ -1139,9 +1165,9 @@
             <tr><td>GMV</td><td>${fmtMXN(post.gmv_activacion)}</td><td>${fmtMXN(post.gmv_lw)}</td><td style="color:${deltaColor(post.gmv_dlw_pct)}">${fmtDelta(post.gmv_dlw_pct)}</td><td>${fmtMXN(post.gmv_l4w)}</td><td style="color:${deltaColor(post.gmv_dl4w_pct)}">${fmtDelta(post.gmv_dl4w_pct)}</td></tr>
             <tr><td>AOV</td><td>${fmtMXN(post.aov)}</td><td>${fmtMXN(post.aov_lw)}</td><td style="color:${deltaColor(post.aov_dlw_pct)}">${fmtDelta(post.aov_dlw_pct)}</td><td>${fmtMXN(post.aov_l4w)}</td><td style="color:${deltaColor(post.aov_dl4w_pct)}">${fmtDelta(post.aov_dl4w_pct)}</td></tr>
             <tr><td>Impresiones</td><td>${fmtNum(post.impresiones_total)}</td><td colspan="4"></td></tr>
-            <tr><td>CR %</td><td>${post.cr_pct}%</td><td colspan="4"></td></tr>
-            <tr><td>GMV Categoria</td><td>${fmtMXN(post.gmv_categoria)}</td><td>${fmtMXN(post.gmv_cat_lw)}</td><td style="color:${deltaColor(((post.gmv_categoria - post.gmv_cat_lw) / post.gmv_cat_lw * 100))}">${fmtDelta(((post.gmv_categoria - post.gmv_cat_lw) / post.gmv_cat_lw * 100))}</td><td>${fmtMXN(post.gmv_cat_l4w)}</td><td style="color:${deltaColor(((post.gmv_categoria - post.gmv_cat_l4w) / post.gmv_cat_l4w * 100))}">${fmtDelta(((post.gmv_categoria - post.gmv_cat_l4w) / post.gmv_cat_l4w * 100))}</td></tr>
-            <tr><td>Share Deal/Cat</td><td>${post.share_deal_cat_pct}%</td><td>${post.share_lw_pct}%</td><td style="color:${deltaColor(post.share_deal_cat_pct - post.share_lw_pct)}">${(post.share_deal_cat_pct - post.share_lw_pct) >= 0 ? '+' : ''}${(post.share_deal_cat_pct - post.share_lw_pct).toFixed(1)}pp</td><td>${post.share_l4w_pct}%</td><td style="color:${deltaColor(post.share_deal_cat_pct - post.share_l4w_pct)}">${(post.share_deal_cat_pct - post.share_l4w_pct) >= 0 ? '+' : ''}${(post.share_deal_cat_pct - post.share_l4w_pct).toFixed(1)}pp</td></tr>
+            <tr><td>CR %</td><td>${post.cr_pct != null ? post.cr_pct + '%' : '—'}</td><td colspan="4"></td></tr>
+            <tr><td>GMV Categoria</td><td>${fmtMXN(post.gmv_categoria)}</td><td>${fmtMXN(post.gmv_cat_lw)}</td><td style="color:${deltaColor(post.gmv_cat_lw != null ? ((post.gmv_categoria - post.gmv_cat_lw) / post.gmv_cat_lw * 100) : null)}">${post.gmv_cat_lw != null ? fmtDelta((post.gmv_categoria - post.gmv_cat_lw) / post.gmv_cat_lw * 100) : '—'}</td><td>${fmtMXN(post.gmv_cat_l4w)}</td><td style="color:${deltaColor(post.gmv_cat_l4w != null ? ((post.gmv_categoria - post.gmv_cat_l4w) / post.gmv_cat_l4w * 100) : null)}">${post.gmv_cat_l4w != null ? fmtDelta((post.gmv_categoria - post.gmv_cat_l4w) / post.gmv_cat_l4w * 100) : '—'}</td></tr>
+            <tr><td>Share Deal/Cat</td><td>${post.share_deal_cat_pct != null ? post.share_deal_cat_pct + '%' : '—'}</td><td>${post.share_lw_pct != null ? post.share_lw_pct + '%' : '—'}</td><td style="color:${deltaColor(post.share_lw_pct != null ? (post.share_deal_cat_pct - post.share_lw_pct) : null)}">${post.share_lw_pct != null ? ((post.share_deal_cat_pct - post.share_lw_pct) >= 0 ? '+' : '') + (post.share_deal_cat_pct - post.share_lw_pct).toFixed(1) + 'pp' : '—'}</td><td>${post.share_l4w_pct != null ? post.share_l4w_pct + '%' : '—'}</td><td style="color:${deltaColor(post.share_l4w_pct != null ? (post.share_deal_cat_pct - post.share_l4w_pct) : null)}">${post.share_l4w_pct != null ? ((post.share_deal_cat_pct - post.share_l4w_pct) >= 0 ? '+' : '') + (post.share_deal_cat_pct - post.share_l4w_pct).toFixed(1) + 'pp' : '—'}</td></tr>
           </tbody>
         </table></div>`;
 
@@ -1324,24 +1350,32 @@
         document.getElementById('comp-header-a').textContent = dealA ? dealA.maker_name : a.deal_id;
         document.getElementById('comp-header-b').textContent = dealB ? dealB.maker_name : b.deal_id;
 
+        const safeVal = v => (v === null || v === undefined) ? '—' : null;
+        const safePct = v => safeVal(v) || `${v}%`;
+        const safePctFix = v => safeVal(v) || `${v.toFixed(1)}%`;
+
         const metrics = [
           { label: 'GMV', a: fmtMXN(a.gmv_activacion), b: fmtMXN(b.gmv_activacion), numA: a.gmv_activacion, numB: b.gmv_activacion },
           { label: 'Ordenes', a: fmtNum(a.ordenes_total), b: fmtNum(b.ordenes_total), numA: a.ordenes_total, numB: b.ordenes_total },
           { label: 'Usuarios', a: fmtNum(a.usuarios_unicos), b: fmtNum(b.usuarios_unicos), numA: a.usuarios_unicos, numB: b.usuarios_unicos },
           { label: 'AOV', a: fmtMXN(a.aov), b: fmtMXN(b.aov), numA: a.aov, numB: b.aov },
-          { label: 'CR %', a: `${a.cr_pct}%`, b: `${b.cr_pct}%`, numA: a.cr_pct, numB: b.cr_pct },
-          { label: 'Share Deal/Cat %', a: `${a.share_deal_cat_pct}%`, b: `${b.share_deal_cat_pct}%`, numA: a.share_deal_cat_pct, numB: b.share_deal_cat_pct },
-          { label: 'Sell-up %', a: `${a.pct_sellup.toFixed(1)}%`, b: `${b.pct_sellup.toFixed(1)}%`, numA: a.pct_sellup, numB: b.pct_sellup },
+          { label: 'CR %', a: safePct(a.cr_pct), b: safePct(b.cr_pct), numA: a.cr_pct, numB: b.cr_pct },
+          { label: 'Share Deal/Cat %', a: safePct(a.share_deal_cat_pct), b: safePct(b.share_deal_cat_pct), numA: a.share_deal_cat_pct, numB: b.share_deal_cat_pct },
+          { label: 'Sell-up %', a: safePctFix(a.pct_sellup), b: safePctFix(b.pct_sellup), numA: a.pct_sellup, numB: b.pct_sellup },
           { label: 'Canib. Ordenes &Delta;', a: fmtDelta(a.canib_ord_delta_pct), b: fmtDelta(b.canib_ord_delta_pct), numA: a.canib_ord_delta_pct, numB: b.canib_ord_delta_pct },
         ];
 
         document.querySelector('#comp-table tbody').innerHTML = metrics.map(m => {
-          const diffA = m.numA - m.numB;
-          const diffB = m.numB - m.numA;
+          const numA = (m.numA === null || m.numA === undefined) ? 0 : m.numA;
+          const numB = (m.numB === null || m.numB === undefined) ? 0 : m.numB;
+          const diffA = numA - numB;
+          const diffB = numB - numA;
+          const colorA = (m.a === '—') ? 'inherit' : deltaColor(diffA);
+          const colorB = (m.b === '—') ? 'inherit' : deltaColor(diffB);
           return `<tr>
             <td><strong>${m.label}</strong></td>
-            <td style="color:${deltaColor(diffA)}">${m.a}</td>
-            <td style="color:${deltaColor(diffB)}">${m.b}</td>
+            <td style="color:${colorA}">${m.a}</td>
+            <td style="color:${colorB}">${m.b}</td>
           </tr>`;
         }).join('');
       };
@@ -1398,10 +1432,10 @@
         });
       };
 
-      chartConfig('chart-gmv', sorted.map(p => p.gmv_activacion), 'GMV');
-      chartConfig('chart-share', sorted.map(p => p.share_deal_cat_pct), 'Share %');
-      chartConfig('chart-sellup', sorted.map(p => p.pct_sellup), 'Sell-up %');
-      chartConfig('chart-canib', sorted.map(p => p.canib_ord_delta_pct), 'Canib. Ord %');
+      chartConfig('chart-gmv', sorted.map(p => p.gmv_activacion ?? null), 'GMV');
+      chartConfig('chart-share', sorted.map(p => p.share_deal_cat_pct ?? null), 'Share %');
+      chartConfig('chart-sellup', sorted.map(p => p.pct_sellup ?? null), 'Sell-up %');
+      chartConfig('chart-canib', sorted.map(p => p.canib_ord_delta_pct ?? null), 'Canib. Ord %');
     }
 
     // ============================================================
@@ -1840,6 +1874,23 @@
     const initHash = window.location.hash.replace('#', '');
     if (initHash && ['indice', 'detalle', 'comparador', 'tendencias', 'catalogo'].includes(initHash)) {
       navigateTo(initHash);
+    }
+  </script>
+
+  </div><!-- /app -->
+
+  <script>
+    function handleCredentialResponse(response) {
+      const payload = JSON.parse(atob(response.credential.split('.')[1]));
+      const email = payload.email || '';
+      if (email.endsWith('@rappi.com')) {
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('app').style.display = 'block';
+      } else {
+        const err = document.getElementById('login-error');
+        err.textContent = 'Acceso denegado. Solo cuentas @rappi.com pueden acceder.';
+        err.style.display = 'block';
+      }
     }
   </script>
 </body>
