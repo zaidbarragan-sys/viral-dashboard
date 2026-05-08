@@ -1251,6 +1251,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Frutas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_HEINEKEN_280226",
+    maker_name: "Heineken México",
+    maker_aux: "Heineken",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 9,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-02-02",
+    fecha_ejecucion: "2026-02-28",
+    fecha_fin: null,
+    usd_mxn: 17.21,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 200000,
+    budget_growth_mxn: 60000,
+    budget_total_mxn: 260000,
+    budget_maker_usd: 11622.31,
+    budget_growth_usd: 3486.92,
+    budget_total_usd: 15109.24,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
   }
 ];
 
@@ -1493,7 +1517,12 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82049", ean: "22200000012610", pid: "2115387671", name: "Naranja Valencia", subcategoria: "Frutas", h_units: 359.6, h_orders: 99.4, avg_price: 6.74, ex_incr_units: 1438, ex_incr_orders: 398, ex_budget_mxn: 5815, ex_budget_usd: 337.89, real_units: 1214, final_budget_mxn: 4909, final_budget_usd: 285.24, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "72931", ean: "644197393714", pid: "2115482159", name: "Mango Ataulfo 340 g", subcategoria: "Frutas", h_units: 254.5, h_orders: 106.9, avg_price: 18.95, ex_incr_units: 1018, ex_incr_orders: 428, ex_budget_mxn: 11575, ex_budget_usd: 672.57, real_units: 306, final_budget_mxn: 3479, final_budget_usd: 202.15, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82050", ean: "22200000012580", pid: "2115387684", name: "Manzana Golden", subcategoria: "Frutas", h_units: 226.7, h_orders: 90.2, avg_price: 9.92, ex_incr_units: 907, ex_incr_orders: 361, ex_budget_mxn: 5398, ex_budget_usd: 313.66, real_units: 520, final_budget_mxn: 3095, final_budget_usd: 179.84, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82129", ean: "22200000012955", pid: "2115399697", name: "Durazno Melocotón", subcategoria: "Frutas", h_units: 22.5, h_orders: 13.1, avg_price: 22.79, ex_incr_units: 90, ex_incr_orders: 52, ex_budget_mxn: 1231, ex_budget_usd: 71.53, real_units: 22, final_budget_mxn: 301, final_budget_usd: 17.49, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82129", ean: "22200000012955", pid: "2115399697", name: "Durazno Melocotón", subcategoria: "Frutas", h_units: 22.5, h_orders: 13.1, avg_price: 22.79, ex_incr_units: 90, ex_incr_orders: 52, ex_budget_mxn: 1231, ex_budget_usd: 71.53, real_units: 22, final_budget_mxn: 301, final_budget_usd: 17.49, sku_order: 5 },
+  // Heineken
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8770", ean: "7503024416114", pid: "2115802214", name: "Pack Cerveza Amstel Ultra Botella 6 x 355 mL", subcategoria: "Cervezas", h_units: 481.4, h_orders: 353.8, avg_price: 119.78, ex_incr_units: 4333, ex_incr_orders: 3184, ex_budget_mxn: 311372, ex_budget_usd: 18093.09, real_units: 2281, final_budget_mxn: 163907, final_budget_usd: 9523.94, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8524", ean: "7501049999278", pid: "2115776728", name: "Pack Cerveza Heineken Original Botella 6 x 355 mL", subcategoria: "Cervezas", h_units: 139.8, h_orders: 113.2, avg_price: 156.27, ex_incr_units: 1258, ex_incr_orders: 1019, ex_budget_mxn: 117982, ex_budget_usd: 6856.60, real_units: 507, final_budget_mxn: 47558, final_budget_usd: 2763.39, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "9713", ean: "7503024416596", pid: "2115573260", name: "Heineken Cerveza Sin Alcohol 250 mL", subcategoria: "Cervezas", h_units: 80.2, h_orders: 67.1, avg_price: 106.08, ex_incr_units: 722, ex_incr_orders: 604, ex_budget_mxn: 45954, ex_budget_usd: 2670.19, real_units: 429, final_budget_mxn: 27305, final_budget_usd: 1586.58, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "7449", ean: "7501049917937", pid: "2115621088", name: "XX Dos Equis Lager Especial Botella 6pack 355 mL", subcategoria: "Cervezas", h_units: 62.5, h_orders: 43.9, avg_price: 133.32, ex_incr_units: 563, ex_incr_orders: 395, ex_budget_mxn: 45038, ex_budget_usd: 2617.00, real_units: 266, final_budget_mxn: 21282, final_budget_usd: 1236.60, sku_order: 4 }
 ];
 
 const POSTMORTEM_DEALS = [
