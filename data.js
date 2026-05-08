@@ -1769,6 +1769,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 122, canib_ord_bench: 166.0, canib_ord_delta_pct: -26.5,
     canib_und_post: 168, canib_und_bench: 221.5, canib_und_delta_pct: -24.2,
     canib_cli_post: 149, canib_cli_bench: 180.0, canib_cli_delta_pct: -17.2
+  },
+  {
+    deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226",
+    post_days: 4, fase: 2,
+    gmv_activacion: 253280, gmv_lw: 42650, gmv_dlw_pct: 493.9, gmv_l4w: 33309, gmv_dl4w_pct: 660.4,
+    usuarios_unicos: 649,
+    usr_lw: 185, usr_dlw_pct: 250.8, usr_l4w: 139, usr_dl4w_pct: 366.9,
+    cr_pct: 3.16,
+    aov: 289.13, aov_lw: 202.13, aov_dlw_pct: 43.0, aov_l4w: 211.49, aov_dl4w_pct: 36.7,
+    unidades_total: 1941, und_lw: 270, und_dlw_pct: 619.0, und_l4w: 213.75, und_dl4w_pct: 808.1,
+    ordenes_total: 876, ord_lw: 211, ord_dlw_pct: 315.2, ord_l4w: 157.50, ord_dl4w_pct: 456.2,
+    impresiones_total: 20552,
+    so_turbo_mx: 4174237, gmv_categoria: 222785,
+    gmv_cat_lw: 132398, gmv_cat_l4w: 100071,
+    share_deal_cat_pct: 113.68, share_lw_pct: 32.21, share_l4w_pct: 33.29,
+    gmv_basket: 330162, gmv_sellup: 76882, pct_sellup: 23.29,
+    aov_basket: 376.89, aov_deal_post: 289.13,
+    cross_ordenes: 876, cross_skus_distintos: 604,
+    cross_top_producto: "Kleenex Cottonelle Papel Higiénico 4 ud.", cross_top_ordenes: 16, cross_top_pct: 1.83,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 270, canib_ord_bench: 302.75, canib_ord_delta_pct: -10.8,
+    canib_und_post: 423, canib_und_bench: 463.75, canib_und_delta_pct: -8.8,
+    canib_cli_post: 274, canib_cli_bench: 297.25, canib_cli_delta_pct: -7.8
   }
 ];
 
@@ -1861,7 +1886,13 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72859", name: "Head & Shoulders Shampoo Intense Nourish 280 mL", ordenes: 26, usuarios: 20, unidades: 29, gmv: 7317, aov: 281.43, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: 593.6, seg_nuevo: 22, seg_nuevo_pct: 85, seg_reactivado: 2, seg_reactivado_pct: 8, seg_retenido: 2, seg_retenido_pct: 8, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 4, canib_ord_bench: 6.00, canib_ord_delta_pct: -33.3, canib_und_post: 5, canib_und_bench: 7.75, canib_und_delta_pct: -35.5, canib_cli_post: 4, canib_cli_bench: 5.00, canib_cli_delta_pct: -20.0 },
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "10375", name: "Head & Shoulders Shampoo Men Control Caspa 375 mL", ordenes: 60, usuarios: 52, unidades: 70, gmv: 6254, aov: 104.23, impresiones: 2007, cr_pct: 2.59, gmv_dlw_pct: 1113.4, gmv_dl4w_pct: 1040.5, seg_nuevo: 52, seg_nuevo_pct: 87, seg_reactivado: 2, seg_reactivado_pct: 3, seg_retenido: 6, seg_retenido_pct: 10, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 11, canib_ord_bench: 14.50, canib_ord_delta_pct: -24.1, canib_und_post: 16, canib_und_bench: 19, canib_und_delta_pct: -15.8, canib_cli_post: 12, canib_cli_bench: 14.25, canib_cli_delta_pct: -15.8 },
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "7352", name: "Head & Shoulders Shampoo Limpieza Renovadora 180 mL", ordenes: 122, usuarios: 115, unidades: 132, gmv: 6248, aov: 51.21, impresiones: 2492, cr_pct: 4.61, gmv_dlw_pct: 931.9, gmv_dl4w_pct: 754.6, seg_nuevo: 94, seg_nuevo_pct: 77, seg_reactivado: 23, seg_reactivado_pct: 19, seg_retenido: 5, seg_retenido_pct: 4, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 46, canib_ord_bench: 72.75, canib_ord_delta_pct: -36.8, canib_und_post: 60, canib_und_bench: 104.25, canib_und_delta_pct: -42.4, canib_cli_post: 58, canib_cli_bench: 81.75, canib_cli_delta_pct: -29.1 },
-  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72860", name: "Head & Shoulders Shampoo Radical Clean 280 mL", ordenes: 2, usuarios: 1, unidades: 3, gmv: 368, aov: 184.24, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: 55.2, seg_nuevo: 0, seg_nuevo_pct: 0, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 2, seg_retenido_pct: 100, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 2, canib_ord_bench: 2.50, canib_ord_delta_pct: -20.0, canib_und_post: 1, canib_und_bench: 3.25, canib_und_delta_pct: -69.2, canib_cli_post: 2, canib_cli_bench: 2.00, canib_cli_delta_pct: 0.0 }
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72860", name: "Head & Shoulders Shampoo Radical Clean 280 mL", ordenes: 2, usuarios: 1, unidades: 3, gmv: 368, aov: 184.24, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: 55.2, seg_nuevo: 0, seg_nuevo_pct: 0, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 2, seg_retenido_pct: 100, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 2, canib_ord_bench: 2.50, canib_ord_delta_pct: -20.0, canib_und_post: 1, canib_und_bench: 3.25, canib_und_delta_pct: -69.2, canib_cli_post: 2, canib_cli_bench: 2.00, canib_cli_delta_pct: 0.0 },
+  // La Madrileña
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "11629", name: "Vino Blanco Finca Las Moras Sauvignon Blanc 750 mL", ordenes: 393, usuarios: 301, unidades: 504, gmv: 64732, aov: 164.71, impresiones: 5918, cr_pct: 5.09, gmv_dlw_pct: 595.0, gmv_dl4w_pct: 785.1, seg_nuevo: 285, seg_nuevo_pct: 73, seg_reactivado: 40, seg_reactivado_pct: 10, seg_retenido: 68, seg_retenido_pct: 17, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 119, canib_ord_bench: 79.50, canib_ord_delta_pct: 49.7, canib_und_post: 190, canib_und_bench: 115.75, canib_und_delta_pct: 64.1, canib_cli_post: 109, canib_cli_bench: 73.50, canib_cli_delta_pct: 48.3 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "11671", name: "Vino Tinto Las Moras Cabernet Sauvignon 750 mL", ordenes: 372, usuarios: 269, unidades: 477, gmv: 63591, aov: 170.94, impresiones: 4076, cr_pct: 6.60, gmv_dlw_pct: 1192.0, gmv_dl4w_pct: 1184.7, seg_nuevo: 284, seg_nuevo_pct: 76, seg_reactivado: 27, seg_reactivado_pct: 7, seg_retenido: 61, seg_retenido_pct: 16, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 44, canib_ord_bench: 54.75, canib_ord_delta_pct: -19.6, canib_und_post: 68, canib_und_bench: 85.25, canib_und_delta_pct: -20.2, canib_cli_post: 51, canib_cli_bench: 58.75, canib_cli_delta_pct: -13.2 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "14086", name: "Vino Tinto Finca Las Moras Merlot 750 mL", ordenes: 345, usuarios: 241, unidades: 414, gmv: 56804, aov: 164.65, impresiones: 5105, cr_pct: 4.72, gmv_dlw_pct: 2032.2, gmv_dl4w_pct: 3764.8, seg_nuevo: 269, seg_nuevo_pct: 78, seg_reactivado: 27, seg_reactivado_pct: 8, seg_retenido: 49, seg_retenido_pct: 14, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 47, canib_ord_bench: 11.00, canib_ord_delta_pct: 327.3, canib_und_post: 77, canib_und_bench: 15.5, canib_und_delta_pct: 396.8, canib_cli_post: 53, canib_cli_bench: 13.25, canib_cli_delta_pct: 300.0 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13148", name: "Vino Rosado Las Moras Finca 750 mL", ordenes: 269, usuarios: 190, unidades: 349, gmv: 42679, aov: 158.66, impresiones: 2845, cr_pct: 6.68, gmv_dlw_pct: 483.1, gmv_dl4w_pct: 876.9, seg_nuevo: 215, seg_nuevo_pct: 80, seg_reactivado: 15, seg_reactivado_pct: 6, seg_retenido: 39, seg_retenido_pct: 14, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 25, canib_ord_bench: 24.50, canib_ord_delta_pct: 2.0, canib_und_post: 35, canib_und_bench: 36.25, canib_und_delta_pct: -3.4, canib_cli_post: 24, canib_cli_bench: 27.75, canib_cli_delta_pct: -13.5 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "5747", name: "Vino Tinto Las Moras Malbec Finca 750 mL", ordenes: 155, usuarios: 114, unidades: 197, gmv: 25475, aov: 164.35, impresiones: 2608, cr_pct: 4.37, gmv_dlw_pct: 38.2, gmv_dl4w_pct: 67.5, seg_nuevo: 112, seg_nuevo_pct: 72, seg_reactivado: 20, seg_reactivado_pct: 13, seg_retenido: 23, seg_retenido_pct: 15, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 35, canib_ord_bench: 133.00, canib_ord_delta_pct: -73.7, canib_und_post: 53, canib_und_bench: 211, canib_und_delta_pct: -74.9, canib_cli_post: 37, canib_cli_bench: 124.00, canib_cli_delta_pct: -70.2 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -1981,7 +2012,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Verduras", ordenes: 19, gmv: 1207, pct_sellup: 3.79, order: 5 },
   { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Leche natural", ordenes: 17, gmv: 1179, pct_sellup: 3.70, order: 6 },
   { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Yogurt", ordenes: 20, gmv: 1016, pct_sellup: 3.19, order: 7 },
-  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Gaseosas", ordenes: 20, gmv: 994, pct_sellup: 3.12, order: 8 }
+  { deal_id: "VIRAL_DEAL_P&G_160226", subcategoria: "Gaseosas", ordenes: 20, gmv: 994, pct_sellup: 3.12, order: 8 },
+  // La Madrileña
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Cervezas", ordenes: 123, gmv: 16980, pct_sellup: 22.09, order: 1 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Snacks salados", ordenes: 77, gmv: 5551, pct_sellup: 7.22, order: 2 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Gaseosas", ordenes: 82, gmv: 4283, pct_sellup: 5.57, order: 3 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Vino tinto", ordenes: 14, gmv: 3080, pct_sellup: 4.01, order: 4 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Helados", ordenes: 22, gmv: 2735, pct_sellup: 3.56, order: 5 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Tequilas", ordenes: 5, gmv: 2688, pct_sellup: 3.50, order: 6 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Cigarrillos", ordenes: 22, gmv: 2352, pct_sellup: 3.06, order: 7 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", subcategoria: "Papel higiénico", ordenes: 21, gmv: 2142, pct_sellup: 2.79, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -2153,5 +2193,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "73412", name: "Alpura Yoghurt Batido Manzana 125 g", subcategoria: "Yogurt", ordenes: 6, pct_deal: 2.02, order: 9 },
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "73138", name: "Jumex Jugo de Naranja Sin Pulpa 960 mL", subcategoria: "Jugos", ordenes: 6, pct_deal: 2.02, order: 10 },
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "79611", name: "Malla Chayote 500 g", subcategoria: "Verduras", ordenes: 6, pct_deal: 2.02, order: 11 },
-  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 6, pct_deal: 2.02, order: 12 }
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 6, pct_deal: 2.02, order: 12 },
+  // La Madrileña
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "1886", name: "Kleenex Cottonelle Papel Higiénico 4 ud.", subcategoria: "Papel higiénico", ordenes: 16, pct_deal: 1.83, order: 1 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "8161", name: "Gatorade Bebida Hidratante Ponche de Frutas 1 L", subcategoria: "Isotónicos", ordenes: 15, pct_deal: 1.71, order: 2 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 14, pct_deal: 1.60, order: 3 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "11152", name: "Pepsi Refresco Regular 2.5 L", subcategoria: "Gaseosas", ordenes: 14, pct_deal: 1.60, order: 4 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "8770", name: "Pack Cerveza Amstel Ultra Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 12, pct_deal: 1.37, order: 5 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "4939", name: "Cerveza Corona Extra Latón 710 mL", subcategoria: "Cervezas", ordenes: 11, pct_deal: 1.26, order: 6 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "6407", name: "Maruchan Sopa Instantánea Camarón Con Habanero 64 g", subcategoria: "Sopas y cremas", ordenes: 11, pct_deal: 1.26, order: 7 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "14946", name: "Mallas Limón Con Semilla 5 ud.", subcategoria: "Frutas", ordenes: 9, pct_deal: 1.03, order: 8 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", ordenes: 9, pct_deal: 1.03, order: 9 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "8189", name: "Cerveza Modelo Especial Latón 473 mL", subcategoria: "Cervezas", ordenes: 8, pct_deal: 0.91, order: 10 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "8511", name: "Huggies Toallita Húmeda Cuidado Relajante 80 ud.", subcategoria: "Toallitas humedas", ordenes: 8, pct_deal: 0.91, order: 11 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13818", name: "Topo Chico Agua Mineral 600 mL", subcategoria: "Agua Natural", ordenes: 8, pct_deal: 0.91, order: 12 }
 ];
