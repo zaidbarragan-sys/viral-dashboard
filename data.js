@@ -1131,6 +1131,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Chocolates"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FLORAVID_130226",
+    maker_name: "Floravid",
+    maker_aux: "Floravid",
+    business_unit: "WOW",
+    descuento_pct: 40,
+    incrementalidad: 1,
+    tipo_viral: "multi-día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2025-12-22",
+    fecha_ejecucion: "2026-02-13",
+    fecha_fin: "2026-02-14",
+    usd_mxn: 17.2138,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 0,
+    budget_growth_mxn: 100000,
+    budget_total_mxn: 100000,
+    budget_maker_usd: 0,
+    budget_growth_usd: 5810.42,
+    budget_total_usd: 5810.42,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 0,
+    categoria_display: "Arreglos Florales"
   }
 ];
 
@@ -1337,7 +1361,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76322", ean: "7501024548712", pid: "2114918145", name: "Hersheys Kisses Secret Leche Almendras 72 g", subcategoria: "Chocolates", h_units: 3.0, h_orders: 3.0, avg_price: 89.92, ex_incr_units: 36, ex_incr_orders: 36, ex_budget_mxn: 1942, ex_budget_usd: 112.52, real_units: 316, final_budget_mxn: 17049, final_budget_usd: 987.78, sku_order: 6 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76318", ean: "7501024546190", pid: "2114918146", name: "Hersheys Kisses Trufa 120 g", subcategoria: "Chocolates", h_units: 3.0, h_orders: 2.0, avg_price: 95.93, ex_incr_units: 36, ex_incr_orders: 24, ex_budget_mxn: 2072, ex_budget_usd: 120.05, real_units: 296, final_budget_mxn: 17037, final_budget_usd: 987.08, sku_order: 7 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "73518", ean: "7501024549078", pid: "2113558853", name: "Chocolate Kisses Selección Especial 260 g", subcategoria: "Chocolates", h_units: 1.0, h_orders: 1.0, avg_price: 238.25, ex_incr_units: 12, ex_incr_orders: 12, ex_budget_mxn: 1715, ex_budget_usd: 99.36, real_units: 40, final_budget_mxn: 5718, final_budget_usd: 331.28, sku_order: 8 },
-  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76575", ean: "7501024598205", pid: "2114934013", name: "Hersheys Kisses Monaco 34 g", subcategoria: "Chocolates", h_units: 1.0, h_orders: 1.0, avg_price: 19.25, ex_incr_units: 12, ex_incr_orders: 12, ex_budget_mxn: 139, ex_budget_usd: 8.05, real_units: 12, final_budget_mxn: 139, final_budget_usd: 8.05, sku_order: 9 }
+  { deal_id: "VIRAL_DEAL_HERSHEYS_130226", sync: "76575", ean: "7501024598205", pid: "2114934013", name: "Hersheys Kisses Monaco 34 g", subcategoria: "Chocolates", h_units: 1.0, h_orders: 1.0, avg_price: 19.25, ex_incr_units: 12, ex_incr_orders: 12, ex_budget_mxn: 139, ex_budget_usd: 8.05, real_units: 12, final_budget_mxn: 139, final_budget_usd: 8.05, sku_order: 9 },
+  // Floravid
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89424", ean: "", pid: "", name: "Clásico 12 Rosas Color Rosa", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 253.00, ex_incr_units: 300, ex_incr_orders: 300, ex_budget_mxn: 30360, ex_budget_usd: 1763.75, real_units: 296, final_budget_mxn: 29955, final_budget_usd: 1740.23, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89425", ean: "", pid: "", name: "Mix Floral Chico 25 Flores Surtidas", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 280.00, ex_incr_units: 250, ex_incr_orders: 250, ex_budget_mxn: 28000, ex_budget_usd: 1626.83, real_units: 223, final_budget_mxn: 24976, final_budget_usd: 1451.00, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89427", ean: "", pid: "", name: "Encanto 15 Mini Rosas Multicolor", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 213.00, ex_incr_units: 200, ex_incr_orders: 200, ex_budget_mxn: 17040, ex_budget_usd: 990.08, real_units: 235, final_budget_mxn: 20022, final_budget_usd: 1163.10, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89428", ean: "", pid: "", name: "Alegría 10 Gerberas Multicolor", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 200.00, ex_incr_units: 150, ex_incr_orders: 150, ex_budget_mxn: 12000, ex_budget_usd: 697.25, real_units: 188, final_budget_mxn: 15040, final_budget_usd: 873.79, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89426", ean: "", pid: "", name: "Frescura 15 Margaritas Multicolor", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 200.00, ex_incr_units: 100, ex_incr_orders: 100, ex_budget_mxn: 8000, ex_budget_usd: 464.83, real_units: 125, final_budget_mxn: 10000, final_budget_usd: 581.13, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
