@@ -1347,6 +1347,78 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Snacks salados"
+  },
+  {
+    deal_id: "VIRAL_DEAL_SNICKERS_150626",
+    maker_name: "Snickers",
+    maker_aux: "Snickers",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 7,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-08",
+    fecha_ejecucion: "2026-06-15",
+    fecha_fin: null,
+    usd_mxn: 17.18,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 20000,
+    budget_growth_mxn: 6000,
+    budget_total_mxn: 26000,
+    budget_maker_usd: 1163.56,
+    budget_growth_usd: 349.24,
+    budget_total_usd: 1513.39,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Chocolates"
+  },
+  {
+    deal_id: "VIRAL_DEAL_SNICKERS_300626",
+    maker_name: "Snickers",
+    maker_aux: "Snickers",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 7,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-08",
+    fecha_ejecucion: "2026-06-30",
+    fecha_fin: null,
+    usd_mxn: 17.18,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 20000,
+    budget_growth_mxn: 6000,
+    budget_total_mxn: 26000,
+    budget_maker_usd: 1163.56,
+    budget_growth_usd: 349.24,
+    budget_total_usd: 1513.39,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Chocolates"
+  },
+  {
+    deal_id: "VIRAL_DEAL_SNICKERS_190726",
+    maker_name: "Snickers",
+    maker_aux: "Snickers",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 7,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-08",
+    fecha_ejecucion: "2026-07-19",
+    fecha_fin: null,
+    usd_mxn: 17.18,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 20000,
+    budget_growth_mxn: 6000,
+    budget_total_mxn: 26000,
+    budget_maker_usd: 1163.56,
+    budget_growth_usd: 349.24,
+    budget_total_usd: 1513.39,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Chocolates"
   }
 ];
 
@@ -1614,7 +1686,11 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "81266", ean: "7500810006436", pid: "1359083045", name: "Chips Jalapeño 55g", subcategoria: "Snacks salados", h_units: 60.9, h_orders: 55.1, avg_price: 25.49, ex_incr_units: 365, ex_incr_orders: 331, ex_budget_mxn: 9304, ex_budget_usd: 541.56, real_units: 596, final_budget_mxn: 15196, final_budget_usd: 884.52, sku_order: 5 },
   { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "9063", ean: "7501030459941", pid: "1359110352", name: "Cacahuates Barcel Golden Nuts Salados 100g", subcategoria: "Snacks salados", h_units: 34.9, h_orders: 29.7, avg_price: 25.24, ex_incr_units: 209, ex_incr_orders: 178, ex_budget_mxn: 5275, ex_budget_usd: 307.04, real_units: 344, final_budget_mxn: 8681, final_budget_usd: 505.30, sku_order: 6 },
   { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "10606", ean: "7501030459927", pid: "1359086377", name: "Golden Nuts Enchilados 100g", subcategoria: "Snacks salados", h_units: 31.5, h_orders: 27.5, avg_price: 25.30, ex_incr_units: 189, ex_incr_orders: 165, ex_budget_mxn: 4782, ex_budget_usd: 278.35, real_units: 311, final_budget_mxn: 7868, final_budget_usd: 457.98, sku_order: 7 },
-  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "74146", ean: "7500810011980", pid: "1358792697", name: "Pop Karameladas 240g", subcategoria: "Pochoclos", h_units: 21.5, h_orders: 20.4, avg_price: 63.66, ex_incr_units: 129, ex_incr_orders: 122, ex_budget_mxn: 8212, ex_budget_usd: 477.99, real_units: 84, final_budget_mxn: 5347, final_budget_usd: 311.24, sku_order: 8 }
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "74146", ean: "7500810011980", pid: "1358792697", name: "Pop Karameladas 240g", subcategoria: "Pochoclos", h_units: 21.5, h_orders: 20.4, avg_price: 63.66, ex_incr_units: 129, ex_incr_orders: 122, ex_budget_mxn: 8212, ex_budget_usd: 477.99, real_units: 84, final_budget_mxn: 5347, final_budget_usd: 311.24, sku_order: 8 },
+  // Snickers (3 fechas)
+  { deal_id: "VIRAL_DEAL_SNICKERS_150626", sync: "6035", ean: "7506174512248", pid: "1358956438", name: "Snickers Chocolate 48g", subcategoria: "Chocolates", h_units: 87.0, h_orders: 67.9, avg_price: 25.38, ex_incr_units: 609, ex_incr_orders: 475, ex_budget_mxn: 15456, ex_budget_usd: 899.65, real_units: 1024, final_budget_mxn: 26000, final_budget_usd: 1513.39, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_SNICKERS_300626", sync: "6035", ean: "7506174512248", pid: "1358956438", name: "Snickers Chocolate 48g", subcategoria: "Chocolates", h_units: 87.0, h_orders: 67.9, avg_price: 25.38, ex_incr_units: 609, ex_incr_orders: 475, ex_budget_mxn: 15456, ex_budget_usd: 899.65, real_units: 1024, final_budget_mxn: 26000, final_budget_usd: 1513.39, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_SNICKERS_190726", sync: "6035", ean: "7506174512248", pid: "1358956438", name: "Snickers Chocolate 48g", subcategoria: "Chocolates", h_units: 87.0, h_orders: 67.9, avg_price: 25.38, ex_incr_units: 609, ex_incr_orders: 475, ex_budget_mxn: 15456, ex_budget_usd: 899.65, real_units: 1024, final_budget_mxn: 26000, final_budget_usd: 1513.39, sku_order: 1 }
 ];
 
 const POSTMORTEM_DEALS = [
