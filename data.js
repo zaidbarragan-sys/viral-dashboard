@@ -1155,6 +1155,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 0,
     categoria_display: "Arreglos Florales"
+  },
+  {
+    deal_id: "VIRAL_DEAL_SICOYTROJAN_140226",
+    maker_name: "Reckitt Benckiser Health / Church & Dwight Co",
+    maker_aux: "Sico y Trojan",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 10,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-01-15",
+    fecha_ejecucion: "2026-02-14",
+    fecha_fin: null,
+    usd_mxn: 17.21,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 100000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 130000,
+    budget_maker_usd: 5811.74,
+    budget_growth_usd: 1743.52,
+    budget_total_usd: 7553.75,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Preservativos, Lubricantes"
   }
 ];
 
@@ -1367,7 +1391,18 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89425", ean: "", pid: "", name: "Mix Floral Chico 25 Flores Surtidas", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 280.00, ex_incr_units: 250, ex_incr_orders: 250, ex_budget_mxn: 28000, ex_budget_usd: 1627.08, real_units: 223, final_budget_mxn: 24976, final_budget_usd: 1451.25, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89427", ean: "", pid: "", name: "Encanto 15 Mini Rosas Multicolor", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 213.00, ex_incr_units: 200, ex_incr_orders: 200, ex_budget_mxn: 17040, ex_budget_usd: 990.24, real_units: 235, final_budget_mxn: 20022, final_budget_usd: 1163.39, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89428", ean: "", pid: "", name: "Alegría 10 Gerberas Multicolor", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 200.00, ex_incr_units: 150, ex_incr_orders: 150, ex_budget_mxn: 12000, ex_budget_usd: 697.27, real_units: 188, final_budget_mxn: 15040, final_budget_usd: 873.91, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89426", ean: "", pid: "", name: "Frescura 15 Margaritas Multicolor", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 200.00, ex_incr_units: 100, ex_incr_orders: 100, ex_budget_mxn: 8000, ex_budget_usd: 464.84, real_units: 125, final_budget_mxn: 10000, final_budget_usd: 581.06, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_FLORAVID_130226", sync: "89426", ean: "", pid: "", name: "Frescura 15 Margaritas Multicolor", subcategoria: "Arreglos Florales", h_units: 0, h_orders: 0, avg_price: 200.00, ex_incr_units: 100, ex_incr_orders: 100, ex_budget_mxn: 8000, ex_budget_usd: 464.84, real_units: 125, final_budget_mxn: 10000, final_budget_usd: 581.06, sku_order: 5 },
+  // Sico y Trojan
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "6974", ean: "7506460101514", pid: "2115735606", name: "Sico Gel Lubricante Vaginal 57 g", subcategoria: "Lubricantes", h_units: 14.9, h_orders: 14.1, avg_price: 129.37, ex_incr_units: 149, ex_incr_orders: 141, ex_budget_mxn: 9636, ex_budget_usd: 560.02, real_units: 487, final_budget_mxn: 31514, final_budget_usd: 1831.15, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "11253", ean: "7506460100760", pid: "2114903086", name: "Sico Play Preservativo Texturizado 3 ud.", subcategoria: "Preservativos", h_units: 12.4, h_orders: 9.9, avg_price: 72.58, ex_incr_units: 124, ex_incr_orders: 99, ex_budget_mxn: 4500, ex_budget_usd: 261.48, real_units: 722, final_budget_mxn: 26201, final_budget_usd: 1522.43, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "12030", ean: "7501685171113", pid: "2115154809", name: "Sico Condon Invisible Ultra Delgado 3 ud.", subcategoria: "Preservativos", h_units: 7.8, h_orders: 6.6, avg_price: 113.48, ex_incr_units: 78, ex_incr_orders: 66, ex_budget_mxn: 4426, ex_budget_usd: 257.18, real_units: 291, final_budget_mxn: 16511, final_budget_usd: 959.38, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "14101", ean: "7501058799685", pid: "2115154811", name: "Sico Condones Climax Mutuo 3 ud.", subcategoria: "Preservativos", h_units: 7.4, h_orders: 5.8, avg_price: 101.51, ex_incr_units: 74, ex_incr_orders: 58, ex_budget_mxn: 3756, ex_budget_usd: 218.25, real_units: 308, final_budget_mxn: 15633, final_budget_usd: 908.37, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "10883", ean: "7501080901193", pid: "2115154378", name: "Trojan Preservativos Piel Desnuda Puntos de Placer 3 ud.", subcategoria: "Preservativos", h_units: 4.0, h_orders: 3.4, avg_price: 88.11, ex_incr_units: 40, ex_incr_orders: 34, ex_budget_mxn: 1762, ex_budget_usd: 102.38, real_units: 192, final_budget_mxn: 8459, final_budget_usd: 491.52, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "10608", ean: "7501080901186", pid: "2115621110", name: "Trojan Preservativos Piel Desnuda 3 ud.", subcategoria: "Preservativos", h_units: 3.9, h_orders: 3.6, avg_price: 105.04, ex_incr_units: 39, ex_incr_orders: 36, ex_budget_mxn: 2048, ex_budget_usd: 119.00, real_units: 157, final_budget_mxn: 8246, final_budget_usd: 479.14, sku_order: 6 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "2915", ean: "7501080952133", pid: "2115621108", name: "Trojan Preservativos Texturizados Ecstasy 2 ud.", subcategoria: "Preservativos", h_units: 3.7, h_orders: 2.9, avg_price: 81.90, ex_incr_units: 37, ex_incr_orders: 29, ex_budget_mxn: 1515, ex_budget_usd: 88.03, real_units: 191, final_budget_mxn: 7822, final_budget_usd: 454.50, sku_order: 7 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "14576", ean: "7501080953017", pid: "2115154377", name: "Trojan Preservativos Fire & Ice 3 ud.", subcategoria: "Preservativos", h_units: 2.7, h_orders: 2.6, avg_price: 91.85, ex_incr_units: 27, ex_incr_orders: 26, ex_budget_mxn: 1240, ex_budget_usd: 72.05, real_units: 124, final_budget_mxn: 5695, final_budget_usd: 330.91, sku_order: 8 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "1885", ean: "7506460100111", pid: "2113441386", name: "Sico Preservativos Piel Con Piel 3 ud.", subcategoria: "Preservativos", h_units: 2.4, h_orders: 2.1, avg_price: 134.84, ex_incr_units: 24, ex_incr_orders: 21, ex_budget_mxn: 1618, ex_budget_usd: 94.02, real_units: 75, final_budget_mxn: 5057, final_budget_usd: 293.84, sku_order: 9 },
+  { deal_id: "VIRAL_DEAL_SICOYTROJAN_140226", sync: "7354", ean: "7501058368133", pid: "2115735607", name: "Sico Condones Sensitive 9 ud.", subcategoria: "Preservativos", h_units: 2.3, h_orders: 2.1, avg_price: 228.21, ex_incr_units: 23, ex_incr_orders: 21, ex_budget_mxn: 2624, ex_budget_usd: 152.47, real_units: 43, final_budget_mxn: 4906, final_budget_usd: 285.07, sku_order: 10 }
 ];
 
 const POSTMORTEM_DEALS = [
