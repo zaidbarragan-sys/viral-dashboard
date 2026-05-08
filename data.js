@@ -1203,6 +1203,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Shampoo, Acondicionador"
+  },
+  {
+    deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226",
+    maker_name: "La Madrileña",
+    maker_aux: "La Madrileña",
+    business_unit: "Drinks",
+    descuento_pct: 50,
+    incrementalidad: 10,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-01-15",
+    fecha_ejecucion: "2026-02-20",
+    fecha_fin: null,
+    usd_mxn: 17.21,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 100000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 130000,
+    budget_maker_usd: 5811.74,
+    budget_growth_usd: 1743.52,
+    budget_total_usd: 7553.75,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Vino tinto, Vino blanco, Vino rosado"
   }
 ];
 
@@ -1433,7 +1457,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "10438", ean: "381519180767", pid: "2112955440", name: "Herbal Essences Acondicionador Classic Smooth 400 mL", subcategoria: "Acondicionador", h_units: 11.4, h_orders: 11.0, avg_price: 81.31, ex_incr_units: 91, ex_incr_orders: 88, ex_budget_mxn: 3700, ex_budget_usd: 214.99, real_units: 372, final_budget_mxn: 15124, final_budget_usd: 878.79, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "10375", ean: "7500435019545", pid: "2115719654", name: "Head & Shoulders Shampoo Men Control Caspa 375 mL", subcategoria: "Shampoo", h_units: 5.3, h_orders: 4.9, avg_price: 79.35, ex_incr_units: 42, ex_incr_orders: 39, ex_budget_mxn: 1666, ex_budget_usd: 96.80, real_units: 176, final_budget_mxn: 6983, final_budget_usd: 405.75, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72859", ean: "7500435199018", pid: "2113182772", name: "Head & Shoulders Shampoo Intense Nourish 280 mL", subcategoria: "Shampoo", h_units: 4.5, h_orders: 4.1, avg_price: 244.71, ex_incr_units: 36, ex_incr_orders: 33, ex_budget_mxn: 4405, ex_budget_usd: 255.96, real_units: 49, final_budget_mxn: 5995, final_budget_usd: 348.34, sku_order: 5 },
-  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72860", ean: "7500435198998", pid: "2113182766", name: "Head & Shoulders Shampoo Radical Clean 280 mL", subcategoria: "Shampoo", h_units: 0.9, h_orders: 0.6, avg_price: 242.90, ex_incr_units: 7, ex_incr_orders: 5, ex_budget_mxn: 850, ex_budget_usd: 49.39, real_units: 10, final_budget_mxn: 1215, final_budget_usd: 70.60, sku_order: 6 }
+  { deal_id: "VIRAL_DEAL_P&G_160226", sync: "72860", ean: "7500435198998", pid: "2113182766", name: "Head & Shoulders Shampoo Radical Clean 280 mL", subcategoria: "Shampoo", h_units: 0.9, h_orders: 0.6, avg_price: 242.90, ex_incr_units: 7, ex_incr_orders: 5, ex_budget_mxn: 850, ex_budget_usd: 49.39, real_units: 10, final_budget_mxn: 1215, final_budget_usd: 70.60, sku_order: 6 },
+  // La Madrileña
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "5747", ean: "7791540127168", pid: "2115775310", name: "Vino Tinto Las Moras Malbec Finca 750 mL", subcategoria: "Vino tinto", h_units: 99.5, h_orders: 75.0, avg_price: 148.59, ex_incr_units: 995, ex_incr_orders: 750, ex_budget_mxn: 73923, ex_budget_usd: 4295.35, real_units: 729, final_budget_mxn: 54161, final_budget_usd: 3147.07, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "11629", ean: "7791540090417", pid: "2114888138", name: "Vino Blanco Finca Las Moras Sauvignon Blanc 750 mL", subcategoria: "Vino blanco", h_units: 61.9, h_orders: 46.2, avg_price: 151.47, ex_incr_units: 619, ex_incr_orders: 462, ex_budget_mxn: 46880, ex_budget_usd: 2723.88, real_units: 445, final_budget_mxn: 33702, final_budget_usd: 1958.28, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "11671", ean: "7791540127106", pid: "2114888139", name: "Vino Tinto Las Moras Cabernet Sauvignon Finca 750 mL", subcategoria: "Vino tinto", h_units: 38.6, h_orders: 31.0, avg_price: 156.73, ex_incr_units: 386, ex_incr_orders: 310, ex_budget_mxn: 30249, ex_budget_usd: 1757.64, real_units: 268, final_budget_mxn: 21002, final_budget_usd: 1220.34, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13148", ean: "7791540047916", pid: "2114888137", name: "Vino Rosado Las Moras Finca 750 mL", subcategoria: "Vino rosado", h_units: 20.7, h_orders: 17.0, avg_price: 159.59, ex_incr_units: 207, ex_incr_orders: 170, ex_budget_mxn: 16518, ex_budget_usd: 959.79, real_units: 141, final_budget_mxn: 11251, final_budget_usd: 653.75, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "14086", ean: "7791540046049", pid: "2114888141", name: "Vino Tinto Finca Las Moras Merlot 750 mL", subcategoria: "Vino tinto", h_units: 18.2, h_orders: 14.3, avg_price: 156.63, ex_incr_units: 182, ex_incr_orders: 143, ex_budget_mxn: 14253, ex_budget_usd: 828.19, real_units: 126, final_budget_mxn: 9868, final_budget_usd: 573.38, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
