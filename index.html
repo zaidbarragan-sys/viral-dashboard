@@ -866,7 +866,6 @@
         <button class="tab active" data-tab="indice">Home</button>
         <button class="tab" data-tab="catalogo">Catálogo</button>
         <button class="tab" data-tab="comparador">Comparador</button>
-        <button class="tab" data-tab="tendencias">Tendencias</button>
       </nav>
     </div>
   </header>
@@ -926,7 +925,8 @@
       </div>
     </div>
 
-    <!-- TENDENCIAS -->
+    <!-- TENDENCIAS (disabled temporarily) -->
+    <!--
     <div id="tendencias" class="section">
       <h2 class="section-title">Tendencias</h2>
       <div class="chart-grid">
@@ -936,6 +936,7 @@
         <div class="chart-card"><h3>Canibalizacion Ordenes &Delta;%</h3><canvas id="chart-canib"></canvas></div>
       </div>
     </div>
+    -->
 
     <!-- CATALOGO -->
     <div id="catalogo" class="section">
@@ -1010,7 +1011,7 @@
         renderDetalle(dealId);
       }
       if (tab === 'comparador') renderComparador();
-      if (tab === 'tendencias') renderTendencias();
+      // if (tab === 'tendencias') renderTendencias();
       if (tab === 'catalogo') renderCatalogo();
     }
 
@@ -1021,7 +1022,7 @@
     // Hash routing
     window.addEventListener('hashchange', () => {
       const hash = window.location.hash.replace('#', '') || 'indice';
-      if (['indice', 'detalle', 'comparador', 'tendencias', 'catalogo'].includes(hash)) {
+      if (['indice', 'detalle', 'comparador', 'catalogo'].includes(hash)) {
         navigateTo(hash);
       }
     });
@@ -1872,7 +1873,7 @@
 
     // Handle initial hash
     const initHash = window.location.hash.replace('#', '');
-    if (initHash && ['indice', 'detalle', 'comparador', 'tendencias', 'catalogo'].includes(initHash)) {
+    if (initHash && ['indice', 'detalle', 'comparador', 'catalogo'].includes(initHash)) {
       navigateTo(initHash);
     }
   </script>
