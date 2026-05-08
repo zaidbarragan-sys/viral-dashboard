@@ -1323,6 +1323,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_BARCEL_140626",
+    maker_name: "Barcel",
+    maker_aux: "Barcel",
+    business_unit: "Foods",
+    descuento_pct: 50,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-08",
+    fecha_ejecucion: "2026-06-14",
+    fecha_fin: null,
+    usd_mxn: 17.18,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 100000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 130000,
+    budget_maker_usd: 5820.72,
+    budget_growth_usd: 1746.22,
+    budget_total_usd: 7566.94,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Snacks salados"
   }
 ];
 
@@ -1581,7 +1605,16 @@ const PREVIRAL_SKU_DETAIL = [
   // Modelo
   { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "13692", ean: "7501064196263", pid: "2115802220", name: "Pack Cerveza Clara Modelo Especial 12 Latas 355mL", subcategoria: "Cervezas", h_units: 362.3, h_orders: 273.0, avg_price: 148.20, ex_incr_units: 1449, ex_incr_orders: 1092, ex_budget_mxn: 128807, ex_budget_usd: 7383.66, real_units: 1350, final_budget_mxn: 120042, final_budget_usd: 6881.17, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "86167", ean: "7503052713308", pid: "2115641262", name: "Cerveza Flying Fish Lata 473mL", subcategoria: "Cervezas", h_units: 19.4, h_orders: 7.2, avg_price: 27.33, ex_incr_units: 78, ex_incr_orders: 29, ex_budget_mxn: 1279, ex_budget_usd: 73.31, real_units: 394, final_budget_mxn: 6460, final_budget_usd: 370.33, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "83819", ean: "7503052713285", pid: "2115527344", name: "Cerveza Vicky Tajín 1 Lata 473mL", subcategoria: "Cervezas", h_units: 10.6, h_orders: 6.8, avg_price: 26.14, ex_incr_units: 42, ex_incr_orders: 27, ex_budget_mxn: 659, ex_budget_usd: 37.78, real_units: 222, final_budget_mxn: 3482, final_budget_usd: 199.60, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "83819", ean: "7503052713285", pid: "2115527344", name: "Cerveza Vicky Tajín 1 Lata 473mL", subcategoria: "Cervezas", h_units: 10.6, h_orders: 6.8, avg_price: 26.14, ex_incr_units: 42, ex_incr_orders: 27, ex_budget_mxn: 659, ex_budget_usd: 37.78, real_units: 222, final_budget_mxn: 3482, final_budget_usd: 199.60, sku_order: 3 },
+  // Barcel
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "10585", ean: "757528001865", pid: "1359077453", name: "Chips Papas Fritas Fuego 55g", subcategoria: "Snacks salados", h_units: 107.1, h_orders: 92.8, avg_price: 23.90, ex_incr_units: 643, ex_incr_orders: 557, ex_budget_mxn: 15368, ex_budget_usd: 894.53, real_units: 1119, final_budget_mxn: 26744, final_budget_usd: 1556.69, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "9282", ean: "7501030420583", pid: "1359081333", name: "Kiyakis Cacahuate Estilo Japonés Clásico 150g", subcategoria: "Frutos secos y semillas", h_units: 102.3, h_orders: 89.2, avg_price: 26.72, ex_incr_units: 614, ex_incr_orders: 535, ex_budget_mxn: 16405, ex_budget_usd: 954.89, real_units: 956, final_budget_mxn: 25544, final_budget_usd: 1486.85, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "9892", ean: "757528019761", pid: "1359083339", name: "Chips Papas Fritas Jalapeño 100g", subcategoria: "Snacks salados", h_units: 91.0, h_orders: 84.1, avg_price: 39.11, ex_incr_units: 546, ex_incr_orders: 505, ex_budget_mxn: 21354, ex_budget_usd: 1242.95, real_units: 581, final_budget_mxn: 22723, final_budget_usd: 1322.64, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "74143", ean: "7500810022566", pid: "1359133584", name: "Takis Fajita 94g", subcategoria: "Snacks salados", h_units: 71.9, h_orders: 63.2, avg_price: 26.40, ex_incr_units: 431, ex_incr_orders: 379, ex_budget_mxn: 11378, ex_budget_usd: 662.28, real_units: 679, final_budget_mxn: 17926, final_budget_usd: 1043.42, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "81266", ean: "7500810006436", pid: "1359083045", name: "Chips Jalapeño 55g", subcategoria: "Snacks salados", h_units: 60.9, h_orders: 55.1, avg_price: 25.49, ex_incr_units: 365, ex_incr_orders: 331, ex_budget_mxn: 9304, ex_budget_usd: 541.56, real_units: 596, final_budget_mxn: 15196, final_budget_usd: 884.52, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "9063", ean: "7501030459941", pid: "1359110352", name: "Cacahuates Barcel Golden Nuts Salados 100g", subcategoria: "Snacks salados", h_units: 34.9, h_orders: 29.7, avg_price: 25.24, ex_incr_units: 209, ex_incr_orders: 178, ex_budget_mxn: 5275, ex_budget_usd: 307.04, real_units: 344, final_budget_mxn: 8681, final_budget_usd: 505.30, sku_order: 6 },
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "10606", ean: "7501030459927", pid: "1359086377", name: "Golden Nuts Enchilados 100g", subcategoria: "Snacks salados", h_units: 31.5, h_orders: 27.5, avg_price: 25.30, ex_incr_units: 189, ex_incr_orders: 165, ex_budget_mxn: 4782, ex_budget_usd: 278.35, real_units: 311, final_budget_mxn: 7868, final_budget_usd: 457.98, sku_order: 7 },
+  { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "74146", ean: "7500810011980", pid: "1358792697", name: "Pop Karameladas 240g", subcategoria: "Pochoclos", h_units: 21.5, h_orders: 20.4, avg_price: 63.66, ex_incr_units: 129, ex_incr_orders: 122, ex_budget_mxn: 8212, ex_budget_usd: 477.99, real_units: 84, final_budget_mxn: 5347, final_budget_usd: 311.24, sku_order: 8 }
 ];
 
 const POSTMORTEM_DEALS = [
