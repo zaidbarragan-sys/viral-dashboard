@@ -1934,6 +1934,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 1210, canib_ord_bench: 1067.0, canib_ord_delta_pct: 13.4,
     canib_und_post: 1995, canib_und_bench: 1867.75, canib_und_delta_pct: 6.8,
     canib_cli_post: 1285, canib_cli_bench: 1097.75, canib_cli_delta_pct: 17.1
+  },
+  {
+    deal_id: "VIRAL_DEAL_GRANEL_050326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 88516, gmv_lw: 2224, gmv_dlw_pct: 3881.0, gmv_l4w: 2127, gmv_dl4w_pct: 4062.2,
+    usuarios_unicos: 465,
+    usr_lw: 41, usr_dlw_pct: 1034.1, usr_l4w: 33.75, usr_dl4w_pct: 1277.8,
+    cr_pct: 1.45,
+    aov: 173.56, aov_lw: 49.41, aov_dlw_pct: 251.3, aov_l4w: 56.71, aov_dl4w_pct: 206.1,
+    unidades_total: 1793, und_lw: 49, und_dlw_pct: 3559.2, und_l4w: 44.75, und_dl4w_pct: 3906.1,
+    ordenes_total: 510, ord_lw: 45, ord_dlw_pct: 1033.3, ord_l4w: 37.50, ord_dl4w_pct: 1260.0,
+    impresiones_total: 32136,
+    so_turbo_mx: 2107979, gmv_categoria: 43825,
+    gmv_cat_lw: 30846, gmv_cat_l4w: 34950,
+    share_deal_cat_pct: 201.96, share_lw_pct: 7.21, share_l4w_pct: 6.09,
+    gmv_basket: 146950, gmv_sellup: 58434, pct_sellup: 39.76,
+    aov_basket: 288.14, aov_deal_post: 173.56,
+    cross_ordenes: 510, cross_skus_distintos: 756,
+    cross_top_producto: "Plátano Chiapas", cross_top_ordenes: 16, cross_top_pct: 3.14,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 158, canib_ord_bench: 137.75, canib_ord_delta_pct: 14.7,
+    canib_und_post: 202, canib_und_bench: 229.25, canib_und_delta_pct: -11.9,
+    canib_cli_post: 188, canib_cli_bench: 143.50, canib_cli_delta_pct: 31.0
   }
 ];
 
@@ -2043,7 +2068,14 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8770", name: "Pack Cerveza Amstel Ultra 6 x 355 mL", ordenes: 1657, usuarios: 1320, unidades: 2022, gmv: 234914, aov: 141.77, impresiones: 22950, cr_pct: 5.75, gmv_dlw_pct: 195.9, gmv_dl4w_pct: 249.2, seg_nuevo: 701, seg_nuevo_pct: 42, seg_reactivado: 582, seg_reactivado_pct: 35, seg_retenido: 374, seg_retenido_pct: 23, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 813, canib_ord_bench: 626.00, canib_ord_delta_pct: 29.9, canib_und_post: 1378, canib_und_bench: 1156.75, canib_und_delta_pct: 19.1, canib_cli_post: 842, canib_cli_bench: 635.00, canib_cli_delta_pct: 32.6 },
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8524", name: "Pack Cerveza Heineken Original 6 x 355 mL", ordenes: 869, usuarios: 705, unidades: 945, gmv: 148531, aov: 170.92, impresiones: 11654, cr_pct: 6.05, gmv_dlw_pct: 436.9, gmv_dl4w_pct: 565.3, seg_nuevo: 464, seg_nuevo_pct: 53, seg_reactivado: 280, seg_reactivado_pct: 32, seg_retenido: 125, seg_retenido_pct: 14, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 165, canib_ord_bench: 187.75, canib_ord_delta_pct: -12.1, canib_und_post: 268, canib_und_bench: 306.75, canib_und_delta_pct: -12.6, canib_cli_post: 186, canib_cli_bench: 183.75, canib_cli_delta_pct: 1.2 },
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "7449", name: "XX Dos Equis Lager Especial 6pack 355 mL", ordenes: 646, usuarios: 559, unidades: 704, gmv: 96240, aov: 148.98, impresiones: 5918, cr_pct: 9.45, gmv_dlw_pct: 840.3, gmv_dl4w_pct: 750.6, seg_nuevo: 524, seg_nuevo_pct: 81, seg_reactivado: 92, seg_reactivado_pct: 14, seg_retenido: 30, seg_retenido_pct: 5, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 55, canib_ord_bench: 89.00, canib_ord_delta_pct: -38.2, canib_und_post: 91, canib_und_bench: 140.25, canib_und_delta_pct: -35.1, canib_cli_post: 63, canib_cli_bench: 102.75, canib_cli_delta_pct: -38.7 },
-  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "9713", name: "Heineken Cerveza Sin Alcohol 250 mL", ordenes: 345, usuarios: 303, unidades: 399, gmv: 38817, aov: 112.51, impresiones: 8022, cr_pct: 3.78, gmv_dlw_pct: 277.8, gmv_dl4w_pct: 280.1, seg_nuevo: 210, seg_nuevo_pct: 61, seg_reactivado: 61, seg_reactivado_pct: 18, seg_retenido: 74, seg_retenido_pct: 21, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 177, canib_ord_bench: 164.25, canib_ord_delta_pct: 7.8, canib_und_post: 258, canib_und_bench: 264, canib_und_delta_pct: -2.3, canib_cli_post: 194, canib_cli_bench: 176.25, canib_cli_delta_pct: 10.1 }
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "9713", name: "Heineken Cerveza Sin Alcohol 250 mL", ordenes: 345, usuarios: 303, unidades: 399, gmv: 38817, aov: 112.51, impresiones: 8022, cr_pct: 3.78, gmv_dlw_pct: 277.8, gmv_dl4w_pct: 280.1, seg_nuevo: 210, seg_nuevo_pct: 61, seg_reactivado: 61, seg_reactivado_pct: 18, seg_retenido: 74, seg_retenido_pct: 21, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 177, canib_ord_bench: 164.25, canib_ord_delta_pct: 7.8, canib_und_post: 258, canib_und_bench: 264, canib_und_delta_pct: -2.3, canib_cli_post: 194, canib_cli_bench: 176.25, canib_cli_delta_pct: 10.1 },
+  // Granel 050326
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "83017", name: "Nuez de la India 200 g", ordenes: 186, usuarios: 166, unidades: 381, gmv: 28023, aov: 150.66, impresiones: 5253, cr_pct: 3.16, gmv_dlw_pct: 2235.1, gmv_dl4w_pct: 1973.6, seg_nuevo: 160, seg_nuevo_pct: 86, seg_reactivado: 11, seg_reactivado_pct: 6, seg_retenido: 15, seg_retenido_pct: 8, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 3, canib_ord_bench: 53.50, canib_ord_delta_pct: -94.4, canib_und_post: 4, canib_und_bench: 81.75, canib_und_delta_pct: -95.1, canib_cli_post: 5, canib_cli_bench: 54.50, canib_cli_delta_pct: -90.8 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "86755", name: "Pasas Con Chocolate 200 g", ordenes: 163, usuarios: 158, unidades: 224, gmv: 21602, aov: 132.53, impresiones: 5069, cr_pct: 3.12, gmv_dlw_pct: 7387.6, gmv_dl4w_pct: 9833.1, seg_nuevo: 158, seg_nuevo_pct: 97, seg_reactivado: 1, seg_reactivado_pct: 1, seg_retenido: 4, seg_retenido_pct: 2, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 32, canib_ord_bench: 9.00, canib_ord_delta_pct: 255.6, canib_und_post: 49, canib_und_bench: 11.25, canib_und_delta_pct: 335.6, canib_cli_post: 39, canib_cli_bench: 9.75, canib_cli_delta_pct: 300.0 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "86768", name: "Piña Enchilada 200 g", ordenes: 134, usuarios: 126, unidades: 187, gmv: 15505, aov: 115.71, impresiones: 4659, cr_pct: 2.70, gmv_dlw_pct: 18596.9, gmv_dl4w_pct: 12367.1, seg_nuevo: 133, seg_nuevo_pct: 99, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 1, seg_retenido_pct: 1, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 57, canib_ord_bench: 7.25, canib_ord_delta_pct: 686.2, canib_und_post: 66, canib_und_bench: 9.5, canib_und_delta_pct: 594.7, canib_cli_post: 65, canib_cli_bench: 8.50, canib_cli_delta_pct: 664.7 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "87050", name: "Goma Guanábana 200 g", ordenes: 173, usuarios: 161, unidades: 309, gmv: 9115, aov: 52.69, impresiones: 4912, cr_pct: 3.28, gmv_dlw_pct: 10386.4, gmv_dl4w_pct: 10386.4, seg_nuevo: 172, seg_nuevo_pct: 99, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 1, seg_retenido_pct: 1, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 35, canib_ord_bench: 1.75, canib_ord_delta_pct: 1900.0, canib_und_post: 54, canib_und_bench: 2.5, canib_und_delta_pct: 2060.0, canib_cli_post: 41, canib_cli_bench: 2.25, canib_cli_delta_pct: 1722.2 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "87047", name: "Osito Enchilado 200 g", ordenes: 174, usuarios: 164, unidades: 337, gmv: 8546, aov: 49.12, impresiones: 5276, cr_pct: 3.11, gmv_dlw_pct: 2123.5, gmv_dl4w_pct: 2123.5, seg_nuevo: 166, seg_nuevo_pct: 95, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 8, seg_retenido_pct: 5, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 24, canib_ord_bench: 10.50, canib_ord_delta_pct: 128.6, canib_und_post: 21, canib_und_bench: 13.75, canib_und_delta_pct: 52.7, canib_cli_post: 31, canib_cli_bench: 12.50, canib_cli_delta_pct: 148.0 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "83016", name: "Cacahuate Sin Sal 200 g", ordenes: 151, usuarios: 131, unidades: 355, gmv: 5725, aov: 37.91, impresiones: 6967, cr_pct: 1.88, gmv_dlw_pct: 3067.6, gmv_dl4w_pct: 1714.1, seg_nuevo: 121, seg_nuevo_pct: 80, seg_reactivado: 9, seg_reactivado_pct: 6, seg_retenido: 21, seg_retenido_pct: 14, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 7, canib_ord_bench: 55.75, canib_ord_delta_pct: -87.4, canib_und_post: 8, canib_und_bench: 110.5, canib_und_delta_pct: -92.8, canib_cli_post: 7, canib_cli_bench: 55.50, canib_cli_delta_pct: -87.4 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -2190,7 +2222,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Tequilas", ordenes: 12, gmv: 8641, pct_sellup: 3.85, order: 5 },
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Agua Natural", ordenes: 134, gmv: 6260, pct_sellup: 2.79, order: 6 },
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Rones", ordenes: 16, gmv: 4860, pct_sellup: 2.17, order: 7 },
-  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Agua Natural Gasificada", ordenes: 79, gmv: 4454, pct_sellup: 1.99, order: 8 }
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Agua Natural Gasificada", ordenes: 79, gmv: 4454, pct_sellup: 1.99, order: 8 },
+  // Granel 050326
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", subcategoria: "Frutos secos y semillas", ordenes: 87, gmv: 5371, pct_sellup: 9.19, order: 1 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", subcategoria: "Frutas", ordenes: 78, gmv: 3581, pct_sellup: 6.13, order: 2 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", subcategoria: "Snacks salados", ordenes: 56, gmv: 3517, pct_sellup: 6.02, order: 3 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", subcategoria: "Gomitas y caramelos", ordenes: 65, gmv: 3498, pct_sellup: 5.99, order: 4 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", subcategoria: "Gaseosas", ordenes: 51, gmv: 2388, pct_sellup: 4.09, order: 5 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", subcategoria: "Yogurt", ordenes: 35, gmv: 2060, pct_sellup: 3.53, order: 6 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", subcategoria: "Panaderia salada", ordenes: 13, gmv: 1997, pct_sellup: 3.42, order: 7 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", subcategoria: "Chocolates", ordenes: 39, gmv: 1814, pct_sellup: 3.10, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -2401,5 +2442,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "6529", name: "Peñafiel Agua Mineral 2 L", subcategoria: "Agua Natural", ordenes: 30, pct_deal: 1.28, order: 9 },
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "13802", name: "Pack Cerveza Bohemia Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 30, pct_deal: 1.28, order: 10 },
   { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "6027", name: "Clamato Coctel de Tomate Con Almeja 946 mL", subcategoria: "Bases para cócteles", ordenes: 30, pct_deal: 1.28, order: 11 },
-  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "12042", name: "Chips Papas Fritas Sal 240 g", subcategoria: "Snacks salados", ordenes: 28, pct_deal: 1.20, order: 12 }
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "12042", name: "Chips Papas Fritas Sal 240 g", subcategoria: "Snacks salados", ordenes: 28, pct_deal: 1.20, order: 12 },
+  // Granel 050326
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 16, pct_deal: 3.14, order: 1 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "14946", name: "Mallas Limón Con Semilla 5 ud.", subcategoria: "Frutas", ordenes: 15, pct_deal: 2.94, order: 2 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 13, pct_deal: 2.55, order: 3 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "5346", name: "Kinder Délice Pastelito 39 g", subcategoria: "Tortas y ponques", ordenes: 13, pct_deal: 2.55, order: 4 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 11, pct_deal: 2.16, order: 5 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "86332", name: "Maíz Palomero", subcategoria: "Frutos secos y semillas", ordenes: 11, pct_deal: 2.16, order: 6 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "15322", name: "Hot Nuts Cacahuates Original 100 g", subcategoria: "Frutos secos y semillas", ordenes: 10, pct_deal: 1.96, order: 7 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "82262", name: "Ciruela Pasa a Granel 200 g", subcategoria: "Frutos secos y semillas", ordenes: 8, pct_deal: 1.57, order: 8 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 8, pct_deal: 1.57, order: 9 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "86341", name: "Ajo en Polvo", subcategoria: "Frutos secos y semillas", ordenes: 8, pct_deal: 1.57, order: 10 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "76560", name: "Jamaica 100 g", subcategoria: "Verduras", ordenes: 8, pct_deal: 1.57, order: 11 },
+  { deal_id: "VIRAL_DEAL_GRANEL_050326", sync: "14352", name: "Aguacate Para 2 Días X3", subcategoria: "Frutas", ordenes: 8, pct_deal: 1.57, order: 12 }
 ];
