@@ -1878,6 +1878,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 2483, canib_ord_bench: 2090.75, canib_ord_delta_pct: 18.8,
     canib_und_post: 9407, canib_und_bench: 8312.0, canib_und_delta_pct: 13.2,
     canib_cli_post: 2671, canib_cli_bench: 2008.25, canib_cli_delta_pct: 33.0
+  },
+  {
+    deal_id: "VIRAL_DEAL_HEINEKEN_280226",
+    post_days: 4, fase: 2,
+    gmv_activacion: 518501, gmv_lw: 127572, gmv_dlw_pct: 306.4, gmv_l4w: 111124, gmv_dl4w_pct: 366.6,
+    usuarios_unicos: 1871,
+    usr_lw: 605, usr_dlw_pct: 209.3, usr_l4w: 531, usr_dl4w_pct: 252.4,
+    cr_pct: 3.85,
+    aov: 221.68, aov_lw: 188.71, aov_dlw_pct: 17.5, aov_l4w: 189.09, aov_dl4w_pct: 17.2,
+    unidades_total: 4070, und_lw: 971, und_dlw_pct: 319.2, und_l4w: 849, und_dl4w_pct: 379.3,
+    ordenes_total: 2339, ord_lw: 676, ord_dlw_pct: 246.0, ord_l4w: 587.75, ord_dl4w_pct: 298.0,
+    impresiones_total: 48544,
+    so_turbo_mx: 4937790, gmv_categoria: 1118887,
+    gmv_cat_lw: 756040, gmv_cat_l4w: 697588,
+    share_deal_cat_pct: 46.34, share_lw_pct: 16.87, share_l4w_pct: 15.93,
+    gmv_basket: 742761, gmv_sellup: 224260, pct_sellup: 30.19,
+    aov_basket: 317.56, aov_deal_post: 221.68,
+    cross_ordenes: 2339, cross_skus_distintos: 1036,
+    cross_top_producto: "Cerveza Corona Extra Latón 710 mL", cross_top_ordenes: 66, cross_top_pct: 2.82,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 1210, canib_ord_bench: 1067.0, canib_ord_delta_pct: 13.4,
+    canib_und_post: 1995, canib_und_bench: 1867.75, canib_und_delta_pct: 6.8,
+    canib_cli_post: 1285, canib_cli_bench: 1097.75, canib_cli_delta_pct: 17.1
   }
 ];
 
@@ -1982,7 +2007,12 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82050", name: "Manzana Golden", ordenes: 345, usuarios: 325, unidades: 942, gmv: 9002, aov: 26.09, impresiones: 8794, cr_pct: 3.70, gmv_dlw_pct: 287.3, gmv_dl4w_pct: 240.5, seg_nuevo: 200, seg_nuevo_pct: 58, seg_reactivado: 79, seg_reactivado_pct: 23, seg_retenido: 66, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 227, canib_ord_bench: 253.00, canib_ord_delta_pct: -10.3, canib_und_post: 711, canib_und_bench: 782.25, canib_und_delta_pct: -9.1, canib_cli_post: 248, canib_cli_bench: 258.00, canib_cli_delta_pct: -3.9 },
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82129", name: "Durazno Melocotón", ordenes: 133, usuarios: 122, unidades: 324, gmv: 7330, aov: 55.12, impresiones: 3625, cr_pct: 3.37, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 115, seg_nuevo_pct: 86, seg_reactivado: 10, seg_reactivado_pct: 8, seg_retenido: 8, seg_retenido_pct: 6, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 39, canib_ord_bench: 11.25, canib_ord_delta_pct: 246.7, canib_und_post: 73, canib_und_bench: 24.5, canib_und_delta_pct: 198.0, canib_cli_post: 43, canib_cli_bench: 12.50, canib_cli_delta_pct: 244.0 },
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "72931", name: "Mango Ataulfo 340 g", ordenes: 157, usuarios: 140, unidades: 395, gmv: 7301, aov: 46.51, impresiones: 3806, cr_pct: 3.68, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 126, seg_nuevo_pct: 80, seg_reactivado: 20, seg_reactivado_pct: 13, seg_retenido: 11, seg_retenido_pct: 7, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 228, canib_ord_bench: 39.50, canib_ord_delta_pct: 477.2, canib_und_post: 585, canib_und_bench: 91.5, canib_und_delta_pct: 539.3, canib_cli_post: 269, canib_cli_bench: 43.50, canib_cli_delta_pct: 518.4 },
-  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82049", name: "Naranja Valencia", ordenes: 283, usuarios: 258, unidades: 911, gmv: 5916, aov: 20.91, impresiones: 7121, cr_pct: 3.62, gmv_dlw_pct: 194.7, gmv_dl4w_pct: 219.0, seg_nuevo: 157, seg_nuevo_pct: 55, seg_reactivado: 68, seg_reactivado_pct: 24, seg_retenido: 58, seg_retenido_pct: 20, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 227, canib_ord_bench: 233.75, canib_ord_delta_pct: -2.9, canib_und_post: 966, canib_und_bench: 943.5, canib_und_delta_pct: 2.4, canib_cli_post: 241, canib_cli_bench: 225.50, canib_cli_delta_pct: 6.9 }
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82049", name: "Naranja Valencia", ordenes: 283, usuarios: 258, unidades: 911, gmv: 5916, aov: 20.91, impresiones: 7121, cr_pct: 3.62, gmv_dlw_pct: 194.7, gmv_dl4w_pct: 219.0, seg_nuevo: 157, seg_nuevo_pct: 55, seg_reactivado: 68, seg_reactivado_pct: 24, seg_retenido: 58, seg_retenido_pct: 20, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 227, canib_ord_bench: 233.75, canib_ord_delta_pct: -2.9, canib_und_post: 966, canib_und_bench: 943.5, canib_und_delta_pct: 2.4, canib_cli_post: 241, canib_cli_bench: 225.50, canib_cli_delta_pct: 6.9 },
+  // Heineken
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8770", name: "Pack Cerveza Amstel Ultra 6 x 355 mL", ordenes: 1657, usuarios: 1320, unidades: 2022, gmv: 234914, aov: 141.77, impresiones: 22950, cr_pct: 5.75, gmv_dlw_pct: 195.9, gmv_dl4w_pct: 249.2, seg_nuevo: 701, seg_nuevo_pct: 42, seg_reactivado: 582, seg_reactivado_pct: 35, seg_retenido: 374, seg_retenido_pct: 23, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 813, canib_ord_bench: 626.00, canib_ord_delta_pct: 29.9, canib_und_post: 1378, canib_und_bench: 1156.75, canib_und_delta_pct: 19.1, canib_cli_post: 842, canib_cli_bench: 635.00, canib_cli_delta_pct: 32.6 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8524", name: "Pack Cerveza Heineken Original 6 x 355 mL", ordenes: 869, usuarios: 705, unidades: 945, gmv: 148531, aov: 170.92, impresiones: 11654, cr_pct: 6.05, gmv_dlw_pct: 436.9, gmv_dl4w_pct: 565.3, seg_nuevo: 464, seg_nuevo_pct: 53, seg_reactivado: 280, seg_reactivado_pct: 32, seg_retenido: 125, seg_retenido_pct: 14, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 165, canib_ord_bench: 187.75, canib_ord_delta_pct: -12.1, canib_und_post: 268, canib_und_bench: 306.75, canib_und_delta_pct: -12.6, canib_cli_post: 186, canib_cli_bench: 183.75, canib_cli_delta_pct: 1.2 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "7449", name: "XX Dos Equis Lager Especial 6pack 355 mL", ordenes: 646, usuarios: 559, unidades: 704, gmv: 96240, aov: 148.98, impresiones: 5918, cr_pct: 9.45, gmv_dlw_pct: 840.3, gmv_dl4w_pct: 750.6, seg_nuevo: 524, seg_nuevo_pct: 81, seg_reactivado: 92, seg_reactivado_pct: 14, seg_retenido: 30, seg_retenido_pct: 5, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 55, canib_ord_bench: 89.00, canib_ord_delta_pct: -38.2, canib_und_post: 91, canib_und_bench: 140.25, canib_und_delta_pct: -35.1, canib_cli_post: 63, canib_cli_bench: 102.75, canib_cli_delta_pct: -38.7 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "9713", name: "Heineken Cerveza Sin Alcohol 250 mL", ordenes: 345, usuarios: 303, unidades: 399, gmv: 38817, aov: 112.51, impresiones: 8022, cr_pct: 3.78, gmv_dlw_pct: 277.8, gmv_dl4w_pct: 280.1, seg_nuevo: 210, seg_nuevo_pct: 61, seg_reactivado: 61, seg_reactivado_pct: 18, seg_retenido: 74, seg_retenido_pct: 21, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 177, canib_ord_bench: 164.25, canib_ord_delta_pct: 7.8, canib_und_post: 258, canib_und_bench: 264, canib_und_delta_pct: -2.3, canib_cli_post: 194, canib_cli_bench: 176.25, canib_cli_delta_pct: 10.1 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -2120,7 +2150,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Verduras", ordenes: 276, gmv: 9330, pct_sellup: 3.52, order: 5 },
   { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Snacks salados", ordenes: 149, gmv: 8544, pct_sellup: 3.22, order: 6 },
   { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Agua Natural", ordenes: 138, gmv: 7394, pct_sellup: 2.79, order: 7 },
-  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Suero", ordenes: 98, gmv: 7073, pct_sellup: 2.67, order: 8 }
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", subcategoria: "Suero", ordenes: 98, gmv: 7073, pct_sellup: 2.67, order: 8 },
+  // Heineken
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Cervezas", ordenes: 493, gmv: 63142, pct_sellup: 28.16, order: 1 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Snacks salados", ordenes: 320, gmv: 23941, pct_sellup: 10.68, order: 2 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Gaseosas", ordenes: 241, gmv: 14204, pct_sellup: 6.33, order: 3 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Cigarrillos", ordenes: 97, gmv: 12964, pct_sellup: 5.78, order: 4 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Tequilas", ordenes: 12, gmv: 8641, pct_sellup: 3.85, order: 5 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Agua Natural", ordenes: 134, gmv: 6260, pct_sellup: 2.79, order: 6 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Rones", ordenes: 16, gmv: 4860, pct_sellup: 2.17, order: 7 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", subcategoria: "Agua Natural Gasificada", ordenes: 79, gmv: 4454, pct_sellup: 1.99, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -2318,5 +2357,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 63, pct_deal: 4.32, order: 9 },
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "76545", name: "Guayaba", subcategoria: "Frutas", ordenes: 55, pct_deal: 3.77, order: 10 },
   { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "5543", name: "Bachoco Huevo Blanco 18 ud.", subcategoria: "Huevos", ordenes: 54, pct_deal: 3.71, order: 11 },
-  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "9518", name: "Cilantro Manojo", subcategoria: "Hierbas y aromáticas", ordenes: 52, pct_deal: 3.57, order: 12 }
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "9518", name: "Cilantro Manojo", subcategoria: "Hierbas y aromáticas", ordenes: 52, pct_deal: 3.57, order: 12 },
+  // Heineken
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "4939", name: "Cerveza Corona Extra Latón 710 mL", subcategoria: "Cervezas", ordenes: 66, pct_deal: 2.82, order: 1 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", ordenes: 49, pct_deal: 2.09, order: 2 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 49, pct_deal: 2.09, order: 3 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 42, pct_deal: 1.80, order: 4 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "4950", name: "Cerveza Victoria Oscura Latón 710 mL", subcategoria: "Cervezas", ordenes: 39, pct_deal: 1.67, order: 5 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "8462", name: "Coca-Cola Refresco Original 3 L", subcategoria: "Gaseosas", ordenes: 38, pct_deal: 1.62, order: 6 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "5314", name: "Pack Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", ordenes: 37, pct_deal: 1.58, order: 7 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "14946", name: "Mallas Limón Con Semilla 5 ud.", subcategoria: "Frutas", ordenes: 33, pct_deal: 1.41, order: 8 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "6529", name: "Peñafiel Agua Mineral 2 L", subcategoria: "Agua Natural", ordenes: 30, pct_deal: 1.28, order: 9 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "13802", name: "Pack Cerveza Bohemia Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 30, pct_deal: 1.28, order: 10 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "6027", name: "Clamato Coctel de Tomate Con Almeja 946 mL", subcategoria: "Bases para cócteles", ordenes: 30, pct_deal: 1.28, order: 11 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_280226", sync: "12042", name: "Chips Papas Fritas Sal 240 g", subcategoria: "Snacks salados", ordenes: 28, pct_deal: 1.20, order: 12 }
 ];
