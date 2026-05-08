@@ -1227,6 +1227,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Vino tinto, Vino blanco, Vino rosado"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_240226",
+    maker_name: "Fruver",
+    maker_aux: "Fruver",
+    business_unit: "WOW",
+    descuento_pct: 60,
+    incrementalidad: 4,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-02-02",
+    fecha_ejecucion: "2026-02-24",
+    fecha_fin: null,
+    usd_mxn: 17.21,
+    fecha_tasa: "2026-05-08",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1743.52,
+    budget_growth_usd: 523.07,
+    budget_total_usd: 2266.13,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Frutas"
   }
 ];
 
@@ -1463,7 +1487,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "11629", ean: "7791540090417", pid: "2114888138", name: "Vino Blanco Finca Las Moras Sauvignon Blanc 750 mL", subcategoria: "Vino blanco", h_units: 61.9, h_orders: 46.2, avg_price: 151.47, ex_incr_units: 619, ex_incr_orders: 462, ex_budget_mxn: 46880, ex_budget_usd: 2723.88, real_units: 445, final_budget_mxn: 33702, final_budget_usd: 1958.28, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "11671", ean: "7791540127106", pid: "2114888139", name: "Vino Tinto Las Moras Cabernet Sauvignon Finca 750 mL", subcategoria: "Vino tinto", h_units: 38.6, h_orders: 31.0, avg_price: 156.73, ex_incr_units: 386, ex_incr_orders: 310, ex_budget_mxn: 30249, ex_budget_usd: 1757.64, real_units: 268, final_budget_mxn: 21002, final_budget_usd: 1220.34, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "13148", ean: "7791540047916", pid: "2114888137", name: "Vino Rosado Las Moras Finca 750 mL", subcategoria: "Vino rosado", h_units: 20.7, h_orders: 17.0, avg_price: 159.59, ex_incr_units: 207, ex_incr_orders: 170, ex_budget_mxn: 16518, ex_budget_usd: 959.79, real_units: 141, final_budget_mxn: 11251, final_budget_usd: 653.75, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "14086", ean: "7791540046049", pid: "2114888141", name: "Vino Tinto Finca Las Moras Merlot 750 mL", subcategoria: "Vino tinto", h_units: 18.2, h_orders: 14.3, avg_price: 156.63, ex_incr_units: 182, ex_incr_orders: 143, ex_budget_mxn: 14253, ex_budget_usd: 828.19, real_units: 126, final_budget_mxn: 9868, final_budget_usd: 573.38, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_LAMADRILEÑA_200226", sync: "14086", ean: "7791540046049", pid: "2114888141", name: "Vino Tinto Finca Las Moras Merlot 750 mL", subcategoria: "Vino tinto", h_units: 18.2, h_orders: 14.3, avg_price: 156.63, ex_incr_units: 182, ex_incr_orders: 143, ex_budget_mxn: 14253, ex_budget_usd: 828.19, real_units: 126, final_budget_mxn: 9868, final_budget_usd: 573.38, sku_order: 5 },
+  // Fruver
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "81993", ean: "2220000001233", pid: "2115572989", name: "Plátano Chiapas 200 g", subcategoria: "Frutas", h_units: 1992.6, h_orders: 593.3, avg_price: 5.94, ex_incr_units: 7970, ex_incr_orders: 2373, ex_budget_mxn: 28401, ex_budget_usd: 1650.26, real_units: 7637, final_budget_mxn: 27218, final_budget_usd: 1581.52, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82049", ean: "22200000012610", pid: "2115387671", name: "Naranja Valencia", subcategoria: "Frutas", h_units: 359.6, h_orders: 99.4, avg_price: 6.74, ex_incr_units: 1438, ex_incr_orders: 398, ex_budget_mxn: 5815, ex_budget_usd: 337.89, real_units: 1214, final_budget_mxn: 4909, final_budget_usd: 285.24, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "72931", ean: "644197393714", pid: "2115482159", name: "Mango Ataulfo 340 g", subcategoria: "Frutas", h_units: 254.5, h_orders: 106.9, avg_price: 18.95, ex_incr_units: 1018, ex_incr_orders: 428, ex_budget_mxn: 11575, ex_budget_usd: 672.57, real_units: 306, final_budget_mxn: 3479, final_budget_usd: 202.15, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82050", ean: "22200000012580", pid: "2115387684", name: "Manzana Golden", subcategoria: "Frutas", h_units: 226.7, h_orders: 90.2, avg_price: 9.92, ex_incr_units: 907, ex_incr_orders: 361, ex_budget_mxn: 5398, ex_budget_usd: 313.66, real_units: 520, final_budget_mxn: 3095, final_budget_usd: 179.84, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_240226", sync: "82129", ean: "22200000012955", pid: "2115399697", name: "Durazno Melocotón", subcategoria: "Frutas", h_units: 22.5, h_orders: 13.1, avg_price: 22.79, ex_incr_units: 90, ex_incr_orders: 52, ex_budget_mxn: 1231, ex_budget_usd: 71.53, real_units: 22, final_budget_mxn: 301, final_budget_usd: 17.49, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
