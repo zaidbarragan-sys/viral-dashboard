@@ -725,7 +725,7 @@ const PREVIRAL_DEALS = [
     categoria_display: "Lubricantes, Preservativos"
   },
   {
-    deal_id: "VIRAL_DEAL_COLIMA_300526",
+    deal_id: "VIRAL_DEAL_COLIMA_290526",
     maker_name: "Cervecería de Colima",
     maker_aux: "Colima",
     business_unit: "Drinks",
@@ -734,7 +734,7 @@ const PREVIRAL_DEALS = [
     tipo_viral: "1 día",
     ciudades: "Nacional",
     fecha_planeacion: "2026-04-21",
-    fecha_ejecucion: "2026-05-30",
+    fecha_ejecucion: "2026-05-29",
     fecha_fin: null,
     usd_mxn: 17.25,
     fecha_tasa: "2026-05-05",
@@ -1628,10 +1628,10 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_SICO_270626", sync: "7560", ean: "7501685171120", pid: "2109994473", name: "Sico Condon Invisible Ultra Sense", subcategoria: "Preservativos", h_units: 7.9, h_orders: 6.6, avg_price: 295.95, ex_incr_units: 32, ex_incr_orders: 26, ex_budget_mxn: 5682, ex_budget_usd: 326.55, real_units: 63, final_budget_mxn: 11187, final_budget_usd: 643.05, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_SICO_270626", sync: "10439", ean: "7501058367136", pid: "2115735606", name: "Sico Condones Safety", subcategoria: "Preservativos", h_units: 2.3, h_orders: 2.1, avg_price: 259.17, ex_incr_units: 9, ex_incr_orders: 8, ex_budget_mxn: 1400, ex_budget_usd: 80.46, real_units: 20, final_budget_mxn: 3110, final_budget_usd: 178.74, sku_order: 5 },
   // Colima
-  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "13477", ean: "7503026716625", pid: "2115035630", name: "Cerveza Cervecería de Colima Piedra Lisa Lata 355 mL", subcategoria: "Cervezas", h_units: 423.3, h_orders: 145.1, avg_price: 49.03, ex_incr_units: 6773, ex_incr_orders: 2322, ex_budget_mxn: 19047, ex_budget_usd: 1104.17, real_units: 647, final_budget_mxn: 19033, final_budget_usd: 1103.36, sku_order: 1 },
-  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "13816", ean: "7503025396019", pid: "2115035630", name: "Cerveza Cervecería de Colima Colimita Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 47.05, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 236, final_budget_mxn: 6662, final_budget_usd: 386.20, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "91744", ean: "7503049667805", pid: "2115866429", name: "Colima Cero Session IPA Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 264, final_budget_mxn: 6653, final_budget_usd: 385.68, sku_order: 3 },
-  { deal_id: "VIRAL_DEAL_COLIMA_300526", sync: "91743", ean: "7503049667799", pid: "2115866428", name: "Colima Cero Lager Ambar Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 264, final_budget_mxn: 6653, final_budget_usd: 385.68, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_COLIMA_290526", sync: "13477", ean: "7503026716625", pid: "2115035630", name: "Cerveza Cervecería de Colima Piedra Lisa Lata 355 mL", subcategoria: "Cervezas", h_units: 423.3, h_orders: 145.1, avg_price: 49.03, ex_incr_units: 6773, ex_incr_orders: 2322, ex_budget_mxn: 19047, ex_budget_usd: 1104.17, real_units: 647, final_budget_mxn: 19033, final_budget_usd: 1103.36, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_COLIMA_290526", sync: "13816", ean: "7503025396019", pid: "2115035630", name: "Cerveza Cervecería de Colima Colimita Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 47.05, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 236, final_budget_mxn: 6662, final_budget_usd: 386.20, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_COLIMA_290526", sync: "91744", ean: "7503049667805", pid: "2115866429", name: "Colima Cero Session IPA Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 264, final_budget_mxn: 6653, final_budget_usd: 385.68, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_COLIMA_290526", sync: "91743", ean: "7503049667799", pid: "2115866428", name: "Colima Cero Lager Ambar Lata 355 mL", subcategoria: "Cervezas", h_units: 147.9, h_orders: 57.0, avg_price: 42.00, ex_incr_units: 2366, ex_incr_orders: 912, ex_budget_mxn: 6651, ex_budget_usd: 385.57, real_units: 264, final_budget_mxn: 6653, final_budget_usd: 385.68, sku_order: 4 },
   // Bachoco 02-may
   { deal_id: "VIRAL_DEAL_BACHOCO_020526", sync: "14192", ean: "7501101545702", pid: "2115738820", name: "Bachoco - Alitas picositas - 700 g", subcategoria: "Pollo y aves", h_units: 10.9, h_orders: 9.0, avg_price: 179.28, ex_incr_units: 109, ex_incr_orders: 90, ex_budget_mxn: 11725, ex_budget_usd: 674.24, real_units: 483, final_budget_mxn: 51955, final_budget_usd: 2987.64, sku_order: 1 },
   // Bachoco 04-may
