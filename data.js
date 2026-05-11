@@ -2093,6 +2093,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 1000, canib_ord_bench: 1234, canib_ord_delta_pct: -19.0,
     canib_und_post: 1378, canib_und_bench: 1720, canib_und_delta_pct: -19.9,
     canib_cli_post: 840, canib_cli_bench: 1068, canib_cli_delta_pct: -21.3
+  },
+  {
+    deal_id: "VIRAL_DEAL_BACHOCO_040526",
+    post_days: 4, fase: 2,
+    gmv_activacion: 15569, gmv_lw: 2443, gmv_dlw_pct: 537.4, gmv_l4w: 1677, gmv_dl4w_pct: 828.5,
+    usuarios_unicos: 60,
+    usr_lw: 11, usr_dlw_pct: 445.5, usr_l4w: 7.25, usr_dl4w_pct: 727.6,
+    cr_pct: 2.98,
+    aov: 251.11, aov_lw: 222.06, aov_dlw_pct: 13.1, aov_l4w: 223.57, aov_dl4w_pct: 12.3,
+    unidades_total: 83, und_lw: 13, und_dlw_pct: 538.5, und_l4w: 9.5, und_dl4w_pct: 773.7,
+    ordenes_total: 62, ord_lw: 11, ord_dlw_pct: 463.6, ord_l4w: 7.5, ord_dl4w_pct: 726.7,
+    impresiones_total: 2014,
+    so_turbo_mx: 4772216, gmv_categoria: 29936,
+    gmv_cat_lw: 10811, gmv_cat_l4w: 10867,
+    share_deal_cat_pct: 52.01, share_lw_pct: 85.03, share_l4w_pct: 82.02,
+    gmv_basket: 25600, gmv_sellup: 10031, pct_sellup: 39.18,
+    aov_basket: 412.90, aov_deal_post: 251.11,
+    cross_ordenes: 62, cross_skus_distintos: 149,
+    cross_top_producto: "Zanahoria", cross_top_ordenes: 9, cross_top_pct: 14.52,
+    inv_oos_cierre_viral_avg: 15, inv_oos_post_avg: 14,
+    inv_cov_viral_ap_avg: 44.2, inv_cov_viral_ci_avg: 22.4,
+    inv_cov_post_avg: 30.8, inv_cov_bench_avg: 15.1,
+    canib_ord_post: 46, canib_ord_bench: 36, canib_ord_delta_pct: 27.8,
+    canib_und_post: 71, canib_und_bench: 48.5, canib_und_delta_pct: 46.4,
+    canib_cli_post: 61, canib_cli_bench: 42.75, canib_cli_delta_pct: 42.7
   }
 ];
 
@@ -2213,7 +2238,9 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   // Modelo
   { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 12 Latas 355mL", ordenes: 1100, usuarios: 934, unidades: 1920, gmv: 261726, aov: 237.93, impresiones: 21167, cr_pct: 4.41, gmv_dlw_pct: 1163.0, gmv_dl4w_pct: 1005.1, seg_nuevo: 631, seg_nuevo_pct: 58, seg_reactivado: 312, seg_reactivado_pct: 29, seg_retenido: 147, seg_retenido_pct: 14, stock_viral: 2934, stock_post: 1497, stock_bench: 3377, stock_delta_pct: -55.7, oos_cierre_viral: 22, oos_post: 15, cov_viral_ap: 75.6, cov_viral_ci: 43.7, cov_post: 59.2, canib_ord_post: 977, canib_ord_bench: 1175, canib_ord_delta_pct: -16.9, canib_und_post: 1338, canib_und_bench: 1588, canib_und_delta_pct: -15.8, canib_cli_post: 820, canib_cli_bench: 1020, canib_cli_delta_pct: -19.6 },
   { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "83819", name: "Cerveza Vicky Tajín 1 Lata 473mL", ordenes: 50, usuarios: 47, unidades: 87, gmv: 1854, aov: 37.09, impresiones: 1801, cr_pct: 2.61, gmv_dlw_pct: 2079.3, gmv_dl4w_pct: 2138.3, seg_nuevo: 44, seg_nuevo_pct: 88, seg_reactivado: 4, seg_reactivado_pct: 8, seg_retenido: 2, seg_retenido_pct: 4, stock_viral: 128, stock_post: 51, stock_bench: 158, stock_delta_pct: -67.5, oos_cierre_viral: 38, oos_post: 37, cov_viral_ap: 34.6, cov_viral_ci: 8.3, cov_post: 12.0, canib_ord_post: 14, canib_ord_bench: 32, canib_ord_delta_pct: -55.6, canib_und_post: 22, canib_und_bench: 54, canib_und_delta_pct: -59.4, canib_cli_post: 12, canib_cli_bench: 25, canib_cli_delta_pct: -52.0 },
-  { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "86167", name: "Cerveza Flying Fish Lata 473mL", ordenes: 33, usuarios: 33, unidades: 69, gmv: 1610, aov: 48.78, impresiones: 1892, cr_pct: 1.74, gmv_dlw_pct: 167.7, gmv_dl4w_pct: 298.1, seg_nuevo: 30, seg_nuevo_pct: 91, seg_reactivado: 1, seg_reactivado_pct: 3, seg_retenido: 2, seg_retenido_pct: 6, stock_viral: 172, stock_post: 101, stock_bench: 251, stock_delta_pct: -59.8, oos_cierre_viral: 37, oos_post: 37, cov_viral_ap: 24.4, cov_viral_ci: 12.7, cov_post: 12.7, canib_ord_post: 9, canib_ord_bench: 27, canib_ord_delta_pct: -66.0, canib_und_post: 18, canib_und_bench: 78, canib_und_delta_pct: -76.9, canib_cli_post: 8, canib_cli_bench: 23, canib_cli_delta_pct: -64.8 }
+  { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "86167", name: "Cerveza Flying Fish Lata 473mL", ordenes: 33, usuarios: 33, unidades: 69, gmv: 1610, aov: 48.78, impresiones: 1892, cr_pct: 1.74, gmv_dlw_pct: 167.7, gmv_dl4w_pct: 298.1, seg_nuevo: 30, seg_nuevo_pct: 91, seg_reactivado: 1, seg_reactivado_pct: 3, seg_retenido: 2, seg_retenido_pct: 6, stock_viral: 172, stock_post: 101, stock_bench: 251, stock_delta_pct: -59.8, oos_cierre_viral: 37, oos_post: 37, cov_viral_ap: 24.4, cov_viral_ci: 12.7, cov_post: 12.7, canib_ord_post: 9, canib_ord_bench: 27, canib_ord_delta_pct: -66.0, canib_und_post: 18, canib_und_bench: 78, canib_und_delta_pct: -76.9, canib_cli_post: 8, canib_cli_bench: 23, canib_cli_delta_pct: -64.8 },
+  // Bachoco
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "83618", name: "Bachoco Filete de Pechuga de Pollo 430 g", ordenes: 62, usuarios: 60, unidades: 83, gmv: 15569, aov: 251.11, impresiones: 2014, cr_pct: 2.98, gmv_dlw_pct: 537.4, gmv_dl4w_pct: 828.5, seg_nuevo: 55, seg_nuevo_pct: 89, seg_reactivado: 3, seg_reactivado_pct: 5, seg_retenido: 4, seg_retenido_pct: 6, stock_viral: 161, stock_post: 80, stock_bench: 52, stock_delta_pct: 52.4, oos_cierre_viral: 15, oos_post: 14, cov_viral_ap: 44.2, cov_viral_ci: 22.4, cov_post: 30.8, canib_ord_post: 46, canib_ord_bench: 36, canib_ord_delta_pct: 27.8, canib_und_post: 71, canib_und_bench: 48.5, canib_und_delta_pct: 46.4, canib_cli_post: 61, canib_cli_bench: 42.75, canib_cli_delta_pct: 42.7 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -2378,7 +2405,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_MODELO_290426", subcategoria: "Snacks salados", ordenes: 96, gmv: 5991, pct_sellup: 4.33, order: 5 },
   { deal_id: "VIRAL_DEAL_MODELO_290426", subcategoria: "Leche natural", ordenes: 33, gmv: 4637, pct_sellup: 3.35, order: 6 },
   { deal_id: "VIRAL_DEAL_MODELO_290426", subcategoria: "Cigarrillos", ordenes: 31, gmv: 4276, pct_sellup: 3.09, order: 7 },
-  { deal_id: "VIRAL_DEAL_MODELO_290426", subcategoria: "Whiskys", ordenes: 7, gmv: 3327, pct_sellup: 2.41, order: 8 }
+  { deal_id: "VIRAL_DEAL_MODELO_290426", subcategoria: "Whiskys", ordenes: 7, gmv: 3327, pct_sellup: 2.41, order: 8 },
+  // Bachoco
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", subcategoria: "Frutas", ordenes: 27, gmv: 1348, pct_sellup: 13.44, order: 1 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", subcategoria: "Huevos", ordenes: 10, gmv: 705, pct_sellup: 7.03, order: 2 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", subcategoria: "Panaderia salada", ordenes: 8, gmv: 701, pct_sellup: 6.99, order: 3 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", subcategoria: "Verduras", ordenes: 13, gmv: 546, pct_sellup: 5.44, order: 4 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", subcategoria: "Tortillas, tostadas y totopos", ordenes: 7, gmv: 527, pct_sellup: 5.25, order: 5 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", subcategoria: "Yogurt", ordenes: 4, gmv: 466, pct_sellup: 4.64, order: 6 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", subcategoria: "Leche natural", ordenes: 6, gmv: 395, pct_sellup: 3.94, order: 7 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", subcategoria: "Pollo y aves", ordenes: 2, gmv: 380, pct_sellup: 3.79, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -2615,5 +2651,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "14539", name: "Michelob Ultra Latón", subcategoria: "Cervezas", ordenes: 20, pct_deal: 1.76, order: 9 },
   { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "14946", name: "Mallas Limón 5pz", subcategoria: "Frutas", ordenes: 19, pct_deal: 1.67, order: 10 },
   { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "9039", name: "Michelob Ultra Lata", subcategoria: "Cervezas", ordenes: 17, pct_deal: 1.49, order: 11 },
-  { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "4730", name: "Topo Chico 1500mL", subcategoria: "Agua Nat. Gas.", ordenes: 16, pct_deal: 1.40, order: 12 }
+  { deal_id: "VIRAL_DEAL_MODELO_290426", sync: "4730", name: "Topo Chico 1500mL", subcategoria: "Agua Nat. Gas.", ordenes: 16, pct_deal: 1.40, order: 12 },
+  // Bachoco
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 9, pct_deal: 14.52, order: 1 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 6, pct_deal: 9.68, order: 2 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 5, pct_deal: 8.06, order: 3 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 5, pct_deal: 8.06, order: 4 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "10190", name: "Espinaca Manojo", subcategoria: "Verduras", ordenes: 4, pct_deal: 6.45, order: 5 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "5672", name: "San Juan Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 4, pct_deal: 6.45, order: 6 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 3, pct_deal: 4.84, order: 7 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "73264", name: "Bimbo Pan Tajado Integral 620 g", subcategoria: "Panaderia salada", ordenes: 3, pct_deal: 4.84, order: 8 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 3, pct_deal: 4.84, order: 9 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 3, pct_deal: 4.84, order: 10 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "82058", name: "Cebolla Blanca", subcategoria: "Frutas", ordenes: 3, pct_deal: 4.84, order: 11 },
+  { deal_id: "VIRAL_DEAL_BACHOCO_040526", sync: "11142", name: "Bokados Surtido Botanas Rico y Variadito 90 g", subcategoria: "Snacks salados", ordenes: 3, pct_deal: 4.84, order: 12 }
 ];
