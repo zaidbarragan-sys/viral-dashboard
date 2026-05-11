@@ -1395,6 +1395,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Chocolates"
+  },
+  {
+    deal_id: "VIRAL_DEAL_BIMBO_070326",
+    maker_name: "Bimbo",
+    maker_aux: "Bimbo",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-02-02",
+    fecha_ejecucion: "2026-03-07",
+    fecha_fin: null,
+    usd_mxn: 17.41,
+    fecha_tasa: "2026-02-02",
+    budget_maker_mxn: 70000,
+    budget_growth_mxn: 21000,
+    budget_total_mxn: 91000,
+    budget_maker_usd: 4022.40,
+    budget_growth_usd: 1206.72,
+    budget_total_usd: 5229.12,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Tortillas, tostadas y totopos, Tortas y ponques, Panaderia dulce"
   }
 ];
 
@@ -1662,7 +1686,15 @@ const PREVIRAL_SKU_DETAIL = [
   // Snickers (3 fechas)
   { deal_id: "VIRAL_DEAL_SNICKERS_150626", sync: "6035", ean: "7506174512248", pid: "1358956438", name: "Snickers Chocolate 48g", subcategoria: "Chocolates", h_units: 87.0, h_orders: 67.9, avg_price: 25.38, ex_incr_units: 609, ex_incr_orders: 475, ex_budget_mxn: 15456, ex_budget_usd: 899.65, real_units: 1024, final_budget_mxn: 26000, final_budget_usd: 1513.39, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_SNICKERS_300626", sync: "6035", ean: "7506174512248", pid: "1358956438", name: "Snickers Chocolate 48g", subcategoria: "Chocolates", h_units: 87.0, h_orders: 67.9, avg_price: 25.38, ex_incr_units: 609, ex_incr_orders: 475, ex_budget_mxn: 15456, ex_budget_usd: 899.65, real_units: 1024, final_budget_mxn: 26000, final_budget_usd: 1513.39, sku_order: 1 },
-  { deal_id: "VIRAL_DEAL_SNICKERS_190726", sync: "6035", ean: "7506174512248", pid: "1358956438", name: "Snickers Chocolate 48g", subcategoria: "Chocolates", h_units: 87.0, h_orders: 67.9, avg_price: 25.38, ex_incr_units: 609, ex_incr_orders: 475, ex_budget_mxn: 15456, ex_budget_usd: 899.65, real_units: 1024, final_budget_mxn: 26000, final_budget_usd: 1513.39, sku_order: 1 }
+  { deal_id: "VIRAL_DEAL_SNICKERS_190726", sync: "6035", ean: "7506174512248", pid: "1358956438", name: "Snickers Chocolate 48g", subcategoria: "Chocolates", h_units: 87.0, h_orders: 67.9, avg_price: 25.38, ex_incr_units: 609, ex_incr_orders: 475, ex_budget_mxn: 15456, ex_budget_usd: 899.65, real_units: 1024, final_budget_mxn: 26000, final_budget_usd: 1513.39, sku_order: 1 },
+  // Bimbo
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "5318", ean: "7501030486664", pid: "2115620184", name: "Tía Rosa Tortillinas de Harina de Trigo 561 g", subcategoria: "Tortillas, tostadas y totopos", h_units: 98.9, h_orders: 93.5, avg_price: 41.79, ex_incr_units: 791, ex_incr_orders: 748, ex_budget_mxn: 19833, ex_budget_usd: 1139.40, real_units: 649, final_budget_mxn: 16281, final_budget_usd: 935.15, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "6825", ean: "7501000153107", pid: "2115779728", name: "Marinela Gansito Pastelito Relleno de Mermelada de Fresa", subcategoria: "Tortas y ponques", h_units: 92.7, h_orders: 59.0, avg_price: 26.13, ex_incr_units: 742, ex_incr_orders: 472, ex_budget_mxn: 11632, ex_budget_usd: 668.12, real_units: 975, final_budget_mxn: 15286, final_budget_usd: 878.00, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "13139", ean: "7501000112425", pid: "2115779731", name: "Bimbo Donitas Espolvoreadas 105 g", subcategoria: "Panaderia dulce", h_units: 92.5, h_orders: 82.7, avg_price: 33.68, ex_incr_units: 740, ex_incr_orders: 662, ex_budget_mxn: 14954, ex_budget_usd: 859.05, real_units: 754, final_budget_mxn: 15230, final_budget_usd: 874.78, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "12664", ean: "7501030474227", pid: "2115779730", name: "Bimbo Donas Azucaradas 158 g", subcategoria: "Panaderia dulce", h_units: 83.1, h_orders: 75.1, avg_price: 31.48, ex_incr_units: 665, ex_incr_orders: 601, ex_budget_mxn: 12561, ex_budget_usd: 721.48, real_units: 725, final_budget_mxn: 13694, final_budget_usd: 786.56, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "7849", ean: "7501000153800", pid: "2115616097", name: "Marinela Pinguinos Pastelito de Chocolate Relleno con Crema", subcategoria: "Tortas y ponques", h_units: 78.6, h_orders: 60.3, avg_price: 31.84, ex_incr_units: 629, ex_incr_orders: 482, ex_budget_mxn: 12014, ex_budget_usd: 690.06, real_units: 678, final_budget_mxn: 12955, final_budget_usd: 744.11, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "4027", ean: "7503031361209", pid: "2114166725", name: "Bimbo Crossantines con Relleno Sabor a Chocolate 96 g", subcategoria: "Panaderia dulce", h_units: 73.5, h_orders: 66.4, avg_price: 30.00, ex_incr_units: 588, ex_incr_orders: 531, ex_budget_mxn: 10584, ex_budget_usd: 607.93, real_units: 672, final_budget_mxn: 12096, final_budget_usd: 694.77, sku_order: 6 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "13830", ean: "7501030480785", pid: "2115781775", name: "Milpa Real Totopos de Maíz para Chilaquiles 500 g", subcategoria: "Tortillas, tostadas y totopos", h_units: 33.2, h_orders: 29.9, avg_price: 60.41, ex_incr_units: 266, ex_incr_orders: 239, ex_budget_mxn: 9641, ex_budget_usd: 553.88, real_units: 151, final_budget_mxn: 5473, final_budget_usd: 314.36, sku_order: 7 }
 ];
 
 const POSTMORTEM_DEALS = [
