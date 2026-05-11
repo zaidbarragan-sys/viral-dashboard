@@ -1782,7 +1782,11 @@ const PREVIRAL_SKU_DETAIL = [
   // Pepsico
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "13979", ean: "7500478014569", pid: "2115411261", name: "Chokis Galletas Clásicas 76 g", subcategoria: "Galletas", h_units: 29.6, h_orders: 25.4, avg_price: 28.70, ex_incr_units: 444, ex_incr_orders: 381, ex_budget_mxn: 7647, ex_budget_usd: 444.34, real_units: 925, final_budget_mxn: 15929, final_budget_usd: 925.57, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "6221", ean: "7501000664221", pid: "2114047462", name: "Saladitas Galletas Clásicas 186 g", subcategoria: "Galletas", h_units: 23.7, h_orders: 17.8, avg_price: 28.57, ex_incr_units: 356, ex_incr_orders: 267, ex_budget_mxn: 6102, ex_budget_usd: 354.56, real_units: 745, final_budget_mxn: 12771, final_budget_usd: 742.07, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "80162", ean: "7500478013944", pid: "2115759953", name: "Chokis Rollo 180 g", subcategoria: "Galletas", h_units: 19.1, h_orders: 14.8, avg_price: 31.88, ex_incr_units: 287, ex_incr_orders: 222, ex_budget_mxn: 5490, ex_budget_usd: 319.00, real_units: 538, final_budget_mxn: 10293, final_budget_usd: 598.08, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "80162", ean: "7500478013944", pid: "2115759953", name: "Chokis Rollo 180 g", subcategoria: "Galletas", h_units: 19.1, h_orders: 14.8, avg_price: 31.88, ex_incr_units: 287, ex_incr_orders: 222, ex_budget_mxn: 5490, ex_budget_usd: 319.00, real_units: 538, final_budget_mxn: 10293, final_budget_usd: 598.08, sku_order: 3 },
+  // Pepsico 120326
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "80162", name: "Chokis Rollo 180 g", ordenes: 108, usuarios: 97, unidades: 265, gmv: 8800, aov: 81.48, impresiones: 2918, cr_pct: 3.32, gmv_dlw_pct: 2263.0, gmv_dl4w_pct: 2433.7, seg_nuevo: 98, seg_nuevo_pct: 91, seg_reactivado: 2, seg_reactivado_pct: 2, seg_retenido: 8, seg_retenido_pct: 7, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 17, canib_ord_bench: 37.25, canib_ord_delta_pct: -54.4, canib_und_post: 25, canib_und_bench: 47, canib_und_delta_pct: -46.8, canib_cli_post: 16, canib_cli_bench: 42, canib_cli_delta_pct: -61.9 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "6221", name: "Saladitas Galletas 186 g", ordenes: 103, usuarios: 91, unidades: 220, gmv: 5775, aov: 56.07, impresiones: 4111, cr_pct: 2.21, gmv_dlw_pct: 817.9, gmv_dl4w_pct: 676.3, seg_nuevo: 84, seg_nuevo_pct: 82, seg_reactivado: 6, seg_reactivado_pct: 6, seg_retenido: 13, seg_retenido_pct: 13, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 134, canib_ord_bench: 76.75, canib_ord_delta_pct: 74.6, canib_und_post: 188, canib_und_bench: 115.5, canib_und_delta_pct: 62.8, canib_cli_post: 124, canib_cli_bench: 81.75, canib_cli_delta_pct: 51.7 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "13979", name: "Chokis Galletas 76 g", ordenes: 96, usuarios: 92, unidades: 191, gmv: 5495, aov: 57.24, impresiones: 3533, cr_pct: 2.60, gmv_dlw_pct: 979.2, gmv_dl4w_pct: 1213.1, seg_nuevo: 66, seg_nuevo_pct: 69, seg_reactivado: 24, seg_reactivado_pct: 25, seg_retenido: 6, seg_retenido_pct: 6, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 67, canib_ord_bench: 39.75, canib_ord_delta_pct: 68.6, canib_und_post: 94, canib_und_bench: 49.75, canib_und_delta_pct: 88.9, canib_cli_post: 73, canib_cli_bench: 43.75, canib_cli_delta_pct: 66.9 }
 ];
 
 const POSTMORTEM_DEALS = [
@@ -2288,6 +2292,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 1311, canib_ord_bench: 1674.75, canib_ord_delta_pct: -21.7,
     canib_und_post: 1858, canib_und_bench: 2320, canib_und_delta_pct: -19.9,
     canib_cli_post: 1366, canib_cli_bench: 1778, canib_cli_delta_pct: -23.2
+  },
+  {
+    deal_id: "VIRAL_DEAL_PEPSICO_120326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 20070, gmv_lw: 1511, gmv_dlw_pct: 1228.5, gmv_l4w: 1510, gmv_dl4w_pct: 1229.4,
+    usuarios_unicos: 200,
+    usr_lw: 40, usr_dlw_pct: 400.0, usr_l4w: 41, usr_dl4w_pct: 387.8,
+    cr_pct: 1.89,
+    aov: 89.60, aov_lw: 35.97, aov_dlw_pct: 149.0, aov_l4w: 35.52, aov_dl4w_pct: 152.3,
+    unidades_total: 676, und_lw: 54, und_dlw_pct: 1151.9, und_l4w: 52.25, und_dl4w_pct: 1194.3,
+    ordenes_total: 224, ord_lw: 42, ord_dlw_pct: 433.3, ord_l4w: 42.5, ord_dl4w_pct: 427.1,
+    impresiones_total: 10562,
+    so_turbo_mx: 2377089, gmv_categoria: 46013,
+    gmv_cat_lw: 27121, gmv_cat_l4w: 29364,
+    share_deal_cat_pct: 43.62, share_lw_pct: 5.57, share_l4w_pct: 5.14,
+    gmv_basket: 54357, gmv_sellup: 34288, pct_sellup: 63.08,
+    aov_basket: 242.67, aov_deal_post: 89.60,
+    cross_ordenes: 224, cross_skus_distintos: 445,
+    cross_top_producto: "Plátano Chiapas", cross_top_ordenes: 12, cross_top_pct: 5.36,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 218, canib_ord_bench: 153.75, canib_ord_delta_pct: 41.8,
+    canib_und_post: 307, canib_und_bench: 212.25, canib_und_delta_pct: 44.6,
+    canib_cli_post: 213, canib_cli_bench: 167.5, canib_cli_delta_pct: 27.2
   }
 ];
 
@@ -2616,7 +2645,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Cigarrillos", ordenes: 21, gmv: 4624, pct_sellup: 3.29, order: 5 },
   { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Leche natural", ordenes: 80, gmv: 4559, pct_sellup: 3.24, order: 6 },
   { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Quesos semiduros", ordenes: 40, gmv: 4272, pct_sellup: 3.04, order: 7 },
-  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Tortas y ponques", ordenes: 84, gmv: 4041, pct_sellup: 2.88, order: 8 }
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Tortas y ponques", ordenes: 84, gmv: 4041, pct_sellup: 2.88, order: 8 },
+  // Pepsico 120326
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Snacks salados", ordenes: 45, gmv: 3045, pct_sellup: 8.88, order: 1 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Gaseosas", ordenes: 31, gmv: 1770, pct_sellup: 5.16, order: 2 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Frutas", ordenes: 37, gmv: 1754, pct_sellup: 5.11, order: 3 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Yogurt", ordenes: 12, gmv: 1616, pct_sellup: 4.71, order: 4 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Embutidos", ordenes: 6, gmv: 1441, pct_sellup: 4.20, order: 5 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Galletas", ordenes: 26, gmv: 1371, pct_sellup: 4.00, order: 6 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Huevos", ordenes: 15, gmv: 1334, pct_sellup: 3.89, order: 7 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Agua Natural", ordenes: 27, gmv: 1294, pct_sellup: 3.77, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -2892,5 +2930,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 18, pct_deal: 1.82, order: 9 },
   { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "71550", name: "Mordisko Helado Original Vainilla", subcategoria: "Helados", ordenes: 17, pct_deal: 1.72, order: 10 },
   { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "11217", name: "Bimbo Nito Pan Dulce 62 g", subcategoria: "Tortas y ponques", ordenes: 17, pct_deal: 1.72, order: 11 },
-  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "74135", name: "Oreo Galleta Original 4 Und", subcategoria: "Galletas", ordenes: 16, pct_deal: 1.62, order: 12 }
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "74135", name: "Oreo Galleta Original 4 Und", subcategoria: "Galletas", ordenes: 16, pct_deal: 1.62, order: 12 },
+  // Pepsico 120326
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 12, pct_deal: 5.36, order: 1 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "8033", name: "Ciel Agua Natural 10 L", subcategoria: "Agua Natural", ordenes: 7, pct_deal: 3.13, order: 2 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "14375", name: "Limón Sin Semilla Malla", subcategoria: "Frutas", ordenes: 7, pct_deal: 3.13, order: 3 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "74135", name: "Oreo Galleta Original 4 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 3.13, order: 4 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 6, pct_deal: 2.68, order: 5 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "74142", name: "Takis Fuego 94 g", subcategoria: "Snacks salados", ordenes: 6, pct_deal: 2.68, order: 6 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 6, pct_deal: 2.68, order: 7 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "6149", name: "Coca-Cola Sin Azúcar 600 mL", subcategoria: "Gaseosas", ordenes: 5, pct_deal: 2.23, order: 8 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.23, order: 9 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.23, order: 10 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "13818", name: "Topo Chico Agua Mineral 600 mL", subcategoria: "Agua Natural", ordenes: 5, pct_deal: 2.23, order: 11 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "6744", name: "Coca-Cola Original 600 mL", subcategoria: "Gaseosas", ordenes: 5, pct_deal: 2.23, order: 12 }
 ];
