@@ -2721,6 +2721,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
     canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
     canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  },
+  {
+    deal_id: "VIRAL_DEAL_MODELO_250326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 429421, gmv_lw: 51418, gmv_dlw_pct: 735.2, gmv_l4w: 47359, gmv_dl4w_pct: 806.7,
+    usuarios_unicos: 1016,
+    usr_lw: 272, usr_dlw_pct: 273.5, usr_l4w: 267.25, usr_dl4w_pct: 280.2,
+    cr_pct: 1.85,
+    aov: 332.63, aov_lw: 153.03, aov_dlw_pct: 117.4, aov_l4w: 153.22, aov_dl4w_pct: 117.2,
+    unidades_total: 4305, und_lw: 519, und_dlw_pct: 729.5, und_l4w: 501.5, und_dl4w_pct: 758.5,
+    ordenes_total: 1291, ord_lw: 336, ord_dlw_pct: 284.2, ord_l4w: 309, ord_dl4w_pct: 317.8,
+    impresiones_total: 55070,
+    so_turbo_mx: 3373710, gmv_categoria: 622636,
+    gmv_cat_lw: 257117, gmv_cat_l4w: 254179,
+    share_deal_cat_pct: 68.97, share_lw_pct: 20.00, share_l4w_pct: 18.63,
+    gmv_basket: 498106, gmv_sellup: 68685, pct_sellup: 13.79,
+    aov_basket: 385.83, aov_deal_post: 332.63,
+    cross_ordenes: 1291, cross_skus_distintos: 595,
+    cross_top_producto: "Corona Extra Latón 710mL", cross_top_ordenes: 17, cross_top_pct: 1.32,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 2224, canib_ord_bench: 3066.25, canib_ord_delta_pct: -27.5,
+    canib_und_post: 5039, canib_und_bench: 6011.25, canib_und_delta_pct: -16.2,
+    canib_cli_post: 2386, canib_cli_bench: 2889, canib_cli_delta_pct: -17.4
   }
 ];
 
@@ -2892,7 +2917,12 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   // Floravid 210326
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90296", name: "Primavera 3 Girasoles", ordenes: 343, usuarios: 329, unidades: 370, gmv: 95058, aov: 277.14, impresiones: 839, cr_pct: 39.21, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 343, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90295", name: "Mix Floral 25 Flores Surtidas Amarillas", ordenes: 249, usuarios: 238, unidades: 252, gmv: 74722, aov: 300.09, impresiones: 886, cr_pct: 26.86, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 248, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 1, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
-  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90297", name: "Frescura 15 Margaritas Amarillas", ordenes: 126, usuarios: 125, unidades: 129, gmv: 29546, aov: 234.49, impresiones: 649, cr_pct: 19.26, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 126, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90297", name: "Frescura 15 Margaritas Amarillas", ordenes: 126, usuarios: 125, unidades: 129, gmv: 29546, aov: 234.49, impresiones: 649, cr_pct: 19.26, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 126, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  // Modelo 250326
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "13692", name: "Modelo Especial 6x355 mL", ordenes: 743, usuarios: 626, unidades: 1442, gmv: 203506, aov: 273.90, impresiones: 22484, cr_pct: 2.78, gmv_dlw_pct: 737.8, gmv_dl4w_pct: 761.5, seg_nuevo: 406, seg_nuevo_pct: 55, seg_reactivado: 220, seg_reactivado_pct: 30, seg_retenido: 117, seg_retenido_pct: 16, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 946, canib_ord_bench: 1344.25, canib_ord_delta_pct: -29.6, canib_und_post: 1545, canib_und_bench: 2264.25, canib_und_delta_pct: -31.8, canib_cli_post: 1035, canib_cli_bench: 1281.75, canib_cli_delta_pct: -19.3 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "5314", name: "Michelob Ultra 6x355 mL", ordenes: 595, usuarios: 451, unidades: 1630, gmv: 196255, aov: 329.84, impresiones: 19181, cr_pct: 2.35, gmv_dlw_pct: 732.6, gmv_dl4w_pct: 891.8, seg_nuevo: 308, seg_nuevo_pct: 52, seg_reactivado: 196, seg_reactivado_pct: 33, seg_retenido: 91, seg_retenido_pct: 15, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 899, canib_ord_bench: 1371.5, canib_ord_delta_pct: -34.5, canib_und_post: 1554, canib_und_bench: 2348, canib_und_delta_pct: -33.8, canib_cli_post: 979, canib_cli_bench: 1309.75, canib_cli_delta_pct: -25.3 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "7857", name: "Corona Extra Latón 473 mL", ordenes: 187, usuarios: 151, unidades: 1088, gmv: 26877, aov: 143.73, impresiones: 10376, cr_pct: 1.46, gmv_dlw_pct: 697.6, gmv_dl4w_pct: 616.5, seg_nuevo: 80, seg_nuevo_pct: 43, seg_reactivado: 61, seg_reactivado_pct: 33, seg_retenido: 46, seg_retenido_pct: 25, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 346, canib_ord_bench: 303.5, canib_ord_delta_pct: 14.0, canib_und_post: 1797, canib_und_bench: 1240.25, canib_und_delta_pct: 44.9, canib_cli_post: 344, canib_cli_bench: 254.75, canib_cli_delta_pct: 35.0 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "86168", name: "Flying Fish Lata 355 mL", ordenes: 71, usuarios: 70, unidades: 145, gmv: 2783, aov: 39.20, impresiones: 3029, cr_pct: 2.31, gmv_dlw_pct: 1407.7, gmv_dl4w_pct: 1314.6, seg_nuevo: 64, seg_nuevo_pct: 90, seg_reactivado: 5, seg_reactivado_pct: 7, seg_retenido: 2, seg_retenido_pct: 3, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 33, canib_ord_bench: 47, canib_ord_delta_pct: -29.8, canib_und_post: 143, canib_und_bench: 158.75, canib_und_delta_pct: -9.9, canib_cli_post: 28, canib_cli_bench: 42.75, canib_cli_delta_pct: -34.5 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -3147,7 +3177,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Helados", ordenes: 9, gmv: 687, pct_sellup: 4.56, order: 5 },
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Galletas", ordenes: 19, gmv: 683, pct_sellup: 4.53, order: 6 },
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Rones", ordenes: 2, gmv: 651, pct_sellup: 4.31, order: 7 },
-  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Snacks salados", ordenes: 8, gmv: 536, pct_sellup: 3.56, order: 8 }
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Snacks salados", ordenes: 8, gmv: 536, pct_sellup: 3.56, order: 8 },
+  // Modelo 250326
+  { deal_id: "VIRAL_DEAL_MODELO_250326", subcategoria: "Cervezas", ordenes: 146, gmv: 13230, pct_sellup: 19.26, order: 1 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", subcategoria: "Gaseosas", ordenes: 100, gmv: 6241, pct_sellup: 9.09, order: 2 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", subcategoria: "Snacks salados", ordenes: 93, gmv: 6154, pct_sellup: 8.96, order: 3 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", subcategoria: "Cigarrillos", ordenes: 42, gmv: 5559, pct_sellup: 8.09, order: 4 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", subcategoria: "Frutas", ordenes: 50, gmv: 2396, pct_sellup: 3.49, order: 5 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", subcategoria: "Huevos", ordenes: 26, gmv: 1715, pct_sellup: 2.50, order: 6 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", subcategoria: "Galletas", ordenes: 39, gmv: 1699, pct_sellup: 2.47, order: 7 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", subcategoria: "Agua Natural", ordenes: 38, gmv: 1575, pct_sellup: 2.29, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -3514,5 +3553,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 3, pct_deal: 0.43, order: 9 },
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "12718", name: "Turin Conejo de Chocolate 20 g", subcategoria: "Chocolates", ordenes: 3, pct_deal: 0.43, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "8770", name: "Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 3, pct_deal: 0.43, order: 11 },
-  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 3, pct_deal: 0.43, order: 12 }
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 3, pct_deal: 0.43, order: 12 },
+  // Modelo 250326
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "4939", name: "Corona Extra Latón 710 mL", subcategoria: "Cervezas", ordenes: 17, pct_deal: 1.32, order: 1 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "4730", name: "Topo Chico 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 17, pct_deal: 1.32, order: 2 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "8462", name: "Coca-Cola Original 3 L", subcategoria: "Gaseosas", ordenes: 15, pct_deal: 1.16, order: 3 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "6859", name: "Carta Blanca 6x300 mL", subcategoria: "Cervezas", ordenes: 15, pct_deal: 1.16, order: 4 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "74135", name: "Oreo Galleta Original 4 Und", subcategoria: "Galletas", ordenes: 14, pct_deal: 1.08, order: 5 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "4950", name: "Victoria Latón 710 mL", subcategoria: "Cervezas", ordenes: 13, pct_deal: 1.01, order: 6 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 12, pct_deal: 0.93, order: 7 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "6425", name: "Santa Clara Leche Entera 1 L", subcategoria: "Leche natural", ordenes: 11, pct_deal: 0.85, order: 8 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "6744", name: "Coca-Cola Original 600 mL", subcategoria: "Gaseosas", ordenes: 11, pct_deal: 0.85, order: 9 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 11, pct_deal: 0.85, order: 10 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "7441", name: "Coca-Cola Original 1 L", subcategoria: "Gaseosas", ordenes: 11, pct_deal: 0.85, order: 11 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 10, pct_deal: 0.77, order: 12 }
 ];
