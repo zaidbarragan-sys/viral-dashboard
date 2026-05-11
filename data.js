@@ -2667,6 +2667,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 224, canib_ord_bench: 165.25, canib_ord_delta_pct: 35.6,
     canib_und_post: 304, canib_und_bench: 237, canib_und_delta_pct: 28.3,
     canib_cli_post: 193, canib_cli_bench: 129.75, canib_cli_delta_pct: 48.7
+  },
+  {
+    deal_id: "VIRAL_DEAL_FLORAVID_210326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 199325, gmv_lw: null, gmv_dlw_pct: null, gmv_l4w: null, gmv_dl4w_pct: null,
+    usuarios_unicos: 670,
+    usr_lw: null, usr_dlw_pct: null, usr_l4w: null, usr_dl4w_pct: null,
+    cr_pct: 28.22,
+    aov: 284.75, aov_lw: null, aov_dlw_pct: null, aov_l4w: null, aov_dl4w_pct: null,
+    unidades_total: 751, und_lw: null, und_dlw_pct: null, und_l4w: null, und_dl4w_pct: null,
+    ordenes_total: 700, ord_lw: null, ord_dlw_pct: null, ord_l4w: null, ord_dl4w_pct: null,
+    impresiones_total: 2374,
+    so_turbo_mx: 3678836, gmv_categoria: 199325,
+    gmv_cat_lw: null, gmv_cat_l4w: null,
+    share_deal_cat_pct: 100.0, share_lw_pct: null, share_l4w_pct: null,
+    gmv_basket: 214411, gmv_sellup: 15086, pct_sellup: 7.04,
+    aov_basket: 306.30, aov_deal_post: 284.75,
+    cross_ordenes: 700, cross_skus_distintos: 187,
+    cross_top_producto: "Kinder Bueno 43g", cross_top_ordenes: 13, cross_top_pct: 1.86,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
 ];
 
@@ -2834,7 +2859,11 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "9639", name: "Don Julio 70 Añejo 700 mL", ordenes: 95, usuarios: 33, unidades: 161, gmv: 106499, aov: 1121.04, impresiones: 3635, cr_pct: 0.91, gmv_dlw_pct: 214.8, gmv_dl4w_pct: 309.4, seg_nuevo: 34, seg_nuevo_pct: 36, seg_reactivado: 2, seg_reactivado_pct: 2, seg_retenido: 59, seg_retenido_pct: 62, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 44, canib_ord_bench: 55.75, canib_ord_delta_pct: -21.1, canib_und_post: 65, canib_und_bench: 84, canib_und_delta_pct: -22.6, canib_cli_post: 23, canib_cli_bench: 32.25, canib_cli_delta_pct: -28.7 },
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "7985", name: "Don Julio Blanco 700 mL", ordenes: 104, usuarios: 48, unidades: 165, gmv: 65023, aov: 625.22, impresiones: 3424, cr_pct: 1.40, gmv_dlw_pct: 603.2, gmv_dl4w_pct: 948.0, seg_nuevo: 43, seg_nuevo_pct: 41, seg_reactivado: 9, seg_reactivado_pct: 9, seg_retenido: 52, seg_retenido_pct: 50, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 47, canib_ord_bench: 22.25, canib_ord_delta_pct: 111.2, canib_und_post: 57, canib_und_bench: 31, canib_und_delta_pct: 83.9, canib_cli_post: 40, canib_cli_bench: 18, canib_cli_delta_pct: 122.2 },
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "6867", name: "Johnnie Walker Black Label 750 mL", ordenes: 57, usuarios: 47, unidades: 67, gmv: 62078, aov: 1089.09, impresiones: 11884, cr_pct: 0.40, gmv_dlw_pct: 240.2, gmv_dl4w_pct: 232.5, seg_nuevo: 28, seg_nuevo_pct: 49, seg_reactivado: 13, seg_reactivado_pct: 23, seg_retenido: 16, seg_retenido_pct: 28, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 64, canib_ord_bench: 35, canib_ord_delta_pct: 82.9, canib_und_post: 94, canib_und_bench: 49, canib_und_delta_pct: 91.8, canib_cli_post: 63, canib_cli_bench: 37, canib_cli_delta_pct: 70.3 },
-  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "10540", name: "Black & White Scotch 700 mL", ordenes: 87, usuarios: 67, unidades: 119, gmv: 26978, aov: 310.09, impresiones: 4188, cr_pct: 1.60, gmv_dlw_pct: 328.1, gmv_dl4w_pct: 455.3, seg_nuevo: 43, seg_nuevo_pct: 49, seg_reactivado: 12, seg_reactivado_pct: 14, seg_retenido: 32, seg_retenido_pct: 37, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 69, canib_ord_bench: 52.25, canib_ord_delta_pct: 32.1, canib_und_post: 88, canib_und_bench: 73, canib_und_delta_pct: 20.5, canib_cli_post: 67, canib_cli_bench: 42.5, canib_cli_delta_pct: 57.6 }
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "10540", name: "Black & White Scotch 700 mL", ordenes: 87, usuarios: 67, unidades: 119, gmv: 26978, aov: 310.09, impresiones: 4188, cr_pct: 1.60, gmv_dlw_pct: 328.1, gmv_dl4w_pct: 455.3, seg_nuevo: 43, seg_nuevo_pct: 49, seg_reactivado: 12, seg_reactivado_pct: 14, seg_retenido: 32, seg_retenido_pct: 37, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 69, canib_ord_bench: 52.25, canib_ord_delta_pct: 32.1, canib_und_post: 88, canib_und_bench: 73, canib_und_delta_pct: 20.5, canib_cli_post: 67, canib_cli_bench: 42.5, canib_cli_delta_pct: 57.6 },
+  // Floravid 210326
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90296", name: "Primavera 3 Girasoles", ordenes: 343, usuarios: 329, unidades: 370, gmv: 95058, aov: 277.14, impresiones: 839, cr_pct: 39.21, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 343, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90295", name: "Mix Floral 25 Flores Surtidas Amarillas", ordenes: 249, usuarios: 238, unidades: 252, gmv: 74722, aov: 300.09, impresiones: 886, cr_pct: 26.86, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 248, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 1, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90297", name: "Frescura 15 Margaritas Amarillas", ordenes: 126, usuarios: 125, unidades: 129, gmv: 29546, aov: 234.49, impresiones: 649, cr_pct: 19.26, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 126, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -3080,7 +3109,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Rones", ordenes: 5, gmv: 2022, pct_sellup: 4.95, order: 5 },
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Vino tinto", ordenes: 6, gmv: 1965, pct_sellup: 4.81, order: 6 },
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Mezcales", ordenes: 3, gmv: 1844, pct_sellup: 4.51, order: 7 },
-  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Gaseosas", ordenes: 19, gmv: 1314, pct_sellup: 3.21, order: 8 }
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Gaseosas", ordenes: 19, gmv: 1314, pct_sellup: 3.21, order: 8 },
+  // Floravid 210326
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Chocolates", ordenes: 42, gmv: 2441, pct_sellup: 16.17, order: 1 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Cervezas", ordenes: 12, gmv: 1254, pct_sellup: 8.31, order: 2 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Frutas", ordenes: 16, gmv: 934, pct_sellup: 6.19, order: 3 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Frutos secos y semillas", ordenes: 6, gmv: 696, pct_sellup: 4.61, order: 4 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Helados", ordenes: 9, gmv: 687, pct_sellup: 4.56, order: 5 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Galletas", ordenes: 19, gmv: 683, pct_sellup: 4.53, order: 6 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Rones", ordenes: 2, gmv: 651, pct_sellup: 4.31, order: 7 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", subcategoria: "Snacks salados", ordenes: 8, gmv: 536, pct_sellup: 3.56, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -3434,5 +3472,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "5436", name: "Marlboro Red 20 ud", subcategoria: "Cigarrillos", ordenes: 4, pct_deal: 1.25, order: 9 },
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "8197", name: "Ron Bacardi Carta Blanca 980 mL", subcategoria: "Rones", ordenes: 4, pct_deal: 1.25, order: 10 },
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "4733", name: "Peñafiel Sifón 1750 mL", subcategoria: "Agua Natural", ordenes: 4, pct_deal: 1.25, order: 11 },
-  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "12645", name: "Chile Serrano", subcategoria: "Verduras", ordenes: 3, pct_deal: 0.94, order: 12 }
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "12645", name: "Chile Serrano", subcategoria: "Verduras", ordenes: 3, pct_deal: 0.94, order: 12 },
+  // Floravid 210326
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "13475", name: "Kinder Bueno 43 g", subcategoria: "Galletas", ordenes: 13, pct_deal: 1.86, order: 1 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "5346", name: "Kinder Délice 39 g", subcategoria: "Tortas y ponques", ordenes: 5, pct_deal: 0.71, order: 2 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "15047", name: "Reeses Chocolate Cacahuate 37 g", subcategoria: "Chocolates", ordenes: 5, pct_deal: 0.71, order: 3 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "74510", name: "Ferrero Rocher Avellana 125 g", subcategoria: "Chocolates", ordenes: 4, pct_deal: 0.57, order: 4 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "14375", name: "Limón Sin Semilla Malla", subcategoria: "Frutas", ordenes: 4, pct_deal: 0.57, order: 5 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "12302", name: "Kinder Chocolate 50 g", subcategoria: "Chocolates", ordenes: 4, pct_deal: 0.57, order: 6 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "7750", name: "Electrolit Naranja-Mandarina 625 mL", subcategoria: "Suero", ordenes: 3, pct_deal: 0.43, order: 7 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "4730", name: "Topo Chico 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 3, pct_deal: 0.43, order: 8 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 3, pct_deal: 0.43, order: 9 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "12718", name: "Turin Conejo de Chocolate 20 g", subcategoria: "Chocolates", ordenes: 3, pct_deal: 0.43, order: 10 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "8770", name: "Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 3, pct_deal: 0.43, order: 11 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 3, pct_deal: 0.43, order: 12 }
 ];
