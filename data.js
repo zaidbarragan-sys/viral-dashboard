@@ -1659,6 +1659,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Whiskys, Tequilas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FLORAVID_210326",
+    maker_name: "Floravid",
+    maker_aux: "Floravid",
+    business_unit: "WOW",
+    descuento_pct: 30,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-02-26",
+    fecha_ejecucion: "2026-03-21",
+    fecha_fin: null,
+    usd_mxn: 17.18,
+    fecha_tasa: "2026-02-26",
+    budget_maker_mxn: 0,
+    budget_growth_mxn: 100000,
+    budget_total_mxn: 100000,
+    budget_maker_usd: 0,
+    budget_growth_usd: 5821.72,
+    budget_total_usd: 5821.72,
+    financiamiento_maker: "—",
+    pct_growth_vs_maker: 0,
+    categoria_display: "Ramos y bouquets"
   }
 ];
 
@@ -1983,7 +2007,11 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "10540", ean: "50196265", pid: "2115108198", name: "Whisky Black & White Scotch 700 mL", subcategoria: "Whiskys", h_units: 20.6, h_orders: 18.6, avg_price: 281.67, ex_incr_units: 330, ex_incr_orders: 298, ex_budget_mxn: 37180, ex_budget_usd: 2151.62, real_units: 443, final_budget_mxn: 49912, final_budget_usd: 2888.43, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "6867", ean: "5000267024004", pid: "2115111864", name: "Whisky Johnnie Walker Black Label 750 mL", subcategoria: "Whiskys", h_units: 14.5, h_orders: 13.8, avg_price: 1121.68, ex_incr_units: 232, ex_incr_orders: 221, ex_budget_mxn: 104092, ex_budget_usd: 6024.31, real_units: 78, final_budget_mxn: 34996, final_budget_usd: 2025.23, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "9639", ean: "5000281056265", pid: "2115559066", name: "Tequila Don Julio 70 Añejo 700 mL", subcategoria: "Tequilas", h_units: 13.1, h_orders: 10.6, avg_price: 1039.87, ex_incr_units: 210, ex_incr_orders: 170, ex_budget_mxn: 87349, ex_budget_usd: 5054.34, real_units: 76, final_budget_mxn: 31612, final_budget_usd: 1829.63, sku_order: 3 },
-  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "7985", ean: "5000281056272", pid: "2115055349", name: "Tequila Blanco Don Julio 700 mL", subcategoria: "Tequilas", h_units: 5.5, h_orders: 5.0, avg_price: 676.17, ex_incr_units: 88, ex_incr_orders: 80, ex_budget_mxn: 23801, ex_budget_usd: 1377.37, real_units: 49, final_budget_mxn: 13253, final_budget_usd: 766.78, sku_order: 4 }
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "7985", ean: "5000281056272", pid: "2115055349", name: "Tequila Blanco Don Julio 700 mL", subcategoria: "Tequilas", h_units: 5.5, h_orders: 5.0, avg_price: 676.17, ex_incr_units: 88, ex_incr_orders: 80, ex_budget_mxn: 23801, ex_budget_usd: 1377.37, real_units: 49, final_budget_mxn: 13253, final_budget_usd: 766.78, sku_order: 4 },
+  // Floravid 210326
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90296", ean: "7509999900566", pid: "2115796500", name: "Primavera 3 Girasoles", subcategoria: "Ramos y bouquets", h_units: 0, h_orders: 0, avg_price: 259.90, ex_incr_units: 250, ex_incr_orders: 250, ex_budget_mxn: 19493, ex_budget_usd: 1134.63, real_units: 493, final_budget_mxn: 38439, final_budget_usd: 2237.99, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90297", ean: "7509999900252", pid: "2115796499", name: "Frescura 15 Margaritas Amarillas", subcategoria: "Ramos y bouquets", h_units: 0, h_orders: 0, avg_price: 230.90, ex_incr_units: 200, ex_incr_orders: 200, ex_budget_mxn: 13854, ex_budget_usd: 806.40, real_units: 444, final_budget_mxn: 30754, final_budget_usd: 1789.87, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90295", ean: "7509999900115", pid: "2115796498", name: "Mix Floral 25 Flores Surtidas Amarillas", subcategoria: "Ramos y bouquets", h_units: 0, h_orders: 0, avg_price: 299.90, ex_incr_units: 200, ex_incr_orders: 200, ex_budget_mxn: 17994, ex_budget_usd: 1047.38, real_units: 342, final_budget_mxn: 30790, final_budget_usd: 1791.97, sku_order: 3 }
 ];
 
 const POSTMORTEM_DEALS = [
