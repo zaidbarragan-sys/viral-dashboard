@@ -2175,6 +2175,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 4061, canib_ord_bench: 3833.25, canib_ord_delta_pct: 5.9,
     canib_und_post: 11603, canib_und_bench: 11816, canib_und_delta_pct: -1.8,
     canib_cli_post: 4272, canib_cli_bench: 3684.5, canib_cli_delta_pct: 15.9
+  },
+  {
+    deal_id: "VIRAL_DEAL_BIMBO_070326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 124419, gmv_lw: 15419, gmv_dlw_pct: 706.9, gmv_l4w: 18300, gmv_dl4w_pct: 579.9,
+    usuarios_unicos: 751,
+    usr_lw: 311, usr_dlw_pct: 141.5, usr_l4w: 379.75, usr_dl4w_pct: 97.8,
+    cr_pct: 2.64,
+    aov: 125.80, aov_lw: 43.68, aov_dlw_pct: 188.0, aov_l4w: 44.02, aov_dl4w_pct: 185.8,
+    unidades_total: 4477, und_lw: 459, und_dlw_pct: 875.6, und_l4w: 537.5, und_dl4w_pct: 732.9,
+    ordenes_total: 989, ord_lw: 353, ord_dlw_pct: 180.2, ord_l4w: 415.75, ord_dl4w_pct: 137.9,
+    impresiones_total: 28403,
+    so_turbo_mx: 4980678, gmv_categoria: 162046,
+    gmv_cat_lw: 50344, gmv_cat_l4w: 56781,
+    share_deal_cat_pct: 76.78, share_lw_pct: 30.63, share_l4w_pct: 32.23,
+    gmv_basket: 264959, gmv_sellup: 140540, pct_sellup: 53.04,
+    aov_basket: 267.91, aov_deal_post: 125.80,
+    cross_ordenes: 989, cross_skus_distintos: 1095,
+    cross_top_producto: "Coca-Cola Original 600mL", cross_top_ordenes: 43, cross_top_pct: 4.35,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 1311, canib_ord_bench: 1674.75, canib_ord_delta_pct: -21.7,
+    canib_und_post: 1858, canib_und_bench: 2320, canib_und_delta_pct: -19.9,
+    canib_cli_post: 1366, canib_cli_bench: 1778, canib_cli_delta_pct: -23.2
   }
 ];
 
@@ -2303,7 +2328,15 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "14375", name: "Limón Sin Semilla Malla", ordenes: 561, usuarios: 497, unidades: 1445, gmv: 20431, aov: 36.42, impresiones: 16027, cr_pct: 3.10, gmv_dlw_pct: 42.8, gmv_dl4w_pct: 64.3, seg_nuevo: 138, seg_nuevo_pct: 25, seg_reactivado: 241, seg_reactivado_pct: 43, seg_retenido: 182, seg_retenido_pct: 32, stock_viral: 5646, stock_post: 3556, stock_bench: 1612, stock_delta_pct: 120.6, oos_cierre_viral: 2, oos_post: 3, cov_viral_ap: 100.0, cov_viral_ci: 98.2, cov_post: 95.8, canib_ord_post: 1595, canib_ord_bench: 1444.25, canib_ord_delta_pct: 10.4, canib_und_post: 3859, canib_und_bench: 4080, canib_und_delta_pct: -5.4, canib_cli_post: 1736, canib_cli_bench: 1448.75, canib_cli_delta_pct: 19.8 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "82049", name: "Naranja Valencia", ordenes: 376, usuarios: 261, unidades: 1844, gmv: 10804, aov: 28.74, impresiones: 3602, cr_pct: 7.25, gmv_dlw_pct: 211.5, gmv_dl4w_pct: 166.0, seg_nuevo: 127, seg_nuevo_pct: 34, seg_reactivado: 60, seg_reactivado_pct: 16, seg_retenido: 189, seg_retenido_pct: 50, stock_viral: 3055, stock_post: 1316, stock_bench: 596, stock_delta_pct: 121.0, oos_cierre_viral: 1, oos_post: 1, cov_viral_ap: 71.1, cov_viral_ci: 68.4, cov_post: 67.4, canib_ord_post: 339, canib_ord_bench: 329.75, canib_ord_delta_pct: 2.8, canib_und_post: 1526, canib_und_bench: 1402.5, canib_und_delta_pct: 8.8, canib_cli_post: 321, canib_cli_bench: 285, canib_cli_delta_pct: 12.6 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "82040", name: "Limón Eureka", ordenes: 168, usuarios: 132, unidades: 489, gmv: 5041, aov: 30.01, impresiones: 3387, cr_pct: 3.90, gmv_dlw_pct: 135.8, gmv_dl4w_pct: 122.4, seg_nuevo: 60, seg_nuevo_pct: 36, seg_reactivado: 40, seg_reactivado_pct: 24, seg_retenido: 68, seg_retenido_pct: 40, stock_viral: 1183, stock_post: 633, stock_bench: 431, stock_delta_pct: 47.1, oos_cierre_viral: 9, oos_post: 10, cov_viral_ap: 95.7, cov_viral_ci: 83.9, cov_post: 81.9, canib_ord_post: 346, canib_ord_bench: 300.25, canib_ord_delta_pct: 15.2, canib_und_post: 1138, canib_und_bench: 892.25, canib_und_delta_pct: 27.5, canib_cli_post: 360, canib_cli_bench: 283.25, canib_cli_delta_pct: 27.1 },
-  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "10659", name: "Toronja Blanca", ordenes: 75, usuarios: 53, unidades: 197, gmv: 2806, aov: 37.42, impresiones: 1487, cr_pct: 3.56, gmv_dlw_pct: 182.1, gmv_dl4w_pct: 278.1, seg_nuevo: 28, seg_nuevo_pct: 37, seg_reactivado: 14, seg_reactivado_pct: 19, seg_retenido: 33, seg_retenido_pct: 44, stock_viral: 342, stock_post: 163, stock_bench: 124, stock_delta_pct: 31.2, oos_cierre_viral: 22, oos_post: 20, cov_viral_ap: 74.1, cov_viral_ci: 48.6, cov_post: 57.6, canib_ord_post: 87, canib_ord_bench: 85.25, canib_ord_delta_pct: 2.1, canib_und_post: 234, canib_und_bench: 184, canib_und_delta_pct: 27.2, canib_cli_post: 96, canib_cli_bench: 71, canib_cli_delta_pct: 35.2 }
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "10659", name: "Toronja Blanca", ordenes: 75, usuarios: 53, unidades: 197, gmv: 2806, aov: 37.42, impresiones: 1487, cr_pct: 3.56, gmv_dlw_pct: 182.1, gmv_dl4w_pct: 278.1, seg_nuevo: 28, seg_nuevo_pct: 37, seg_reactivado: 14, seg_reactivado_pct: 19, seg_retenido: 33, seg_retenido_pct: 44, stock_viral: 342, stock_post: 163, stock_bench: 124, stock_delta_pct: 31.2, oos_cierre_viral: 22, oos_post: 20, cov_viral_ap: 74.1, cov_viral_ci: 48.6, cov_post: 57.6, canib_ord_post: 87, canib_ord_bench: 85.25, canib_ord_delta_pct: 2.1, canib_und_post: 234, canib_und_bench: 184, canib_und_delta_pct: 27.2, canib_cli_post: 96, canib_cli_bench: 71, canib_cli_delta_pct: 35.2 },
+  // Bimbo 070326
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "6825", name: "Marinela Gansito", ordenes: 395, usuarios: 322, unidades: 1296, gmv: 30157, aov: 76.35, impresiones: 3977, cr_pct: 8.10, gmv_dlw_pct: 1232.2, gmv_dl4w_pct: 1007.8, seg_nuevo: 214, seg_nuevo_pct: 54, seg_reactivado: 109, seg_reactivado_pct: 28, seg_retenido: 72, seg_retenido_pct: 18, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 175, canib_ord_bench: 227.25, canib_ord_delta_pct: -23.0, canib_und_post: 293, canib_und_bench: 393.25, canib_und_delta_pct: -25.5, canib_cli_post: 203, canib_cli_bench: 246.5, canib_cli_delta_pct: -17.6 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "7849", name: "Marinela Pinguinos", ordenes: 347, usuarios: 254, unidades: 777, gmv: 21124, aov: 60.88, impresiones: 3840, cr_pct: 6.61, gmv_dlw_pct: 502.2, gmv_dl4w_pct: 552.1, seg_nuevo: 171, seg_nuevo_pct: 49, seg_reactivado: 82, seg_reactivado_pct: 24, seg_retenido: 94, seg_retenido_pct: 27, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 207, canib_ord_bench: 246.75, canib_ord_delta_pct: -16.1, canib_und_post: 308, canib_und_bench: 365, canib_und_delta_pct: -15.6, canib_cli_post: 213, canib_cli_bench: 260.75, canib_cli_delta_pct: -18.3 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "12664", name: "Bimbo Donas Azucaradas 158 g", ordenes: 284, usuarios: 224, unidades: 753, gmv: 22134, aov: 77.94, impresiones: 5476, cr_pct: 4.09, gmv_dlw_pct: 1396.0, gmv_dl4w_pct: 709.4, seg_nuevo: 156, seg_nuevo_pct: 55, seg_reactivado: 72, seg_reactivado_pct: 25, seg_retenido: 56, seg_retenido_pct: 20, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 209, canib_ord_bench: 297.5, canib_ord_delta_pct: -29.7, canib_und_post: 322, canib_und_bench: 392.25, canib_und_delta_pct: -17.9, canib_cli_post: 231, canib_cli_bench: 312.5, canib_cli_delta_pct: -26.1 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "4027", name: "Bimbo Crossantines Chocolate 96 g", ordenes: 235, usuarios: 163, unidades: 577, gmv: 13746, aov: 58.49, impresiones: 4182, cr_pct: 3.90, gmv_dlw_pct: 619.0, gmv_dl4w_pct: 676.1, seg_nuevo: 108, seg_nuevo_pct: 46, seg_reactivado: 40, seg_reactivado_pct: 17, seg_retenido: 87, seg_retenido_pct: 37, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 253, canib_ord_bench: 249.75, canib_ord_delta_pct: 1.3, canib_und_post: 340, canib_und_bench: 336, canib_und_delta_pct: 1.2, canib_cli_post: 251, canib_cli_bench: 255.75, canib_cli_delta_pct: -1.9 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "13139", name: "Bimbo Donitas Espolvoreadas 105 g", ordenes: 212, usuarios: 178, unidades: 545, gmv: 16590, aov: 78.25, impresiones: 3176, cr_pct: 5.61, gmv_dlw_pct: 1088.4, gmv_dl4w_pct: 561.3, seg_nuevo: 140, seg_nuevo_pct: 66, seg_reactivado: 35, seg_reactivado_pct: 17, seg_retenido: 37, seg_retenido_pct: 17, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 82, canib_ord_bench: 246, canib_ord_delta_pct: -66.7, canib_und_post: 109, canib_und_bench: 324.5, canib_und_delta_pct: -66.4, canib_cli_post: 86, canib_cli_bench: 269, canib_cli_delta_pct: -68.0 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "5318", name: "Tía Rosa Tortillinas 561 g", ordenes: 204, usuarios: 151, unidades: 367, gmv: 13821, aov: 67.75, impresiones: 3963, cr_pct: 3.81, gmv_dlw_pct: 394.7, gmv_dl4w_pct: 354.7, seg_nuevo: 125, seg_nuevo_pct: 61, seg_reactivado: 29, seg_reactivado_pct: 14, seg_retenido: 50, seg_retenido_pct: 25, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 288, canib_ord_bench: 309.5, canib_ord_delta_pct: -6.9, canib_und_post: 361, canib_und_bench: 381, canib_und_delta_pct: -5.2, canib_cli_post: 285, canib_cli_bench: 330.75, canib_cli_delta_pct: -13.8 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "13830", name: "Milpa Real Totopos 500 g", ordenes: 96, usuarios: 73, unidades: 162, gmv: 6847, aov: 71.32, impresiones: 3789, cr_pct: 1.93, gmv_dlw_pct: 231.4, gmv_dl4w_pct: 199.7, seg_nuevo: 56, seg_nuevo_pct: 58, seg_reactivado: 17, seg_reactivado_pct: 18, seg_retenido: 23, seg_retenido_pct: 24, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 97, canib_ord_bench: 98, canib_ord_delta_pct: -1.0, canib_und_post: 125, canib_und_bench: 128, canib_und_delta_pct: -2.3, canib_cli_post: 97, canib_cli_bench: 102.75, canib_cli_delta_pct: -5.6 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -2486,7 +2519,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_FRUVER_050526", subcategoria: "Cervezas", ordenes: 106, gmv: 13283, pct_sellup: 3.29, order: 5 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", subcategoria: "Huevos", ordenes: 178, gmv: 11020, pct_sellup: 2.73, order: 6 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", subcategoria: "Agua Natural", ordenes: 205, gmv: 10371, pct_sellup: 2.57, order: 7 },
-  { deal_id: "VIRAL_DEAL_FRUVER_050526", subcategoria: "Panaderia salada", ordenes: 146, gmv: 10333, pct_sellup: 2.56, order: 8 }
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", subcategoria: "Panaderia salada", ordenes: 146, gmv: 10333, pct_sellup: 2.56, order: 8 },
+  // Bimbo 070326
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Snacks salados", ordenes: 202, gmv: 15086, pct_sellup: 10.73, order: 1 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Gaseosas", ordenes: 210, gmv: 13012, pct_sellup: 9.26, order: 2 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Cervezas", ordenes: 90, gmv: 11967, pct_sellup: 8.51, order: 3 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Frutas", ordenes: 88, gmv: 5128, pct_sellup: 3.65, order: 4 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Cigarrillos", ordenes: 21, gmv: 4624, pct_sellup: 3.29, order: 5 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Leche natural", ordenes: 80, gmv: 4559, pct_sellup: 3.24, order: 6 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Quesos semiduros", ordenes: 40, gmv: 4272, pct_sellup: 3.04, order: 7 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", subcategoria: "Tortas y ponques", ordenes: 84, gmv: 4041, pct_sellup: 2.88, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -2749,5 +2791,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "12645", name: "Chile Serrano", subcategoria: "Verduras", ordenes: 119, pct_deal: 7.54, order: 9 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "72931", name: "Mango Ataulfo", subcategoria: "Frutas", ordenes: 103, pct_deal: 6.52, order: 10 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "82061", name: "Cebolla Morada", subcategoria: "Frutas", ordenes: 88, pct_deal: 5.57, order: 11 },
-  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "76544", name: "Kiwi", subcategoria: "Frutas", ordenes: 80, pct_deal: 5.07, order: 12 }
+  { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "76544", name: "Kiwi", subcategoria: "Frutas", ordenes: 80, pct_deal: 5.07, order: 12 },
+  // Bimbo 070326
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "6744", name: "Coca-Cola Original 600 mL", subcategoria: "Gaseosas", ordenes: 43, pct_deal: 4.35, order: 1 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "9909", name: "Choco Roles Pastelito 80 g", subcategoria: "Tortas y ponques", ordenes: 33, pct_deal: 3.34, order: 2 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "6149", name: "Coca-Cola Sin Azúcar 600 mL", subcategoria: "Gaseosas", ordenes: 29, pct_deal: 2.93, order: 3 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "7441", name: "Coca-Cola Original 1 L", subcategoria: "Gaseosas", ordenes: 27, pct_deal: 2.73, order: 4 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "8770", name: "Pack Cerveza Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 23, pct_deal: 2.33, order: 5 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "13683", name: "Ruffles Sabritas Queso 120 g", subcategoria: "Snacks salados", ordenes: 20, pct_deal: 2.02, order: 6 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "15327", name: "Doritos Nacho 146 g", subcategoria: "Snacks salados", ordenes: 19, pct_deal: 1.92, order: 7 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 18, pct_deal: 1.82, order: 8 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 18, pct_deal: 1.82, order: 9 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "71550", name: "Mordisko Helado Original Vainilla", subcategoria: "Helados", ordenes: 17, pct_deal: 1.72, order: 10 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "11217", name: "Bimbo Nito Pan Dulce 62 g", subcategoria: "Tortas y ponques", ordenes: 17, pct_deal: 1.72, order: 11 },
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "74135", name: "Oreo Galleta Original 4 Und", subcategoria: "Galletas", ordenes: 16, pct_deal: 1.62, order: 12 }
 ];
