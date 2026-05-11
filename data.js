@@ -509,7 +509,7 @@ const PREVIRAL_DEALS = [
     categoria_display: "Sidras, Ginebras, Tequilas"
   },
   {
-    deal_id: "VIRAL_DEAL_ELECTROLIT_240526",
+    deal_id: "VIRAL_DEAL_ELECTROLIT_280526",
     maker_name: "Pisa Farmaceutica",
     maker_aux: "Electrolit",
     business_unit: "Pharma",
@@ -518,7 +518,7 @@ const PREVIRAL_DEALS = [
     tipo_viral: "1 día",
     ciudades: "Nacional",
     fecha_planeacion: "2026-04-22",
-    fecha_ejecucion: "2026-05-24",
+    fecha_ejecucion: "2026-05-28",
     fecha_fin: null,
     usd_mxn: 17.25,
     fecha_tasa: "2026-05-06",
@@ -581,7 +581,7 @@ const PREVIRAL_DEALS = [
     categoria_display: "Frutos secos y semillas"
   },
   {
-    deal_id: "VIRAL_DEAL_ELECTROLIFE_280526",
+    deal_id: "VIRAL_DEAL_ELECTROLIFE_240526",
     maker_name: "Pisa Farmaceutica",
     maker_aux: "Electrolife",
     business_unit: "Pharma",
@@ -590,7 +590,7 @@ const PREVIRAL_DEALS = [
     tipo_viral: "1 día",
     ciudades: "Nacional",
     fecha_planeacion: "2026-04-22",
-    fecha_ejecucion: "2026-05-28",
+    fecha_ejecucion: "2026-05-24",
     fecha_fin: null,
     usd_mxn: 17.25,
     fecha_tasa: "2026-05-06",
@@ -1723,11 +1723,11 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "73551", ean: "7503035300211", pid: "2115131536", name: "Palmar Ginebra Con Sabor Frutos Rojos y Rosas 750 mL", subcategoria: "Ginebras", h_units: 1.9, h_orders: 1.6, avg_price: 394.51, ex_incr_units: 13, ex_incr_orders: 11, ex_budget_mxn: 2051, ex_budget_usd: 118.90, real_units: 73, final_budget_mxn: 11520, final_budget_usd: 667.83, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_PALMAR_230526", sync: "83702", ean: "7503033994054", pid: "2115520925", name: "Tequila Taddel Reposado Cristalino 750 mL", subcategoria: "Tequilas", h_units: 1.4, h_orders: 1.3, avg_price: 574.73, ex_incr_units: 10, ex_incr_orders: 9, ex_budget_mxn: 2299, ex_budget_usd: 133.28, real_units: 39, final_budget_mxn: 8966, final_budget_usd: 519.77, sku_order: 3 },
   // Electrolit
-  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "9103", ean: "7501125149221", pid: "2115805907", name: "Electrolit Suero Rehidratante Sabor Fresa Kiwi 625 mL", subcategoria: "Suero", h_units: 420.4, h_orders: 271.1, avg_price: 26.28, ex_incr_units: 5045, ex_incr_orders: 3253, ex_budget_mxn: 33146, ex_budget_usd: 1921.51, real_units: 5013, final_budget_mxn: 32935, final_budget_usd: 1909.28, sku_order: 1 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5898", ean: "7501125118562", pid: "2115571555", name: "Electrolit Suero Rehidratante Sabor Lima-Limón 625 mL", subcategoria: "Suero", h_units: 394.3, h_orders: 238.5, avg_price: 26.05, ex_incr_units: 4732, ex_incr_orders: 2862, ex_budget_mxn: 30819, ex_budget_usd: 1786.61, real_units: 4743, final_budget_mxn: 30888, final_budget_usd: 1790.61, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5896", ean: "7501125174797", pid: "2115805908", name: "Electrolit Suero Rehidratante Sabor Mora Azul 625 mL", subcategoria: "Suero", h_units: 376.6, h_orders: 240.5, avg_price: 27.07, ex_incr_units: 4519, ex_incr_orders: 2886, ex_budget_mxn: 30573, ex_budget_usd: 1772.35, real_units: 4360, final_budget_mxn: 29506, final_budget_usd: 1710.49, sku_order: 3 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5759", ean: "7501125144851", pid: "2115805910", name: "Electrolit Suero Rehidratante Sabor Uva 625 mL", subcategoria: "Suero", h_units: 305.3, h_orders: 192.8, avg_price: 26.24, ex_incr_units: 3664, ex_incr_orders: 2314, ex_budget_mxn: 24028, ex_budget_usd: 1392.93, real_units: 3646, final_budget_mxn: 23918, final_budget_usd: 1386.55, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIT_240526", sync: "5495", ean: "7501125104268", pid: "2115759946", name: "Electrolit Suero Rehidratante Sabor Fresa 625 mL", subcategoria: "Suero", h_units: 162.8, h_orders: 107.1, avg_price: 25.56, ex_incr_units: 1954, ex_incr_orders: 1285, ex_budget_mxn: 12486, ex_budget_usd: 723.83, real_units: 1996, final_budget_mxn: 12754, final_budget_usd: 739.36, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_280526", sync: "9103", ean: "7501125149221", pid: "2115805907", name: "Electrolit Suero Rehidratante Sabor Fresa Kiwi 625 mL", subcategoria: "Suero", h_units: 420.4, h_orders: 271.1, avg_price: 26.28, ex_incr_units: 5045, ex_incr_orders: 3253, ex_budget_mxn: 33146, ex_budget_usd: 1921.51, real_units: 5013, final_budget_mxn: 32935, final_budget_usd: 1909.28, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_280526", sync: "5898", ean: "7501125118562", pid: "2115571555", name: "Electrolit Suero Rehidratante Sabor Lima-Limón 625 mL", subcategoria: "Suero", h_units: 394.3, h_orders: 238.5, avg_price: 26.05, ex_incr_units: 4732, ex_incr_orders: 2862, ex_budget_mxn: 30819, ex_budget_usd: 1786.61, real_units: 4743, final_budget_mxn: 30888, final_budget_usd: 1790.61, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_280526", sync: "5896", ean: "7501125174797", pid: "2115805908", name: "Electrolit Suero Rehidratante Sabor Mora Azul 625 mL", subcategoria: "Suero", h_units: 376.6, h_orders: 240.5, avg_price: 27.07, ex_incr_units: 4519, ex_incr_orders: 2886, ex_budget_mxn: 30573, ex_budget_usd: 1772.35, real_units: 4360, final_budget_mxn: 29506, final_budget_usd: 1710.49, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_280526", sync: "5759", ean: "7501125144851", pid: "2115805910", name: "Electrolit Suero Rehidratante Sabor Uva 625 mL", subcategoria: "Suero", h_units: 305.3, h_orders: 192.8, avg_price: 26.24, ex_incr_units: 3664, ex_incr_orders: 2314, ex_budget_mxn: 24028, ex_budget_usd: 1392.93, real_units: 3646, final_budget_mxn: 23918, final_budget_usd: 1386.55, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIT_280526", sync: "5495", ean: "7501125104268", pid: "2115759946", name: "Electrolit Suero Rehidratante Sabor Fresa 625 mL", subcategoria: "Suero", h_units: 162.8, h_orders: 107.1, avg_price: 25.56, ex_incr_units: 1954, ex_incr_orders: 1285, ex_budget_mxn: 12486, ex_budget_usd: 723.83, real_units: 1996, final_budget_mxn: 12754, final_budget_usd: 739.36, sku_order: 5 },
   // Hersheys
   { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "14022", ean: "7501024530274", pid: "2115807906", name: "Chocolate Hershey's Zero Sugar 17 g", subcategoria: "Chocolates", h_units: 28.0, h_orders: 17.4, avg_price: 26.82, ex_incr_units: 560, ex_incr_orders: 348, ex_budget_mxn: 9012, ex_budget_usd: 522.43, real_units: 946, final_budget_mxn: 15223, final_budget_usd: 882.49, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_HERSHEYS_210526", sync: "7109", ean: "75011192", pid: "2115005219", name: "Hersheys Chocolate Cookies and Cream 43 g", subcategoria: "Chocolates", h_units: 26.9, h_orders: 21.0, avg_price: 29.30, ex_incr_units: 538, ex_incr_orders: 420, ex_budget_mxn: 9458, ex_budget_usd: 548.29, real_units: 832, final_budget_mxn: 14626, final_budget_usd: 847.88, sku_order: 2 },
@@ -1739,9 +1739,9 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86761", ean: "2220000002813", pid: "2115709105", name: "Cacahuate Japones Enchilado 200 g", subcategoria: "Frutos secos y semillas", h_units: 10.9, h_orders: 9.9, avg_price: 33.52, ex_incr_units: 44, ex_incr_orders: 40, ex_budget_mxn: 885, ex_budget_usd: 51.30, real_units: 409, final_budget_mxn: 8226, final_budget_usd: 476.87, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_GRANEL_260526", sync: "86754", ean: "2220000002809", pid: "2115710330", name: "Cacahuate Enchilado 200 g", subcategoria: "Frutos secos y semillas", h_units: 10.0, h_orders: 9.8, avg_price: 29.37, ex_incr_units: 40, ex_incr_orders: 39, ex_budget_mxn: 705, ex_budget_usd: 40.87, real_units: 424, final_budget_mxn: 7472, final_budget_usd: 433.16, sku_order: 5 },
   // Electrolife
-  { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "12304", ean: "7502268541491", pid: "2112841074", name: "Electrolife Zero Suero Uva 625 mL", subcategoria: "Suero", h_units: 182.8, h_orders: 102.5, avg_price: 26.77, ex_incr_units: 1645, ex_incr_orders: 923, ex_budget_mxn: 11004, ex_budget_usd: 637.91, real_units: 7284, final_budget_mxn: 48748, final_budget_usd: 2826.55, sku_order: 1 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "13072", ean: "7502268541484", pid: "2115489165", name: "Electrolife Zero Sabor Fresa Kiwi 660 mL", subcategoria: "Suero", h_units: 164.7, h_orders: 97.1, avg_price: 26.54, ex_incr_units: 1482, ex_incr_orders: 874, ex_budget_mxn: 9833, ex_budget_usd: 570.03, real_units: 6617, final_budget_mxn: 43913, final_budget_usd: 2545.97, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_ELECTROLIFE_280526", sync: "74951", ean: "7502268541477", pid: "2114167366", name: "Electrolife Zero Naranja Y Mandarina 625 mL", subcategoria: "Suero", h_units: 18.2, h_orders: 10.6, avg_price: 26.22, ex_incr_units: 164, ex_incr_orders: 95, ex_budget_mxn: 1075, ex_budget_usd: 62.32, real_units: 741, final_budget_mxn: 4857, final_budget_usd: 281.56, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_240526", sync: "12304", ean: "7502268541491", pid: "2112841074", name: "Electrolife Zero Suero Uva 625 mL", subcategoria: "Suero", h_units: 182.8, h_orders: 102.5, avg_price: 26.77, ex_incr_units: 1645, ex_incr_orders: 923, ex_budget_mxn: 11004, ex_budget_usd: 637.91, real_units: 7284, final_budget_mxn: 48748, final_budget_usd: 2826.55, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_240526", sync: "13072", ean: "7502268541484", pid: "2115489165", name: "Electrolife Zero Sabor Fresa Kiwi 660 mL", subcategoria: "Suero", h_units: 164.7, h_orders: 97.1, avg_price: 26.54, ex_incr_units: 1482, ex_incr_orders: 874, ex_budget_mxn: 9833, ex_budget_usd: 570.03, real_units: 6617, final_budget_mxn: 43913, final_budget_usd: 2545.97, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_ELECTROLIFE_240526", sync: "74951", ean: "7502268541477", pid: "2114167366", name: "Electrolife Zero Naranja Y Mandarina 625 mL", subcategoria: "Suero", h_units: 18.2, h_orders: 10.6, avg_price: 26.22, ex_incr_units: 164, ex_incr_orders: 95, ex_budget_mxn: 1075, ex_budget_usd: 62.32, real_units: 741, final_budget_mxn: 4857, final_budget_usd: 281.56, sku_order: 3 },
   // Electrolife 31-may
   { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "12304", ean: "7502268541491", pid: "2112841074", name: "Electrolife Zero Suero Uva 625 mL", subcategoria: "Suero", h_units: 182.8, h_orders: 102.5, avg_price: 26.77, ex_incr_units: 1645, ex_incr_orders: 923, ex_budget_mxn: 11004, ex_budget_usd: 637.91, real_units: 7284, final_budget_mxn: 48748, final_budget_usd: 2826.55, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_ELECTROLIFE_310526", sync: "13072", ean: "7502268541484", pid: "2115489165", name: "Electrolife Zero Sabor Fresa Kiwi 660 mL", subcategoria: "Suero", h_units: 164.7, h_orders: 97.1, avg_price: 26.54, ex_incr_units: 1482, ex_incr_orders: 874, ex_budget_mxn: 9833, ex_budget_usd: 570.03, real_units: 6617, final_budget_mxn: 43913, final_budget_usd: 2545.97, sku_order: 2 },
