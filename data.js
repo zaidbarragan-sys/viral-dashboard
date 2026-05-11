@@ -2389,6 +2389,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 218, canib_ord_bench: 153.75, canib_ord_delta_pct: 41.8,
     canib_und_post: 307, canib_und_bench: 212.25, canib_und_delta_pct: 44.6,
     canib_cli_post: 213, canib_cli_bench: 167.5, canib_cli_delta_pct: 27.2
+  },
+  {
+    deal_id: "VIRAL_DEAL_KIMBERLY_130326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 34960, gmv_lw: 3412, gmv_dlw_pct: 924.6, gmv_l4w: 7232, gmv_dl4w_pct: 383.4,
+    usuarios_unicos: 169,
+    usr_lw: 44, usr_dlw_pct: 284.1, usr_l4w: 63.5, usr_dl4w_pct: 166.1,
+    cr_pct: 1.24,
+    aov: 116.15, aov_lw: 68.24, aov_dlw_pct: 70.2, aov_l4w: 85.83, aov_dl4w_pct: 35.3,
+    unidades_total: 536, und_lw: 72, und_dlw_pct: 644.4, und_l4w: 109.25, und_dl4w_pct: 390.6,
+    ordenes_total: 301, ord_lw: 50, ord_dlw_pct: 502.0, ord_l4w: 84.25, ord_dl4w_pct: 257.3,
+    impresiones_total: 13683,
+    so_turbo_mx: 3185281, gmv_categoria: 65707,
+    gmv_cat_lw: 22958, gmv_cat_l4w: 28971,
+    share_deal_cat_pct: 53.21, share_lw_pct: 14.86, share_l4w_pct: 24.96,
+    gmv_basket: 99579, gmv_sellup: 64619, pct_sellup: 64.89,
+    aov_basket: 330.83, aov_deal_post: 116.15,
+    cross_ordenes: 301, cross_skus_distintos: 649,
+    cross_top_producto: "Plátano Chiapas", cross_top_ordenes: 14, cross_top_pct: 4.65,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 781, canib_ord_bench: 388.75, canib_ord_delta_pct: 100.9,
+    canib_und_post: 1171, canib_und_bench: 558, canib_und_delta_pct: 109.9,
+    canib_cli_post: 521, canib_cli_bench: 354.75, canib_cli_delta_pct: 46.9
   }
 ];
 
@@ -2529,7 +2554,11 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   // Pepsico 120326
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "80162", name: "Chokis Rollo 180 g", ordenes: 108, usuarios: 97, unidades: 265, gmv: 8800, aov: 81.48, impresiones: 2918, cr_pct: 3.32, gmv_dlw_pct: 2263.0, gmv_dl4w_pct: 2433.7, seg_nuevo: 98, seg_nuevo_pct: 91, seg_reactivado: 2, seg_reactivado_pct: 2, seg_retenido: 8, seg_retenido_pct: 7, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 17, canib_ord_bench: 37.25, canib_ord_delta_pct: -54.4, canib_und_post: 25, canib_und_bench: 47, canib_und_delta_pct: -46.8, canib_cli_post: 16, canib_cli_bench: 42, canib_cli_delta_pct: -61.9 },
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "6221", name: "Saladitas Galletas 186 g", ordenes: 103, usuarios: 91, unidades: 220, gmv: 5775, aov: 56.07, impresiones: 4111, cr_pct: 2.21, gmv_dlw_pct: 817.9, gmv_dl4w_pct: 676.3, seg_nuevo: 84, seg_nuevo_pct: 82, seg_reactivado: 6, seg_reactivado_pct: 6, seg_retenido: 13, seg_retenido_pct: 13, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 134, canib_ord_bench: 76.75, canib_ord_delta_pct: 74.6, canib_und_post: 188, canib_und_bench: 115.5, canib_und_delta_pct: 62.8, canib_cli_post: 124, canib_cli_bench: 81.75, canib_cli_delta_pct: 51.7 },
-  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "13979", name: "Chokis Galletas 76 g", ordenes: 96, usuarios: 92, unidades: 191, gmv: 5495, aov: 57.24, impresiones: 3533, cr_pct: 2.60, gmv_dlw_pct: 979.2, gmv_dl4w_pct: 1213.1, seg_nuevo: 66, seg_nuevo_pct: 69, seg_reactivado: 24, seg_reactivado_pct: 25, seg_retenido: 6, seg_retenido_pct: 6, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 67, canib_ord_bench: 39.75, canib_ord_delta_pct: 68.6, canib_und_post: 94, canib_und_bench: 49.75, canib_und_delta_pct: 88.9, canib_cli_post: 73, canib_cli_bench: 43.75, canib_cli_delta_pct: 66.9 }
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "13979", name: "Chokis Galletas 76 g", ordenes: 96, usuarios: 92, unidades: 191, gmv: 5495, aov: 57.24, impresiones: 3533, cr_pct: 2.60, gmv_dlw_pct: 979.2, gmv_dl4w_pct: 1213.1, seg_nuevo: 66, seg_nuevo_pct: 69, seg_reactivado: 24, seg_reactivado_pct: 25, seg_retenido: 6, seg_retenido_pct: 6, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 67, canib_ord_bench: 39.75, canib_ord_delta_pct: 68.6, canib_und_post: 94, canib_und_bench: 49.75, canib_und_delta_pct: 88.9, canib_cli_post: 73, canib_cli_bench: 43.75, canib_cli_delta_pct: 66.9 },
+  // Kimberly 130326
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "9986", name: "Cottonelle Papel Higiénico 18 Und", ordenes: 147, usuarios: 61, unidades: 210, gmv: 27821, aov: 189.26, impresiones: 3456, cr_pct: 1.76, gmv_dlw_pct: 1332.5, gmv_dl4w_pct: 418.6, seg_nuevo: 47, seg_nuevo_pct: 32, seg_reactivado: 14, seg_reactivado_pct: 10, seg_retenido: 86, seg_retenido_pct: 59, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 208, canib_ord_bench: 86.75, canib_ord_delta_pct: 139.8, canib_und_post: 289, canib_und_bench: 120.75, canib_und_delta_pct: 139.3, canib_cli_post: 126, canib_cli_bench: 64.5, canib_cli_delta_pct: 95.3 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "9687", name: "Pétalo Servitoalla Multicorte", ordenes: 144, usuarios: 98, unidades: 204, gmv: 4885, aov: 33.92, impresiones: 4753, cr_pct: 2.06, gmv_dlw_pct: 380.0, gmv_dl4w_pct: 303.7, seg_nuevo: 64, seg_nuevo_pct: 44, seg_reactivado: 25, seg_reactivado_pct: 17, seg_retenido: 55, seg_retenido_pct: 38, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 347, canib_ord_bench: 168.25, canib_ord_delta_pct: 106.2, canib_und_post: 568, canib_und_bench: 251, canib_und_delta_pct: 126.3, canib_cli_post: 218, canib_cli_bench: 148.5, canib_cli_delta_pct: 46.8 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "71801", name: "Petalo Servilletas 160 uds", ordenes: 90, usuarios: 75, unidades: 122, gmv: 2254, aov: 25.04, impresiones: 5474, cr_pct: 1.37, gmv_dlw_pct: 398.5, gmv_dl4w_pct: 243.0, seg_nuevo: 55, seg_nuevo_pct: 61, seg_reactivado: 13, seg_reactivado_pct: 14, seg_retenido: 22, seg_retenido_pct: 24, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 226, canib_ord_bench: 133.75, canib_ord_delta_pct: 69.0, canib_und_post: 314, canib_und_bench: 186.25, canib_und_delta_pct: 68.6, canib_cli_post: 177, canib_cli_bench: 141.75, canib_cli_delta_pct: 24.9 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -2730,7 +2759,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Embutidos", ordenes: 6, gmv: 1441, pct_sellup: 4.20, order: 5 },
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Galletas", ordenes: 26, gmv: 1371, pct_sellup: 4.00, order: 6 },
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Huevos", ordenes: 15, gmv: 1334, pct_sellup: 3.89, order: 7 },
-  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Agua Natural", ordenes: 27, gmv: 1294, pct_sellup: 3.77, order: 8 }
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", subcategoria: "Agua Natural", ordenes: 27, gmv: 1294, pct_sellup: 3.77, order: 8 },
+  // Kimberly 130326
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", subcategoria: "Frutas", ordenes: 48, gmv: 4327, pct_sellup: 6.70, order: 1 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", subcategoria: "Cervezas", ordenes: 28, gmv: 3457, pct_sellup: 5.35, order: 2 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", subcategoria: "Papel higiénico", ordenes: 24, gmv: 3018, pct_sellup: 4.67, order: 3 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", subcategoria: "Gaseosas", ordenes: 40, gmv: 2705, pct_sellup: 4.19, order: 4 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", subcategoria: "Snacks salados", ordenes: 31, gmv: 2556, pct_sellup: 3.96, order: 5 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", subcategoria: "Agua Natural", ordenes: 33, gmv: 1858, pct_sellup: 2.88, order: 6 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", subcategoria: "Rones", ordenes: 6, gmv: 1638, pct_sellup: 2.54, order: 7 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", subcategoria: "Leche natural", ordenes: 18, gmv: 1419, pct_sellup: 2.20, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -3019,5 +3057,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.23, order: 9 },
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.23, order: 10 },
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "13818", name: "Topo Chico Agua Mineral 600 mL", subcategoria: "Agua Natural", ordenes: 5, pct_deal: 2.23, order: 11 },
-  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "6744", name: "Coca-Cola Original 600 mL", subcategoria: "Gaseosas", ordenes: 5, pct_deal: 2.23, order: 12 }
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "6744", name: "Coca-Cola Original 600 mL", subcategoria: "Gaseosas", ordenes: 5, pct_deal: 2.23, order: 12 },
+  // Kimberly 130326
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 14, pct_deal: 4.65, order: 1 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "8033", name: "Ciel Agua Natural 10 L", subcategoria: "Agua Natural", ordenes: 13, pct_deal: 4.32, order: 2 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 11, pct_deal: 3.65, order: 3 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "4939", name: "Corona Extra Latón 710 mL", subcategoria: "Cervezas", ordenes: 8, pct_deal: 2.66, order: 4 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 7, pct_deal: 2.33, order: 5 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "5672", name: "San Juan Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 7, pct_deal: 2.33, order: 6 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 6, pct_deal: 1.99, order: 7 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "8932", name: "Regio Papel Higiénico Just.1 6 Und", subcategoria: "Papel higiénico", ordenes: 6, pct_deal: 1.99, order: 8 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "8197", name: "Ron Bacardi Carta Blanca 980 mL", subcategoria: "Rones", ordenes: 6, pct_deal: 1.99, order: 9 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "13818", name: "Topo Chico Agua Mineral 600 mL", subcategoria: "Agua Natural", ordenes: 6, pct_deal: 1.99, order: 10 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "8511", name: "Huggies Toallita Húmeda 80 Und", subcategoria: "Toallitas humedas", ordenes: 6, pct_deal: 1.99, order: 11 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "15327", name: "Doritos Nacho 146 g", subcategoria: "Snacks salados", ordenes: 6, pct_deal: 1.99, order: 12 }
 ];
