@@ -1635,6 +1635,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Leche vegetal, Bebidas de cereal"
+  },
+  {
+    deal_id: "VIRAL_DEAL_DIAGEO_200326",
+    maker_name: "Diageo",
+    maker_aux: "Diageo",
+    business_unit: "Drinks",
+    descuento_pct: 40,
+    incrementalidad: 16,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-02-24",
+    fecha_ejecucion: "2026-03-20",
+    fecha_fin: null,
+    usd_mxn: 17.28,
+    fecha_tasa: "2026-02-24",
+    budget_maker_mxn: 100000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 130000,
+    budget_maker_usd: 5787.04,
+    budget_growth_usd: 1736.11,
+    budget_total_usd: 7523.15,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Whiskys, Tequilas"
   }
 ];
 
@@ -1954,7 +1978,12 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "10721", ean: "7501032399290", pid: "2113777204", name: "Silk Bebida Vegetal Sabor Coco Sin Azúcar 946 mL", subcategoria: "Leche vegetal", h_units: 6.8, h_orders: 5.3, avg_price: 53.14, ex_incr_units: 116, ex_incr_orders: 90, ex_budget_mxn: 3699, ex_budget_usd: 214.06, real_units: 342, final_budget_mxn: 10905, final_budget_usd: 631.07, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "4699", ean: "25293002661", pid: "2113777206", name: "Silk Bebida Vegetal Sabor Almendra 946 mL", subcategoria: "Bebidas de cereal", h_units: 5.3, h_orders: 3.9, avg_price: 52.53, ex_incr_units: 90, ex_incr_orders: 66, ex_budget_mxn: 2837, ex_budget_usd: 164.18, real_units: 268, final_budget_mxn: 8447, final_budget_usd: 488.83, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "11439", ean: "7506443102392", pid: "2113604163", name: "Silk Bebida Vegetal de Almendra Monk Fruit Sin Azúcar 946 mL", subcategoria: "Bebidas de cereal", h_units: 3.5, h_orders: 2.7, avg_price: 53.78, ex_incr_units: 60, ex_incr_orders: 46, ex_budget_mxn: 1936, ex_budget_usd: 112.04, real_units: 175, final_budget_mxn: 5647, final_budget_usd: 326.79, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "12290", ean: "7501032399863", pid: "2113777208", name: "Silk Bebida Vegetal Sabor Soya Sin Azúcar 946 mL", subcategoria: "Bebidas de cereal", h_units: 1.9, h_orders: 1.6, avg_price: 54.93, ex_incr_units: 32, ex_incr_orders: 27, ex_budget_mxn: 1055, ex_budget_usd: 61.05, real_units: 91, final_budget_mxn: 2999, final_budget_usd: 173.56, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "12290", ean: "7501032399863", pid: "2113777208", name: "Silk Bebida Vegetal Sabor Soya Sin Azúcar 946 mL", subcategoria: "Bebidas de cereal", h_units: 1.9, h_orders: 1.6, avg_price: 54.93, ex_incr_units: 32, ex_incr_orders: 27, ex_budget_mxn: 1055, ex_budget_usd: 61.05, real_units: 91, final_budget_mxn: 2999, final_budget_usd: 173.56, sku_order: 5 },
+  // Diageo
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "10540", ean: "50196265", pid: "2115108198", name: "Whisky Black & White Scotch 700 mL", subcategoria: "Whiskys", h_units: 20.6, h_orders: 18.6, avg_price: 281.67, ex_incr_units: 330, ex_incr_orders: 298, ex_budget_mxn: 37180, ex_budget_usd: 2151.62, real_units: 443, final_budget_mxn: 49912, final_budget_usd: 2888.43, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "6867", ean: "5000267024004", pid: "2115111864", name: "Whisky Johnnie Walker Black Label 750 mL", subcategoria: "Whiskys", h_units: 14.5, h_orders: 13.8, avg_price: 1121.68, ex_incr_units: 232, ex_incr_orders: 221, ex_budget_mxn: 104092, ex_budget_usd: 6024.31, real_units: 78, final_budget_mxn: 34996, final_budget_usd: 2025.23, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "9639", ean: "5000281056265", pid: "2115559066", name: "Tequila Don Julio 70 Añejo 700 mL", subcategoria: "Tequilas", h_units: 13.1, h_orders: 10.6, avg_price: 1039.87, ex_incr_units: 210, ex_incr_orders: 170, ex_budget_mxn: 87349, ex_budget_usd: 5054.34, real_units: 76, final_budget_mxn: 31612, final_budget_usd: 1829.63, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "7985", ean: "5000281056272", pid: "2115055349", name: "Tequila Blanco Don Julio 700 mL", subcategoria: "Tequilas", h_units: 5.5, h_orders: 5.0, avg_price: 676.17, ex_incr_units: 88, ex_incr_orders: 80, ex_budget_mxn: 23801, ex_budget_usd: 1377.37, real_units: 49, final_budget_mxn: 13253, final_budget_usd: 766.78, sku_order: 4 }
 ];
 
 const POSTMORTEM_DEALS = [
