@@ -1539,6 +1539,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Galletas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_KIMBERLY_130326",
+    maker_name: "Kimberly Clark",
+    maker_aux: "Kimberly",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-02-19",
+    fecha_ejecucion: "2026-03-13",
+    fecha_fin: null,
+    usd_mxn: 17.28,
+    fecha_tasa: "2026-02-19",
+    budget_maker_mxn: 60000,
+    budget_growth_mxn: 18000,
+    budget_total_mxn: 78000,
+    budget_maker_usd: 3472.22,
+    budget_growth_usd: 1041.67,
+    budget_total_usd: 4513.89,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Toallas de cocina, Servilletas, Papel higiénico"
   }
 ];
 
@@ -1830,7 +1854,11 @@ const PREVIRAL_SKU_DETAIL = [
   // Pepsico
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "13979", ean: "7500478014569", pid: "2115411261", name: "Chokis Galletas Clásicas 76 g", subcategoria: "Galletas", h_units: 29.6, h_orders: 25.4, avg_price: 28.70, ex_incr_units: 444, ex_incr_orders: 381, ex_budget_mxn: 7647, ex_budget_usd: 444.34, real_units: 925, final_budget_mxn: 15929, final_budget_usd: 925.57, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "6221", ean: "7501000664221", pid: "2114047462", name: "Saladitas Galletas Clásicas 186 g", subcategoria: "Galletas", h_units: 23.7, h_orders: 17.8, avg_price: 28.57, ex_incr_units: 356, ex_incr_orders: 267, ex_budget_mxn: 6102, ex_budget_usd: 354.56, real_units: 745, final_budget_mxn: 12771, final_budget_usd: 742.07, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "80162", ean: "7500478013944", pid: "2115759953", name: "Chokis Rollo 180 g", subcategoria: "Galletas", h_units: 19.1, h_orders: 14.8, avg_price: 31.88, ex_incr_units: 287, ex_incr_orders: 222, ex_budget_mxn: 5490, ex_budget_usd: 319.00, real_units: 538, final_budget_mxn: 10293, final_budget_usd: 598.08, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_PEPSICO_120326", sync: "80162", ean: "7500478013944", pid: "2115759953", name: "Chokis Rollo 180 g", subcategoria: "Galletas", h_units: 19.1, h_orders: 14.8, avg_price: 31.88, ex_incr_units: 287, ex_incr_orders: 222, ex_budget_mxn: 5490, ex_budget_usd: 319.00, real_units: 538, final_budget_mxn: 10293, final_budget_usd: 598.08, sku_order: 3 },,
+  // Kimberly
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "9687", ean: "7501943474307", pid: "2115495166", name: "Pétalo Servitoalla Multicorte Doble Hoja", subcategoria: "Toallas de cocina", h_units: 53.7, h_orders: 40.1, avg_price: 31.43, ex_incr_units: 430, ex_incr_orders: 321, ex_budget_mxn: 6757, ex_budget_usd: 391.02, real_units: 2411, final_budget_mxn: 37888, final_budget_usd: 2192.01, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "71801", ean: "7506425628889", pid: "2113432754", name: "Petalo Servilletas Practica Hoja Sencilla 160 uds", subcategoria: "Servilletas", h_units: 41.4, h_orders: 35.9, avg_price: 23.09, ex_incr_units: 331, ex_incr_orders: 287, ex_budget_mxn: 3821, ex_budget_usd: 221.12, real_units: 2526, final_budget_mxn: 29162, final_budget_usd: 1687.62, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "9986", ean: "7506425612789", pid: "2113204914", name: "Kleenex Cottonelle Papel Higiénico Beauty Vainilla 18 Und", subcategoria: "Papel higiénico", h_units: 15.5, h_orders: 12.9, avg_price: 177.80, ex_incr_units: 124, ex_incr_orders: 103, ex_budget_mxn: 11024, ex_budget_usd: 637.96, real_units: 123, final_budget_mxn: 10935, final_budget_usd: 632.81, sku_order: 3 }
 ];
 
 const POSTMORTEM_DEALS = [
