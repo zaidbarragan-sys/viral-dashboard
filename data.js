@@ -1563,6 +1563,54 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Toallas de cocina, Servilletas, Papel higiénico"
+  },
+  {
+    deal_id: "VIRAL_DEAL_DANONE_100326",
+    maker_name: "Danone",
+    maker_aux: "Danone",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-02-17",
+    fecha_ejecucion: "2026-03-10",
+    fecha_fin: null,
+    usd_mxn: 17.21,
+    fecha_tasa: "2026-02-17",
+    budget_maker_mxn: 20000,
+    budget_growth_mxn: 6000,
+    budget_total_mxn: 26000,
+    budget_maker_usd: 1162.12,
+    budget_growth_usd: 348.63,
+    budget_total_usd: 1510.75,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Yogurt"
+  },
+  {
+    deal_id: "VIRAL_DEAL_DANONE_140326",
+    maker_name: "Danone",
+    maker_aux: "Danone",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-02-17",
+    fecha_ejecucion: "2026-03-14",
+    fecha_fin: null,
+    usd_mxn: 17.21,
+    fecha_tasa: "2026-02-17",
+    budget_maker_mxn: 20000,
+    budget_growth_mxn: 6000,
+    budget_total_mxn: 26000,
+    budget_maker_usd: 1162.12,
+    budget_growth_usd: 348.63,
+    budget_total_usd: 1510.75,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Yogurt"
   }
 ];
 
@@ -1864,7 +1912,19 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "81066", ean: "7503030957052", pid: "2115312408", name: "Mezcal Mitre Origen 375 mL", subcategoria: "Mezcales", h_units: 2.9, h_orders: 2.5, avg_price: 260.68, ex_incr_units: 12, ex_incr_orders: 10, ex_budget_mxn: 1251, ex_budget_usd: 72.65, real_units: 35, final_budget_mxn: 3650, final_budget_usd: 212.00, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "83702", ean: "7503033994054", pid: "2115520925", name: "Tequila Taddel Reposado Cristalino 750 mL", subcategoria: "Tequilas", h_units: 2.6, h_orders: 2.4, avg_price: 569.64, ex_incr_units: 10, ex_incr_orders: 10, ex_budget_mxn: 2279, ex_budget_usd: 132.34, real_units: 13, final_budget_mxn: 2962, final_budget_usd: 172.01, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "73551", ean: "7503035300211", pid: "2115131536", name: "Palmar Ginebra Frutos Rojos y Rosas 750 mL", subcategoria: "Ginebras", h_units: 1.4, h_orders: 1.2, avg_price: 405.14, ex_incr_units: 6, ex_incr_orders: 5, ex_budget_mxn: 972, ex_budget_usd: 56.45, real_units: 11, final_budget_mxn: 1783, final_budget_usd: 103.54, sku_order: 5 },
-  { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "81069", ean: "7503030957090", pid: "2115312408", name: "Mitre Origen Tamborines 375 mL", subcategoria: "Mezcales", h_units: 1.1, h_orders: 1.1, avg_price: 153.01, ex_incr_units: 4, ex_incr_orders: 4, ex_budget_mxn: 245, ex_budget_usd: 14.23, real_units: 20, final_budget_mxn: 1224, final_budget_usd: 71.08, sku_order: 6 }
+  { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "81069", ean: "7503030957090", pid: "2115312408", name: "Mitre Origen Tamborines 375 mL", subcategoria: "Mezcales", h_units: 1.1, h_orders: 1.1, avg_price: 153.01, ex_incr_units: 4, ex_incr_orders: 4, ex_budget_mxn: 245, ex_budget_usd: 14.23, real_units: 20, final_budget_mxn: 1224, final_budget_usd: 71.08, sku_order: 6 },
+  // Danone 100326
+  { deal_id: "VIRAL_DEAL_DANONE_100326", sync: "11576", ean: "7501032395599", pid: "2115448999", name: "Oikos Yoghurt Griego Con Fresa 150 g", subcategoria: "Yogurt", h_units: 24.9, h_orders: 14.4, avg_price: 20.68, ex_incr_units: 199, ex_incr_orders: 115, ex_budget_mxn: 2469, ex_budget_usd: 143.46, real_units: 574, final_budget_mxn: 7122, final_budget_usd: 413.83, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_DANONE_100326", sync: "8277", ean: "7506443101074", pid: "2109995306", name: "Oikos Yoghurt Griego Natural Sin Azúcar 900 g", subcategoria: "Yogurt", h_units: 22.7, h_orders: 20.8, avg_price: 109.20, ex_incr_units: 182, ex_incr_orders: 166, ex_budget_mxn: 11925, ex_budget_usd: 692.91, real_units: 99, final_budget_mxn: 6487, final_budget_usd: 376.93, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_DANONE_100326", sync: "13409", ean: "7501032395582", pid: "2115448998", name: "Oikos Yoghurt Griego Natural 150 g", subcategoria: "Yogurt", h_units: 21.2, h_orders: 11.1, avg_price: 19.62, ex_incr_units: 170, ex_incr_orders: 89, ex_budget_mxn: 2001, ex_budget_usd: 116.27, real_units: 517, final_budget_mxn: 6086, final_budget_usd: 353.63, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_DANONE_100326", sync: "13431", ean: "7501032395902", pid: "2115449001", name: "Oikos Yoghurt Griego Coco Rallado 150 g", subcategoria: "Yogurt", h_units: 11.9, h_orders: 7.6, avg_price: 20.70, ex_incr_units: 95, ex_incr_orders: 61, ex_budget_mxn: 1180, ex_budget_usd: 68.56, real_units: 274, final_budget_mxn: 3403, final_budget_usd: 197.73, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_DANONE_100326", sync: "73841", ean: "7501032300203", pid: "2115449003", name: "Danone Yogurt Oikos Coco Mango 150 g", subcategoria: "Yogurt", h_units: 10.0, h_orders: 6.8, avg_price: 31.56, ex_incr_units: 80, ex_incr_orders: 54, ex_budget_mxn: 1515, ex_budget_usd: 88.03, real_units: 151, final_budget_mxn: 2859, final_budget_usd: 166.13, sku_order: 5 },
+  // Danone 140326
+  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "11576", ean: "7501032395599", pid: "2115448999", name: "Oikos Yoghurt Griego Con Fresa 150 g", subcategoria: "Yogurt", h_units: 24.9, h_orders: 14.4, avg_price: 20.68, ex_incr_units: 199, ex_incr_orders: 115, ex_budget_mxn: 2469, ex_budget_usd: 143.46, real_units: 574, final_budget_mxn: 7122, final_budget_usd: 413.83, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "8277", ean: "7506443101074", pid: "2109995306", name: "Oikos Yoghurt Griego Natural Sin Azúcar 900 g", subcategoria: "Yogurt", h_units: 22.7, h_orders: 20.8, avg_price: 109.20, ex_incr_units: 182, ex_incr_orders: 166, ex_budget_mxn: 11925, ex_budget_usd: 692.91, real_units: 99, final_budget_mxn: 6487, final_budget_usd: 376.93, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "13409", ean: "7501032395582", pid: "2115448998", name: "Oikos Yoghurt Griego Natural 150 g", subcategoria: "Yogurt", h_units: 21.2, h_orders: 11.1, avg_price: 19.62, ex_incr_units: 170, ex_incr_orders: 89, ex_budget_mxn: 2001, ex_budget_usd: 116.27, real_units: 517, final_budget_mxn: 6086, final_budget_usd: 353.63, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "13431", ean: "7501032395902", pid: "2115449001", name: "Oikos Yoghurt Griego Coco Rallado 150 g", subcategoria: "Yogurt", h_units: 11.9, h_orders: 7.6, avg_price: 20.70, ex_incr_units: 95, ex_incr_orders: 61, ex_budget_mxn: 1180, ex_budget_usd: 68.56, real_units: 274, final_budget_mxn: 3403, final_budget_usd: 197.73, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "73841", ean: "7501032300203", pid: "2115449003", name: "Danone Yogurt Oikos Coco Mango 150 g", subcategoria: "Yogurt", h_units: 10.0, h_orders: 6.8, avg_price: 31.56, ex_incr_units: 80, ex_incr_orders: 54, ex_budget_mxn: 1515, ex_budget_usd: 88.03, real_units: 151, final_budget_mxn: 2859, final_budget_usd: 166.13, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
