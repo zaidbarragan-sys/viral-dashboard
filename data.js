@@ -2614,6 +2614,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 70, canib_ord_bench: 80.5, canib_ord_delta_pct: -13.0,
     canib_und_post: 118, canib_und_bench: 130.25, canib_und_delta_pct: -9.4,
     canib_cli_post: 75, canib_cli_bench: 86.5, canib_cli_delta_pct: -13.3
+  },
+  {
+    deal_id: "VIRAL_DEAL_DIAGEO_200326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 260578, gmv_lw: 67621, gmv_dlw_pct: 285.4, gmv_l4w: 55747, gmv_dl4w_pct: 367.4,
+    usuarios_unicos: 175,
+    usr_lw: 53, usr_dlw_pct: 230.2, usr_l4w: 51.25, usr_dl4w_pct: 241.5,
+    cr_pct: 0.76,
+    aov: 814.30, aov_lw: 759.78, aov_dlw_pct: 7.2, aov_l4w: 787.90, aov_dl4w_pct: 3.3,
+    unidades_total: 512, und_lw: 112, und_dlw_pct: 357.1, und_l4w: 82.75, und_dl4w_pct: 518.9,
+    ordenes_total: 320, ord_lw: 89, ord_dlw_pct: 259.6, ord_l4w: 70.75, ord_dl4w_pct: 352.3,
+    impresiones_total: 23131,
+    so_turbo_mx: 4439185, gmv_categoria: 421116,
+    gmv_cat_lw: 250230, gmv_cat_l4w: 227042,
+    share_deal_cat_pct: 61.87, share_lw_pct: 27.02, share_l4w_pct: 24.55,
+    gmv_basket: 301446, gmv_sellup: 40869, pct_sellup: 13.56,
+    aov_basket: 942.02, aov_deal_post: 814.30,
+    cross_ordenes: 320, cross_skus_distintos: 213,
+    cross_top_producto: "Topo Chico 1500mL", cross_top_ordenes: 20, cross_top_pct: 6.25,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 224, canib_ord_bench: 165.25, canib_ord_delta_pct: 35.6,
+    canib_und_post: 304, canib_und_bench: 237, canib_und_delta_pct: 28.3,
+    canib_cli_post: 193, canib_cli_bench: 129.75, canib_cli_delta_pct: 48.7
   }
 ];
 
@@ -2776,7 +2801,12 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "11439", name: "Silk Almendra Monk Fruit 946 mL", ordenes: 90, usuarios: 71, unidades: 168, gmv: 7694, aov: 85.49, impresiones: 2247, cr_pct: 3.16, gmv_dlw_pct: 1360.6, gmv_dl4w_pct: null, seg_nuevo: 67, seg_nuevo_pct: 74, seg_reactivado: 6, seg_reactivado_pct: 7, seg_retenido: 17, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 17, canib_ord_bench: 17.75, canib_ord_delta_pct: -4.2, canib_und_post: 23, canib_und_bench: 27.75, canib_und_delta_pct: -17.1, canib_cli_post: 18, canib_cli_bench: 18.75, canib_cli_delta_pct: -4.0 },
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "12290", name: "Silk Soya Sin Azúcar 946 mL", ordenes: 71, usuarios: 58, unidades: 156, gmv: 7443, aov: 104.83, impresiones: 1877, cr_pct: 3.09, gmv_dlw_pct: 2678.1, gmv_dl4w_pct: null, seg_nuevo: 58, seg_nuevo_pct: 82, seg_reactivado: 2, seg_reactivado_pct: 3, seg_retenido: 11, seg_retenido_pct: 15, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 6, canib_ord_bench: 11.25, canib_ord_delta_pct: -46.7, canib_und_post: 9, canib_und_bench: 18, canib_und_delta_pct: -50.0, canib_cli_post: 8, canib_cli_bench: 11.75, canib_cli_delta_pct: -31.9 },
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "10721", name: "Silk Coco Sin Azúcar 946 mL", ordenes: 81, usuarios: 68, unidades: 139, gmv: 6754, aov: 83.38, impresiones: 2488, cr_pct: 2.73, gmv_dlw_pct: 494.6, gmv_dl4w_pct: null, seg_nuevo: 62, seg_nuevo_pct: 77, seg_reactivado: 7, seg_reactivado_pct: 9, seg_retenido: 12, seg_retenido_pct: 15, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 18, canib_ord_bench: 18.75, canib_ord_delta_pct: -4.0, canib_und_post: 38, canib_und_bench: 29.25, canib_und_delta_pct: 29.9, canib_cli_post: 17, canib_cli_bench: 21.5, canib_cli_delta_pct: -20.9 },
-  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "10820", name: "Silk Vainilla Proteína 946 mL", ordenes: 67, usuarios: 57, unidades: 110, gmv: 6285, aov: 93.81, impresiones: 1635, cr_pct: 3.49, gmv_dlw_pct: 1167.8, gmv_dl4w_pct: null, seg_nuevo: 48, seg_nuevo_pct: 72, seg_reactivado: 6, seg_reactivado_pct: 9, seg_retenido: 13, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 12, canib_ord_bench: 15.25, canib_ord_delta_pct: -21.3, canib_und_post: 23, canib_und_bench: 27, canib_und_delta_pct: -14.8, canib_cli_post: 15, canib_cli_bench: 15.25, canib_cli_delta_pct: -1.6 }
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "10820", name: "Silk Vainilla Proteína 946 mL", ordenes: 67, usuarios: 57, unidades: 110, gmv: 6285, aov: 93.81, impresiones: 1635, cr_pct: 3.49, gmv_dlw_pct: 1167.8, gmv_dl4w_pct: null, seg_nuevo: 48, seg_nuevo_pct: 72, seg_reactivado: 6, seg_reactivado_pct: 9, seg_retenido: 13, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 12, canib_ord_bench: 15.25, canib_ord_delta_pct: -21.3, canib_und_post: 23, canib_und_bench: 27, canib_und_delta_pct: -14.8, canib_cli_post: 15, canib_cli_bench: 15.25, canib_cli_delta_pct: -1.6 },
+  // Diageo 200326
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "9639", name: "Don Julio 70 Añejo 700 mL", ordenes: 95, usuarios: 33, unidades: 161, gmv: 106499, aov: 1121.04, impresiones: 3635, cr_pct: 0.91, gmv_dlw_pct: 214.8, gmv_dl4w_pct: null, seg_nuevo: 34, seg_nuevo_pct: 36, seg_reactivado: 2, seg_reactivado_pct: 2, seg_retenido: 59, seg_retenido_pct: 62, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 44, canib_ord_bench: 55.75, canib_ord_delta_pct: -21.1, canib_und_post: 65, canib_und_bench: 84, canib_und_delta_pct: -22.6, canib_cli_post: 23, canib_cli_bench: 32.25, canib_cli_delta_pct: -28.7 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "7985", name: "Don Julio Blanco 700 mL", ordenes: 104, usuarios: 48, unidades: 165, gmv: 65023, aov: 625.22, impresiones: 3424, cr_pct: 1.40, gmv_dlw_pct: 603.2, gmv_dl4w_pct: null, seg_nuevo: 43, seg_nuevo_pct: 41, seg_reactivado: 9, seg_reactivado_pct: 9, seg_retenido: 52, seg_retenido_pct: 50, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 47, canib_ord_bench: 22.25, canib_ord_delta_pct: 111.2, canib_und_post: 57, canib_und_bench: 31, canib_und_delta_pct: 83.9, canib_cli_post: 40, canib_cli_bench: 18, canib_cli_delta_pct: 122.2 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "6867", name: "Johnnie Walker Black Label 750 mL", ordenes: 57, usuarios: 47, unidades: 67, gmv: 62078, aov: 1089.09, impresiones: 11884, cr_pct: 0.40, gmv_dlw_pct: 240.2, gmv_dl4w_pct: null, seg_nuevo: 28, seg_nuevo_pct: 49, seg_reactivado: 13, seg_reactivado_pct: 23, seg_retenido: 16, seg_retenido_pct: 28, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 64, canib_ord_bench: 35, canib_ord_delta_pct: 82.9, canib_und_post: 94, canib_und_bench: 49, canib_und_delta_pct: 91.8, canib_cli_post: 63, canib_cli_bench: 37, canib_cli_delta_pct: 70.3 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "10540", name: "Black & White Scotch 700 mL", ordenes: 87, usuarios: 67, unidades: 119, gmv: 26978, aov: 310.09, impresiones: 4188, cr_pct: 1.60, gmv_dlw_pct: 328.1, gmv_dl4w_pct: null, seg_nuevo: 43, seg_nuevo_pct: 49, seg_reactivado: 12, seg_reactivado_pct: 14, seg_retenido: 32, seg_retenido_pct: 37, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 69, canib_ord_bench: 52.25, canib_ord_delta_pct: 32.1, canib_und_post: 88, canib_und_bench: 73, canib_und_delta_pct: 20.5, canib_cli_post: 67, canib_cli_bench: 42.5, canib_cli_delta_pct: 57.6 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -3013,7 +3043,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Leche natural", ordenes: 21, gmv: 1435, pct_sellup: 3.65, order: 5 },
   { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Panaderia salada", ordenes: 18, gmv: 1367, pct_sellup: 3.48, order: 6 },
   { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Quitamancha", ordenes: 3, gmv: 1328, pct_sellup: 3.38, order: 7 },
-  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Galletas", ordenes: 22, gmv: 1255, pct_sellup: 3.19, order: 8 }
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Galletas", ordenes: 22, gmv: 1255, pct_sellup: 3.19, order: 8 },
+  // Diageo 200326
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Tequilas", ordenes: 13, gmv: 9039, pct_sellup: 22.12, order: 1 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Cervezas", ordenes: 37, gmv: 7511, pct_sellup: 18.38, order: 2 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Cigarrillos", ordenes: 17, gmv: 2743, pct_sellup: 6.71, order: 3 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Whiskys", ordenes: 3, gmv: 2279, pct_sellup: 5.58, order: 4 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Rones", ordenes: 5, gmv: 2022, pct_sellup: 4.95, order: 5 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Vino tinto", ordenes: 6, gmv: 1965, pct_sellup: 4.81, order: 6 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Mezcales", ordenes: 3, gmv: 1844, pct_sellup: 4.51, order: 7 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", subcategoria: "Gaseosas", ordenes: 19, gmv: 1314, pct_sellup: 3.21, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -3354,5 +3393,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "76545", name: "Guayaba", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.11, order: 9 },
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "14101", name: "Sico Condones Climax Mutuo 3 ud", subcategoria: "Preservativos", ordenes: 5, pct_deal: 2.11, order: 10 },
   { deal_id: "VIRAL_DEAL_SILK_180326", sync: "5877", name: "Bachoco Huevo Blanco 30 ud", subcategoria: "Huevos", ordenes: 4, pct_deal: 1.69, order: 11 },
-  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "82052", name: "Tomate Verde Sin Cáscara", subcategoria: "Frutas", ordenes: 4, pct_deal: 1.69, order: 12 }
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "82052", name: "Tomate Verde Sin Cáscara", subcategoria: "Frutas", ordenes: 4, pct_deal: 1.69, order: 12 },
+  // Diageo 200326
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "4730", name: "Topo Chico 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 20, pct_deal: 6.25, order: 1 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "6529", name: "Peñafiel Agua Mineral 2 L", subcategoria: "Agua Natural", ordenes: 10, pct_deal: 3.13, order: 2 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 8, pct_deal: 2.50, order: 3 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "8770", name: "Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 8, pct_deal: 2.50, order: 4 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "13692", name: "Modelo Especial 6x355 mL", subcategoria: "Cervezas", ordenes: 5, pct_deal: 1.56, order: 5 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "12099", name: "Indio 12x355 mL", subcategoria: "Cervezas", ordenes: 4, pct_deal: 1.25, order: 6 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "14375", name: "Limón Sin Semilla Malla", subcategoria: "Frutas", ordenes: 4, pct_deal: 1.25, order: 7 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "11434", name: "Tecate Light 12x355 mL", subcategoria: "Cervezas", ordenes: 4, pct_deal: 1.25, order: 8 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "5436", name: "Marlboro Red 20 ud", subcategoria: "Cigarrillos", ordenes: 4, pct_deal: 1.25, order: 9 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "8197", name: "Ron Bacardi Carta Blanca 980 mL", subcategoria: "Rones", ordenes: 4, pct_deal: 1.25, order: 10 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "4733", name: "Peñafiel Sifón 1750 mL", subcategoria: "Agua Natural", ordenes: 4, pct_deal: 1.25, order: 11 },
+  { deal_id: "VIRAL_DEAL_DIAGEO_200326", sync: "12645", name: "Chile Serrano", subcategoria: "Verduras", ordenes: 3, pct_deal: 0.94, order: 12 }
 ];
