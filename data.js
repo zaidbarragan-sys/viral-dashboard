@@ -1611,6 +1611,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Yogurt"
+  },
+  {
+    deal_id: "VIRAL_DEAL_SILK_180326",
+    maker_name: "Silk",
+    maker_aux: "Silk",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 17,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-02-24",
+    fecha_ejecucion: "2026-03-18",
+    fecha_fin: null,
+    usd_mxn: 17.28,
+    fecha_tasa: "2026-02-24",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1736.11,
+    budget_growth_usd: 520.83,
+    budget_total_usd: 2256.94,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Leche vegetal, Bebidas de cereal"
   }
 ];
 
@@ -1924,7 +1948,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "8277", ean: "7506443101074", pid: "2109995306", name: "Oikos Yoghurt Griego Natural Sin Azúcar 900 g", subcategoria: "Yogurt", h_units: 22.7, h_orders: 20.8, avg_price: 109.20, ex_incr_units: 182, ex_incr_orders: 166, ex_budget_mxn: 11925, ex_budget_usd: 692.91, real_units: 99, final_budget_mxn: 6487, final_budget_usd: 376.93, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "13409", ean: "7501032395582", pid: "2115448998", name: "Oikos Yoghurt Griego Natural 150 g", subcategoria: "Yogurt", h_units: 21.2, h_orders: 11.1, avg_price: 19.62, ex_incr_units: 170, ex_incr_orders: 89, ex_budget_mxn: 2001, ex_budget_usd: 116.27, real_units: 517, final_budget_mxn: 6086, final_budget_usd: 353.63, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "13431", ean: "7501032395902", pid: "2115449001", name: "Oikos Yoghurt Griego Coco Rallado 150 g", subcategoria: "Yogurt", h_units: 11.9, h_orders: 7.6, avg_price: 20.70, ex_incr_units: 95, ex_incr_orders: 61, ex_budget_mxn: 1180, ex_budget_usd: 68.56, real_units: 274, final_budget_mxn: 3403, final_budget_usd: 197.73, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "73841", ean: "7501032300203", pid: "2115449003", name: "Danone Yogurt Oikos Coco Mango 150 g", subcategoria: "Yogurt", h_units: 10.0, h_orders: 6.8, avg_price: 31.56, ex_incr_units: 80, ex_incr_orders: 54, ex_budget_mxn: 1515, ex_budget_usd: 88.03, real_units: 151, final_budget_mxn: 2859, final_budget_usd: 166.13, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "73841", ean: "7501032300203", pid: "2115449003", name: "Danone Yogurt Oikos Coco Mango 150 g", subcategoria: "Yogurt", h_units: 10.0, h_orders: 6.8, avg_price: 31.56, ex_incr_units: 80, ex_incr_orders: 54, ex_budget_mxn: 1515, ex_budget_usd: 88.03, real_units: 151, final_budget_mxn: 2859, final_budget_usd: 166.13, sku_order: 5 },
+  // Silk
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "10820", ean: "7506443103993", pid: "2113321797", name: "Silk Bebida Vegetal Sabor Vainilla Proteína 946 mL", subcategoria: "Leche vegetal", h_units: 6.9, h_orders: 5.4, avg_price: 67.43, ex_incr_units: 117, ex_incr_orders: 92, ex_budget_mxn: 4733, ex_budget_usd: 273.90, real_units: 272, final_budget_mxn: 11004, final_budget_usd: 636.81, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "10721", ean: "7501032399290", pid: "2113777204", name: "Silk Bebida Vegetal Sabor Coco Sin Azúcar 946 mL", subcategoria: "Leche vegetal", h_units: 6.8, h_orders: 5.3, avg_price: 53.14, ex_incr_units: 116, ex_incr_orders: 90, ex_budget_mxn: 3699, ex_budget_usd: 214.06, real_units: 342, final_budget_mxn: 10905, final_budget_usd: 631.07, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "4699", ean: "25293002661", pid: "2113777206", name: "Silk Bebida Vegetal Sabor Almendra 946 mL", subcategoria: "Bebidas de cereal", h_units: 5.3, h_orders: 3.9, avg_price: 52.53, ex_incr_units: 90, ex_incr_orders: 66, ex_budget_mxn: 2837, ex_budget_usd: 164.18, real_units: 268, final_budget_mxn: 8447, final_budget_usd: 488.83, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "11439", ean: "7506443102392", pid: "2113604163", name: "Silk Bebida Vegetal de Almendra Monk Fruit Sin Azúcar 946 mL", subcategoria: "Bebidas de cereal", h_units: 3.5, h_orders: 2.7, avg_price: 53.78, ex_incr_units: 60, ex_incr_orders: 46, ex_budget_mxn: 1936, ex_budget_usd: 112.04, real_units: 175, final_budget_mxn: 5647, final_budget_usd: 326.79, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "12290", ean: "7501032399863", pid: "2113777208", name: "Silk Bebida Vegetal Sabor Soya Sin Azúcar 946 mL", subcategoria: "Bebidas de cereal", h_units: 1.9, h_orders: 1.6, avg_price: 54.93, ex_incr_units: 32, ex_incr_orders: 27, ex_budget_mxn: 1055, ex_budget_usd: 61.05, real_units: 91, final_budget_mxn: 2999, final_budget_usd: 173.56, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
