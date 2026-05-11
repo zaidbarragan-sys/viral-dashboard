@@ -897,24 +897,24 @@ const PREVIRAL_DEALS = [
     maker_name: "RTDs",
     maker_aux: "RTDs",
     business_unit: "Drinks",
-    descuento_pct: 0,
-    incrementalidad: 0,
-    tipo_viral: "forecast",
-    ciudades: "—",
-    fecha_planeacion: "2026-05-06",
+    descuento_pct: 40,
+    incrementalidad: 4,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-11",
     fecha_ejecucion: "2026-06-19",
     fecha_fin: null,
-    usd_mxn: 17.25,
-    fecha_tasa: "2026-05-06",
-    budget_maker_mxn: 0,
-    budget_growth_mxn: 0,
-    budget_total_mxn: 0,
-    budget_maker_usd: 0,
-    budget_growth_usd: 0,
-    budget_total_usd: 0,
-    financiamiento_maker: "—",
-    pct_growth_vs_maker: 0,
-    categoria_display: "Por definir"
+    usd_mxn: 17.22,
+    fecha_tasa: "2026-05-11",
+    budget_maker_mxn: 40000,
+    budget_growth_mxn: 12000,
+    budget_total_mxn: 52000,
+    budget_maker_usd: 2323.46,
+    budget_growth_usd: 697.04,
+    budget_total_usd: 3020.49,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Seltzers, Mezcales, Tequilas, Ginebras"
   },
   {
     deal_id: "VIRAL_DEAL_FABULOSO_240626",
@@ -1858,7 +1858,14 @@ const PREVIRAL_SKU_DETAIL = [
   // Kimberly
   { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "9687", ean: "7501943474307", pid: "2115495166", name: "Pétalo Servitoalla Multicorte Doble Hoja", subcategoria: "Toallas de cocina", h_units: 53.7, h_orders: 40.1, avg_price: 31.43, ex_incr_units: 430, ex_incr_orders: 321, ex_budget_mxn: 6757, ex_budget_usd: 391.02, real_units: 2411, final_budget_mxn: 37888, final_budget_usd: 2192.01, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "71801", ean: "7506425628889", pid: "2113432754", name: "Petalo Servilletas Practica Hoja Sencilla 160 uds", subcategoria: "Servilletas", h_units: 41.4, h_orders: 35.9, avg_price: 23.09, ex_incr_units: 331, ex_incr_orders: 287, ex_budget_mxn: 3821, ex_budget_usd: 221.12, real_units: 2526, final_budget_mxn: 29162, final_budget_usd: 1687.62, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "9986", ean: "7506425612789", pid: "2113204914", name: "Kleenex Cottonelle Papel Higiénico Beauty Vainilla 18 Und", subcategoria: "Papel higiénico", h_units: 15.5, h_orders: 12.9, avg_price: 177.80, ex_incr_units: 124, ex_incr_orders: 103, ex_budget_mxn: 11024, ex_budget_usd: 637.96, real_units: 123, final_budget_mxn: 10935, final_budget_usd: 632.81, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_KIMBERLY_130326", sync: "9986", ean: "7506425612789", pid: "2113204914", name: "Kleenex Cottonelle Papel Higiénico Beauty Vainilla 18 Und", subcategoria: "Papel higiénico", h_units: 15.5, h_orders: 12.9, avg_price: 177.80, ex_incr_units: 124, ex_incr_orders: 103, ex_budget_mxn: 11024, ex_budget_usd: 637.96, real_units: 123, final_budget_mxn: 10935, final_budget_usd: 632.81, sku_order: 3 },
+  // RTDs
+  { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "5280", ean: "7500464393210", pid: "2115042849", name: "Palmar Hard Seltzer Frutos Rojos 355 mL", subcategoria: "Seltzers", h_units: 24.6, h_orders: 8.1, avg_price: 29.01, ex_incr_units: 98, ex_incr_orders: 32, ex_budget_mxn: 1137, ex_budget_usd: 66.03, real_units: 2583, final_budget_mxn: 29970, final_budget_usd: 1740.38, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "5277", ean: "7500464393203", pid: "2113820624", name: "Palmar Hard Seltzer Durazno 355 mL", subcategoria: "Seltzers", h_units: 9.9, h_orders: 4.1, avg_price: 29.21, ex_incr_units: 40, ex_incr_orders: 16, ex_budget_mxn: 467, ex_budget_usd: 27.12, real_units: 1047, final_budget_mxn: 12233, final_budget_usd: 710.40, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "81066", ean: "7503030957052", pid: "2115312408", name: "Mezcal Mitre Origen 375 mL", subcategoria: "Mezcales", h_units: 2.9, h_orders: 2.5, avg_price: 260.68, ex_incr_units: 12, ex_incr_orders: 10, ex_budget_mxn: 1251, ex_budget_usd: 72.65, real_units: 35, final_budget_mxn: 3650, final_budget_usd: 212.00, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "83702", ean: "7503033994054", pid: "2115520925", name: "Tequila Taddel Reposado Cristalino 750 mL", subcategoria: "Tequilas", h_units: 2.6, h_orders: 2.4, avg_price: 569.64, ex_incr_units: 10, ex_incr_orders: 10, ex_budget_mxn: 2279, ex_budget_usd: 132.34, real_units: 13, final_budget_mxn: 2962, final_budget_usd: 172.01, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "73551", ean: "7503035300211", pid: "2115131536", name: "Palmar Ginebra Frutos Rojos y Rosas 750 mL", subcategoria: "Ginebras", h_units: 1.4, h_orders: 1.2, avg_price: 405.14, ex_incr_units: 6, ex_incr_orders: 5, ex_budget_mxn: 972, ex_budget_usd: 56.45, real_units: 11, final_budget_mxn: 1783, final_budget_usd: 103.54, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_RTDS_190626", sync: "81069", ean: "7503030957090", pid: "2115312408", name: "Mitre Origen Tamborines 375 mL", subcategoria: "Mezcales", h_units: 1.1, h_orders: 1.1, avg_price: 153.01, ex_incr_units: 4, ex_incr_orders: 4, ex_budget_mxn: 245, ex_budget_usd: 14.23, real_units: 20, final_budget_mxn: 1224, final_budget_usd: 71.08, sku_order: 6 }
 ];
 
 const POSTMORTEM_DEALS = [
