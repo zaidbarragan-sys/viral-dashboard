@@ -1419,6 +1419,54 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Tortillas, tostadas y totopos, Tortas y ponques, Panaderia dulce"
+  },
+  {
+    deal_id: "VIRAL_DEAL_HEINEKEN_250526",
+    maker_name: "Heineken México",
+    maker_aux: "Heineken",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 5,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-11",
+    fecha_ejecucion: "2026-05-25",
+    fecha_fin: null,
+    usd_mxn: 17.22,
+    fecha_tasa: "2026-05-11",
+    budget_maker_mxn: 200000,
+    budget_growth_mxn: 60000,
+    budget_total_mxn: 260000,
+    budget_maker_usd: 11614.40,
+    budget_growth_usd: 3484.32,
+    budget_total_usd: 15098.72,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_HEINEKEN_300526",
+    maker_name: "Heineken México",
+    maker_aux: "Heineken",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 5,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-11",
+    fecha_ejecucion: "2026-05-30",
+    fecha_fin: null,
+    usd_mxn: 17.22,
+    fecha_tasa: "2026-05-11",
+    budget_maker_mxn: 200000,
+    budget_growth_mxn: 60000,
+    budget_total_mxn: 260000,
+    budget_maker_usd: 11614.40,
+    budget_growth_usd: 3484.32,
+    budget_total_usd: 15098.72,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
   }
 ];
 
@@ -1694,7 +1742,19 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "12664", ean: "7501030474227", pid: "2115779730", name: "Bimbo Donas Azucaradas 158 g", subcategoria: "Panaderia dulce", h_units: 83.1, h_orders: 75.1, avg_price: 31.48, ex_incr_units: 665, ex_incr_orders: 601, ex_budget_mxn: 12561, ex_budget_usd: 721.48, real_units: 725, final_budget_mxn: 13694, final_budget_usd: 786.56, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "7849", ean: "7501000153800", pid: "2115616097", name: "Marinela Pinguinos Pastelito de Chocolate Relleno con Crema", subcategoria: "Tortas y ponques", h_units: 78.6, h_orders: 60.3, avg_price: 31.84, ex_incr_units: 629, ex_incr_orders: 482, ex_budget_mxn: 12014, ex_budget_usd: 690.06, real_units: 678, final_budget_mxn: 12955, final_budget_usd: 744.11, sku_order: 5 },
   { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "4027", ean: "7503031361209", pid: "2114166725", name: "Bimbo Crossantines con Relleno Sabor a Chocolate 96 g", subcategoria: "Panaderia dulce", h_units: 73.5, h_orders: 66.4, avg_price: 30.00, ex_incr_units: 588, ex_incr_orders: 531, ex_budget_mxn: 10584, ex_budget_usd: 607.93, real_units: 672, final_budget_mxn: 12096, final_budget_usd: 694.77, sku_order: 6 },
-  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "13830", ean: "7501030480785", pid: "2115781775", name: "Milpa Real Totopos de Maíz para Chilaquiles 500 g", subcategoria: "Tortillas, tostadas y totopos", h_units: 33.2, h_orders: 29.9, avg_price: 60.41, ex_incr_units: 266, ex_incr_orders: 239, ex_budget_mxn: 9641, ex_budget_usd: 553.88, real_units: 151, final_budget_mxn: 5473, final_budget_usd: 314.36, sku_order: 7 }
+  { deal_id: "VIRAL_DEAL_BIMBO_070326", sync: "13830", ean: "7501030480785", pid: "2115781775", name: "Milpa Real Totopos de Maíz para Chilaquiles 500 g", subcategoria: "Tortillas, tostadas y totopos", h_units: 33.2, h_orders: 29.9, avg_price: 60.41, ex_incr_units: 266, ex_incr_orders: 239, ex_budget_mxn: 9641, ex_budget_usd: 553.88, real_units: 151, final_budget_mxn: 5473, final_budget_usd: 314.36, sku_order: 7 },
+  // Heineken 250526
+  { deal_id: "VIRAL_DEAL_HEINEKEN_250526", sync: "8770", ean: "7503024416114", pid: "2115802214", name: "Pack Cerveza Amstel Ultra Botella 6 x 355 mL", subcategoria: "Cervezas", h_units: 478.6, h_orders: 344.9, avg_price: 120.39, ex_incr_units: 2393, ex_incr_orders: 1725, ex_budget_mxn: 172884, ex_budget_usd: 10039.72, real_units: 2079, final_budget_mxn: 150175, final_budget_usd: 8721.00, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_250526", sync: "8524", ean: "7501049999278", pid: "2115776728", name: "Pack Cerveza Heineken Original Botella 6 x 355 mL", subcategoria: "Cervezas", h_units: 132.6, h_orders: 104.8, avg_price: 155.71, ex_incr_units: 663, ex_incr_orders: 524, ex_budget_mxn: 61941, ex_budget_usd: 3597.04, real_units: 445, final_budget_mxn: 41575, final_budget_usd: 2414.34, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_250526", sync: "11434", ean: "7501061659365", pid: "2115621074", name: "Tecate Light Lata 12pack", subcategoria: "Cervezas", h_units: 85.4, h_orders: 75.7, avg_price: 206.02, ex_incr_units: 427, ex_incr_orders: 379, ex_budget_mxn: 52782, ex_budget_usd: 3065.16, real_units: 217, final_budget_mxn: 26824, final_budget_usd: 1557.72, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_250526", sync: "10119", ean: "7501049912307", pid: "2114737060", name: "XX Dos Equis Lager Especial Lata 12pack 355 mL", subcategoria: "Cervezas", h_units: 67.9, h_orders: 55.4, avg_price: 237.96, ex_incr_units: 340, ex_incr_orders: 277, ex_budget_mxn: 48536, ex_budget_usd: 2818.58, real_units: 149, final_budget_mxn: 21274, final_budget_usd: 1235.43, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_250526", sync: "12099", ean: "7501061696995", pid: "2115748196", name: "Pack Cerveza Indio Tipo Vienna Oscura Lata 12 x 355 mL", subcategoria: "Cervezas", h_units: 64.0, h_orders: 56.9, avg_price: 212.14, ex_incr_units: 320, ex_incr_orders: 285, ex_budget_mxn: 40731, ex_budget_usd: 2365.33, real_units: 158, final_budget_mxn: 20110, final_budget_usd: 1167.83, sku_order: 5 },
+  // Heineken 300526
+  { deal_id: "VIRAL_DEAL_HEINEKEN_300526", sync: "8770", ean: "7503024416114", pid: "2115802214", name: "Pack Cerveza Amstel Ultra Botella 6 x 355 mL", subcategoria: "Cervezas", h_units: 478.6, h_orders: 344.9, avg_price: 120.39, ex_incr_units: 2393, ex_incr_orders: 1725, ex_budget_mxn: 172884, ex_budget_usd: 10039.72, real_units: 2079, final_budget_mxn: 150175, final_budget_usd: 8721.00, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_300526", sync: "8524", ean: "7501049999278", pid: "2115776728", name: "Pack Cerveza Heineken Original Botella 6 x 355 mL", subcategoria: "Cervezas", h_units: 132.6, h_orders: 104.8, avg_price: 155.71, ex_incr_units: 663, ex_incr_orders: 524, ex_budget_mxn: 61941, ex_budget_usd: 3597.04, real_units: 445, final_budget_mxn: 41575, final_budget_usd: 2414.34, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_300526", sync: "11434", ean: "7501061659365", pid: "2115621074", name: "Tecate Light Lata 12pack", subcategoria: "Cervezas", h_units: 85.4, h_orders: 75.7, avg_price: 206.02, ex_incr_units: 427, ex_incr_orders: 379, ex_budget_mxn: 52782, ex_budget_usd: 3065.16, real_units: 217, final_budget_mxn: 26824, final_budget_usd: 1557.72, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_300526", sync: "10119", ean: "7501049912307", pid: "2114737060", name: "XX Dos Equis Lager Especial Lata 12pack 355 mL", subcategoria: "Cervezas", h_units: 67.9, h_orders: 55.4, avg_price: 237.96, ex_incr_units: 340, ex_incr_orders: 277, ex_budget_mxn: 48536, ex_budget_usd: 2818.58, real_units: 149, final_budget_mxn: 21274, final_budget_usd: 1235.43, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_HEINEKEN_300526", sync: "12099", ean: "7501061696995", pid: "2115748196", name: "Pack Cerveza Indio Tipo Vienna Oscura Lata 12 x 355 mL", subcategoria: "Cervezas", h_units: 64.0, h_orders: 56.9, avg_price: 212.14, ex_incr_units: 320, ex_incr_orders: 285, ex_budget_mxn: 40731, ex_budget_usd: 2365.33, real_units: 158, final_budget_mxn: 20110, final_budget_usd: 1167.83, sku_order: 5 }
 ];
 
 const POSTMORTEM_DEALS = [
