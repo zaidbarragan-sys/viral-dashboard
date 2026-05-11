@@ -2560,6 +2560,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 148, canib_ord_bench: 262.5, canib_ord_delta_pct: -43.6,
     canib_und_post: 281, canib_und_bench: 573.75, canib_und_delta_pct: -51.0,
     canib_cli_post: 152, canib_cli_bench: 275.25, canib_cli_delta_pct: -44.8
+  },
+  {
+    deal_id: "VIRAL_DEAL_SILK_180326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 36067, gmv_lw: 2880, gmv_dlw_pct: 1152.5, gmv_l4w: 2458, gmv_dl4w_pct: 1367.2,
+    usuarios_unicos: 171,
+    usr_lw: 41, usr_dlw_pct: 317.1, usr_l4w: 30.67, usr_dl4w_pct: 457.5,
+    cr_pct: 1.61,
+    aov: 152.18, aov_lw: 57.59, aov_dlw_pct: 164.2, aov_l4w: 69.57, aov_dl4w_pct: 118.7,
+    unidades_total: 757, und_lw: 66, und_dlw_pct: 1047.0, und_l4w: 48.33, und_dl4w_pct: 1466.0,
+    ordenes_total: 237, ord_lw: 50, ord_dlw_pct: 374.0, ord_l4w: 35.33, ord_dl4w_pct: 570.8,
+    impresiones_total: 10625,
+    so_turbo_mx: 3828045, gmv_categoria: 42866,
+    gmv_cat_lw: 10966, gmv_cat_l4w: 8015,
+    share_deal_cat_pct: 84.14, share_lw_pct: 26.26, share_l4w_pct: 30.67,
+    gmv_basket: 75373, gmv_sellup: 39307, pct_sellup: 52.15,
+    aov_basket: 318.03, aov_deal_post: 152.18,
+    cross_ordenes: 237, cross_skus_distintos: 473,
+    cross_top_producto: "Plátano Chiapas", cross_top_ordenes: 9, cross_top_pct: 3.80,
+    inv_oos_cierre_viral_avg: null, inv_oos_post_avg: null,
+    inv_cov_viral_ap_avg: null, inv_cov_viral_ci_avg: null,
+    inv_cov_post_avg: null, inv_cov_bench_avg: null,
+    canib_ord_post: 70, canib_ord_bench: 80.5, canib_ord_delta_pct: -13.0,
+    canib_und_post: 118, canib_und_bench: 130.25, canib_und_delta_pct: -9.4,
+    canib_cli_post: 75, canib_cli_bench: 86.5, canib_cli_delta_pct: -13.3
   }
 ];
 
@@ -2716,7 +2741,13 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "13409", name: "Oikos Natural 150 g", ordenes: 70, usuarios: 60, unidades: 147, gmv: 2474, aov: 35.34, impresiones: null, cr_pct: null, gmv_dlw_pct: 2267.8, gmv_dl4w_pct: 551.4, seg_nuevo: 46, seg_nuevo_pct: 66, seg_reactivado: 12, seg_reactivado_pct: 17, seg_retenido: 12, seg_retenido_pct: 17, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 37, canib_ord_bench: 58.0, canib_ord_delta_pct: -36.2, canib_und_post: 87, canib_und_bench: 154.75, canib_und_delta_pct: -43.8, canib_cli_post: 39, canib_cli_bench: 61.5, canib_cli_delta_pct: -36.6 },
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "11576", name: "Oikos Fresa 150 g", ordenes: 62, usuarios: 59, unidades: 113, gmv: 2370, aov: 38.23, impresiones: null, cr_pct: null, gmv_dlw_pct: 268.9, gmv_dl4w_pct: 302.7, seg_nuevo: 42, seg_nuevo_pct: 68, seg_reactivado: 8, seg_reactivado_pct: 13, seg_retenido: 12, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 30, canib_ord_bench: 63.5, canib_ord_delta_pct: -52.8, canib_und_post: 51, canib_und_bench: 174, canib_und_delta_pct: -70.7, canib_cli_post: 36, canib_cli_bench: 68.25, canib_cli_delta_pct: -47.3 },
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "13431", name: "Oikos Coco Rallado 150 g", ordenes: 47, usuarios: 38, unidades: 104, gmv: 1925, aov: 40.96, impresiones: null, cr_pct: null, gmv_dlw_pct: 1344.8, gmv_dl4w_pct: 724.7, seg_nuevo: 30, seg_nuevo_pct: 64, seg_reactivado: 2, seg_reactivado_pct: 4, seg_retenido: 15, seg_retenido_pct: 32, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 23, canib_ord_bench: 40.25, canib_ord_delta_pct: -42.9, canib_und_post: 61, canib_und_bench: 94.75, canib_und_delta_pct: -35.6, canib_cli_post: 25, canib_cli_bench: 43.75, canib_cli_delta_pct: -42.9 },
-  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "73841", name: "Oikos Coco Mango 150 g", ordenes: 26, usuarios: 24, unidades: 41, gmv: 1246, aov: 47.92, impresiones: null, cr_pct: null, gmv_dlw_pct: 603.0, gmv_dl4w_pct: 460.9, seg_nuevo: 19, seg_nuevo_pct: 73, seg_reactivado: 2, seg_reactivado_pct: 8, seg_retenido: 5, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 8, canib_ord_bench: 21.25, canib_ord_delta_pct: -62.4, canib_und_post: 12, canib_und_bench: 45.5, canib_und_delta_pct: -73.6, canib_cli_post: 9, canib_cli_bench: 23.0, canib_cli_delta_pct: -60.9 }
+  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "73841", name: "Oikos Coco Mango 150 g", ordenes: 26, usuarios: 24, unidades: 41, gmv: 1246, aov: 47.92, impresiones: null, cr_pct: null, gmv_dlw_pct: 603.0, gmv_dl4w_pct: 460.9, seg_nuevo: 19, seg_nuevo_pct: 73, seg_reactivado: 2, seg_reactivado_pct: 8, seg_retenido: 5, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 8, canib_ord_bench: 21.25, canib_ord_delta_pct: -62.4, canib_und_post: 12, canib_und_bench: 45.5, canib_und_delta_pct: -73.6, canib_cli_post: 9, canib_cli_bench: 23.0, canib_cli_delta_pct: -60.9 },
+  // Silk 180326
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "4699", name: "Silk Almendra 946 mL", ordenes: 91, usuarios: 66, unidades: 184, gmv: 7891, aov: 86.71, impresiones: 2378, cr_pct: 2.78, gmv_dlw_pct: 1641.2, gmv_dl4w_pct: null, seg_nuevo: 64, seg_nuevo_pct: 70, seg_reactivado: 2, seg_reactivado_pct: 2, seg_retenido: 25, seg_retenido_pct: 27, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 17, canib_ord_bench: 17.5, canib_ord_delta_pct: -2.9, canib_und_post: 25, canib_und_bench: 28.25, canib_und_delta_pct: -11.5, canib_cli_post: 17, canib_cli_bench: 19.25, canib_cli_delta_pct: -11.7 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "11439", name: "Silk Almendra Monk Fruit 946 mL", ordenes: 90, usuarios: 71, unidades: 168, gmv: 7694, aov: 85.49, impresiones: 2247, cr_pct: 3.16, gmv_dlw_pct: 1360.6, gmv_dl4w_pct: null, seg_nuevo: 67, seg_nuevo_pct: 74, seg_reactivado: 6, seg_reactivado_pct: 7, seg_retenido: 17, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 17, canib_ord_bench: 17.75, canib_ord_delta_pct: -4.2, canib_und_post: 23, canib_und_bench: 27.75, canib_und_delta_pct: -17.1, canib_cli_post: 18, canib_cli_bench: 18.75, canib_cli_delta_pct: -4.0 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "12290", name: "Silk Soya Sin Azúcar 946 mL", ordenes: 71, usuarios: 58, unidades: 156, gmv: 7443, aov: 104.83, impresiones: 1877, cr_pct: 3.09, gmv_dlw_pct: 2678.1, gmv_dl4w_pct: null, seg_nuevo: 58, seg_nuevo_pct: 82, seg_reactivado: 2, seg_reactivado_pct: 3, seg_retenido: 11, seg_retenido_pct: 15, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 6, canib_ord_bench: 11.25, canib_ord_delta_pct: -46.7, canib_und_post: 9, canib_und_bench: 18, canib_und_delta_pct: -50.0, canib_cli_post: 8, canib_cli_bench: 11.75, canib_cli_delta_pct: -31.9 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "10721", name: "Silk Coco Sin Azúcar 946 mL", ordenes: 81, usuarios: 68, unidades: 139, gmv: 6754, aov: 83.38, impresiones: 2488, cr_pct: 2.73, gmv_dlw_pct: 494.6, gmv_dl4w_pct: null, seg_nuevo: 62, seg_nuevo_pct: 77, seg_reactivado: 7, seg_reactivado_pct: 9, seg_retenido: 12, seg_retenido_pct: 15, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 18, canib_ord_bench: 18.75, canib_ord_delta_pct: -4.0, canib_und_post: 38, canib_und_bench: 29.25, canib_und_delta_pct: 29.9, canib_cli_post: 17, canib_cli_bench: 21.5, canib_cli_delta_pct: -20.9 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "10820", name: "Silk Vainilla Proteína 946 mL", ordenes: 67, usuarios: 57, unidades: 110, gmv: 6285, aov: 93.81, impresiones: 1635, cr_pct: 3.49, gmv_dlw_pct: 1167.8, gmv_dl4w_pct: null, seg_nuevo: 48, seg_nuevo_pct: 72, seg_reactivado: 6, seg_reactivado_pct: 9, seg_retenido: 13, seg_retenido_pct: 19, stock_viral: null, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: null, oos_post: null, cov_viral_ap: null, cov_viral_ci: null, cov_post: null, canib_ord_post: 12, canib_ord_bench: 15.25, canib_ord_delta_pct: -21.3, canib_und_post: 23, canib_und_bench: 27, canib_und_delta_pct: -14.8, canib_cli_post: 15, canib_cli_bench: 15.25, canib_cli_delta_pct: -1.6 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -2944,7 +2975,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_DANONE_140326", subcategoria: "Yogurt", ordenes: 19, gmv: 1704, pct_sellup: 3.97, order: 5 },
   { deal_id: "VIRAL_DEAL_DANONE_140326", subcategoria: "Galletas", ordenes: 21, gmv: 1464, pct_sellup: 3.41, order: 6 },
   { deal_id: "VIRAL_DEAL_DANONE_140326", subcategoria: "Gaseosas", ordenes: 25, gmv: 1235, pct_sellup: 2.88, order: 7 },
-  { deal_id: "VIRAL_DEAL_DANONE_140326", subcategoria: "Detergentes", ordenes: 8, gmv: 1095, pct_sellup: 2.55, order: 8 }
+  { deal_id: "VIRAL_DEAL_DANONE_140326", subcategoria: "Detergentes", ordenes: 8, gmv: 1095, pct_sellup: 2.55, order: 8 },
+  // Silk 180326
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Preservativos", ordenes: 10, gmv: 2563, pct_sellup: 6.52, order: 1 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Frutas", ordenes: 41, gmv: 2175, pct_sellup: 5.53, order: 2 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Snacks salados", ordenes: 27, gmv: 1828, pct_sellup: 4.65, order: 3 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Huevos", ordenes: 25, gmv: 1817, pct_sellup: 4.62, order: 4 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Leche natural", ordenes: 21, gmv: 1435, pct_sellup: 3.65, order: 5 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Panaderia salada", ordenes: 18, gmv: 1367, pct_sellup: 3.48, order: 6 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Quitamancha", ordenes: 3, gmv: 1328, pct_sellup: 3.38, order: 7 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", subcategoria: "Galletas", ordenes: 22, gmv: 1255, pct_sellup: 3.19, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -3272,5 +3312,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.43, order: 9 },
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "5672", name: "San Juan Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 5, pct_deal: 2.43, order: 10 },
   { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "8033", name: "Ciel Agua Natural 10 L", subcategoria: "Agua Natural", ordenes: 5, pct_deal: 2.43, order: 11 },
-  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.43, order: 12 }
+  { deal_id: "VIRAL_DEAL_DANONE_140326", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.43, order: 12 },
+  // Silk 180326
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 9, pct_deal: 3.80, order: 1 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "14946", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 7, pct_deal: 2.95, order: 2 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "5559", name: "Huevo Blanco San Juan 30 ud", subcategoria: "Huevos", ordenes: 7, pct_deal: 2.95, order: 3 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "72772", name: "Alpura Leche Extra Proteína 1 L", subcategoria: "Leche natural", ordenes: 6, pct_deal: 2.53, order: 4 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "6425", name: "Santa Clara Leche Entera 1 L", subcategoria: "Leche natural", ordenes: 6, pct_deal: 2.53, order: 5 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "74098", name: "Pan Blanco Bimbo 620 g", subcategoria: "Panaderia salada", ordenes: 6, pct_deal: 2.53, order: 6 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "11253", name: "Sico Play Preservativo Texturizado 3 ud", subcategoria: "Preservativos", ordenes: 6, pct_deal: 2.53, order: 7 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "74135", name: "Oreo Galleta Original 4 Und", subcategoria: "Galletas", ordenes: 5, pct_deal: 2.11, order: 8 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "76545", name: "Guayaba", subcategoria: "Frutas", ordenes: 5, pct_deal: 2.11, order: 9 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "14101", name: "Sico Condones Climax Mutuo 3 ud", subcategoria: "Preservativos", ordenes: 5, pct_deal: 2.11, order: 10 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "5877", name: "Bachoco Huevo Blanco 30 ud", subcategoria: "Huevos", ordenes: 4, pct_deal: 1.69, order: 11 },
+  { deal_id: "VIRAL_DEAL_SILK_180326", sync: "82052", name: "Tomate Verde Sin Cáscara", subcategoria: "Frutas", ordenes: 4, pct_deal: 1.69, order: 12 }
 ];
