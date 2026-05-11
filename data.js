@@ -1683,6 +1683,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "—",
     pct_growth_vs_maker: 0,
     categoria_display: "Ramos y bouquets"
+  },
+  {
+    deal_id: "VIRAL_DEAL_MODELO_250326",
+    maker_name: "Grupo Modelo-Ab Inbev",
+    maker_aux: "Modelo",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 4,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-02-24",
+    fecha_ejecucion: "2026-03-25",
+    fecha_fin: null,
+    usd_mxn: 17.28,
+    fecha_tasa: "2026-02-24",
+    budget_maker_mxn: 100000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 130000,
+    budget_maker_usd: 5787.04,
+    budget_growth_usd: 1736.11,
+    budget_total_usd: 7523.15,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
   }
 ];
 
@@ -2011,7 +2035,12 @@ const PREVIRAL_SKU_DETAIL = [
   // Floravid 210326
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90296", ean: "7509999900566", pid: "2115796500", name: "Primavera 3 Girasoles", subcategoria: "Ramos y bouquets", h_units: 0, h_orders: 0, avg_price: 259.90, ex_incr_units: 250, ex_incr_orders: 250, ex_budget_mxn: 19493, ex_budget_usd: 1134.63, real_units: 493, final_budget_mxn: 38439, final_budget_usd: 2237.99, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90297", ean: "7509999900252", pid: "2115796499", name: "Frescura 15 Margaritas Amarillas", subcategoria: "Ramos y bouquets", h_units: 0, h_orders: 0, avg_price: 230.90, ex_incr_units: 200, ex_incr_orders: 200, ex_budget_mxn: 13854, ex_budget_usd: 806.40, real_units: 444, final_budget_mxn: 30754, final_budget_usd: 1789.87, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90295", ean: "7509999900115", pid: "2115796498", name: "Mix Floral 25 Flores Surtidas Amarillas", subcategoria: "Ramos y bouquets", h_units: 0, h_orders: 0, avg_price: 299.90, ex_incr_units: 200, ex_incr_orders: 200, ex_budget_mxn: 17994, ex_budget_usd: 1047.38, real_units: 342, final_budget_mxn: 30790, final_budget_usd: 1791.97, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_FLORAVID_210326", sync: "90295", ean: "7509999900115", pid: "2115796498", name: "Mix Floral 25 Flores Surtidas Amarillas", subcategoria: "Ramos y bouquets", h_units: 0, h_orders: 0, avg_price: 299.90, ex_incr_units: 200, ex_incr_orders: 200, ex_budget_mxn: 17994, ex_budget_usd: 1047.38, real_units: 342, final_budget_mxn: 30790, final_budget_usd: 1791.97, sku_order: 3 },
+  // Modelo 250326
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "13692", ean: "7501064196263", pid: "2115901721", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", h_units: 365.6, h_orders: 242.8, avg_price: 153.48, ex_incr_units: 1462, ex_incr_orders: 971, ex_budget_mxn: 134643, ex_budget_usd: 7792.05, real_units: 542, final_budget_mxn: 49932, final_budget_usd: 2889.58, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "5314", ean: "7501064198175", pid: "2115901720", name: "Pack Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", h_units: 283.9, h_orders: 198.3, avg_price: 135.03, ex_incr_units: 1136, ex_incr_orders: 793, ex_budget_mxn: 92036, ex_budget_usd: 5326.16, real_units: 479, final_budget_mxn: 38806, final_budget_usd: 2245.72, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "7857", ean: "7501064193859", pid: "2115837444", name: "Corona Extra Cerveza Latón 473 mL", subcategoria: "Cervezas", h_units: 261.6, h_orders: 58.1, avg_price: 27.14, ex_incr_units: 1046, ex_incr_orders: 232, ex_budget_mxn: 17036, ex_budget_usd: 985.88, real_units: 2192, final_budget_mxn: 35697, final_budget_usd: 2065.80, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "86168", ean: "7503052713407", pid: "2115627590", name: "Cerveza Flying Fish Lata 355 mL", subcategoria: "Cervezas", h_units: 41.1, h_orders: 11.8, avg_price: 21.01, ex_incr_units: 164, ex_incr_orders: 47, ex_budget_mxn: 2067, ex_budget_usd: 119.62, real_units: 444, final_budget_mxn: 5597, final_budget_usd: 323.90, sku_order: 4 }
 ];
 
 const POSTMORTEM_DEALS = [
