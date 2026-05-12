@@ -2019,7 +2019,32 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Huevos"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_140426",
+    maker_name: "Fruver",
+    maker_aux: "Fruver",
+    business_unit: "WOW",
+    descuento_pct: 60,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-03-24",
+    fecha_ejecucion: "2026-04-14",
+    fecha_fin: null,
+    usd_mxn: 17.64,
+    fecha_tasa: "2026-03-24",
+    budget_maker_mxn: 40000,
+    budget_growth_mxn: 40000,
+    budget_total_mxn: 80000,
+    budget_maker_usd: 2267.57,
+    budget_growth_usd: 2267.57,
+    budget_total_usd: 4535.15,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 100,
+    categoria_display: "Frutas"
   }
+
 
 
 
@@ -2415,7 +2440,14 @@ const PREVIRAL_SKU_DETAIL = [
   // Huevo 110426
   { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "12616", ean: "7501101525025", pid: "2115482100", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", h_units: 153.6, h_orders: 130.9, avg_price: 47.24, ex_incr_units: 922, ex_incr_orders: 785, ex_budget_mxn: 30487, ex_budget_usd: 1728.46, real_units: 1591, final_budget_mxn: 52611, final_budget_usd: 2982.37, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5543", ean: "7501101525018", pid: "2109993468", name: "Bachoco Huevo Blanco 18 ud.", subcategoria: "Huevos", h_units: 125.7, h_orders: 108.6, avg_price: 59.50, ex_incr_units: 754, ex_incr_orders: 652, ex_budget_mxn: 31413, ex_budget_usd: 1780.95, real_units: 1033, final_budget_mxn: 43024, final_budget_usd: 2439.34, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5877", ean: "7501101525513", pid: "2115421216", name: "Bachoco Huevo Blanco 30 ud.", subcategoria: "Huevos", h_units: 62.5, h_orders: 56.8, avg_price: 94.36, ex_incr_units: 375, ex_incr_orders: 341, ex_budget_mxn: 24769, ex_budget_usd: 1404.14, real_units: 324, final_budget_mxn: 21401, final_budget_usd: 1213.06, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5877", ean: "7501101525513", pid: "2115421216", name: "Bachoco Huevo Blanco 30 ud.", subcategoria: "Huevos", h_units: 62.5, h_orders: 56.8, avg_price: 94.36, ex_incr_units: 375, ex_incr_orders: 341, ex_budget_mxn: 24769, ex_budget_usd: 1404.14, real_units: 324, final_budget_mxn: 21401, final_budget_usd: 1213.06, sku_order: 3 },
+  // Fruver 140426
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "81993", ean: "2220000001233", pid: "2115572989", name: "Plátano Chiapas", subcategoria: "Frutas", h_units: 1928.4, h_orders: 573.3, avg_price: 5.76, ex_incr_units: 11570, ex_incr_orders: 3440, ex_budget_mxn: 39986, ex_budget_usd: 2267.18, real_units: 16665, final_budget_mxn: 57594, final_budget_usd: 3264.29, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82049", ean: "22200000012610", pid: "2115387671", name: "Naranja Valencia", subcategoria: "Frutas", h_units: 281.5, h_orders: 80.7, avg_price: 6.57, ex_incr_units: 1689, ex_incr_orders: 484, ex_budget_mxn: 6657, ex_budget_usd: 377.32, real_units: 2133, final_budget_mxn: 8408, final_budget_usd: 476.64, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "72931", ean: "644197393714", pid: "2115482159", name: "Mango Ataulfo 340 g", subcategoria: "Frutas", h_units: 180.3, h_orders: 83.4, avg_price: 18.71, ex_incr_units: 1082, ex_incr_orders: 500, ex_budget_mxn: 12146, ex_budget_usd: 688.55, real_units: 480, final_budget_mxn: 5388, final_budget_usd: 305.44, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82059", ean: "22200000012603", pid: "2115387680", name: "Manzana Smith", subcategoria: "Frutas", h_units: 152.6, h_orders: 60.1, avg_price: 10.02, ex_incr_units: 916, ex_incr_orders: 361, ex_budget_mxn: 5503, ex_budget_usd: 311.96, real_units: 758, final_budget_mxn: 4557, final_budget_usd: 258.33, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "76544", ean: "2220000000755", pid: "2114940020", name: "Kiwi 130 g", subcategoria: "Frutas", h_units: 135.6, h_orders: 60.6, avg_price: 15.19, ex_incr_units: 814, ex_incr_orders: 364, ex_budget_mxn: 7417, ex_budget_usd: 420.52, real_units: 445, final_budget_mxn: 4056, final_budget_usd: 229.93, sku_order: 5 }
+
 
 
 
