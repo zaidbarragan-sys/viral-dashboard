@@ -2903,6 +2903,29 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 574, canib_ord_bench: 504.25, canib_ord_delta_pct: 13.8,
     canib_und_post: 752, canib_und_bench: 689.75, canib_und_delta_pct: 9.0,
     canib_cli_post: 641, canib_cli_bench: 522.5, canib_cli_delta_pct: 22.7
+  },
+  {
+    deal_id: "VIRAL_DEAL_MINERVA_280326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 107394, gmv_lw: 3532, gmv_dlw_pct: 2940.5, gmv_l4w: 4169, gmv_dl4w_pct: 2475.8,
+    usuarios_unicos: 377, usr_lw: 34, usr_dlw_pct: 1008.8, usr_l4w: 28.3, usr_dl4w_pct: 1232.5,
+    cr_pct: 0, aov: 264.52, aov_lw: 103.87, aov_dlw_pct: 154.7, aov_l4w: 131.30, aov_dl4w_pct: 101.5,
+    unidades_total: 2191, und_lw: 71, und_dlw_pct: 2985.9, und_l4w: 84.3, und_dl4w_pct: 2500.9,
+    ordenes_total: 406, ord_lw: 34, ord_dlw_pct: 1094.1, ord_l4w: 31.8, ord_dl4w_pct: 1177.4,
+    impresiones_total: 0,
+    so_turbo_mx: 21107, gmv_categoria: 1061655,
+    gmv_cat_lw: 879375, gmv_cat_l4w: 971003,
+    share_deal_cat_pct: 10.12, share_lw_pct: 0.40, share_l4w_pct: 0.43,
+    gmv_basket: 166201, gmv_sellup: 58807, pct_sellup: 35.38,
+    aov_basket: 409.36, aov_deal_post: 264.52,
+    cross_ordenes: 406, cross_skus_distintos: 411,
+    cross_top_producto: "Pack Cerveza Bohemia Botella 6 x 355 mL", cross_top_ordenes: 18, cross_top_pct: 4.43,
+    inv_oos_cierre_viral_avg: 1.2, inv_oos_post_avg: 7.7,
+    inv_cov_viral_ap_avg: 0, inv_cov_viral_ci_avg: 0,
+    inv_cov_post_avg: 7.7, inv_cov_bench_avg: 0,
+    canib_ord_post: 77, canib_ord_bench: 77.5, canib_ord_delta_pct: -0.6,
+    canib_und_post: 151, canib_und_bench: 184.3, canib_und_delta_pct: -18.0,
+    canib_cli_post: 70, canib_cli_bench: 51.0, canib_cli_delta_pct: 37.3
   }
 ];
 
@@ -3090,7 +3113,17 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "14357", name: "Prispas Botana Picositas Chile y Limon 55 g", ordenes: 135, usuarios: 128, unidades: 211, gmv: 4059, aov: 30.07, impresiones: 3282, cr_pct: 3.9, gmv_dlw_pct: 754.9, gmv_dl4w_pct: 766.7, seg_nuevo: 95, seg_nuevo_pct: 70, seg_reactivado: 29, seg_reactivado_pct: 21, seg_retenido: 11, seg_retenido_pct: 8, stock_viral: 7495, stock_post: 7889, stock_bench: 2731, stock_delta_pct: 188.8, oos_cierre_viral: 25, oos_post: 25.8, cov_viral_ap: 51.7, cov_viral_ci: 56.9, cov_post: 56.0, canib_ord_post: 138, canib_ord_bench: 68.25, canib_ord_delta_pct: 102.2, canib_und_post: 181, canib_und_bench: 94.25, canib_und_delta_pct: 92.0, canib_cli_post: 156, canib_cli_bench: 68.25, canib_cli_delta_pct: 128.6 },
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81221", name: "Bokados Surtido de Botana Mix Con Golos 85 g", ordenes: 87, usuarios: 80, unidades: 129, gmv: 3787, aov: 43.53, impresiones: 2153, cr_pct: 3.72, gmv_dlw_pct: 7660.1, gmv_dl4w_pct: 1447.1, seg_nuevo: 69, seg_nuevo_pct: 79, seg_reactivado: 15, seg_reactivado_pct: 17, seg_retenido: 3, seg_retenido_pct: 3, stock_viral: 3078, stock_post: 3134, stock_bench: 1027, stock_delta_pct: 205.2, oos_cierre_viral: 32, oos_post: 28.3, cov_viral_ap: 44.8, cov_viral_ci: 44.8, cov_post: 49.6, canib_ord_post: 45, canib_ord_bench: 20.75, canib_ord_delta_pct: 116.9, canib_und_post: 57, canib_und_bench: 34.25, canib_und_delta_pct: 66.4, canib_cli_post: 47, canib_cli_bench: 24.5, canib_cli_delta_pct: 91.8 },
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "11142", name: "Bokados Surtido Rico y Variadito 90 g", ordenes: 86, usuarios: 85, unidades: 135, gmv: 3377, aov: 39.27, impresiones: 2723, cr_pct: 3.12, gmv_dlw_pct: 449.4, gmv_dl4w_pct: 495.1, seg_nuevo: 71, seg_nuevo_pct: 83, seg_reactivado: 10, seg_reactivado_pct: 12, seg_retenido: 5, seg_retenido_pct: 6, stock_viral: 4093, stock_post: 4177, stock_bench: 1678, stock_delta_pct: 148.9, oos_cierre_viral: 24, oos_post: 24.0, cov_viral_ap: 55.4, cov_viral_ci: 57.1, cov_post: 58.0, canib_ord_post: 58, canib_ord_bench: 35.25, canib_ord_delta_pct: 64.5, canib_und_post: 84, canib_und_bench: 55.5, canib_und_delta_pct: 51.4, canib_cli_post: 64, canib_cli_bench: 40.25, canib_cli_delta_pct: 59.0 },
-  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81214", name: "Chicharron de Cerdo 30 g St", ordenes: 81, usuarios: 73, unidades: 133, gmv: 3309, aov: 40.85, impresiones: 1816, cr_pct: 4.02, gmv_dlw_pct: 503.6, gmv_dl4w_pct: 1015.3, seg_nuevo: 49, seg_nuevo_pct: 60, seg_reactivado: 25, seg_reactivado_pct: 31, seg_retenido: 7, seg_retenido_pct: 9, stock_viral: 1304, stock_post: 1160, stock_bench: 893, stock_delta_pct: 29.9, oos_cierre_viral: 36, oos_post: 36.0, cov_viral_ap: 29.4, cov_viral_ci: 29.4, cov_post: 29.4, canib_ord_post: 32, canib_ord_bench: 42.5, canib_ord_delta_pct: -24.7, canib_und_post: 40, canib_und_bench: 59.25, canib_und_delta_pct: -32.5, canib_cli_post: 33, canib_cli_bench: 41.25, canib_cli_delta_pct: -20.0 }
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81214", name: "Chicharron de Cerdo 30 g St", ordenes: 81, usuarios: 73, unidades: 133, gmv: 3309, aov: 40.85, impresiones: 1816, cr_pct: 4.02, gmv_dlw_pct: 503.6, gmv_dl4w_pct: 1015.3, seg_nuevo: 49, seg_nuevo_pct: 60, seg_reactivado: 25, seg_reactivado_pct: 31, seg_retenido: 7, seg_retenido_pct: 9, stock_viral: 1304, stock_post: 1160, stock_bench: 893, stock_delta_pct: 29.9, oos_cierre_viral: 36, oos_post: 36.0, cov_viral_ap: 29.4, cov_viral_ci: 29.4, cov_post: 29.4, canib_ord_post: 32, canib_ord_bench: 42.5, canib_ord_delta_pct: -24.7, canib_und_post: 40, canib_und_bench: 59.25, canib_und_delta_pct: -32.5, canib_cli_post: 33, canib_cli_bench: 41.25, canib_cli_delta_pct: -20.0 },
+  // Minerva
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "4818", name: "Cerveza Minerva Colonial 355 mL", ordenes: 137, usuarios: 134, unidades: 377, gmv: 15638, aov: 114.14, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 12136.1, gmv_dl4w_pct: 6279.1, seg_nuevo: 18, seg_nuevo_pct: 13, seg_reactivado: 38, seg_reactivado_pct: 28, seg_retenido: 81, seg_retenido_pct: 59, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 6.7, cov_viral_ap: 0, cov_viral_ci: 0, cov_post: 6.7, canib_ord_post: 9, canib_ord_bench: 3.8, canib_ord_delta_pct: 140.0, canib_und_post: 17, canib_und_bench: 6.3, canib_und_delta_pct: 172.0, canib_cli_post: 9, canib_cli_bench: 3.3, canib_cli_delta_pct: 176.9 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "12827", name: "Cerveza Cervecería de Colima Colimita Lager Botella 355 mL", ordenes: 122, usuarios: 117, unidades: 286, gmv: 14652, aov: 120.10, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 5892.7, gmv_dl4w_pct: 4209.8, seg_nuevo: 9, seg_nuevo_pct: 7, seg_reactivado: 37, seg_reactivado_pct: 30, seg_retenido: 76, seg_retenido_pct: 62, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 9.5, cov_viral_ap: 0, cov_viral_ci: 1.6, cov_post: 9.5, canib_ord_post: 9, canib_ord_bench: 4.0, canib_ord_delta_pct: 125.0, canib_und_post: 21, canib_und_bench: 8.3, canib_und_delta_pct: 154.5, canib_cli_post: 9, canib_cli_bench: 3.8, canib_cli_delta_pct: 140.0 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "4805", name: "Cerveza Minerva Viena Artesanal de Guadalajara 500 mL", ordenes: 130, usuarios: 124, unidades: 347, gmv: 14529, aov: 111.76, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 17013.1, gmv_dl4w_pct: 3121.1, seg_nuevo: 18, seg_nuevo_pct: 14, seg_reactivado: 37, seg_reactivado_pct: 28, seg_retenido: 75, seg_retenido_pct: 58, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 6.5, cov_viral_ap: 0, cov_viral_ci: 2.6, cov_post: 6.5, canib_ord_post: 15, canib_ord_bench: 10.5, canib_ord_delta_pct: 42.9, canib_und_post: 23, canib_und_bench: 20.0, canib_und_delta_pct: 15.0, canib_cli_post: 12, canib_cli_bench: 7.3, canib_cli_delta_pct: 65.5 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "13126", name: "Cerveza Cervecería de Colima Piedra Lisa Ipa Botella 355 mL", ordenes: 100, usuarios: 96, unidades: 233, gmv: 12592, aov: 125.91, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 675.6, gmv_dl4w_pct: 603.6, seg_nuevo: 9, seg_nuevo_pct: 9, seg_reactivado: 27, seg_reactivado_pct: 27, seg_retenido: 64, seg_retenido_pct: 64, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 15.4, cov_viral_ap: 0, cov_viral_ci: 3.1, cov_post: 15.4, canib_ord_post: 31, canib_ord_bench: 31.0, canib_ord_delta_pct: 0.0, canib_und_post: 41, canib_und_bench: 77.3, canib_und_delta_pct: -46.9, canib_cli_post: 30, canib_cli_bench: 19.0, canib_cli_delta_pct: 57.9 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "86363", name: "Cerveza Charro Pilsner Botella 355 mL", ordenes: 104, usuarios: 100, unidades: 203, gmv: 12542, aov: 120.60, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 4032.5, gmv_dl4w_pct: 5401.5, seg_nuevo: 11, seg_nuevo_pct: 11, seg_reactivado: 27, seg_reactivado_pct: 26, seg_retenido: 66, seg_retenido_pct: 63, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 2.5, cov_viral_ap: 0, cov_viral_ci: 0, cov_post: 2.5, canib_ord_post: 6, canib_ord_bench: 4.5, canib_ord_delta_pct: 33.3, canib_und_post: 16, canib_und_bench: 8.3, canib_und_delta_pct: 93.9, canib_cli_post: 6, canib_cli_bench: 4.0, canib_cli_delta_pct: 50.0 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "13570", name: "Cerveza Minerva Artesanal Lager Light 355 mL", ordenes: 111, usuarios: 108, unidades: 295, gmv: 11941, aov: 107.57, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 1596.1, gmv_dl4w_pct: 2745.6, seg_nuevo: 15, seg_nuevo_pct: 14, seg_reactivado: 30, seg_reactivado_pct: 27, seg_retenido: 66, seg_retenido_pct: 59, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 3.1, cov_viral_ap: 0, cov_viral_ci: 1.5, cov_post: 3.1, canib_ord_post: 6, canib_ord_bench: 11.3, canib_ord_delta_pct: -46.7, canib_und_post: 9, canib_und_bench: 28.3, canib_und_delta_pct: -68.1, canib_cli_post: 6, canib_cli_bench: 8.0, canib_cli_delta_pct: -25.0 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "86362", name: "Cerveza Charro Ámbar Botella 355 mL", ordenes: 98, usuarios: 96, unidades: 182, gmv: 11449, aov: 116.82, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 2741.5, gmv_dl4w_pct: 2057.4, seg_nuevo: 6, seg_nuevo_pct: 6, seg_reactivado: 24, seg_reactivado_pct: 24, seg_retenido: 68, seg_retenido_pct: 69, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 4.9, cov_viral_ap: 0, cov_viral_ci: 0, cov_post: 4.9, canib_ord_post: 7, canib_ord_bench: 7.8, canib_ord_delta_pct: -9.7, canib_und_post: 9, canib_und_bench: 14.8, canib_und_delta_pct: -39.0, canib_cli_post: 6, canib_cli_bench: 7.3, canib_cli_delta_pct: -17.2 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "86364", name: "Cerveza Charro Ultra Botella 355 mL", ordenes: 75, usuarios: 70, unidades: 133, gmv: 8018, aov: 106.91, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 0, gmv_dl4w_pct: 8816.7, seg_nuevo: 5, seg_nuevo_pct: 7, seg_reactivado: 18, seg_reactivado_pct: 24, seg_retenido: 52, seg_retenido_pct: 69, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 17.0, cov_viral_ap: 0, cov_viral_ci: 2.4, cov_post: 17.0, canib_ord_post: 3, canib_ord_bench: 5.5, canib_ord_delta_pct: -45.5, canib_und_post: 4, canib_und_bench: 8.3, canib_und_delta_pct: -51.5, canib_cli_post: 3, canib_cli_bench: 5.3, canib_cli_delta_pct: -42.9 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "4793", name: "Cerveza Minerva Artesanal Pale Ale 355 mL", ordenes: 57, usuarios: 56, unidades: 135, gmv: 6034, aov: 105.86, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 14733.1, gmv_dl4w_pct: 7973.2, seg_nuevo: 8, seg_nuevo_pct: 14, seg_reactivado: 13, seg_reactivado_pct: 23, seg_retenido: 36, seg_retenido_pct: 63, stock_viral: 0, stock_post: 0, stock_bench: 0, stock_delta_pct: 0, oos_cierre_viral: 0, oos_post: 3.8, cov_viral_ap: 0, cov_viral_ci: 0, cov_post: 3.8, canib_ord_post: 8, canib_ord_bench: 5.5, canib_ord_delta_pct: 45.5, canib_und_post: 11, canib_und_bench: 13.0, canib_und_delta_pct: -15.4, canib_cli_post: 7, canib_cli_bench: 3.8, canib_cli_delta_pct: 86.7 }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -3363,7 +3396,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", subcategoria: "Helados", ordenes: 35, gmv: 3003, pct_sellup: 4.61, order: 5 },
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", subcategoria: "Frutas", ordenes: 49, gmv: 2306, pct_sellup: 3.54, order: 6 },
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", subcategoria: "Agua Natural", ordenes: 46, gmv: 2058, pct_sellup: 3.16, order: 7 },
-  { deal_id: "VIRAL_DEAL_BOKADOS_260326", subcategoria: "Chocolates", ordenes: 42, gmv: 1881, pct_sellup: 2.88, order: 8 }
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", subcategoria: "Chocolates", ordenes: 42, gmv: 1881, pct_sellup: 2.88, order: 8 },
+  // Minerva
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", subcategoria: "Cervezas", ordenes: 145, gmv: 26957, pct_sellup: 45.84, order: 1 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", subcategoria: "Snacks salados", ordenes: 54, gmv: 4112, pct_sellup: 6.99, order: 2 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", subcategoria: "Gaseosas", ordenes: 36, gmv: 2605, pct_sellup: 4.43, order: 3 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", subcategoria: "Cigarrillos", ordenes: 15, gmv: 1816, pct_sellup: 3.09, order: 4 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", subcategoria: "Tequilas", ordenes: 3, gmv: 1558, pct_sellup: 2.65, order: 5 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", subcategoria: "Vino tinto", ordenes: 5, gmv: 1498, pct_sellup: 2.55, order: 6 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", subcategoria: "Agua Natural", ordenes: 21, gmv: 1284, pct_sellup: 2.18, order: 7 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", subcategoria: "Frutas", ordenes: 23, gmv: 1167, pct_sellup: 1.98, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -3756,5 +3798,18 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "10585", name: "Chips Papas Fritas Fuego 55 g", subcategoria: "Snacks salados", ordenes: 11, pct_deal: 1.94, order: 9 },
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81266", name: "Chips Jalapeno 55g", subcategoria: "Snacks salados", ordenes: 10, pct_deal: 1.76, order: 10 },
   { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81265", name: "Chips Sal 55g", subcategoria: "Snacks salados", ordenes: 10, pct_deal: 1.76, order: 11 },
-  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "7441", name: "Coca-Cola Original Refresco 1 L", subcategoria: "Gaseosas", ordenes: 9, pct_deal: 1.59, order: 12 }
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "7441", name: "Coca-Cola Original Refresco 1 L", subcategoria: "Gaseosas", ordenes: 9, pct_deal: 1.59, order: 12 },
+  // Minerva
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "13802", name: "Pack Cerveza Bohemia Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 18, pct_deal: 4.43, order: 1 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "8770", name: "Pack Cerveza Amstel Ultra Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 17, pct_deal: 4.19, order: 2 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "8638", name: "Pack Cerveza Bohemia Oscura Vienna Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 17, pct_deal: 4.19, order: 3 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 12, pct_deal: 2.96, order: 4 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "12099", name: "Pack Cerveza Indio Tipo Vienna Oscura Lata 12 x 355 mL", subcategoria: "Cervezas", ordenes: 12, pct_deal: 2.96, order: 5 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "8443", name: "Cerveza Victoria Lata 473 mL", subcategoria: "Cervezas", ordenes: 9, pct_deal: 2.22, order: 6 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "8033", name: "Ciel Agua Natural Purificada 10 L", subcategoria: "Agua Natural", ordenes: 8, pct_deal: 1.97, order: 7 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "5314", name: "Pack Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", ordenes: 8, pct_deal: 1.97, order: 8 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "10119", name: "Pack Cerveza Dos Xx Equis Lager Especial Botella 12 x 355 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.72, order: 9 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 7, pct_deal: 1.72, order: 10 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "8524", name: "Pack Cerveza Heineken Original Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.72, order: 11 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "7857", name: "Cerveza Corona Extra Latón 473 mL", subcategoria: "Cervezas", ordenes: 6, pct_deal: 1.48, order: 12 }
 ];
