@@ -2959,7 +2959,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 77, canib_ord_bench: 77.5, canib_ord_delta_pct: -0.6,
     canib_und_post: 151, canib_und_bench: 184.3, canib_und_delta_pct: -18.0,
     canib_cli_post: 70, canib_cli_bench: 51.0, canib_cli_delta_pct: 37.3
+  },
+  {
+    deal_id: "VIRAL_DEAL_INSTANCE_310326",
+    post_days: 4, fase: 2,
+    gmv_activacion: 153582, gmv_lw: 2525, gmv_dlw_pct: 5981.4, gmv_l4w: 1816, gmv_dl4w_pct: 8356.4,
+    usuarios_unicos: 349, usr_lw: 12, usr_dlw_pct: 2808.3, usr_l4w: 7.0, usr_dl4w_pct: 4885.7,
+    cr_pct: 16.47, aov: 383.0, aov_lw: 210.42, aov_dlw_pct: 82.0, aov_l4w: 259.45, aov_dl4w_pct: 47.6,
+    unidades_total: 626, und_lw: 12, und_dlw_pct: 5116.7, und_l4w: 7, und_dl4w_pct: 8842.9,
+    ordenes_total: 401, ord_lw: 12, ord_dlw_pct: 3241.7, ord_l4w: 7.0, ord_dl4w_pct: 5628.6,
+    impresiones_total: 2119,
+    so_turbo_mx: 3464822, gmv_categoria: 0,
+    gmv_cat_lw: 0, gmv_cat_l4w: 0,
+    share_deal_cat_pct: 0, share_lw_pct: 0, share_l4w_pct: 0,
+    gmv_basket: 183947, gmv_sellup: 30365, pct_sellup: 16.51,
+    aov_basket: 458.72, aov_deal_post: 383.0,
+    cross_ordenes: 401, cross_skus_distintos: 371,
+    cross_top_producto: "Electrolit Suero Fresa Kiwi 625 mL", cross_top_ordenes: 5, cross_top_pct: 1.25,
+    inv_oos_cierre_viral_avg: 41.3, inv_oos_post_avg: 39.6,
+    inv_cov_viral_ap_avg: 61.2, inv_cov_viral_ci_avg: 37.0,
+    inv_cov_post_avg: 38.8, inv_cov_bench_avg: 0,
+    canib_ord_post: 50, canib_ord_bench: 83.5, canib_ord_delta_pct: -40.1,
+    canib_und_post: 61, canib_und_bench: 111.25, canib_und_delta_pct: -45.2,
+    canib_cli_post: 51, canib_cli_bench: 27.25, canib_cli_delta_pct: 87.2
   }
+
 ];
 
 const POSTMORTEM_SKU_PERFORMANCE = [
@@ -3156,7 +3180,15 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "13570", name: "Cerveza Minerva Artesanal Lager Light 355 mL", ordenes: 111, usuarios: 108, unidades: 295, gmv: 11941, aov: 107.57, impresiones: 2582, cr_pct: 4.18, gmv_dlw_pct: 1596.1, gmv_dl4w_pct: 2745.6, seg_nuevo: 15, seg_nuevo_pct: 14, seg_reactivado: 30, seg_reactivado_pct: 27, seg_retenido: 66, seg_retenido_pct: 59, stock_viral: 630, stock_post: 333, stock_bench: 441, stock_delta_pct: -24.5, oos_cierre_viral: 42, oos_post: 42.3, cov_viral_ap: 58.5, cov_viral_ci: 35.4, cov_post: 35.4, canib_ord_post: 6, canib_ord_bench: 11.3, canib_ord_delta_pct: -46.7, canib_und_post: 9, canib_und_bench: 28.3, canib_und_delta_pct: -68.1, canib_cli_post: 6, canib_cli_bench: 8.0, canib_cli_delta_pct: -25.0 },
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "86362", name: "Cerveza Charro Ámbar Botella 355 mL", ordenes: 98, usuarios: 96, unidades: 182, gmv: 11449, aov: 116.82, impresiones: 4570, cr_pct: 2.1, gmv_dlw_pct: 2741.5, gmv_dl4w_pct: 2057.4, seg_nuevo: 6, seg_nuevo_pct: 6, seg_reactivado: 24, seg_reactivado_pct: 24, seg_retenido: 68, seg_retenido_pct: 69, stock_viral: 703, stock_post: 505, stock_bench: 349, stock_delta_pct: 44.7, oos_cierre_viral: 11, oos_post: 10.0, cov_viral_ap: 90.2, cov_viral_ci: 73.2, cov_post: 75.0, canib_ord_post: 7, canib_ord_bench: 7.8, canib_ord_delta_pct: -9.7, canib_und_post: 9, canib_und_bench: 14.8, canib_und_delta_pct: -39.0, canib_cli_post: 6, canib_cli_bench: 7.3, canib_cli_delta_pct: -17.2 },
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "86364", name: "Cerveza Charro Ultra Botella 355 mL", ordenes: 75, usuarios: 70, unidades: 133, gmv: 8018, aov: 106.91, impresiones: 4351, cr_pct: 1.61, gmv_dlw_pct: 0, gmv_dl4w_pct: 8816.7, seg_nuevo: 5, seg_nuevo_pct: 7, seg_reactivado: 18, seg_reactivado_pct: 24, seg_retenido: 52, seg_retenido_pct: 69, stock_viral: 1077, stock_post: 910, stock_bench: 431, stock_delta_pct: 111.1, oos_cierre_viral: 6, oos_post: 5.0, cov_viral_ap: 97.6, cov_viral_ci: 85.7, cov_post: 87.5, canib_ord_post: 3, canib_ord_bench: 5.5, canib_ord_delta_pct: -45.5, canib_und_post: 4, canib_und_bench: 8.3, canib_und_delta_pct: -51.5, canib_cli_post: 3, canib_cli_bench: 5.3, canib_cli_delta_pct: -42.9 },
-  { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "4793", name: "Cerveza Minerva Artesanal Pale Ale 355 mL", ordenes: 57, usuarios: 56, unidades: 135, gmv: 6034, aov: 105.86, impresiones: 1376, cr_pct: 4.07, gmv_dlw_pct: 14733.1, gmv_dl4w_pct: 7973.2, seg_nuevo: 8, seg_nuevo_pct: 14, seg_reactivado: 13, seg_reactivado_pct: 23, seg_retenido: 36, seg_retenido_pct: 63, stock_viral: 276, stock_post: 139, stock_bench: 151, stock_delta_pct: -7.9, oos_cierre_viral: 66, oos_post: 66.5, cov_viral_ap: 25.6, cov_viral_ci: 15.4, cov_post: 15.1, canib_ord_post: 8, canib_ord_bench: 5.5, canib_ord_delta_pct: 45.5, canib_und_post: 11, canib_und_bench: 13.0, canib_und_delta_pct: -15.4, canib_cli_post: 7, canib_cli_bench: 3.8, canib_cli_delta_pct: 86.7 }
+  { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "4793", name: "Cerveza Minerva Artesanal Pale Ale 355 mL", ordenes: 57, usuarios: 56, unidades: 135, gmv: 6034, aov: 105.86, impresiones: 1376, cr_pct: 4.07, gmv_dlw_pct: 14733.1, gmv_dl4w_pct: 7973.2, seg_nuevo: 8, seg_nuevo_pct: 14, seg_reactivado: 13, seg_reactivado_pct: 23, seg_retenido: 36, seg_retenido_pct: 63, stock_viral: 276, stock_post: 139, stock_bench: 151, stock_delta_pct: -7.9, oos_cierre_viral: 66, oos_post: 66.5, cov_viral_ap: 25.6, cov_viral_ci: 15.4, cov_post: 15.1, canib_ord_post: 8, canib_ord_bench: 5.5, canib_ord_delta_pct: 45.5, canib_und_post: 11, canib_und_bench: 13.0, canib_und_delta_pct: -15.4, canib_cli_post: 7, canib_cli_bench: 3.8, canib_cli_delta_pct: 86.7 },
+  // Instance 310326,
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "4185", name: "Nivea Protector Solar Sport FPS 50 200 mL", ordenes: 149, usuarios: 132, unidades: 195, gmv: 42708, aov: 286.63, impresiones: 438, cr_pct: 30.14, gmv_dlw_pct: 7495.0, gmv_dl4w_pct: 6651.6, seg_nuevo: 138, seg_nuevo_pct: 93, seg_reactivado: 2, seg_reactivado_pct: 1, seg_retenido: 9, seg_retenido_pct: 6, stock_viral: 382, stock_post: 171, stock_bench: 246, stock_delta_pct: -30.5, oos_cierre_viral: 41, oos_post: 37.3, cov_viral_ap: 66.2, cov_viral_ci: 36.9, cov_post: 42.0, canib_ord_post: 21, canib_ord_bench: 21.0, canib_ord_delta_pct: 0.0, canib_und_post: 24, canib_und_bench: 31.5, canib_und_delta_pct: -23.8, canib_cli_post: 20, canib_cli_bench: 8.75, canib_cli_delta_pct: 128.6 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "72363", name: "Nivea Sun Hidratante Fps 50+ 200 mL", ordenes: 103, usuarios: 97, unidades: 128, gmv: 38062, aov: 369.53, impresiones: 423, cr_pct: 22.93, gmv_dlw_pct: 10578.2, gmv_dl4w_pct: 11077.9, seg_nuevo: 103, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 384, stock_post: 237, stock_bench: 215, stock_delta_pct: 10.2, oos_cierre_viral: 33, oos_post: 29.3, cov_viral_ap: 73.8, cov_viral_ci: 49.2, cov_post: 52.3, canib_ord_post: 7, canib_ord_bench: 9.5, canib_ord_delta_pct: -26.3, canib_und_post: 8, canib_und_bench: 11.75, canib_und_delta_pct: -31.9, canib_cli_post: 8, canib_cli_bench: 3.0, canib_cli_delta_pct: 166.7 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "2153", name: "Nivea Protector Solar Piel Sensible FPS 50 200 mL", ordenes: 72, usuarios: 72, unidades: 81, gmv: 25339, aov: 351.94, impresiones: 298, cr_pct: 24.16, gmv_dlw_pct: 7530.0, gmv_dl4w_pct: 8086.7, seg_nuevo: 71, seg_nuevo_pct: 99, seg_reactivado: 1, seg_reactivado_pct: 1, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 195, stock_post: 112, stock_bench: 142, stock_delta_pct: -21.1, oos_cierre_viral: 38, oos_post: 37.5, cov_viral_ap: 64.7, cov_viral_ci: 44.1, cov_post: 44.1, canib_ord_post: 4, canib_ord_bench: 12.5, canib_ord_delta_pct: -68.0, canib_und_post: 4, canib_und_bench: 15.25, canib_und_delta_pct: -73.8, canib_cli_post: 4, canib_cli_bench: 3.75, canib_cli_delta_pct: 6.7 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76143", name: "Nivea Protector Solar Piel Sensible 50 mL", ordenes: 75, usuarios: 70, unidades: 88, gmv: 25307, aov: 337.43, impresiones: 468, cr_pct: 14.96, gmv_dlw_pct: 7254.7, gmv_dl4w_pct: 7254.8, seg_nuevo: 73, seg_nuevo_pct: 97, seg_reactivado: 1, seg_reactivado_pct: 1, seg_retenido: 1, seg_retenido_pct: 1, stock_viral: 254, stock_post: 159, stock_bench: 175, stock_delta_pct: -9.1, oos_cierre_viral: 32, oos_post: 31.0, cov_viral_ap: 78.1, cov_viral_ci: 50.0, cov_post: 51.2, canib_ord_post: 10, canib_ord_bench: 8.5, canib_ord_delta_pct: 17.6, canib_und_post: 12, canib_und_bench: 10.25, canib_und_delta_pct: 17.1, canib_cli_post: 9, canib_cli_bench: 2.25, canib_cli_delta_pct: 300.0 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76636", name: "Nivea Sun Piel Sensible Fps 50+ 125 mL", ordenes: 65, usuarios: 59, unidades: 87, gmv: 12574, aov: 193.44, impresiones: 353, cr_pct: 16.71, gmv_dlw_pct: 8294.4, gmv_dl4w_pct: 4575.8, seg_nuevo: 61, seg_nuevo_pct: 94, seg_reactivado: 1, seg_reactivado_pct: 2, seg_retenido: 3, seg_retenido_pct: 5, stock_viral: 136, stock_post: 58, stock_bench: 112, stock_delta_pct: -48.2, oos_cierre_viral: 57, oos_post: 56.5, cov_viral_ap: 48.6, cov_viral_ci: 18.6, cov_post: 19.3, canib_ord_post: 3, canib_ord_bench: 18.75, canib_ord_delta_pct: -84.0, canib_und_post: 6, canib_und_bench: 24.5, canib_und_delta_pct: -75.5, canib_cli_post: 4, canib_cli_bench: 5.25, canib_cli_delta_pct: -23.8 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76142", name: "Nivea Protector Solar Facial Control Brillo Fps 50 50 mL", ordenes: 34, usuarios: 31, unidades: 47, gmv: 9592, aov: 282.13, impresiones: 139, cr_pct: 22.3, gmv_dlw_pct: 1128.7, gmv_dl4w_pct: 1215.8, seg_nuevo: 34, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 132, stock_post: 106, stock_bench: 84, stock_delta_pct: 26.2, oos_cierre_viral: 47, oos_post: 46.0, cov_viral_ap: 36.1, cov_viral_ci: 23.0, cov_post: 24.2, canib_ord_post: 5, canib_ord_bench: 13.25, canib_ord_delta_pct: -62.3, canib_und_post: 7, canib_und_bench: 18, canib_und_delta_pct: -61.1, canib_cli_post: 6, canib_cli_bench: 4.25, canib_cli_delta_pct: 41.2 }
+
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -3438,7 +3470,17 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", subcategoria: "Tequilas", ordenes: 3, gmv: 1558, pct_sellup: 2.65, order: 5 },
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", subcategoria: "Vino tinto", ordenes: 5, gmv: 1498, pct_sellup: 2.55, order: 6 },
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", subcategoria: "Agua Natural", ordenes: 21, gmv: 1284, pct_sellup: 2.18, order: 7 },
-  { deal_id: "VIRAL_DEAL_ARTESANALES_280326", subcategoria: "Frutas", ordenes: 23, gmv: 1167, pct_sellup: 1.98, order: 8 }
+  { deal_id: "VIRAL_DEAL_ARTESANALES_280326", subcategoria: "Frutas", ordenes: 23, gmv: 1167, pct_sellup: 1.98, order: 8 },
+  // Instance 310326
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Otros licores", ordenes: 1, gmv: 3017, pct_sellup: 9.93, order: 1 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Gaseosas", ordenes: 22, gmv: 1357, pct_sellup: 4.47, order: 2 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Snacks salados", ordenes: 23, gmv: 1241, pct_sellup: 4.09, order: 3 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Leche natural", ordenes: 14, gmv: 1211, pct_sellup: 3.99, order: 4 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Cervezas", ordenes: 9, gmv: 909, pct_sellup: 2.99, order: 5 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Suero", ordenes: 17, gmv: 811, pct_sellup: 2.67, order: 6 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Frutas", ordenes: 19, gmv: 807, pct_sellup: 2.66, order: 7 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Protectores solares", ordenes: 15, gmv: 2151, pct_sellup: 7.08, order: 8 }
+
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -3844,5 +3886,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "10119", name: "Pack Cerveza Dos Xx Equis Lager Especial Botella 12 x 355 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.72, order: 9 },
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 7, pct_deal: 1.72, order: 10 },
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "8524", name: "Pack Cerveza Heineken Original Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.72, order: 11 },
-  { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "7857", name: "Cerveza Corona Extra Latón 473 mL", subcategoria: "Cervezas", ordenes: 6, pct_deal: 1.48, order: 12 }
+  { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "7857", name: "Cerveza Corona Extra Latón 473 mL", subcategoria: "Cervezas", ordenes: 6, pct_deal: 1.48, order: 12 },
+  // Instance 310326
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "9103", name: "Electrolit Suero Fresa Kiwi 625 mL", subcategoria: "Suero", ordenes: 5, pct_deal: 1.25, order: 1 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "5672", name: "San Juan Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 5, pct_deal: 1.25, order: 2 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 5, pct_deal: 1.25, order: 3 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76633", name: "Nivea Sun Protector Solar Hidratacion Fps 50+ 125 mL", subcategoria: "Protectores solares", ordenes: 5, pct_deal: 1.25, order: 4 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "5896", name: "Electrolit Suero Mora Azul 625 mL", subcategoria: "Suero", ordenes: 4, pct_deal: 1.00, order: 5 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "81993", name: "Platano Chiapas", subcategoria: "Frutas", ordenes: 4, pct_deal: 1.00, order: 6 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "5346", name: "Kinder Delice Pastelito 39 g", subcategoria: "Tortas y ponques", ordenes: 4, pct_deal: 1.00, order: 7 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "73026", name: "Marinela Principe Galleta Sandwich Chocolate 315 g", subcategoria: "Galletas", ordenes: 4, pct_deal: 1.00, order: 8 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "71550", name: "Mordisko Helado Original Vainilla", subcategoria: "Helados", ordenes: 3, pct_deal: 0.75, order: 9 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "5898", name: "Electrolit Suero Lima-Limon 625 mL", subcategoria: "Suero", ordenes: 3, pct_deal: 0.75, order: 10 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "75039", name: "Marinela Barritas Fresa 268g", subcategoria: "Barras de cereal", ordenes: 3, pct_deal: 0.75, order: 11 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "82363", name: "Arm & Hammer Antitranspirante Ultra Max Active Sport 73 g", subcategoria: "Desodorantes", ordenes: 3, pct_deal: 0.75, order: 12 }
+
 ];
