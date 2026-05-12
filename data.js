@@ -2798,7 +2798,7 @@ const POSTMORTEM_DEALS = [
     aov_basket: 212.41, aov_deal_post: 97.42,
     cross_ordenes: 567, cross_skus_distintos: 690,
     cross_top_producto: "Coca-Cola Original Refresco Pet 600 mL", cross_top_ordenes: 23, cross_top_pct: 4.06,
-    inv_oos_cierre_viral_avg: 31.1, inv_oos_post_avg: 0,
+    inv_oos_cierre_viral_avg: 31.1, inv_oos_post_avg: 30.3,
     inv_cov_viral_ap_avg: 47.6, inv_cov_viral_ci_avg: 43.1,
     inv_cov_post_avg: 44.4, inv_cov_bench_avg: 0,
     canib_ord_post: 574, canib_ord_bench: 504.25, canib_ord_delta_pct: 13.8,
