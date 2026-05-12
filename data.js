@@ -3190,7 +3190,30 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 5717, canib_ord_bench: 6410.75, canib_ord_delta_pct: -10.8,
     canib_und_post: 16365, canib_und_bench: 18540.75, canib_und_delta_pct: -11.7,
     canib_cli_post: 6119, canib_cli_bench: 6251.0, canib_cli_delta_pct: -2.1
+  },
+  {
+    deal_id: "VIRAL_DEAL_ALPURA_090426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 89132, gmv_lw: 4790, gmv_dlw_pct: 1761.0, gmv_l4w: 6727, gmv_dl4w_pct: 1225.1,
+    usuarios_unicos: 478, usr_lw: 89, usr_dlw_pct: 437.1, usr_l4w: 115.25, usr_dl4w_pct: 314.8,
+    cr_pct: 3.33, aov: 112.97, aov_lw: 53.82, aov_dlw_pct: 109.9, aov_l4w: 58.37, aov_dl4w_pct: 93.5,
+    unidades_total: 2645, und_lw: 89, und_dlw_pct: 2871.9, und_l4w: 115, und_dl4w_pct: 2200.0,
+    ordenes_total: 789, ord_lw: 89, ord_dlw_pct: 786.5, ord_l4w: 115.25, ord_dl4w_pct: 584.6,
+    impresiones_total: 14350,
+    so_turbo_mx: 3655362, gmv_categoria: 0, gmv_cat_lw: 0, gmv_cat_l4w: 0,
+    share_deal_cat_pct: 0, share_lw_pct: 0, share_l4w_pct: 0,
+    gmv_basket: 170168, gmv_sellup: 81035, pct_sellup: 47.62,
+    aov_basket: 215.68, aov_deal_post: 112.97,
+    cross_ordenes: 789, cross_skus_distintos: 771,
+    cross_top_producto: "Platano Chiapas", cross_top_ordenes: 32, cross_top_pct: 4.06,
+    inv_oos_cierre_viral_avg: 30.5, inv_oos_post_avg: 20.8,
+    inv_cov_viral_ap_avg: 74.9, inv_cov_viral_ci_avg: 33.5,
+    inv_cov_post_avg: 46.3, inv_cov_bench_avg: 0,
+    canib_ord_post: 419, canib_ord_bench: 600.25, canib_ord_delta_pct: -30.2,
+    canib_und_post: 838, canib_und_bench: 1124.0, canib_und_delta_pct: -25.4,
+    canib_cli_post: 468, canib_cli_bench: 551.75, canib_cli_delta_pct: -15.2
   }
+
 
 
 ];
@@ -3405,7 +3428,11 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "9518", name: "Cilantro 100 g", ordenes: 373, usuarios: 331, unidades: 614, gmv: 5743, aov: 15.4, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 245.0, gmv_dl4w_pct: 344.0, seg_nuevo: 217, seg_nuevo_pct: 58, seg_reactivado: 87, seg_reactivado_pct: 23, seg_retenido: 69, seg_retenido_pct: 18, stock_viral: 781, stock_post: 288, stock_bench: 320, stock_delta_pct: -10, oos_cierre_viral: 36, oos_post: 43.0, cov_viral_ap: 56.5, cov_viral_ci: 47.8, cov_post: 38.4, canib_ord_post: 420, canib_ord_bench: 540.25, canib_ord_delta_pct: -22.3, canib_und_post: 561, canib_und_bench: 735.75, canib_und_delta_pct: -23.8, canib_cli_post: 435, canib_cli_bench: 527.25, canib_cli_delta_pct: -17.5 },
   { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14375", name: "Mallas Limon Sin Semilla 5 pz", ordenes: 276, usuarios: 250, unidades: 582, gmv: 10288, aov: 37.28, impresiones: 185, cr_pct: 135.14, gmv_dlw_pct: -1.4, gmv_dl4w_pct: -2.4, seg_nuevo: 71, seg_nuevo_pct: 26, seg_reactivado: 99, seg_reactivado_pct: 36, seg_retenido: 106, seg_retenido_pct: 38, stock_viral: 2004, stock_post: 1930, stock_bench: 1924, stock_delta_pct: 0.3, oos_cierre_viral: 31, oos_post: 35.5, cov_viral_ap: 59.2, cov_viral_ci: 59.2, cov_post: 54.3, canib_ord_post: 1427, canib_ord_bench: 1508.5, canib_ord_delta_pct: -5.4, canib_und_post: 3896, canib_und_bench: 4204.5, canib_und_delta_pct: -7.3, canib_cli_post: 1561, canib_cli_bench: 1480.5, canib_cli_delta_pct: 5.4 },
   { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14370", name: "Malla Jitomate Saladete 3 pz", ordenes: 205, usuarios: 175, unidades: 683, gmv: 13895, aov: 67.78, impresiones: 219, cr_pct: 79.91, gmv_dlw_pct: 373.1, gmv_dl4w_pct: 388.8, seg_nuevo: 111, seg_nuevo_pct: 54, seg_reactivado: 53, seg_reactivado_pct: 26, seg_retenido: 41, seg_retenido_pct: 20, stock_viral: 913, stock_post: 375, stock_bench: 468, stock_delta_pct: -19.9, oos_cierre_viral: 56, oos_post: 51.3, cov_viral_ap: 29.0, cov_viral_ci: 18.8, cov_post: 23.5, canib_ord_post: 220, canib_ord_bench: 266.25, canib_ord_delta_pct: -17.4, canib_und_post: 491, canib_und_bench: 651.75, canib_und_delta_pct: -24.7, canib_cli_post: 245, canib_cli_bench: 256.75, canib_cli_delta_pct: -4.6 },
-  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14919", name: "Malla Cebolla Blanca 2 pz", ordenes: 146, usuarios: 133, unidades: 348, gmv: 5252, aov: 35.97, impresiones: 104, cr_pct: 127.88, gmv_dlw_pct: 381.1, gmv_dl4w_pct: 414.6, seg_nuevo: 94, seg_nuevo_pct: 64, seg_reactivado: 35, seg_reactivado_pct: 24, seg_retenido: 17, seg_retenido_pct: 12, stock_viral: 428, stock_post: 212, stock_bench: 245, stock_delta_pct: -13.5, oos_cierre_viral: 56, oos_post: 50.0, cov_viral_ap: 30.4, cov_viral_ci: 18.8, cov_post: 24.6, canib_ord_post: 159, canib_ord_bench: 190.75, canib_ord_delta_pct: -16.6, canib_und_post: 229, canib_und_bench: 287.5, canib_und_delta_pct: -20.3, canib_cli_post: 179, canib_cli_bench: 185.25, canib_cli_delta_pct: -3.4 }
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14919", name: "Malla Cebolla Blanca 2 pz", ordenes: 146, usuarios: 133, unidades: 348, gmv: 5252, aov: 35.97, impresiones: 104, cr_pct: 127.88, gmv_dlw_pct: 381.1, gmv_dl4w_pct: 414.6, seg_nuevo: 94, seg_nuevo_pct: 64, seg_reactivado: 35, seg_reactivado_pct: 24, seg_retenido: 17, seg_retenido_pct: 12, stock_viral: 428, stock_post: 212, stock_bench: 245, stock_delta_pct: -13.5, oos_cierre_viral: 56, oos_post: 50.0, cov_viral_ap: 30.4, cov_viral_ci: 18.8, cov_post: 24.6, canib_ord_post: 159, canib_ord_bench: 190.75, canib_ord_delta_pct: -16.6, canib_und_post: 229, canib_und_bench: 287.5, canib_und_delta_pct: -20.3, canib_cli_post: 179, canib_cli_bench: 185.25, canib_cli_delta_pct: -3.4 },
+  // Alpura 090426,
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6981", name: "Alpura Leche Deslactosada Light 1 L", ordenes: 529, usuarios: 359, unidades: 1414, gmv: 49578, aov: 93.72, impresiones: 7836, cr_pct: 4.58, gmv_dlw_pct: 1420.3, gmv_dl4w_pct: 987.9, seg_nuevo: 293, seg_nuevo_pct: 55, seg_reactivado: 76, seg_reactivado_pct: 14, seg_retenido: 160, seg_retenido_pct: 30, stock_viral: 1987, stock_post: 1190, stock_bench: 1070, stock_delta_pct: 11.2, oos_cierre_viral: 26, oos_post: 15.8, cov_viral_ap: 74.8, cov_viral_ci: 44.4, cov_post: 58.8, canib_ord_post: 343, canib_ord_bench: 412, canib_ord_delta_pct: -16.7, canib_und_post: 708, canib_und_bench: 779.5, canib_und_delta_pct: -9.2, canib_cli_post: 385, canib_cli_bench: 387.75, canib_cli_delta_pct: -0.7 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6549", name: "Alpura Leche Entera 1 L", ordenes: 424, usuarios: 251, unidades: 1231, gmv: 39555, aov: 93.29, impresiones: 6514, cr_pct: 3.85, gmv_dlw_pct: 2487.8, gmv_dl4w_pct: 1723.3, seg_nuevo: 237, seg_nuevo_pct: 56, seg_reactivado: 42, seg_reactivado_pct: 10, seg_retenido: 145, seg_retenido_pct: 34, stock_viral: 1209, stock_post: 336, stock_bench: 649, stock_delta_pct: -48.2, oos_cierre_viral: 35, oos_post: 25.8, cov_viral_ap: 75.1, cov_viral_ci: 22.6, cov_post: 33.8, canib_ord_post: 76, canib_ord_bench: 188.25, canib_ord_delta_pct: -59.6, canib_und_post: 130, canib_und_bench: 344.5, canib_und_delta_pct: -62.3, canib_cli_post: 83, canib_cli_bench: 164, canib_cli_delta_pct: -49.4 }
+
 
 
 ];
@@ -3707,7 +3734,17 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Verduras", ordenes: 382, gmv: 15778, pct_sellup: 4.97, order: 5 },
   { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Huevos", ordenes: 155, gmv: 10314, pct_sellup: 3.25, order: 6 },
   { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Agua Natural", ordenes: 153, gmv: 8044, pct_sellup: 2.53, order: 7 },
-  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Panaderia salada", ordenes: 103, gmv: 6997, pct_sellup: 2.20, order: 8 }
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Panaderia salada", ordenes: 103, gmv: 6997, pct_sellup: 2.20, order: 8 },
+  // Alpura 090426
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Huevos", ordenes: 111, gmv: 6678, pct_sellup: 8.24, order: 1 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Frutas", ordenes: 103, gmv: 5668, pct_sellup: 6.99, order: 2 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Gaseosas", ordenes: 83, gmv: 3992, pct_sellup: 4.93, order: 3 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Yogurt", ordenes: 57, gmv: 3128, pct_sellup: 3.86, order: 4 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Azucar", ordenes: 14, gmv: 2556, pct_sellup: 3.15, order: 5 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Panaderia salada", ordenes: 39, gmv: 2514, pct_sellup: 3.10, order: 6 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Leche natural", ordenes: 35, gmv: 2436, pct_sellup: 3.01, order: 7 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Snacks salados", ordenes: 49, gmv: 2402, pct_sellup: 2.96, order: 8 }
+
 
 
 ];
@@ -4141,7 +4178,21 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 52, pct_deal: 2.99, order: 9 },
   { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82082", name: "Aguacate Premium Para hoy", subcategoria: "Frutas", ordenes: 52, pct_deal: 2.99, order: 10 },
   { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "8770", name: "Pack Cerveza Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 48, pct_deal: 2.76, order: 11 },
-  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82061", name: "Cebolla Morada", subcategoria: "Frutas", ordenes: 46, pct_deal: 2.65, order: 12 }
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82061", name: "Cebolla Morada", subcategoria: "Frutas", ordenes: 46, pct_deal: 2.65, order: 12 },
+  // Alpura 090426
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "81993", name: "Platano Chiapas", subcategoria: "Frutas", ordenes: 32, pct_deal: 4.06, order: 1 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 32, pct_deal: 4.06, order: 2 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "5672", name: "San Juan Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 28, pct_deal: 3.55, order: 3 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "5877", name: "Huevo Blanco Bachoco 30 ud.", subcategoria: "Huevos", ordenes: 27, pct_deal: 3.42, order: 4 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 26, pct_deal: 3.30, order: 5 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "5543", name: "Bachoco Huevo Blanco 18 Und", subcategoria: "Huevos", ordenes: 25, pct_deal: 3.17, order: 6 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "74098", name: "Pan Blanco Bimbo 620g", subcategoria: "Panaderia salada", ordenes: 14, pct_deal: 1.77, order: 7 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 13, pct_deal: 1.65, order: 8 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "82092", name: "Tortillinas 382 g", subcategoria: "Tortillas", ordenes: 12, pct_deal: 1.52, order: 9 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 11, pct_deal: 1.39, order: 10 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6744", name: "Coca-Cola Original 600 mL", subcategoria: "Gaseosas", ordenes: 10, pct_deal: 1.27, order: 11 },
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6391", name: "Zulka Azucar Morena de Cana 2 Kg", subcategoria: "Azucar", ordenes: 10, pct_deal: 1.27, order: 12 }
+
 
 
 ];
