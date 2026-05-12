@@ -1803,7 +1803,32 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_INSTANCE_310326",
+    maker_name: "Beiersdorf",
+    maker_aux: "Instance",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-03",
+    fecha_ejecucion: "2026-03-31",
+    fecha_fin: null,
+    usd_mxn: 17.64,
+    fecha_tasa: "2026-03-03",
+    budget_maker_mxn: 100000,
+    budget_growth_mxn: 30000,
+    budget_total_mxn: 130000,
+    budget_maker_usd: 5668.93,
+    budget_growth_usd: 1700.68,
+    budget_total_usd: 7369.61,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Protectores solares"
   }
+
 
 
 
@@ -2171,7 +2196,15 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "86364", ean: "7503037706646", pid: "2115743795", name: "Cerveza Charro Ultra Botella 355 mL", subcategoria: "Cervezas", h_units: 2.6, h_orders: 0.8, avg_price: 57.46, ex_incr_units: 44, ex_incr_orders: 14, ex_budget_mxn: 1517, ex_budget_usd: 88.45, real_units: 153, final_budget_mxn: 5275, final_budget_usd: 307.58, sku_order: 6 },
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "86362", ean: "7503037706356", pid: "2115743796", name: "Cerveza Charro Ambar Botella 355 mL", subcategoria: "Cervezas", h_units: 2.4, h_orders: 0.7, avg_price: 58.72, ex_incr_units: 41, ex_incr_orders: 12, ex_budget_mxn: 1445, ex_budget_usd: 84.26, real_units: 140, final_budget_mxn: 4932, final_budget_usd: 287.58, sku_order: 7 },
   { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "86363", ean: "7500462216900", pid: "2115743794", name: "Cerveza Charro Pilsner Botella 355 mL", subcategoria: "Cervezas", h_units: 2.4, h_orders: 1.1, avg_price: 56.89, ex_incr_units: 41, ex_incr_orders: 19, ex_budget_mxn: 1399, ex_budget_usd: 81.57, real_units: 144, final_budget_mxn: 4915, final_budget_usd: 286.59, sku_order: 8 },
-  { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "4793", ean: "7503009302135", pid: "2114941733", name: "Minerva Cerveza Artesanal Pale Ale 355 mL", subcategoria: "Cervezas", h_units: 2.3, h_orders: 1.4, avg_price: 43.55, ex_incr_units: 39, ex_incr_orders: 24, ex_budget_mxn: 1019, ex_budget_usd: 59.42, real_units: 179, final_budget_mxn: 4677, final_budget_usd: 272.71, sku_order: 9 }
+  { deal_id: "VIRAL_DEAL_ARTESANALES_280326", sync: "4793", ean: "7503009302135", pid: "2114941733", name: "Minerva Cerveza Artesanal Pale Ale 355 mL", subcategoria: "Cervezas", h_units: 2.3, h_orders: 1.4, avg_price: 43.55, ex_incr_units: 39, ex_incr_orders: 24, ex_budget_mxn: 1019, ex_budget_usd: 59.42, real_units: 179, final_budget_mxn: 4677, final_budget_usd: 272.71, sku_order: 9 },
+  // Instance 310326
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "4185", ean: "4005808944767", pid: "2113439981", name: "Nivea Protector Solar Sport FPS 50 200 mL", subcategoria: "Protectores solares", h_units: 1.6, h_orders: 1.4, avg_price: 279.25, ex_incr_units: 13, ex_incr_orders: 11, ex_budget_mxn: 1815, ex_budget_usd: 102.89, real_units: 295, final_budget_mxn: 41189, final_budget_usd: 2334.87, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "72363", ean: "4005900259615", pid: "2113440119", name: "Nivea Sun Protector Solar Hidratante Fps 50+ 200 mL", subcategoria: "Protectores solares", h_units: 0.9, h_orders: 0.9, avg_price: 288.05, ex_incr_units: 7, ex_incr_orders: 7, ex_budget_mxn: 1008, ex_budget_usd: 57.14, real_units: 154, final_budget_mxn: 22180, final_budget_usd: 1257.37, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76142", ean: "4005900732583", pid: "2114905443", name: "Nivea Protector Solar Facial Control de Brillo Fps 50 50 mL", subcategoria: "Protectores solares", h_units: 0.9, h_orders: 0.9, avg_price: 238.21, ex_incr_units: 7, ex_incr_orders: 7, ex_budget_mxn: 834, ex_budget_usd: 47.28, real_units: 186, final_budget_mxn: 22154, final_budget_usd: 1255.90, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "2153", ean: "4005900259974", pid: "2113432513", name: "Nivea Protector Solar Piel Sensible FPS 50 200 mL", subcategoria: "Protectores solares", h_units: 0.8, h_orders: 0.8, avg_price: 276.13, ex_incr_units: 6, ex_incr_orders: 6, ex_budget_mxn: 828, ex_budget_usd: 46.94, real_units: 138, final_budget_mxn: 19053, final_budget_usd: 1080.27, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76143", ean: "7501054547815", pid: "2114905444", name: "Nivea Protector Solar para Piel Sensible 50 mL", subcategoria: "Protectores solares", h_units: 0.5, h_orders: 0.5, avg_price: 252.63, ex_incr_units: 4, ex_incr_orders: 4, ex_budget_mxn: 505, ex_budget_usd: 28.63, real_units: 100, final_budget_mxn: 12632, final_budget_usd: 716.10, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76636", ean: "4005808944132", pid: "2114934025", name: "Nivea Sun Protector Solar Piel Sensible Fps 50+ 125 mL", subcategoria: "Protectores solares", h_units: 0.5, h_orders: 0.5, avg_price: 196.83, ex_incr_units: 4, ex_incr_orders: 4, ex_budget_mxn: 394, ex_budget_usd: 22.33, real_units: 129, final_budget_mxn: 12696, final_budget_usd: 719.73, sku_order: 6 }
+
 
 
 
