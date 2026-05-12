@@ -3296,7 +3296,30 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 1517, canib_ord_bench: 1015.0, canib_ord_delta_pct: 49.5,
     canib_und_post: 2178, canib_und_bench: 1349.75, canib_und_delta_pct: 61.4,
     canib_cli_post: 1458, canib_cli_bench: 960.75, canib_cli_delta_pct: 51.8
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_140426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 71796, gmv_lw: 18608, gmv_dlw_pct: 285.8, gmv_l4w: 19240, gmv_dl4w_pct: 273.2,
+    usuarios_unicos: 1269, usr_lw: 703, usr_dlw_pct: 80.5, usr_l4w: 752.5, usr_dl4w_pct: 68.6,
+    cr_pct: 3.88, aov: 48.91, aov_lw: 26.47, aov_dlw_pct: 84.8, aov_l4w: 25.57, aov_dl4w_pct: 91.3,
+    unidades_total: 8183, und_lw: 703, und_dlw_pct: 1064.0, und_l4w: 752, und_dl4w_pct: 988.2,
+    ordenes_total: 1468, ord_lw: 703, ord_dlw_pct: 108.8, ord_l4w: 752.5, ord_dl4w_pct: 95.1,
+    impresiones_total: 32738,
+    so_turbo_mx: 3474095, gmv_categoria: 236689, gmv_cat_lw: 180940, gmv_cat_l4w: 183561,
+    share_deal_cat_pct: 30.33, share_lw_pct: 10.28, share_l4w_pct: 10.48,
+    gmv_basket: 385710, gmv_sellup: 313914, pct_sellup: 81.39,
+    aov_basket: 262.75, aov_deal_post: 48.91,
+    cross_ordenes: 1468, cross_skus_distintos: 1801,
+    cross_top_producto: "Tomate Guaje Saladette", cross_top_ordenes: 183, cross_top_pct: 12.47,
+    inv_oos_cierre_viral_avg: 20.0, inv_oos_post_avg: 9.2,
+    inv_cov_viral_ap_avg: 67.8, inv_cov_viral_ci_avg: 35.6,
+    inv_cov_post_avg: 53.5, inv_cov_bench_avg: 0,
+    canib_ord_post: 2912, canib_ord_bench: 2816.75, canib_ord_delta_pct: 3.4,
+    canib_und_post: 10865, canib_und_bench: 10189.75, canib_und_delta_pct: 6.6,
+    canib_cli_post: 3013, canib_cli_bench: 2589.0, canib_cli_delta_pct: 16.4
   }
+
 
 
 
@@ -3520,7 +3543,14 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   // Huevo 110426,
   { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5877", name: "Bachoco Huevo Blanco 30 ud.", ordenes: 347, usuarios: 275, unidades: 484, gmv: 41606, aov: 119.9, impresiones: 4006, cr_pct: 6.86, gmv_dlw_pct: 1105.9, gmv_dl4w_pct: 865.4, seg_nuevo: 185, seg_nuevo_pct: 53, seg_reactivado: 72, seg_reactivado_pct: 21, seg_retenido: 90, seg_retenido_pct: 26, stock_viral: 1527, stock_post: 1109, stock_bench: 421, stock_delta_pct: 163.4, oos_cierre_viral: 24, oos_post: 24.0, cov_viral_ap: 59.7, cov_viral_ci: 60.0, cov_post: 57.6, canib_ord_post: 439, canib_ord_bench: 234.5, canib_ord_delta_pct: 87.2, canib_und_post: 644, canib_und_bench: 307.25, canib_und_delta_pct: 109.6, canib_cli_post: 395, canib_cli_bench: 206.75, canib_cli_delta_pct: 91.1 },
   { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", ordenes: 440, usuarios: 225, unidades: 1011, gmv: 30189, aov: 68.61, impresiones: 8055, cr_pct: 2.79, gmv_dlw_pct: 647.8, gmv_dl4w_pct: 356.4, seg_nuevo: 117, seg_nuevo_pct: 27, seg_reactivado: 81, seg_reactivado_pct: 18, seg_retenido: 242, seg_retenido_pct: 55, stock_viral: 6556, stock_post: 5667, stock_bench: 1590, stock_delta_pct: 256.4, oos_cierre_viral: 12, oos_post: 14.3, cov_viral_ap: 79.9, cov_viral_ci: 80.1, cov_post: 79.5, canib_ord_post: 636, canib_ord_bench: 398, canib_ord_delta_pct: 59.8, canib_und_post: 885, canib_und_bench: 502.25, canib_und_delta_pct: 76.2, canib_cli_post: 682, canib_cli_bench: 410, canib_cli_delta_pct: 66.3 },
-  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5543", name: "Bachoco Huevo Blanco 18 ud.", ordenes: 237, usuarios: 208, unidades: 304, gmv: 18013, aov: 76.0, impresiones: 5803, cr_pct: 3.58, gmv_dlw_pct: 445.8, gmv_dl4w_pct: 156.6, seg_nuevo: 125, seg_nuevo_pct: 53, seg_reactivado: 51, seg_reactivado_pct: 22, seg_retenido: 61, seg_retenido_pct: 26, stock_viral: 3304, stock_post: 3267, stock_bench: 910, stock_delta_pct: 259, oos_cierre_viral: 20, oos_post: 18.8, cov_viral_ap: 62.7, cov_viral_ci: 67.4, cov_post: 66.7, canib_ord_post: 442, canib_ord_bench: 382.5, canib_ord_delta_pct: 15.6, canib_und_post: 649, canib_und_bench: 540.25, canib_und_delta_pct: 20.1, canib_cli_post: 381, canib_cli_bench: 344, canib_cli_delta_pct: 10.8 }
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5543", name: "Bachoco Huevo Blanco 18 ud.", ordenes: 237, usuarios: 208, unidades: 304, gmv: 18013, aov: 76.0, impresiones: 5803, cr_pct: 3.58, gmv_dlw_pct: 445.8, gmv_dl4w_pct: 156.6, seg_nuevo: 125, seg_nuevo_pct: 53, seg_reactivado: 51, seg_reactivado_pct: 22, seg_retenido: 61, seg_retenido_pct: 26, stock_viral: 3304, stock_post: 3267, stock_bench: 910, stock_delta_pct: 259, oos_cierre_viral: 20, oos_post: 18.8, cov_viral_ap: 62.7, cov_viral_ci: 67.4, cov_post: 66.7, canib_ord_post: 442, canib_ord_bench: 382.5, canib_ord_delta_pct: 15.6, canib_und_post: 649, canib_und_bench: 540.25, canib_und_delta_pct: 20.1, canib_cli_post: 381, canib_cli_bench: 344, canib_cli_delta_pct: 10.8 },
+  // Fruver 140426,
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "81993", name: "Platano Chiapas", ordenes: 1138, usuarios: 1008, unidades: 4454, gmv: 27019, aov: 23.74, impresiones: 17395, cr_pct: 5.79, gmv_dlw_pct: 170.7, gmv_dl4w_pct: 144.3, seg_nuevo: 381, seg_nuevo_pct: 33, seg_reactivado: 317, seg_reactivado_pct: 28, seg_retenido: 440, seg_retenido_pct: 39, stock_viral: 7292, stock_post: 3080, stock_bench: 2496, stock_delta_pct: 23.4, oos_cierre_viral: 4, oos_post: 3.3, cov_viral_ap: 68.2, cov_viral_ci: 63.9, cov_post: 63.2, canib_ord_post: 1962, canib_ord_bench: 1852.25, canib_ord_delta_pct: 5.9, canib_und_post: 7821, canib_und_bench: 7296.5, canib_und_delta_pct: 7.2, canib_cli_post: 2047, canib_cli_bench: 1685.25, canib_cli_delta_pct: 21.5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "72931", name: "Mango Ataulfo 340 g", ordenes: 316, usuarios: 279, unidades: 967, gmv: 18174, aov: 57.51, impresiones: 2497, cr_pct: 11.17, gmv_dlw_pct: 553.2, gmv_dl4w_pct: 602.6, seg_nuevo: 207, seg_nuevo_pct: 66, seg_reactivado: 61, seg_reactivado_pct: 19, seg_retenido: 48, seg_retenido_pct: 15, stock_viral: 1359, stock_post: 417, stock_bench: 241, stock_delta_pct: 73, oos_cierre_viral: 28, oos_post: 25.5, cov_viral_ap: 45.0, cov_viral_ci: 33.5, cov_post: 37.4, canib_ord_post: 234, canib_ord_bench: 263.5, canib_ord_delta_pct: -11.2, canib_und_post: 657, canib_und_bench: 677.5, canib_und_delta_pct: -3.0, canib_cli_post: 246, canib_cli_bench: 255.5, canib_cli_delta_pct: -3.7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "76544", name: "Kiwi 130 g", ordenes: 218, usuarios: 203, unidades: 628, gmv: 9159, aov: 42.02, impresiones: 4696, cr_pct: 4.32, gmv_dlw_pct: 306.2, gmv_dl4w_pct: 287.3, seg_nuevo: 125, seg_nuevo_pct: 57, seg_reactivado: 70, seg_reactivado_pct: 32, seg_retenido: 23, seg_retenido_pct: 11, stock_viral: 715, stock_post: 324, stock_bench: 375, stock_delta_pct: -13.6, oos_cierre_viral: 28, oos_post: 6.0, cov_viral_ap: 94.0, cov_viral_ci: 27.2, cov_post: 69.3, canib_ord_post: 279, canib_ord_bench: 247, canib_ord_delta_pct: 13.0, canib_und_post: 687, canib_und_bench: 588.25, canib_und_delta_pct: 16.8, canib_cli_post: 285, canib_cli_bench: 233.75, canib_cli_delta_pct: 21.9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82059", name: "Manzana Smith", ordenes: 259, usuarios: 233, unidades: 879, gmv: 8981, aov: 34.68, impresiones: 3113, cr_pct: 7.48, gmv_dlw_pct: 376.2, gmv_dl4w_pct: 465.6, seg_nuevo: 155, seg_nuevo_pct: 60, seg_reactivado: 59, seg_reactivado_pct: 23, seg_retenido: 45, seg_retenido_pct: 17, stock_viral: 950, stock_post: 259, stock_bench: 334, stock_delta_pct: -22.5, oos_cierre_viral: 22, oos_post: 5.3, cov_viral_ap: 65.8, cov_viral_ci: 21.6, cov_post: 47.3, canib_ord_post: 158, canib_ord_bench: 171.75, canib_ord_delta_pct: -8.0, canib_und_post: 492, canib_und_bench: 492.25, canib_und_delta_pct: -0.1, canib_cli_post: 164, canib_cli_bench: 165.5, canib_cli_delta_pct: -0.9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82049", name: "Naranja Valencia", ordenes: 301, usuarios: 265, unidades: 1255, gmv: 8462, aov: 28.11, impresiones: 5037, cr_pct: 5.26, gmv_dlw_pct: 396.2, gmv_dl4w_pct: 416.0, seg_nuevo: 160, seg_nuevo_pct: 53, seg_reactivado: 73, seg_reactivado_pct: 24, seg_retenido: 68, seg_retenido_pct: 23, stock_viral: 1307, stock_post: 481, stock_bench: 516, stock_delta_pct: -6.8, oos_cierre_viral: 18, oos_post: 5.8, cov_viral_ap: 65.8, cov_viral_ci: 31.9, cov_post: 50.4, canib_ord_post: 279, canib_ord_bench: 282.25, canib_ord_delta_pct: -1.2, canib_und_post: 1208, canib_und_bench: 1135.25, canib_und_delta_pct: 6.4, canib_cli_post: 271, canib_cli_bench: 249, canib_cli_delta_pct: 8.8 }
+
 
 
 
@@ -3842,7 +3872,17 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Snacks salados", ordenes: 94, gmv: 5914, pct_sellup: 4.08, order: 5 },
   { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Cervezas", ordenes: 52, gmv: 5562, pct_sellup: 3.84, order: 6 },
   { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Agua Natural", ordenes: 98, gmv: 4905, pct_sellup: 3.38, order: 7 },
-  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Jamones", ordenes: 35, gmv: 3730, pct_sellup: 2.57, order: 8 }
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Jamones", ordenes: 35, gmv: 3730, pct_sellup: 2.57, order: 8 },
+  // Fruver 140426
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Frutas", ordenes: 729, gmv: 56077, pct_sellup: 17.86, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Huevos", ordenes: 240, gmv: 13252, pct_sellup: 4.22, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Verduras", ordenes: 285, gmv: 12498, pct_sellup: 3.98, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Leche natural", ordenes: 179, gmv: 12136, pct_sellup: 3.87, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Gaseosas", ordenes: 202, gmv: 10783, pct_sellup: 3.43, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Agua Natural", ordenes: 197, gmv: 10518, pct_sellup: 3.35, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Panaderia salada", ordenes: 159, gmv: 10124, pct_sellup: 3.23, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Yogurt", ordenes: 147, gmv: 9601, pct_sellup: 3.06, order: 8 }
+
 
 
 
@@ -4304,7 +4344,21 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 20, pct_deal: 1.98, order: 9 },
   { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 19, pct_deal: 1.88, order: 10 },
   { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "82050", name: "Manzana Golden", subcategoria: "Frutas", ordenes: 19, pct_deal: 1.88, order: 11 },
-  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "6149", name: "Coca-Cola Sin Azucar 600 mL", subcategoria: "Gaseosas", ordenes: 18, pct_deal: 1.79, order: 12 }
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "6149", name: "Coca-Cola Sin Azucar 600 mL", subcategoria: "Gaseosas", ordenes: 18, pct_deal: 1.79, order: 12 },
+  // Fruver 140426
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 183, pct_deal: 12.47, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 117, pct_deal: 7.97, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "14946", name: "Mallas Limon Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 110, pct_deal: 7.49, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 97, pct_deal: 6.61, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "5672", name: "San Juan Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 93, pct_deal: 6.34, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 87, pct_deal: 5.93, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 86, pct_deal: 5.86, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82058", name: "Cebolla Blanca", subcategoria: "Frutas", ordenes: 86, pct_deal: 5.86, order: 8 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "14352", name: "Aguacate Para 2 Dias x3", subcategoria: "Frutas", ordenes: 79, pct_deal: 5.38, order: 9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 69, pct_deal: 4.70, order: 10 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "8033", name: "Ciel Agua Natural 10 L", subcategoria: "Agua Natural", ordenes: 65, pct_deal: 4.43, order: 11 },
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82050", name: "Manzana Golden", subcategoria: "Frutas", ordenes: 51, pct_deal: 3.47, order: 12 }
+
 
 
 
