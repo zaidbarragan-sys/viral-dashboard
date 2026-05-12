@@ -3242,7 +3242,30 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 419, canib_ord_bench: 600.25, canib_ord_delta_pct: -30.2,
     canib_und_post: 838, canib_und_bench: 1124.0, canib_und_delta_pct: -25.4,
     canib_cli_post: 468, canib_cli_bench: 551.75, canib_cli_delta_pct: -15.2
+  },
+  {
+    deal_id: "VIRAL_DEAL_HUEVO_110426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 89807, gmv_lw: 10788, gmv_dlw_pct: 732.5, gmv_l4w: 17945, gmv_dl4w_pct: 400.5,
+    usuarios_unicos: 693, usr_lw: 161, usr_dlw_pct: 330.4, usr_l4w: 219.0, usr_dl4w_pct: 216.4,
+    cr_pct: 3.88, aov: 89.09, aov_lw: 67.01, aov_dlw_pct: 33.0, aov_l4w: 81.94, aov_dl4w_pct: 8.7,
+    unidades_total: 1799, und_lw: 161, und_dlw_pct: 1017.4, und_l4w: 219, und_dl4w_pct: 721.5,
+    ordenes_total: 1008, ord_lw: 161, ord_dlw_pct: 526.1, ord_l4w: 219.0, ord_dl4w_pct: 360.3,
+    impresiones_total: 17864,
+    so_turbo_mx: 5372362, gmv_categoria: 130223, gmv_cat_lw: 51671, gmv_cat_l4w: 68654,
+    share_deal_cat_pct: 68.96, share_lw_pct: 20.88, share_l4w_pct: 26.14,
+    gmv_basket: 234741, gmv_sellup: 144934, pct_sellup: 61.74,
+    aov_basket: 232.88, aov_deal_post: 89.09,
+    cross_ordenes: 1008, cross_skus_distintos: 1174,
+    cross_top_producto: "Platano Chiapas", cross_top_ordenes: 77, cross_top_pct: 7.64,
+    inv_oos_cierre_viral_avg: 18.7, inv_oos_post_avg: 19.0,
+    inv_cov_viral_ap_avg: 67.4, inv_cov_viral_ci_avg: 69.2,
+    inv_cov_post_avg: 67.9, inv_cov_bench_avg: 0,
+    canib_ord_post: 1517, canib_ord_bench: 1015.0, canib_ord_delta_pct: 49.5,
+    canib_und_post: 2178, canib_und_bench: 1349.75, canib_und_delta_pct: 61.4,
+    canib_cli_post: 1458, canib_cli_bench: 960.75, canib_cli_delta_pct: 51.8
   }
+
 
 
 
@@ -3461,7 +3484,12 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14919", name: "Malla Cebolla Blanca 2 pz", ordenes: 146, usuarios: 133, unidades: 348, gmv: 5252, aov: 35.97, impresiones: 104, cr_pct: 127.88, gmv_dlw_pct: 381.1, gmv_dl4w_pct: 414.6, seg_nuevo: 94, seg_nuevo_pct: 64, seg_reactivado: 35, seg_reactivado_pct: 24, seg_retenido: 17, seg_retenido_pct: 12, stock_viral: 428, stock_post: 212, stock_bench: 245, stock_delta_pct: -13.5, oos_cierre_viral: 56, oos_post: 50.0, cov_viral_ap: 30.4, cov_viral_ci: 18.8, cov_post: 24.6, canib_ord_post: 159, canib_ord_bench: 190.75, canib_ord_delta_pct: -16.6, canib_und_post: 229, canib_und_bench: 287.5, canib_und_delta_pct: -20.3, canib_cli_post: 179, canib_cli_bench: 185.25, canib_cli_delta_pct: -3.4 },
   // Alpura 090426,
   { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6981", name: "Alpura Leche Deslactosada Light 1 L", ordenes: 529, usuarios: 359, unidades: 1414, gmv: 49578, aov: 93.72, impresiones: 7836, cr_pct: 4.58, gmv_dlw_pct: 1420.3, gmv_dl4w_pct: 987.9, seg_nuevo: 293, seg_nuevo_pct: 55, seg_reactivado: 76, seg_reactivado_pct: 14, seg_retenido: 160, seg_retenido_pct: 30, stock_viral: 1987, stock_post: 1190, stock_bench: 1070, stock_delta_pct: 11.2, oos_cierre_viral: 26, oos_post: 15.8, cov_viral_ap: 74.8, cov_viral_ci: 44.4, cov_post: 58.8, canib_ord_post: 343, canib_ord_bench: 412, canib_ord_delta_pct: -16.7, canib_und_post: 708, canib_und_bench: 779.5, canib_und_delta_pct: -9.2, canib_cli_post: 385, canib_cli_bench: 387.75, canib_cli_delta_pct: -0.7 },
-  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6549", name: "Alpura Leche Entera 1 L", ordenes: 424, usuarios: 251, unidades: 1231, gmv: 39555, aov: 93.29, impresiones: 6514, cr_pct: 3.85, gmv_dlw_pct: 2487.8, gmv_dl4w_pct: 1723.3, seg_nuevo: 237, seg_nuevo_pct: 56, seg_reactivado: 42, seg_reactivado_pct: 10, seg_retenido: 145, seg_retenido_pct: 34, stock_viral: 1209, stock_post: 336, stock_bench: 649, stock_delta_pct: -48.2, oos_cierre_viral: 35, oos_post: 25.8, cov_viral_ap: 75.1, cov_viral_ci: 22.6, cov_post: 33.8, canib_ord_post: 76, canib_ord_bench: 188.25, canib_ord_delta_pct: -59.6, canib_und_post: 130, canib_und_bench: 344.5, canib_und_delta_pct: -62.3, canib_cli_post: 83, canib_cli_bench: 164, canib_cli_delta_pct: -49.4 }
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6549", name: "Alpura Leche Entera 1 L", ordenes: 424, usuarios: 251, unidades: 1231, gmv: 39555, aov: 93.29, impresiones: 6514, cr_pct: 3.85, gmv_dlw_pct: 2487.8, gmv_dl4w_pct: 1723.3, seg_nuevo: 237, seg_nuevo_pct: 56, seg_reactivado: 42, seg_reactivado_pct: 10, seg_retenido: 145, seg_retenido_pct: 34, stock_viral: 1209, stock_post: 336, stock_bench: 649, stock_delta_pct: -48.2, oos_cierre_viral: 35, oos_post: 25.8, cov_viral_ap: 75.1, cov_viral_ci: 22.6, cov_post: 33.8, canib_ord_post: 76, canib_ord_bench: 188.25, canib_ord_delta_pct: -59.6, canib_und_post: 130, canib_und_bench: 344.5, canib_und_delta_pct: -62.3, canib_cli_post: 83, canib_cli_bench: 164, canib_cli_delta_pct: -49.4 },
+  // Huevo 110426,
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5877", name: "Bachoco Huevo Blanco 30 ud.", ordenes: 347, usuarios: 275, unidades: 484, gmv: 41606, aov: 119.9, impresiones: 4006, cr_pct: 6.86, gmv_dlw_pct: 1105.9, gmv_dl4w_pct: 865.4, seg_nuevo: 185, seg_nuevo_pct: 53, seg_reactivado: 72, seg_reactivado_pct: 21, seg_retenido: 90, seg_retenido_pct: 26, stock_viral: 1527, stock_post: 1109, stock_bench: 421, stock_delta_pct: 163.4, oos_cierre_viral: 24, oos_post: 24.0, cov_viral_ap: 59.7, cov_viral_ci: 60.0, cov_post: 57.6, canib_ord_post: 439, canib_ord_bench: 234.5, canib_ord_delta_pct: 87.2, canib_und_post: 644, canib_und_bench: 307.25, canib_und_delta_pct: 109.6, canib_cli_post: 395, canib_cli_bench: 206.75, canib_cli_delta_pct: 91.1 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "12616", name: "Bachoco Huevo Blanco 12 ud.", ordenes: 440, usuarios: 225, unidades: 1011, gmv: 30189, aov: 68.61, impresiones: 8055, cr_pct: 2.79, gmv_dlw_pct: 647.8, gmv_dl4w_pct: 356.4, seg_nuevo: 117, seg_nuevo_pct: 27, seg_reactivado: 81, seg_reactivado_pct: 18, seg_retenido: 242, seg_retenido_pct: 55, stock_viral: 6556, stock_post: 5667, stock_bench: 1590, stock_delta_pct: 256.4, oos_cierre_viral: 12, oos_post: 14.3, cov_viral_ap: 79.9, cov_viral_ci: 80.1, cov_post: 79.5, canib_ord_post: 636, canib_ord_bench: 398, canib_ord_delta_pct: 59.8, canib_und_post: 885, canib_und_bench: 502.25, canib_und_delta_pct: 76.2, canib_cli_post: 682, canib_cli_bench: 410, canib_cli_delta_pct: 66.3 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5543", name: "Bachoco Huevo Blanco 18 ud.", ordenes: 237, usuarios: 208, unidades: 304, gmv: 18013, aov: 76.0, impresiones: 5803, cr_pct: 3.58, gmv_dlw_pct: 445.8, gmv_dl4w_pct: 156.6, seg_nuevo: 125, seg_nuevo_pct: 53, seg_reactivado: 51, seg_reactivado_pct: 22, seg_retenido: 61, seg_retenido_pct: 26, stock_viral: 3304, stock_post: 3267, stock_bench: 910, stock_delta_pct: 259, oos_cierre_viral: 20, oos_post: 18.8, cov_viral_ap: 62.7, cov_viral_ci: 67.4, cov_post: 66.7, canib_ord_post: 442, canib_ord_bench: 382.5, canib_ord_delta_pct: 15.6, canib_und_post: 649, canib_und_bench: 540.25, canib_und_delta_pct: 20.1, canib_cli_post: 381, canib_cli_bench: 344, canib_cli_delta_pct: 10.8 }
+
 
 
 
@@ -3773,7 +3801,17 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Azucar", ordenes: 14, gmv: 2556, pct_sellup: 3.15, order: 5 },
   { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Panaderia salada", ordenes: 39, gmv: 2514, pct_sellup: 3.10, order: 6 },
   { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Leche natural", ordenes: 35, gmv: 2436, pct_sellup: 3.01, order: 7 },
-  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Snacks salados", ordenes: 49, gmv: 2402, pct_sellup: 2.96, order: 8 }
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", subcategoria: "Snacks salados", ordenes: 49, gmv: 2402, pct_sellup: 2.96, order: 8 },
+  // Huevo 110426
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Frutas", ordenes: 281, gmv: 15218, pct_sellup: 10.50, order: 1 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Leche natural", ordenes: 124, gmv: 8557, pct_sellup: 5.90, order: 2 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Panaderia salada", ordenes: 97, gmv: 7120, pct_sellup: 4.91, order: 3 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Gaseosas", ordenes: 119, gmv: 6598, pct_sellup: 4.55, order: 4 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Snacks salados", ordenes: 94, gmv: 5914, pct_sellup: 4.08, order: 5 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Cervezas", ordenes: 52, gmv: 5562, pct_sellup: 3.84, order: 6 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Agua Natural", ordenes: 98, gmv: 4905, pct_sellup: 3.38, order: 7 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", subcategoria: "Jamones", ordenes: 35, gmv: 3730, pct_sellup: 2.57, order: 8 }
+
 
 
 
@@ -4221,7 +4259,21 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "82092", name: "Tortillinas 382 g", subcategoria: "Tortillas", ordenes: 12, pct_deal: 1.52, order: 9 },
   { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 11, pct_deal: 1.39, order: 10 },
   { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6744", name: "Coca-Cola Original 600 mL", subcategoria: "Gaseosas", ordenes: 10, pct_deal: 1.27, order: 11 },
-  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6391", name: "Zulka Azucar Morena de Cana 2 Kg", subcategoria: "Azucar", ordenes: 10, pct_deal: 1.27, order: 12 }
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6391", name: "Zulka Azucar Morena de Cana 2 Kg", subcategoria: "Azucar", ordenes: 10, pct_deal: 1.27, order: 12 },
+  // Huevo 110426
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "81993", name: "Platano Chiapas", subcategoria: "Frutas", ordenes: 77, pct_deal: 7.64, order: 1 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 58, pct_deal: 5.75, order: 2 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 48, pct_deal: 4.76, order: 3 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "8033", name: "Ciel Agua Natural 10 L", subcategoria: "Agua Natural", ordenes: 31, pct_deal: 3.08, order: 4 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "82058", name: "Cebolla Blanca", subcategoria: "Frutas", ordenes: 30, pct_deal: 2.98, order: 5 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "74098", name: "Pan Blanco Bimbo 620g", subcategoria: "Panaderia salada", ordenes: 26, pct_deal: 2.58, order: 6 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "14946", name: "Mallas Limon Con Semilla 5 pz", subcategoria: "Frutas", ordenes: 24, pct_deal: 2.38, order: 7 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "6425", name: "Santa Clara Leche Entera 1 L", subcategoria: "Leche natural", ordenes: 22, pct_deal: 2.18, order: 8 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 20, pct_deal: 1.98, order: 9 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 19, pct_deal: 1.88, order: 10 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "82050", name: "Manzana Golden", subcategoria: "Frutas", ordenes: 19, pct_deal: 1.88, order: 11 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "6149", name: "Coca-Cola Sin Azucar 600 mL", subcategoria: "Gaseosas", ordenes: 18, pct_deal: 1.79, order: 12 }
+
 
 
 
