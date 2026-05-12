@@ -1779,7 +1779,32 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Rones, Tequilas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_MINERVA_280326",
+    maker_name: "Cerveza Minerva",
+    maker_aux: "Minerva",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 17,
+    tipo_viral: "1 día",
+    ciudades: "CDMX, MTY, GDL, PUE, QRO",
+    fecha_planeacion: "2026-02-20",
+    fecha_ejecucion: "2026-03-28",
+    fecha_fin: null,
+    usd_mxn: 17.15,
+    fecha_tasa: "2026-02-20",
+    budget_maker_mxn: 105000,
+    budget_growth_mxn: 31500,
+    budget_total_mxn: 136500,
+    budget_maker_usd: 6122.45,
+    budget_growth_usd: 1836.73,
+    budget_total_usd: 7959.18,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Cervezas"
   }
+
 
 
 ];
@@ -2136,7 +2161,18 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "75752", ean: "7610113024386", pid: "2115054225", name: "Ron Bacardí Licor Spiced 700 mL", subcategoria: "Rones", h_units: 10.9, h_orders: 10.1, avg_price: 201.89, ex_incr_units: 44, ex_incr_orders: 40, ex_budget_mxn: 3553, ex_budget_usd: 205.85, real_units: 266, final_budget_mxn: 21481, final_budget_usd: 1244.55, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "81479", ean: "7610113029558", pid: "2115579950", name: "Ron Bacardi Coco 700 mL", subcategoria: "Rones", h_units: 6.4, h_orders: 5.7, avg_price: 267.52, ex_incr_units: 26, ex_incr_orders: 23, ex_budget_mxn: 2782, ex_budget_usd: 161.18, real_units: 118, final_budget_mxn: 12627, final_budget_usd: 731.58, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "81481", ean: "7610113012581", pid: "2115579950", name: "Ron Bacardi Mango Chile 700 mL", subcategoria: "Rones", h_units: 5.1, h_orders: 4.6, avg_price: 276.56, ex_incr_units: 20, ex_incr_orders: 18, ex_budget_mxn: 2212, ex_budget_usd: 128.16, real_units: 88, final_budget_mxn: 9735, final_budget_usd: 564.02, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "81482", ean: "07610113028421", pid: "2115579950", name: "Ron Bacardi Raspberry 700 mL", subcategoria: "Rones", h_units: 5.1, h_orders: 4.6, avg_price: 279.67, ex_incr_units: 20, ex_incr_orders: 18, ex_budget_mxn: 2237, ex_budget_usd: 129.61, real_units: 87, final_budget_mxn: 9733, final_budget_usd: 563.90, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "81482", ean: "07610113028421", pid: "2115579950", name: "Ron Bacardi Raspberry 700 mL", subcategoria: "Rones", h_units: 5.1, h_orders: 4.6, avg_price: 279.67, ex_incr_units: 20, ex_incr_orders: 18, ex_budget_mxn: 2237, ex_budget_usd: 129.61, real_units: 87, final_budget_mxn: 9733, final_budget_usd: 563.90, sku_order: 5 },
+  // Minerva 280326
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "13126", ean: "7500462286880", pid: "2112751707", name: "Cerveza Cervecería de Colima Piedra Lisa Ipa Botella 355 mL", subcategoria: "Cervezas", h_units: 31.4, h_orders: 11.6, avg_price: 49.44, ex_incr_units: 534, ex_incr_orders: 197, ex_budget_mxn: 15841, ex_budget_usd: 923.56, real_units: 2163, final_budget_mxn: 64163, final_budget_usd: 3741.28, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "12827", ean: "7500326341502", pid: "2112751504", name: "Cerveza Cervecería de Colima Colimita Lager Botella 355 mL", subcategoria: "Cervezas", h_units: 9.3, h_orders: 3.1, avg_price: 50.20, ex_incr_units: 158, ex_incr_orders: 53, ex_budget_mxn: 4759, ex_budget_usd: 277.49, real_units: 630, final_budget_mxn: 18976, final_budget_usd: 1106.47, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "4805", ean: "7503009302005", pid: "2114941727", name: "Minerva Cerveza Viena Artesanal de Guadalajara 500 mL", subcategoria: "Cervezas", h_units: 7.8, h_orders: 4.4, avg_price: 40.24, ex_incr_units: 133, ex_incr_orders: 75, ex_budget_mxn: 3211, ex_budget_usd: 187.23, real_units: 662, final_budget_mxn: 15983, final_budget_usd: 931.84, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "13570", ean: "7503009302340", pid: "2114905506", name: "Minerva Cerveza Artesanal Lager Light 355 mL", subcategoria: "Cervezas", h_units: 4.9, h_orders: 2.0, avg_price: 40.87, ex_incr_units: 83, ex_incr_orders: 34, ex_budget_mxn: 2035, ex_budget_usd: 118.66, real_units: 407, final_budget_mxn: 9980, final_budget_usd: 581.92, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "4818", ean: "7503009302012", pid: "2114941732", name: "Minerva Cerveza Colonial 355 mL", subcategoria: "Cervezas", h_units: 3.7, h_orders: 1.9, avg_price: 40.59, ex_incr_units: 63, ex_incr_orders: 32, ex_budget_mxn: 1534, ex_budget_usd: 89.45, real_units: 311, final_budget_mxn: 7574, final_budget_usd: 441.57, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "86364", ean: "7503037706646", pid: "2115743795", name: "Cerveza Charro Ultra Botella 355 mL", subcategoria: "Cervezas", h_units: 2.6, h_orders: 0.8, avg_price: 57.46, ex_incr_units: 44, ex_incr_orders: 14, ex_budget_mxn: 1517, ex_budget_usd: 88.45, real_units: 153, final_budget_mxn: 5275, final_budget_usd: 307.58, sku_order: 6 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "86362", ean: "7503037706356", pid: "2115743796", name: "Cerveza Charro Ambar Botella 355 mL", subcategoria: "Cervezas", h_units: 2.4, h_orders: 0.7, avg_price: 58.72, ex_incr_units: 41, ex_incr_orders: 12, ex_budget_mxn: 1445, ex_budget_usd: 84.26, real_units: 140, final_budget_mxn: 4932, final_budget_usd: 287.58, sku_order: 7 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "86363", ean: "7500462216900", pid: "2115743794", name: "Cerveza Charro Pilsner Botella 355 mL", subcategoria: "Cervezas", h_units: 2.4, h_orders: 1.1, avg_price: 56.89, ex_incr_units: 41, ex_incr_orders: 19, ex_budget_mxn: 1399, ex_budget_usd: 81.57, real_units: 144, final_budget_mxn: 4915, final_budget_usd: 286.59, sku_order: 8 },
+  { deal_id: "VIRAL_DEAL_MINERVA_280326", sync: "4793", ean: "7503009302135", pid: "2114941733", name: "Minerva Cerveza Artesanal Pale Ale 355 mL", subcategoria: "Cervezas", h_units: 2.3, h_orders: 1.4, avg_price: 43.55, ex_incr_units: 39, ex_incr_orders: 24, ex_budget_mxn: 1019, ex_budget_usd: 59.42, real_units: 179, final_budget_mxn: 4677, final_budget_usd: 272.71, sku_order: 9 }
+
 
 
 ];
