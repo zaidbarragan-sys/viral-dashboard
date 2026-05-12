@@ -1707,6 +1707,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_BOKADOS_260326",
+    maker_name: "Bokados",
+    maker_aux: "Bokados",
+    business_unit: "Foods",
+    descuento_pct: 60,
+    incrementalidad: 3,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-03",
+    fecha_ejecucion: "2026-03-26",
+    fecha_fin: null,
+    usd_mxn: 17.64,
+    fecha_tasa: "2026-03-03",
+    budget_maker_mxn: 70000,
+    budget_growth_mxn: 21000,
+    budget_total_mxn: 91000,
+    budget_maker_usd: 3968.25,
+    budget_growth_usd: 1190.48,
+    budget_total_usd: 5158.73,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Snacks salados"
   }
 ];
 
@@ -2040,7 +2064,18 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "13692", ean: "7501064196263", pid: "2115901721", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", h_units: 365.6, h_orders: 242.8, avg_price: 153.48, ex_incr_units: 1462, ex_incr_orders: 971, ex_budget_mxn: 134643, ex_budget_usd: 7792.05, real_units: 542, final_budget_mxn: 49932, final_budget_usd: 2889.58, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "5314", ean: "7501064198175", pid: "2115901720", name: "Pack Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", h_units: 283.9, h_orders: 198.3, avg_price: 135.03, ex_incr_units: 1136, ex_incr_orders: 793, ex_budget_mxn: 92036, ex_budget_usd: 5326.16, real_units: 479, final_budget_mxn: 38806, final_budget_usd: 2245.72, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "7857", ean: "7501064193859", pid: "2115837444", name: "Corona Extra Cerveza Latón 473 mL", subcategoria: "Cervezas", h_units: 261.6, h_orders: 58.1, avg_price: 27.14, ex_incr_units: 1046, ex_incr_orders: 232, ex_budget_mxn: 17036, ex_budget_usd: 985.88, real_units: 2192, final_budget_mxn: 35697, final_budget_usd: 2065.80, sku_order: 3 },
-  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "86168", ean: "7503052713407", pid: "2115627590", name: "Cerveza Flying Fish Lata 355 mL", subcategoria: "Cervezas", h_units: 41.1, h_orders: 11.8, avg_price: 21.01, ex_incr_units: 164, ex_incr_orders: 47, ex_budget_mxn: 2067, ex_budget_usd: 119.62, real_units: 444, final_budget_mxn: 5597, final_budget_usd: 323.90, sku_order: 4 }
+  { deal_id: "VIRAL_DEAL_MODELO_250326", sync: "86168", ean: "7503052713407", pid: "2115627590", name: "Cerveza Flying Fish Lata 355 mL", subcategoria: "Cervezas", h_units: 41.1, h_orders: 11.8, avg_price: 21.01, ex_incr_units: 164, ex_incr_orders: 47, ex_budget_mxn: 2067, ex_budget_usd: 119.62, real_units: 444, final_budget_mxn: 5597, final_budget_usd: 323.90, sku_order: 4 },
+  // Bokados 260326
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "14719", ean: "730399007549", pid: "2112686665", name: "Prispas Papas Fritas a la Francesa Picositas - ' ' - 130 g", subcategoria: "Snacks salados", h_units: 57.4, h_orders: 51.4, avg_price: 35.89, ex_incr_units: 172, ex_incr_orders: 154, ex_budget_mxn: 3704, ex_budget_usd: 209.98, real_units: 1277, final_budget_mxn: 27499, final_budget_usd: 1558.90, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "14357", ean: "730399007501", pid: "2115647732", name: "Prispas Botana de Papas Francesas Picositas Sabor Chile y Limón - ' ' - 55 g", subcategoria: "Snacks salados", h_units: 29.4, h_orders: 24.6, avg_price: 23.60, ex_incr_units: 88, ex_incr_orders: 74, ex_budget_mxn: 1246, ex_budget_usd: 70.63, real_units: 994, final_budget_mxn: 14075, final_budget_usd: 797.90, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "11142", ean: "730399013106", pid: "2115390203", name: "Bokados Surtido de Botanas y Cacahuates Rico y Variadito - ' ' - 90 g", subcategoria: "Snacks salados", h_units: 23.3, h_orders: 17.4, avg_price: 30.40, ex_incr_units: 70, ex_incr_orders: 52, ex_budget_mxn: 1277, ex_budget_usd: 72.39, real_units: 614, final_budget_mxn: 11199, final_budget_usd: 634.86, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81221", ean: "730399023945", pid: "2115390201", name: "Mix Con Golos 85 G", subcategoria: "Snacks salados", h_units: 18.9, h_orders: 13.3, avg_price: 28.25, ex_incr_units: 57, ex_incr_orders: 40, ex_budget_mxn: 966, ex_budget_usd: 54.76, real_units: 538, final_budget_mxn: 9119, final_budget_usd: 516.95, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "10906", ean: "730399005132", pid: "2109997716", name: "Bokados Botana Chicharron De Cerdo - ' ' - 67 g", subcategoria: "Snacks salados", h_units: 12.6, h_orders: 11.5, avg_price: 35.56, ex_incr_units: 38, ex_incr_orders: 34, ex_budget_mxn: 811, ex_budget_usd: 45.98, real_units: 285, final_budget_mxn: 6081, final_budget_usd: 344.73, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "82243", ean: "730399005156", pid: "2115403155", name: "Bokados Chicharrón de Cerdo 115 g", subcategoria: "Snacks salados", h_units: 11.8, h_orders: 10.7, avg_price: 63.61, ex_incr_units: 35, ex_incr_orders: 32, ex_budget_mxn: 1336, ex_budget_usd: 75.74, real_units: 147, final_budget_mxn: 5610, final_budget_usd: 318.03, sku_order: 6 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81246", ean: "730399012178", pid: "2115647735", name: "Bokachito Puffed 220 g 9 P St", subcategoria: "Snacks salados", h_units: 10.6, h_orders: 9.5, avg_price: 46.83, ex_incr_units: 32, ex_incr_orders: 28, ex_budget_mxn: 899, ex_budget_usd: 50.96, real_units: 182, final_budget_mxn: 5114, final_budget_usd: 289.91, sku_order: 7 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81214", ean: "730399005118", pid: "2115306880", name: "Chicharron de Cerdo 30 g St", subcategoria: "Snacks salados", h_units: 10.0, h_orders: 8.6, avg_price: 24.68, ex_incr_units: 30, ex_incr_orders: 26, ex_budget_mxn: 444, ex_budget_usd: 25.17, real_units: 324, final_budget_mxn: 4798, final_budget_usd: 272.00, sku_order: 8 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "14756", ean: "730399015919", pid: "2112746812", name: "Bokados Botana Mix Rico y Variadito - ' ' - 210 g", subcategoria: "Snacks salados", h_units: 8.3, h_orders: 8.1, avg_price: 40.59, ex_incr_units: 25, ex_incr_orders: 24, ex_budget_mxn: 609, ex_budget_usd: 34.52, real_units: 164, final_budget_mxn: 3994, final_budget_usd: 226.42, sku_order: 9 },
+  { deal_id: "VIRAL_DEAL_BOKADOS_260326", sync: "81212", ean: "730399005163", pid: "2115306727", name: "Chicharron de Cerdo 175 G", subcategoria: "Snacks salados", h_units: 7.4, h_orders: 6.9, avg_price: 98.53, ex_incr_units: 22, ex_incr_orders: 21, ex_budget_mxn: 1301, ex_budget_usd: 73.75, real_units: 60, final_budget_mxn: 3547, final_budget_usd: 201.08, sku_order: 10 }
 ];
 
 const POSTMORTEM_DEALS = [
