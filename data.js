@@ -1995,7 +1995,32 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Leche natural"
+  },
+  {
+    deal_id: "VIRAL_DEAL_HUEVO_110426",
+    maker_name: "Bachoco",
+    maker_aux: "Huevo",
+    business_unit: "WOW",
+    descuento_pct: 70,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "CDMX",
+    fecha_planeacion: "2026-03-23",
+    fecha_ejecucion: "2026-04-11",
+    fecha_fin: null,
+    usd_mxn: 17.64,
+    fecha_tasa: "2026-03-23",
+    budget_maker_mxn: 90000,
+    budget_growth_mxn: 27000,
+    budget_total_mxn: 117000,
+    budget_maker_usd: 5102.04,
+    budget_growth_usd: 1530.61,
+    budget_total_usd: 6632.65,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Huevos"
   }
+
 
 
 
@@ -2386,7 +2411,12 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14919", ean: "2200000320575", pid: "2115491570", name: "Malla Cebolla Blanca 2 pz", subcategoria: "Verduras", h_units: 55.1, h_orders: 44.7, avg_price: 16.65, ex_incr_units: 220, ex_incr_orders: 179, ex_budget_mxn: 2198, ex_budget_usd: 124.60, real_units: 120, final_budget_mxn: 1199, final_budget_usd: 67.97, sku_order: 8 },
   // Alpura 090426
   { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6981", ean: "7501055904143", pid: "2115620181", name: "Alpura Leche Deslactosada Light 1 L", subcategoria: "Leche natural", h_units: 122.9, h_orders: 76.3, avg_price: 39.45, ex_incr_units: 983, ex_incr_orders: 610, ex_budget_mxn: 23268, ex_budget_usd: 1319.05, real_units: 1149, final_budget_mxn: 27197, final_budget_usd: 1541.95, sku_order: 1 },
-  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6549", ean: "7501055900039", pid: "2115566305", name: "Alpura Leche Entera 1 L", subcategoria: "Leche natural", h_units: 53.4, h_orders: 34.0, avg_price: 36.27, ex_incr_units: 427, ex_incr_orders: 272, ex_budget_mxn: 9292, ex_budget_usd: 526.76, real_units: 543, final_budget_mxn: 11817, final_budget_usd: 669.90, sku_order: 2 }
+  { deal_id: "VIRAL_DEAL_ALPURA_090426", sync: "6549", ean: "7501055900039", pid: "2115566305", name: "Alpura Leche Entera 1 L", subcategoria: "Leche natural", h_units: 53.4, h_orders: 34.0, avg_price: 36.27, ex_incr_units: 427, ex_incr_orders: 272, ex_budget_mxn: 9292, ex_budget_usd: 526.76, real_units: 543, final_budget_mxn: 11817, final_budget_usd: 669.90, sku_order: 2 },
+  // Huevo 110426
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "12616", ean: "7501101525025", pid: "2115482100", name: "Bachoco Huevo Blanco 12 ud.", subcategoria: "Huevos", h_units: 153.6, h_orders: 130.9, avg_price: 47.24, ex_incr_units: 922, ex_incr_orders: 785, ex_budget_mxn: 30487, ex_budget_usd: 1728.46, real_units: 1591, final_budget_mxn: 52611, final_budget_usd: 2982.37, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5543", ean: "7501101525018", pid: "2109993468", name: "Bachoco Huevo Blanco 18 ud.", subcategoria: "Huevos", h_units: 125.7, h_orders: 108.6, avg_price: 59.50, ex_incr_units: 754, ex_incr_orders: 652, ex_budget_mxn: 31413, ex_budget_usd: 1780.95, real_units: 1033, final_budget_mxn: 43024, final_budget_usd: 2439.34, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_HUEVO_110426", sync: "5877", ean: "7501101525513", pid: "2115421216", name: "Bachoco Huevo Blanco 30 ud.", subcategoria: "Huevos", h_units: 62.5, h_orders: 56.8, avg_price: 94.36, ex_incr_units: 375, ex_incr_orders: 341, ex_budget_mxn: 24769, ex_budget_usd: 1404.14, real_units: 324, final_budget_mxn: 21401, final_budget_usd: 1213.06, sku_order: 3 }
+
 
 
 
