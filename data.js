@@ -204,7 +204,7 @@ const PREVIRAL_DEALS = [
     descuento_pct: 30,
     incrementalidad: 0,
     tipo_viral: "1 día",
-    ciudades: "CDMX, Guadalajara",
+    ciudades: "CDMX, Guadalajara, Queretaro",
     fecha_planeacion: "2026-05-08",
     fecha_ejecucion: "2026-05-10",
     fecha_fin: null,
