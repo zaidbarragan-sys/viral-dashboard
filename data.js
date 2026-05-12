@@ -1755,7 +1755,32 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Limpiadores, Desinfectantes, Quitamanchas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_BACARDI_250626",
+    maker_name: "Bacardi Limited",
+    maker_aux: "Bacardí",
+    business_unit: "Drinks",
+    descuento_pct: 40,
+    incrementalidad: 4,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-12",
+    fecha_ejecucion: "2026-06-25",
+    fecha_fin: null,
+    usd_mxn: 17.26,
+    fecha_tasa: "2026-05-12",
+    budget_maker_mxn: 60000,
+    budget_growth_mxn: 18000,
+    budget_total_mxn: 78000,
+    budget_maker_usd: 3476.25,
+    budget_growth_usd: 1042.87,
+    budget_total_usd: 4519.12,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Rones, Tequilas"
   }
+
 
 ];
 
@@ -2105,7 +2130,14 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_RECKITT_080626", sync: "11519", ean: "7501058752796", pid: "2115598856", name: "Lysol Desinfectante En Aerosol 475 g", subcategoria: "Desinfectantes de ambiente", h_units: 9.1, h_orders: 7.4, avg_price: 169.42, ex_incr_units: 91, ex_incr_orders: 74, ex_budget_mxn: 9252, ex_budget_usd: 536.35, real_units: 134, final_budget_mxn: 13621, final_budget_usd: 789.62, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_RECKITT_080626", sync: "74274", ean: "7501058757890", pid: "2115598862", name: "Vanish Quita Manchas En Polvo White 450 g", subcategoria: "Quitamancha", h_units: 7.8, h_orders: 6.2, avg_price: 115.84, ex_incr_units: 78, ex_incr_orders: 62, ex_budget_mxn: 5421, ex_budget_usd: 314.26, real_units: 168, final_budget_mxn: 11677, final_budget_usd: 676.93, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_RECKITT_080626", sync: "72799", ean: "7501058792662", pid: "2115598856", name: "Lysol Toallitas Desinfectantes Para Superficies 80 ud.", subcategoria: "Panos multiusos", h_units: 3.0, h_orders: 2.8, avg_price: 144.74, ex_incr_units: 30, ex_incr_orders: 28, ex_budget_mxn: 2605, ex_budget_usd: 151.01, real_units: 52, final_budget_mxn: 4516, final_budget_usd: 261.80, sku_order: 5 },
-  { deal_id: "VIRAL_DEAL_RECKITT_080626", sync: "72715", ean: "7501058757791", pid: "2113437465", name: "Vanish Quitamanchas en Gel Multiusos 4 L", subcategoria: "Quitamancha", h_units: 2.6, h_orders: 2.1, avg_price: 221.90, ex_incr_units: 26, ex_incr_orders: 21, ex_budget_mxn: 3462, ex_budget_usd: 200.70, real_units: 29, final_budget_mxn: 3861, final_budget_usd: 223.83, sku_order: 6 }
+  { deal_id: "VIRAL_DEAL_RECKITT_080626", sync: "72715", ean: "7501058757791", pid: "2113437465", name: "Vanish Quitamanchas en Gel Multiusos 4 L", subcategoria: "Quitamancha", h_units: 2.6, h_orders: 2.1, avg_price: 221.90, ex_incr_units: 26, ex_incr_orders: 21, ex_budget_mxn: 3462, ex_budget_usd: 200.70, real_units: 29, final_budget_mxn: 3861, final_budget_usd: 223.83, sku_order: 6 },
+  // Bacardi 250626
+  { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "73999", ean: "721733006052", pid: "2115449008", name: "Tequila Patrón Cristalino 700 mL", subcategoria: "Tequilas", h_units: 12.6, h_orders: 10.9, avg_price: 722.60, ex_incr_units: 50, ex_incr_orders: 44, ex_budget_mxn: 14452, ex_budget_usd: 837.31, real_units: 84, final_budget_mxn: 24279, final_budget_usd: 1406.66, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "75752", ean: "7610113024386", pid: "2115054225", name: "Ron Bacardí Licor Spiced 700 mL", subcategoria: "Rones", h_units: 10.9, h_orders: 10.1, avg_price: 201.89, ex_incr_units: 44, ex_incr_orders: 40, ex_budget_mxn: 3553, ex_budget_usd: 205.85, real_units: 266, final_budget_mxn: 21481, final_budget_usd: 1244.55, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "81479", ean: "7610113029558", pid: "2115579950", name: "Ron Bacardi Coco 700 mL", subcategoria: "Rones", h_units: 6.4, h_orders: 5.7, avg_price: 267.52, ex_incr_units: 26, ex_incr_orders: 23, ex_budget_mxn: 2782, ex_budget_usd: 161.18, real_units: 118, final_budget_mxn: 12627, final_budget_usd: 731.58, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "81481", ean: "7610113012581", pid: "2115579950", name: "Ron Bacardi Mango Chile 700 mL", subcategoria: "Rones", h_units: 5.1, h_orders: 4.6, avg_price: 276.56, ex_incr_units: 20, ex_incr_orders: 18, ex_budget_mxn: 2212, ex_budget_usd: 128.16, real_units: 88, final_budget_mxn: 9735, final_budget_usd: 564.02, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_BACARDI_250626", sync: "81482", ean: "07610113028421", pid: "2115579950", name: "Ron Bacardi Raspberry 700 mL", subcategoria: "Rones", h_units: 5.1, h_orders: 4.6, avg_price: 279.67, ex_incr_units: 20, ex_incr_orders: 18, ex_budget_mxn: 2237, ex_budget_usd: 129.61, real_units: 87, final_budget_mxn: 9733, final_budget_usd: 563.90, sku_order: 5 }
+
 
 ];
 
