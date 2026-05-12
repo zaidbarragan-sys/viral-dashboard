@@ -3345,6 +3345,28 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 2912, canib_ord_bench: 2816.75, canib_ord_delta_pct: 3.4,
     canib_und_post: 10865, canib_und_bench: 10189.75, canib_und_delta_pct: 6.6,
     canib_cli_post: 3013, canib_cli_bench: 2589.0, canib_cli_delta_pct: 16.4
+  },
+  {
+    deal_id: "VIRAL_DEAL_SCJ_150426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 18493, gmv_lw: 266, gmv_dlw_pct: 6855.1, gmv_l4w: 215, gmv_dl4w_pct: 8485.2,
+    usuarios_unicos: 91, usr_lw: 2, usr_dlw_pct: 4450.0, usr_l4w: 1.5, usr_dl4w_pct: 5966.7,
+    cr_pct: null, aov: 172.83, aov_lw: 132.95, aov_dlw_pct: 30.0, aov_l4w: 92.45, aov_dl4w_pct: 86.9,
+    unidades_total: 188, und_lw: 3, und_dlw_pct: 6166.7, und_l4w: 3.5, und_dl4w_pct: 5271.4,
+    ordenes_total: 107, ord_lw: 2, ord_dlw_pct: 5250.0, ord_l4w: 2.33, ord_dl4w_pct: 4492.3,
+    impresiones_total: null,
+    so_turbo_mx: 3282349, gmv_categoria: 29406, gmv_cat_lw: 5192, gmv_cat_l4w: 5065,
+    share_deal_cat_pct: 99.65, share_lw_pct: 100, share_l4w_pct: 98.14,
+    gmv_basket: 34790, gmv_sellup: 16297, pct_sellup: 46.84,
+    aov_basket: 325.14, aov_deal_post: 172.83,
+    cross_ordenes: 107, cross_skus_distintos: 179,
+    cross_top_producto: "Pack Cerveza Michelob Ultra Light 6 x 355 mL", cross_top_ordenes: 6, cross_top_pct: 5.61,
+    inv_oos_cierre_viral_avg: 15.5, inv_oos_post_avg: 13.2,
+    inv_cov_viral_ap_avg: 87.2, inv_cov_viral_ci_avg: 69.6,
+    inv_cov_post_avg: 74.4, inv_cov_bench_avg: 73.0,
+    canib_ord_post: 15, canib_ord_bench: 7.25, canib_ord_delta_pct: 106.9,
+    canib_und_post: 21, canib_und_bench: 11.25, canib_und_delta_pct: 86.7,
+    canib_cli_post: 13, canib_cli_bench: 7.0, canib_cli_delta_pct: 85.7
   }
 
 
@@ -3576,7 +3598,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "72931", name: "Mango Ataulfo 340 g", ordenes: 316, usuarios: 279, unidades: 967, gmv: 18174, aov: 57.51, impresiones: 2497, cr_pct: 11.17, gmv_dlw_pct: 553.2, gmv_dl4w_pct: 602.6, seg_nuevo: 207, seg_nuevo_pct: 66, seg_reactivado: 61, seg_reactivado_pct: 19, seg_retenido: 48, seg_retenido_pct: 15, stock_viral: 1359, stock_post: 417, stock_bench: 241, stock_delta_pct: 73, oos_cierre_viral: 28, oos_post: 25.5, cov_viral_ap: 45.0, cov_viral_ci: 33.5, cov_post: 37.4, canib_ord_post: 234, canib_ord_bench: 263.5, canib_ord_delta_pct: -11.2, canib_und_post: 657, canib_und_bench: 677.5, canib_und_delta_pct: -3.0, canib_cli_post: 246, canib_cli_bench: 255.5, canib_cli_delta_pct: -3.7 },
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "76544", name: "Kiwi 130 g", ordenes: 218, usuarios: 203, unidades: 628, gmv: 9159, aov: 42.02, impresiones: 4696, cr_pct: 4.32, gmv_dlw_pct: 306.2, gmv_dl4w_pct: 287.3, seg_nuevo: 125, seg_nuevo_pct: 57, seg_reactivado: 70, seg_reactivado_pct: 32, seg_retenido: 23, seg_retenido_pct: 11, stock_viral: 715, stock_post: 324, stock_bench: 375, stock_delta_pct: -13.6, oos_cierre_viral: 28, oos_post: 6.0, cov_viral_ap: 94.0, cov_viral_ci: 27.2, cov_post: 69.3, canib_ord_post: 279, canib_ord_bench: 247, canib_ord_delta_pct: 13.0, canib_und_post: 687, canib_und_bench: 588.25, canib_und_delta_pct: 16.8, canib_cli_post: 285, canib_cli_bench: 233.75, canib_cli_delta_pct: 21.9 },
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82059", name: "Manzana Smith", ordenes: 259, usuarios: 233, unidades: 879, gmv: 8981, aov: 34.68, impresiones: 3113, cr_pct: 7.48, gmv_dlw_pct: 376.2, gmv_dl4w_pct: 465.6, seg_nuevo: 155, seg_nuevo_pct: 60, seg_reactivado: 59, seg_reactivado_pct: 23, seg_retenido: 45, seg_retenido_pct: 17, stock_viral: 950, stock_post: 259, stock_bench: 334, stock_delta_pct: -22.5, oos_cierre_viral: 22, oos_post: 5.3, cov_viral_ap: 65.8, cov_viral_ci: 21.6, cov_post: 47.3, canib_ord_post: 158, canib_ord_bench: 171.75, canib_ord_delta_pct: -8.0, canib_und_post: 492, canib_und_bench: 492.25, canib_und_delta_pct: -0.1, canib_cli_post: 164, canib_cli_bench: 165.5, canib_cli_delta_pct: -0.9 },
-  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82049", name: "Naranja Valencia", ordenes: 301, usuarios: 265, unidades: 1255, gmv: 8462, aov: 28.11, impresiones: 5037, cr_pct: 5.26, gmv_dlw_pct: 396.2, gmv_dl4w_pct: 416.0, seg_nuevo: 160, seg_nuevo_pct: 53, seg_reactivado: 73, seg_reactivado_pct: 24, seg_retenido: 68, seg_retenido_pct: 23, stock_viral: 1307, stock_post: 481, stock_bench: 516, stock_delta_pct: -6.8, oos_cierre_viral: 18, oos_post: 5.8, cov_viral_ap: 65.8, cov_viral_ci: 31.9, cov_post: 50.4, canib_ord_post: 279, canib_ord_bench: 282.25, canib_ord_delta_pct: -1.2, canib_und_post: 1208, canib_und_bench: 1135.25, canib_und_delta_pct: 6.4, canib_cli_post: 271, canib_cli_bench: 249, canib_cli_delta_pct: 8.8 }
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82049", name: "Naranja Valencia", ordenes: 301, usuarios: 265, unidades: 1255, gmv: 8462, aov: 28.11, impresiones: 5037, cr_pct: 5.26, gmv_dlw_pct: 396.2, gmv_dl4w_pct: 416.0, seg_nuevo: 160, seg_nuevo_pct: 53, seg_reactivado: 73, seg_reactivado_pct: 24, seg_retenido: 68, seg_retenido_pct: 23, stock_viral: 1307, stock_post: 481, stock_bench: 516, stock_delta_pct: -6.8, oos_cierre_viral: 18, oos_post: 5.8, cov_viral_ap: 65.8, cov_viral_ci: 31.9, cov_post: 50.4, canib_ord_post: 279, canib_ord_bench: 282.25, canib_ord_delta_pct: -1.2, canib_und_post: 1208, canib_und_bench: 1135.25, canib_und_delta_pct: 6.4, canib_cli_post: 271, canib_cli_bench: 249, canib_cli_delta_pct: 8.8 },
+  // SCJ
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", ordenes: 77, usuarios: 67, unidades: 109, gmv: 10679, aov: 138.68, impresiones: null, cr_pct: null, gmv_dlw_pct: 3916.1, gmv_dl4w_pct: 5669.2, seg_nuevo: 67, seg_nuevo_pct: 87, seg_reactivado: 1, seg_reactivado_pct: 1, seg_retenido: 9, seg_retenido_pct: 12, stock_viral: 654, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: 13, oos_post: 12.3, cov_viral_ap: 90.7, cov_viral_ci: 75.9, cov_post: 77.3, canib_ord_post: 5, canib_ord_bench: 3.75, canib_ord_delta_pct: 33.3, canib_und_post: 6, canib_und_bench: 6.5, canib_und_delta_pct: -7.7, canib_cli_post: 4, canib_cli_bench: 3.75, canib_cli_delta_pct: 6.7 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", name: "Raid Insecticida Mosquitos Aerosol 1 Und", ordenes: 59, usuarios: 52, unidades: 79, gmv: 7815, aov: 132.45, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: 5562.3, seg_nuevo: 51, seg_nuevo_pct: 86, seg_reactivado: 1, seg_reactivado_pct: 2, seg_retenido: 7, seg_retenido_pct: 12, stock_viral: 473, stock_post: null, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: 18, oos_post: 14.0, cov_viral_ap: 83.7, cov_viral_ci: 63.3, cov_post: 71.4, canib_ord_post: 10, canib_ord_bench: 3.50, canib_ord_delta_pct: 185.7, canib_und_post: 15, canib_und_bench: 4.75, canib_und_delta_pct: 215.8, canib_cli_post: 9, canib_cli_bench: 3.25, canib_cli_delta_pct: 176.9 }
 
 
 
@@ -3908,7 +3933,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Gaseosas", ordenes: 202, gmv: 10783, pct_sellup: 3.43, order: 5 },
   { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Agua Natural", ordenes: 197, gmv: 10518, pct_sellup: 3.35, order: 6 },
   { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Panaderia salada", ordenes: 159, gmv: 10124, pct_sellup: 3.23, order: 7 },
-  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Yogurt", ordenes: 147, gmv: 9601, pct_sellup: 3.06, order: 8 }
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", subcategoria: "Yogurt", ordenes: 147, gmv: 9601, pct_sellup: 3.06, order: 8 },
+  // SCJ
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Cervezas", ordenes: 13, gmv: 3895, pct_sellup: 23.90, order: 1 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Gaseosas", ordenes: 12, gmv: 1334, pct_sellup: 8.18, order: 2 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Quitamancha", ordenes: 5, gmv: 946, pct_sellup: 5.80, order: 3 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Limpiadores multiusos", ordenes: 5, gmv: 665, pct_sellup: 4.08, order: 4 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Snacks salados", ordenes: 10, gmv: 629, pct_sellup: 3.86, order: 5 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Resfriado", ordenes: 1, gmv: 497, pct_sellup: 3.05, order: 6 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Galletas", ordenes: 8, gmv: 486, pct_sellup: 2.98, order: 7 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Lubricantes", ordenes: 2, gmv: 483, pct_sellup: 2.96, order: 8 }
 
 
 
@@ -4384,7 +4418,20 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "14352", name: "Aguacate Para 2 Dias x3", subcategoria: "Frutas", ordenes: 79, pct_deal: 5.38, order: 9 },
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 69, pct_deal: 4.70, order: 10 },
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "8033", name: "Ciel Agua Natural 10 L", subcategoria: "Agua Natural", ordenes: 65, pct_deal: 4.43, order: 11 },
-  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82050", name: "Manzana Golden", subcategoria: "Frutas", ordenes: 51, pct_deal: 3.47, order: 12 }
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82050", name: "Manzana Golden", subcategoria: "Frutas", ordenes: 51, pct_deal: 3.47, order: 12 },
+  // SCJ
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "5314", name: "Pack Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", ordenes: 6, pct_deal: 5.61, order: 1 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "9012", name: "Pack Cerveza Negra Modelo Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 6, pct_deal: 5.61, order: 2 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", ordenes: 6, pct_deal: 5.61, order: 3 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "9705", name: "Cerveza Pacifico Clara Lata 355 mL", subcategoria: "Cervezas", ordenes: 5, pct_deal: 4.67, order: 4 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 4, pct_deal: 3.74, order: 5 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "4939", name: "Cerveza Corona Extra Latón 710 mL", subcategoria: "Cervezas", ordenes: 4, pct_deal: 3.74, order: 6 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "5672", name: "San Juan - Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 4, pct_deal: 3.74, order: 7 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "7458", name: "Cerveza Victoria Oscura Tipo Viena 355 mL", subcategoria: "Cervezas", ordenes: 3, pct_deal: 2.80, order: 8 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "74535", name: "Vero-Mix Paletas Surtidas Dulce 20 Und", subcategoria: "Gomitas y caramelos", ordenes: 3, pct_deal: 2.80, order: 9 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "72719", name: "Harpic Limpiador Desinfectante Para Banos Max Power 750 mL", subcategoria: "Limpiadores multiusos", ordenes: 3, pct_deal: 2.80, order: 10 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "82998", name: "Nopal Picado 400 g", subcategoria: "Verduras", ordenes: 3, pct_deal: 2.80, order: 11 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "7857", name: "Cerveza Corona Extra Latón 473 mL", subcategoria: "Cervezas", ordenes: 3, pct_deal: 2.80, order: 12 }
 
 
 
