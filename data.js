@@ -3411,6 +3411,28 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
     canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
     canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  },
+  {
+    deal_id: "VIRAL_DEAL_FLORES_100526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 393554, gmv_lw: null, gmv_dlw_pct: null, gmv_l4w: null, gmv_dl4w_pct: null,
+    usuarios_unicos: 975, usr_lw: null, usr_dlw_pct: null, usr_l4w: null, usr_dl4w_pct: null,
+    cr_pct: 4.43, aov: 336.08, aov_lw: null, aov_dlw_pct: null, aov_l4w: null, aov_dl4w_pct: null,
+    unidades_total: 1432, und_lw: null, und_dlw_pct: null, und_l4w: null, und_dl4w_pct: null,
+    ordenes_total: 1171, ord_lw: null, ord_dlw_pct: null, ord_l4w: null, ord_dl4w_pct: null,
+    impresiones_total: 22010,
+    so_turbo_mx: 8650621, gmv_categoria: 393554, gmv_cat_lw: null, gmv_cat_l4w: null,
+    share_deal_cat_pct: 100, share_lw_pct: null, share_l4w_pct: null,
+    gmv_basket: 469704, gmv_sellup: 76150, pct_sellup: 16.21,
+    aov_basket: 401.11, aov_deal_post: 336.08,
+    cross_ordenes: 1171, cross_skus_distintos: 411,
+    cross_top_producto: "Turin Masterpieces G12 120g", cross_top_ordenes: 24, cross_top_pct: 2.05,
+    inv_oos_cierre_viral_avg: 33, inv_oos_post_avg: 37.9,
+    inv_cov_viral_ap_avg: 100, inv_cov_viral_ci_avg: 13.2,
+    inv_cov_post_avg: 9.9, inv_cov_bench_avg: null,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
 
 
@@ -3658,7 +3680,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "4681", name: "Neutrogena Desmaquillante Bifásico Oil Free", ordenes: 18, usuarios: 18, unidades: 21, gmv: 5459, aov: 303.27, impresiones: 10099, cr_pct: 0.18, gmv_dlw_pct: 2083.5, gmv_dl4w_pct: 2408.8, seg_nuevo: 17, seg_nuevo_pct: 94, seg_reactivado: 1, seg_reactivado_pct: 6, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 190, stock_post: 192, stock_bench: 108, stock_delta_pct: 77.8, oos_cierre_viral: 13, oos_post: 11.0, cov_viral_ap: 80.0, cov_viral_ci: 67.5, cov_post: 73.6, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "4261", name: "Neutrogena Night Calming Toallitas 25 pzs", ordenes: 28, usuarios: 26, unidades: 32, gmv: 4379, aov: 156.39, impresiones: 13316, cr_pct: 0.20, gmv_dlw_pct: 753.8, gmv_dl4w_pct: 605.2, seg_nuevo: 24, seg_nuevo_pct: 86, seg_reactivado: 3, seg_reactivado_pct: 11, seg_retenido: 1, seg_retenido_pct: 4, stock_viral: 267, stock_post: 236, stock_bench: 169, stock_delta_pct: 39.6, oos_cierre_viral: 13, oos_post: 13.0, cov_viral_ap: 82.2, cov_viral_ci: 71.1, cov_post: 71.1, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "11108", name: "Neutrogena Toallitas Desmaquillantes 25 ud.", ordenes: 27, usuarios: 23, unidades: 29, gmv: 4248, aov: 157.32, impresiones: 22433, cr_pct: 0.10, gmv_dlw_pct: 608.0, gmv_dl4w_pct: 137.3, seg_nuevo: 16, seg_nuevo_pct: 59, seg_reactivado: 4, seg_reactivado_pct: 15, seg_retenido: 7, seg_retenido_pct: 26, stock_viral: 813, stock_post: 773, stock_bench: 823, stock_delta_pct: -6.1, oos_cierre_viral: 9, oos_post: 9.0, cov_viral_ap: 86.4, cov_viral_ci: 79.5, cov_post: 79.5, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
-  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "90531", name: "Neutrogena Serum Retin Boost 30mL", ordenes: 6, usuarios: 6, unidades: 6, gmv: 2927, aov: 487.84, impresiones: 3308, cr_pct: 0.18, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 6, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 93, stock_post: 87, stock_bench: 51, stock_delta_pct: 70.6, oos_cierre_viral: 0, oos_post: 0.0, cov_viral_ap: 100.0, cov_viral_ci: 100.0, cov_post: 100.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "90531", name: "Neutrogena Serum Retin Boost 30mL", ordenes: 6, usuarios: 6, unidades: 6, gmv: 2927, aov: 487.84, impresiones: 3308, cr_pct: 0.18, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 6, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 93, stock_post: 87, stock_bench: 51, stock_delta_pct: 70.6, oos_cierre_viral: 0, oos_post: 0.0, cov_viral_ap: 100.0, cov_viral_ci: 100.0, cov_post: 100.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  // Flores 100526
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "91948", name: "Floravid Clásico 12 Rosas Color Rojo", ordenes: 767, usuarios: 749, unidades: 904, gmv: 241368, aov: 314.69, impresiones: 16331, cr_pct: 4.59, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 766, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 1, seg_retenido_pct: 0, stock_viral: 1046, stock_post: 110, stock_bench: null, stock_delta_pct: null, oos_cierre_viral: 28, oos_post: 33.7, cov_viral_ap: 100.0, cov_viral_ci: 26.3, cov_post: 19.8, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "89425", name: "Mix Floral Chico 25 Flores Surtidas", ordenes: 449, usuarios: 280, unidades: 528, gmv: 152186, aov: 338.94, impresiones: 5679, cr_pct: 4.93, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 279, seg_nuevo_pct: 62, seg_reactivado: 11, seg_reactivado_pct: 2, seg_retenido: 159, seg_retenido_pct: 35, stock_viral: 517, stock_post: 0, stock_bench: 0, stock_delta_pct: null, oos_cierre_viral: 38, oos_post: 42.0, cov_viral_ap: 100.0, cov_viral_ci: 0.0, cov_post: 0.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
 
 
 
@@ -4017,7 +4042,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Espumantes", ordenes: 2, gmv: 924, pct_sellup: 3.38, order: 5 },
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Yogurt", ordenes: 10, gmv: 832, pct_sellup: 3.04, order: 6 },
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Cigarrillos", ordenes: 1, gmv: 690, pct_sellup: 2.52, order: 7 },
-  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Otros Bienestar y Ocio", ordenes: 7, gmv: 958, pct_sellup: 3.50, order: 8 }
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Otros Bienestar y Ocio", ordenes: 7, gmv: 958, pct_sellup: 3.50, order: 8 },
+  // Flores 100526
+  { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Chocolates", ordenes: 148, gmv: 23406, pct_sellup: 30.74, order: 1 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Fragancias", ordenes: 9, gmv: 3893, pct_sellup: 5.11, order: 2 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Vino tinto", ordenes: 19, gmv: 3081, pct_sellup: 4.05, order: 3 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Deportes", ordenes: 1, gmv: 2599, pct_sellup: 3.41, order: 4 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Velas", ordenes: 9, gmv: 2585, pct_sellup: 3.40, order: 5 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Frutas", ordenes: 33, gmv: 2353, pct_sellup: 3.09, order: 6 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Gaseosas", ordenes: 40, gmv: 2282, pct_sellup: 3.00, order: 7 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Helados", ordenes: 15, gmv: 2221, pct_sellup: 2.92, order: 8 }
 
 
 
@@ -4532,7 +4566,20 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "9609", name: "Yoplait Yoghurt Griego Natural", subcategoria: "Yogurt", ordenes: 3, pct_deal: 2.54, order: 9 },
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "75479", name: "Neutrogena Crema Facial Hidratante Mate 3 en 1 100g", subcategoria: "Cremas faciales", ordenes: 3, pct_deal: 2.54, order: 10 },
   { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "76082", name: "Turin Masterpieces G12 120g", subcategoria: "Chocolates", ordenes: 3, pct_deal: 2.54, order: 11 },
-  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "11297", name: "Raid Insecticida en Aerosol 400 mL", subcategoria: "Insecticidas", ordenes: 2, pct_deal: 1.69, order: 12 }
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "11297", name: "Raid Insecticida en Aerosol 400 mL", subcategoria: "Insecticidas", ordenes: 2, pct_deal: 1.69, order: 12 },
+  // Flores 100526
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "76082", name: "Turin Masterpieces G12 120g", subcategoria: "Chocolates", ordenes: 24, pct_deal: 2.05, order: 1 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "6056", name: "Ferrero Rocher Chocolate Relleno con Avellana 16 Und", subcategoria: "Chocolates", ordenes: 16, pct_deal: 1.37, order: 2 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "4787", name: "Chocolate Kisses Cereza Caja 120g", subcategoria: "Chocolates", ordenes: 10, pct_deal: 0.85, order: 3 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "91927", name: "Panini Sobre con 7 Estampas Fifa World Cup 2026", subcategoria: "Otros Bienestar y Ocio", ordenes: 10, pct_deal: 0.85, order: 4 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "74510", name: "Ferrero Rocher Galleta Cubierta Relleno Con Avellana 125g", subcategoria: "Chocolates", ordenes: 10, pct_deal: 0.85, order: 5 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "91956", name: "Candles Boutique Vela Aromática Magnolia Día de Las Madres 420g", subcategoria: "Velas", ordenes: 9, pct_deal: 0.77, order: 6 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "11886", name: "Turin Conejos Chocolate con Leche 10 ud.", subcategoria: "Chocolates", ordenes: 9, pct_deal: 0.77, order: 7 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "12456", name: "Fresas", subcategoria: "Frutas", ordenes: 9, pct_deal: 0.77, order: 8 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 8, pct_deal: 0.68, order: 9 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
+  { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 }
 
 
 
