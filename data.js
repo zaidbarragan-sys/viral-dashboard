@@ -3138,7 +3138,31 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 50, canib_ord_bench: 83.5, canib_ord_delta_pct: -40.1,
     canib_und_post: 61, canib_und_bench: 111.25, canib_und_delta_pct: -45.2,
     canib_cli_post: 51, canib_cli_bench: 27.25, canib_cli_delta_pct: 87.2
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_010426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 101156, gmv_lw: 33083, gmv_dlw_pct: 205.8, gmv_l4w: 31945, gmv_dl4w_pct: 216.7,
+    usuarios_unicos: 1518, usr_lw: 1152, usr_dlw_pct: 31.8, usr_l4w: 1151.0, usr_dl4w_pct: 31.9,
+    cr_pct: 94.82, aov: 58.2, aov_lw: 28.72, aov_dlw_pct: 102.6, aov_l4w: 27.75, aov_dl4w_pct: 109.7,
+    unidades_total: 11314, und_lw: 4000, und_dlw_pct: 182.8, und_l4w: 3800, und_dl4w_pct: 197.7,
+    ordenes_total: 1738, ord_lw: 1152, ord_dlw_pct: 50.9, ord_l4w: 1151.0, ord_dl4w_pct: 51.0,
+    impresiones_total: 1601,
+    so_turbo_mx: 3290292, gmv_categoria: 0,
+    gmv_cat_lw: 0, gmv_cat_l4w: 0,
+    share_deal_cat_pct: 0, share_lw_pct: 0, share_l4w_pct: 0,
+    gmv_basket: 418612, gmv_sellup: 317456, pct_sellup: 75.84,
+    aov_basket: 240.86, aov_deal_post: 58.2,
+    cross_ordenes: 1738, cross_skus_distintos: 1744,
+    cross_top_producto: "Aguacate Para Hoy X3", cross_top_ordenes: 188, cross_top_pct: 10.82,
+    inv_oos_cierre_viral_avg: 32.2, inv_oos_post_avg: 32.6,
+    inv_cov_viral_ap_avg: 61.9, inv_cov_viral_ci_avg: 52.5,
+    inv_cov_post_avg: 50.5, inv_cov_bench_avg: 0,
+    canib_ord_post: 5717, canib_ord_bench: 6410.75, canib_ord_delta_pct: -10.8,
+    canib_und_post: 16365, canib_und_bench: 18540.75, canib_und_delta_pct: -11.7,
+    canib_cli_post: 6119, canib_cli_bench: 6251.0, canib_cli_delta_pct: -2.1
   }
+
 
 ];
 
@@ -3343,7 +3367,17 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "2153", name: "Nivea Protector Solar Piel Sensible FPS 50 200 mL", ordenes: 72, usuarios: 72, unidades: 81, gmv: 25339, aov: 351.94, impresiones: 298, cr_pct: 24.16, gmv_dlw_pct: 7530.0, gmv_dl4w_pct: 8086.7, seg_nuevo: 71, seg_nuevo_pct: 99, seg_reactivado: 1, seg_reactivado_pct: 1, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 195, stock_post: 112, stock_bench: 142, stock_delta_pct: -21.1, oos_cierre_viral: 38, oos_post: 37.5, cov_viral_ap: 64.7, cov_viral_ci: 44.1, cov_post: 44.1, canib_ord_post: 4, canib_ord_bench: 12.5, canib_ord_delta_pct: -68.0, canib_und_post: 4, canib_und_bench: 15.25, canib_und_delta_pct: -73.8, canib_cli_post: 4, canib_cli_bench: 3.75, canib_cli_delta_pct: 6.7 },
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76143", name: "Nivea Protector Solar Piel Sensible 50 mL", ordenes: 75, usuarios: 70, unidades: 88, gmv: 25307, aov: 337.43, impresiones: 468, cr_pct: 14.96, gmv_dlw_pct: 7254.7, gmv_dl4w_pct: 7254.8, seg_nuevo: 73, seg_nuevo_pct: 97, seg_reactivado: 1, seg_reactivado_pct: 1, seg_retenido: 1, seg_retenido_pct: 1, stock_viral: 254, stock_post: 159, stock_bench: 175, stock_delta_pct: -9.1, oos_cierre_viral: 32, oos_post: 31.0, cov_viral_ap: 78.1, cov_viral_ci: 50.0, cov_post: 51.2, canib_ord_post: 10, canib_ord_bench: 8.5, canib_ord_delta_pct: 17.6, canib_und_post: 12, canib_und_bench: 10.25, canib_und_delta_pct: 17.1, canib_cli_post: 9, canib_cli_bench: 2.25, canib_cli_delta_pct: 300.0 },
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76636", name: "Nivea Sun Piel Sensible Fps 50+ 125 mL", ordenes: 65, usuarios: 59, unidades: 87, gmv: 12574, aov: 193.44, impresiones: 353, cr_pct: 16.71, gmv_dlw_pct: 8294.4, gmv_dl4w_pct: 4575.8, seg_nuevo: 61, seg_nuevo_pct: 94, seg_reactivado: 1, seg_reactivado_pct: 2, seg_retenido: 3, seg_retenido_pct: 5, stock_viral: 136, stock_post: 58, stock_bench: 112, stock_delta_pct: -48.2, oos_cierre_viral: 57, oos_post: 56.5, cov_viral_ap: 48.6, cov_viral_ci: 18.6, cov_post: 19.3, canib_ord_post: 3, canib_ord_bench: 18.75, canib_ord_delta_pct: -84.0, canib_und_post: 6, canib_und_bench: 24.5, canib_und_delta_pct: -75.5, canib_cli_post: 4, canib_cli_bench: 5.25, canib_cli_delta_pct: -23.8 },
-  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76142", name: "Nivea Protector Solar Facial Control Brillo Fps 50 50 mL", ordenes: 34, usuarios: 31, unidades: 47, gmv: 9592, aov: 282.13, impresiones: 139, cr_pct: 22.3, gmv_dlw_pct: 1128.7, gmv_dl4w_pct: 1215.8, seg_nuevo: 34, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 132, stock_post: 106, stock_bench: 84, stock_delta_pct: 26.2, oos_cierre_viral: 47, oos_post: 46.0, cov_viral_ap: 36.1, cov_viral_ci: 23.0, cov_post: 24.2, canib_ord_post: 5, canib_ord_bench: 13.25, canib_ord_delta_pct: -62.3, canib_und_post: 7, canib_und_bench: 18, canib_und_delta_pct: -61.1, canib_cli_post: 6, canib_cli_bench: 4.25, canib_cli_delta_pct: 41.2 }
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76142", name: "Nivea Protector Solar Facial Control Brillo Fps 50 50 mL", ordenes: 34, usuarios: 31, unidades: 47, gmv: 9592, aov: 282.13, impresiones: 139, cr_pct: 22.3, gmv_dlw_pct: 1128.7, gmv_dl4w_pct: 1215.8, seg_nuevo: 34, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 132, stock_post: 106, stock_bench: 84, stock_delta_pct: 26.2, oos_cierre_viral: 47, oos_post: 46.0, cov_viral_ap: 36.1, cov_viral_ci: 23.0, cov_post: 24.2, canib_ord_post: 5, canib_ord_bench: 13.25, canib_ord_delta_pct: -62.3, canib_und_post: 7, canib_und_bench: 18, canib_und_delta_pct: -61.1, canib_cli_post: 6, canib_cli_bench: 4.25, canib_cli_delta_pct: 41.2 },
+  // Fruver 010426,
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14946", name: "Mallas Limon Con Semilla 5 pz", ordenes: 830, usuarios: 748, unidades: 3146, gmv: 28042, aov: 33.79, impresiones: 508, cr_pct: 147.24, gmv_dlw_pct: 261.0, gmv_dl4w_pct: 281.0, seg_nuevo: 318, seg_nuevo_pct: 38, seg_reactivado: 270, seg_reactivado_pct: 33, seg_retenido: 242, seg_retenido_pct: 29, stock_viral: 6838, stock_post: 2923, stock_bench: 2604, stock_delta_pct: 12.3, oos_cierre_viral: 24, oos_post: 32.3, cov_viral_ap: 69.9, cov_viral_ci: 67.1, cov_post: 57.9, canib_ord_post: 1491, canib_ord_bench: 1677.25, canib_ord_delta_pct: -11.1, canib_und_post: 4847, canib_und_bench: 5323.75, canib_und_delta_pct: -9.0, canib_cli_post: 1574, canib_cli_bench: 1610.5, canib_cli_delta_pct: -2.3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "81998", name: "Tomate Guaje Saladette", ordenes: 646, usuarios: 552, unidades: 3610, gmv: 15380, aov: 23.81, impresiones: 417, cr_pct: 132.37, gmv_dlw_pct: 242.1, gmv_dl4w_pct: 249.1, seg_nuevo: 271, seg_nuevo_pct: 42, seg_reactivado: 189, seg_reactivado_pct: 29, seg_retenido: 186, seg_retenido_pct: 29, stock_viral: 5580, stock_post: 2551, stock_bench: 2207, stock_delta_pct: 15.6, oos_cierre_viral: 7, oos_post: 9.8, cov_viral_ap: 93.9, cov_viral_ci: 78.8, cov_post: 69.0, canib_ord_post: 887, canib_ord_bench: 989.75, canib_ord_delta_pct: -10.4, canib_und_post: 4259, canib_und_bench: 4886.5, canib_und_delta_pct: -12.8, canib_cli_post: 923, canib_cli_bench: 949, canib_cli_delta_pct: -2.7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82058", name: "Cebolla Blanca", ordenes: 487, usuarios: 433, unidades: 1302, gmv: 13453, aov: 27.62, impresiones: 168, cr_pct: 257.74, gmv_dlw_pct: 433.9, gmv_dl4w_pct: 437.5, seg_nuevo: 244, seg_nuevo_pct: 50, seg_reactivado: 142, seg_reactivado_pct: 29, seg_retenido: 101, seg_retenido_pct: 21, stock_viral: 3238, stock_post: 1905, stock_bench: 638, stock_delta_pct: 198.6, oos_cierre_viral: 4, oos_post: 5.0, cov_viral_ap: 91.2, cov_viral_ci: 88.2, cov_post: 85.3, canib_ord_post: 591, canib_ord_bench: 652, canib_ord_delta_pct: -9.4, canib_und_post: 1036, canib_und_bench: 1194, canib_und_delta_pct: -13.2, canib_cli_post: 645, canib_cli_bench: 655, canib_cli_delta_pct: -1.5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "12645", name: "Malla Chile Serrano 3 pz", ordenes: 368, usuarios: 326, unidades: 1029, gmv: 9103, aov: 24.74, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 318.5, gmv_dl4w_pct: 361.1, seg_nuevo: 217, seg_nuevo_pct: 59, seg_reactivado: 86, seg_reactivado_pct: 23, seg_retenido: 65, seg_retenido_pct: 18, stock_viral: 1294, stock_post: 665, stock_bench: 676, stock_delta_pct: -1.6, oos_cierre_viral: 44, oos_post: 34.0, cov_viral_ap: 65.3, cov_viral_ci: 41.3, cov_post: 50.7, canib_ord_post: 522, canib_ord_bench: 586, canib_ord_delta_pct: -10.9, canib_und_post: 1046, canib_und_bench: 1257, canib_und_delta_pct: -16.8, canib_cli_post: 557, canib_cli_bench: 586.75, canib_cli_delta_pct: -5.1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "9518", name: "Cilantro 100 g", ordenes: 373, usuarios: 331, unidades: 614, gmv: 5743, aov: 15.4, impresiones: 0, cr_pct: 0, gmv_dlw_pct: 245.0, gmv_dl4w_pct: 344.0, seg_nuevo: 217, seg_nuevo_pct: 58, seg_reactivado: 87, seg_reactivado_pct: 23, seg_retenido: 69, seg_retenido_pct: 18, stock_viral: 781, stock_post: 288, stock_bench: 320, stock_delta_pct: -10, oos_cierre_viral: 36, oos_post: 43.0, cov_viral_ap: 56.5, cov_viral_ci: 47.8, cov_post: 38.4, canib_ord_post: 420, canib_ord_bench: 540.25, canib_ord_delta_pct: -22.3, canib_und_post: 561, canib_und_bench: 735.75, canib_und_delta_pct: -23.8, canib_cli_post: 435, canib_cli_bench: 527.25, canib_cli_delta_pct: -17.5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14375", name: "Mallas Limon Sin Semilla 5 pz", ordenes: 276, usuarios: 250, unidades: 582, gmv: 10288, aov: 37.28, impresiones: 185, cr_pct: 135.14, gmv_dlw_pct: -1.4, gmv_dl4w_pct: -2.4, seg_nuevo: 71, seg_nuevo_pct: 26, seg_reactivado: 99, seg_reactivado_pct: 36, seg_retenido: 106, seg_retenido_pct: 38, stock_viral: 2004, stock_post: 1930, stock_bench: 1924, stock_delta_pct: 0.3, oos_cierre_viral: 31, oos_post: 35.5, cov_viral_ap: 59.2, cov_viral_ci: 59.2, cov_post: 54.3, canib_ord_post: 1427, canib_ord_bench: 1508.5, canib_ord_delta_pct: -5.4, canib_und_post: 3896, canib_und_bench: 4204.5, canib_und_delta_pct: -7.3, canib_cli_post: 1561, canib_cli_bench: 1480.5, canib_cli_delta_pct: 5.4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14370", name: "Malla Jitomate Saladete 3 pz", ordenes: 205, usuarios: 175, unidades: 683, gmv: 13895, aov: 67.78, impresiones: 219, cr_pct: 79.91, gmv_dlw_pct: 373.1, gmv_dl4w_pct: 388.8, seg_nuevo: 111, seg_nuevo_pct: 54, seg_reactivado: 53, seg_reactivado_pct: 26, seg_retenido: 41, seg_retenido_pct: 20, stock_viral: 913, stock_post: 375, stock_bench: 468, stock_delta_pct: -19.9, oos_cierre_viral: 56, oos_post: 51.3, cov_viral_ap: 29.0, cov_viral_ci: 18.8, cov_post: 23.5, canib_ord_post: 220, canib_ord_bench: 266.25, canib_ord_delta_pct: -17.4, canib_und_post: 491, canib_und_bench: 651.75, canib_und_delta_pct: -24.7, canib_cli_post: 245, canib_cli_bench: 256.75, canib_cli_delta_pct: -4.6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14919", name: "Malla Cebolla Blanca 2 pz", ordenes: 146, usuarios: 133, unidades: 348, gmv: 5252, aov: 35.97, impresiones: 104, cr_pct: 127.88, gmv_dlw_pct: 381.1, gmv_dl4w_pct: 414.6, seg_nuevo: 94, seg_nuevo_pct: 64, seg_reactivado: 35, seg_reactivado_pct: 24, seg_retenido: 17, seg_retenido_pct: 12, stock_viral: 428, stock_post: 212, stock_bench: 245, stock_delta_pct: -13.5, oos_cierre_viral: 56, oos_post: 50.0, cov_viral_ap: 30.4, cov_viral_ci: 18.8, cov_post: 24.6, canib_ord_post: 159, canib_ord_bench: 190.75, canib_ord_delta_pct: -16.6, canib_und_post: 229, canib_und_bench: 287.5, canib_und_delta_pct: -20.3, canib_cli_post: 179, canib_cli_bench: 185.25, canib_cli_delta_pct: -3.4 }
+
 
 ];
 
@@ -3635,7 +3669,17 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Cervezas", ordenes: 9, gmv: 909, pct_sellup: 2.99, order: 5 },
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Suero", ordenes: 17, gmv: 811, pct_sellup: 2.67, order: 6 },
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Frutas", ordenes: 19, gmv: 807, pct_sellup: 2.66, order: 7 },
-  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Protectores solares", ordenes: 15, gmv: 2151, pct_sellup: 7.08, order: 8 }
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", subcategoria: "Protectores solares", ordenes: 15, gmv: 2151, pct_sellup: 7.08, order: 8 },
+  // Fruver 010426
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Frutas", ordenes: 708, gmv: 41323, pct_sellup: 13.02, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Cervezas", ordenes: 176, gmv: 28992, pct_sellup: 9.13, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Snacks salados", ordenes: 258, gmv: 19782, pct_sellup: 6.23, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Gaseosas", ordenes: 334, gmv: 18329, pct_sellup: 5.77, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Verduras", ordenes: 382, gmv: 15778, pct_sellup: 4.97, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Huevos", ordenes: 155, gmv: 10314, pct_sellup: 3.25, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Agua Natural", ordenes: 153, gmv: 8044, pct_sellup: 2.53, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", subcategoria: "Panaderia salada", ordenes: 103, gmv: 6997, pct_sellup: 2.20, order: 8 }
+
 
 ];
 
@@ -4055,6 +4099,20 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "71550", name: "Mordisko Helado Original Vainilla", subcategoria: "Helados", ordenes: 3, pct_deal: 0.75, order: 9 },
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "5898", name: "Electrolit Suero Lima-Limon 625 mL", subcategoria: "Suero", ordenes: 3, pct_deal: 0.75, order: 10 },
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "75039", name: "Marinela Barritas Fresa 268g", subcategoria: "Barras de cereal", ordenes: 3, pct_deal: 0.75, order: 11 },
-  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "82363", name: "Arm & Hammer Antitranspirante Ultra Max Active Sport 73 g", subcategoria: "Desodorantes", ordenes: 3, pct_deal: 0.75, order: 12 }
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "82363", name: "Arm & Hammer Antitranspirante Ultra Max Active Sport 73 g", subcategoria: "Desodorantes", ordenes: 3, pct_deal: 0.75, order: 12 },
+  // Fruver 010426
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 188, pct_deal: 10.82, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "81993", name: "Platano Chiapas", subcategoria: "Frutas", ordenes: 152, pct_deal: 8.75, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 109, pct_deal: 6.27, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 95, pct_deal: 5.47, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82051", name: "Papa Blanca", subcategoria: "Frutas", ordenes: 64, pct_deal: 3.68, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "5672", name: "San Juan Huevo Blanco 12 ud.", subcategoria: "Huevos", ordenes: 59, pct_deal: 3.39, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14352", name: "Aguacate Para 2 Dias x3", subcategoria: "Frutas", ordenes: 56, pct_deal: 3.22, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 55, pct_deal: 3.16, order: 8 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 52, pct_deal: 2.99, order: 9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82082", name: "Aguacate Premium Para hoy", subcategoria: "Frutas", ordenes: 52, pct_deal: 2.99, order: 10 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "8770", name: "Pack Cerveza Amstel Ultra 6x355 mL", subcategoria: "Cervezas", ordenes: 48, pct_deal: 2.76, order: 11 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82061", name: "Cebolla Morada", subcategoria: "Frutas", ordenes: 46, pct_deal: 2.65, order: 12 }
+
 
 ];
