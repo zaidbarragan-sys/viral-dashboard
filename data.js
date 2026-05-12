@@ -3389,6 +3389,28 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
     canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
     canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  },
+  {
+    deal_id: "VIRAL_DEAL_NEUTROGENA_100526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 39525, gmv_lw: 4059, gmv_dlw_pct: 873.9, gmv_l4w: 4310, gmv_dl4w_pct: 817.0,
+    usuarios_unicos: 98, usr_lw: 12, usr_dlw_pct: 716.7, usr_l4w: 20.25, usr_dl4w_pct: 383.9,
+    cr_pct: 0.14, aov: 334.96, aov_lw: 202.93, aov_dlw_pct: 65.1, aov_l4w: 175.92, aov_dl4w_pct: 90.4,
+    unidades_total: 173, und_lw: 22, und_dlw_pct: 686.4, und_l4w: 27, und_dl4w_pct: 540.7,
+    ordenes_total: 118, ord_lw: 20, ord_dlw_pct: 490.0, ord_l4w: 24.5, ord_dl4w_pct: 381.6,
+    impresiones_total: 71229,
+    so_turbo_mx: 8650621, gmv_categoria: 36722, gmv_cat_lw: 16594, gmv_cat_l4w: 19901,
+    share_deal_cat_pct: 100, share_lw_pct: 24.46, share_l4w_pct: 21.66,
+    gmv_basket: 66881, gmv_sellup: 27356, pct_sellup: 40.90,
+    aov_basket: 566.79, aov_deal_post: 334.96,
+    cross_ordenes: 118, cross_skus_distintos: 225,
+    cross_top_producto: "Panini Sobre con 7 Estampas Fifa World Cup 2026", cross_top_ordenes: 7, cross_top_pct: 5.93,
+    inv_oos_cierre_viral_avg: 9.3, inv_oos_post_avg: 8.7,
+    inv_cov_viral_ap_avg: 85.8, inv_cov_viral_ci_avg: 78.5,
+    inv_cov_post_avg: 80.1, inv_cov_bench_avg: 73.5,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
 
 
@@ -3629,7 +3651,14 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "8042", name: "Cerveza Corona Extra Lata 355 mL", ordenes: 173, usuarios: 154, unidades: 992, gmv: 19618, aov: 113.40, impresiones: 223, cr_pct: 69.06, gmv_dlw_pct: 1655.7, gmv_dl4w_pct: 662.7, seg_nuevo: 114, seg_nuevo_pct: 66, seg_reactivado: 21, seg_reactivado_pct: 12, seg_retenido: 38, seg_retenido_pct: 22, stock_viral: 11907, stock_post: 10740, stock_bench: 13384, stock_delta_pct: -19.8, oos_cierre_viral: 54, oos_post: 55.3, cov_viral_ap: 40.0, cov_viral_ci: 36.5, cov_post: 35.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "15052", name: "Cerveza Preparada Vicky Piña 1 Latón 473 mL", ordenes: 69, usuarios: 64, unidades: 218, gmv: 4934, aov: 71.51, impresiones: 80, cr_pct: 80.00, gmv_dlw_pct: 328.8, gmv_dl4w_pct: 251.6, seg_nuevo: 45, seg_nuevo_pct: 65, seg_reactivado: 9, seg_reactivado_pct: 13, seg_retenido: 15, seg_retenido_pct: 22, stock_viral: 1264, stock_post: 917, stock_bench: 1690, stock_delta_pct: -45.7, oos_cierre_viral: 54, oos_post: 56.0, cov_viral_ap: 40.0, cov_viral_ci: 32.5, cov_post: 30.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "81337", name: "Cerveza Stella Artois 1 Lata de 473 mL", ordenes: 46, usuarios: 39, unidades: 167, gmv: 4577, aov: 99.51, impresiones: 28, cr_pct: 139.29, gmv_dlw_pct: 766.5, gmv_dl4w_pct: 552.3, seg_nuevo: 30, seg_nuevo_pct: 65, seg_reactivado: 5, seg_reactivado_pct: 11, seg_retenido: 11, seg_retenido_pct: 24, stock_viral: 2696, stock_post: 2419, stock_bench: 3002, stock_delta_pct: -19.4, oos_cierre_viral: 34, oos_post: 39.0, cov_viral_ap: 46.3, cov_viral_ci: 37.0, cov_post: 27.8, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
-  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "86167", name: "Cerveza Flying Fish Lata 473ml", ordenes: 8, usuarios: 8, unidades: 47, gmv: 967, aov: 120.83, impresiones: 7, cr_pct: 114.29, gmv_dlw_pct: 1413.6, gmv_dl4w_pct: 37.9, seg_nuevo: 8, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 620, stock_post: 563, stock_bench: 1724, stock_delta_pct: -67.3, oos_cierre_viral: 47, oos_post: 48.0, cov_viral_ap: 18.9, cov_viral_ci: 11.3, cov_post: 9.4, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "86167", name: "Cerveza Flying Fish Lata 473ml", ordenes: 8, usuarios: 8, unidades: 47, gmv: 967, aov: 120.83, impresiones: 7, cr_pct: 114.29, gmv_dlw_pct: 1413.6, gmv_dl4w_pct: 37.9, seg_nuevo: 8, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 620, stock_post: 563, stock_bench: 1724, stock_delta_pct: -67.3, oos_cierre_viral: 47, oos_post: 48.0, cov_viral_ap: 18.9, cov_viral_ci: 11.3, cov_post: 9.4, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  // Neutrogena 100526
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "10968", name: "Neutrogena Crema Hidratante Facial Hydro Boost 50g", ordenes: 36, usuarios: 27, unidades: 36, gmv: 16016, aov: 444.90, impresiones: 13304, cr_pct: 0.20, gmv_dlw_pct: 534.6, gmv_dl4w_pct: 954.2, seg_nuevo: 23, seg_nuevo_pct: 64, seg_reactivado: 5, seg_reactivado_pct: 14, seg_retenido: 8, seg_retenido_pct: 22, stock_viral: 278, stock_post: 268, stock_bench: 245, stock_delta_pct: 9.4, oos_cierre_viral: 15, oos_post: 14.3, cov_viral_ap: 75.0, cov_viral_ci: 65.9, cov_post: 67.4, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "9131", name: "Lubriderm Reparación Intensiva 400ml", ordenes: 38, usuarios: 36, unidades: 49, gmv: 6496, aov: 170.96, impresiones: 8769, cr_pct: 0.41, gmv_dlw_pct: 3675.0, gmv_dl4w_pct: 2297.5, seg_nuevo: 31, seg_nuevo_pct: 82, seg_reactivado: 4, seg_reactivado_pct: 11, seg_retenido: 3, seg_retenido_pct: 8, stock_viral: 438, stock_post: 389, stock_bench: 293, stock_delta_pct: 32.8, oos_cierre_viral: 6, oos_post: 5.0, cov_viral_ap: 91.3, cov_viral_ci: 87.0, cov_post: 89.1, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "4681", name: "Neutrogena Desmaquillante Bifásico Oil Free", ordenes: 18, usuarios: 18, unidades: 21, gmv: 5459, aov: 303.27, impresiones: 10099, cr_pct: 0.18, gmv_dlw_pct: 2083.5, gmv_dl4w_pct: 2408.8, seg_nuevo: 17, seg_nuevo_pct: 94, seg_reactivado: 1, seg_reactivado_pct: 6, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 190, stock_post: 192, stock_bench: 108, stock_delta_pct: 77.8, oos_cierre_viral: 13, oos_post: 11.0, cov_viral_ap: 80.0, cov_viral_ci: 67.5, cov_post: 73.6, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "4261", name: "Neutrogena Night Calming Toallitas 25 pzs", ordenes: 28, usuarios: 26, unidades: 32, gmv: 4379, aov: 156.39, impresiones: 13316, cr_pct: 0.20, gmv_dlw_pct: 753.8, gmv_dl4w_pct: 605.2, seg_nuevo: 24, seg_nuevo_pct: 86, seg_reactivado: 3, seg_reactivado_pct: 11, seg_retenido: 1, seg_retenido_pct: 4, stock_viral: 267, stock_post: 236, stock_bench: 169, stock_delta_pct: 39.6, oos_cierre_viral: 13, oos_post: 13.0, cov_viral_ap: 82.2, cov_viral_ci: 71.1, cov_post: 71.1, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "11108", name: "Neutrogena Toallitas Desmaquillantes 25 ud.", ordenes: 27, usuarios: 23, unidades: 29, gmv: 4248, aov: 157.32, impresiones: 22433, cr_pct: 0.10, gmv_dlw_pct: 608.0, gmv_dl4w_pct: 137.3, seg_nuevo: 16, seg_nuevo_pct: 59, seg_reactivado: 4, seg_reactivado_pct: 15, seg_retenido: 7, seg_retenido_pct: 26, stock_viral: 813, stock_post: 773, stock_bench: 823, stock_delta_pct: -6.1, oos_cierre_viral: 9, oos_post: 9.0, cov_viral_ap: 86.4, cov_viral_ci: 79.5, cov_post: 79.5, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "90531", name: "Neutrogena Serum Retin Boost 30mL", ordenes: 6, usuarios: 6, unidades: 6, gmv: 2927, aov: 487.84, impresiones: 3308, cr_pct: 0.18, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 6, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 93, stock_post: 87, stock_bench: 51, stock_delta_pct: 70.6, oos_cierre_viral: 0, oos_post: 0.0, cov_viral_ap: 100.0, cov_viral_ci: 100.0, cov_post: 100.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
 
 
 
@@ -3979,7 +4008,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Tequilas", ordenes: 2, gmv: 1482, pct_sellup: 3.49, order: 5 },
   { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Helados", ordenes: 14, gmv: 989, pct_sellup: 2.33, order: 6 },
   { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Agua Natural Gasificada", ordenes: 16, gmv: 917, pct_sellup: 2.16, order: 7 },
-  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Hielo", ordenes: 17, gmv: 796, pct_sellup: 1.87, order: 8 }
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Hielo", ordenes: 17, gmv: 796, pct_sellup: 1.87, order: 8 },
+  // Neutrogena 100526
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Vino tinto", ordenes: 9, gmv: 2630, pct_sellup: 9.61, order: 1 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Chocolates", ordenes: 11, gmv: 2022, pct_sellup: 7.39, order: 2 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Ramos y bouquets", ordenes: 6, gmv: 1869, pct_sellup: 6.83, order: 3 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Frutas", ordenes: 12, gmv: 1211, pct_sellup: 4.43, order: 4 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Espumantes", ordenes: 2, gmv: 924, pct_sellup: 3.38, order: 5 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Yogurt", ordenes: 10, gmv: 832, pct_sellup: 3.04, order: 6 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Cigarrillos", ordenes: 1, gmv: 690, pct_sellup: 2.52, order: 7 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", subcategoria: "Otros Bienestar y Ocio", ordenes: 7, gmv: 958, pct_sellup: 3.50, order: 8 }
 
 
 
@@ -4481,7 +4519,20 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "10402", name: "Cerveza Vicky Con Chamoy Tamarindo Latón 473 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.82, order: 9 },
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 7, pct_deal: 1.82, order: 10 },
   { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "8443", name: "Cerveza Victoria Lata 473 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.82, order: 11 },
-  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.82, order: 12 }
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.82, order: 12 },
+  // Neutrogena 100526
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "91927", name: "Panini Sobre con 7 Estampas Fifa World Cup 2026", subcategoria: "Otros Bienestar y Ocio", ordenes: 7, pct_deal: 5.93, order: 1 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "91948", name: "Floravid Clásico 12 Rosas Color Rojo", subcategoria: "Ramos y bouquets", ordenes: 6, pct_deal: 5.08, order: 2 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 5, pct_deal: 4.24, order: 3 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 4, pct_deal: 3.39, order: 4 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "10924", name: "Vino Tinto L.A. Cetto Merlot 750 mL", subcategoria: "Vino tinto", ordenes: 3, pct_deal: 2.54, order: 5 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "279", name: "Vino Tinto Xa Domecq Cabernet Sauvignon 750 mL", subcategoria: "Vino tinto", ordenes: 3, pct_deal: 2.54, order: 6 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "72931", name: "Mango Ataulfo", subcategoria: "Frutas", ordenes: 3, pct_deal: 2.54, order: 7 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 3, pct_deal: 2.54, order: 8 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "9609", name: "Yoplait Yoghurt Griego Natural", subcategoria: "Yogurt", ordenes: 3, pct_deal: 2.54, order: 9 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "75479", name: "Neutrogena Crema Facial Hidratante Mate 3 en 1 100g", subcategoria: "Cremas faciales", ordenes: 3, pct_deal: 2.54, order: 10 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "76082", name: "Turin Masterpieces G12 120g", subcategoria: "Chocolates", ordenes: 3, pct_deal: 2.54, order: 11 },
+  { deal_id: "VIRAL_DEAL_NEUTROGENA_100526", sync: "11297", name: "Raid Insecticida en Aerosol 400 mL", subcategoria: "Insecticidas", ordenes: 2, pct_deal: 1.69, order: 12 }
 
 
 
