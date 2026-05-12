@@ -2043,6 +2043,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 100,
     categoria_display: "Frutas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_SCJ_150426",
+    maker_name: "Sc Johnson",
+    maker_aux: "SCJ",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 5,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-17",
+    fecha_ejecucion: "2026-04-15",
+    fecha_fin: null,
+    usd_mxn: 17.23,
+    fecha_tasa: "2026-05-12",
+    budget_maker_mxn: 50000,
+    budget_growth_mxn: 15000,
+    budget_total_mxn: 65000,
+    budget_maker_usd: 2901.39,
+    budget_growth_usd: 870.42,
+    budget_total_usd: 3771.81,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Insecticidas"
   }
 
 
@@ -2446,7 +2470,10 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82049", ean: "22200000012610", pid: "2115387671", name: "Naranja Valencia", subcategoria: "Frutas", h_units: 281.5, h_orders: 80.7, avg_price: 6.57, ex_incr_units: 1689, ex_incr_orders: 484, ex_budget_mxn: 6657, ex_budget_usd: 377.32, real_units: 2133, final_budget_mxn: 8408, final_budget_usd: 476.64, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "72931", ean: "644197393714", pid: "2115482159", name: "Mango Ataulfo 340 g", subcategoria: "Frutas", h_units: 180.3, h_orders: 83.4, avg_price: 18.71, ex_incr_units: 1082, ex_incr_orders: 500, ex_budget_mxn: 12146, ex_budget_usd: 688.55, real_units: 480, final_budget_mxn: 5388, final_budget_usd: 305.44, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82059", ean: "22200000012603", pid: "2115387680", name: "Manzana Smith", subcategoria: "Frutas", h_units: 152.6, h_orders: 60.1, avg_price: 10.02, ex_incr_units: 916, ex_incr_orders: 361, ex_budget_mxn: 5503, ex_budget_usd: 311.96, real_units: 758, final_budget_mxn: 4557, final_budget_usd: 258.33, sku_order: 4 },
-  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "76544", ean: "2220000000755", pid: "2114940020", name: "Kiwi 130 g", subcategoria: "Frutas", h_units: 135.6, h_orders: 60.6, avg_price: 15.19, ex_incr_units: 814, ex_incr_orders: 364, ex_budget_mxn: 7417, ex_budget_usd: 420.52, real_units: 445, final_budget_mxn: 4056, final_budget_usd: 229.93, sku_order: 5 }
+  { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "76544", ean: "2220000000755", pid: "2114940020", name: "Kiwi 130 g", subcategoria: "Frutas", h_units: 135.6, h_orders: 60.6, avg_price: 15.19, ex_incr_units: 814, ex_incr_orders: 364, ex_budget_mxn: 7417, ex_budget_usd: 420.52, real_units: 445, final_budget_mxn: 4056, final_budget_usd: 229.93, sku_order: 5 },
+  // SCJ
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 }
 
 
 
