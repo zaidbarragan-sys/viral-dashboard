@@ -3367,6 +3367,28 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 15, canib_ord_bench: 7.25, canib_ord_delta_pct: 106.9,
     canib_und_post: 21, canib_und_bench: 11.25, canib_und_delta_pct: 86.7,
     canib_cli_post: 13, canib_cli_bench: 7.0, canib_cli_delta_pct: 85.7
+  },
+  {
+    deal_id: "VIRAL_DEAL_MODELO_090526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 53511, gmv_lw: 12131, gmv_dlw_pct: 341.1, gmv_l4w: 13142, gmv_dl4w_pct: 307.2,
+    usuarios_unicos: 335, usr_lw: 93, usr_dlw_pct: 260.2, usr_l4w: 125.75, usr_dl4w_pct: 166.4,
+    cr_pct: null, aov: 138.99, aov_lw: 112.32, aov_dlw_pct: 23.7, aov_l4w: 95.07, aov_dl4w_pct: 46.2,
+    unidades_total: 2460, und_lw: 549, und_dlw_pct: 348.1, und_l4w: 584.5, und_dl4w_pct: 320.8,
+    ordenes_total: 385, ord_lw: 108, ord_dlw_pct: 256.5, ord_l4w: 138.25, ord_dl4w_pct: 178.5,
+    impresiones_total: null,
+    so_turbo_mx: 7702457, gmv_categoria: 826872, gmv_cat_lw: 625994, gmv_cat_l4w: 796404,
+    share_deal_cat_pct: 6.47, share_lw_pct: 1.94, share_l4w_pct: 1.65,
+    gmv_basket: 95990, gmv_sellup: 42480, pct_sellup: 44.25,
+    aov_basket: 249.32, aov_deal_post: 138.99,
+    cross_ordenes: 385, cross_skus_distintos: 394,
+    cross_top_producto: "Cerveza Corona Extra Latón 710 mL", cross_top_ordenes: 17, cross_top_pct: 4.42,
+    inv_oos_cierre_viral_avg: 48.2, inv_oos_post_avg: 50.6,
+    inv_cov_viral_ap_avg: 37.4, inv_cov_viral_ci_avg: 31.6,
+    inv_cov_post_avg: 28.1, inv_cov_bench_avg: 43.1,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
 
 
@@ -3601,7 +3623,13 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "82049", name: "Naranja Valencia", ordenes: 301, usuarios: 265, unidades: 1255, gmv: 8462, aov: 28.11, impresiones: 5037, cr_pct: 5.26, gmv_dlw_pct: 396.2, gmv_dl4w_pct: 416.0, seg_nuevo: 160, seg_nuevo_pct: 53, seg_reactivado: 73, seg_reactivado_pct: 24, seg_retenido: 68, seg_retenido_pct: 23, stock_viral: 1307, stock_post: 481, stock_bench: 516, stock_delta_pct: -6.8, oos_cierre_viral: 18, oos_post: 5.8, cov_viral_ap: 65.8, cov_viral_ci: 31.9, cov_post: 50.4, canib_ord_post: 279, canib_ord_bench: 282.25, canib_ord_delta_pct: -1.2, canib_und_post: 1208, canib_und_bench: 1135.25, canib_und_delta_pct: 6.4, canib_cli_post: 271, canib_cli_bench: 249, canib_cli_delta_pct: 8.8 },
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", ordenes: 77, usuarios: 67, unidades: 109, gmv: 10679, aov: 138.68, impresiones: null, cr_pct: null, gmv_dlw_pct: 3916.1, gmv_dl4w_pct: 5669.2, seg_nuevo: 67, seg_nuevo_pct: 87, seg_reactivado: 1, seg_reactivado_pct: 1, seg_retenido: 9, seg_retenido_pct: 12, stock_viral: 654, stock_post: 474, stock_bench: 424, stock_delta_pct: 11.8, oos_cierre_viral: 13, oos_post: 12.3, cov_viral_ap: 90.7, cov_viral_ci: 75.9, cov_post: 77.3, canib_ord_post: 5, canib_ord_bench: 3.75, canib_ord_delta_pct: 33.3, canib_und_post: 6, canib_und_bench: 6.5, canib_und_delta_pct: -7.7, canib_cli_post: 4, canib_cli_bench: 3.75, canib_cli_delta_pct: 6.7 },
-  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", name: "Raid Insecticida Mosquitos Aerosol 1 Und", ordenes: 59, usuarios: 52, unidades: 79, gmv: 7815, aov: 132.45, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: 5562.3, seg_nuevo: 51, seg_nuevo_pct: 86, seg_reactivado: 1, seg_reactivado_pct: 2, seg_retenido: 7, seg_retenido_pct: 12, stock_viral: 473, stock_post: 373, stock_bench: 229, stock_delta_pct: 62.9, oos_cierre_viral: 18, oos_post: 14.0, cov_viral_ap: 83.7, cov_viral_ci: 63.3, cov_post: 71.4, canib_ord_post: 10, canib_ord_bench: 3.50, canib_ord_delta_pct: 185.7, canib_und_post: 15, canib_und_bench: 4.75, canib_und_delta_pct: 215.8, canib_cli_post: 9, canib_cli_bench: 3.25, canib_cli_delta_pct: 176.9 }
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", name: "Raid Insecticida Mosquitos Aerosol 1 Und", ordenes: 59, usuarios: 52, unidades: 79, gmv: 7815, aov: 132.45, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: 5562.3, seg_nuevo: 51, seg_nuevo_pct: 86, seg_reactivado: 1, seg_reactivado_pct: 2, seg_retenido: 7, seg_retenido_pct: 12, stock_viral: 473, stock_post: 373, stock_bench: 229, stock_delta_pct: 62.9, oos_cierre_viral: 18, oos_post: 14.0, cov_viral_ap: 83.7, cov_viral_ci: 63.3, cov_post: 71.4, canib_ord_post: 10, canib_ord_bench: 3.50, canib_ord_delta_pct: 185.7, canib_und_post: 15, canib_und_bench: 4.75, canib_und_delta_pct: 215.8, canib_cli_post: 9, canib_cli_bench: 3.25, canib_cli_delta_pct: 176.9 },
+  // Modelo 090526
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "6344", name: "Cerveza Modelo Especial Lata 355 mL", ordenes: 198, usuarios: 178, unidades: 1036, gmv: 23414, aov: 118.25, impresiones: null, cr_pct: null, gmv_dlw_pct: 152.6, gmv_dl4w_pct: 201.6, seg_nuevo: 114, seg_nuevo_pct: 58, seg_reactivado: 49, seg_reactivado_pct: 25, seg_retenido: 35, seg_retenido_pct: 18, stock_viral: 18401, stock_post: 16857, stock_bench: 23722, stock_delta_pct: -28.9, oos_cierre_viral: 52, oos_post: 54.5, cov_viral_ap: 42.0, cov_viral_ci: 40.9, cov_post: 38.1, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "8042", name: "Cerveza Corona Extra Lata 355 mL", ordenes: 173, usuarios: 154, unidades: 992, gmv: 19618, aov: 113.40, impresiones: null, cr_pct: null, gmv_dlw_pct: 1655.7, gmv_dl4w_pct: 662.7, seg_nuevo: 114, seg_nuevo_pct: 66, seg_reactivado: 21, seg_reactivado_pct: 12, seg_retenido: 38, seg_retenido_pct: 22, stock_viral: 11907, stock_post: 10740, stock_bench: 13384, stock_delta_pct: -19.8, oos_cierre_viral: 54, oos_post: 55.3, cov_viral_ap: 40.0, cov_viral_ci: 36.5, cov_post: 35.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "15052", name: "Cerveza Preparada Vicky Piña 1 Latón 473 mL", ordenes: 69, usuarios: 64, unidades: 218, gmv: 4934, aov: 71.51, impresiones: null, cr_pct: null, gmv_dlw_pct: 328.8, gmv_dl4w_pct: 251.6, seg_nuevo: 45, seg_nuevo_pct: 65, seg_reactivado: 9, seg_reactivado_pct: 13, seg_retenido: 15, seg_retenido_pct: 22, stock_viral: 1264, stock_post: 917, stock_bench: 1690, stock_delta_pct: -45.7, oos_cierre_viral: 54, oos_post: 56.0, cov_viral_ap: 40.0, cov_viral_ci: 32.5, cov_post: 30.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "81337", name: "Cerveza Stella Artois 1 Lata de 473 mL", ordenes: 46, usuarios: 39, unidades: 167, gmv: 4577, aov: 99.51, impresiones: null, cr_pct: null, gmv_dlw_pct: 766.5, gmv_dl4w_pct: 552.3, seg_nuevo: 30, seg_nuevo_pct: 65, seg_reactivado: 5, seg_reactivado_pct: 11, seg_retenido: 11, seg_retenido_pct: 24, stock_viral: 2696, stock_post: 2419, stock_bench: 3002, stock_delta_pct: -19.4, oos_cierre_viral: 34, oos_post: 39.0, cov_viral_ap: 46.3, cov_viral_ci: 37.0, cov_post: 27.8, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "86167", name: "Cerveza Flying Fish Lata 473ml", ordenes: 8, usuarios: 8, unidades: 47, gmv: 967, aov: 120.83, impresiones: null, cr_pct: null, gmv_dlw_pct: 1413.6, gmv_dl4w_pct: 37.9, seg_nuevo: 8, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 620, stock_post: 563, stock_bench: 1724, stock_delta_pct: -67.3, oos_cierre_viral: 47, oos_post: 48.0, cov_viral_ap: 18.9, cov_viral_ci: 11.3, cov_post: 9.4, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
 
 
 
@@ -3942,7 +3970,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Snacks salados", ordenes: 10, gmv: 629, pct_sellup: 3.86, order: 5 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Resfriado", ordenes: 1, gmv: 497, pct_sellup: 3.05, order: 6 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Galletas", ordenes: 8, gmv: 486, pct_sellup: 2.98, order: 7 },
-  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Lubricantes", ordenes: 2, gmv: 483, pct_sellup: 2.96, order: 8 }
+  { deal_id: "VIRAL_DEAL_SCJ_150426", subcategoria: "Lubricantes", ordenes: 2, gmv: 483, pct_sellup: 2.96, order: 8 },
+  // Modelo 090526
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Cervezas", ordenes: 111, gmv: 13217, pct_sellup: 31.11, order: 1 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Snacks salados", ordenes: 74, gmv: 5228, pct_sellup: 12.31, order: 2 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Gaseosas", ordenes: 45, gmv: 2603, pct_sellup: 6.13, order: 3 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Cigarrillos", ordenes: 13, gmv: 1661, pct_sellup: 3.91, order: 4 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Tequilas", ordenes: 2, gmv: 1482, pct_sellup: 3.49, order: 5 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Helados", ordenes: 14, gmv: 989, pct_sellup: 2.33, order: 6 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Agua Natural Gasificada", ordenes: 16, gmv: 917, pct_sellup: 2.16, order: 7 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", subcategoria: "Hielo", ordenes: 17, gmv: 796, pct_sellup: 1.87, order: 8 }
 
 
 
@@ -4431,7 +4468,20 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "74535", name: "Vero-Mix Paletas Surtidas Dulce 20 Und", subcategoria: "Gomitas y caramelos", ordenes: 3, pct_deal: 2.80, order: 9 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "72719", name: "Harpic Limpiador Desinfectante Para Banos Max Power 750 mL", subcategoria: "Limpiadores multiusos", ordenes: 3, pct_deal: 2.80, order: 10 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "82998", name: "Nopal Picado 400 g", subcategoria: "Verduras", ordenes: 3, pct_deal: 2.80, order: 11 },
-  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "7857", name: "Cerveza Corona Extra Latón 473 mL", subcategoria: "Cervezas", ordenes: 3, pct_deal: 2.80, order: 12 }
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "7857", name: "Cerveza Corona Extra Latón 473 mL", subcategoria: "Cervezas", ordenes: 3, pct_deal: 2.80, order: 12 },
+  // Modelo 090526
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "4939", name: "Cerveza Corona Extra Latón 710 mL", subcategoria: "Cervezas", ordenes: 17, pct_deal: 4.42, order: 1 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "7857", name: "Cerveza Corona Extra Latón 473 mL", subcategoria: "Cervezas", ordenes: 13, pct_deal: 3.38, order: 2 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "10280", name: "KLYR Bolsa con hielo cubo gourmet 5 kg", subcategoria: "Hielo", ordenes: 13, pct_deal: 3.38, order: 3 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 12, pct_deal: 3.12, order: 4 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "5285", name: "Cerveza Corona Light Lata 355 mL", subcategoria: "Cervezas", ordenes: 11, pct_deal: 2.86, order: 5 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "72753", name: "Cerveza Vicky Con Chamoy y Mango Latón 473 mL", subcategoria: "Cervezas", ordenes: 9, pct_deal: 2.34, order: 6 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "15327", name: "Doritos Nacho 146 g", subcategoria: "Snacks salados", ordenes: 8, pct_deal: 2.08, order: 7 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "14719", name: "Prispas Papas Fritas a la Francesa Picositas 130 g", subcategoria: "Snacks salados", ordenes: 7, pct_deal: 1.82, order: 8 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "10402", name: "Cerveza Vicky Con Chamoy Tamarindo Latón 473 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.82, order: 9 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 7, pct_deal: 1.82, order: 10 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "8443", name: "Cerveza Victoria Lata 473 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.82, order: 11 },
+  { deal_id: "VIRAL_DEAL_MODELO_090526", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 1.82, order: 12 }
 
 
 
