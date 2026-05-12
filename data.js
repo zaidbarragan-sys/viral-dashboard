@@ -1947,7 +1947,32 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "—",
     pct_growth_vs_maker: 0,
     categoria_display: "Por definir"
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_010426",
+    maker_name: "Fruver",
+    maker_aux: "Fruver",
+    business_unit: "WOW",
+    descuento_pct: 60,
+    incrementalidad: 4,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-11",
+    fecha_ejecucion: "2026-04-01",
+    fecha_fin: null,
+    usd_mxn: 17.64,
+    fecha_tasa: "2026-03-11",
+    budget_maker_mxn: 40000,
+    budget_growth_mxn: 40000,
+    budget_total_mxn: 80000,
+    budget_maker_usd: 2267.57,
+    budget_growth_usd: 2267.57,
+    budget_total_usd: 4535.15,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 100,
+    categoria_display: "Frutas, Hierbas y aromáticas, Verduras"
   }
+
 
 
 
@@ -2324,7 +2349,17 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76142", ean: "4005900732583", pid: "2114905443", name: "Nivea Protector Solar Facial Control de Brillo Fps 50 50 mL", subcategoria: "Protectores solares", h_units: 0.9, h_orders: 0.9, avg_price: 238.21, ex_incr_units: 7, ex_incr_orders: 7, ex_budget_mxn: 834, ex_budget_usd: 47.28, real_units: 186, final_budget_mxn: 22154, final_budget_usd: 1255.90, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "2153", ean: "4005900259974", pid: "2113432513", name: "Nivea Protector Solar Piel Sensible FPS 50 200 mL", subcategoria: "Protectores solares", h_units: 0.8, h_orders: 0.8, avg_price: 276.13, ex_incr_units: 6, ex_incr_orders: 6, ex_budget_mxn: 828, ex_budget_usd: 46.94, real_units: 138, final_budget_mxn: 19053, final_budget_usd: 1080.27, sku_order: 4 },
   { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76143", ean: "7501054547815", pid: "2114905444", name: "Nivea Protector Solar para Piel Sensible 50 mL", subcategoria: "Protectores solares", h_units: 0.5, h_orders: 0.5, avg_price: 252.63, ex_incr_units: 4, ex_incr_orders: 4, ex_budget_mxn: 505, ex_budget_usd: 28.63, real_units: 100, final_budget_mxn: 12632, final_budget_usd: 716.10, sku_order: 5 },
-  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76636", ean: "4005808944132", pid: "2114934025", name: "Nivea Sun Protector Solar Piel Sensible Fps 50+ 125 mL", subcategoria: "Protectores solares", h_units: 0.5, h_orders: 0.5, avg_price: 196.83, ex_incr_units: 4, ex_incr_orders: 4, ex_budget_mxn: 394, ex_budget_usd: 22.33, real_units: 129, final_budget_mxn: 12696, final_budget_usd: 719.73, sku_order: 6 }
+  { deal_id: "VIRAL_DEAL_INSTANCE_310326", sync: "76636", ean: "4005808944132", pid: "2114934025", name: "Nivea Sun Protector Solar Piel Sensible Fps 50+ 125 mL", subcategoria: "Protectores solares", h_units: 0.5, h_orders: 0.5, avg_price: 196.83, ex_incr_units: 4, ex_incr_orders: 4, ex_budget_mxn: 394, ex_budget_usd: 22.33, real_units: 129, final_budget_mxn: 12696, final_budget_usd: 719.73, sku_order: 6 },
+  // Fruver 010426
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "81998", ean: "2220000001229", pid: "2115738871", name: "Tomate Guaje Saladette", subcategoria: "Frutas", h_units: 1017.3, h_orders: 250.8, avg_price: 3.95, ex_incr_units: 4069, ex_incr_orders: 1003, ex_budget_mxn: 9643, ex_budget_usd: 546.77, real_units: 9384, final_budget_mxn: 22240, final_budget_usd: 1261.00, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14946", ean: "2200000320643", pid: "2115738871", name: "Mallas Limón Con Semilla 5 pz", subcategoria: "Frutas", h_units: 985.9, h_orders: 364.4, avg_price: 7.64, ex_incr_units: 3944, ex_incr_orders: 1458, ex_budget_mxn: 18079, ex_budget_usd: 1024.89, real_units: 4703, final_budget_mxn: 21559, final_budget_usd: 1222.39, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14375", ean: "2200000320650", pid: "2115786704", name: "Mallas Limón Sin Semilla 5 pz", subcategoria: "Frutas", h_units: 832.4, h_orders: 357.2, avg_price: 12.79, ex_incr_units: 3330, ex_incr_orders: 1429, ex_budget_mxn: 25561, ex_budget_usd: 1449.49, real_units: 2372, final_budget_mxn: 18203, final_budget_usd: 1031.92, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "82058", ean: "22200000012689", pid: "2115738871", name: "Cebolla Blanca", subcategoria: "Frutas", h_units: 266.6, h_orders: 176.4, avg_price: 10.58, ex_incr_units: 1066, ex_incr_orders: 706, ex_budget_mxn: 6767, ex_budget_usd: 383.56, real_units: 918, final_budget_mxn: 5827, final_budget_usd: 330.33, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "12645", ean: "2200000320612", pid: "2115572997", name: "Malla Chile Serrano 3 pz", subcategoria: "Verduras", h_units: 236.2, h_orders: 130.1, avg_price: 8.84, ex_incr_units: 945, ex_incr_orders: 520, ex_budget_mxn: 5012, ex_budget_usd: 284.13, real_units: 974, final_budget_mxn: 5166, final_budget_usd: 292.86, sku_order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "9518", ean: "2200000311375", pid: "2113456336", name: "Cilantro 100 g", subcategoria: "Hierbas y aromáticas", h_units: 142.3, h_orders: 126.6, avg_price: 9.87, ex_incr_units: 569, ex_incr_orders: 506, ex_budget_mxn: 3370, ex_budget_usd: 191.04, real_units: 525, final_budget_mxn: 3109, final_budget_usd: 176.25, sku_order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14370", ean: "2200000320636", pid: "2115491571", name: "Malla Jitomate Saladete 3 pz", subcategoria: "Verduras", h_units: 123.5, h_orders: 63.4, avg_price: 19.95, ex_incr_units: 494, ex_incr_orders: 254, ex_budget_mxn: 5913, ex_budget_usd: 335.20, real_units: 226, final_budget_mxn: 2705, final_budget_usd: 153.34, sku_order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_010426", sync: "14919", ean: "2200000320575", pid: "2115491570", name: "Malla Cebolla Blanca 2 pz", subcategoria: "Verduras", h_units: 55.1, h_orders: 44.7, avg_price: 16.65, ex_incr_units: 220, ex_incr_orders: 179, ex_budget_mxn: 2198, ex_budget_usd: 124.60, real_units: 120, final_budget_mxn: 1199, final_budget_usd: 67.97, sku_order: 8 }
+
 
 
 
