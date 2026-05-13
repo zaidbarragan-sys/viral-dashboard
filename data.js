@@ -2067,6 +2067,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "OC",
     pct_growth_vs_maker: 30,
     categoria_display: "Insecticidas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_GEPP_270426",
+    maker_name: "Gepp",
+    maker_aux: "Gepp",
+    business_unit: "Drinks",
+    descuento_pct: 40,
+    incrementalidad: 11,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-04",
+    fecha_ejecucion: "2026-04-27",
+    fecha_fin: null,
+    usd_mxn: 17.24,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 35000,
+    budget_growth_mxn: 10500,
+    budget_total_mxn: 45500,
+    budget_maker_usd: 2030.16,
+    budget_growth_usd: 609.05,
+    budget_total_usd: 2639.21,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Isotónicos"
   }
 
 
@@ -2473,7 +2497,13 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_FRUVER_140426", sync: "76544", ean: "2220000000755", pid: "2114940020", name: "Kiwi 130 g", subcategoria: "Frutas", h_units: 135.6, h_orders: 60.6, avg_price: 15.19, ex_incr_units: 814, ex_incr_orders: 364, ex_budget_mxn: 7417, ex_budget_usd: 420.52, real_units: 445, final_budget_mxn: 4056, final_budget_usd: 229.93, sku_order: 5 },
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
-  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 }
+  { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 },
+  // Gepp
+  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "8161", ean: "36731326003", pid: "2115518974", name: "Gatorade Bebida Hidratante Sabor Ponche de Frutas 1 L", subcategoria: "Isotónicos", h_units: 89.2, h_orders: 64.3, avg_price: 32.65, ex_incr_units: 981, ex_incr_orders: 707, ex_budget_mxn: 12812, ex_budget_usd: 743.16, real_units: 1382, final_budget_mxn: 18049, final_budget_usd: 1046.93, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "8939", ean: "36731323002", pid: "2115620178", name: "Gatorade Bebida Rehidratante sabor Uva 1l - Gatorade - 1000 mL", subcategoria: "Isotónicos", h_units: 85.0, h_orders: 63.6, avg_price: 31.88, ex_incr_units: 935, ex_incr_orders: 700, ex_budget_mxn: 11923, ex_budget_usd: 691.59, real_units: 1349, final_budget_mxn: 17202, final_budget_usd: 997.80, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "12111", ean: "7501022015063", pid: "2115518976", name: "Gatorlyte Naranja", subcategoria: "Isotónicos", h_units: 20.6, h_orders: 13.7, avg_price: 27.95, ex_incr_units: 227, ex_incr_orders: 151, ex_budget_mxn: 2538, ex_budget_usd: 147.22, real_units: 374, final_budget_mxn: 4181, final_budget_usd: 242.52, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "12104", ean: "7501022015049", pid: "2115518975", name: "Gatorlyte Fresa Kiwi", subcategoria: "Isotónicos", h_units: 15.9, h_orders: 10.4, avg_price: 23.97, ex_incr_units: 175, ex_incr_orders: 114, ex_budget_mxn: 1678, ex_budget_usd: 97.33, real_units: 336, final_budget_mxn: 3222, final_budget_usd: 186.89, sku_order: 4 },
+  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "83639", ean: "7501022016084", pid: "2115514574", name: "Gatorade Bebida Moras Freeze 1 L", subcategoria: "Isotónicos", h_units: 14.1, h_orders: 10.9, avg_price: 36.66, ex_incr_units: 155, ex_incr_orders: 120, ex_budget_mxn: 2273, ex_budget_usd: 131.84, real_units: 194, final_budget_mxn: 2845, final_budget_usd: 165.02, sku_order: 5 }
 
 
 
