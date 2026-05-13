@@ -3813,6 +3813,34 @@ const POSTMORTEM_DEALS = [
     canib_und_post: 327, canib_und_bench: 268.5, canib_und_delta_pct: 21.8,
     canib_cli_post: 224, canib_cli_bench: 183.25, canib_cli_delta_pct: 22.2
   }
+  ,{
+    deal_id: "VIRAL_DEAL_MEZCALES_250426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 76540,
+    gmv_lw: null, gmv_dlw_pct: null,
+    gmv_l4w: null, gmv_dl4w_pct: null,
+    usuarios_unicos: 59,
+    usr_lw: null, usr_dlw_pct: null,
+    usr_l4w: null, usr_dl4w_pct: null,
+    cr_pct: 2.42,
+    aov: 781.02, aov_lw: null, aov_dlw_pct: null, aov_l4w: null, aov_dl4w_pct: null,
+    unidades_total: 171, und_lw: null, und_dlw_pct: null, und_l4w: null, und_dl4w_pct: null,
+    ordenes_total: 98, ord_lw: null, ord_dlw_pct: null, ord_l4w: null, ord_dl4w_pct: null,
+    impresiones_total: 2439,
+    so_turbo_mx: 3477739, gmv_categoria: 76540,
+    gmv_cat_lw: null, gmv_cat_l4w: null,
+    share_deal_cat_pct: 100.0, share_lw_pct: null, share_l4w_pct: null,
+    gmv_basket: 89769, gmv_sellup: 13229, pct_sellup: 14.74,
+    aov_basket: 916.01, aov_deal_post: 781.02,
+    cross_ordenes: 98, cross_skus_distintos: 115,
+    cross_top_producto: "Peñafiel Agua Mineral 2 L", cross_top_ordenes: 3, cross_top_pct: 3.06,
+    inv_oos_cierre_viral_avg: 25.7, inv_oos_post_avg: 24.3,
+    inv_cov_viral_ap_avg: 62.6, inv_cov_viral_ci_avg: 35.8,
+    inv_cov_post_avg: 37.9, inv_cov_bench_avg: 25.7,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  }
 ];
 
 const POSTMORTEM_SKU_PERFORMANCE = [
@@ -4063,6 +4091,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
 
 
 
+  // Mezcales 250426
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "8510", name: "Mezcal Destreza Joven Espadin 750 mL", ordenes: 48, usuarios: 37, unidades: 72, gmv: 37021, aov: 771.27, impresiones: 632, cr_pct: 5.85, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 48, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 113, stock_post: 58, stock_bench: 59, stock_delta_pct: -1.7, oos_cierre_viral: 25, oos_post: 23, cov_viral_ap: 69.2, cov_viral_ci: 35.9, cov_post: 38.5, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "83560", name: "Crema de Mezcal Dulce Destreza Piñon 750 mL", ordenes: 38, usuarios: 21, unidades: 55, gmv: 18896, aov: 497.26, impresiones: 882, cr_pct: 2.38, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 22, seg_nuevo_pct: 58, seg_reactivado: 16, seg_reactivado_pct: 42, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 121, stock_post: 83, stock_bench: 34, stock_delta_pct: 144.1, oos_cierre_viral: 27, oos_post: 25, cov_viral_ap: 59.5, cov_viral_ci: 35.7, cov_post: 39.2, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "83559", name: "Crema de Mezcal Dulce Destreza Avellana 750 mL", ordenes: 35, usuarios: 24, unidades: 44, gmv: 20623, aov: 589.23, impresiones: 925, cr_pct: 2.59, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 35, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 101, stock_post: 59, stock_bench: 29, stock_delta_pct: 103.4, oos_cierre_viral: 25, oos_post: 25, cov_viral_ap: 59.0, cov_viral_ci: 35.9, cov_post: 35.9, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   // WeCare 240426
   { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72978", name: "We Care Vaso de Papel PLA 16oz Rojo 10 uds.", ordenes: 65, usuarios: 52, unidades: 124, gmv: 6920, aov: 106.46, impresiones: 1191, cr_pct: 4.37, gmv_dlw_pct: 152.1, gmv_dl4w_pct: 164.5, seg_nuevo: 46, seg_nuevo_pct: 71, seg_reactivado: 6, seg_reactivado_pct: 9, seg_retenido: 13, seg_retenido_pct: 20, stock_viral: 1121, stock_post: 922, stock_bench: 985, stock_delta_pct: -6.4, oos_cierre_viral: 30, oos_post: 27, cov_viral_ap: 60.6, cov_viral_ci: 57.7, cov_post: 60.9, canib_ord_post: 99, canib_ord_bench: 66.75, canib_ord_delta_pct: 48.3, canib_und_post: 178, canib_und_bench: 118.0, canib_und_delta_pct: 50.8, canib_cli_post: 111, canib_cli_bench: 73.75, canib_cli_delta_pct: 50.5 },
   { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72977", name: "We Care Plato liso Grande 8.6 18 uds.", ordenes: 31, usuarios: 28, unidades: 50, gmv: 2566, aov: 82.78, impresiones: 2338, cr_pct: 1.20, gmv_dlw_pct: 137.9, gmv_dl4w_pct: 136.6, seg_nuevo: 28, seg_nuevo_pct: 90, seg_reactivado: 2, seg_reactivado_pct: 6, seg_retenido: 1, seg_retenido_pct: 3, stock_viral: 467, stock_post: 469, stock_bench: 521, stock_delta_pct: -10.0, oos_cierre_viral: 37, oos_post: 36, cov_viral_ap: 56.2, cov_viral_ci: 49.3, cov_post: 50.0, canib_ord_post: 64, canib_ord_bench: 54.0, canib_ord_delta_pct: 18.5, canib_und_post: 87, canib_und_bench: 80.75, canib_und_delta_pct: 7.7, canib_cli_post: 70, canib_cli_bench: 63.0, canib_cli_delta_pct: 11.1 },
@@ -4459,6 +4491,15 @@ const POSTMORTEM_SELLUP_CATS = [
 
 
 
+  // Mezcales 250426
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Otros licores", ordenes: 2, gmv: 1862, pct_sellup: 14.08, order: 1 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Tequilas", ordenes: 2, gmv: 1469, pct_sellup: 11.10, order: 2 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Espumantes", ordenes: 3, gmv: 862, pct_sellup: 6.51, order: 3 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Cervezas", ordenes: 5, gmv: 850, pct_sellup: 6.43, order: 4 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Cocteles", ordenes: 2, gmv: 780, pct_sellup: 5.90, order: 5 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Leche natural", ordenes: 4, gmv: 493, pct_sellup: 3.73, order: 6 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Aperitivos", ordenes: 1, gmv: 455, pct_sellup: 3.44, order: 7 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Mezcales", ordenes: 1, gmv: 401, pct_sellup: 3.03, order: 8 },
   // WeCare 240426
   { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Cervezas", ordenes: 13, gmv: 3763, pct_sellup: 14.12, order: 1 },
   { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Gaseosas", ordenes: 33, gmv: 2524, pct_sellup: 9.47, order: 2 },
@@ -5037,6 +5078,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 },
+  // Mezcales 250426
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "6529", name: "Peñafiel Agua Mineral 2 L", subcategoria: "Agua Natural", ordenes: 3, pct_deal: 3.06, order: 1 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "77104", name: "Vino Blanco Espumoso Mionetto Prosecco 750 mL", subcategoria: "Espumantes", ordenes: 2, pct_deal: 2.04, order: 2 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "6274", name: "Peñafiel Pack Agua Mineral 355 mL", subcategoria: "Agua Natural Gasificada", ordenes: 2, pct_deal: 2.04, order: 3 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "10438", name: "Herbal Essences Acondicionador Classic Smooth 400 ml", subcategoria: "Acondicionador", ordenes: 2, pct_deal: 2.04, order: 4 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "73951", name: "Notco Nuggets Vegetarianos Sabor Pollo 400 g", subcategoria: "Carnes vegetarianas", ordenes: 2, pct_deal: 2.04, order: 5 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "5896", name: "Electrolit Suero Rehidratante Mora Azul 625 mL", subcategoria: "Suero", ordenes: 2, pct_deal: 2.04, order: 6 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "1575", name: "Licor St Germain Flores de Sauco 750 mL", subcategoria: "Otros licores", ordenes: 2, pct_deal: 2.04, order: 7 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "9248", name: "Ariel Detergente En Polvo Poder Y Cuidado 750 g", subcategoria: "Detergentes", ordenes: 2, pct_deal: 2.04, order: 8 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "8855", name: "Boing Jugo Sabor a Guayaba 500 mL", subcategoria: "Jugos", ordenes: 2, pct_deal: 2.04, order: 9 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "5220", name: "Santa Clara Leche Deslactosada Light 1 L", subcategoria: "Leche natural", ordenes: 2, pct_deal: 2.04, order: 10 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "5858", name: "Huggies Toallita Húmeda Cuidado Hidratante 80 Und", subcategoria: "Toallitas humedas", ordenes: 2, pct_deal: 2.04, order: 11 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "73853", name: "Alpura Pack Leche Clásica 4 x 1 L", subcategoria: "Leche natural", ordenes: 2, pct_deal: 2.04, order: 12 },
   // WeCare 240426
   { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72980", name: "We Care Tenedor Mediano 20 uds.", subcategoria: "Vajilla desechable", ordenes: 10, pct_deal: 8.20, order: 1 },
   { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 8, pct_deal: 6.56, order: 2 },
