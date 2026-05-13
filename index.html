@@ -937,10 +937,30 @@
     <!-- TENDENCIAS -->
     <div id="tendencias" class="section">
       <h2 class="section-title">Tendencias</h2>
+      <div class="comparador-selectors" style="margin-bottom:16px;">
+        <select id="tend-periodo" class="cal-filter-select">
+          <option value="all">Período: Todo</option>
+          <option value="3">Últimos 3 meses</option>
+          <option value="6">Últimos 6 meses</option>
+        </select>
+        <select id="tend-bu" class="cal-filter-select">
+          <option value="">BU: Todos</option>
+          <option value="Foods">Foods</option>
+          <option value="Drinks">Drinks</option>
+          <option value="Pharma">Pharma</option>
+          <option value="WOW">WOW</option>
+        </select>
+        <select id="tend-canal" class="cal-filter-select">
+          <option value="">Canal: Todos</option>
+          <option value="OC">Comercial (OC)</option>
+          <option value="ADS">ADS</option>
+        </select>
+      </div>
       <div id="tendencias-pop-cards"></div>
       <div class="chart-grid">
         <div class="chart-card"><h3>GMV Mensual por BU</h3><canvas id="chart-gmv-monthly"></canvas></div>
         <div class="chart-card"><h3>Contribución GMV por BU</h3><canvas id="chart-bu-contrib"></canvas></div>
+        <div class="chart-card"><h3>GMV por Canal</h3><canvas id="chart-canal"></canvas></div>
       </div>
     </div>
 
@@ -1743,30 +1763,53 @@
     // ============================================================
     // TENDENCIAS
     // ============================================================
-    let tendenciasRendered = false;
+    let tendenciasInitialized = false;
     const chartInstances = {};
 
     function renderTendencias() {
-      if (tendenciasRendered) return;
-      tendenciasRendered = true;
+      if (!tendenciasInitialized) {
+        document.getElementById('tend-periodo').addEventListener('change', renderTendenciasCharts);
+        document.getElementById('tend-bu').addEventListener('change', renderTendenciasCharts);
+        document.getElementById('tend-canal').addEventListener('change', renderTendenciasCharts);
+        tendenciasInitialized = true;
+      }
+      renderTendenciasCharts();
+    }
+
+    function renderTendenciasCharts() {
+      // Destroy existing charts
+      Object.values(chartInstances).forEach(c => c.destroy && c.destroy());
 
       const buColors = { Foods: '#00B140', Drinks: '#42A5F5', Pharma: '#AB47BC', WOW: '#FFA726' };
       const buList = ['Foods', 'Drinks', 'Pharma', 'WOW'];
 
-      // Get deals with postmortem, merged with previral data
-      const deals = POSTMORTEM_DEALS.map(p => {
+      // Get filter values
+      const periodoVal = document.getElementById('tend-periodo').value;
+      const buVal = document.getElementById('tend-bu').value;
+      const canalVal = document.getElementById('tend-canal').value;
+
+      // Get all deals with postmortem
+      let deals = POSTMORTEM_DEALS.map(p => {
         const d = getDeal(p.deal_id);
         return d ? { ...p, ...d } : null;
       }).filter(Boolean).sort((a, b) => a.fecha_ejecucion.localeCompare(b.fecha_ejecucion));
 
-      // Period-over-period KPI cards (MTD comparison)
+      // Apply filters
+      if (periodoVal !== 'all') {
+        const cutoff = new Date();
+        cutoff.setMonth(cutoff.getMonth() - parseInt(periodoVal));
+        const cutoffStr = cutoff.toISOString().slice(0, 10);
+        deals = deals.filter(d => d.fecha_ejecucion >= cutoffStr);
+      }
+      if (buVal) deals = deals.filter(d => d.business_unit === buVal);
+      if (canalVal) deals = deals.filter(d => d.financiamiento_maker === canalVal);
+
+      // Period-over-period KPI cards (MTD)
       const now = new Date();
       const curMonth = now.toISOString().slice(0, 7);
       const dayOfMonth = now.getDate();
       const prevDate = new Date(now.getFullYear(), now.getMonth() - 1, 1);
       const prevMonth = prevDate.toISOString().slice(0, 7);
-
-      // Only count deals up to same day-of-month in previous period
       const curDeals = deals.filter(d => d.fecha_ejecucion.startsWith(curMonth) && parseInt(d.fecha_ejecucion.slice(8)) <= dayOfMonth);
       const prevDeals = deals.filter(d => d.fecha_ejecucion.startsWith(prevMonth) && parseInt(d.fecha_ejecucion.slice(8)) <= dayOfMonth);
 
@@ -1793,7 +1836,7 @@
       popHtml += '</div>';
       document.getElementById('tendencias-pop-cards').innerHTML = popHtml;
 
-      // Get months present
+      // Months
       const months = [...new Set(deals.map(d => d.fecha_ejecucion.slice(0, 7)))].sort();
       const monthLabels = months.map(m => { const [y, mo] = m.split('-'); return ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'][+mo-1] + ' ' + y.slice(2); });
 
@@ -1832,12 +1875,40 @@
       chartInstances.buContrib = new Chart(document.getElementById('chart-bu-contrib'), {
         type: 'doughnut',
         data: {
-          labels: buList.map(bu => `${bu} (${Math.round(gmvByBu[bu]/totalGmv*100)}%)`),
+          labels: buList.map(bu => `${bu} (${totalGmv > 0 ? Math.round(gmvByBu[bu]/totalGmv*100) : 0}%)`),
           datasets: [{ data: buList.map(bu => Math.round(gmvByBu[bu] / 1000)), backgroundColor: buList.map(bu => buColors[bu]), borderWidth: 2 }]
         },
         options: {
           responsive: true, maintainAspectRatio: true,
           plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 11 } } } }
+        }
+      });
+
+      // 3. GMV por Canal (OC vs ADS) - stacked bar mensual
+      const canalColors = { OC: '#FF6B35', ADS: '#7E57C2' };
+      const canales = ['OC', 'ADS'];
+      const gmvByCanalMonth = {};
+      canales.forEach(c => { gmvByCanalMonth[c] = months.map(() => 0); });
+      deals.forEach(d => {
+        const mIdx = months.indexOf(d.fecha_ejecucion.slice(0, 7));
+        if (mIdx >= 0 && gmvByCanalMonth[d.financiamiento_maker]) gmvByCanalMonth[d.financiamiento_maker][mIdx] += d.gmv_activacion;
+      });
+
+      chartInstances.canal = new Chart(document.getElementById('chart-canal'), {
+        type: 'bar',
+        data: {
+          labels: monthLabels,
+          datasets: canales.map(c => ({
+            label: c === 'OC' ? 'Comercial (OC)' : 'ADS',
+            data: gmvByCanalMonth[c].map(v => Math.round(v)),
+            backgroundColor: canalColors[c],
+            borderRadius: 3
+          }))
+        },
+        options: {
+          responsive: true, maintainAspectRatio: true,
+          plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } }, tooltip: { callbacks: { label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toLocaleString('en-US')} MXN` } } },
+          scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v => '$' + (v >= 1000000 ? (v/1000000).toFixed(1) + 'M' : (v/1000).toFixed(0) + 'k') }, title: { display: true, text: 'MXN', font: { size: 11 } } } }
         }
       });
     }
