@@ -1332,7 +1332,7 @@
       const postDeals = POSTMORTEM_DEALS.map(p => {
         const deal = getDeal(p.deal_id);
         return { id: p.deal_id, label: `${deal ? deal.maker_aux : p.deal_id} (${deal ? deal.fecha_ejecucion : ''})` };
-      });
+      }).sort((a, b) => a.label.localeCompare(b.label));
 
       [selA, selB].forEach(sel => {
         const currentVal = sel.value;
