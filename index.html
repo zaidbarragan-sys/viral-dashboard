@@ -930,10 +930,10 @@
     <div id="tendencias" class="section">
       <h2 class="section-title">Tendencias</h2>
       <div class="chart-grid">
-        <div class="chart-card"><h3>GMV Activación por Deal</h3><canvas id="chart-gmv"></canvas></div>
-        <div class="chart-card"><h3>Budget vs GMV</h3><canvas id="chart-budget-gmv"></canvas></div>
-        <div class="chart-card"><h3>Sell-up %</h3><canvas id="chart-sellup"></canvas></div>
-        <div class="chart-card"><h3>Canibalización Órdenes &Delta;%</h3><canvas id="chart-canib"></canvas></div>
+        <div class="chart-card"><h3>GMV Mensual por BU</h3><canvas id="chart-gmv-monthly"></canvas></div>
+        <div class="chart-card"><h3>Contribución GMV por BU</h3><canvas id="chart-bu-contrib"></canvas></div>
+        <div class="chart-card"><h3>Descuento vs Órdenes (Driver)</h3><canvas id="chart-driver-desc"></canvas></div>
+        <div class="chart-card"><h3>Período Actual vs Anterior</h3><canvas id="chart-pop"></canvas></div>
       </div>
     </div>
 
@@ -1744,89 +1744,132 @@
       tendenciasRendered = true;
 
       const buColors = { Foods: '#00B140', Drinks: '#42A5F5', Pharma: '#AB47BC', WOW: '#FFA726' };
+      const buList = ['Foods', 'Drinks', 'Pharma', 'WOW'];
 
-      // Get deals with postmortem, sorted by fecha_ejecucion
+      // Get deals with postmortem, merged with previral data
       const deals = POSTMORTEM_DEALS.map(p => {
         const d = getDeal(p.deal_id);
-        return { ...p, ...d };
-      }).filter(d => d.fecha_ejecucion).sort((a, b) => a.fecha_ejecucion.localeCompare(b.fecha_ejecucion));
+        return d ? { ...p, ...d } : null;
+      }).filter(Boolean).sort((a, b) => a.fecha_ejecucion.localeCompare(b.fecha_ejecucion));
 
-      // 1. GMV por Deal (bar chart)
-      chartInstances.gmv = new Chart(document.getElementById('chart-gmv'), {
+      // Get months present
+      const months = [...new Set(deals.map(d => d.fecha_ejecucion.slice(0, 7)))].sort();
+      const monthLabels = months.map(m => { const [y, mo] = m.split('-'); return ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'][+mo-1] + ' ' + y.slice(2); });
+
+      // 1. GMV Mensual por BU (stacked bar)
+      const gmvByBuMonth = {};
+      buList.forEach(bu => { gmvByBuMonth[bu] = months.map(() => 0); });
+      deals.forEach(d => {
+        const mIdx = months.indexOf(d.fecha_ejecucion.slice(0, 7));
+        if (mIdx >= 0 && gmvByBuMonth[d.business_unit]) gmvByBuMonth[d.business_unit][mIdx] += d.gmv_activacion;
+      });
+
+      chartInstances.gmvMonthly = new Chart(document.getElementById('chart-gmv-monthly'), {
         type: 'bar',
         data: {
-          labels: deals.map(d => d.maker_aux + ' ' + d.fecha_ejecucion.slice(5)),
-          datasets: [{
-            label: 'GMV Activación',
-            data: deals.map(d => d.gmv_activacion),
-            backgroundColor: deals.map(d => buColors[d.business_unit] || '#636366'),
-            borderRadius: 4
-          }]
+          labels: monthLabels,
+          datasets: buList.map(bu => ({
+            label: bu,
+            data: gmvByBuMonth[bu].map(v => Math.round(v / 1000)),
+            backgroundColor: buColors[bu],
+            borderRadius: 3
+          }))
         },
         options: {
           responsive: true,
-          plugins: { legend: { display: false } },
-          scales: { y: { beginAtZero: true, ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' } }, x: { ticks: { maxRotation: 45, font: { size: 10 } } } }
+          plugins: { legend: { position: 'bottom', labels: { boxWidth: 12 } } },
+          scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v => '$' + v + 'k' }, title: { display: true, text: 'GMV (miles MXN)' } } }
         }
       });
 
-      // 2. Budget vs GMV (scatter)
-      chartInstances.budgetGmv = new Chart(document.getElementById('chart-budget-gmv'), {
-        type: 'scatter',
+      // 2. Contribución GMV por BU (doughnut)
+      const gmvByBu = {};
+      buList.forEach(bu => { gmvByBu[bu] = 0; });
+      deals.forEach(d => { if (gmvByBu[d.business_unit] !== undefined) gmvByBu[d.business_unit] += d.gmv_activacion; });
+
+      chartInstances.buContrib = new Chart(document.getElementById('chart-bu-contrib'), {
+        type: 'doughnut',
         data: {
-          datasets: [{
-            label: 'Deals',
-            data: deals.map(d => ({ x: d.budget_total_mxn / 1000, y: d.gmv_activacion / 1000 })),
-            backgroundColor: deals.map(d => buColors[d.business_unit] || '#636366'),
-            pointRadius: 6
-          }]
+          labels: buList,
+          datasets: [{ data: buList.map(bu => Math.round(gmvByBu[bu] / 1000)), backgroundColor: buList.map(bu => buColors[bu]), borderWidth: 2 }]
         },
         options: {
           responsive: true,
-          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => { const d = deals[ctx.dataIndex]; return `${d.maker_aux}: Budget $${ctx.parsed.x.toFixed(0)}k → GMV $${ctx.parsed.y.toFixed(0)}k`; } } } },
-          scales: { x: { title: { display: true, text: 'Budget (miles MXN)' }, beginAtZero: true }, y: { title: { display: true, text: 'GMV (miles MXN)' }, beginAtZero: true } }
+          plugins: { legend: { position: 'bottom', labels: { boxWidth: 12 } }, tooltip: { callbacks: { label: (ctx) => `${ctx.label}: $${ctx.parsed.toLocaleString()}k (${Math.round(ctx.parsed / buList.reduce((s, b) => s + Math.round(gmvByBu[b]/1000), 0) * 100)}%)` } } }
         }
       });
 
-      // 3. Sell-up % (line chart cronológico)
-      chartInstances.sellup = new Chart(document.getElementById('chart-sellup'), {
-        type: 'line',
-        data: {
-          labels: deals.map(d => d.maker_aux + ' ' + d.fecha_ejecucion.slice(5)),
-          datasets: [{
-            label: 'Sell-up %',
-            data: deals.map(d => d.pct_sellup),
-            borderColor: '#FF6B35',
-            backgroundColor: 'rgba(255,107,53,0.1)',
-            fill: true,
-            tension: 0.3,
-            pointRadius: 4
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
-          scales: { y: { beginAtZero: true, ticks: { callback: v => v + '%' } }, x: { ticks: { maxRotation: 45, font: { size: 10 } } } }
-        }
+      // 3. Driver: Descuento vs Órdenes promedio (scatter agrupado)
+      const descGroups = {};
+      deals.forEach(d => {
+        const key = d.descuento_pct + '%';
+        if (!descGroups[key]) descGroups[key] = { orders: [], gmvs: [] };
+        descGroups[key].orders.push(d.ordenes_total);
+        descGroups[key].gmvs.push(d.gmv_activacion);
       });
+      const descLabels = Object.keys(descGroups).sort((a, b) => parseInt(a) - parseInt(b));
+      const avgOrders = descLabels.map(k => Math.round(descGroups[k].orders.reduce((a, b) => a + b, 0) / descGroups[k].orders.length));
+      const avgGmv = descLabels.map(k => Math.round(descGroups[k].gmvs.reduce((a, b) => a + b, 0) / descGroups[k].gmvs.length / 1000));
+      const dealCounts = descLabels.map(k => descGroups[k].orders.length);
 
-      // 4. Canibalización órdenes Δ% (bar chart con colores positivo/negativo)
-      const canibDeals = deals.filter(d => d.canib_ord_delta_pct !== null);
-      chartInstances.canib = new Chart(document.getElementById('chart-canib'), {
+      chartInstances.driver = new Chart(document.getElementById('chart-driver-desc'), {
         type: 'bar',
         data: {
-          labels: canibDeals.map(d => d.maker_aux + ' ' + d.fecha_ejecucion.slice(5)),
-          datasets: [{
-            label: 'Δ Órdenes Post vs Bench',
-            data: canibDeals.map(d => d.canib_ord_delta_pct),
-            backgroundColor: canibDeals.map(d => d.canib_ord_delta_pct >= 0 ? '#00B140' : '#E53935'),
-            borderRadius: 4
-          }]
+          labels: descLabels,
+          datasets: [
+            { label: 'Órdenes prom.', data: avgOrders, backgroundColor: '#42A5F5', borderRadius: 4, yAxisID: 'y' },
+            { label: 'GMV prom. ($k)', data: avgGmv, backgroundColor: '#FF6B35', borderRadius: 4, yAxisID: 'y1' }
+          ]
         },
         options: {
           responsive: true,
-          plugins: { legend: { display: false } },
-          scales: { y: { ticks: { callback: v => v + '%' } }, x: { ticks: { maxRotation: 45, font: { size: 10 } } } }
+          plugins: { legend: { position: 'bottom', labels: { boxWidth: 12 } }, tooltip: { callbacks: { afterLabel: (ctx) => `(n=${dealCounts[ctx.dataIndex]} deals)` } } },
+          scales: {
+            y: { position: 'left', title: { display: true, text: 'Órdenes prom.' }, beginAtZero: true },
+            y1: { position: 'right', title: { display: true, text: 'GMV prom. ($k)' }, beginAtZero: true, grid: { drawOnChartArea: false } }
+          }
+        }
+      });
+
+      // 4. Period-over-period: mes actual vs anterior
+      const now = new Date();
+      const curMonth = now.toISOString().slice(0, 7);
+      const prevDate = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+      const prevMonth = prevDate.toISOString().slice(0, 7);
+
+      const curDeals = deals.filter(d => d.fecha_ejecucion.startsWith(curMonth));
+      const prevDeals = deals.filter(d => d.fecha_ejecucion.startsWith(prevMonth));
+
+      const metrics = ['GMV Total', '# Deals', 'Órdenes', 'Usuarios'];
+      const curVals = [
+        curDeals.reduce((s, d) => s + d.gmv_activacion, 0),
+        curDeals.length,
+        curDeals.reduce((s, d) => s + d.ordenes_total, 0),
+        curDeals.reduce((s, d) => s + d.usuarios_unicos, 0)
+      ];
+      const prevVals = [
+        prevDeals.reduce((s, d) => s + d.gmv_activacion, 0),
+        prevDeals.length,
+        prevDeals.reduce((s, d) => s + d.ordenes_total, 0),
+        prevDeals.reduce((s, d) => s + d.usuarios_unicos, 0)
+      ];
+
+      const curLabel = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'][now.getMonth()] + ' ' + String(now.getFullYear()).slice(2);
+      const prevLabel = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'][prevDate.getMonth()] + ' ' + String(prevDate.getFullYear()).slice(2);
+
+      chartInstances.pop = new Chart(document.getElementById('chart-pop'), {
+        type: 'bar',
+        data: {
+          labels: metrics,
+          datasets: [
+            { label: prevLabel, data: prevVals, backgroundColor: '#B0BEC5', borderRadius: 4 },
+            { label: curLabel, data: curVals, backgroundColor: '#FF6B35', borderRadius: 4 }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: 'bottom', labels: { boxWidth: 12 } } },
+          scales: { y: { beginAtZero: true, ticks: { callback: v => v >= 1000 ? '$' + (v/1000).toFixed(0) + 'k' : v } } }
         }
       });
     }
