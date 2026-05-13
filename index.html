@@ -1158,34 +1158,6 @@
           </div>
         </div>`;
 
-        // Efficiency KPIs
-        const totalNuevos = skuPerf.reduce((s, r) => s + (r.seg_nuevo || 0), 0);
-        const roi = deal.budget_total_mxn > 0 ? (post.gmv_activacion / deal.budget_total_mxn) : null;
-        const cpo = post.ordenes_total > 0 ? Math.round(deal.budget_total_mxn / post.ordenes_total) : null;
-        const cpnu = totalNuevos > 0 ? Math.round(deal.budget_total_mxn / totalNuevos) : null;
-        const incrReal = post.ord_l4w && post.ord_l4w > 0 ? (post.ordenes_total / post.ord_l4w) : null;
-
-        html += `<div class="sub-title">Eficiencia del Deal</div>`;
-        html += `<div class="kpi-grid">
-          <div class="kpi-card">
-            <div class="label">ROI (GMV / Budget)</div>
-            <div class="value" style="color:${roi !== null ? (roi >= 1 ? '#00B140' : '#E53935') : '#636366'}">${roi !== null ? roi.toFixed(1) + 'x' : '—'}</div>
-          </div>
-          <div class="kpi-card">
-            <div class="label">Costo por Orden</div>
-            <div class="value">${cpo !== null ? fmtMXN(cpo) : '—'}</div>
-          </div>
-          <div class="kpi-card">
-            <div class="label">Costo por Usuario Nuevo</div>
-            <div class="value">${cpnu !== null ? fmtMXN(cpnu) : '—'}</div>
-          </div>
-          <div class="kpi-card">
-            <div class="label">Incrementalidad Real</div>
-            <div class="value" style="color:${incrReal !== null ? (incrReal >= deal.incrementalidad ? '#00B140' : '#E53935') : '#636366'}">${incrReal !== null ? incrReal.toFixed(1) + 'x' : '—'}</div>
-            <div class="delta" style="color:#636366">Plan: ${deal.incrementalidad}x</div>
-          </div>
-        </div>`;
-
         // Comparativo table
         html += `<div class="sub-title">Comparativo</div>`;
         html += `<div class="table-wrapper"><table>
