@@ -1754,13 +1754,16 @@
         return d ? { ...p, ...d } : null;
       }).filter(Boolean).sort((a, b) => a.fecha_ejecucion.localeCompare(b.fecha_ejecucion));
 
-      // Period-over-period KPI cards
+      // Period-over-period KPI cards (MTD comparison)
       const now = new Date();
       const curMonth = now.toISOString().slice(0, 7);
+      const dayOfMonth = now.getDate();
       const prevDate = new Date(now.getFullYear(), now.getMonth() - 1, 1);
       const prevMonth = prevDate.toISOString().slice(0, 7);
-      const curDeals = deals.filter(d => d.fecha_ejecucion.startsWith(curMonth));
-      const prevDeals = deals.filter(d => d.fecha_ejecucion.startsWith(prevMonth));
+
+      // Only count deals up to same day-of-month in previous period
+      const curDeals = deals.filter(d => d.fecha_ejecucion.startsWith(curMonth) && parseInt(d.fecha_ejecucion.slice(8)) <= dayOfMonth);
+      const prevDeals = deals.filter(d => d.fecha_ejecucion.startsWith(prevMonth) && parseInt(d.fecha_ejecucion.slice(8)) <= dayOfMonth);
 
       const curLabel = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'][now.getMonth()] + ' ' + String(now.getFullYear()).slice(2);
       const prevLabel = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'][prevDate.getMonth()] + ' ' + String(prevDate.getFullYear()).slice(2);
@@ -1772,7 +1775,7 @@
         { label: 'Usuarios Únicos', cur: curDeals.reduce((s, d) => s + d.usuarios_unicos, 0), prev: prevDeals.reduce((s, d) => s + d.usuarios_unicos, 0), fmt: v => v.toLocaleString() },
       ];
 
-      let popHtml = `<div class="sub-title" style="margin-bottom:8px">${curLabel} vs ${prevLabel}</div><div class="kpi-grid">`;
+      let popHtml = `<div class="sub-title" style="margin-bottom:8px">${curLabel} vs ${prevLabel} (MTD — día 1 al ${dayOfMonth})</div><div class="kpi-grid">`;
       popMetrics.forEach(m => {
         const delta = m.prev > 0 ? ((m.cur - m.prev) / m.prev * 100) : null;
         const color = delta === null ? '#636366' : delta >= 0 ? '#00B140' : '#E53935';
