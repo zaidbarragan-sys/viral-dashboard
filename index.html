@@ -930,7 +930,7 @@
     <div id="tendencias" class="section">
       <h2 class="section-title">Tendencias</h2>
       <div class="chart-grid">
-        <div class="chart-card"><h3>GMV Activacion</h3><canvas id="chart-gmv"></canvas></div>
+        <div class="chart-card"><h3>GMV Activación</h3><canvas id="chart-gmv"></canvas></div>
         <div class="chart-card"><h3>Share Deal/Cat %</h3><canvas id="chart-share"></canvas></div>
         <div class="chart-card"><h3>Sell-up %</h3><canvas id="chart-sellup"></canvas></div>
         <div class="chart-card"><h3>Canibalizacion Ordenes &Delta;%</h3><canvas id="chart-canib"></canvas></div>
@@ -1132,7 +1132,7 @@
         // KPI cards
         html += `<div class="kpi-grid">
           <div class="kpi-card">
-            <div class="label">GMV Activacion</div>
+            <div class="label">GMV Activación</div>
             <div class="value">${fmtMXN(post.gmv_activacion)}</div>
             <div class="delta" style="color:${deltaColor(post.gmv_dlw_pct)}">vs LW: ${fmtDelta(post.gmv_dlw_pct)}</div>
             <div class="delta" style="color:${deltaColor(post.gmv_dl4w_pct)}">vs L4W: ${fmtDelta(post.gmv_dl4w_pct)}</div>
@@ -1603,7 +1603,7 @@
               <button class="cal-expand-close" id="cal-expand-close">&times;</button>
             </div>
             <div class="cal-forecast-badge">Forecast</div>
-            <div style="margin-top:12px;color:var(--gray-text);font-size:13px;">Este viral esta en etapa de forecast. Aun no tiene datos de planeacion confirmados.</div>
+            <div style="margin-top:12px;color:var(--gray-text);font-size:13px;">Este viral esta en etapa de forecast. Aún no tiene datos de planeacion confirmados.</div>
           </div>
         `;
 
@@ -1673,7 +1673,7 @@
           bodyHtml = `
             <div class="sub-title">Resultados</div>
             <div class="cal-expand-kpis">
-              <div class="cal-expand-kpi"><div class="label">GMV Activacion</div><div class="value">${fmtMXN(post.gmv_activacion)}</div></div>
+              <div class="cal-expand-kpi"><div class="label">GMV Activación</div><div class="value">${fmtMXN(post.gmv_activacion)}</div></div>
               <div class="cal-expand-kpi"><div class="label">Ordenes</div><div class="value">${fmtNum(post.ordenes_total)}</div></div>
               <div class="cal-expand-kpi"><div class="label">Usuarios</div><div class="value">${fmtNum(post.usuarios_unicos)}</div></div>
               <div class="cal-expand-kpi"><div class="label">AOV</div><div class="value">${fmtMXN(post.aov)}</div></div>
@@ -1695,7 +1695,7 @@
                 <span class="badge badge-gray">${deal.tipo_viral}</span>
                 <span>${deal.ciudades}</span>
                 <span>${deal.categoria_display}</span>
-                <span>Planeacion: ${deal.fecha_planeacion}</span>
+                <span>Planeación: ${deal.fecha_planeacion}</span>
               </div>
             </div>
             <button class="cal-expand-close" id="cal-expand-close">&times;</button>
