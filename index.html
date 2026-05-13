@@ -866,6 +866,7 @@
         <button class="tab active" data-tab="indice">Home</button>
         <button class="tab" data-tab="catalogo">Catálogo</button>
         <button class="tab" data-tab="comparador">Comparador</button>
+        <button class="tab" data-tab="tendencias">Tendencias</button>
       </nav>
     </div>
   </header>
@@ -925,18 +926,16 @@
       </div>
     </div>
 
-    <!-- TENDENCIAS (disabled temporarily) -->
-    <!--
+    <!-- TENDENCIAS -->
     <div id="tendencias" class="section">
       <h2 class="section-title">Tendencias</h2>
       <div class="chart-grid">
-        <div class="chart-card"><h3>GMV Activación</h3><canvas id="chart-gmv"></canvas></div>
-        <div class="chart-card"><h3>Share Deal/Cat %</h3><canvas id="chart-share"></canvas></div>
+        <div class="chart-card"><h3>GMV Activación por Deal</h3><canvas id="chart-gmv"></canvas></div>
+        <div class="chart-card"><h3>Budget vs GMV</h3><canvas id="chart-budget-gmv"></canvas></div>
         <div class="chart-card"><h3>Sell-up %</h3><canvas id="chart-sellup"></canvas></div>
-        <div class="chart-card"><h3>Canibalizacion Ordenes &Delta;%</h3><canvas id="chart-canib"></canvas></div>
+        <div class="chart-card"><h3>Canibalización Órdenes &Delta;%</h3><canvas id="chart-canib"></canvas></div>
       </div>
     </div>
-    -->
 
     <!-- CATALOGO -->
     <div id="catalogo" class="section">
@@ -1011,7 +1010,7 @@
         renderDetalle(dealId);
       }
       if (tab === 'comparador') renderComparador();
-      // if (tab === 'tendencias') renderTendencias();
+      if (tab === 'tendencias') renderTendencias();
       if (tab === 'catalogo') renderCatalogo();
     }
 
@@ -1022,7 +1021,7 @@
     // Hash routing
     window.addEventListener('hashchange', () => {
       const hash = window.location.hash.replace('#', '') || 'indice';
-      if (['indice', 'detalle', 'comparador', 'catalogo'].includes(hash)) {
+      if (['indice', 'detalle', 'comparador', 'catalogo', 'tendencias'].includes(hash)) {
         navigateTo(hash);
       }
     });
@@ -1735,6 +1734,104 @@
     document.getElementById('filter-bu').addEventListener('change', () => renderCalendario());
 
     // ============================================================
+    // TENDENCIAS
+    // ============================================================
+    let tendenciasRendered = false;
+    const chartInstances = {};
+
+    function renderTendencias() {
+      if (tendenciasRendered) return;
+      tendenciasRendered = true;
+
+      const buColors = { Foods: '#00B140', Drinks: '#42A5F5', Pharma: '#AB47BC', WOW: '#FFA726' };
+
+      // Get deals with postmortem, sorted by fecha_ejecucion
+      const deals = POSTMORTEM_DEALS.map(p => {
+        const d = getDeal(p.deal_id);
+        return { ...p, ...d };
+      }).filter(d => d.fecha_ejecucion).sort((a, b) => a.fecha_ejecucion.localeCompare(b.fecha_ejecucion));
+
+      // 1. GMV por Deal (bar chart)
+      chartInstances.gmv = new Chart(document.getElementById('chart-gmv'), {
+        type: 'bar',
+        data: {
+          labels: deals.map(d => d.maker_aux + ' ' + d.fecha_ejecucion.slice(5)),
+          datasets: [{
+            label: 'GMV Activación',
+            data: deals.map(d => d.gmv_activacion),
+            backgroundColor: deals.map(d => buColors[d.business_unit] || '#636366'),
+            borderRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true, ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'k' } }, x: { ticks: { maxRotation: 45, font: { size: 10 } } } }
+        }
+      });
+
+      // 2. Budget vs GMV (scatter)
+      chartInstances.budgetGmv = new Chart(document.getElementById('chart-budget-gmv'), {
+        type: 'scatter',
+        data: {
+          datasets: [{
+            label: 'Deals',
+            data: deals.map(d => ({ x: d.budget_total_mxn / 1000, y: d.gmv_activacion / 1000 })),
+            backgroundColor: deals.map(d => buColors[d.business_unit] || '#636366'),
+            pointRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => { const d = deals[ctx.dataIndex]; return `${d.maker_aux}: Budget $${ctx.parsed.x.toFixed(0)}k → GMV $${ctx.parsed.y.toFixed(0)}k`; } } } },
+          scales: { x: { title: { display: true, text: 'Budget (miles MXN)' }, beginAtZero: true }, y: { title: { display: true, text: 'GMV (miles MXN)' }, beginAtZero: true } }
+        }
+      });
+
+      // 3. Sell-up % (line chart cronológico)
+      chartInstances.sellup = new Chart(document.getElementById('chart-sellup'), {
+        type: 'line',
+        data: {
+          labels: deals.map(d => d.maker_aux + ' ' + d.fecha_ejecucion.slice(5)),
+          datasets: [{
+            label: 'Sell-up %',
+            data: deals.map(d => d.pct_sellup),
+            borderColor: '#FF6B35',
+            backgroundColor: 'rgba(255,107,53,0.1)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true, ticks: { callback: v => v + '%' } }, x: { ticks: { maxRotation: 45, font: { size: 10 } } } }
+        }
+      });
+
+      // 4. Canibalización órdenes Δ% (bar chart con colores positivo/negativo)
+      const canibDeals = deals.filter(d => d.canib_ord_delta_pct !== null);
+      chartInstances.canib = new Chart(document.getElementById('chart-canib'), {
+        type: 'bar',
+        data: {
+          labels: canibDeals.map(d => d.maker_aux + ' ' + d.fecha_ejecucion.slice(5)),
+          datasets: [{
+            label: 'Δ Órdenes Post vs Bench',
+            data: canibDeals.map(d => d.canib_ord_delta_pct),
+            backgroundColor: canibDeals.map(d => d.canib_ord_delta_pct >= 0 ? '#00B140' : '#E53935'),
+            borderRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: { y: { ticks: { callback: v => v + '%' } }, x: { ticks: { maxRotation: 45, font: { size: 10 } } } }
+        }
+      });
+    }
+
+    // ============================================================
     // CATALOGO
     // ============================================================
     let catalogoSortCol = 'fecha';
@@ -1879,7 +1976,7 @@
 
     // Handle initial hash
     const initHash = window.location.hash.replace('#', '');
-    if (initHash && ['indice', 'detalle', 'comparador', 'catalogo'].includes(initHash)) {
+    if (initHash && ['indice', 'detalle', 'comparador', 'catalogo', 'tendencias'].includes(initHash)) {
       navigateTo(initHash);
     }
   </script>
