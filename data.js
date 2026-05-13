@@ -2069,6 +2069,30 @@ const PREVIRAL_DEALS = [
     categoria_display: "Insecticidas"
   },
   {
+    deal_id: "VIRAL_DEAL_WECARE_240426",
+    maker_name: "We Care",
+    maker_aux: "WeCare",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 10,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-17",
+    fecha_ejecucion: "2026-04-24",
+    fecha_fin: null,
+    usd_mxn: 17.24,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1740.14,
+    budget_growth_usd: 522.04,
+    budget_total_usd: 2262.18,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Vajilla desechable"
+  },
+  {
     deal_id: "VIRAL_DEAL_PETS_230426",
     maker_name: "Pets",
     maker_aux: "Pets",
@@ -2594,6 +2618,10 @@ const PREVIRAL_SKU_DETAIL = [
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 },
+  // WeCare
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72978", ean: "7502290810329", pid: "2115715654", name: "We Care - Vaso de Papel con PLA 16oz Rojo - 10 uds.", subcategoria: "Vajilla desechable", h_units: 38.6, h_orders: 23.6, avg_price: 60.06, ex_incr_units: 386, ex_incr_orders: 236, ex_budget_mxn: 11592, ex_budget_usd: 672.41, real_units: 624, final_budget_mxn: 18739, final_budget_usd: 1087.24, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72977", ean: "7503015721166", pid: "2115168441", name: "We Care - Plato liso Grande 8.6 - 18 uds.", subcategoria: "Vajilla desechable", h_units: 24.1, h_orders: 17.4, avg_price: 59.70, ex_incr_units: 241, ex_incr_orders: 174, ex_budget_mxn: 7194, ex_budget_usd: 417.34, real_units: 392, final_budget_mxn: 11701, final_budget_usd: 678.73, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72981", ean: "7503015721142", pid: "2113782727", name: "We Care - Cuchara Mediana - 20 uds.", subcategoria: "Vajilla desechable", h_units: 17.6, h_orders: 12.5, avg_price: 25.45, ex_incr_units: 176, ex_incr_orders: 125, ex_budget_mxn: 2240, ex_budget_usd: 129.93, real_units: 672, final_budget_mxn: 8551, final_budget_usd: 496.00, sku_order: 3 },
   // Pets
   { deal_id: "VIRAL_DEAL_PETS_230426", sync: "83659", ean: "7502234336656", pid: "2115518329", name: "Pawffy Arena Para Gatos Aroma Lavanda 5 Kg", subcategoria: "Arena para gatos", h_units: 13.4, h_orders: 12.0, avg_price: 106.22, ex_incr_units: 107, ex_incr_orders: 96, ex_budget_mxn: 5683, ex_budget_usd: 329.64, real_units: 1153, final_budget_mxn: 61236, final_budget_usd: 3552.55, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_PETS_230426", sync: "82200", ean: "7506430626771", pid: "2115406400", name: "Dog Chew Hueso Para Perro 7 a 8'' Sabor a Pollo 2 Und", subcategoria: "Alimento para perros", h_units: 4.1, h_orders: 3.8, avg_price: 127.11, ex_incr_units: 33, ex_incr_orders: 30, ex_budget_mxn: 2097, ex_budget_usd: 121.63, real_units: 297, final_budget_mxn: 18876, final_budget_usd: 1094.90, sku_order: 2 },
