@@ -3525,6 +3525,34 @@ const POSTMORTEM_DEALS = [
     canib_und_post: 776, canib_und_bench: 688.25, canib_und_delta_pct: 12.7,
     canib_cli_post: 479, canib_cli_bench: 454, canib_cli_delta_pct: 5.5
   }
+  ,{
+    deal_id: "VIRAL_DEAL_HOLANDA_160426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 107890,
+    gmv_lw: 9432, gmv_dlw_pct: 1043.9,
+    gmv_l4w: 11915, gmv_dl4w_pct: 805.5,
+    usuarios_unicos: 661,
+    usr_lw: 148, usr_dlw_pct: 346.6,
+    usr_l4w: 166.5, usr_dl4w_pct: 296.8,
+    cr_pct: null,
+    aov: 138.68, aov_lw: 61.65, aov_dlw_pct: 124.9, aov_l4w: 65.47, aov_dl4w_pct: 111.8,
+    unidades_total: 3204, und_lw: 289, und_dlw_pct: 1008.7, und_l4w: 348.5, und_dl4w_pct: 819.1,
+    ordenes_total: 778, ord_lw: 153, ord_dlw_pct: 408.5, ord_l4w: 182, ord_dl4w_pct: 327.5,
+    impresiones_total: null,
+    so_turbo_mx: 3606177, gmv_categoria: 145840,
+    gmv_cat_lw: 43347, gmv_cat_l4w: 57012,
+    share_deal_cat_pct: 92.16, share_lw_pct: 74.04, share_l4w_pct: 72.45,
+    gmv_basket: 162030, gmv_sellup: 54140, pct_sellup: 33.41,
+    aov_basket: 208.27, aov_deal_post: 138.68,
+    cross_ordenes: 778, cross_skus_distintos: 612,
+    cross_top_producto: "Coca-Cola Original Refresco Pet 600 mL", cross_top_ordenes: 15, cross_top_pct: 1.93,
+    inv_oos_cierre_viral_avg: 49.7, inv_oos_post_avg: 49.7,
+    inv_cov_viral_ap_avg: 47.2, inv_cov_viral_ci_avg: 34.4,
+    inv_cov_post_avg: 35.2, inv_cov_bench_avg: 45.8,
+    canib_ord_post: 524, canib_ord_bench: 781.25, canib_ord_delta_pct: -32.9,
+    canib_und_post: 1042, canib_und_bench: 1798.5, canib_und_delta_pct: -42.1,
+    canib_cli_post: 559, canib_cli_bench: 803.5, canib_cli_delta_pct: -30.4
+  }
 ];
 
 const POSTMORTEM_SKU_PERFORMANCE = [
@@ -3775,6 +3803,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
 
 
 
+  // Holanda 160426
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "6579", name: "Magnum Paleta Helada Almendras 90 mL", ordenes: 430, usuarios: 377, unidades: 1175, gmv: 56153, aov: 130.59, impresiones: null, cr_pct: null, gmv_dlw_pct: 1406.3, gmv_dl4w_pct: 834.9, seg_nuevo: 287, seg_nuevo_pct: 67, seg_reactivado: 103, seg_reactivado_pct: 24, seg_retenido: 40, seg_retenido_pct: 9, stock_viral: 1483, stock_post: 526, stock_bench: 1087, stock_delta_pct: -51.6, oos_cierre_viral: 58, oos_post: 54, cov_viral_ap: 48.7, cov_viral_ci: 23.7, cov_post: 27.6, canib_ord_post: 152, canib_ord_bench: 312.0, canib_ord_delta_pct: -51.3, canib_und_post: 290, canib_und_bench: 693.0, canib_und_delta_pct: -58.2, canib_cli_post: 164, canib_cli_bench: 322.5, canib_cli_delta_pct: -49.1 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "71550", name: "Mordisko Helado Original Vainilla", ordenes: 467, usuarios: 397, unidades: 1383, gmv: 36346, aov: 77.83, impresiones: null, cr_pct: null, gmv_dlw_pct: 645.5, gmv_dl4w_pct: 628.8, seg_nuevo: 319, seg_nuevo_pct: 68, seg_reactivado: 79, seg_reactivado_pct: 17, seg_retenido: 69, seg_retenido_pct: 15, stock_viral: 1998, stock_post: 894, stock_bench: 1296, stock_delta_pct: -31.0, oos_cierre_viral: 46, oos_post: 46, cov_viral_ap: 46.7, cov_viral_ci: 38.7, cov_post: 39.8, canib_ord_post: 260, canib_ord_bench: 362.5, canib_ord_delta_pct: -28.3, canib_und_post: 514, canib_und_bench: 882.0, canib_und_delta_pct: -41.7, canib_cli_post: 275, canib_cli_bench: 371.0, canib_cli_delta_pct: -25.9 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "8944", name: "Solero Paleta Sabor Limón Citrus", ordenes: 251, usuarios: 217, unidades: 646, gmv: 15390, aov: 61.32, impresiones: null, cr_pct: null, gmv_dlw_pct: 1758.3, gmv_dl4w_pct: 1571.5, seg_nuevo: 179, seg_nuevo_pct: 71, seg_reactivado: 49, seg_reactivado_pct: 20, seg_retenido: 23, seg_retenido_pct: 9, stock_viral: 1313, stock_post: 612, stock_bench: 936, stock_delta_pct: -34.6, oos_cierre_viral: 45, oos_post: 49, cov_viral_ap: 46.1, cov_viral_ci: 40.8, cov_post: 38.2, canib_ord_post: 112, canib_ord_bench: 106.75, canib_ord_delta_pct: 4.9, canib_und_post: 238, canib_und_bench: 223.5, canib_und_delta_pct: 6.5, canib_cli_post: 120, canib_cli_bench: 110.0, canib_cli_delta_pct: 9.1 },
   // Gepp 270426
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "8161", name: "Gatorade Bebida Hidratante Sabor Ponche de Frutas 1 L", ordenes: 401, usuarios: 309, unidades: 732, gmv: 20151, aov: 50.25, impresiones: 4347, cr_pct: 7.11, gmv_dlw_pct: 990.5, gmv_dl4w_pct: 1063.2, seg_nuevo: 248, seg_nuevo_pct: 62, seg_reactivado: 70, seg_reactivado_pct: 17, seg_retenido: 83, seg_retenido_pct: 21, stock_viral: 1623, stock_post: 1233, stock_bench: 1382, stock_delta_pct: -10.8, oos_cierre_viral: 57, oos_post: 50, cov_viral_ap: 57.3, cov_viral_ci: 30.5, cov_post: 36.3, canib_ord_post: 174, canib_ord_bench: 177.5, canib_ord_delta_pct: -2.0, canib_und_post: 253, canib_und_bench: 290.25, canib_und_delta_pct: -12.8, canib_cli_post: 184, canib_cli_bench: 186.0, canib_cli_delta_pct: -1.1 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "8939", name: "Gatorade Bebida Rehidratante sabor Uva 1l", ordenes: 247, usuarios: 212, unidades: 431, gmv: 12547, aov: 50.80, impresiones: 3458, cr_pct: 6.13, gmv_dlw_pct: 760.9, gmv_dl4w_pct: 824.2, seg_nuevo: 202, seg_nuevo_pct: 82, seg_reactivado: 28, seg_reactivado_pct: 11, seg_retenido: 17, seg_retenido_pct: 7, stock_viral: 1404, stock_post: 1076, stock_bench: 1560, stock_delta_pct: -31.0, oos_cierre_viral: 49, oos_post: 38, cov_viral_ap: 59.4, cov_viral_ci: 29.0, cov_post: 40.2, canib_ord_post: 197, canib_ord_bench: 177.0, canib_ord_delta_pct: 11.3, canib_und_post: 377, canib_und_bench: 273.5, canib_und_delta_pct: 37.8, canib_cli_post: 203, canib_cli_bench: 184.5, canib_cli_delta_pct: 10.0 },
@@ -4148,6 +4180,16 @@ const POSTMORTEM_SELLUP_CATS = [
 
 
 
+
+  // Holanda 160426
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Snacks salados", ordenes: 140, gmv: 8181, pct_sellup: 15.11, order: 1 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Gaseosas", ordenes: 111, gmv: 5352, pct_sellup: 9.88, order: 2 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Helados", ordenes: 76, gmv: 4761, pct_sellup: 8.79, order: 3 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Cervezas", ordenes: 29, gmv: 3164, pct_sellup: 5.84, order: 4 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Cigarrillos", ordenes: 19, gmv: 2921, pct_sellup: 5.40, order: 5 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Preservativos", ordenes: 4, gmv: 2047, pct_sellup: 3.78, order: 6 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Gomitas y caramelos", ordenes: 56, gmv: 1679, pct_sellup: 3.10, order: 7 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Frutas", ordenes: 36, gmv: 1635, pct_sellup: 3.02, order: 8 },
 
   // Gepp 270426
   { deal_id: "VIRAL_DEAL_GEPP_270426", subcategoria: "Snacks salados", ordenes: 107, gmv: 12847, pct_sellup: 16.18, order: 1 },
@@ -4681,6 +4723,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 },
+  // Holanda 160426
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "6744", name: "Coca-Cola Original Refresco Pet 600 mL", subcategoria: "Gaseosas", ordenes: 15, pct_deal: 1.93, order: 1 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "8190", name: "Holanda Paleta Helada Chemisse Coco Piña 65 mL", subcategoria: "Helados", ordenes: 12, pct_deal: 1.54, order: 2 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "14357", name: "Prispas Botana de Papas Francesas Picositas", subcategoria: "Snacks salados", ordenes: 11, pct_deal: 1.41, order: 3 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "74142", name: "Takis Fuego 94g", subcategoria: "Snacks salados", ordenes: 11, pct_deal: 1.41, order: 4 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "8462", name: "Coca-Cola Refresco Original 3 L", subcategoria: "Gaseosas", ordenes: 11, pct_deal: 1.41, order: 5 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "82170", name: "Solero Paleta Helada Sabor Fresa 79 g", subcategoria: "Helados", ordenes: 10, pct_deal: 1.29, order: 6 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "8027", name: "Magnum Paleta Helada Clásica Vainilla y Chocolate 90 mL", subcategoria: "Helados", ordenes: 10, pct_deal: 1.29, order: 7 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 10, pct_deal: 1.29, order: 8 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "15322", name: "Hot Nuts Cacahuates Original 100 g", subcategoria: "Frutos secos y semillas", ordenes: 9, pct_deal: 1.16, order: 9 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "11152", name: "Pepsi Refresco Regular 2.5 L", subcategoria: "Gaseosas", ordenes: 9, pct_deal: 1.16, order: 10 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "13683", name: "Ruffles Sabritas Papa Fritas Onduladas de Queso 120 g", subcategoria: "Snacks salados", ordenes: 9, pct_deal: 1.16, order: 11 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "15327", name: "Doritos Nacho 146g", subcategoria: "Snacks salados", ordenes: 8, pct_deal: 1.03, order: 12 },
   // Gepp 270426
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "10929", name: "Doritos Nacho 223Gr", subcategoria: "Snacks salados", ordenes: 18, pct_deal: 3.14, order: 1 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "15327", name: "Doritos Nacho 146g", subcategoria: "Snacks salados", ordenes: 17, pct_deal: 2.97, order: 2 },
