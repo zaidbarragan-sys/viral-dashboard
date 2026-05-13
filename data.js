@@ -2069,6 +2069,30 @@ const PREVIRAL_DEALS = [
     categoria_display: "Insecticidas"
   },
   {
+    deal_id: "VIRAL_DEAL_PETS_220426",
+    maker_name: "Pets",
+    maker_aux: "Pets",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-23",
+    fecha_ejecucion: "2026-04-22",
+    fecha_fin: null,
+    usd_mxn: 17.24,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 81000,
+    budget_growth_mxn: 24300,
+    budget_total_mxn: 105300,
+    budget_maker_usd: 4698.38,
+    budget_growth_usd: 1409.51,
+    budget_total_usd: 6107.89,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Alimento para perros, Arena para gatos, Snacks para Mascotas"
+  },
+  {
     deal_id: "VIRAL_DEAL_MIMOSAS_180426",
     maker_name: "Mimosas",
     maker_aux: "Mimosas",
@@ -2570,6 +2594,11 @@ const PREVIRAL_SKU_DETAIL = [
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 },
+  // Pets
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "83659", ean: "7502234336656", pid: "2115518329", name: "Pawffy Arena Para Gatos Aroma Lavanda 5 Kg", subcategoria: "Arena para gatos", h_units: 13.4, h_orders: 12.0, avg_price: 106.22, ex_incr_units: 107, ex_incr_orders: 96, ex_budget_mxn: 5683, ex_budget_usd: 329.64, real_units: 1153, final_budget_mxn: 61236, final_budget_usd: 3552.55, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "82200", ean: "7506430626771", pid: "2115406400", name: "Dog Chew Hueso Para Perro 7 a 8'' Sabor a Pollo 2 Und", subcategoria: "Alimento para perros", h_units: 4.1, h_orders: 3.8, avg_price: 127.11, ex_incr_units: 33, ex_incr_orders: 30, ex_budget_mxn: 2097, ex_budget_usd: 121.63, real_units: 297, final_budget_mxn: 18876, final_budget_usd: 1094.90, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "83458", ean: "7506430626658", pid: "2115477453", name: "Dog Chew Pork Femur Deshidratado 2 Und", subcategoria: "Snacks para Mascotas", h_units: 3.4, h_orders: 3.0, avg_price: 165.54, ex_incr_units: 27, ex_incr_orders: 24, ex_budget_mxn: 2235, ex_budget_usd: 129.61, real_units: 187, final_budget_mxn: 15478, final_budget_usd: 897.80, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "82205", ean: "7506430615874", pid: "2115406467", name: "Dog Chew Sticks Sabor Res Para Perro 100 Und", subcategoria: "Alimento para perros", h_units: 2.1, h_orders: 2.1, avg_price: 136.61, ex_incr_units: 17, ex_incr_orders: 17, ex_budget_mxn: 1161, ex_budget_usd: 67.34, real_units: 142, final_budget_mxn: 9699, final_budget_usd: 562.73, sku_order: 4 },
   // Mimosas
   { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "12456", ean: "2200000308191", pid: "2115449690", name: "Fresa 450 g", subcategoria: "Frutas", h_units: 221.8, h_orders: 187.1, avg_price: 76.53, ex_incr_units: 1331, ex_incr_orders: 1123, ex_budget_mxn: 61113, ex_budget_usd: 3544.84, real_units: 966, final_budget_mxn: 44357, final_budget_usd: 2572.91, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "9629", ean: "2200000310231", pid: "2113054052", name: "Mora Azul", subcategoria: "Frutas", h_units: 97.3, h_orders: 87.2, avg_price: 75.42, ex_incr_units: 584, ex_incr_orders: 523, ex_budget_mxn: 26427, ex_budget_usd: 1532.89, real_units: 430, final_budget_mxn: 19458, final_budget_usd: 1128.64, sku_order: 2 },
