@@ -1373,6 +1373,30 @@ const PREVIRAL_DEALS = [
     categoria_display: "Pochoclos, Snacks salados"
   },
   {
+    deal_id: "VIRAL_DEAL_BARCEL_200626",
+    maker_name: "Bimbo-Barcel",
+    maker_aux: "Barcel",
+    business_unit: "Foods",
+    descuento_pct: 50,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-13",
+    fecha_ejecucion: "2026-06-20",
+    fecha_fin: null,
+    usd_mxn: 17.18,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 50000,
+    budget_growth_mxn: 15000,
+    budget_total_mxn: 65000,
+    budget_maker_usd: 2910.36,
+    budget_growth_usd: 873.11,
+    budget_total_usd: 3783.47,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Pochoclos, Snacks salados"
+  },
+  {
     deal_id: "VIRAL_DEAL_SNICKERS_150626",
     maker_name: "Snickers",
     maker_aux: "Snickers",
@@ -2693,6 +2717,11 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "9892", ean: "757528019761", pid: "2115616100", name: "Chips Papas Fritas Jalapeño 100 G", subcategoria: "Snacks salados", h_units: 63.8, h_orders: 60.6, avg_price: 39.20, ex_incr_units: 383, ex_incr_orders: 364, ex_budget_mxn: 7507, ex_budget_usd: 436.96, real_units: 1010, final_budget_mxn: 19796, final_budget_usd: 1152.27, sku_order: 2 },
   { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "10606", ean: "7501030459927", pid: "2115038941", name: "Golden Nuts Enchilados 100 g", subcategoria: "Snacks salados", h_units: 29.7, h_orders: 26.5, avg_price: 25.31, ex_incr_units: 178, ex_incr_orders: 159, ex_budget_mxn: 2253, ex_budget_usd: 131.14, real_units: 727, final_budget_mxn: 9200, final_budget_usd: 535.51, sku_order: 3 },
   { deal_id: "VIRAL_DEAL_BARCEL_140626", sync: "74146", ean: "7500810011980", pid: "2115779730", name: "Pop Karameladas 240g", subcategoria: "Pochoclos", h_units: 16.1, h_orders: 15.1, avg_price: 64.37, ex_incr_units: 97, ex_incr_orders: 91, ex_budget_mxn: 3122, ex_budget_usd: 181.72, real_units: 156, final_budget_mxn: 5021, final_budget_usd: 292.26, sku_order: 4 },
+  // Barcel Jun 20
+  { deal_id: "VIRAL_DEAL_BARCEL_200626", sync: "10585", ean: "757528001865", pid: "2115406695", name: "Chips Papas Fritas Fuego 55 g", subcategoria: "Snacks salados", h_units: 99.9, h_orders: 89.6, avg_price: 24.50, ex_incr_units: 599, ex_incr_orders: 538, ex_budget_mxn: 7338, ex_budget_usd: 427.13, real_units: 2529, final_budget_mxn: 30980, final_budget_usd: 1803.26, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_BARCEL_200626", sync: "9892", ean: "757528019761", pid: "2115616100", name: "Chips Papas Fritas Jalapeño 100 G", subcategoria: "Snacks salados", h_units: 63.8, h_orders: 60.6, avg_price: 39.20, ex_incr_units: 383, ex_incr_orders: 364, ex_budget_mxn: 7507, ex_budget_usd: 436.96, real_units: 1010, final_budget_mxn: 19796, final_budget_usd: 1152.27, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_BARCEL_200626", sync: "10606", ean: "7501030459927", pid: "2115038941", name: "Golden Nuts Enchilados 100 g", subcategoria: "Snacks salados", h_units: 29.7, h_orders: 26.5, avg_price: 25.31, ex_incr_units: 178, ex_incr_orders: 159, ex_budget_mxn: 2253, ex_budget_usd: 131.14, real_units: 727, final_budget_mxn: 9200, final_budget_usd: 535.51, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_BARCEL_200626", sync: "74146", ean: "7500810011980", pid: "2115779730", name: "Pop Karameladas 240g", subcategoria: "Pochoclos", h_units: 16.1, h_orders: 15.1, avg_price: 64.37, ex_incr_units: 97, ex_incr_orders: 91, ex_budget_mxn: 3122, ex_budget_usd: 181.72, real_units: 156, final_budget_mxn: 5021, final_budget_usd: 292.26, sku_order: 4 },
   // Pepsico 110626
   { deal_id: "VIRAL_DEAL_PEPSICO_110626", sync: "6591", ean: "7501000658923", pid: "2109994899", name: "María Gamesa Galleta Fortificadas 170 g", subcategoria: "Galletas", h_units: 20.9, h_orders: 13.9, avg_price: 17.24, ex_incr_units: 251, ex_incr_orders: 167, ex_budget_mxn: 2597, ex_budget_usd: 150.64, real_units: 8549, final_budget_mxn: 88431, final_budget_usd: 5129.70, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_PEPSICO_110626", sync: "79884", ean: "7500478037216", pid: "2115006748", name: "Galletas Gamesa Marías Doradas 456 Gr", subcategoria: "Galletas", h_units: 5.0, h_orders: 5.0, avg_price: 68.74, ex_incr_units: 60, ex_incr_orders: 60, ex_budget_mxn: 2475, ex_budget_usd: 143.56, real_units: 513, final_budget_mxn: 21158, final_budget_usd: 1227.26, sku_order: 2 },
