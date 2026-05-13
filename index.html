@@ -1500,7 +1500,12 @@
       const mtdSuffix = isCurrentMonth ? ` MTD (día 1-${dayLimit})` : '';
 
       const postDealsAll = POSTMORTEM_DEALS.map(p => { const d = getDeal(p.deal_id); return d ? { ...p, ...d } : null; }).filter(Boolean);
-      const calDeals = postDealsAll.filter(d => d.fecha_ejecucion.startsWith(calMonthStr) && parseInt(d.fecha_ejecucion.slice(8)) <= dayLimit);
+      const postDealsFiltered = postDealsAll.filter(d => {
+        if (filterCanal && d.financiamiento_maker !== filterCanal) return false;
+        if (filterBU && d.business_unit !== filterBU) return false;
+        return true;
+      });
+      const calDeals = postDealsFiltered.filter(d => d.fecha_ejecucion.startsWith(calMonthStr) && parseInt(d.fecha_ejecucion.slice(8)) <= dayLimit);
 
       // Total deals planned for this month (including those without postmortem)
       const totalPlanned = filteredDeals.filter(d => {
