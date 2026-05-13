@@ -1747,12 +1747,15 @@
 
       // Populate viral dropdown once
       if (!catalogoInitialized) {
-        PREVIRAL_DEALS.filter(d => d.tipo_viral !== 'forecast').forEach(deal => {
-          const opt = document.createElement('option');
-          opt.value = deal.deal_id;
-          opt.textContent = `${deal.maker_aux} (${deal.fecha_ejecucion})`;
-          viralFilter.appendChild(opt);
-        });
+        PREVIRAL_DEALS.filter(d => d.tipo_viral !== 'forecast')
+          .map(deal => ({ id: deal.deal_id, label: `${deal.maker_aux} (${deal.fecha_ejecucion})` }))
+          .sort((a, b) => a.label.localeCompare(b.label))
+          .forEach(d => {
+            const opt = document.createElement('option');
+            opt.value = d.id;
+            opt.textContent = d.label;
+            viralFilter.appendChild(opt);
+          });
 
         viralFilter.addEventListener('change', renderCatalogoTable);
         timeFilter.addEventListener('change', renderCatalogoTable);
