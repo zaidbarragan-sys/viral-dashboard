@@ -2069,6 +2069,30 @@ const PREVIRAL_DEALS = [
     categoria_display: "Insecticidas"
   },
   {
+    deal_id: "VIRAL_DEAL_P&G_260426",
+    maker_name: "P&G",
+    maker_aux: "P&G",
+    business_unit: "Pharma",
+    descuento_pct: 60,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-07",
+    fecha_ejecucion: "2026-04-26",
+    fecha_fin: null,
+    usd_mxn: 17.24,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 60000,
+    budget_growth_mxn: 18000,
+    budget_total_mxn: 78000,
+    budget_maker_usd: 3480.28,
+    budget_growth_usd: 1044.08,
+    budget_total_usd: 4524.36,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Bolsas para lavar ropa, Detergentes"
+  },
+  {
     deal_id: "VIRAL_DEAL_MEZCALES_250426",
     maker_name: "Mezcales",
     maker_aux: "Mezcales",
@@ -2642,6 +2666,10 @@ const PREVIRAL_SKU_DETAIL = [
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 },
+  // P&G
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "9248", ean: "7506309859774", pid: "2110307429", name: "SALVO POWER CLEAN 750M - Salvo - 750 mL", subcategoria: "Detergentes", h_units: 44.4, h_orders: 34.1, avg_price: 35.00, ex_incr_units: 266, ex_incr_orders: 205, ex_budget_mxn: 5586, ex_budget_usd: 324.01, real_units: 3504, final_budget_mxn: 73584, final_budget_usd: 4268.21, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "85712", ean: "7500435148566", pid: "2115563877", name: "Ariel Detergente en Polvo Poder y Cuidado 3.7 Kg", subcategoria: "Detergentes", h_units: 1.4, h_orders: 1.4, avg_price: 189.48, ex_incr_units: 8, ex_incr_orders: 8, ex_budget_mxn: 910, ex_budget_usd: 52.78, real_units: 19, final_budget_mxn: 2160, final_budget_usd: 125.29, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74299", ean: "37000930358", pid: "2114166575", name: "Tide Detergente en Cápsulas Pods 16 Und", subcategoria: "Bolsas para lavar ropa", h_units: 1.4, h_orders: 1.4, avg_price: 145.69, ex_incr_units: 8, ex_incr_orders: 8, ex_budget_mxn: 699, ex_budget_usd: 40.55, real_units: 25, final_budget_mxn: 2185, final_budget_usd: 126.74, sku_order: 3 },
   // Mezcales
   { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "8510", ean: "7500326289606", pid: "2109994476", name: "Mezcal Destreza Joven Espadin 750 mL", subcategoria: "Mezcales", h_units: 0.6, h_orders: 0.6, avg_price: 601.45, ex_incr_units: 3, ex_incr_orders: 3, ex_budget_mxn: 1083, ex_budget_usd: 62.82, real_units: 99, final_budget_mxn: 35726, final_budget_usd: 2072.27, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "83560", ean: "7500326289644", pid: "2115498352", name: "Crema de Mezcal Dulce Destreza Piñon 750 mL", subcategoria: "Mezcales", h_units: 0.4, h_orders: 0.4, avg_price: 415.41, ex_incr_units: 2, ex_incr_orders: 2, ex_budget_mxn: 498, ex_budget_usd: 28.89, real_units: 96, final_budget_mxn: 23928, final_budget_usd: 1388.22, sku_order: 2 },
