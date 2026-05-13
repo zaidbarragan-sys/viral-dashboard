@@ -3581,6 +3581,34 @@ const POSTMORTEM_DEALS = [
     canib_und_post: 1042, canib_und_bench: 1798.5, canib_und_delta_pct: -42.1,
     canib_cli_post: 559, canib_cli_bench: 803.5, canib_cli_delta_pct: -30.4
   }
+  ,{
+    deal_id: "VIRAL_DEAL_PLAYBOY_170426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 21150,
+    gmv_lw: 2656, gmv_dlw_pct: 696.2,
+    gmv_l4w: 1386, gmv_dl4w_pct: 1425.8,
+    usuarios_unicos: 50,
+    usr_lw: 9, usr_dlw_pct: 455.6,
+    usr_l4w: 7.09, usr_dl4w_pct: 605.2,
+    cr_pct: 0.92,
+    aov: 285.81, aov_lw: 332.0, aov_dlw_pct: -13.9, aov_l4w: 241.07, aov_dl4w_pct: 18.6,
+    unidades_total: 113, und_lw: 10, und_dlw_pct: 1030.0, und_l4w: 7.75, und_dl4w_pct: 1358.1,
+    ordenes_total: 74, ord_lw: 8, ord_dlw_pct: 825.0, ord_l4w: 5.75, ord_dl4w_pct: 1187.0,
+    impresiones_total: 5407,
+    so_turbo_mx: 4504862, gmv_categoria: 45003,
+    gmv_cat_lw: 18304, gmv_cat_l4w: 26870,
+    share_deal_cat_pct: 49.47, share_lw_pct: 19.25, share_l4w_pct: 11.16,
+    gmv_basket: 28966, gmv_sellup: 7816, pct_sellup: 26.98,
+    aov_basket: 391.43, aov_deal_post: 285.81,
+    cross_ordenes: 74, cross_skus_distintos: 90,
+    cross_top_producto: "Coca-Cola Original Refresco Pet 600 mL", cross_top_ordenes: 3, cross_top_pct: 4.05,
+    inv_oos_cierre_viral_avg: 25.3, inv_oos_post_avg: 26.3,
+    inv_cov_viral_ap_avg: 62.6, inv_cov_viral_ci_avg: 60.3,
+    inv_cov_post_avg: 59.6, inv_cov_bench_avg: 44.1,
+    canib_ord_post: 29, canib_ord_bench: 16.5, canib_ord_delta_pct: 75.8,
+    canib_und_post: 34, canib_und_bench: 21.25, canib_und_delta_pct: 60.0,
+    canib_cli_post: 31, canib_cli_bench: 19.25, canib_cli_delta_pct: 61.0
+  }
 ];
 
 const POSTMORTEM_SKU_PERFORMANCE = [
@@ -3831,6 +3859,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
 
 
 
+  // PlayBoy 170426
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "80161", name: "Playboy Preservativos Texturizados", ordenes: 38, usuarios: 27, unidades: 45, gmv: 10230, aov: 269.22, impresiones: 1944, cr_pct: 1.39, gmv_dlw_pct: 751.5, gmv_dl4w_pct: 1378.9, seg_nuevo: 28, seg_nuevo_pct: 74, seg_reactivado: 1, seg_reactivado_pct: 3, seg_retenido: 9, seg_retenido_pct: 24, stock_viral: 264, stock_post: 229, stock_bench: 134, stock_delta_pct: 70.9, oos_cierre_viral: 22, oos_post: 23, cov_viral_ap: 66.7, cov_viral_ci: 63.3, cov_post: 62.1, canib_ord_post: 6, canib_ord_bench: 2.5, canib_ord_delta_pct: 140.0, canib_und_post: 7, canib_und_bench: 4.0, canib_und_delta_pct: 75.0, canib_cli_post: 7, canib_cli_bench: 4.0, canib_cli_delta_pct: 75.0 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "73482", name: "Sensy - Bala Vibradora - 1 ud.", ordenes: 20, usuarios: 13, unidades: 27, gmv: 8746, aov: 437.28, impresiones: 1630, cr_pct: 0.80, gmv_dlw_pct: 531.0, gmv_dl4w_pct: 772.4, seg_nuevo: 16, seg_nuevo_pct: 80, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 4, seg_retenido_pct: 20, stock_viral: 374, stock_post: 357, stock_bench: 219, stock_delta_pct: 63.0, oos_cierre_viral: 20, oos_post: 20, cov_viral_ap: 69.0, cov_viral_ci: 65.5, cov_post: 66.1, canib_ord_post: 6, canib_ord_bench: 7.0, canib_ord_delta_pct: -14.3, canib_und_post: 6, canib_und_bench: 8.75, canib_und_delta_pct: -31.4, canib_cli_post: 6, canib_cli_bench: 8.0, canib_cli_delta_pct: -25.0 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "73481", name: "Sensy Lub - Gel Lubricante Durazno - 60 ml", ordenes: 30, usuarios: 20, unidades: 41, gmv: 2174, aov: 72.46, impresiones: 1833, cr_pct: 1.09, gmv_dlw_pct: 3056.0, gmv_dl4w_pct: 1781.6, seg_nuevo: 20, seg_nuevo_pct: 67, seg_reactivado: 2, seg_reactivado_pct: 7, seg_retenido: 8, seg_retenido_pct: 27, stock_viral: 265, stock_post: 224, stock_bench: 161, stock_delta_pct: 39.1, oos_cierre_viral: 34, oos_post: 36, cov_viral_ap: 52.1, cov_viral_ci: 52.1, cov_post: 50.7, canib_ord_post: 17, canib_ord_bench: 7.0, canib_ord_delta_pct: 142.9, canib_und_post: 21, canib_und_bench: 8.5, canib_und_delta_pct: 147.1, canib_cli_post: 18, canib_cli_bench: 7.25, canib_cli_delta_pct: 148.3 },
   // Holanda 160426
   { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "6579", name: "Magnum Paleta Helada Almendras 90 mL", ordenes: 430, usuarios: 377, unidades: 1175, gmv: 56153, aov: 130.59, impresiones: null, cr_pct: null, gmv_dlw_pct: 1406.3, gmv_dl4w_pct: 834.9, seg_nuevo: 287, seg_nuevo_pct: 67, seg_reactivado: 103, seg_reactivado_pct: 24, seg_retenido: 40, seg_retenido_pct: 9, stock_viral: 1483, stock_post: 526, stock_bench: 1087, stock_delta_pct: -51.6, oos_cierre_viral: 58, oos_post: 54, cov_viral_ap: 48.7, cov_viral_ci: 23.7, cov_post: 27.6, canib_ord_post: 152, canib_ord_bench: 312.0, canib_ord_delta_pct: -51.3, canib_und_post: 290, canib_und_bench: 693.0, canib_und_delta_pct: -58.2, canib_cli_post: 164, canib_cli_bench: 322.5, canib_cli_delta_pct: -49.1 },
   { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "71550", name: "Mordisko Helado Original Vainilla", ordenes: 467, usuarios: 397, unidades: 1383, gmv: 36346, aov: 77.83, impresiones: null, cr_pct: null, gmv_dlw_pct: 645.5, gmv_dl4w_pct: 628.8, seg_nuevo: 319, seg_nuevo_pct: 68, seg_reactivado: 79, seg_reactivado_pct: 17, seg_retenido: 69, seg_retenido_pct: 15, stock_viral: 1998, stock_post: 894, stock_bench: 1296, stock_delta_pct: -31.0, oos_cierre_viral: 46, oos_post: 46, cov_viral_ap: 46.7, cov_viral_ci: 38.7, cov_post: 39.8, canib_ord_post: 260, canib_ord_bench: 362.5, canib_ord_delta_pct: -28.3, canib_und_post: 514, canib_und_bench: 882.0, canib_und_delta_pct: -41.7, canib_cli_post: 275, canib_cli_bench: 371.0, canib_cli_delta_pct: -25.9 },
@@ -4209,6 +4241,15 @@ const POSTMORTEM_SELLUP_CATS = [
 
 
 
+  // PlayBoy 170426
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Otros licores", ordenes: 1, gmv: 716, pct_sellup: 9.16, order: 1 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Mezcales", ordenes: 1, gmv: 693, pct_sellup: 8.87, order: 2 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Cervezas", ordenes: 7, gmv: 652, pct_sellup: 8.34, order: 3 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Lubricantes", ordenes: 4, gmv: 626, pct_sellup: 8.01, order: 4 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Espumantes", ordenes: 1, gmv: 502, pct_sellup: 6.42, order: 5 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Preservativos", ordenes: 4, gmv: 500, pct_sellup: 6.39, order: 6 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Gaseosas", ordenes: 10, gmv: 481, pct_sellup: 6.16, order: 7 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Desodorantes", ordenes: 4, gmv: 357, pct_sellup: 4.56, order: 8 },
   // Holanda 160426
   { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Snacks salados", ordenes: 140, gmv: 8181, pct_sellup: 15.11, order: 1 },
   { deal_id: "VIRAL_DEAL_HOLANDA_160426", subcategoria: "Gaseosas", ordenes: 111, gmv: 5352, pct_sellup: 9.88, order: 2 },
@@ -4751,6 +4792,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 },
+  // PlayBoy 170426
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "6744", name: "Coca-Cola Original Refresco Pet 600 mL", subcategoria: "Gaseosas", ordenes: 3, pct_deal: 4.05, order: 1 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 2, pct_deal: 2.70, order: 2 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "7441", name: "Coca-Cola Original Refresco 1 L", subcategoria: "Gaseosas", ordenes: 2, pct_deal: 2.70, order: 3 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "8462", name: "Coca-Cola Refresco Original 3 L", subcategoria: "Gaseosas", ordenes: 2, pct_deal: 2.70, order: 4 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "10213", name: "Tampones Saba Super 10 Pz", subcategoria: "Tampones", ordenes: 2, pct_deal: 2.70, order: 5 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "8638", name: "Pack Cerveza Bohemia Oscura Vienna Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 1, pct_deal: 1.35, order: 6 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "75580", name: "Bebida Preparada Topo Chico Cantarito 355 mL", subcategoria: "Seltzers", ordenes: 1, pct_deal: 1.35, order: 7 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "13917", name: "Prudence Preservativo Aroma Surtido 5 ud.", subcategoria: "Preservativos", ordenes: 1, pct_deal: 1.35, order: 8 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "87045", name: "GOMA MINI TAJIN 200 gr", subcategoria: "Otros", ordenes: 1, pct_deal: 1.35, order: 9 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "8770", name: "Pack Cerveza Amstel Ultra Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 1, pct_deal: 1.35, order: 10 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "81265", name: "Chips Sal 55g", subcategoria: "Snacks salados", ordenes: 1, pct_deal: 1.35, order: 11 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "77067", name: "Mezcal Los Amantes Quebrantahuesos 750 mL", subcategoria: "Mezcales", ordenes: 1, pct_deal: 1.35, order: 12 },
   // Holanda 160426
   { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "6744", name: "Coca-Cola Original Refresco Pet 600 mL", subcategoria: "Gaseosas", ordenes: 15, pct_deal: 1.93, order: 1 },
   { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "8190", name: "Holanda Paleta Helada Chemisse Coco Piña 65 mL", subcategoria: "Helados", ordenes: 12, pct_deal: 1.54, order: 2 },
