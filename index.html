@@ -937,17 +937,6 @@
     <!-- TENDENCIAS -->
     <div id="tendencias" class="section">
       <h2 class="section-title">Tendencias</h2>
-      <div class="comparador-selectors" style="margin-bottom:16px;">
-        <select id="tend-periodo" class="cal-filter-select">
-          <option value="mtd">Comparar: MTD</option>
-          <option value="2026-05">May 2026</option>
-          <option value="2026-04">Abr 2026</option>
-          <option value="2026-03">Mar 2026</option>
-          <option value="2026-02">Feb 2026</option>
-          <option value="2026-01">Ene 2026</option>
-        </select>
-      </div>
-      <div id="tendencias-pop-cards"></div>
       <div class="chart-grid">
         <div class="chart-card"><h3>GMV Mensual por BU</h3><canvas id="chart-gmv-monthly"></canvas></div>
         <div class="chart-card"><h3>Contribución GMV por BU</h3><canvas id="chart-bu-contrib"></canvas></div>
@@ -1497,11 +1486,39 @@
 
       const totalBudgetMaker = monthDeals.reduce((s, d) => s + d.budget_maker_mxn, 0);
 
-      document.getElementById('indice-kpis').innerHTML = `
-        <div class="kpi-card"><div class="label">Virales en el mes</div><div class="value">${monthDeals.length}</div></div>
-        <div class="kpi-card"><div class="label">GMV del mes</div><div class="value">${monthGMV > 0 ? fmtMXN(monthGMV) : '—'}</div></div>
-        <div class="kpi-card"><div class="label">Inversion Maker</div><div class="value">${monthDeals.length > 0 ? fmtMXN(totalBudgetMaker) : '—'}</div></div>
-      `;
+      // MTD KPI Cards for Home
+      const now = new Date();
+      const curMonth = now.toISOString().slice(0, 7);
+      const dayOfMonth = now.getDate();
+      const prevDate2 = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+      const prevMonth2 = prevDate2.toISOString().slice(0, 7);
+      const monthNames2 = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+      const curLabel2 = monthNames2[now.getMonth()] + ' ' + String(now.getFullYear()).slice(2);
+      const prevLabel2 = monthNames2[prevDate2.getMonth()] + ' ' + String(prevDate2.getFullYear()).slice(2);
+
+      const postDealsAll = POSTMORTEM_DEALS.map(p => { const d = getDeal(p.deal_id); return d ? { ...p, ...d } : null; }).filter(Boolean);
+      const curMtd = postDealsAll.filter(d => d.fecha_ejecucion.startsWith(curMonth) && parseInt(d.fecha_ejecucion.slice(8)) <= dayOfMonth);
+      const prevMtd = postDealsAll.filter(d => d.fecha_ejecucion.startsWith(prevMonth2) && parseInt(d.fecha_ejecucion.slice(8)) <= dayOfMonth);
+
+      const mtdMetrics = [
+        { label: 'GMV Total', cur: curMtd.reduce((s, d) => s + d.gmv_activacion, 0), prev: prevMtd.reduce((s, d) => s + d.gmv_activacion, 0), fmt: v => v >= 1000000 ? '$' + (v/1000000).toFixed(2) + 'M' : '$' + (v/1000).toFixed(0) + 'k' },
+        { label: 'Deals Ejecutados', cur: curMtd.length, prev: prevMtd.length, fmt: v => v },
+        { label: 'Órdenes Totales', cur: curMtd.reduce((s, d) => s + d.ordenes_total, 0), prev: prevMtd.reduce((s, d) => s + d.ordenes_total, 0), fmt: v => v.toLocaleString() },
+        { label: 'Usuarios Únicos', cur: curMtd.reduce((s, d) => s + d.usuarios_unicos, 0), prev: prevMtd.reduce((s, d) => s + d.usuarios_unicos, 0), fmt: v => v.toLocaleString() },
+      ];
+
+      let kpiHtml = '';
+      mtdMetrics.forEach(m => {
+        const delta = m.prev > 0 ? ((m.cur - m.prev) / m.prev * 100) : null;
+        const color = delta === null ? '#636366' : delta >= 0 ? '#00B140' : '#E53935';
+        kpiHtml += `<div class="kpi-card">
+          <div class="label">${m.label}</div>
+          <div class="value">${m.fmt(m.cur)}</div>
+          <div class="delta" style="color:${color}">${delta !== null ? (delta >= 0 ? '+' : '') + delta.toFixed(0) + '% vs ' + prevLabel2 : '—'}</div>
+        </div>`;
+      });
+
+      document.getElementById('indice-kpis').innerHTML = `<div class="sub-title" style="margin-bottom:4px">${curLabel2} MTD (día 1-${dayOfMonth})</div>` + kpiHtml;
 
       // Build events map: only fecha_ejecucion, classified by time
       const events = {};
@@ -1754,77 +1771,22 @@
     // ============================================================
     // TENDENCIAS
     // ============================================================
-    let tendenciasInitialized = false;
+    let tendenciasRendered = false;
     const chartInstances = {};
 
     function renderTendencias() {
-      if (!tendenciasInitialized) {
-        document.getElementById('tend-periodo').addEventListener('change', renderTendenciasCharts);
-        tendenciasInitialized = true;
-      }
-      renderTendenciasCharts();
-    }
-
-    function renderTendenciasCharts() {
-      Object.values(chartInstances).forEach(c => c.destroy && c.destroy());
+      if (tendenciasRendered) return;
+      tendenciasRendered = true;
 
       const buColors = { Foods: '#00B140', Drinks: '#42A5F5', Pharma: '#AB47BC', WOW: '#FFA726' };
       const buList = ['Foods', 'Drinks', 'Pharma', 'WOW'];
+      const monthNames = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
 
-      // Get all deals with postmortem
       const allDeals = POSTMORTEM_DEALS.map(p => {
         const d = getDeal(p.deal_id);
         return d ? { ...p, ...d } : null;
       }).filter(Boolean).sort((a, b) => a.fecha_ejecucion.localeCompare(b.fecha_ejecucion));
 
-      // Determine current and previous month based on filter
-      const periodoVal = document.getElementById('tend-periodo').value;
-      const now = new Date();
-      let curMonth, prevMonth, dayLimit;
-
-      if (periodoVal === 'mtd') {
-        curMonth = now.toISOString().slice(0, 7);
-        const prevDate = new Date(now.getFullYear(), now.getMonth() - 1, 1);
-        prevMonth = prevDate.toISOString().slice(0, 7);
-        dayLimit = now.getDate();
-      } else {
-        curMonth = periodoVal;
-        const [y, m] = curMonth.split('-').map(Number);
-        const prevDate = new Date(y, m - 2, 1);
-        prevMonth = prevDate.toISOString().slice(0, 7);
-        dayLimit = 31; // full month
-      }
-
-      const curDeals = allDeals.filter(d => d.fecha_ejecucion.startsWith(curMonth) && parseInt(d.fecha_ejecucion.slice(8)) <= dayLimit);
-      const prevDeals = allDeals.filter(d => d.fecha_ejecucion.startsWith(prevMonth) && parseInt(d.fecha_ejecucion.slice(8)) <= dayLimit);
-
-      const monthNames = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
-      const curLabel = monthNames[parseInt(curMonth.slice(5)) - 1] + ' ' + curMonth.slice(2, 4);
-      const prevLabel = monthNames[parseInt(prevMonth.slice(5)) - 1] + ' ' + prevMonth.slice(2, 4);
-      const mtdNote = periodoVal === 'mtd' ? ` (MTD — día 1 al ${dayLimit})` : '';
-
-      // KPI Cards: mes seleccionado vs anterior
-      const popMetrics = [
-        { label: 'GMV Total', cur: curDeals.reduce((s, d) => s + d.gmv_activacion, 0), prev: prevDeals.reduce((s, d) => s + d.gmv_activacion, 0), fmt: v => v >= 1000000 ? '$' + (v/1000000).toFixed(2) + 'M' : '$' + (v/1000).toFixed(0) + 'k' },
-        { label: 'Deals Ejecutados', cur: curDeals.length, prev: prevDeals.length, fmt: v => v },
-        { label: 'Órdenes Totales', cur: curDeals.reduce((s, d) => s + d.ordenes_total, 0), prev: prevDeals.reduce((s, d) => s + d.ordenes_total, 0), fmt: v => v.toLocaleString() },
-        { label: 'Usuarios Únicos', cur: curDeals.reduce((s, d) => s + d.usuarios_unicos, 0), prev: prevDeals.reduce((s, d) => s + d.usuarios_unicos, 0), fmt: v => v.toLocaleString() },
-      ];
-
-      let popHtml = `<div class="sub-title" style="margin-bottom:8px">${curLabel} vs ${prevLabel}${mtdNote}</div><div class="kpi-grid">`;
-      popMetrics.forEach(m => {
-        const delta = m.prev > 0 ? ((m.cur - m.prev) / m.prev * 100) : null;
-        const color = delta === null ? '#636366' : delta >= 0 ? '#00B140' : '#E53935';
-        popHtml += `<div class="kpi-card">
-          <div class="label">${m.label}</div>
-          <div class="value">${m.fmt(m.cur)}</div>
-          <div class="delta" style="color:${color}">${delta !== null ? (delta >= 0 ? '+' : '') + delta.toFixed(0) + '% vs ' + prevLabel : '—'}</div>
-        </div>`;
-      });
-      popHtml += '</div>';
-      document.getElementById('tendencias-pop-cards').innerHTML = popHtml;
-
-      // Charts use ALL deals (not filtered by period) to show full timeline
       const months = [...new Set(allDeals.map(d => d.fecha_ejecucion.slice(0, 7)))].sort();
       const monthLabels = months.map(m => monthNames[parseInt(m.slice(5)) - 1] + ' ' + m.slice(2, 4));
 
