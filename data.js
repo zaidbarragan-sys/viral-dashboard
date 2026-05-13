@@ -3869,6 +3869,34 @@ const POSTMORTEM_DEALS = [
     canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
     canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
+  ,{
+    deal_id: "VIRAL_DEAL_P&G_260426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 36551,
+    gmv_lw: 1990, gmv_dlw_pct: 1736.3,
+    gmv_l4w: 1471, gmv_dl4w_pct: 2384.7,
+    usuarios_unicos: 220,
+    usr_lw: 30, usr_dlw_pct: 633.3,
+    usr_l4w: 27.5, usr_dl4w_pct: 700.0,
+    cr_pct: 49.66,
+    aov: 107.5, aov_lw: 51.03, aov_dlw_pct: 110.7, aov_l4w: 49.03, aov_dl4w_pct: 119.3,
+    unidades_total: 788, und_lw: 47, und_dlw_pct: 1576.6, und_l4w: 39.75, und_dl4w_pct: 1882.4,
+    ordenes_total: 340, ord_lw: 39, ord_dlw_pct: 771.8, ord_l4w: 30.0, ord_dl4w_pct: 1033.3,
+    impresiones_total: 443,
+    so_turbo_mx: 3477739, gmv_categoria: 36551,
+    gmv_cat_lw: 1990, gmv_cat_l4w: 1471,
+    share_deal_cat_pct: 100.0, share_lw_pct: 100.0, share_l4w_pct: 100.0,
+    gmv_basket: 88399, gmv_sellup: 51848, pct_sellup: 58.65,
+    aov_basket: 260.0, aov_deal_post: 107.5,
+    cross_ordenes: 340, cross_skus_distintos: 577,
+    cross_top_producto: "Pan Blanco Bimbo 620g", cross_top_ordenes: 15, cross_top_pct: 4.41,
+    inv_oos_cierre_viral_avg: 37.0, inv_oos_post_avg: 35.0,
+    inv_cov_viral_ap_avg: 64.1, inv_cov_viral_ci_avg: 26.9,
+    inv_cov_post_avg: 31.5, inv_cov_bench_avg: 49.4,
+    canib_ord_post: 65, canib_ord_bench: 139.25, canib_ord_delta_pct: -53.3,
+    canib_und_post: 123, canib_und_bench: 217.25, canib_und_delta_pct: -43.4,
+    canib_cli_post: 69, canib_cli_bench: 123.25, canib_cli_delta_pct: -44.0
+  }
 ];
 
 const POSTMORTEM_SKU_PERFORMANCE = [
@@ -4119,6 +4147,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
 
 
 
+  // P&G 260426
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "9248", name: "Ariel Detergente en Polvo Poder y Cuidado 750 g", ordenes: 282, usuarios: 183, unidades: 656, gmv: 18244, aov: 64.70, impresiones: 210, cr_pct: 87.14, gmv_dlw_pct: 1065.8, gmv_dl4w_pct: 1271.8, seg_nuevo: 130, seg_nuevo_pct: 46, seg_reactivado: 56, seg_reactivado_pct: 20, seg_retenido: 96, seg_retenido_pct: 34, stock_viral: 1706, stock_post: 1143, stock_bench: 1084, stock_delta_pct: 5.4, oos_cierre_viral: 65, oos_post: 57, cov_viral_ap: 52.4, cov_viral_ci: 20.7, cov_post: 25.0, canib_ord_post: 55, canib_ord_bench: 130.75, canib_ord_delta_pct: -57.9, canib_und_post: 108, canib_und_bench: 206.0, canib_und_delta_pct: -47.6, canib_cli_post: 55, canib_cli_bench: 115.25, canib_cli_delta_pct: -52.3 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "85712", name: "Ariel Detergente en Polvo Poder y Cuidado 3.7 Kg", ordenes: 49, usuarios: 33, unidades: 68, gmv: 10438, aov: 213.02, impresiones: 139, cr_pct: 23.74, gmv_dlw_pct: 3101.4, gmv_dl4w_pct: 3101.4, seg_nuevo: 35, seg_nuevo_pct: 71, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 14, seg_retenido_pct: 29, stock_viral: 120, stock_post: 51, stock_bench: 83, stock_delta_pct: -38.6, oos_cierre_viral: 28, oos_post: 29, cov_viral_ap: 75.7, cov_viral_ci: 24.3, cov_post: 29.4, canib_ord_post: 5, canib_ord_bench: 4.5, canib_ord_delta_pct: 11.1, canib_und_post: 7, canib_und_bench: 4.75, canib_und_delta_pct: 47.4, canib_cli_post: 6, canib_cli_bench: 3.25, canib_cli_delta_pct: 84.6 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74299", name: "Tide Detergente en Cápsulas Pods 16 Und", ordenes: 46, usuarios: 40, unidades: 64, gmv: 7869, aov: 171.06, impresiones: 94, cr_pct: 42.55, gmv_dlw_pct: 7807.7, gmv_dl4w_pct: 6506.4, seg_nuevo: 41, seg_nuevo_pct: 89, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 5, seg_retenido_pct: 11, stock_viral: 261, stock_post: 195, stock_bench: 141, stock_delta_pct: 38.3, oos_cierre_viral: 18, oos_post: 19, cov_viral_ap: 64.3, cov_viral_ci: 35.7, cov_post: 40.0, canib_ord_post: 5, canib_ord_bench: 4.0, canib_ord_delta_pct: 25.0, canib_und_post: 8, canib_und_bench: 6.5, canib_und_delta_pct: 23.1, canib_cli_post: 8, canib_cli_bench: 4.75, canib_cli_delta_pct: 68.4 },
   // Mezcales 250426
   { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "8510", name: "Mezcal Destreza Joven Espadin 750 mL", ordenes: 48, usuarios: 37, unidades: 72, gmv: 37021, aov: 771.27, impresiones: 632, cr_pct: 5.85, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 48, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 113, stock_post: 58, stock_bench: 59, stock_delta_pct: -1.7, oos_cierre_viral: 25, oos_post: 23, cov_viral_ap: 69.2, cov_viral_ci: 35.9, cov_post: 38.5, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "83560", name: "Crema de Mezcal Dulce Destreza Piñon 750 mL", ordenes: 38, usuarios: 21, unidades: 55, gmv: 18896, aov: 497.26, impresiones: 882, cr_pct: 2.38, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 22, seg_nuevo_pct: 58, seg_reactivado: 16, seg_reactivado_pct: 42, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 121, stock_post: 83, stock_bench: 34, stock_delta_pct: 144.1, oos_cierre_viral: 27, oos_post: 25, cov_viral_ap: 59.5, cov_viral_ci: 35.7, cov_post: 39.2, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
@@ -4519,6 +4551,15 @@ const POSTMORTEM_SELLUP_CATS = [
 
 
 
+  // P&G 260426
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Cervezas", ordenes: 13, gmv: 2993, pct_sellup: 5.77, order: 1 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Papel higiénico", ordenes: 27, gmv: 2300, pct_sellup: 4.44, order: 2 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Suavizantes", ordenes: 35, gmv: 2055, pct_sellup: 3.96, order: 3 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Gaseosas", ordenes: 39, gmv: 1952, pct_sellup: 3.76, order: 4 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Panaderia salada", ordenes: 25, gmv: 1920, pct_sellup: 3.70, order: 5 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Detergentes", ordenes: 23, gmv: 1913, pct_sellup: 3.69, order: 6 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Yogurt", ordenes: 23, gmv: 1825, pct_sellup: 3.52, order: 7 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Limpiadores multiusos", ordenes: 26, gmv: 1786, pct_sellup: 3.44, order: 8 },
   // Mezcales 250426
   { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Otros licores", ordenes: 2, gmv: 1862, pct_sellup: 14.08, order: 1 },
   { deal_id: "VIRAL_DEAL_MEZCALES_250426", subcategoria: "Tequilas", ordenes: 2, gmv: 1469, pct_sellup: 11.10, order: 2 },
@@ -5106,6 +5147,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 },
+  // P&G 260426
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74098", name: "Pan Blanco Bimbo 620g", subcategoria: "Panaderia salada", ordenes: 15, pct_deal: 4.41, order: 1 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "75953", name: "Suavitel Suavizante Fresca Primavera 740 ml", subcategoria: "Suavizantes", ordenes: 12, pct_deal: 3.53, order: 2 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "8307", name: "Ajax Limpiador Multiusos Bicarbonato Limon 1 l", subcategoria: "Limpiadores multiusos", ordenes: 9, pct_deal: 2.65, order: 3 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "71801", name: "Pétalo Servilleta 160s", subcategoria: "Servilletas", ordenes: 9, pct_deal: 2.65, order: 4 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "5536", name: "Cloralex Blanqueador Líquido 950 mL", subcategoria: "Cloro", ordenes: 8, pct_deal: 2.35, order: 5 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "6088", name: "1-2-3 Aceite Vegetal Comestible 1 L", subcategoria: "Aceite", ordenes: 8, pct_deal: 2.35, order: 6 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "8462", name: "Coca-Cola Refresco Original 3 L", subcategoria: "Gaseosas", ordenes: 8, pct_deal: 2.35, order: 7 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74104", name: "Regio Papel Higiénico Luxury XXL 4 Und", subcategoria: "Papel higiénico", ordenes: 7, pct_deal: 2.06, order: 8 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "5300", name: "Fabuloso Limpiador Líquido Lavanda 1 L", subcategoria: "Limpiadores multiusos", ordenes: 7, pct_deal: 2.06, order: 9 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "80131", name: "Ariel Detergente Liquido Color 30 lavadas", subcategoria: "Detergentes", ordenes: 7, pct_deal: 2.06, order: 10 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74228", name: "Kleenbebé Toallitas Húmedas Manzanilla 90 Und", subcategoria: "Toallitas humedas", ordenes: 6, pct_deal: 1.76, order: 11 },
+  { deal_id: "VIRAL_DEAL_P&G_260426", sync: "5672", name: "San Juan Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 6, pct_deal: 1.76, order: 12 },
   // Mezcales 250426
   { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "6529", name: "Peñafiel Agua Mineral 2 L", subcategoria: "Agua Natural", ordenes: 3, pct_deal: 3.06, order: 1 },
   { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "77104", name: "Vino Blanco Espumoso Mionetto Prosecco 750 mL", subcategoria: "Espumantes", ordenes: 2, pct_deal: 2.04, order: 2 },
