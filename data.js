@@ -2069,6 +2069,30 @@ const PREVIRAL_DEALS = [
     categoria_display: "Insecticidas"
   },
   {
+    deal_id: "VIRAL_DEAL_MEZCALES_250426",
+    maker_name: "Mezcales",
+    maker_aux: "Mezcales",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 5,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-07",
+    fecha_ejecucion: "2026-04-25",
+    fecha_fin: null,
+    usd_mxn: 17.24,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 55000,
+    budget_growth_mxn: 16500,
+    budget_total_mxn: 71500,
+    budget_maker_usd: 3190.26,
+    budget_growth_usd: 957.08,
+    budget_total_usd: 4147.33,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Mezcales"
+  },
+  {
     deal_id: "VIRAL_DEAL_WECARE_240426",
     maker_name: "We Care",
     maker_aux: "WeCare",
@@ -2618,6 +2642,10 @@ const PREVIRAL_SKU_DETAIL = [
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 },
+  // Mezcales
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "8510", ean: "7500326289606", pid: "2109994476", name: "Mezcal Destreza Joven Espadin 750 mL", subcategoria: "Mezcales", h_units: 0.6, h_orders: 0.6, avg_price: 601.45, ex_incr_units: 3, ex_incr_orders: 3, ex_budget_mxn: 1083, ex_budget_usd: 62.82, real_units: 99, final_budget_mxn: 35726, final_budget_usd: 2072.27, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "83560", ean: "7500326289644", pid: "2115498352", name: "Crema de Mezcal Dulce Destreza Piñon 750 mL", subcategoria: "Mezcales", h_units: 0.4, h_orders: 0.4, avg_price: 415.41, ex_incr_units: 2, ex_incr_orders: 2, ex_budget_mxn: 498, ex_budget_usd: 28.89, real_units: 96, final_budget_mxn: 23928, final_budget_usd: 1388.22, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_MEZCALES_250426", sync: "83559", ean: "7500326289675", pid: "2115495407", name: "Crema de Mezcal Dulce Destreza Avellana 750 mL", subcategoria: "Mezcales", h_units: 0.1, h_orders: 0.1, avg_price: 544.46, ex_incr_units: 1, ex_incr_orders: 1, ex_budget_mxn: 327, ex_budget_usd: 18.96, real_units: 36, final_budget_mxn: 11760, final_budget_usd: 682.13, sku_order: 3 },
   // WeCare
   { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72978", ean: "7502290810329", pid: "2115715654", name: "We Care - Vaso de Papel con PLA 16oz Rojo - 10 uds.", subcategoria: "Vajilla desechable", h_units: 38.6, h_orders: 23.6, avg_price: 60.06, ex_incr_units: 386, ex_incr_orders: 236, ex_budget_mxn: 11592, ex_budget_usd: 672.41, real_units: 624, final_budget_mxn: 18739, final_budget_usd: 1087.24, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72977", ean: "7503015721166", pid: "2115168441", name: "We Care - Plato liso Grande 8.6 - 18 uds.", subcategoria: "Vajilla desechable", h_units: 24.1, h_orders: 17.4, avg_price: 59.70, ex_incr_units: 241, ex_incr_orders: 174, ex_budget_mxn: 7194, ex_budget_usd: 417.34, real_units: 392, final_budget_mxn: 11701, final_budget_usd: 678.73, sku_order: 2 },
