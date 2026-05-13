@@ -2069,6 +2069,30 @@ const PREVIRAL_DEALS = [
     categoria_display: "Insecticidas"
   },
   {
+    deal_id: "VIRAL_DEAL_HOLANDA_160426",
+    maker_name: "Unilever",
+    maker_aux: "Holanda",
+    business_unit: "Foods",
+    descuento_pct: 50,
+    incrementalidad: 8,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-04-01",
+    fecha_ejecucion: "2026-04-16",
+    fecha_fin: null,
+    usd_mxn: 17.24,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 40000,
+    budget_growth_mxn: 12000,
+    budget_total_mxn: 52000,
+    budget_maker_usd: 2320.19,
+    budget_growth_usd: 696.06,
+    budget_total_usd: 3016.24,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Helados"
+  },
+  {
     deal_id: "VIRAL_DEAL_GEPP_270426",
     maker_name: "Gepp",
     maker_aux: "Gepp",
@@ -2498,6 +2522,10 @@ const PREVIRAL_SKU_DETAIL = [
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 },
+  // Holanda
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "71550", ean: "7506306417571", pid: "2115881879", name: "Mordisko Vainilla - Holanda - 105 ml", subcategoria: "Helados", h_units: 195.1, h_orders: 99.5, avg_price: 26.46, ex_incr_units: 1561, ex_incr_orders: 796, ex_budget_mxn: 20649, ex_budget_usd: 1197.74, real_units: 1781, final_budget_mxn: 23563, final_budget_usd: 1367.05, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "6579", ean: "7506306415775", pid: "2115881876", name: "Magnum Paleta Helada Almendras 90 mL", subcategoria: "Helados", h_units: 163.0, h_orders: 89.8, avg_price: 47.96, ex_incr_units: 1304, ex_incr_orders: 718, ex_budget_mxn: 31270, ex_budget_usd: 1814.27, real_units: 821, final_budget_mxn: 19688, final_budget_usd: 1142.05, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "8944", ean: "7501130935512", pid: "2115850207", name: "Solero Paleta Sabor Limón Citrus", subcategoria: "Helados", h_units: 72.4, h_orders: 36.0, avg_price: 23.98, ex_incr_units: 579, ex_incr_orders: 288, ex_budget_mxn: 6942, ex_budget_usd: 402.67, real_units: 729, final_budget_mxn: 8741, final_budget_usd: 506.99, sku_order: 3 },
   // Gepp
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "8161", ean: "36731326003", pid: "2115518974", name: "Gatorade Bebida Hidratante Sabor Ponche de Frutas 1 L", subcategoria: "Isotónicos", h_units: 89.2, h_orders: 64.3, avg_price: 32.65, ex_incr_units: 981, ex_incr_orders: 707, ex_budget_mxn: 12812, ex_budget_usd: 743.16, real_units: 1382, final_budget_mxn: 18049, final_budget_usd: 1046.93, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "8939", ean: "36731323002", pid: "2115620178", name: "Gatorade Bebida Rehidratante sabor Uva 1l - Gatorade - 1000 mL", subcategoria: "Isotónicos", h_units: 85.0, h_orders: 63.6, avg_price: 31.88, ex_incr_units: 935, ex_incr_orders: 700, ex_budget_mxn: 11923, ex_budget_usd: 691.59, real_units: 1349, final_budget_mxn: 17202, final_budget_usd: 997.80, sku_order: 2 },
