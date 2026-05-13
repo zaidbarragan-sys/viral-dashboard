@@ -1510,13 +1510,11 @@
       const usuariosTotal = calDeals.reduce((s, d) => s + d.usuarios_unicos, 0);
 
       document.getElementById('indice-kpis').innerHTML = `
-        <div class="sub-title" style="margin-bottom:8px">${calLabel}${mtdSuffix}</div>
-        <div class="kpi-grid">
-          <div class="kpi-card"><div class="label">GMV Total</div><div class="value">${gmvTotal >= 1000000 ? '$' + (gmvTotal/1000000).toFixed(2) + 'M' : '$' + (gmvTotal/1000).toFixed(0) + 'k'}</div></div>
-          <div class="kpi-card"><div class="label">Deals Ejecutados</div><div class="value">${calDeals.length} / ${totalPlanned}</div></div>
-          <div class="kpi-card"><div class="label">Órdenes Totales</div><div class="value">${ordenesTotal.toLocaleString()}</div></div>
-          <div class="kpi-card"><div class="label">Usuarios Únicos</div><div class="value">${usuariosTotal.toLocaleString()}</div></div>
-        </div>`;
+        <div class="section-title" style="margin-bottom:4px;grid-column:1/-1">${calLabel}${mtdSuffix}</div>
+        <div class="kpi-card"><div class="label">GMV Total</div><div class="value">${gmvTotal >= 1000000 ? '$' + (gmvTotal/1000000).toFixed(2) + 'M' : '$' + (gmvTotal/1000).toFixed(0) + 'k'}</div></div>
+        <div class="kpi-card"><div class="label">Deals Ejecutados</div><div class="value">${calDeals.length} / ${totalPlanned}</div></div>
+        <div class="kpi-card"><div class="label">Órdenes Totales</div><div class="value">${ordenesTotal.toLocaleString()}</div></div>
+        <div class="kpi-card"><div class="label">Usuarios Únicos</div><div class="value">${usuariosTotal.toLocaleString()}</div></div>`;
 
       // Build events map: only fecha_ejecucion, classified by time
       const events = {};
