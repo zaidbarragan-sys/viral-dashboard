@@ -3757,6 +3757,34 @@ const POSTMORTEM_DEALS = [
     canib_und_post: 113, canib_und_bench: 77.75, canib_und_delta_pct: 45.3,
     canib_cli_post: 86, canib_cli_bench: 57.75, canib_cli_delta_pct: 48.9
   }
+  ,{
+    deal_id: "VIRAL_DEAL_WECARE_240426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 10906,
+    gmv_lw: 4057, gmv_dlw_pct: 168.8,
+    gmv_l4w: 4122, gmv_dl4w_pct: 164.6,
+    usuarios_unicos: 87,
+    usr_lw: 59, usr_dlw_pct: 47.5,
+    usr_l4w: 59.75, usr_dl4w_pct: 45.6,
+    cr_pct: 1.66,
+    aov: 89.39, aov_lw: 79.55, aov_dlw_pct: 12.4, aov_l4w: 76.33, aov_dl4w_pct: 17.1,
+    unidades_total: 249, und_lw: 74, und_dlw_pct: 236.5, und_l4w: 84.75, und_dl4w_pct: 193.8,
+    ordenes_total: 122, ord_lw: 51, ord_dlw_pct: 139.2, ord_l4w: 54.0, ord_dl4w_pct: 125.9,
+    impresiones_total: 5232,
+    so_turbo_mx: 3477739, gmv_categoria: 10906,
+    gmv_cat_lw: 4057, gmv_cat_l4w: 4122,
+    share_deal_cat_pct: 100.0, share_lw_pct: 100.0, share_l4w_pct: 100.0,
+    gmv_basket: 37553, gmv_sellup: 26647, pct_sellup: 70.96,
+    aov_basket: 307.81, aov_deal_post: 89.39,
+    cross_ordenes: 122, cross_skus_distintos: 287,
+    cross_top_producto: "We Care Tenedor Mediano 20 uds.", cross_top_ordenes: 10, cross_top_pct: 8.20,
+    inv_oos_cierre_viral_avg: 36.3, inv_oos_post_avg: 36.3,
+    inv_cov_viral_ap_avg: 56.1, inv_cov_viral_ci_avg: 50.1,
+    inv_cov_post_avg: 50.1, inv_cov_bench_avg: 51.0,
+    canib_ord_post: 205, canib_ord_bench: 163.75, canib_ord_delta_pct: 25.2,
+    canib_und_post: 327, canib_und_bench: 268.5, canib_und_delta_pct: 21.8,
+    canib_cli_post: 224, canib_cli_bench: 183.25, canib_cli_delta_pct: 22.2
+  }
 ];
 
 const POSTMORTEM_SKU_PERFORMANCE = [
@@ -4007,6 +4035,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
 
 
 
+  // WeCare 240426
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72978", name: "We Care Vaso de Papel PLA 16oz Rojo 10 uds.", ordenes: 65, usuarios: 52, unidades: 124, gmv: 6920, aov: 106.46, impresiones: 1191, cr_pct: 4.37, gmv_dlw_pct: 152.1, gmv_dl4w_pct: 164.5, seg_nuevo: 46, seg_nuevo_pct: 71, seg_reactivado: 6, seg_reactivado_pct: 9, seg_retenido: 13, seg_retenido_pct: 20, stock_viral: 1121, stock_post: 922, stock_bench: 985, stock_delta_pct: -6.4, oos_cierre_viral: 30, oos_post: 27, cov_viral_ap: 60.6, cov_viral_ci: 57.7, cov_post: 60.9, canib_ord_post: 99, canib_ord_bench: 66.75, canib_ord_delta_pct: 48.3, canib_und_post: 178, canib_und_bench: 118.0, canib_und_delta_pct: 50.8, canib_cli_post: 111, canib_cli_bench: 73.75, canib_cli_delta_pct: 50.5 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72977", name: "We Care Plato liso Grande 8.6 18 uds.", ordenes: 31, usuarios: 28, unidades: 50, gmv: 2566, aov: 82.78, impresiones: 2338, cr_pct: 1.20, gmv_dlw_pct: 137.9, gmv_dl4w_pct: 136.6, seg_nuevo: 28, seg_nuevo_pct: 90, seg_reactivado: 2, seg_reactivado_pct: 6, seg_retenido: 1, seg_retenido_pct: 3, stock_viral: 467, stock_post: 469, stock_bench: 521, stock_delta_pct: -10.0, oos_cierre_viral: 37, oos_post: 36, cov_viral_ap: 56.2, cov_viral_ci: 49.3, cov_post: 50.0, canib_ord_post: 64, canib_ord_bench: 54.0, canib_ord_delta_pct: 18.5, canib_und_post: 87, canib_und_bench: 80.75, canib_und_delta_pct: 7.7, canib_cli_post: 70, canib_cli_bench: 63.0, canib_cli_delta_pct: 11.1 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72981", name: "We Care Cuchara Mediana 20 uds.", ordenes: 53, usuarios: 31, unidades: 75, gmv: 1420, aov: 26.79, impresiones: 1703, cr_pct: 1.82, gmv_dlw_pct: 508.7, gmv_dl4w_pct: 237.2, seg_nuevo: 26, seg_nuevo_pct: 49, seg_reactivado: 5, seg_reactivado_pct: 9, seg_retenido: 22, seg_retenido_pct: 42, stock_viral: 334, stock_post: 392, stock_bench: 416, stock_delta_pct: -5.8, oos_cierre_viral: 42, oos_post: 46, cov_viral_ap: 51.4, cov_viral_ci: 43.2, cov_post: 39.5, canib_ord_post: 42, canib_ord_bench: 43.0, canib_ord_delta_pct: -2.3, canib_und_post: 62, canib_und_bench: 69.75, canib_und_delta_pct: -11.1, canib_cli_post: 43, canib_cli_bench: 46.5, canib_cli_delta_pct: -7.5 },
   // Pets 230426
   { deal_id: "VIRAL_DEAL_PETS_230426", sync: "83659", name: "Pawffy Arena Para Gatos Aroma Lavanda 5 Kg", ordenes: 69, usuarios: 41, unidades: 148, gmv: 10116, aov: 146.61, impresiones: 654, cr_pct: 6.27, gmv_dlw_pct: 1601.3, gmv_dl4w_pct: 1230.5, seg_nuevo: 37, seg_nuevo_pct: 54, seg_reactivado: 2, seg_reactivado_pct: 3, seg_retenido: 30, seg_retenido_pct: 43, stock_viral: 425, stock_post: 389, stock_bench: 294, stock_delta_pct: 32.3, oos_cierre_viral: 15, oos_post: 15, cov_viral_ap: 76.7, cov_viral_ci: 65.1, cov_post: 64.0, canib_ord_post: 57, canib_ord_bench: 29.75, canib_ord_delta_pct: 91.6, canib_und_post: 76, canib_und_bench: 39.75, canib_und_delta_pct: 91.2, canib_cli_post: 55, canib_cli_bench: 30.5, canib_cli_delta_pct: 80.3 },
   { deal_id: "VIRAL_DEAL_PETS_230426", sync: "83458", name: "Dog Chew Pork Femur Deshidratado 2 Und", ordenes: 41, usuarios: 17, unidades: 59, gmv: 6382, aov: 155.67, impresiones: 909, cr_pct: 1.87, gmv_dlw_pct: 1890.2, gmv_dl4w_pct: 1115.5, seg_nuevo: 16, seg_nuevo_pct: 39, seg_reactivado: 4, seg_reactivado_pct: 10, seg_retenido: 21, seg_retenido_pct: 51, stock_viral: 428, stock_post: 373, stock_bench: 421, stock_delta_pct: -11.4, oos_cierre_viral: 15, oos_post: 15, cov_viral_ap: 85.5, cov_viral_ci: 72.7, cov_post: 72.3, canib_ord_post: 9, canib_ord_bench: 8.5, canib_ord_delta_pct: 5.9, canib_und_post: 11, canib_und_bench: 10.5, canib_und_delta_pct: 4.8, canib_cli_post: 9, canib_cli_bench: 5.75, canib_cli_delta_pct: 56.5 },
@@ -4399,6 +4431,15 @@ const POSTMORTEM_SELLUP_CATS = [
 
 
 
+  // WeCare 240426
+  { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Cervezas", ordenes: 13, gmv: 3763, pct_sellup: 14.12, order: 1 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Gaseosas", ordenes: 33, gmv: 2524, pct_sellup: 9.47, order: 2 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Tequilas", ordenes: 2, gmv: 1855, pct_sellup: 6.96, order: 3 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Snacks salados", ordenes: 19, gmv: 1830, pct_sellup: 6.87, order: 4 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Agua Natural", ordenes: 18, gmv: 1139, pct_sellup: 4.27, order: 5 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Vajilla desechable", ordenes: 20, gmv: 1093, pct_sellup: 4.10, order: 6 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Rones", ordenes: 4, gmv: 1074, pct_sellup: 4.03, order: 7 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", subcategoria: "Leche natural", ordenes: 10, gmv: 847, pct_sellup: 3.18, order: 8 },
   // Pets 230426
   { deal_id: "VIRAL_DEAL_PETS_230426", subcategoria: "Cervezas", ordenes: 13, gmv: 921, pct_sellup: 5.75, order: 1 },
   { deal_id: "VIRAL_DEAL_PETS_230426", subcategoria: "Chocolates", ordenes: 6, gmv: 817, pct_sellup: 5.11, order: 2 },
@@ -4968,6 +5009,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 },
+  // WeCare 240426
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "72980", name: "We Care Tenedor Mediano 20 uds.", subcategoria: "Vajilla desechable", ordenes: 10, pct_deal: 8.20, order: 1 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 8, pct_deal: 6.56, order: 2 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "8033", name: "Ciel Agua Natural Purificada 10 L", subcategoria: "Agua Natural", ordenes: 8, pct_deal: 6.56, order: 3 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "71801", name: "Pétalo Servilleta 160s", subcategoria: "Servilletas", ordenes: 7, pct_deal: 5.74, order: 4 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 6, pct_deal: 4.92, order: 5 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "8462", name: "Coca-Cola Refresco Original 3 L", subcategoria: "Gaseosas", ordenes: 6, pct_deal: 4.92, order: 6 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "73412", name: "Alpura Yoghurt Batido Manzana 125 g", subcategoria: "Yogurt", ordenes: 5, pct_deal: 4.10, order: 7 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "76930", name: "Wecare Plato Pastelero 6 18 ud.", subcategoria: "Vajilla desechable", ordenes: 5, pct_deal: 4.10, order: 8 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "10280", name: "KLYR Bolsa con hielo cubo gourmet 5 kg", subcategoria: "Hielo", ordenes: 5, pct_deal: 4.10, order: 9 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "5475", name: "Lala Leche Deslactosada Light 1 L", subcategoria: "Leche natural", ordenes: 4, pct_deal: 3.28, order: 10 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "9103", name: "Electrolit Suero Rehidratante Fresa Kiwi 625 mL", subcategoria: "Suero", ordenes: 3, pct_deal: 2.46, order: 11 },
+  { deal_id: "VIRAL_DEAL_WECARE_240426", sync: "14375", name: "Limón Sin Semilla Malla", subcategoria: "Frutas", ordenes: 3, pct_deal: 2.46, order: 12 },
   // Pets 230426
   { deal_id: "VIRAL_DEAL_PETS_230426", sync: "5672", name: "San Juan Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 4, pct_deal: 3.31, order: 1 },
   { deal_id: "VIRAL_DEAL_PETS_230426", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 4, pct_deal: 3.31, order: 2 },
