@@ -3701,6 +3701,34 @@ const POSTMORTEM_DEALS = [
     canib_und_post: 1433, canib_und_bench: 1247.5, canib_und_delta_pct: 14.9,
     canib_cli_post: 1080, canib_cli_bench: 923.0, canib_cli_delta_pct: 17.0
   }
+  ,{
+    deal_id: "VIRAL_DEAL_PETS_220426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 2112,
+    gmv_lw: 1365, gmv_dlw_pct: 54.7,
+    gmv_l4w: 1882, gmv_dl4w_pct: 12.2,
+    usuarios_unicos: 16,
+    usr_lw: 12, usr_dlw_pct: 33.3,
+    usr_l4w: 15.67, usr_dl4w_pct: 2.1,
+    cr_pct: 0.49,
+    aov: 124.23, aov_lw: 124.09, aov_dlw_pct: 0.1, aov_l4w: 127.59, aov_dl4w_pct: -2.6,
+    unidades_total: 19, und_lw: 12, und_dlw_pct: 58.3, und_l4w: 17.84, und_dl4w_pct: 6.5,
+    ordenes_total: 17, ord_lw: 11, ord_dlw_pct: 54.5, ord_l4w: 14.75, ord_dl4w_pct: 15.3,
+    impresiones_total: 3275,
+    so_turbo_mx: 3477739, gmv_categoria: 2112,
+    gmv_cat_lw: 1365, gmv_cat_l4w: 1882,
+    share_deal_cat_pct: 100.0, share_lw_pct: 100.0, share_l4w_pct: 100.0,
+    gmv_basket: 3937, gmv_sellup: 1825, pct_sellup: 46.36,
+    aov_basket: 231.59, aov_deal_post: 124.23,
+    cross_ordenes: 17, cross_skus_distintos: 33,
+    cross_top_producto: "Aguacate Para Hoy X3", cross_top_ordenes: 2, cross_top_pct: 11.76,
+    inv_oos_cierre_viral_avg: 9.5, inv_oos_post_avg: 14.0,
+    inv_cov_viral_ap_avg: 79.5, inv_cov_viral_ci_avg: 79.5,
+    inv_cov_post_avg: 72.7, inv_cov_bench_avg: 72.3,
+    canib_ord_post: 217, canib_ord_bench: 61.75, canib_ord_delta_pct: 251.4,
+    canib_und_post: 413, canib_und_bench: 77.75, canib_und_delta_pct: 431.2,
+    canib_cli_post: 177, canib_cli_bench: 57.75, canib_cli_delta_pct: 206.5
+  }
 ];
 
 const POSTMORTEM_SKU_PERFORMANCE = [
@@ -3951,6 +3979,11 @@ const POSTMORTEM_SKU_PERFORMANCE = [
 
 
 
+  // Pets 220426
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "83659", name: "Pawffy Arena Para Gatos Aroma Lavanda 5 Kg", ordenes: 11, usuarios: 11, unidades: 13, gmv: 1289, aov: 117.22, impresiones: 654, cr_pct: 1.68, gmv_dlw_pct: 118.2, gmv_dl4w_pct: 45.8, seg_nuevo: 7, seg_nuevo_pct: 64, seg_reactivado: 2, seg_reactivado_pct: 18, seg_retenido: 2, seg_retenido_pct: 18, stock_viral: 441, stock_post: 403, stock_bench: 266, stock_delta_pct: 51.5, oos_cierre_viral: 10, oos_post: 16, cov_viral_ap: 76.7, cov_viral_ci: 76.7, cov_post: 66.9, canib_ord_post: 109, canib_ord_bench: 29.75, canib_ord_delta_pct: 266.4, canib_und_post: 231, canib_und_bench: 39.0, canib_und_delta_pct: 492.3, canib_cli_post: 93, canib_cli_bench: 28.5, canib_cli_delta_pct: 226.3 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "83458", name: "Dog Chew Pork Femur Deshidratado 2 Und", ordenes: 4, usuarios: 3, unidades: 4, gmv: 573, aov: 143.13, impresiones: 909, cr_pct: 0.33, gmv_dlw_pct: 71.3, gmv_dl4w_pct: -4.2, seg_nuevo: 2, seg_nuevo_pct: 50, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 2, seg_retenido_pct: 50, stock_viral: 436, stock_post: 388, stock_bench: 405, stock_delta_pct: -4.2, oos_cierre_viral: 8, oos_post: 15, cov_viral_ap: 85.5, cov_viral_ci: 85.5, cov_post: 75.5, canib_ord_post: 49, canib_ord_bench: 9.25, canib_ord_delta_pct: 429.7, canib_und_post: 84, canib_und_bench: 12.0, canib_und_delta_pct: 600.0, canib_cli_post: 38, canib_cli_bench: 7.5, canib_cli_delta_pct: 406.7 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "82205", name: "Dog Chew Sticks Sabor Res Para Perro 100 Und", ordenes: 1, usuarios: 1, unidades: 1, gmv: 138, aov: 137.84, impresiones: 915, cr_pct: 0.11, gmv_dlw_pct: 0.6, gmv_dl4w_pct: -36.8, seg_nuevo: 1, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 232, stock_post: 192, stock_bench: 204, stock_delta_pct: -5.9, oos_cierre_viral: 10, oos_post: 16, cov_viral_ap: 80.0, cov_viral_ci: 80.0, cov_post: 71.0, canib_ord_post: 39, canib_ord_bench: 7.5, canib_ord_delta_pct: 420.0, canib_und_post: 68, canib_und_bench: 8.5, canib_und_delta_pct: 700.0, canib_cli_post: 31, canib_cli_bench: 6.5, canib_cli_delta_pct: 376.9 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "82200", name: "Dog Chew Hueso Para Perro Sabor a Pollo 2 Und", ordenes: 1, usuarios: 1, unidades: 1, gmv: 112, aov: 112.07, impresiones: 797, cr_pct: 0.13, gmv_dlw_pct: -63.0, gmv_dl4w_pct: -71.0, seg_nuevo: 1, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 263, stock_post: 245, stock_bench: 185, stock_delta_pct: 32.4, oos_cierre_viral: 10, oos_post: 9, cov_viral_ap: 75.6, cov_viral_ci: 75.6, cov_post: 77.4, canib_ord_post: 20, canib_ord_bench: 15.25, canib_ord_delta_pct: 31.1, canib_und_post: 30, canib_und_bench: 18.25, canib_und_delta_pct: 64.4, canib_cli_post: 15, canib_cli_bench: 15.25, canib_cli_delta_pct: -1.6 },
   // Mimosas 180426
   { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "12456", name: "Fresas", ordenes: 546, usuarios: 369, unidades: 811, gmv: 54340, aov: 99.52, impresiones: 5699, cr_pct: 6.47, gmv_dlw_pct: 382.9, gmv_dl4w_pct: 405.3, seg_nuevo: 222, seg_nuevo_pct: 41, seg_reactivado: 132, seg_reactivado_pct: 24, seg_retenido: 192, seg_retenido_pct: 35, stock_viral: 357, stock_post: 206, stock_bench: 243, stock_delta_pct: -15.2, oos_cierre_viral: 59, oos_post: 44, cov_viral_ap: 51.4, cov_viral_ci: 18.1, cov_post: 33.4, canib_ord_post: 662, canib_ord_bench: 554.25, canib_ord_delta_pct: 19.4, canib_und_post: 869, canib_und_bench: 711.75, canib_und_delta_pct: 22.1, canib_cli_post: 678, canib_cli_bench: 541.75, canib_cli_delta_pct: 25.1 },
   { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "9629", name: "Mora Azul", ordenes: 327, usuarios: 217, unidades: 417, gmv: 28033, aov: 85.73, impresiones: 2633, cr_pct: 8.24, gmv_dlw_pct: 335.2, gmv_dl4w_pct: 387.3, seg_nuevo: 153, seg_nuevo_pct: 47, seg_reactivado: 51, seg_reactivado_pct: 16, seg_retenido: 123, seg_retenido_pct: 38, stock_viral: 261, stock_post: 155, stock_bench: 252, stock_delta_pct: -38.5, oos_cierre_viral: 61, oos_post: 40, cov_viral_ap: 57.3, cov_viral_ci: 18.7, cov_post: 38.0, canib_ord_post: 297, canib_ord_bench: 318.0, canib_ord_delta_pct: -6.6, canib_und_post: 420, canib_und_bench: 414.5, canib_und_delta_pct: 1.3, canib_cli_post: 306, canib_cli_bench: 293.5, canib_cli_delta_pct: 4.3 },
@@ -4338,6 +4371,15 @@ const POSTMORTEM_SELLUP_CATS = [
 
 
 
+  // Pets 220426
+  { deal_id: "VIRAL_DEAL_PETS_220426", subcategoria: "Vino tinto", ordenes: 1, gmv: 220, pct_sellup: 12.07, order: 1 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", subcategoria: "Alimento para gatos", ordenes: 3, gmv: 216, pct_sellup: 11.82, order: 2 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", subcategoria: "Snacks para Mascotas", ordenes: 1, gmv: 207, pct_sellup: 11.34, order: 3 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", subcategoria: "Cigarrillos", ordenes: 1, gmv: 191, pct_sellup: 10.45, order: 4 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", subcategoria: "Frutas", ordenes: 2, gmv: 156, pct_sellup: 8.56, order: 5 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", subcategoria: "Agua Natural", ordenes: 3, gmv: 115, pct_sellup: 6.28, order: 6 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", subcategoria: "Jabones y exfoliantes corporales", ordenes: 1, gmv: 71, pct_sellup: 3.91, order: 7 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", subcategoria: "Chocolates", ordenes: 1, gmv: 65, pct_sellup: 3.53, order: 8 },
   // Mimosas 180426
   { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Frutas", ordenes: 261, gmv: 17555, pct_sellup: 13.15, order: 1 },
   { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Huevos", ordenes: 103, gmv: 7068, pct_sellup: 5.30, order: 2 },
@@ -4898,6 +4940,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 },
+  // Pets 220426
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 2, pct_deal: 11.76, order: 1 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 1, pct_deal: 5.88, order: 2 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "74205", name: "Colgate Pasta Dental Triple Accion Xtra Blancura 125 mL", subcategoria: "Crema dental", ordenes: 1, pct_deal: 5.88, order: 3 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "79691", name: "Whiskas Alimentos Para Gato Sabor Pescado", subcategoria: "Alimento para gatos", ordenes: 1, pct_deal: 5.88, order: 4 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "10750", name: "Purina Fancy Feast Alimento Para Gato Goulash Cordero 85 g", subcategoria: "Alimento para gatos", ordenes: 1, pct_deal: 5.88, order: 5 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "87044", name: "MANGUSANO LUCKY 200 gr", subcategoria: "Gomitas y caramelos", ordenes: 1, pct_deal: 5.88, order: 6 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "87068", name: "Fruta Enchilada 200 Gr", subcategoria: "Otros", ordenes: 1, pct_deal: 5.88, order: 7 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "12563", name: "Axion Lavatrastes Líquido Limón 640 mL", subcategoria: "Detergente Vajillas", ordenes: 1, pct_deal: 5.88, order: 8 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "5747", name: "Vino Tinto Las Moras Malbec Finca 750 mL", subcategoria: "Vino tinto", ordenes: 1, pct_deal: 5.88, order: 9 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "82061", name: "Cebolla Morada", subcategoria: "Frutas", ordenes: 1, pct_deal: 5.88, order: 10 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "11178", name: "Nesquik Sabor Chocolate 357 g", subcategoria: "Chocolate", ordenes: 1, pct_deal: 5.88, order: 11 },
+  { deal_id: "VIRAL_DEAL_PETS_220426", sync: "10510", name: "Purina Fancy Feast Alimento Para Gato Goulash Pavo 85 g", subcategoria: "Alimento para gatos", ordenes: 1, pct_deal: 5.88, order: 12 },
   // Mimosas 180426
   { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 62, pct_deal: 7.95, order: 1 },
   { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 61, pct_deal: 7.82, order: 2 },
