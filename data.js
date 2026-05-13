@@ -2069,6 +2069,30 @@ const PREVIRAL_DEALS = [
     categoria_display: "Insecticidas"
   },
   {
+    deal_id: "VIRAL_DEAL_PLAYBOY_170426",
+    maker_name: "Comercio Mexicano Int",
+    maker_aux: "PlayBoy",
+    business_unit: "Pharma",
+    descuento_pct: 50,
+    incrementalidad: 7,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-17",
+    fecha_ejecucion: "2026-04-17",
+    fecha_fin: null,
+    usd_mxn: 17.24,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 30000,
+    budget_growth_mxn: 9000,
+    budget_total_mxn: 39000,
+    budget_maker_usd: 1740.14,
+    budget_growth_usd: 522.04,
+    budget_total_usd: 2262.18,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Lubricantes, Preservativos, Vibradores"
+  },
+  {
     deal_id: "VIRAL_DEAL_HOLANDA_160426",
     maker_name: "Unilever",
     maker_aux: "Holanda",
@@ -2522,6 +2546,10 @@ const PREVIRAL_SKU_DETAIL = [
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 },
+  // PlayBoy
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "73481", ean: "7503014377937", pid: "2115495165", name: "Sensy Lub - Gel Lubricante Para Masajes Sabor Durazno - 60 ml", subcategoria: "Lubricantes", h_units: 3.1, h_orders: 3.1, avg_price: 68.20, ex_incr_units: 22, ex_incr_orders: 22, ex_budget_mxn: 750, ex_budget_usd: 43.50, real_units: 441, final_budget_mxn: 15038, final_budget_usd: 872.28, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "73482", ean: "7503014377470", pid: "2113530048", name: "Sensy - Bala Vibradora - 1 ud.", subcategoria: "Vibradores", h_units: 3.1, h_orders: 3.1, avg_price: 366.65, ex_incr_units: 22, ex_incr_orders: 22, ex_budget_mxn: 4033, ex_budget_usd: 233.93, real_units: 82, final_budget_mxn: 15033, final_budget_usd: 871.98, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "80161", ean: "7503014377050", pid: "2115712716", name: "Playboy Preservativos Texturizados", subcategoria: "Preservativos", h_units: 1.9, h_orders: 1.8, avg_price: 273.80, ex_incr_units: 13, ex_incr_orders: 13, ex_budget_mxn: 1780, ex_budget_usd: 103.25, real_units: 65, final_budget_mxn: 8898, final_budget_usd: 516.13, sku_order: 3 },
   // Holanda
   { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "71550", ean: "7506306417571", pid: "2115881879", name: "Mordisko Vainilla - Holanda - 105 ml", subcategoria: "Helados", h_units: 195.1, h_orders: 99.5, avg_price: 26.46, ex_incr_units: 1561, ex_incr_orders: 796, ex_budget_mxn: 20649, ex_budget_usd: 1197.74, real_units: 1781, final_budget_mxn: 23563, final_budget_usd: 1367.05, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_HOLANDA_160426", sync: "6579", ean: "7506306415775", pid: "2115881876", name: "Magnum Paleta Helada Almendras 90 mL", subcategoria: "Helados", h_units: 163.0, h_orders: 89.8, avg_price: 47.96, ex_incr_units: 1304, ex_incr_orders: 718, ex_budget_mxn: 31270, ex_budget_usd: 1814.27, real_units: 821, final_budget_mxn: 19688, final_budget_usd: 1142.05, sku_order: 2 },
