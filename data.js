@@ -2069,6 +2069,30 @@ const PREVIRAL_DEALS = [
     categoria_display: "Insecticidas"
   },
   {
+    deal_id: "VIRAL_DEAL_MIMOSAS_180426",
+    maker_name: "Mimosas",
+    maker_aux: "Mimosas",
+    business_unit: "Drinks",
+    descuento_pct: 60,
+    incrementalidad: 6,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-03-23",
+    fecha_ejecucion: "2026-04-18",
+    fecha_fin: null,
+    usd_mxn: 17.24,
+    fecha_tasa: "2026-05-13",
+    budget_maker_mxn: 55000,
+    budget_growth_mxn: 16500,
+    budget_total_mxn: 71500,
+    budget_maker_usd: 3190.26,
+    budget_growth_usd: 957.08,
+    budget_total_usd: 4147.33,
+    financiamiento_maker: "OC",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Espumantes, Frutas"
+  },
+  {
     deal_id: "VIRAL_DEAL_PLAYBOY_170426",
     maker_name: "Comercio Mexicano Int",
     maker_aux: "PlayBoy",
@@ -2546,6 +2570,11 @@ const PREVIRAL_SKU_DETAIL = [
   // SCJ
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "81726", ean: "7501032920067", pid: "2115329092", name: "Raid Acción Concentrada Insecticida Contra Mosquitos Sin Aroma", subcategoria: "Insecticidas", h_units: 4.5, h_orders: 3.6, avg_price: 113.54, ex_incr_units: 23, ex_incr_orders: 18, ex_budget_mxn: 1306, ex_budget_usd: 75.79, real_units: 612, final_budget_mxn: 34743, final_budget_usd: 2016.04, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_SCJ_150426", sync: "85035", ean: "7501032920074", pid: "2115544324", name: "Raid Insecticida Mosquitos Aerosol 1 Und", subcategoria: "Insecticidas", h_units: 3.9, h_orders: 3.7, avg_price: 105.61, ex_incr_units: 20, ex_incr_orders: 19, ex_budget_mxn: 1056, ex_budget_usd: 61.28, real_units: 573, final_budget_mxn: 30257, final_budget_usd: 1756.00, sku_order: 2 },
+  // Mimosas
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "12456", ean: "2200000308191", pid: "2115449690", name: "Fresa 450 g", subcategoria: "Frutas", h_units: 221.8, h_orders: 187.1, avg_price: 76.53, ex_incr_units: 1331, ex_incr_orders: 1123, ex_budget_mxn: 61113, ex_budget_usd: 3544.84, real_units: 966, final_budget_mxn: 44357, final_budget_usd: 2572.91, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "9629", ean: "2200000310231", pid: "2113054052", name: "Mora Azul", subcategoria: "Frutas", h_units: 97.3, h_orders: 87.2, avg_price: 75.42, ex_incr_units: 584, ex_incr_orders: 523, ex_budget_mxn: 26427, ex_budget_usd: 1532.89, real_units: 430, final_budget_mxn: 19458, final_budget_usd: 1128.64, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "9159", ean: "2200000311153", pid: "2113183205", name: "Zarzamora", subcategoria: "Frutas", h_units: 34.1, h_orders: 30.6, avg_price: 61.50, ex_incr_units: 205, ex_incr_orders: 184, ex_budget_mxn: 7564, ex_budget_usd: 438.75, real_units: 185, final_budget_mxn: 6826, final_budget_usd: 395.94, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "83627", ean: "850067411048", pid: "2115505382", name: "Mimosa Granriviera Canella 750 mL", subcategoria: "Espumantes", h_units: 4.2, h_orders: 3.3, avg_price: 339.67, ex_incr_units: 25, ex_incr_orders: 20, ex_budget_mxn: 5095, ex_budget_usd: 295.53, real_units: 4, final_budget_mxn: 815, final_budget_usd: 47.27, sku_order: 4 },
   // PlayBoy
   { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "73481", ean: "7503014377937", pid: "2115495165", name: "Sensy Lub - Gel Lubricante Para Masajes Sabor Durazno - 60 ml", subcategoria: "Lubricantes", h_units: 3.1, h_orders: 3.1, avg_price: 68.20, ex_incr_units: 22, ex_incr_orders: 22, ex_budget_mxn: 750, ex_budget_usd: 43.50, real_units: 441, final_budget_mxn: 15038, final_budget_usd: 872.28, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "73482", ean: "7503014377470", pid: "2113530048", name: "Sensy - Bala Vibradora - 1 ud.", subcategoria: "Vibradores", h_units: 3.1, h_orders: 3.1, avg_price: 366.65, ex_incr_units: 22, ex_incr_orders: 22, ex_budget_mxn: 4033, ex_budget_usd: 233.93, real_units: 82, final_budget_mxn: 15033, final_budget_usd: 871.98, sku_order: 2 },
