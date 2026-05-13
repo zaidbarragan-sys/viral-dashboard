@@ -3644,6 +3644,34 @@ const POSTMORTEM_DEALS = [
     canib_und_post: 34, canib_und_bench: 21.25, canib_und_delta_pct: 60.0,
     canib_cli_post: 31, canib_cli_bench: 19.25, canib_cli_delta_pct: 61.0
   }
+  ,{
+    deal_id: "VIRAL_DEAL_MIMOSAS_180426",
+    post_days: 4, fase: 2,
+    gmv_activacion: 122482,
+    gmv_lw: 19436, gmv_dlw_pct: 530.2,
+    gmv_l4w: 18474, gmv_dl4w_pct: 563.0,
+    usuarios_unicos: 517,
+    usr_lw: 219, usr_dlw_pct: 136.1,
+    usr_l4w: 192, usr_dl4w_pct: 169.3,
+    cr_pct: 4.77,
+    aov: 157.03, aov_lw: 96.7, aov_dlw_pct: 62.4, aov_l4w: 97.1, aov_dl4w_pct: 61.7,
+    unidades_total: 1542, und_lw: 258, und_dlw_pct: 497.7, und_l4w: 242.25, und_dl4w_pct: 536.5,
+    ordenes_total: 780, ord_lw: 201, ord_dlw_pct: 288.1, ord_l4w: 190.25, ord_dl4w_pct: 310.0,
+    impresiones_total: 10838,
+    so_turbo_mx: 5729114, gmv_categoria: 306838,
+    gmv_cat_lw: 205701, gmv_cat_l4w: 186335,
+    share_deal_cat_pct: 39.92, share_lw_pct: 9.45, share_l4w_pct: 10.04,
+    gmv_basket: 255941, gmv_sellup: 133459, pct_sellup: 52.14,
+    aov_basket: 328.13, aov_deal_post: 157.03,
+    cross_ordenes: 780, cross_skus_distintos: 1127,
+    cross_top_producto: "Aguacate Para Hoy X3", cross_top_ordenes: 62, cross_top_pct: 7.95,
+    inv_oos_cierre_viral_avg: 47.5, inv_oos_post_avg: 35.0,
+    inv_cov_viral_ap_avg: 59.8, inv_cov_viral_ci_avg: 31.6,
+    inv_cov_post_avg: 43.5, inv_cov_bench_avg: 49.8,
+    canib_ord_post: 1057, canib_ord_bench: 967.25, canib_ord_delta_pct: 9.3,
+    canib_und_post: 1433, canib_und_bench: 1247.5, canib_und_delta_pct: 14.9,
+    canib_cli_post: 1080, canib_cli_bench: 923.0, canib_cli_delta_pct: 17.0
+  }
 ];
 
 const POSTMORTEM_SKU_PERFORMANCE = [
@@ -3894,6 +3922,11 @@ const POSTMORTEM_SKU_PERFORMANCE = [
 
 
 
+  // Mimosas 180426
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "12456", name: "Fresas", ordenes: 546, usuarios: 369, unidades: 811, gmv: 54340, aov: 99.52, impresiones: 5699, cr_pct: 6.47, gmv_dlw_pct: 382.9, gmv_dl4w_pct: 405.3, seg_nuevo: 222, seg_nuevo_pct: 41, seg_reactivado: 132, seg_reactivado_pct: 24, seg_retenido: 192, seg_retenido_pct: 35, stock_viral: 357, stock_post: 206, stock_bench: 243, stock_delta_pct: -15.2, oos_cierre_viral: 59, oos_post: 44, cov_viral_ap: 51.4, cov_viral_ci: 18.1, cov_post: 33.4, canib_ord_post: 662, canib_ord_bench: 554.25, canib_ord_delta_pct: 19.4, canib_und_post: 869, canib_und_bench: 711.75, canib_und_delta_pct: 22.1, canib_cli_post: 678, canib_cli_bench: 541.75, canib_cli_delta_pct: 25.1 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "9629", name: "Mora Azul", ordenes: 327, usuarios: 217, unidades: 417, gmv: 28033, aov: 85.73, impresiones: 2633, cr_pct: 8.24, gmv_dlw_pct: 335.2, gmv_dl4w_pct: 387.3, seg_nuevo: 153, seg_nuevo_pct: 47, seg_reactivado: 51, seg_reactivado_pct: 16, seg_retenido: 123, seg_retenido_pct: 38, stock_viral: 261, stock_post: 155, stock_bench: 252, stock_delta_pct: -38.5, oos_cierre_viral: 61, oos_post: 40, cov_viral_ap: 57.3, cov_viral_ci: 18.7, cov_post: 38.0, canib_ord_post: 297, canib_ord_bench: 318.0, canib_ord_delta_pct: -6.6, canib_und_post: 420, canib_und_bench: 414.5, canib_und_delta_pct: 1.3, canib_cli_post: 306, canib_cli_bench: 293.5, canib_cli_delta_pct: 4.3 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "83627", name: "Mimosa Granriviera Canella 750 mL", ordenes: 56, usuarios: 31, unidades: 96, gmv: 27854, aov: 497.39, impresiones: 1743, cr_pct: 1.78, gmv_dlw_pct: null, gmv_dl4w_pct: 8801.0, seg_nuevo: 56, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 607, stock_post: 521, stock_bench: 215, stock_delta_pct: 142.3, oos_cierre_viral: 15, oos_post: 16, cov_viral_ap: 75.5, cov_viral_ci: 69.4, cov_post: 67.8, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "9159", name: "Zarzamora", ordenes: 172, usuarios: 122, unidades: 218, gmv: 12255, aov: 71.25, impresiones: 763, cr_pct: 15.99, gmv_dlw_pct: 603.2, gmv_dl4w_pct: 548.7, seg_nuevo: 91, seg_nuevo_pct: 53, seg_reactivado: 26, seg_reactivado_pct: 15, seg_retenido: 55, seg_retenido_pct: 32, stock_viral: 166, stock_post: 79, stock_bench: 152, stock_delta_pct: -48.0, oos_cierre_viral: 55, oos_post: 40, cov_viral_ap: 55.1, cov_viral_ci: 20.3, cov_post: 34.8, canib_ord_post: 98, canib_ord_bench: 95.0, canib_ord_delta_pct: 3.2, canib_und_post: 144, canib_und_bench: 121.25, canib_und_delta_pct: 18.8, canib_cli_post: 96, canib_cli_bench: 87.75, canib_cli_delta_pct: 9.4 },
   // PlayBoy 170426
   { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "80161", name: "Playboy Preservativos Texturizados", ordenes: 38, usuarios: 27, unidades: 45, gmv: 10230, aov: 269.22, impresiones: 1944, cr_pct: 1.39, gmv_dlw_pct: 751.5, gmv_dl4w_pct: 1378.9, seg_nuevo: 28, seg_nuevo_pct: 74, seg_reactivado: 1, seg_reactivado_pct: 3, seg_retenido: 9, seg_retenido_pct: 24, stock_viral: 264, stock_post: 229, stock_bench: 134, stock_delta_pct: 70.9, oos_cierre_viral: 22, oos_post: 23, cov_viral_ap: 66.7, cov_viral_ci: 63.3, cov_post: 62.1, canib_ord_post: 6, canib_ord_bench: 2.5, canib_ord_delta_pct: 140.0, canib_und_post: 7, canib_und_bench: 4.0, canib_und_delta_pct: 75.0, canib_cli_post: 7, canib_cli_bench: 4.0, canib_cli_delta_pct: 75.0 },
   { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "73482", name: "Sensy - Bala Vibradora - 1 ud.", ordenes: 20, usuarios: 13, unidades: 27, gmv: 8746, aov: 437.28, impresiones: 1630, cr_pct: 0.80, gmv_dlw_pct: 531.0, gmv_dl4w_pct: 772.4, seg_nuevo: 16, seg_nuevo_pct: 80, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 4, seg_retenido_pct: 20, stock_viral: 374, stock_post: 357, stock_bench: 219, stock_delta_pct: 63.0, oos_cierre_viral: 20, oos_post: 20, cov_viral_ap: 69.0, cov_viral_ci: 65.5, cov_post: 66.1, canib_ord_post: 6, canib_ord_bench: 7.0, canib_ord_delta_pct: -14.3, canib_und_post: 6, canib_und_bench: 8.75, canib_und_delta_pct: -31.4, canib_cli_post: 6, canib_cli_bench: 8.0, canib_cli_delta_pct: -25.0 },
@@ -4276,6 +4309,15 @@ const POSTMORTEM_SELLUP_CATS = [
 
 
 
+  // Mimosas 180426
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Frutas", ordenes: 261, gmv: 17555, pct_sellup: 13.15, order: 1 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Huevos", ordenes: 103, gmv: 7068, pct_sellup: 5.30, order: 2 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Gaseosas", ordenes: 105, gmv: 6114, pct_sellup: 4.58, order: 3 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Cervezas", ordenes: 53, gmv: 5701, pct_sellup: 4.27, order: 4 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Leche natural", ordenes: 70, gmv: 5562, pct_sellup: 4.17, order: 5 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Panaderia salada", ordenes: 62, gmv: 4516, pct_sellup: 3.38, order: 6 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Snacks salados", ordenes: 70, gmv: 4161, pct_sellup: 3.12, order: 7 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", subcategoria: "Yogurt", ordenes: 58, gmv: 3777, pct_sellup: 2.83, order: 8 },
   // PlayBoy 170426
   { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Otros licores", ordenes: 1, gmv: 716, pct_sellup: 9.16, order: 1 },
   { deal_id: "VIRAL_DEAL_PLAYBOY_170426", subcategoria: "Mezcales", ordenes: 1, gmv: 693, pct_sellup: 8.87, order: 2 },
@@ -4827,6 +4869,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 },
+  // Mimosas 180426
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 62, pct_deal: 7.95, order: 1 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 61, pct_deal: 7.82, order: 2 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 30, pct_deal: 3.85, order: 3 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 30, pct_deal: 3.85, order: 4 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "14375", name: "Limón Sin Semilla Malla", subcategoria: "Frutas", ordenes: 30, pct_deal: 3.85, order: 5 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 28, pct_deal: 3.59, order: 6 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 27, pct_deal: 3.46, order: 7 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "5672", name: "San Juan Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 26, pct_deal: 3.33, order: 8 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 25, pct_deal: 3.21, order: 9 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "5543", name: "Bachoco Huevo Blanco 18 Und", subcategoria: "Huevos", ordenes: 23, pct_deal: 2.95, order: 10 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 22, pct_deal: 2.82, order: 11 },
+  { deal_id: "VIRAL_DEAL_MIMOSAS_180426", sync: "10333", name: "Frambuesa", subcategoria: "Frutas", ordenes: 21, pct_deal: 2.69, order: 12 },
   // PlayBoy 170426
   { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "6744", name: "Coca-Cola Original Refresco Pet 600 mL", subcategoria: "Gaseosas", ordenes: 3, pct_deal: 4.05, order: 1 },
   { deal_id: "VIRAL_DEAL_PLAYBOY_170426", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 2, pct_deal: 2.70, order: 2 },
