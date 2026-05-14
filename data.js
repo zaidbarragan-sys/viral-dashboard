@@ -3672,8 +3672,28 @@ const POSTMORTEM_DEALS = [
   }
 
 
-
-
+  ,{
+    deal_id: "VIRAL_DEAL_FRUVER_120526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 87070, gmv_lw: 36230, gmv_dlw_pct: 140.3, gmv_l4w: 33944, gmv_dl4w_pct: 156.5,
+    usuarios_unicos: 1336, usr_lw: 776, usr_dlw_pct: 72.2, usr_l4w: 768.25, usr_dl4w_pct: 73.9,
+    cr_pct: null, aov: 51.07, aov_lw: 30.83, aov_dlw_pct: 65.6, aov_l4w: 30.79, aov_dl4w_pct: 65.8,
+    unidades_total: 7565, und_lw: 3827, und_dlw_pct: 97.7, und_l4w: 3757.5, und_dl4w_pct: 101.3,
+    ordenes_total: 1705, ord_lw: 1175, ord_dlw_pct: 45.1, ord_l4w: 1102.5, ord_dl4w_pct: 54.6,
+    impresiones_total: null,
+    so_turbo_mx: 5636924, gmv_categoria: 335831, gmv_cat_lw: 323876, gmv_cat_l4w: 268449,
+    share_deal_cat_pct: 25.93, share_lw_pct: 11.19, share_l4w_pct: 12.64,
+    gmv_basket: 556591, gmv_sellup: 469521, pct_sellup: 84.36,
+    aov_basket: 326.35, aov_deal_post: 51.07,
+    cross_ordenes: 1705, cross_skus_distintos: 411,
+    cross_top_producto: "Aguacate Para Hoy X3", cross_top_ordenes: 368, cross_top_pct: 21.58,
+    inv_oos_cierre_viral_avg: 3.5, inv_oos_post_avg: 3.2,
+    inv_cov_viral_ap_avg: 90.4, inv_cov_viral_ci_avg: 85.2,
+    inv_cov_post_avg: 85.0, inv_cov_bench_avg: 76.8,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  }
 
   ,{
     deal_id: "VIRAL_DEAL_GEPP_270426",
@@ -4148,6 +4168,11 @@ const POSTMORTEM_SKU_PERFORMANCE = [
 
 
 
+  // Fruver 120526
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "81993", name: "Plátano Chiapas", ordenes: 1364, usuarios: 1107, unidades: 5608, gmv: 30039, aov: 22.02, impresiones: null, cr_pct: null, gmv_dlw_pct: 66.4, gmv_dl4w_pct: 61.9, seg_nuevo: 575, seg_nuevo_pct: 36, seg_reactivado: 321, seg_reactivado_pct: 20, seg_retenido: 719, seg_retenido_pct: 45, stock_viral: 15324, stock_post: 8603, stock_bench: 2905, stock_delta_pct: 196.2, oos_cierre_viral: 0, oos_post: 1.5, cov_viral_ap: 71.1, cov_viral_ci: 71.1, cov_post: 67.4, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "76544", name: "Kiwi", ordenes: 358, usuarios: 260, unidades: 1149, gmv: 15468, aov: 43.21, impresiones: null, cr_pct: null, gmv_dlw_pct: 145.3, gmv_dl4w_pct: 155.0, seg_nuevo: 189, seg_nuevo_pct: 45, seg_reactivado: 83, seg_reactivado_pct: 20, seg_retenido: 149, seg_retenido_pct: 35, stock_viral: 2512, stock_post: 1284, stock_bench: 438, stock_delta_pct: 192.9, oos_cierre_viral: 2, oos_post: 2.8, cov_viral_ap: 100.0, cov_viral_ci: 95.4, cov_post: 93.1, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "12166", name: "Papaya Maradol", ordenes: 329, usuarios: 247, unidades: 414, gmv: 25234, aov: 76.70, impresiones: null, cr_pct: null, gmv_dlw_pct: 248.2, gmv_dl4w_pct: 339.6, seg_nuevo: 224, seg_nuevo_pct: 58, seg_reactivado: 60, seg_reactivado_pct: 15, seg_retenido: 105, seg_retenido_pct: 27, stock_viral: 1020, stock_post: 577, stock_bench: 145, stock_delta_pct: 299.1, oos_cierre_viral: 6, oos_post: 3.0, cov_viral_ap: 97.2, cov_viral_ci: 87.0, cov_post: 93.2, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "71570", name: "Piña Miel", ordenes: 279, usuarios: 182, unidades: 394, gmv: 16330, aov: 58.53, impresiones: null, cr_pct: null, gmv_dlw_pct: 252.9, gmv_dl4w_pct: 356.2, seg_nuevo: 176, seg_nuevo_pct: 57, seg_reactivado: 28, seg_reactivado_pct: 9, seg_retenido: 107, seg_retenido_pct: 34, stock_viral: 894, stock_post: 488, stock_bench: 132, stock_delta_pct: 270.6, oos_cierre_viral: 6, oos_post: 5.3, cov_viral_ap: 93.1, cov_viral_ci: 87.4, cov_post: 86.3, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
 
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "9248", name: "Ariel Detergente en Polvo Poder y Cuidado 750 g", ordenes: 282, usuarios: 183, unidades: 656, gmv: 18244, aov: 64.70, impresiones: 210, cr_pct: 87.14, gmv_dlw_pct: 1065.8, gmv_dl4w_pct: 1271.8, seg_nuevo: 130, seg_nuevo_pct: 46, seg_reactivado: 56, seg_reactivado_pct: 20, seg_retenido: 96, seg_retenido_pct: 34, stock_viral: 1706, stock_post: 1143, stock_bench: 1084, stock_delta_pct: 5.4, oos_cierre_viral: 65, oos_post: 57, cov_viral_ap: 52.4, cov_viral_ci: 20.7, cov_post: 25.0, canib_ord_post: 55, canib_ord_bench: 130.75, canib_ord_delta_pct: -57.9, canib_und_post: 108, canib_und_bench: 206.0, canib_und_delta_pct: -47.6, canib_cli_post: 55, canib_cli_bench: 115.25, canib_cli_delta_pct: -52.3 },
@@ -4550,11 +4575,17 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", subcategoria: "Helados", ordenes: 15, gmv: 2221, pct_sellup: 2.92, order: 8 },
 
 
+  // Fruver 120526
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Frutas", ordenes: 1135, gmv: 106267, pct_sellup: 22.63, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Huevos", ordenes: 280, gmv: 17445, pct_sellup: 3.72, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Leche natural", ordenes: 232, gmv: 16511, pct_sellup: 3.52, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Yogurt", ordenes: 230, gmv: 16193, pct_sellup: 3.45, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Verduras", ordenes: 407, gmv: 15508, pct_sellup: 3.30, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Gaseosas", ordenes: 245, gmv: 14125, pct_sellup: 3.01, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Agua Natural", ordenes: 236, gmv: 11765, pct_sellup: 2.51, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Panaderia salada", ordenes: 179, gmv: 11711, pct_sellup: 2.49, order: 8 },
 
 
-
-  // P&G 260426
-  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Cervezas", ordenes: 13, gmv: 2993, pct_sellup: 5.77, order: 1 },
   { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Papel higiénico", ordenes: 27, gmv: 2300, pct_sellup: 4.44, order: 2 },
   { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Suavizantes", ordenes: 35, gmv: 2055, pct_sellup: 3.96, order: 3 },
   { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Gaseosas", ordenes: 39, gmv: 1952, pct_sellup: 3.76, order: 4 },
@@ -5149,6 +5180,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "5962", name: "Ferrero Rocher 8 Pralinas 100g", subcategoria: "Chocolates", ordenes: 8, pct_deal: 0.68, order: 10 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "13475", name: "Kinder Bueno Galleta con Relleno Cremoso 43 Und", subcategoria: "Galletas", ordenes: 7, pct_deal: 0.60, order: 11 },
   { deal_id: "VIRAL_DEAL_FLORES_100526", sync: "14954", name: "Franui Frambuesas Cubiertas de Chocolate Oscuro y Blanco 150g", subcategoria: "Postres refrigerados", ordenes: 6, pct_deal: 0.51, order: 12 },
+  // Fruver 120526
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 368, pct_deal: 21.58, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 233, pct_deal: 13.67, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 184, pct_deal: 10.79, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "82057", name: "Pepino", subcategoria: "Frutas", ordenes: 181, pct_deal: 10.62, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "82060", name: "Zanahoria", subcategoria: "Frutas", ordenes: 177, pct_deal: 10.38, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "12456", name: "Fresas", subcategoria: "Frutas", ordenes: 136, pct_deal: 7.98, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "72931", name: "Mango Ataulfo", subcategoria: "Frutas", ordenes: 133, pct_deal: 7.80, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "82058", name: "Cebolla Blanca", subcategoria: "Frutas", ordenes: 132, pct_deal: 7.74, order: 8 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "5672", name: "Huevo blanco San Juan 12 ud.", subcategoria: "Huevos", ordenes: 119, pct_deal: 6.98, order: 9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 112, pct_deal: 6.57, order: 10 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 107, pct_deal: 6.28, order: 11 },
+  { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "82051", name: "Papa Blanca", subcategoria: "Frutas", ordenes: 104, pct_deal: 6.10, order: 12 },
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74098", name: "Pan Blanco Bimbo 620g", subcategoria: "Panaderia salada", ordenes: 15, pct_deal: 4.41, order: 1 },
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "75953", name: "Suavitel Suavizante Fresca Primavera 740 ml", subcategoria: "Suavizantes", ordenes: 12, pct_deal: 3.53, order: 2 },
