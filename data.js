@@ -3693,8 +3693,28 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
     canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
     canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  }  ,{
+    deal_id: "VIRAL_DEAL_BIRDMAN_130526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 233790, gmv_lw: 9363, gmv_dlw_pct: 2396.9, gmv_l4w: 14219, gmv_dl4w_pct: 1544.2,
+    usuarios_unicos: 234, usr_lw: 1, usr_dlw_pct: null, usr_l4w: null, usr_dl4w_pct: null,
+    cr_pct: null, aov: 530.14, aov_lw: 425.60, aov_dlw_pct: 24.6, aov_l4w: null, aov_dl4w_pct: null,
+    unidades_total: 590, und_lw: 27, und_dlw_pct: 2085.2, und_l4w: null, und_dl4w_pct: null,
+    ordenes_total: 441, ord_lw: 22, ord_dlw_pct: 1904.5, ord_l4w: 39.25, ord_dl4w_pct: 1023.6,
+    impresiones_total: null,
+    so_turbo_mx: 5378690, gmv_categoria: 243986, gmv_cat_lw: 20071, gmv_cat_l4w: 85435,
+    share_deal_cat_pct: 95.82, share_lw_pct: 46.67, share_l4w_pct: 16.64,
+    gmv_basket: 245967, gmv_sellup: 12177, pct_sellup: 4.95,
+    aov_basket: 557.75, aov_deal_post: 530.14,
+    cross_ordenes: 441, cross_skus_distintos: 198,
+    cross_top_producto: "Panini Sobre con 7 Estampas Fifa World Cup 2026", cross_top_ordenes: 10, cross_top_pct: 2.27,
+    inv_oos_cierre_viral_avg: 27, inv_oos_post_avg: 16.0,
+    inv_cov_viral_ap_avg: 85.7, inv_cov_viral_ci_avg: 51.8,
+    inv_cov_post_avg: 55.3, inv_cov_bench_avg: 55.1,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
-
   ,{
     deal_id: "VIRAL_DEAL_GEPP_270426",
     post_days: 4, fase: 2,
@@ -4173,7 +4193,8 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "76544", name: "Kiwi", ordenes: 358, usuarios: 260, unidades: 1149, gmv: 15468, aov: 43.21, impresiones: 3428, cr_pct: 7.58, gmv_dlw_pct: 145.3, gmv_dl4w_pct: 155.0, seg_nuevo: 189, seg_nuevo_pct: 45, seg_reactivado: 83, seg_reactivado_pct: 20, seg_retenido: 149, seg_retenido_pct: 35, stock_viral: 2512, stock_post: 1284, stock_bench: 438, stock_delta_pct: 192.9, oos_cierre_viral: 2, oos_post: 2.8, cov_viral_ap: 100.0, cov_viral_ci: 95.4, cov_post: 93.1, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "12166", name: "Papaya Maradol", ordenes: 329, usuarios: 247, unidades: 414, gmv: 25234, aov: 76.70, impresiones: 2458, cr_pct: 10.05, gmv_dlw_pct: 248.2, gmv_dl4w_pct: 339.6, seg_nuevo: 224, seg_nuevo_pct: 58, seg_reactivado: 60, seg_reactivado_pct: 15, seg_retenido: 105, seg_retenido_pct: 27, stock_viral: 1020, stock_post: 577, stock_bench: 145, stock_delta_pct: 299.1, oos_cierre_viral: 6, oos_post: 3.0, cov_viral_ap: 97.2, cov_viral_ci: 87.0, cov_post: 93.2, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "71570", name: "Piña Miel", ordenes: 279, usuarios: 182, unidades: 394, gmv: 16330, aov: 58.53, impresiones: 1887, cr_pct: 9.65, gmv_dlw_pct: 252.9, gmv_dl4w_pct: 356.2, seg_nuevo: 176, seg_nuevo_pct: 57, seg_reactivado: 28, seg_reactivado_pct: 9, seg_retenido: 107, seg_retenido_pct: 34, stock_viral: 894, stock_post: 488, stock_bench: 132, stock_delta_pct: 270.6, oos_cierre_viral: 6, oos_post: 5.3, cov_viral_ap: 93.1, cov_viral_ci: 87.4, cov_post: 86.3, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
-
+  // Birdman 130526
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "83710", name: "Birdman Creatina Monohidratada en Polvo 450 g", ordenes: 441, usuarios: 234, unidades: 590, gmv: 233790, aov: 530.14, impresiones: null, cr_pct: null, gmv_dlw_pct: 2396.9, gmv_dl4w_pct: 1544.2, seg_nuevo: 319, seg_nuevo_pct: 64, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 181, seg_retenido_pct: 36, stock_viral: 1183, stock_post: 608, stock_bench: 410, stock_delta_pct: 48.3, oos_cierre_viral: 27, oos_post: 16.0, cov_viral_ap: 85.7, cov_viral_ci: 51.8, cov_post: 55.3, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "9248", name: "Ariel Detergente en Polvo Poder y Cuidado 750 g", ordenes: 282, usuarios: 183, unidades: 656, gmv: 18244, aov: 64.70, impresiones: 210, cr_pct: 87.14, gmv_dlw_pct: 1065.8, gmv_dl4w_pct: 1271.8, seg_nuevo: 130, seg_nuevo_pct: 46, seg_reactivado: 56, seg_reactivado_pct: 20, seg_retenido: 96, seg_retenido_pct: 34, stock_viral: 1706, stock_post: 1143, stock_bench: 1084, stock_delta_pct: 5.4, oos_cierre_viral: 65, oos_post: 57, cov_viral_ap: 52.4, cov_viral_ci: 20.7, cov_post: 25.0, canib_ord_post: 55, canib_ord_bench: 130.75, canib_ord_delta_pct: -57.9, canib_und_post: 108, canib_und_bench: 206.0, canib_und_delta_pct: -47.6, canib_cli_post: 55, canib_cli_bench: 115.25, canib_cli_delta_pct: -52.3 },
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "85712", name: "Ariel Detergente en Polvo Poder y Cuidado 3.7 Kg", ordenes: 49, usuarios: 33, unidades: 68, gmv: 10438, aov: 213.02, impresiones: 139, cr_pct: 23.74, gmv_dlw_pct: 3101.4, gmv_dl4w_pct: 3101.4, seg_nuevo: 35, seg_nuevo_pct: 71, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 14, seg_retenido_pct: 29, stock_viral: 120, stock_post: 51, stock_bench: 83, stock_delta_pct: -38.6, oos_cierre_viral: 28, oos_post: 29, cov_viral_ap: 75.7, cov_viral_ci: 24.3, cov_post: 29.4, canib_ord_post: 5, canib_ord_bench: 4.5, canib_ord_delta_pct: 11.1, canib_und_post: 7, canib_und_bench: 4.75, canib_und_delta_pct: 47.4, canib_cli_post: 6, canib_cli_bench: 3.25, canib_cli_delta_pct: 84.6 },
@@ -4584,8 +4605,18 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Gaseosas", ordenes: 245, gmv: 14125, pct_sellup: 3.01, order: 6 },
   { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Agua Natural", ordenes: 236, gmv: 11765, pct_sellup: 2.51, order: 7 },
   { deal_id: "VIRAL_DEAL_FRUVER_120526", subcategoria: "Panaderia salada", ordenes: 179, gmv: 11711, pct_sellup: 2.49, order: 8 },
+  // Birdman 130526
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Deportes", ordenes: 1, gmv: 2500, pct_sellup: 20.53, order: 1 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Otros Bienestar y Ocio", ordenes: 13, gmv: 1616, pct_sellup: 13.27, order: 2 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Snacks salados", ordenes: 9, gmv: 704, pct_sellup: 5.78, order: 3 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Gaseosas", ordenes: 12, gmv: 684, pct_sellup: 5.62, order: 4 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Frutas", ordenes: 13, gmv: 564, pct_sellup: 4.63, order: 5 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Suplementos alimenticios", ordenes: 1, gmv: 504, pct_sellup: 4.14, order: 6 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Shampoo", ordenes: 2, gmv: 439, pct_sellup: 3.61, order: 7 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Leche natural", ordenes: 2, gmv: 313, pct_sellup: 2.57, order: 8 },
 
-
+  // P&G 260426
+  { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Cervezas", ordenes: 13, gmv: 2993, pct_sellup: 5.77, order: 1 },
   { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Papel higiénico", ordenes: 27, gmv: 2300, pct_sellup: 4.44, order: 2 },
   { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Suavizantes", ordenes: 35, gmv: 2055, pct_sellup: 3.96, order: 3 },
   { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Gaseosas", ordenes: 39, gmv: 1952, pct_sellup: 3.76, order: 4 },
@@ -5193,6 +5224,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 112, pct_deal: 6.57, order: 10 },
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 107, pct_deal: 6.28, order: 11 },
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "82051", name: "Papa Blanca", subcategoria: "Frutas", ordenes: 104, pct_deal: 6.10, order: 12 },
+  // Birdman 130526
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "91927", name: "Panini Sobre con 7 Estampas Fifa World Cup 2026", subcategoria: "Otros Bienestar y Ocio", ordenes: 10, pct_deal: 2.27, order: 1 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 6, pct_deal: 1.36, order: 2 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "14693", name: "Aguacate Para Hoy X3", subcategoria: "Frutas", ordenes: 5, pct_deal: 1.13, order: 3 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "6826", name: "Susalia Susalitas Nacho 200 g", subcategoria: "Snacks salados", ordenes: 3, pct_deal: 0.68, order: 4 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "91953", name: "Panini 10 Sobres Mundial Fifa World Cup 2026", subcategoria: "Otros Bienestar y Ocio", ordenes: 3, pct_deal: 0.68, order: 5 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "4692", name: "Susalia Susalitas Flama 200 g", subcategoria: "Snacks salados", ordenes: 2, pct_deal: 0.45, order: 6 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 2, pct_deal: 0.45, order: 7 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "71682", name: "Del Valle Néctar de Mango 946 mL", subcategoria: "Néctares", ordenes: 2, pct_deal: 0.45, order: 8 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "82998", name: "Nopal Picado 400 g", subcategoria: "Verduras", ordenes: 2, pct_deal: 0.45, order: 9 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "81296", name: "Galletas Sanissimo De Arroz Quinoa 112 g", subcategoria: "Galletas", ordenes: 2, pct_deal: 0.45, order: 10 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "10198", name: "Tomate Cherry", subcategoria: "Verduras", ordenes: 2, pct_deal: 0.45, order: 11 },
+  { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "7723", name: "Coca-Cola Light Refresco 2 L", subcategoria: "Gaseosas", ordenes: 2, pct_deal: 0.45, order: 12 },
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74098", name: "Pan Blanco Bimbo 620g", subcategoria: "Panaderia salada", ordenes: 15, pct_deal: 4.41, order: 1 },
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "75953", name: "Suavitel Suavizante Fresca Primavera 740 ml", subcategoria: "Suavizantes", ordenes: 12, pct_deal: 3.53, order: 2 },
