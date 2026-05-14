@@ -1521,6 +1521,7 @@
       document.getElementById('indice-kpis').innerHTML = `
         <div class="section-title" style="margin-bottom:4px;grid-column:1/-1">${calLabel}${mtdSuffix}</div>
         <div class="kpi-card"><div class="label">GMV Total</div><div class="value">${gmvTotal >= 1000000 ? '$' + (gmvTotal/1000000).toFixed(2) + 'M' : '$' + (gmvTotal/1000).toFixed(0) + 'k'}</div></div>
+        <div class="kpi-card"><div class="label">Inversión Makers</div><div class="value">${totalBudgetMaker >= 1000000 ? '$' + (totalBudgetMaker/1000000).toFixed(2) + 'M' : '$' + (totalBudgetMaker/1000).toFixed(0) + 'k'}</div></div>
         <div class="kpi-card"><div class="label">Deals Ejecutados</div><div class="value">${calDeals.length} / ${totalPlanned}</div></div>
         <div class="kpi-card"><div class="label">Órdenes Totales</div><div class="value">${ordenesTotal.toLocaleString()}</div></div>
         <div class="kpi-card"><div class="label">Usuarios Únicos</div><div class="value">${usuariosTotal.toLocaleString()}</div></div>`;
