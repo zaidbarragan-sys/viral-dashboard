@@ -533,7 +533,7 @@ const PREVIRAL_DEALS = [
     categoria_display: "Suero"
   },
   {
-    deal_id: "VIRAL_DEAL_HERSHEYS_300626",
+    deal_id: "VIRAL_DEAL_HERSHEYS_290626",
     maker_name: "The Hershey Company",
     maker_aux: "Hersheys",
     business_unit: "Foods",
@@ -542,7 +542,7 @@ const PREVIRAL_DEALS = [
     tipo_viral: "forecast",
     ciudades: "—",
     fecha_planeacion: "2026-05-18",
-    fecha_ejecucion: "2026-06-30",
+    fecha_ejecucion: "2026-06-29",
     fecha_fin: null,
     usd_mxn: 17.25,
     fecha_tasa: "2026-05-18",
