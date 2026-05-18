@@ -896,27 +896,27 @@ const PREVIRAL_DEALS = [
 
   {
     deal_id: "VIRAL_DEAL_HOLANDA_230626",
-    maker_name: "Holanda",
+    maker_name: "Unilever",
     maker_aux: "Holanda",
     business_unit: "Foods",
-    descuento_pct: 0,
-    incrementalidad: 0,
-    tipo_viral: "forecast",
-    ciudades: "—",
-    fecha_planeacion: "2026-05-11",
+    descuento_pct: 50,
+    incrementalidad: 10,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-18",
     fecha_ejecucion: "2026-06-23",
     fecha_fin: null,
-    usd_mxn: 17.22,
-    fecha_tasa: "2026-05-11",
-    budget_maker_mxn: 0,
-    budget_growth_mxn: 0,
-    budget_total_mxn: 0,
-    budget_maker_usd: 0,
-    budget_growth_usd: 0,
-    budget_total_usd: 0,
-    financiamiento_maker: "—",
-    pct_growth_vs_maker: 0,
-    categoria_display: "Por definir"
+    usd_mxn: 17.27,
+    fecha_tasa: "2026-05-18",
+    budget_maker_mxn: 40000,
+    budget_growth_mxn: 12000,
+    budget_total_mxn: 52000,
+    budget_maker_usd: 2316.16,
+    budget_growth_usd: 694.85,
+    budget_total_usd: 3011.00,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Helados, Postres"
   },
   {
     deal_id: "VIRAL_DEAL_BACHOCO_020526",
@@ -2638,7 +2638,11 @@ const PREVIRAL_SKU_DETAIL = [
   // Modelo
   { deal_id: "VIRAL_DEAL_MODELO_050626", sync: "13692", ean: "7501064196263", pid: "2115901721", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", h_units: 376.5, h_orders: 260.6, avg_price: 147.69, ex_incr_units: 2259, ex_incr_orders: 1564, ex_budget_mxn: 200179, ex_budget_usd: 11620.07, real_units: 1458, final_budget_mxn: 129199, final_budget_usd: 7499.80, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_MODELO_050626", sync: "79834", ean: "220000093859", pid: "2114998282", name: "Pack Cerveza Corona Clara Lata 4 x 473 mL", subcategoria: "Cervezas", h_units: 44.3, h_orders: 23.7, avg_price: 93.64, ex_incr_units: 266, ex_incr_orders: 142, ex_budget_mxn: 14945, ex_budget_usd: 867.53, real_units: 271, final_budget_mxn: 15226, final_budget_usd: 883.85, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_MODELO_050626", sync: "79836", ean: "220000094504", pid: "2114998286", name: "Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", h_units: 33.6, h_orders: 22.2, avg_price: 120.51, ex_incr_units: 202, ex_incr_orders: 133, ex_budget_mxn: 14606, ex_budget_usd: 847.86, real_units: 160, final_budget_mxn: 11569, final_budget_usd: 671.56, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_MODELO_050626", sync: "79836", ean: "220000094504", pid: "2114998286", name: "Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", h_units: 33.6, h_orders: 22.2, avg_price: 120.51, ex_incr_units: 202, ex_incr_orders: 133, ex_budget_mxn: 14606, ex_budget_usd: 847.86, real_units: 160, final_budget_mxn: 11569, final_budget_usd: 671.56, sku_order: 3 },
+  // Holanda 23-jun
+  { deal_id: "VIRAL_DEAL_HOLANDA_230626", sync: "76053", ean: "7506306417854", pid: "2115850210", name: "Holanda Helado de Vainilla 900 ml - Holanda - 900 mL", subcategoria: "Helados", h_units: 20.9, h_orders: 18.4, avg_price: 74.99, ex_incr_units: 209, ex_incr_orders: 184, ex_budget_mxn: 7837, ex_budget_usd: 453.77, real_units: 860, final_budget_mxn: 32246, final_budget_usd: 1867.54, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_230626", sync: "8244", ean: "8711327446045", pid: "2115775304", name: "Viennetta Cappuccino", subcategoria: "Postres", h_units: 10.9, h_orders: 10.0, avg_price: 147.25, ex_incr_units: 109, ex_incr_orders: 100, ex_budget_mxn: 8025, ex_budget_usd: 464.68, real_units: 228, final_budget_mxn: 16786, final_budget_usd: 972.03, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_HOLANDA_230626", sync: "79518", ean: "7506306418455", pid: "2114975812", name: "HELADO HOLANDA CHOCOLATE NETFLIX - Holanda - 900 mL", subcategoria: "Helados", h_units: 1.9, h_orders: 1.9, avg_price: 118.34, ex_incr_units: 19, ex_incr_orders: 19, ex_budget_mxn: 1124, ex_budget_usd: 65.09, real_units: 50, final_budget_mxn: 2958, final_budget_usd: 171.28, sku_order: 3 }
 
 
 
