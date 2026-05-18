@@ -971,7 +971,8 @@
               <th class="sortable" data-col="sync">Sync &#x25B4;&#x25BE;</th>
               <th class="sortable" data-col="viral">Viral &#x25B4;&#x25BE;</th>
               <th class="sortable" data-col="ciudad">Ciudad &#x25B4;&#x25BE;</th>
-              <th class="sortable" data-col="budget">Budget (MXN) &#x25B4;&#x25BE;</th>
+              <th class="sortable" data-col="budget_maker">Budget Maker &#x25B4;&#x25BE;</th>
+              <th class="sortable" data-col="budget_growth">Budget Growth &#x25B4;&#x25BE;</th>
               <th class="sortable" data-col="fecha">Fecha &#x25B4;&#x25BE;</th>
               <th class="sortable" data-col="status">Status &#x25B4;&#x25BE;</th>
             </tr>
@@ -1927,7 +1928,8 @@
           sync: sku.sync,
           viral: deal ? deal.maker_aux : sku.deal_id,
           ciudad: deal ? deal.ciudades : '—',
-          budget: sku.final_budget_mxn || 0,
+          budget_maker: deal ? deal.budget_maker_mxn : 0,
+          budget_growth: deal ? deal.budget_growth_mxn : 0,
           fecha: deal ? deal.fecha_ejecucion : '—',
           status: post ? 'Ejecutado' : 'Pendiente',
           deal_id: sku.deal_id
@@ -1950,7 +1952,7 @@
       rows.sort((a, b) => {
         let valA = a[catalogoSortCol];
         let valB = b[catalogoSortCol];
-        if (catalogoSortCol === 'budget') {
+        if (catalogoSortCol === 'budget_maker' || catalogoSortCol === 'budget_growth') {
           return catalogoSortAsc ? valA - valB : valB - valA;
         }
         valA = String(valA).toLowerCase();
@@ -1967,7 +1969,8 @@
           <td>${r.sync}</td>
           <td>${r.viral}</td>
           <td>${r.ciudad}</td>
-          <td>${fmtMXN(r.budget)}</td>
+          <td>${fmtMXN(r.budget_maker)}</td>
+          <td>${fmtMXN(r.budget_growth)}</td>
           <td>${r.fecha}</td>
           <td><span class="badge ${r.status === 'Ejecutado' ? 'badge-green' : 'badge-gray'}">${r.status}</span></td>
         </tr>
@@ -1989,7 +1992,7 @@
       const trs = tbody.querySelectorAll('tr');
       if (!trs.length) return;
 
-      const headers = ['Nombre', 'Sync', 'Viral', 'Ciudad', 'Budget (MXN)', 'Fecha', 'Status'];
+      const headers = ['Nombre', 'Sync', 'Viral', 'Ciudad', 'Budget Maker (MXN)', 'Budget Growth (MXN)', 'Fecha', 'Status'];
       const csvRows = [headers.join(',')];
 
       trs.forEach(tr => {
