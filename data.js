@@ -844,30 +844,7 @@ const PREVIRAL_DEALS = [
     pct_growth_vs_maker: 30,
     categoria_display: "Mezcales"
   },
-  {
-    deal_id: "VIRAL_DEAL_MINERVA_180626",
-    maker_name: "Minerva",
-    maker_aux: "Artesanales",
-    business_unit: "Drinks",
-    descuento_pct: 0,
-    incrementalidad: 0,
-    tipo_viral: "forecast",
-    ciudades: "—",
-    fecha_planeacion: "2026-05-06",
-    fecha_ejecucion: "2026-06-18",
-    fecha_fin: null,
-    usd_mxn: 17.25,
-    fecha_tasa: "2026-05-06",
-    budget_maker_mxn: 0,
-    budget_growth_mxn: 0,
-    budget_total_mxn: 0,
-    budget_maker_usd: 0,
-    budget_growth_usd: 0,
-    budget_total_usd: 0,
-    financiamiento_maker: "—",
-    pct_growth_vs_maker: 0,
-    categoria_display: "Por definir"
-  },
+
   {
     deal_id: "VIRAL_DEAL_RTDS_190626",
     maker_name: "RTDs",
@@ -916,30 +893,7 @@ const PREVIRAL_DEALS = [
     pct_growth_vs_maker: 0,
     categoria_display: "Por definir"
   },
-  {
-    deal_id: "VIRAL_DEAL_HOLANDA_090626",
-    maker_name: "Holanda",
-    maker_aux: "Holanda",
-    business_unit: "Foods",
-    descuento_pct: 0,
-    incrementalidad: 0,
-    tipo_viral: "forecast",
-    ciudades: "—",
-    fecha_planeacion: "2026-05-11",
-    fecha_ejecucion: "2026-06-09",
-    fecha_fin: null,
-    usd_mxn: 17.22,
-    fecha_tasa: "2026-05-11",
-    budget_maker_mxn: 0,
-    budget_growth_mxn: 0,
-    budget_total_mxn: 0,
-    budget_maker_usd: 0,
-    budget_growth_usd: 0,
-    budget_total_usd: 0,
-    financiamiento_maker: "—",
-    pct_growth_vs_maker: 0,
-    categoria_display: "Por definir"
-  },
+
   {
     deal_id: "VIRAL_DEAL_HOLANDA_230626",
     maker_name: "Holanda",
