@@ -3940,6 +3940,28 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: 65, canib_ord_bench: 139.25, canib_ord_delta_pct: -53.3,
     canib_und_post: 123, canib_und_bench: 217.25, canib_und_delta_pct: -43.4,
     canib_cli_post: 69, canib_cli_bench: 123.25, canib_cli_delta_pct: -44.0
+  },
+  {
+    deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 52255, gmv_lw: 717, gmv_dlw_pct: 7188.2, gmv_l4w: 1493, gmv_dl4w_pct: 3398.9,
+    usuarios_unicos: 212, usr_lw: 4, usr_dlw_pct: 5200.0, usr_l4w: 4.50, usr_dl4w_pct: 4611.1,
+    cr_pct: 1.56, aov: 209.86, aov_lw: 143.40, aov_dlw_pct: 46.3, aov_l4w: 145.70, aov_dl4w_pct: 44.0,
+    unidades_total: 1048, und_lw: 15, und_dlw_pct: 6886.7, und_l4w: 29.50, und_dl4w_pct: 3452.5,
+    ordenes_total: 249, ord_lw: 5, ord_dlw_pct: 4880.0, ord_l4w: 10.25, ord_dl4w_pct: 2329.3,
+    impresiones_total: 13552,
+    so_turbo_mx: 6477117, gmv_categoria: 694574, gmv_cat_lw: 588764, gmv_cat_l4w: 679858,
+    share_deal_cat_pct: 7.52, share_lw_pct: 0.12, share_l4w_pct: 0.22,
+    gmv_basket: 92294, gmv_sellup: 40039, pct_sellup: 43.38,
+    aov_basket: 370.66, aov_deal_post: 209.86,
+    cross_ordenes: 249, cross_skus_distintos: 356,
+    cross_top_producto: "Huggies Toallita Húmeda Cuidado Relajante 80 Und", cross_top_ordenes: 19, cross_top_pct: 7.63,
+    inv_oos_cierre_viral_avg: 12, inv_oos_post_avg: 10.4,
+    inv_cov_viral_ap_avg: 92.0, inv_cov_viral_ci_avg: 75.8,
+    inv_cov_post_avg: 79.4, inv_cov_bench_avg: 82.4,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
 ];
 
@@ -4197,6 +4219,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_FRUVER_120526", sync: "71570", name: "Piña Miel", ordenes: 279, usuarios: 182, unidades: 394, gmv: 16330, aov: 58.53, impresiones: 1887, cr_pct: 9.65, gmv_dlw_pct: 252.9, gmv_dl4w_pct: 356.2, seg_nuevo: 176, seg_nuevo_pct: 57, seg_reactivado: 28, seg_reactivado_pct: 9, seg_retenido: 107, seg_retenido_pct: 34, stock_viral: 894, stock_post: 488, stock_bench: 132, stock_delta_pct: 270.6, oos_cierre_viral: 6, oos_post: 5.3, cov_viral_ap: 93.1, cov_viral_ci: 87.4, cov_post: 86.3, canib_ord_post: 203, canib_ord_bench: 151.50, canib_ord_delta_pct: 34.0, canib_und_post: 245, canib_und_bench: 193.25, canib_und_delta_pct: 26.8, canib_cli_post: 167, canib_cli_bench: 135.00, canib_cli_delta_pct: 23.7 },
   // Birdman 130526
   { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "83710", name: "Birdman Creatina Monohidratada en Polvo 450 g", ordenes: 441, usuarios: 234, unidades: 590, gmv: 233790, aov: 530.14, impresiones: 3655, cr_pct: 6.40, gmv_dlw_pct: 2396.9, gmv_dl4w_pct: 1544.2, seg_nuevo: 319, seg_nuevo_pct: 64, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 181, seg_retenido_pct: 36, stock_viral: 1183, stock_post: 608, stock_bench: 410, stock_delta_pct: 48.3, oos_cierre_viral: 27, oos_post: 16.0, cov_viral_ap: 85.7, cov_viral_ci: 51.8, cov_post: 55.3, canib_ord_post: 42, canib_ord_bench: 116.00, canib_ord_delta_pct: -63.8, canib_und_post: 54, canib_und_bench: 153.25, canib_und_delta_pct: -64.8, canib_cli_post: 14, canib_cli_bench: 26.50, canib_cli_delta_pct: -47.2 },
+  // Cerveza Charro 150526
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86364", name: "Cerveza Charro Ultra Botella 355 mL", ordenes: 154, usuarios: 134, unidades: 361, gmv: 18071, aov: 117.34, impresiones: 4103, cr_pct: 3.27, gmv_dlw_pct: null, gmv_dl4w_pct: 1633.0, seg_nuevo: 123, seg_nuevo_pct: 86, seg_reactivado: 6, seg_reactivado_pct: 4, seg_retenido: 5, seg_retenido_pct: 10, stock_viral: 1400, stock_post: 1010, stock_bench: 1027, stock_delta_pct: -1.7, oos_cierre_viral: 7, oos_post: 7.0, cov_viral_ap: 94.1, cov_viral_ci: 86.3, cov_post: 86.3, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86363", name: "Cerveza Charro Pilsner Botella 355 mL", ordenes: 171, usuarios: 160, unidades: 369, gmv: 18513, aov: 108.26, impresiones: 5183, cr_pct: 3.09, gmv_dlw_pct: 2688.9, gmv_dl4w_pct: 4003.5, seg_nuevo: 150, seg_nuevo_pct: 94, seg_reactivado: 8, seg_reactivado_pct: 5, seg_retenido: 2, seg_retenido_pct: 1, stock_viral: 1345, stock_post: 998, stock_bench: 788, stock_delta_pct: 26.6, oos_cierre_viral: 13, oos_post: 10.3, cov_viral_ap: 92.2, cov_viral_ci: 74.5, cov_post: 79.9, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "86362", name: "Cerveza Charro Ámbar Botella 355 mL", ordenes: 153, usuarios: 132, unidades: 318, gmv: 15671, aov: 102.42, impresiones: 4266, cr_pct: 3.09, gmv_dlw_pct: 29362.5, gmv_dl4w_pct: 5921.1, seg_nuevo: 124, seg_nuevo_pct: 86, seg_reactivado: 6, seg_reactivado_pct: 4, seg_retenido: 16, seg_retenido_pct: 10, stock_viral: 898, stock_post: 599, stock_bench: 643, stock_delta_pct: -6.8, oos_cierre_viral: 16, oos_post: 14.0, cov_viral_ap: 89.6, cov_viral_ci: 66.7, cov_post: 72.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "9248", name: "Ariel Detergente en Polvo Poder y Cuidado 750 g", ordenes: 282, usuarios: 183, unidades: 656, gmv: 18244, aov: 64.70, impresiones: 210, cr_pct: 87.14, gmv_dlw_pct: 1065.8, gmv_dl4w_pct: 1271.8, seg_nuevo: 130, seg_nuevo_pct: 46, seg_reactivado: 56, seg_reactivado_pct: 20, seg_retenido: 96, seg_retenido_pct: 34, stock_viral: 1706, stock_post: 1143, stock_bench: 1084, stock_delta_pct: 5.4, oos_cierre_viral: 65, oos_post: 57, cov_viral_ap: 52.4, cov_viral_ci: 20.7, cov_post: 25.0, canib_ord_post: 55, canib_ord_bench: 130.75, canib_ord_delta_pct: -57.9, canib_und_post: 108, canib_und_bench: 206.0, canib_und_delta_pct: -47.6, canib_cli_post: 55, canib_cli_bench: 115.25, canib_cli_delta_pct: -52.3 },
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "85712", name: "Ariel Detergente en Polvo Poder y Cuidado 3.7 Kg", ordenes: 49, usuarios: 33, unidades: 68, gmv: 10438, aov: 213.02, impresiones: 139, cr_pct: 23.74, gmv_dlw_pct: 3101.4, gmv_dl4w_pct: 3101.4, seg_nuevo: 35, seg_nuevo_pct: 71, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 14, seg_retenido_pct: 29, stock_viral: 120, stock_post: 51, stock_bench: 83, stock_delta_pct: -38.6, oos_cierre_viral: 28, oos_post: 29, cov_viral_ap: 75.7, cov_viral_ci: 24.3, cov_post: 29.4, canib_ord_post: 5, canib_ord_bench: 4.5, canib_ord_delta_pct: 11.1, canib_und_post: 7, canib_und_bench: 4.75, canib_und_delta_pct: 47.4, canib_cli_post: 6, canib_cli_bench: 3.25, canib_cli_delta_pct: 84.6 },
@@ -4616,6 +4642,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Suplementos alimenticios", ordenes: 1, gmv: 504, pct_sellup: 4.14, order: 6 },
   { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Shampoo", ordenes: 2, gmv: 439, pct_sellup: 3.61, order: 7 },
   { deal_id: "VIRAL_DEAL_BIRDMAN_130526", subcategoria: "Leche natural", ordenes: 2, gmv: 313, pct_sellup: 2.57, order: 8 },
+
+  // Cerveza Charro 150526
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", subcategoria: "Cervezas", ordenes: 74, gmv: 11086, pct_sellup: 12.01, order: 1 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", subcategoria: "Toallitas humedas", ordenes: 25, gmv: 3005, pct_sellup: 3.26, order: 2 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", subcategoria: "Snacks salados", ordenes: 39, gmv: 2821, pct_sellup: 3.06, order: 3 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", subcategoria: "Tequilas", ordenes: 3, gmv: 1650, pct_sellup: 1.79, order: 4 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", subcategoria: "Gaseosas", ordenes: 29, gmv: 1518, pct_sellup: 1.64, order: 5 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", subcategoria: "Mezcales", ordenes: 3, gmv: 1351, pct_sellup: 1.46, order: 6 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", subcategoria: "Frutas", ordenes: 25, gmv: 1218, pct_sellup: 1.32, order: 7 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", subcategoria: "Frutos secos y semillas", ordenes: 20, gmv: 1100, pct_sellup: 1.19, order: 8 },
 
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Cervezas", ordenes: 13, gmv: 2993, pct_sellup: 5.77, order: 1 },
@@ -5239,6 +5275,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "81296", name: "Galletas Sanissimo De Arroz Quinoa 112 g", subcategoria: "Galletas", ordenes: 2, pct_deal: 0.45, order: 10 },
   { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "10198", name: "Tomate Cherry", subcategoria: "Verduras", ordenes: 2, pct_deal: 0.45, order: 11 },
   { deal_id: "VIRAL_DEAL_BIRDMAN_130526", sync: "7723", name: "Coca-Cola Light Refresco 2 L", subcategoria: "Gaseosas", ordenes: 2, pct_deal: 0.45, order: 12 },
+  // Cerveza Charro 150526
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "8511", name: "Huggies Toallita Húmeda Cuidado Relajante 80 Und", subcategoria: "Toallitas humedas", ordenes: 19, pct_deal: 7.63, order: 1 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "10335", name: "Huggies Toalla Húmeda Supreme 80 Und", subcategoria: "Toallitas humedas", ordenes: 15, pct_deal: 6.02, order: 2 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "5314", name: "Pack Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", ordenes: 14, pct_deal: 5.62, order: 3 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "5858", name: "Huggies Toallita Húmeda Cuidado Hidratante 80 Und", subcategoria: "Toallitas humedas", ordenes: 12, pct_deal: 4.82, order: 4 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "4939", name: "Cerveza Corona Extra Latón 710 mL", subcategoria: "Cervezas", ordenes: 10, pct_deal: 4.02, order: 5 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "13692", name: "Pack Cerveza Clara Modelo Especial 6 x 355 mL", subcategoria: "Cervezas", ordenes: 9, pct_deal: 3.61, order: 6 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 7, pct_deal: 2.81, order: 7 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "15322", name: "Hot Nuts Cacahuates Original 100 g", subcategoria: "Frutos secos y semillas", ordenes: 7, pct_deal: 2.81, order: 8 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "14539", name: "Cerveza Michelob Ultra Light Latón 710 mL", subcategoria: "Cervezas", ordenes: 6, pct_deal: 2.41, order: 9 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "9012", name: "Pack Cerveza Negra Modelo Botella 6 x 355 mL", subcategoria: "Cervezas", ordenes: 5, pct_deal: 2.01, order: 10 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "6529", name: "Peñafiel Bebida Agua Mineral 2 L", subcategoria: "Agua Natural", ordenes: 5, pct_deal: 2.01, order: 11 },
+  { deal_id: "VIRAL_DEAL_CERVEZACHARRO_150526", sync: "91927", name: "Panini Sobre con 7 Estampas Fifa World Cup 2026 1 Und", subcategoria: "Otros Bienestar y Ocio", ordenes: 5, pct_deal: 2.01, order: 12 },
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74098", name: "Pan Blanco Bimbo 620g", subcategoria: "Panaderia salada", ordenes: 15, pct_deal: 4.41, order: 1 },
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "75953", name: "Suavitel Suavizante Fresca Primavera 740 ml", subcategoria: "Suavizantes", ordenes: 12, pct_deal: 3.53, order: 2 },
