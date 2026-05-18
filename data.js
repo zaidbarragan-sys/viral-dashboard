@@ -3984,6 +3984,28 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
     canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
     canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  },
+  {
+    deal_id: "VIRAL_DEAL_BLN_160526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 139686, gmv_lw: 7294, gmv_dlw_pct: 1815.1, gmv_l4w: 8566, gmv_dl4w_pct: 1530.7,
+    usuarios_unicos: 279, usr_lw: 8, usr_dlw_pct: 3387.5, usr_l4w: 8.50, usr_dl4w_pct: 3182.4,
+    cr_pct: null, aov: 437.89, aov_lw: 429.06, aov_dlw_pct: 2.1, aov_l4w: 417.85, aov_dl4w_pct: 4.8,
+    unidades_total: 402, und_lw: 18, und_dlw_pct: 2133.3, und_l4w: 20.75, und_dl4w_pct: 1837.3,
+    ordenes_total: 319, ord_lw: 17, ord_dlw_pct: 1776.5, ord_l4w: 20.50, ord_dl4w_pct: 1456.1,
+    impresiones_total: null,
+    so_turbo_mx: 6774172, gmv_categoria: 298360, gmv_cat_lw: 150631, gmv_cat_l4w: 172960,
+    share_deal_cat_pct: 46.82, share_lw_pct: 4.84, share_l4w_pct: 4.95,
+    gmv_basket: 176222, gmv_sellup: 36536, pct_sellup: 20.73,
+    aov_basket: 552.42, aov_deal_post: 437.89,
+    cross_ordenes: 319, cross_skus_distintos: 254,
+    cross_top_producto: "Topo Chico Agua Mineral 1500 mL", cross_top_ordenes: 15, cross_top_pct: 4.70,
+    inv_oos_cierre_viral_avg: 25, inv_oos_post_avg: 25.9,
+    inv_cov_viral_ap_avg: 72.1, inv_cov_viral_ci_avg: 65.4,
+    inv_cov_post_avg: 64.2, inv_cov_bench_avg: 61.9,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
 ];
 
@@ -4249,6 +4271,11 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "8511", name: "Huggies Toallita Húmeda Cuidado Relajante 80 Und", ordenes: 338, usuarios: 269, unidades: 597, gmv: 23286, aov: 68.89, impresiones: 4860, cr_pct: 5.54, gmv_dlw_pct: 1514.7, gmv_dl4w_pct: 1087.8, seg_nuevo: 233, seg_nuevo_pct: 77, seg_reactivado: 24, seg_reactivado_pct: 7, seg_retenido: 12, seg_retenido_pct: 16, stock_viral: 1219, stock_post: 699, stock_bench: 1215, stock_delta_pct: -42.5, oos_cierre_viral: 60, oos_post: 57.0, cov_viral_ap: 57.8, cov_viral_ci: 27.7, cov_post: 31.9, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "5858", name: "Huggies Toallita Húmeda Cuidado Hidratante 80 Und", ordenes: 261, usuarios: 213, unidades: 440, gmv: 16688, aov: 63.94, impresiones: 4244, cr_pct: 5.02, gmv_dlw_pct: 981.3, gmv_dl4w_pct: 848.6, seg_nuevo: 183, seg_nuevo_pct: 80, seg_reactivado: 15, seg_reactivado_pct: 6, seg_retenido: 15, seg_retenido_pct: 15, stock_viral: 768, stock_post: 397, stock_bench: 800, stock_delta_pct: -50.4, oos_cierre_viral: 66, oos_post: 60.8, cov_viral_ap: 51.2, cov_viral_ci: 23.3, cov_post: 30.2, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "10335", name: "Huggies Toalla Húmeda Supreme 80 Und", ordenes: 173, usuarios: 132, unidades: 281, gmv: 15504, aov: 89.62, impresiones: 1883, cr_pct: 7.01, gmv_dlw_pct: 804.3, gmv_dl4w_pct: 1032.2, seg_nuevo: 114, seg_nuevo_pct: 76, seg_reactivado: 13, seg_reactivado_pct: 8, seg_retenido: 5, seg_retenido_pct: 16, stock_viral: 384, stock_post: 115, stock_bench: 499, stock_delta_pct: -77.0, oos_cierre_viral: 62, oos_post: 66.0, cov_viral_ap: 57.7, cov_viral_ci: 20.5, cov_post: 15.4, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  // BLN 160526
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "5654", name: "Brandy 10 Torres 700 mL", ordenes: 212, usuarios: 184, unidades: 253, gmv: 75968, aov: 358.34, impresiones: null, cr_pct: null, gmv_dlw_pct: 1615.9, gmv_dl4w_pct: 2014.2, seg_nuevo: 168, seg_nuevo_pct: 91, seg_reactivado: 4, seg_reactivado_pct: 3, seg_retenido: 12, seg_retenido_pct: 7, stock_viral: 648, stock_post: 431, stock_bench: 352, stock_delta_pct: 22.4, oos_cierre_viral: 31, oos_post: 31.0, cov_viral_ap: 71.0, cov_viral_ci: 55.1, cov_post: 55.1, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "647", name: "Ron Flor de Caña 12 Años 750 mL", ordenes: 64, usuarios: 54, unidades: 71, gmv: 38885, aov: 607.58, impresiones: null, cr_pct: null, gmv_dlw_pct: 2113.8, gmv_dl4w_pct: 1663.4, seg_nuevo: 45, seg_nuevo_pct: 75, seg_reactivado: 8, seg_reactivado_pct: 22, seg_retenido: 1, seg_retenido_pct: 3, stock_viral: 428, stock_post: 394, stock_bench: 241, stock_delta_pct: 63.5, oos_cierre_viral: 34, oos_post: 34.0, cov_viral_ap: 58.8, cov_viral_ci: 57.5, cov_post: 58.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "6806", name: "Vodka Stolichnaya 750 mL", ordenes: 38, usuarios: 37, unidades: 39, gmv: 15085, aov: 396.96, impresiones: null, cr_pct: null, gmv_dlw_pct: 1258.9, gmv_dl4w_pct: 445.0, seg_nuevo: 26, seg_nuevo_pct: 71, seg_reactivado: 5, seg_reactivado_pct: 13, seg_retenido: 6, seg_retenido_pct: 16, stock_viral: 411, stock_post: 391, stock_bench: 225, stock_delta_pct: 73.8, oos_cierre_viral: 33, oos_post: 35.5, cov_viral_ap: 58.4, cov_viral_ci: 57.1, cov_post: 54.5, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "75320", name: "Ron Flor de Caña Extra Seco 4 Años 750 mL", ordenes: 37, usuarios: 35, unidades: 39, gmv: 9747, aov: 263.45, impresiones: null, cr_pct: null, gmv_dlw_pct: null, gmv_dl4w_pct: null, seg_nuevo: 33, seg_nuevo_pct: 95, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 2, seg_retenido_pct: 5, stock_viral: 291, stock_post: 288, stock_bench: 288, stock_delta_pct: 0, oos_cierre_viral: 2, oos_post: 3.0, cov_viral_ap: 100.0, cov_viral_ci: 91.7, cov_post: 89.3, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "9248", name: "Ariel Detergente en Polvo Poder y Cuidado 750 g", ordenes: 282, usuarios: 183, unidades: 656, gmv: 18244, aov: 64.70, impresiones: 210, cr_pct: 87.14, gmv_dlw_pct: 1065.8, gmv_dl4w_pct: 1271.8, seg_nuevo: 130, seg_nuevo_pct: 46, seg_reactivado: 56, seg_reactivado_pct: 20, seg_retenido: 96, seg_retenido_pct: 34, stock_viral: 1706, stock_post: 1143, stock_bench: 1084, stock_delta_pct: 5.4, oos_cierre_viral: 65, oos_post: 57, cov_viral_ap: 52.4, cov_viral_ci: 20.7, cov_post: 25.0, canib_ord_post: 55, canib_ord_bench: 130.75, canib_ord_delta_pct: -57.9, canib_und_post: 108, canib_und_bench: 206.0, canib_und_delta_pct: -47.6, canib_cli_post: 55, canib_cli_bench: 115.25, canib_cli_delta_pct: -52.3 },
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "85712", name: "Ariel Detergente en Polvo Poder y Cuidado 3.7 Kg", ordenes: 49, usuarios: 33, unidades: 68, gmv: 10438, aov: 213.02, impresiones: 139, cr_pct: 23.74, gmv_dlw_pct: 3101.4, gmv_dl4w_pct: 3101.4, seg_nuevo: 35, seg_nuevo_pct: 71, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 14, seg_retenido_pct: 29, stock_viral: 120, stock_post: 51, stock_bench: 83, stock_delta_pct: -38.6, oos_cierre_viral: 28, oos_post: 29, cov_viral_ap: 75.7, cov_viral_ci: 24.3, cov_post: 29.4, canib_ord_post: 5, canib_ord_bench: 4.5, canib_ord_delta_pct: 11.1, canib_und_post: 7, canib_und_bench: 4.75, canib_und_delta_pct: 47.4, canib_cli_post: 6, canib_cli_bench: 3.25, canib_cli_delta_pct: 84.6 },
@@ -4688,6 +4715,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", subcategoria: "Agua Natural", ordenes: 61, gmv: 3187, pct_sellup: 2.04, order: 6 },
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", subcategoria: "Papel higiénico", ordenes: 34, gmv: 2253, pct_sellup: 1.44, order: 7 },
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", subcategoria: "Frutas", ordenes: 45, gmv: 2100, pct_sellup: 1.34, order: 8 },
+
+  // BLN 160526
+  { deal_id: "VIRAL_DEAL_BLN_160526", subcategoria: "Cervezas", ordenes: 34, gmv: 6104, pct_sellup: 3.46, order: 1 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", subcategoria: "Gaseosas", ordenes: 55, gmv: 3273, pct_sellup: 1.86, order: 2 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", subcategoria: "Rones", ordenes: 8, gmv: 2497, pct_sellup: 1.42, order: 3 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", subcategoria: "Whiskys", ordenes: 3, gmv: 2474, pct_sellup: 1.40, order: 4 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", subcategoria: "Mezcales", ordenes: 4, gmv: 2416, pct_sellup: 1.37, order: 5 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", subcategoria: "Tequilas", ordenes: 3, gmv: 1640, pct_sellup: 0.93, order: 6 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", subcategoria: "Ginebras", ordenes: 2, gmv: 1587, pct_sellup: 0.90, order: 7 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", subcategoria: "Cigarrillos", ordenes: 8, gmv: 1081, pct_sellup: 0.61, order: 8 },
 
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", subcategoria: "Cervezas", ordenes: 13, gmv: 2993, pct_sellup: 5.77, order: 1 },
@@ -5337,6 +5374,19 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "7548", name: "Listerine Enjuague Bucal Cool Mint 500 mL", subcategoria: "Enjuague bucal", ordenes: 11, pct_deal: 2.12, order: 10 },
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "6744", name: "Coca-Cola Original Refresco Pet 600 mL", subcategoria: "Gaseosas", ordenes: 11, pct_deal: 2.12, order: 11 },
   { deal_id: "VIRAL_DEAL_KIMBERLY_150526", sync: "8033", name: "Ciel Agua Natural Purificada 10 L", subcategoria: "Agua Natural", ordenes: 11, pct_deal: 2.12, order: 12 },
+  // BLN 160526
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "4730", name: "Topo Chico Agua Mineral 1500 mL", subcategoria: "Agua Natural Gasificada", ordenes: 15, pct_deal: 4.70, order: 1 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "8462", name: "Coca-Cola Refresco Original 3 L", subcategoria: "Gaseosas", ordenes: 14, pct_deal: 4.39, order: 2 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "14156", name: "Hielo Club 5 kg", subcategoria: "Hielo", ordenes: 13, pct_deal: 4.08, order: 3 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "5314", name: "Pack Cerveza Michelob Ultra Light 6 x 355 mL", subcategoria: "Cervezas", ordenes: 9, pct_deal: 2.82, order: 4 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "6529", name: "Peñafiel Bebida Agua Mineral 2 L", subcategoria: "Agua Natural", ordenes: 8, pct_deal: 2.51, order: 5 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "9580", name: "Coca-Cola Original Refresco 2 L", subcategoria: "Gaseosas", ordenes: 8, pct_deal: 2.51, order: 6 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "8197", name: "Ron Bacardi Carta Blanca 980 mL", subcategoria: "Rones", ordenes: 7, pct_deal: 2.19, order: 7 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "91927", name: "Panini Sobre con 7 Estampas Fifa World Cup 2026 1 Und", subcategoria: "Otros Bienestar y Ocio", ordenes: 7, pct_deal: 2.19, order: 8 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "4939", name: "Cerveza Corona Extra Latón 710 mL", subcategoria: "Cervezas", ordenes: 7, pct_deal: 2.19, order: 9 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "6969", name: "Ciel Agua Mineral 1750 mL", subcategoria: "Agua Natural Gasificada", ordenes: 6, pct_deal: 1.88, order: 10 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "14780", name: "Coca-Cola Refresco Sin Azúcar 1.75 L", subcategoria: "Gaseosas", ordenes: 5, pct_deal: 1.57, order: 11 },
+  { deal_id: "VIRAL_DEAL_BLN_160526", sync: "13818", name: "Topo Chico Agua Mineral 600 mL", subcategoria: "Agua Natural", ordenes: 4, pct_deal: 1.25, order: 12 },
   // P&G 260426
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "74098", name: "Pan Blanco Bimbo 620g", subcategoria: "Panaderia salada", ordenes: 15, pct_deal: 4.41, order: 1 },
   { deal_id: "VIRAL_DEAL_P&G_260426", sync: "75953", name: "Suavitel Suavizante Fresca Primavera 740 ml", subcategoria: "Suavizantes", ordenes: 12, pct_deal: 3.53, order: 2 },
