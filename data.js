@@ -557,7 +557,7 @@ const PREVIRAL_DEALS = [
     categoria_display: "Por definir"
   },
   {
-    deal_id: "VIRAL_DEAL_COLECTIVOSALUDABLE_280626",
+    deal_id: "VIRAL_DEAL_COLECTIVOSALUDABLE_290626",
     maker_name: "Colectivo Saludable",
     maker_aux: "Colectivo Saludable",
     business_unit: "Foods",
@@ -566,7 +566,7 @@ const PREVIRAL_DEALS = [
     tipo_viral: "forecast",
     ciudades: "—",
     fecha_planeacion: "2026-05-19",
-    fecha_ejecucion: "2026-06-28",
+    fecha_ejecucion: "2026-06-29",
     fecha_fin: null,
     usd_mxn: 17.25,
     fecha_tasa: "2026-05-19",
