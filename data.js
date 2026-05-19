@@ -3937,6 +3937,29 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
     canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
     canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  },
+  {
+    deal_id: "VIRAL_DEAL_SANOFI_170526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 3680, gmv_lw: 938, gmv_dlw_pct: 292.4, gmv_l4w: 1267.28, gmv_dl4w_pct: 190.4,
+    usuarios_unicos: 6, usr_lw: 2, usr_dlw_pct: 200.0, usr_l4w: 1.33, usr_dl4w_pct: 351.1,
+    cr_pct: 0.49, aov: 613.39, aov_lw: 469.00, aov_dlw_pct: 30.8, aov_l4w: 460.83, aov_dl4w_pct: 33.1,
+    unidades_total: 7, und_lw: 2, und_dlw_pct: 250.0, und_l4w: 1.75, und_dl4w_pct: 300.0,
+    ordenes_total: 6, ord_lw: 2, ord_dlw_pct: 200.0, ord_l4w: 2.75, ord_dl4w_pct: 118.2,
+    impresiones_total: 1227,
+    so_turbo_mx: 5883711, gmv_categoria: 3928,
+    gmv_cat_lw: 1577, gmv_cat_l4w: 2080,
+    share_deal_cat_pct: 93.69, share_lw_pct: 100.00, share_l4w_pct: 88.38,
+    gmv_basket: 5483, gmv_sellup: 1803, pct_sellup: 32.88,
+    aov_basket: 913.84, aov_deal_post: 613.39,
+    cross_ordenes: 6, cross_skus_distintos: 14,
+    cross_top_producto: "Neutrogena Protector Solar Facial Sin Color Sun Fresh Derm 40 g", cross_top_ordenes: 1, cross_top_pct: 16.67,
+    inv_oos_cierre_viral_avg: 26, inv_oos_post_avg: 20,
+    inv_cov_viral_ap_avg: 66.8, inv_cov_viral_ci_avg: 63.5,
+    inv_cov_post_avg: 63.5, inv_cov_bench_avg: 48.0,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
 ];
 
@@ -4242,7 +4265,10 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "8939", name: "Gatorade Bebida Rehidratante sabor Uva 1l", ordenes: 247, usuarios: 212, unidades: 431, gmv: 12547, aov: 50.80, impresiones: 3458, cr_pct: 6.13, gmv_dlw_pct: 760.9, gmv_dl4w_pct: 824.2, seg_nuevo: 202, seg_nuevo_pct: 82, seg_reactivado: 28, seg_reactivado_pct: 11, seg_retenido: 17, seg_retenido_pct: 7, stock_viral: 1404, stock_post: 1076, stock_bench: 1560, stock_delta_pct: -31.0, oos_cierre_viral: 49, oos_post: 38, cov_viral_ap: 59.4, cov_viral_ci: 29.0, cov_post: 40.2, canib_ord_post: 197, canib_ord_bench: 177.0, canib_ord_delta_pct: 11.3, canib_und_post: 377, canib_und_bench: 273.5, canib_und_delta_pct: 37.8, canib_cli_post: 203, canib_cli_bench: 184.5, canib_cli_delta_pct: 10.0 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "12111", name: "Gatorlyte Naranja", ordenes: 116, usuarios: 89, unidades: 215, gmv: 5110, aov: 44.05, impresiones: 1796, cr_pct: 4.96, gmv_dlw_pct: 1217.2, gmv_dl4w_pct: 2327.8, seg_nuevo: 81, seg_nuevo_pct: 70, seg_reactivado: 14, seg_reactivado_pct: 12, seg_retenido: 21, seg_retenido_pct: 18, stock_viral: 1592, stock_post: 1554, stock_bench: 1918, stock_delta_pct: -19.0, oos_cierre_viral: 53, oos_post: 45, cov_viral_ap: 46.8, cov_viral_ci: 32.9, cov_post: 40.5, canib_ord_post: 56, canib_ord_bench: 22.5, canib_ord_delta_pct: 148.9, canib_und_post: 91, canib_und_bench: 42.75, canib_und_delta_pct: 112.9, canib_cli_post: 54, canib_cli_bench: 23.75, canib_cli_delta_pct: 127.4 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "12104", name: "Gatorlyte Fresa Kiwi", ordenes: 106, usuarios: 82, unidades: 201, gmv: 3997, aov: 37.71, impresiones: 1608, cr_pct: 5.10, gmv_dlw_pct: 1461.3, gmv_dl4w_pct: 1703.5, seg_nuevo: 69, seg_nuevo_pct: 65, seg_reactivado: 18, seg_reactivado_pct: 17, seg_retenido: 19, seg_retenido_pct: 18, stock_viral: 329, stock_post: 214, stock_bench: 555, stock_delta_pct: -61.4, oos_cierre_viral: 61, oos_post: 63, cov_viral_ap: 47.4, cov_viral_ci: 21.8, cov_post: 19.5, canib_ord_post: 23, canib_ord_bench: 22.25, canib_ord_delta_pct: 3.4, canib_und_post: 42, canib_und_bench: 38.75, canib_und_delta_pct: 8.4, canib_cli_post: 26, canib_cli_bench: 25.75, canib_cli_delta_pct: 1.0 },
-  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "83639", name: "Gatorade Bebida Moras Freeze 1 L", ordenes: 54, usuarios: 46, unidades: 85, gmv: 2553, aov: 47.28, impresiones: 768, cr_pct: 5.99, gmv_dlw_pct: 807.1, gmv_dl4w_pct: 949.7, seg_nuevo: 46, seg_nuevo_pct: 85, seg_reactivado: 1, seg_reactivado_pct: 2, seg_retenido: 7, seg_retenido_pct: 13, stock_viral: 156, stock_post: 59, stock_bench: 362, stock_delta_pct: -83.7, oos_cierre_viral: 41, oos_post: 38, cov_viral_ap: 60.0, cov_viral_ci: 18.0, cov_post: 22.0, canib_ord_post: 11, canib_ord_bench: 30.5, canib_ord_delta_pct: -63.9, canib_und_post: 13, canib_und_bench: 43.0, canib_und_delta_pct: -69.8, canib_cli_post: 12, canib_cli_bench: 34.0, canib_cli_delta_pct: -64.7 }
+  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "83639", name: "Gatorade Bebida Moras Freeze 1 L", ordenes: 54, usuarios: 46, unidades: 85, gmv: 2553, aov: 47.28, impresiones: 768, cr_pct: 5.99, gmv_dlw_pct: 807.1, gmv_dl4w_pct: 949.7, seg_nuevo: 46, seg_nuevo_pct: 85, seg_reactivado: 1, seg_reactivado_pct: 2, seg_retenido: 7, seg_retenido_pct: 13, stock_viral: 156, stock_post: 59, stock_bench: 362, stock_delta_pct: -83.7, oos_cierre_viral: 41, oos_post: 38, cov_viral_ap: 60.0, cov_viral_ci: 18.0, cov_post: 22.0, canib_ord_post: 11, canib_ord_bench: 30.5, canib_ord_delta_pct: -63.9, canib_und_post: 13, canib_und_bench: 43.0, canib_und_delta_pct: -69.8, canib_cli_post: 12, canib_cli_bench: 34.0, canib_cli_delta_pct: -64.7 },
+  // Sanofi 170526
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "14242", name: "Enterogermina Oral 5 ml 10 ud.", ordenes: 3, usuarios: 3, unidades: 4, gmv: 2260, aov: 753.27, impresiones: 378, cr_pct: 0.79, gmv_dlw_pct: null, gmv_dl4w_pct: 265.3, seg_nuevo: 3, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 181, stock_post: 174, stock_bench: 51, stock_delta_pct: 242.0, oos_cierre_viral: 49, oos_post: 37, cov_viral_ap: 39.2, cov_viral_ci: 38.0, cov_post: 38.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "1372", name: "Enterogermina Susp 2 Ufc 5 Ml Caja 20 Ampolletas", ordenes: 3, usuarios: 3, unidades: 3, gmv: 1421, aov: 473.50, impresiones: 849, cr_pct: 0.35, gmv_dlw_pct: 51.4, gmv_dl4w_pct: 76.8, seg_nuevo: 2, seg_nuevo_pct: 67, seg_reactivado: 1, seg_reactivado_pct: 33, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 66, stock_post: 63, stock_bench: 38, stock_delta_pct: 67.2, oos_cierre_viral: 2, oos_post: 2, cov_viral_ap: 94.4, cov_viral_ci: 88.9, cov_post: 88.9, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -4729,7 +4755,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_GEPP_270426", subcategoria: "Frutas", ordenes: 52, gmv: 2585, pct_sellup: 3.26, order: 5 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", subcategoria: "Agua Natural", ordenes: 61, gmv: 2414, pct_sellup: 3.04, order: 6 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", subcategoria: "Helados", ordenes: 40, gmv: 2334, pct_sellup: 2.94, order: 7 },
-  { deal_id: "VIRAL_DEAL_GEPP_270426", subcategoria: "Galletas", ordenes: 37, gmv: 2246, pct_sellup: 2.83, order: 8 }
+  { deal_id: "VIRAL_DEAL_GEPP_270426", subcategoria: "Galletas", ordenes: 37, gmv: 2246, pct_sellup: 2.83, order: 8 },
+  // Sanofi 170526
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Protección solar", ordenes: 1, gmv: 417, pct_sellup: 23.11, order: 1 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Antidiarréicos", ordenes: 1, gmv: 280, pct_sellup: 15.53, order: 2 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Analgésicos infantiles", ordenes: 1, gmv: 274, pct_sellup: 15.19, order: 3 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Pegantes y Cintas", ordenes: 1, gmv: 178, pct_sellup: 9.85, order: 4 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Toallitas", ordenes: 1, gmv: 171, pct_sellup: 9.50, order: 5 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Gaseosas", ordenes: 2, gmv: 142, pct_sellup: 7.88, order: 6 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Suero", ordenes: 2, gmv: 134, pct_sellup: 7.41, order: 7 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Seda/hilo dental", ordenes: 1, gmv: 68, pct_sellup: 3.75, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -5421,9 +5456,20 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "13683", name: "Ruffles Sabritas Papa Fritas Onduladas de Queso 120 g", subcategoria: "Snacks salados", ordenes: 10, pct_deal: 1.75, order: 9 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 9, pct_deal: 1.57, order: 10 },
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 9, pct_deal: 1.57, order: 11 },
-  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "9580", name: "Coca-Cola Original Refresco 2 L", subcategoria: "Gaseosas", ordenes: 8, pct_deal: 1.40, order: 12 }
-
-
+  { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "9580", name: "Coca-Cola Original Refresco 2 L", subcategoria: "Gaseosas", ordenes: 8, pct_deal: 1.40, order: 12 },
+  // Sanofi 170526
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "76140", name: "Neutrogena Protector Solar Facial Sin Color Sun Fresh Derm 40 g", subcategoria: "Protección solar", ordenes: 1, pct_deal: 16.67, order: 1 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "90346", name: "Pritt Lápiz Adhesivo 6 x 22 g", subcategoria: "Pegantes y Cintas", ordenes: 1, pct_deal: 16.67, order: 2 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "80756", name: "Turbo Farma G Exclefin Loperamida 2 Mg Caja 12 Tab", subcategoria: "Otros medicamentos", ordenes: 1, pct_deal: 16.67, order: 3 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "74197", name: "Saba Diarios Largo 50S", subcategoria: "Toallas higiénicas", ordenes: 1, pct_deal: 16.67, order: 4 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "71627", name: "Kleenex Papel Higienico Humedo", subcategoria: "Papel higiénico", ordenes: 1, pct_deal: 16.67, order: 5 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "10450", name: "Pepto Bismol Suspension Oral", subcategoria: "Antidiarréicos", ordenes: 1, pct_deal: 16.67, order: 6 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "3947", name: "Electrolit Suero Oral Pediátrico Sabor Manzana 300 mL", subcategoria: "Suero", ordenes: 1, pct_deal: 16.67, order: 7 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "11108", name: "Neutrogena Toallitas Desmaquillantes 25 ud.", subcategoria: "Toallitas", ordenes: 1, pct_deal: 16.67, order: 8 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "5495", name: "Electrolit Suero Rehidratante Sabor Fresa 625 mL", subcategoria: "Suero", ordenes: 1, pct_deal: 16.67, order: 9 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "10910", name: "Motrin Suspension Infantil Sabor Frutas 120 ml", subcategoria: "Analgésicos infantiles", ordenes: 1, pct_deal: 16.67, order: 10 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "80785", name: "Turbo Farma Hilo Dental Oral B Essential Floss 2 Pz", subcategoria: "Seda/hilo dental", ordenes: 1, pct_deal: 16.67, order: 11 },
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "6149", name: "Coca-Cola Refresco Sin Azúcar 600 mL", subcategoria: "Gaseosas", ordenes: 1, pct_deal: 16.67, order: 12 }
 
 
 
