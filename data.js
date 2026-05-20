@@ -108,7 +108,7 @@ const PREVIRAL_DEALS = [
     descuento_pct: 60,
     incrementalidad: 9,
     tipo_viral: "1 día",
-    ciudades: "Nacional",
+    ciudades: "CDMX, GDL, MTY, MRD",
     fecha_planeacion: "2026-04-22",
     fecha_ejecucion: "2026-05-21",
     fecha_fin: null,
@@ -2251,7 +2251,7 @@ const PREVIRAL_SKU_DETAIL = [
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "8189", ean: "7501064191886", pid: "2113641850", name: "Modelo Especial Cerveza Laton", subcategoria: "Cervezas", h_units: 352.1, h_orders: 82.9, avg_price: 31.56, ex_incr_units: 3169, ex_incr_orders: 746, ex_budget_mxn: 60008, ex_budget_usd: 3440.83, real_units: 2519, final_budget_mxn: 47700, final_budget_usd: 2735.09, sku_order: 8 },
   { deal_id: "VIRAL_DEAL_GRUPOMODELO_220126", sync: "7857", ean: "7501064193859", pid: "2115837444", name: "Corona Extra Cerveza Laton 473", subcategoria: "Cervezas", h_units: 328.3, h_orders: 74.4, avg_price: 27.53, ex_incr_units: 2955, ex_incr_orders: 670, ex_budget_mxn: 48811, ex_budget_usd: 2798.80, real_units: 2693, final_budget_mxn: 44483, final_budget_usd: 2550.63, sku_order: 9 },
   // Lala
-  { deal_id: "VIRAL_DEAL_LALA_210526", sync: "14588", ean: "7501020548495", pid: "1563416190", name: "Lala 100 Leche Fresca sin Lactosa Proteína 1 L", subcategoria: "Leche natural", h_units: 98.5, h_orders: 61.9, avg_price: 48.41, ex_incr_units: 887, ex_incr_orders: 557, ex_budget_mxn: 25766, ex_budget_usd: 1482.51, real_units: 1343, final_budget_mxn: 39008, final_budget_usd: 2244.42, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_LALA_210526", sync: "14588", ean: "7501020548495", pid: "1563416190", name: "Lala 100 Leche Fresca sin Lactosa Proteína 1 L", subcategoria: "Leche natural", h_units: 95.3, h_orders: 58.6, avg_price: 48.34, ex_incr_units: 858, ex_incr_orders: 527, ex_budget_mxn: 24885, ex_budget_usd: 1431.82, real_units: 1345, final_budget_mxn: 39010, final_budget_usd: 2244.53, sku_order: 1 },
   // Fruver
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "14946", ean: "2200000320643", pid: "2115738871", name: "Mallas Limon Con Semilla 5 piezas", subcategoria: "Frutas", h_units: 1186.6, h_orders: 434.9, avg_price: 9.06, ex_incr_units: 4746, ex_incr_orders: 1740, ex_budget_mxn: 25799, ex_budget_usd: 1484.41, real_units: 4929, final_budget_mxn: 26794, final_budget_usd: 1541.66, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_FRUVER_050526", sync: "14375", ean: "2200000320650", pid: "2115786704", name: "Mallas Limon Sin Semilla 5 piezas", subcategoria: "Frutas", h_units: 868.2, h_orders: 379.8, avg_price: 17.05, ex_incr_units: 3473, ex_incr_orders: 1519, ex_budget_mxn: 35527, ex_budget_usd: 2044.13, real_units: 1916, final_budget_mxn: 19601, final_budget_usd: 1127.79, sku_order: 2 },
