@@ -3995,6 +3995,28 @@ const POSTMORTEM_DEALS = [
     canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
     canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
     canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
+  },
+  {
+    deal_id: "VIRAL_DEAL_FRUVER_190526",
+    post_days: 4, fase: 1,
+    gmv_activacion: 109661, gmv_lw: 54496, gmv_dlw_pct: 101.2, gmv_l4w: 50241, gmv_dl4w_pct: 118.3,
+    usuarios_unicos: 1628, usr_lw: 675, usr_dlw_pct: 141.2, usr_l4w: 615.0, usr_dl4w_pct: 164.7,
+    cr_pct: null, aov: 54.94, aov_lw: 37.53, aov_dlw_pct: 46.4, aov_l4w: 37.22, aov_dl4w_pct: 47.6,
+    unidades_total: 8214, und_lw: 3689, und_dlw_pct: 122.7, und_l4w: 3358.75, und_dl4w_pct: 144.6,
+    ordenes_total: 1996, ord_lw: 1452, ord_dlw_pct: 37.5, ord_l4w: 1350.0, ord_dl4w_pct: 47.9,
+    impresiones_total: null,
+    so_turbo_mx: 3815162, gmv_categoria: 345877, gmv_cat_lw: 323382, gmv_cat_l4w: 279801,
+    share_deal_cat_pct: 31.71, share_lw_pct: 16.85, share_l4w_pct: 17.96,
+    gmv_basket: 667427, gmv_sellup: 557766, pct_sellup: 83.57,
+    aov_basket: 334.38, aov_deal_post: 54.94,
+    cross_ordenes: 1996, cross_skus_distintos: 2490,
+    cross_top_producto: "Tomate Guaje Saladette", cross_top_ordenes: 476, cross_top_pct: 23.85,
+    inv_oos_cierre_viral_avg: 8.8, inv_oos_post_avg: 6.2,
+    inv_cov_viral_ap_avg: 77.6, inv_cov_viral_ci_avg: 68.2,
+    inv_cov_post_avg: 67.2, inv_cov_bench_avg: 75.0,
+    canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null,
+    canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null,
+    canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null
   }
 ];
 
@@ -4303,7 +4325,13 @@ const POSTMORTEM_SKU_PERFORMANCE = [
   { deal_id: "VIRAL_DEAL_GEPP_270426", sync: "83639", name: "Gatorade Bebida Moras Freeze 1 L", ordenes: 54, usuarios: 46, unidades: 85, gmv: 2553, aov: 47.28, impresiones: 768, cr_pct: 5.99, gmv_dlw_pct: 807.1, gmv_dl4w_pct: 949.7, seg_nuevo: 46, seg_nuevo_pct: 85, seg_reactivado: 1, seg_reactivado_pct: 2, seg_retenido: 7, seg_retenido_pct: 13, stock_viral: 156, stock_post: 59, stock_bench: 362, stock_delta_pct: -83.7, oos_cierre_viral: 41, oos_post: 38, cov_viral_ap: 60.0, cov_viral_ci: 18.0, cov_post: 22.0, canib_ord_post: 11, canib_ord_bench: 30.5, canib_ord_delta_pct: -63.9, canib_und_post: 13, canib_und_bench: 43.0, canib_und_delta_pct: -69.8, canib_cli_post: 12, canib_cli_bench: 34.0, canib_cli_delta_pct: -64.7 },
   // Sanofi 170526
   { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "14242", name: "Enterogermina Oral 5 ml 10 ud.", ordenes: 3, usuarios: 3, unidades: 4, gmv: 2260, aov: 753.27, impresiones: 378, cr_pct: 0.79, gmv_dlw_pct: null, gmv_dl4w_pct: 265.3, seg_nuevo: 3, seg_nuevo_pct: 100, seg_reactivado: 0, seg_reactivado_pct: 0, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 181, stock_post: 174, stock_bench: 51, stock_delta_pct: 242.0, oos_cierre_viral: 49, oos_post: 37, cov_viral_ap: 39.2, cov_viral_ci: 38.0, cov_post: 38.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
-  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "1372", name: "Enterogermina Susp 2 Ufc 5 Ml Caja 20 Ampolletas", ordenes: 3, usuarios: 3, unidades: 3, gmv: 1421, aov: 473.50, impresiones: 849, cr_pct: 0.35, gmv_dlw_pct: 51.4, gmv_dl4w_pct: 76.8, seg_nuevo: 2, seg_nuevo_pct: 67, seg_reactivado: 1, seg_reactivado_pct: 33, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 66, stock_post: 63, stock_bench: 38, stock_delta_pct: 67.2, oos_cierre_viral: 2, oos_post: 2, cov_viral_ap: 94.4, cov_viral_ci: 88.9, cov_post: 88.9, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "1372", name: "Enterogermina Susp 2 Ufc 5 Ml Caja 20 Ampolletas", ordenes: 3, usuarios: 3, unidades: 3, gmv: 1421, aov: 473.50, impresiones: 849, cr_pct: 0.35, gmv_dlw_pct: 51.4, gmv_dl4w_pct: 76.8, seg_nuevo: 2, seg_nuevo_pct: 67, seg_reactivado: 1, seg_reactivado_pct: 33, seg_retenido: 0, seg_retenido_pct: 0, stock_viral: 66, stock_post: 63, stock_bench: 38, stock_delta_pct: 67.2, oos_cierre_viral: 2, oos_post: 2, cov_viral_ap: 94.4, cov_viral_ci: 88.9, cov_post: 88.9, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  // Fruver 190526
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "14693", name: "Aguacate Para Hoy X3", ordenes: 1242, usuarios: 1034, unidades: 1994, gmv: 61507, aov: 49.52, impresiones: null, cr_pct: null, gmv_dlw_pct: 94.0, gmv_dl4w_pct: 109.5, seg_nuevo: 306, seg_nuevo_pct: 25, seg_reactivado: 372, seg_reactivado_pct: 30, seg_retenido: 564, seg_retenido_pct: 45, stock_viral: 1811, stock_post: 992, stock_bench: 1112, stock_delta_pct: -10.8, oos_cierre_viral: 18, oos_post: 11, cov_viral_ap: 84.5, cov_viral_ci: 71.6, cov_post: 73.3, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "82057", name: "Pepino", ordenes: 628, usuarios: 528, unidades: 1370, gmv: 20677, aov: 32.93, impresiones: null, cr_pct: null, gmv_dlw_pct: 107.4, gmv_dl4w_pct: 115.7, seg_nuevo: 249, seg_nuevo_pct: 40, seg_reactivado: 146, seg_reactivado_pct: 23, seg_retenido: 233, seg_retenido_pct: 37, stock_viral: 1504, stock_post: 523, stock_bench: 727, stock_delta_pct: -28.0, oos_cierre_viral: 8, oos_post: 7, cov_viral_ap: 71.1, cov_viral_ci: 59.6, cov_post: 56.3, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "82058", name: "Cebolla Blanca", ordenes: 574, usuarios: 480, unidades: 1183, gmv: 11181, aov: 19.48, impresiones: null, cr_pct: null, gmv_dlw_pct: 108.5, gmv_dl4w_pct: 134.9, seg_nuevo: 215, seg_nuevo_pct: 37, seg_reactivado: 164, seg_reactivado_pct: 29, seg_retenido: 195, seg_retenido_pct: 34, stock_viral: 1459, stock_post: 483, stock_bench: 744, stock_delta_pct: -35.0, oos_cierre_viral: 5, oos_post: 3, cov_viral_ap: 71.1, cov_viral_ci: 65.0, cov_post: 65.0, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "82060", name: "Zanahoria", ordenes: 577, usuarios: 460, unidades: 2816, gmv: 9249, aov: 16.03, impresiones: null, cr_pct: null, gmv_dlw_pct: 116.4, gmv_dl4w_pct: 158.9, seg_nuevo: 214, seg_nuevo_pct: 37, seg_reactivado: 133, seg_reactivado_pct: 23, seg_retenido: 230, seg_retenido_pct: 40, stock_viral: 5655, stock_post: 3049, stock_bench: 1360, stock_delta_pct: 124.3, oos_cierre_viral: 1, oos_post: 1, cov_viral_ap: 71.1, cov_viral_ci: 67.9, cov_post: 67.9, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "10412", name: "Calabaza Italiana", ordenes: 258, usuarios: 211, unidades: 851, gmv: 7046, aov: 27.31, impresiones: null, cr_pct: null, gmv_dlw_pct: 121.3, gmv_dl4w_pct: 138.2, seg_nuevo: 97, seg_nuevo_pct: 38, seg_reactivado: 71, seg_reactivado_pct: 28, seg_retenido: 90, seg_retenido_pct: 35, stock_viral: 852, stock_post: 341, stock_bench: 551, stock_delta_pct: -38.0, oos_cierre_viral: 12, oos_post: 9, cov_viral_ap: 90.0, cov_viral_ci: 76.7, cov_post: 73.4, canib_ord_post: null, canib_ord_bench: null, canib_ord_delta_pct: null, canib_und_post: null, canib_und_bench: null, canib_und_delta_pct: null, canib_cli_post: null, canib_cli_bench: null, canib_cli_delta_pct: null }
 ];
 
 const POSTMORTEM_SELLUP_CATS = [
@@ -4799,7 +4827,16 @@ const POSTMORTEM_SELLUP_CATS = [
   { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Toallitas", ordenes: 1, gmv: 171, pct_sellup: 9.50, order: 5 },
   { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Gaseosas", ordenes: 2, gmv: 142, pct_sellup: 7.88, order: 6 },
   { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Suero", ordenes: 2, gmv: 134, pct_sellup: 7.41, order: 7 },
-  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Seda/hilo dental", ordenes: 1, gmv: 68, pct_sellup: 3.75, order: 8 }
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", subcategoria: "Seda/hilo dental", ordenes: 1, gmv: 68, pct_sellup: 3.75, order: 8 },
+  // Fruver 190526
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", subcategoria: "Frutas", ordenes: 1361, gmv: 109739, pct_sellup: 19.67, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", subcategoria: "Verduras", ordenes: 648, gmv: 23080, pct_sellup: 4.14, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", subcategoria: "Huevos", ordenes: 342, gmv: 20338, pct_sellup: 3.65, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", subcategoria: "Gaseosas", ordenes: 333, gmv: 19172, pct_sellup: 3.44, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", subcategoria: "Snacks salados", ordenes: 203, gmv: 14636, pct_sellup: 2.62, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", subcategoria: "Agua Natural", ordenes: 262, gmv: 13696, pct_sellup: 2.46, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", subcategoria: "Cervezas", ordenes: 98, gmv: 12836, pct_sellup: 2.30, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", subcategoria: "Panaderia salada", ordenes: 176, gmv: 11829, pct_sellup: 2.12, order: 8 }
 ];
 
 const POSTMORTEM_CROSSBASKET = [
@@ -5504,7 +5541,20 @@ const POSTMORTEM_CROSSBASKET = [
   { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "5495", name: "Electrolit Suero Rehidratante Sabor Fresa 625 mL", subcategoria: "Suero", ordenes: 1, pct_deal: 16.67, order: 9 },
   { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "10910", name: "Motrin Suspension Infantil Sabor Frutas 120 ml", subcategoria: "Analgésicos infantiles", ordenes: 1, pct_deal: 16.67, order: 10 },
   { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "80785", name: "Turbo Farma Hilo Dental Oral B Essential Floss 2 Pz", subcategoria: "Seda/hilo dental", ordenes: 1, pct_deal: 16.67, order: 11 },
-  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "6149", name: "Coca-Cola Refresco Sin Azúcar 600 mL", subcategoria: "Gaseosas", ordenes: 1, pct_deal: 16.67, order: 12 }
+  { deal_id: "VIRAL_DEAL_SANOFI_170526", sync: "6149", name: "Coca-Cola Refresco Sin Azúcar 600 mL", subcategoria: "Gaseosas", ordenes: 1, pct_deal: 16.67, order: 12 },
+  // Fruver 190526
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "81998", name: "Tomate Guaje Saladette", subcategoria: "Frutas", ordenes: 476, pct_deal: 23.85, order: 1 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "81993", name: "Plátano Chiapas", subcategoria: "Frutas", ordenes: 434, pct_deal: 21.74, order: 2 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "14946", name: "Mallas Limón Con Semilla 5 piezas", subcategoria: "Frutas", ordenes: 288, pct_deal: 14.43, order: 3 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "12645", name: "Chile Serrano", subcategoria: "Verduras", ordenes: 186, pct_deal: 9.32, order: 4 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "14375", name: "Limon Sin Semilla Malla", subcategoria: "Frutas", ordenes: 184, pct_deal: 9.22, order: 5 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "9518", name: "Cilantro Manojo", subcategoria: "Hierbas y aromáticas", ordenes: 177, pct_deal: 8.87, order: 6 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "82051", name: "Papa Blanca", subcategoria: "Frutas", ordenes: 165, pct_deal: 8.27, order: 7 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "5672", name: "San Juan Huevo blanco 12 ud.", subcategoria: "Huevos", ordenes: 160, pct_deal: 8.02, order: 8 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "12456", name: "Fresas", subcategoria: "Frutas", ordenes: 153, pct_deal: 7.67, order: 9 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "72931", name: "Mango Ataulfo", subcategoria: "Frutas", ordenes: 145, pct_deal: 7.26, order: 10 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "5559", name: "Huevo Blanco San Juan 30 und", subcategoria: "Huevos", ordenes: 105, pct_deal: 5.26, order: 11 },
+  { deal_id: "VIRAL_DEAL_FRUVER_190526", sync: "82050", name: "Manzana Golden", subcategoria: "Frutas", ordenes: 97, pct_deal: 4.86, order: 12 }
 
 
 
