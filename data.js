@@ -2213,6 +2213,30 @@ const PREVIRAL_DEALS = [
     financiamiento_maker: "ADS",
     pct_growth_vs_maker: 30,
     categoria_display: "Cervezas"
+  },
+  {
+    deal_id: "VIRAL_DEAL_CUERVO_270626",
+    maker_name: "Casa Cuervo",
+    maker_aux: "Cuervo",
+    business_unit: "Drinks",
+    descuento_pct: 30,
+    incrementalidad: 3,
+    tipo_viral: "1 día",
+    ciudades: "Nacional",
+    fecha_planeacion: "2026-05-20",
+    fecha_ejecucion: "2026-06-27",
+    fecha_fin: null,
+    usd_mxn: 17.38,
+    fecha_tasa: "2026-05-20",
+    budget_maker_mxn: 50000,
+    budget_growth_mxn: 15000,
+    budget_total_mxn: 65000,
+    budget_maker_usd: 2876.87,
+    budget_growth_usd: 863.06,
+    budget_total_usd: 3739.93,
+    financiamiento_maker: "ADS",
+    pct_growth_vs_maker: 30,
+    categoria_display: "Tequilas, Mezcales"
   }
 
 
@@ -2676,7 +2700,12 @@ const PREVIRAL_SKU_DETAIL = [
   // Holanda 23-jun
   { deal_id: "VIRAL_DEAL_HOLANDA_230626", sync: "76053", ean: "7506306417854", pid: "2115850210", name: "Holanda Helado de Vainilla 900 ml - Holanda - 900 mL", subcategoria: "Helados", h_units: 20.9, h_orders: 18.4, avg_price: 74.99, ex_incr_units: 209, ex_incr_orders: 184, ex_budget_mxn: 7837, ex_budget_usd: 453.77, real_units: 860, final_budget_mxn: 32246, final_budget_usd: 1867.54, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_HOLANDA_230626", sync: "8244", ean: "8711327446045", pid: "2115775304", name: "Viennetta Cappuccino", subcategoria: "Postres", h_units: 10.9, h_orders: 10.0, avg_price: 147.25, ex_incr_units: 109, ex_incr_orders: 100, ex_budget_mxn: 8025, ex_budget_usd: 464.68, real_units: 228, final_budget_mxn: 16786, final_budget_usd: 972.03, sku_order: 2 },
-  { deal_id: "VIRAL_DEAL_HOLANDA_230626", sync: "79518", ean: "7506306418455", pid: "2114975812", name: "HELADO HOLANDA CHOCOLATE NETFLIX - Holanda - 900 mL", subcategoria: "Helados", h_units: 1.9, h_orders: 1.9, avg_price: 118.34, ex_incr_units: 19, ex_incr_orders: 19, ex_budget_mxn: 1124, ex_budget_usd: 65.09, real_units: 50, final_budget_mxn: 2958, final_budget_usd: 171.28, sku_order: 3 }
+  { deal_id: "VIRAL_DEAL_HOLANDA_230626", sync: "79518", ean: "7506306418455", pid: "2114975812", name: "HELADO HOLANDA CHOCOLATE NETFLIX - Holanda - 900 mL", subcategoria: "Helados", h_units: 1.9, h_orders: 1.9, avg_price: 118.34, ex_incr_units: 19, ex_incr_orders: 19, ex_budget_mxn: 1124, ex_budget_usd: 65.09, real_units: 50, final_budget_mxn: 2958, final_budget_usd: 171.28, sku_order: 3 },
+  // Cuervo
+  { deal_id: "VIRAL_DEAL_CUERVO_270626", sync: "8293", ean: "7501035014848", pid: "2109993618", name: "Maestro Dobel Tequila Diamante Reposado 700 mL", subcategoria: "Tequilas", h_units: 53.7, h_orders: 40.6, avg_price: 692.43, ex_incr_units: 161, ex_incr_orders: 122, ex_budget_mxn: 33444, ex_budget_usd: 1924.28, real_units: 144, final_budget_mxn: 29913, final_budget_usd: 1721.12, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_CUERVO_270626", sync: "79635", ean: "7506351811393", pid: "2114989267", name: "Mezcal 400 Conejos Joven Espadin 700 mL", subcategoria: "Mezcales", h_units: 28.1, h_orders: 25.7, avg_price: 470.24, ex_incr_units: 84, ex_incr_orders: 77, ex_budget_mxn: 11850, ex_budget_usd: 681.82, real_units: 111, final_budget_mxn: 15659, final_budget_usd: 900.98, sku_order: 2 },
+  { deal_id: "VIRAL_DEAL_CUERVO_270626", sync: "13825", ean: "7501048810307", pid: "2109996196", name: "Tequila Plata Gran Centenario 700 mL", subcategoria: "Tequilas", h_units: 21.9, h_orders: 19.9, avg_price: 355.35, ex_incr_units: 66, ex_incr_orders: 60, ex_budget_mxn: 7036, ex_budget_usd: 404.83, real_units: 115, final_budget_mxn: 12260, final_budget_usd: 705.41, sku_order: 3 },
+  { deal_id: "VIRAL_DEAL_CUERVO_270626", sync: "5644", ean: "7501035013483", pid: "2109994058", name: "Tequila 1800 Cristalino 700 mL", subcategoria: "Tequilas", h_units: 12.7, h_orders: 11.1, avg_price: 799.63, ex_incr_units: 38, ex_incr_orders: 33, ex_budget_mxn: 9116, ex_budget_usd: 524.51, real_units: 30, final_budget_mxn: 7197, final_budget_usd: 414.10, sku_order: 4 }
 
 
 
