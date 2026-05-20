@@ -2249,7 +2249,7 @@ const PREVIRAL_DEALS = [
 
 const PREVIRAL_SKU_DETAIL = [
   // Audaz
-  { deal_id: "VIRAL_DEAL_AUDAZ_200526", sync: "81181", ean: "2220000001137", pid: "2115719600", name: "Hogaza masa madre congelada", subcategoria: "Panaderia salada", h_units: 11.8, h_orders: 11.3, avg_price: 180.65, ex_incr_units: 59, ex_incr_orders: 57, ex_budget_mxn: 5329, ex_budget_usd: 306.63, real_units: 243, final_budget_mxn: 21959, final_budget_usd: 1263.51, sku_order: 1 },
+  { deal_id: "VIRAL_DEAL_AUDAZ_200526", sync: "81181", ean: "2220000001137", pid: "2115192249", name: "Hogaza masa madre congelada", subcategoria: "Panaderia salada", h_units: 11.8, h_orders: 11.3, avg_price: 180.65, ex_incr_units: 59, ex_incr_orders: 57, ex_budget_mxn: 5329, ex_budget_usd: 306.63, real_units: 243, final_budget_mxn: 21959, final_budget_usd: 1263.51, sku_order: 1 },
   { deal_id: "VIRAL_DEAL_AUDAZ_200526", sync: "86864", ean: "22200000027973", pid: "2115708053", name: "Trilogía de galletas- Audaz", subcategoria: "Panaderia dulce", h_units: 2.1, h_orders: 1.9, avg_price: 180.27, ex_incr_units: 11, ex_incr_orders: 10, ex_budget_mxn: 991, ex_budget_usd: 57.02, real_units: 45, final_budget_mxn: 4056, final_budget_usd: 233.38, sku_order: 2 },
   // Granel
   { deal_id: "VIRAL_DEAL_GRANEL_300426", sync: "87047", ean: "2220000002881", pid: "2115717499", name: "OSITO ENCHILADO 200 gr", subcategoria: "Gomitas y caramelos", h_units: 15.0, h_orders: 24.0, avg_price: 26.00, ex_incr_units: 225, ex_incr_orders: 360, ex_budget_mxn: 3510, ex_budget_usd: 200.66, real_units: 1972, final_budget_mxn: 30763, final_budget_usd: 1758.62, sku_order: 1 },
